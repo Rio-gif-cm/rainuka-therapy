@@ -36,7 +36,15 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Therapy for perinatal mental health, adult ADHD, and career transitions." />
       </head>
-      <body className="font-sans bg-warm-gray-50 text-warm-gray-700">
+      <body 
+        className="font-sans bg-warm-gray-50 text-warm-gray-700"
+        style={{
+          backgroundColor: '#faf9f7',
+          color: '#5e534a',
+          fontFamily: 'var(--font-inter)',
+          lineHeight: '1.6',
+        }}
+      >
         {children}
       </body>
     </html>
