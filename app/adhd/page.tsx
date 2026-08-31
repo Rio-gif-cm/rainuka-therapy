@@ -1,0 +1,240 @@
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
+
+export default function ADHDPage() {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+
+      <main className="flex-grow">
+        {/* Hero */}
+        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
+          <div className="container-base text-center animate-fade-in-up">
+            <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
+              ADHD Therapy for Adults
+            </h1>
+            <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto">
+              Diagnosed at 30? 40? 50? Finally it makes sense.
+            </p>
+            <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
+              Late ADHD diagnosis comes with grief, relief, and confusion. Therapy to understand yourself—not fix yourself.
+              Shame-aware. Neurodivergent-affirming.
+            </p>
+            <Link href="/booking" className="inline-block btn btn-primary">
+              Book a Free Consultation
+            </Link>
+          </div>
+        </section>
+
+        {/* Who I Help */}
+        <section className="section-padding bg-white">
+          <div className="container-base">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              If You're Experiencing...
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {[
+                '"Why didn\'t anyone catch this earlier?" (late diagnosis grief)',
+                'Internalized shame ("I\'m broken / lazy / not trying hard enough")',
+                '"I\'m masking / performing all the time" (exhaustion from hiding)',
+                'Rejection sensitivity (why did they reject me?)',
+                'ADHD + anxiety + depression overlap (common)',
+                'Career/relationship patterns suddenly making sense',
+              ].map((item, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className="text-2xl">✓</div>
+                  <p className="text-warm-gray-600">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* What is ADHD */}
+        <section className="section-padding bg-sage-50">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              What ADHD Actually Is
+            </h2>
+
+            <div className="space-y-6 text-warm-gray-600">
+              <p>
+                ADHD isn't laziness. It's not a character flaw. It's an executive function difference—meaning your brain 
+                prioritizes and organizes things differently than neurotypical brains.
+              </p>
+
+              <div className="bg-white p-6 rounded-lg">
+                <p className="font-semibold text-warm-gray-900 mb-4">
+                  This might show up as:
+                </p>
+                <ul className="space-y-2">
+                  <li>• Time blindness ('Wait, how long was I doing that?')</li>
+                  <li>• Starting projects (paralyzed by choice or overwhelm)</li>
+                  <li>• Emotional regulation (feelings hit harder, faster)</li>
+                  <li>• Organization (systems feel impossible)</li>
+                  <li>• Shame (feeling broken because you can't 'just do it')</li>
+                </ul>
+              </div>
+
+              <p>
+                <strong>The Real Talk:</strong> Late ADHD diagnosis—especially in women—comes with grief. 
+                Grief for lost time. Grief for the ways you blamed yourself. And also relief: 
+                "So I'm not broken. I'm just different."
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* My Approach */}
+        <section className="section-padding bg-white">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              How I Work With ADHD
+            </h2>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                  Strengths-Based
+                </h3>
+                <p className="text-warm-gray-600">
+                  ADHD ≠ deficit. Your brain is different, not broken. We'll understand your specific presentation 
+                  and build on your actual strengths.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                  No Shame
+                </h3>
+                <p className="text-warm-gray-600">
+                  You're not lazy. You're not broken. You're not "not trying hard enough." 
+                  Therapy helps you replace shame with self-understanding.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                  Practical Systems
+                </h3>
+                <p className="text-warm-gray-600">
+                  Not shame-based productivity tips. Real strategies that work WITH your ADHD brain (not against it). 
+                  Time management, task initiation, emotional regulation tools.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                  Grief + Excitement
+                </h3>
+                <p className="text-warm-gray-600">
+                  We process grief for lost time while exploring what's possible now. 
+                  ADHD identity integration, not diagnosis acceptance.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                  Neurodivergent-Affirming Language
+                </h3>
+                <p className="text-warm-gray-600">
+                  You'll never hear "fix your brain" or "overcome your ADHD." 
+                  We work with your neurodiversity, not against it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* For Women */}
+        <section className="section-padding bg-cream-50">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              ADHD in Women
+            </h2>
+
+            <div className="space-y-6 text-warm-gray-600">
+              <p>
+                ADHD often shows differently in women: high masking, perfectionism, depression/anxiety that masks 
+                the hyperactivity. You learned early how to appear "normal" while burning out internally.
+              </p>
+
+              <p>
+                Late diagnosis comes with a specific grief: "How much of my life was shaped by unmasking? 
+                What could I have done if I'd known?"
+              </p>
+
+              <p>
+                <strong>You're not alone in this.</strong> If you're discovering ADHD at 30, 40, 50+—I understand. 
+                And therapy helps you integrate this new self-understanding.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="section-padding bg-white">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              Common ADHD Questions
+            </h2>
+
+            <div className="space-y-4">
+              <details className="card cursor-pointer">
+                <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
+                  Do I need medication?
+                  <span className="text-sage-400">▼</span>
+                </summary>
+                <p className="text-warm-gray-600 mt-4">
+                  That's between you and your psychiatrist. Therapy helps you understand yourself while medication 
+                  does its work. We can talk about both.
+                </p>
+              </details>
+
+              <details className="card cursor-pointer">
+                <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
+                  Will therapy help me be "more productive"?
+                  <span className="text-sage-400">▼</span>
+                </summary>
+                <p className="text-warm-gray-600 mt-4">
+                  Not in the hustle-culture sense. But yes—you'll learn strategies that work WITH your brain, 
+                  making tasks feel less impossible.
+                </p>
+              </details>
+
+              <details className="card cursor-pointer">
+                <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
+                  What if I have ADHD + anxiety/depression?
+                  <span className="text-sage-400">▼</span>
+                </summary>
+                <p className="text-warm-gray-600 mt-4">
+                  This is common. We address all of it together. Sometimes anxiety is worsened by ADHD struggles; 
+                  sometimes they're separate. We figure out what's what.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="section-padding bg-sage-400 text-white">
+          <div className="container-base text-center">
+            <h2 className="text-3xl font-serif font-bold mb-4">
+              Finally understanding yourself
+            </h2>
+            <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
+              ADHD diagnosis changes everything. Let's make sense of it together.
+            </p>
+            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
+              Book Your Free Call
+            </Link>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
