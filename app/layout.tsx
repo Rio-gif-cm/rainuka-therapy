@@ -35,6 +35,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Therapy for perinatal mental health, adult ADHD, and career transitions." />
+        {/* Build ID: b6b97ca-rebuilt */}
       </head>
       <body 
         className="font-sans bg-warm-gray-50 text-warm-gray-700"
