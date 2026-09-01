@@ -17,7 +17,7 @@ export default function Home() {
         <NicheGrid />
 
         {/* Approach Section */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding section-gradient-warm">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6">
@@ -116,7 +116,7 @@ export default function Home() {
         </section>
 
         {/* FAQ Preview */}
-        <section className="section-padding bg-cream-50">
+        <section className="section-padding section-gradient-subtle">
           <div className="container-base">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
               Common Questions

@@ -183,6 +183,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--sage-50) 100%);
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5), 0 20px 40px -10px rgba(107, 148, 79, 0.12);
 }
 
 @media (min-width: 768px) {
@@ -194,16 +195,81 @@ a:hover {
 .card {
   background-color: white;
   border-radius: 0.75rem;
-  box-shadow: 0 2px 8px rgba(63, 57, 53, 0.08);
+  /* Sophisticated multi-layered depth shadows */
+  box-shadow: 
+    0 1px 2px rgba(63, 57, 53, 0.04),
+    0 4px 8px rgba(107, 148, 79, 0.05),
+    0 12px 24px rgba(63, 57, 53, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
   padding: 2rem;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(209, 220, 200, 0.5);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 1px solid rgba(209, 220, 200, 0.6);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.3) 100%);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent);
+  pointer-events: none;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(130, 168, 108, 0.02) 0%, transparent 60%);
+  pointer-events: none;
+  border-radius: 0.75rem;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .card:hover {
-  box-shadow: 0 12px 24px rgba(63, 57, 53, 0.12);
-  border-color: rgba(157, 187, 141, 0.3);
-  transform: translateY(-4px);
+  /* Enhanced elevation on hover with refined shadow */
+  box-shadow: 
+    0 2px 4px rgba(63, 57, 53, 0.06),
+    0 8px 16px rgba(107, 148, 79, 0.1),
+    0 20px 40px rgba(63, 57, 53, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  border-color: rgba(130, 168, 108, 0.5);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 247, 0.5) 100%);
+}
+
+/* Section gradient backgrounds */
+.section-gradient-warm {
+  background: linear-gradient(180deg, var(--sage-50) 0%, white 100%);
+}
+
+.section-gradient-subtle {
+  background: linear-gradient(180deg, var(--warm-gray-50) 0%, white 100%);
+}
+
+.section-gradient-reverse {
+  background: linear-gradient(180deg, white 0%, var(--sage-50) 100%);
+}
+
+/* Floating elements with enhanced shadow */
+.floating-element {
+  box-shadow: 0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1);
+  transition: all 0.3s ease;
+}
+
+.floating-element:hover {
+  box-shadow: 0 20px 50px rgba(63, 57, 53, 0.2), 0 8px 20px rgba(63, 57, 53, 0.15);
 }
 
 .form-input,
@@ -286,20 +352,45 @@ textarea:focus {
 
 /* NicheGrid card hover effects - works on both mouse and touch */
 .niche-card {
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
+  position: relative;
+}
+
+.niche-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(130, 168, 108, 0.03) 0%, transparent 70%);
+  pointer-events: none;
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .niche-card:hover {
   transform: translateY(-8px);
   background-color: var(--sage-50);
-  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+  box-shadow: 
+    0 2px 4px rgba(63, 57, 53, 0.06),
+    0 8px 16px rgba(107, 148, 79, 0.1),
+    0 20px 40px rgba(63, 57, 53, 0.12);
+}
+
+.niche-card:hover::after {
+  opacity: 1;
 }
 
 .niche-card:active {
   transform: translateY(-8px);
   background-color: var(--sage-50);
-  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+  box-shadow: 
+    0 2px 4px rgba(63, 57, 53, 0.06),
+    0 8px 16px rgba(107, 148, 79, 0.1),
+    0 20px 40px rgba(63, 57, 53, 0.12);
 }
 
 /* Arrow animation on hover/active */

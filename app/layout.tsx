@@ -31,6 +31,71 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Service Worker Registration & Performance Monitoring Component
+  const ServiceWorkerRegister = () => {
+    if (typeof window === 'undefined') return null
+    
+    return (
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            // Register Service Worker for offline support and caching
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', async () => {
+                try {
+                  const registration = await navigator.serviceWorker.register('/sw.js', {
+                    scope: '/',
+                  });
+                  console.log('[App] Service Worker registered:', registration);
+                  
+                  // Listen for updates
+                  registration.addEventListener('updatefound', () => {
+                    const newWorker = registration.installing;
+                    newWorker.addEventListener('statechange', () => {
+                      if (newWorker.state === 'activated') {
+                        console.log('[App] Service Worker updated, refresh recommended');
+                        // Optionally notify user to refresh
+                      }
+                    });
+                  });
+                } catch (error) {
+                  console.warn('[App] Service Worker registration failed:', error);
+                }
+              });
+            }
+            
+            // Performance monitoring: Log LCP (Largest Contentful Paint)
+            if ('PerformanceObserver' in window) {
+              try {
+                const observer = new PerformanceObserver((list) => {
+                  const entries = list.getEntries();
+                  entries.forEach((entry) => {
+                    console.log('[Perf] LCP:', entry.renderTime || entry.loadTime, 'ms');
+                    // Send to analytics if needed
+                    if (window.gtag) {
+                      gtag('event', 'page_view', { value: entry.renderTime || entry.loadTime });
+                    }
+                  });
+                });
+                observer.observe({ entryTypes: ['largest-contentful-paint'] });
+              } catch (error) {
+                console.warn('[Perf] LCP monitoring failed:', error);
+              }
+            }
+            
+            // Report Web Vitals
+            if ('web-vitals' in window) {
+              const { getCLS, getFID, getFCP, getLCP, getTTFB } = window['web-vitals'] || {};
+              if (getLCP) getLCP(metric => console.log('[Vitals] LCP:', metric.value));
+              if (getFCP) getFCP(metric => console.log('[Vitals] FCP:', metric.value));
+              if (getCLS) getCLS(metric => console.log('[Vitals] CLS:', metric.value));
+            }
+          `,
+        }}
+      />
+    )
+  }
+
   // Schema.org JSON-LD structured data for SEO
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -98,6 +163,9 @@ export default function RootLayout({
           lineHeight: '1.6',
         }}
       >
+        {/* Service Worker Registration & Performance Monitoring */}
+        <ServiceWorkerRegister />
+        
         {/* Skip to main content link - visually hidden but keyboard accessible */}
         <a
           href="#main-content"

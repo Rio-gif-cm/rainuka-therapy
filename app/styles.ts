@@ -106,13 +106,28 @@ export const styles = {
   card: {
     backgroundColor: 'white',
     borderRadius: '0.75rem',
+    /* Light card shadow hierarchy */
+    boxShadow: '0 1px 3px rgba(63, 57, 53, 0.05), 0 2px 6px rgba(63, 57, 53, 0.08)',
     padding: '2rem',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
     border: `1px solid ${colors.warmGray[200]}`,
     transition: 'all 0.3s ease',
   },
   cardHover: {
-    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+    /* Focused card shadow hierarchy - elevated */
+    boxShadow: '0 4px 12px rgba(63, 57, 53, 0.08), 0 8px 24px rgba(63, 57, 53, 0.12)',
+  },
+  floatingElement: {
+    boxShadow: '0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1)',
+    transition: 'all 0.3s ease',
+  },
+  sectionGradientWarm: {
+    background: 'linear-gradient(180deg, var(--sage-50) 0%, white 100%)',
+  },
+  sectionGradientSubtle: {
+    background: 'linear-gradient(180deg, var(--warm-gray-50) 0%, white 100%)',
+  },
+  sectionGradientReverse: {
+    background: 'linear-gradient(180deg, white 0%, var(--sage-50) 100%)',
   },
 }
 

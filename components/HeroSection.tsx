@@ -117,7 +117,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Hero Image Placeholder - Elegant Gradient */}
+        {/* Hero Image Placeholder - Elegant Gradient with Enhanced Shadow */}
         <div style={{ flex: 1, width: '100%' }}>
           <div 
             style={{
@@ -125,12 +125,14 @@ export default function HeroSection() {
               borderRadius: '1.5rem',
               background: `linear-gradient(135deg, ${colors.sage[300]} 0%, ${colors.sage[200]} 25%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
               overflow: 'hidden',
-              boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
+              /* Enhanced floating shadow hierarchy */
+              boxShadow: '0 8px 16px rgba(107, 148, 79, 0.12), 0 20px 40px rgba(63, 57, 53, 0.15), 0 30px 60px -12px rgba(107, 148, 79, 0.25)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               border: `1px solid ${colors.sage[100]}`,
               position: 'relative',
+              transition: 'all 0.3s ease',
             }}
             role="img"
             aria-label="Therapist photo placeholder with calming sage and warm gray gradient"
