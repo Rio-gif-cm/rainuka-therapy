@@ -24,6 +24,7 @@ export async function POST(request: NextRequest) {
     console.error('Referral tracking error:', error);
     return NextResponse.json(
       { error: 'Failed to track referral' },
-      { status: 500 }\n    );
+      { status: 500 }
+    );
   }
 }

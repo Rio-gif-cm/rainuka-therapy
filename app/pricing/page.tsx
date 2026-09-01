@@ -8,12 +8,12 @@ export default function PricingPage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-16 bg-gradient-to-br from-sage-50 to-cream-50">
+        <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sage-50 to-cream-50">
           <div className="container-base text-center">
-            <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
               Transparent Pricing
             </h1>
-            <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-warm-gray-600 max-w-2xl mx-auto">
               Clear pricing from the start. No surprises, no hidden fees. Therapy should be accessible—here's how we make it work.
             </p>
           </div>
@@ -22,19 +22,19 @@ export default function PricingPage() {
         {/* Standard Rate Section */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
-            <div className="bg-gradient-to-br from-sage-50 to-cream-50 p-12 rounded-lg border border-sage-200 mb-8">
-              <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-2 text-center">
+            <div className="bg-gradient-to-br from-sage-50 to-cream-50 p-6 md:p-10 lg:p-12 rounded-lg border border-sage-200 mb-6 md:mb-8">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-warm-gray-900 mb-2 text-center">
                 Standard Session Rate
               </h2>
-              <p className="text-center text-warm-gray-600 mb-8">
+              <p className="text-center text-warm-gray-600 mb-6 md:mb-8">
                 For 50-minute therapy sessions
               </p>
               
               <div className="text-center">
-                <div className="text-6xl font-bold text-sage-700 mb-2">
+                <div className="text-5xl md:text-6xl font-bold text-sage-700 mb-2">
                   $150
                 </div>
-                <p className="text-warm-gray-600 text-lg">
+                <p className="text-warm-gray-600 text-base md:text-lg">
                   per session
                 </p>
               </div>
@@ -81,18 +81,18 @@ export default function PricingPage() {
         {/* Sliding Scale Section */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Sliding Scale Options
             </h2>
 
-            <p className="text-warm-gray-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-warm-gray-600 text-center mb-6 md:mb-8 max-w-2xl mx-auto">
               Therapy should be accessible to everyone who needs it. I have a limited number of reduced-fee slots available based on financial need.
             </p>
 
-            <div className="card card-static mb-8">
-              <h3 className="text-xl font-bold text-warm-gray-900 mb-6">How Sliding Scale Works</h3>
+            <div className="card card-static mb-6 md:mb-8">
+              <h3 className="text-lg md:text-xl font-bold text-warm-gray-900 mb-4 md:mb-6">How Sliding Scale Works</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4 md:space-y-6">
                 <div>
                   <h4 className="font-semibold text-warm-gray-900 mb-3 flex items-center gap-2">
                     <span className="bg-sage-200 text-sage-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
@@ -146,11 +146,11 @@ export default function PricingPage() {
         {/* Insurance & Out-of-Network Section */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Insurance & Out-of-Network Reimbursement
             </h2>
 
-            <div className="space-y-8">
+            <div className="space-y-6 md:space-y-8">
               {/* In-Network */}
               <div className="card card-tinted card-static">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">
@@ -230,11 +230,11 @@ export default function PricingPage() {
         {/* Payment Methods Section */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Payment Methods
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="card card-compact card-static text-center">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="font-bold text-warm-gray-900 mb-3">Credit/Debit Card</h3>
@@ -260,7 +260,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <div className="card card-compact card-static mt-8">
+            <div className="card card-compact card-static mt-6 md:mt-8">
               <p className="text-warm-gray-600 text-center">
                 <strong>Questions about payment?</strong> We can discuss any concerns during your free consultation. The goal is to set up something that feels sustainable for you.
               </p>
@@ -271,11 +271,11 @@ export default function PricingPage() {
         {/* FAQ: Pricing & Costs */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Pricing FAQs
             </h2>
 
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Is there a free consultation?
@@ -372,8 +372,8 @@ export default function PricingPage() {
         {/* Trust & Transparency Section */}
         <section className="section-padding bg-gradient-to-br from-sage-50 to-cream-50">
           <div className="container-base max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
                 Transparency Matters
               </h2>
               <p className="text-warm-gray-600">

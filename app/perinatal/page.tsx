@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
@@ -15,6 +16,16 @@ import {
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
 const accent = specialtyAccents.perinatal
+
+export const metadata: Metadata = {
+  title: 'Perinatal Therapy | Pregnancy Loss, Postpartum Anxiety, Infertility | Rainuka Oberoi, LCSW',
+  description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, and reproductive trauma. Rainuka specializes in trauma-informed perinatal mental health support.',
+  openGraph: {
+    title: 'Perinatal Therapy | Rainuka Oberoi, LCSW',
+    description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, reproductive trauma. Compassionate, trauma-informed support.',
+    type: 'website',
+  },
+}
 
 export default function PerinatalPage() {
   return (

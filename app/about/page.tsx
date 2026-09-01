@@ -23,12 +23,12 @@ export default function AboutPage() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
+        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-12 md:py-16 lg:py-20">
           <div className="container-base text-center animate-fade-in-up">
-            <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
               Meet Your Therapist
             </h1>
-            <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-warm-gray-600 max-w-2xl mx-auto">
               Therapist Who Gets It. Someone Who's Been There.
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function AboutPage() {
         {/* Bio Section */}
         <section className="section-padding bg-white">
           <div className="container-base">
-            <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 max-w-5xl mx-auto">
               {/* Photo placeholder */}
               <div className="flex items-center justify-center">
                 <div className="aspect-square rounded-lg bg-gradient-to-br from-sage-200 to-warm-accent-light overflow-hidden shadow-lg flex items-center justify-center w-80 h-80">
@@ -52,7 +52,7 @@ export default function AboutPage() {
 
               {/* Bio Content */}
               <div className="flex flex-col justify-center">
-                <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
                   Rainuka Oberoi, LCSW
                 </h2>
 
@@ -99,10 +99,10 @@ export default function AboutPage() {
         {/* Philosophy & Origin */}
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               From Hiding to Healing: The Philosophy Behind My Work
             </h2>
-            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
               What I learned living through infertility, ADHD, and burnout.
             </p>
 
@@ -162,10 +162,10 @@ export default function AboutPage() {
         {/* Why the Combination Matters */}
         <section className="section-padding bg-warm-accent-light">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               Why Perinatal + ADHD + Career
             </h2>
-            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
               It's not three separate specializations. It's one integrated lens that catches what generalists miss.
             </p>
 
@@ -214,7 +214,7 @@ export default function AboutPage() {
         {/* Credentials */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-8 md:mb-12 text-center">
               Credentials & Training
             </h2>
 
@@ -266,7 +266,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-4 text-center">
               How This Works in Practice
             </h2>
-            <p className="text-center text-warm-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-12 max-w-2xl mx-auto">
               These anonymized case examples show how my integrated approach helps clients navigate complex, overlapping challenges.
             </p>
 
@@ -329,7 +329,7 @@ export default function AboutPage() {
         {/* What Clients Say */}
         <section className="section-padding bg-white">
           <div className="container-base">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-8 md:mb-12 text-center">
               What People Say
             </h2>
 
@@ -351,7 +351,7 @@ export default function AboutPage() {
         {/* Values */}
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-8 md:mb-12 text-center">
               What Guides My Work
             </h2>
 
@@ -386,10 +386,10 @@ export default function AboutPage() {
         {/* Diversity & Inclusion Commitment */}
         <section className="section-padding bg-white border-t border-sage-200">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               My Commitment to Accessibility & Inclusion
             </h2>
-            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
               I don't just work with all people—I actively affirm the full humanity of clients from marginalized communities.
             </p>
 
@@ -462,10 +462,10 @@ export default function AboutPage() {
         {/* Verified & Trusted */}
         <section className="section-padding bg-white border-t border-sage-200">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               Verified & Easy to Find
             </h2>
-            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+            <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
               My credentials are independently verified across multiple directories and insurance networks.
             </p>
 

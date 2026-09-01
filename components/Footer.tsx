@@ -54,23 +54,10 @@ const HAIRLINE = 'rgba(255, 255, 255, 0.12)'
 
 function FooterLink({ href, label }: { href: string; label: string }) {
   return (
-    <li style={{ marginBottom: '0.65rem' }}>
+    <li className="mb-2">
       <Link
         href={href}
-        style={{
-          color: MUTED,
-          textDecoration: 'none',
-          fontSize: '0.875rem',
-          lineHeight: 1.5,
-          transition: 'color 0.2s ease',
-          display: 'inline-block',
-        }}
-        onMouseEnter={(e) => {
-          ;(e.currentTarget as HTMLElement).style.color = 'white'
-        }}
-        onMouseLeave={(e) => {
-          ;(e.currentTarget as HTMLElement).style.color = MUTED
-        }}
+        className="text-sm text-[rgba(255,255,255,0.62)] hover:text-white transition-colors inline-block leading-relaxed"
       >
         {label}
       </Link>
@@ -80,17 +67,7 @@ function FooterLink({ href, label }: { href: string; label: string }) {
 
 function ColumnHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h3
-      style={{
-        fontSize: '0.7rem',
-        fontWeight: 600,
-        letterSpacing: '0.16em',
-        textTransform: 'uppercase',
-        color: colors.sage[300],
-        margin: '0 0 1.1rem 0',
-        fontFamily: 'inherit',
-      }}
-    >
+    <h3 className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: colors.sage[300] }}>
       {children}
     </h3>
   )
@@ -98,89 +75,35 @@ function ColumnHeading({ children }: { children: React.ReactNode }) {
 
 export default function Footer() {
   return (
-    <footer
-      style={{
-        backgroundColor: colors.warmGray[900],
-        color: 'white',
-        marginTop: '5rem',
-      }}
-    >
+    <footer className="mt-20" style={{ backgroundColor: colors.warmGray[900], color: 'white' }}>
       {/* ---------- Main grid ---------- */}
-      <div
-        style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          padding: '4.5rem 1.5rem 3rem',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: '3rem 2.5rem',
-          alignItems: 'start',
-        }}
-      >
+      <div className="max-w-3xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 gap-x-10 items-start">
         {/* Brand block */}
-        <div style={{ gridColumn: 'span 1', minWidth: '220px' }}>
-          <Link href="/" style={{ textDecoration: 'none', display: 'inline-block' }}>
-            <span
-              style={{
-                display: 'block',
-                fontFamily: 'var(--font-merriweather), serif',
-                fontSize: '1.2rem',
-                fontWeight: 700,
-                color: 'white',
-                letterSpacing: '-0.01em',
-              }}
-            >
+        <div className="lg:col-span-1 min-w-xs">
+          <Link href="/" className="no-underline inline-block">
+            <span className="block font-serif text-lg font-bold text-white tracking-tighter">
               Rainuka Oberoi
             </span>
             <span
-              style={{
-                display: 'block',
-                fontSize: '0.68rem',
-                fontWeight: 500,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase',
-                color: colors.sage[300],
-                marginTop: '0.3rem',
-              }}
+              className="block text-xs font-medium tracking-widest uppercase mt-1"
+              style={{ color: colors.sage[300] }}
             >
               Licensed Clinical Social Worker
             </span>
           </Link>
 
-          <p
-            style={{
-              color: MUTED,
-              fontSize: '0.875rem',
-              lineHeight: 1.65,
-              margin: '1.25rem 0 0 0',
-              maxWidth: '30ch',
-            }}
-          >
+          <p className="text-sm text-[rgba(255,255,255,0.62)] leading-relaxed mt-5 max-w-xs">
             Trauma-informed therapy for perinatal mental health, adult ADHD, relationships, and
             career transitions.
           </p>
 
           <p
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              margin: '1.25rem 0 0 0',
-              padding: '0.35rem 0.7rem',
-              border: `1px solid ${HAIRLINE}`,
-              borderRadius: '999px',
-              fontSize: '0.75rem',
-              color: BRIGHT,
-            }}
+            className="inline-flex items-center gap-2 mt-5 px-3 py-1 border border-[rgba(255,255,255,0.12)] rounded-full text-xs text-[rgba(255,255,255,0.9)]"
           >
             <span
               aria-hidden="true"
-              style={{
-                width: '6px',
-                height: '6px',
-                borderRadius: '50%',
-                backgroundColor: colors.sage[400],
-              }}
+              className="inline-block w-1.5 h-1.5 rounded-full"
+              style={{ backgroundColor: colors.sage[400] }}
             />
             Telehealth · Sliding scale available
           </p>
@@ -190,7 +113,7 @@ export default function Footer() {
         {FOOTER_COLUMNS.map((column) => (
           <nav key={column.heading} aria-label={column.heading}>
             <ColumnHeading>{column.heading}</ColumnHeading>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <ul className="list-none p-0 m-0">
               {column.links.map((link) => (
                 <FooterLink key={link.href} href={link.href} label={link.label} />
               ))}
@@ -201,29 +124,19 @@ export default function Footer() {
         {/* Contact column */}
         <div>
           <ColumnHeading>Get in Touch</ColumnHeading>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            <li style={{ marginBottom: '0.85rem' }}>
+          <ul className="list-none p-0 m-0">
+            <li className="mb-3">
               <a
-                href="tel:+15551234567"
-                style={{
-                  color: BRIGHT,
-                  textDecoration: 'none',
-                  fontSize: '0.9375rem',
-                  fontWeight: 500,
-                }}
+                href="tel:+155****4567"
+                className="text-[rgba(255,255,255,0.9)] no-underline font-medium"
               >
                 (555) 123-4567
               </a>
             </li>
-            <li style={{ marginBottom: '1.25rem' }}>
+            <li className="mb-5">
               <a
                 href="mailto:contact@rainukatherapy.com"
-                style={{
-                  color: MUTED,
-                  textDecoration: 'none',
-                  fontSize: '0.875rem',
-                  wordBreak: 'break-word',
-                }}
+                className="text-sm text-[rgba(255,255,255,0.62)] no-underline break-words"
               >
                 contact@rainukatherapy.com
               </a>
@@ -231,19 +144,8 @@ export default function Footer() {
             <li>
               <Link
                 href="/booking"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.4rem',
-                  padding: '0.6rem 1.15rem',
-                  backgroundColor: colors.sage[600],
-                  color: 'white',
-                  borderRadius: '999px',
-                  fontSize: '0.875rem',
-                  fontWeight: 600,
-                  textDecoration: 'none',
-                  transition: 'background-color 0.2s ease',
-                }}
+                className="inline-flex items-center gap-2 px-4 py-2 font-semibold text-white rounded-full text-sm no-underline transition-colors"
+                style={{ backgroundColor: colors.sage[600] }}
                 onMouseEnter={(e) => {
                   ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[500]
                 }}
@@ -259,24 +161,10 @@ export default function Footer() {
       </div>
 
       {/* ---------- Crisis note ---------- */}
-      <div
-        style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          padding: '0 1.5rem',
-        }}
-      >
+      <div className="max-w-3xl mx-auto px-6">
         <p
-          style={{
-            margin: 0,
-            padding: '1.1rem 1.25rem',
-            borderRadius: '0.75rem',
-            border: `1px solid ${HAIRLINE}`,
-            backgroundColor: 'rgba(255, 255, 255, 0.03)',
-            color: MUTED,
-            fontSize: '0.8125rem',
-            lineHeight: 1.6,
-          }}
+          className="my-0 p-4 rounded-lg border text-xs text-[rgba(255,255,255,0.62)] leading-relaxed"
+          style={{ borderColor: HAIRLINE, backgroundColor: 'rgba(255, 255, 255, 0.03)' }}
         >
           <strong style={{ color: BRIGHT, fontWeight: 600 }}>In a crisis?</strong> This site is not
           an emergency service. Call or text <strong style={{ color: BRIGHT }}>988</strong> (Suicide
@@ -286,37 +174,18 @@ export default function Footer() {
 
       {/* ---------- Bottom bar ---------- */}
       <div
-        style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
-          marginTop: '2.5rem',
-          padding: '1.5rem 1.5rem 2.5rem',
-          borderTop: `1px solid ${HAIRLINE}`,
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '1rem',
-        }}
+        className="max-w-3xl mx-auto mt-10 px-6 py-6 border-t border-[rgba(255,255,255,0.12)] flex flex-wrap items-center justify-between gap-4"
       >
-        <p style={{ margin: 0, color: 'rgba(255,255,255,0.45)', fontSize: '0.8125rem' }}>
+        <p className="my-0 text-xs text-[rgba(255,255,255,0.45)]">
           © {new Date().getFullYear()} Rainuka Oberoi, LCSW. All rights reserved.
         </p>
 
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '0.75rem',
-            fontSize: '0.8125rem',
-          }}
-        >
+        <div className="flex items-center flex-wrap gap-3 text-xs">
           {[
             { href: '/privacy', label: 'Privacy Policy' },
             { href: '/accessibility', label: 'Accessibility' },
           ].map((link, i) => (
-            <span key={link.href} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem' }}>
+            <span key={link.href} className="inline-flex items-center gap-3">
               {i > 0 && (
                 <span aria-hidden="true" style={{ color: 'rgba(255,255,255,0.25)' }}>
                   ·
@@ -324,13 +193,7 @@ export default function Footer() {
               )}
               <Link
                 href={link.href}
-                style={{ color: MUTED, textDecoration: 'none', transition: 'color 0.2s ease' }}
-                onMouseEnter={(e) => {
-                  ;(e.currentTarget as HTMLElement).style.color = 'white'
-                }}
-                onMouseLeave={(e) => {
-                  ;(e.currentTarget as HTMLElement).style.color = MUTED
-                }}
+                className="text-[rgba(255,255,255,0.62)] no-underline hover:text-white transition-colors"
               >
                 {link.label}
               </Link>

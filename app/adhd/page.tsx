@@ -21,14 +21,13 @@ const accent = specialtyAccents.adhd
 
 export const metadata: Metadata = {
   title: 'Adult ADHD Therapy | Diagnosis, Executive Function | Rainuka Oberoi, LCSW',
-  description: 'Therapy for adult ADHD diagnosis, rejection sensitivity, executive dysfunction, burnout. Rainuka specializes in ADHD-informed therapy.',
+  description: 'Therapy for adult ADHD diagnosis, rejection sensitivity, executive dysfunction, and burnout. ADHD-informed, shame-aware, neurodivergent-affirming therapy for late diagnosis.',
   keywords: 'ADHD therapy, adult ADHD, ADHD diagnosis, executive dysfunction, ADHD coaching',
   openGraph: {
     title: 'Adult ADHD Therapy | Rainuka Oberoi, LCSW',
     description: 'ADHD diagnosis, rejection sensitivity, executive dysfunction. Integrated ADHD-informed therapy.',
     type: 'website',
   },
-  canonical: 'https://rainukatherapy.com/adhd',
 }
 
 export default function ADHDPage() {

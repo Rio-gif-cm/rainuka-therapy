@@ -171,15 +171,15 @@
   /* Negative steps are deliberately held ABOVE the pure 1.25 ratio
      (which would give 12.8px / 10.2px). Nothing on a mental-health
      site should render below 13px. Accessibility beats arithmetic. */
-  --step--2: 0.8125rem;  /* 13px — legal, micro-meta. Floor. */
-  --step--1: 0.875rem;   /* 14px — captions, labels, eyebrows */
-  --step-0:  clamp(1rem, 0.9741rem + 0.0069vw, 1.0625rem);        /* 16 -> 17  body */
-  --step-1:  clamp(1.18rem, 1.1186rem + 0.0164vw, 1.3281rem);     /* 19 -> 21  lead / intro */
-  --step-2:  clamp(1.3924rem, 1.2815rem + 0.0296vw, 1.6602rem);   /* 22 -> 27  h4 */
-  --step-3:  clamp(1.643rem, 1.464rem + 0.0478vw, 2.0752rem);     /* 26 -> 33  h3 */
-  --step-4:  clamp(1.9388rem, 1.6673rem + 0.0724vw, 2.594rem);    /* 31 -> 42  h2 */
-  --step-5:  clamp(2.2878rem, 1.8921rem + 0.1055vw, 3.2425rem);   /* 37 -> 52  h1 */
-  --step-6:  clamp(2.6996rem, 2.1387rem + 0.1496vw, 4.0531rem);   /* 43 -> 65  display */
+  --step--2: 0.8125rem;  /* 13px — xs (Tailwind) — legal, micro-meta. Floor. */
+  --step--1: 0.875rem;   /* 14px — sm (Tailwind) — captions, labels, eyebrows */
+  --step-0:  1rem;       /* 16px — base (Tailwind) — body text */
+  --step-1:  1.125rem;   /* 18px — lg (Tailwind) — lead / intro */
+  --step-2:  1.5rem;     /* 24px — xl (Tailwind) — h4 */
+  --step-3:  1.875rem;   /* 30px — 2xl (Tailwind) — h3 */
+  --step-4:  2.25rem;    /* 36px — 3xl (Tailwind) — h2 */
+  --step-5:  3rem;       /* 48px — 4xl (Tailwind) — h1 */
+  --step-6:  3.75rem;    /* 60px — 5xl (Tailwind) — display */
 
   /* --- Leading: tightens as type grows ----------------------------- */
   --leading-display: 1.05;
@@ -349,7 +349,7 @@ h2 {
   font-weight: var(--weight-h2);
   line-height: var(--leading-h2);
   letter-spacing: var(--tracking-h2);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   max-width: 34ch;
 }
 
@@ -358,7 +358,7 @@ h3 {
   font-weight: var(--weight-h3);
   line-height: var(--leading-h3);
   letter-spacing: var(--tracking-h3);
-  margin-bottom: 0.875rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
