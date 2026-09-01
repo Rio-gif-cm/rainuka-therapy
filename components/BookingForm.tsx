@@ -68,17 +68,17 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     switch (name) {
       case 'name':
         if (!value || (typeof value === 'string' && !validateName(value as string))) {
-          return 'Please enter a valid name (at least 2 characters)'
+          return "Just need your name so I know what to call you."
         }
         break
       case 'email':
         if (!value || (typeof value === 'string' && !validateEmail(value as string))) {
-          return 'Please enter a valid email address'
+          return "So I can send you confirmation and next steps—let me know if I got it right."
         }
         break
       case 'phone':
         if (!value || (typeof value === 'string' && !validatePhone(value as string))) {
-          return 'Please enter a valid phone number (at least 10 digits)'
+          return "I'll need a complete number to reach you."
         }
         break
       case 'concern':
@@ -88,12 +88,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         break
       case 'preferredTime':
         if (!value) {
-          return 'Please select a preferred time'
+          return "Let me know what works best for your schedule."
         }
         break
       case 'consent':
         if (!value) {
-          return 'You must agree to the terms to proceed'
+          return "I need you to agree so I can move forward—your privacy matters to me too."
         }
         break
     }
