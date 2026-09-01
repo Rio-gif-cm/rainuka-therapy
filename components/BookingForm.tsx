@@ -33,7 +33,7 @@ interface BookingFormProps {
   preCommitmentData?: PreCommitmentData | null
 }
 
-export default function BookingForm({ preCommitmentData }: BookingFormProps = {}) {
+export default function BookingForm({ preCommitmentData }: BookingFormProps) {
   const [currentStep, setCurrentStep] = useState<FormStep>('contact')
   const [formData, setFormData] = useState({
     name: '',
