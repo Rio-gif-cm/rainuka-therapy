@@ -1,9 +1,11 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // Cache Headers for Better Performance
+  // Service Worker Support & Offline Caching
+  // Cache Headers for Better Performance on Repeat Visits
   headers: async () => {
     return [
+      // API routes: no cache (always fresh)
       {
         source: '/api/:path*',
         headers: [
@@ -13,6 +15,7 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Static assets: long-term cache
       {
         source: '/fonts/:path*',
         headers: [
@@ -22,26 +25,9 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Images: long-term cache
       {
         source: '/:path*.(svg|png|jpg|jpeg|webp|gif)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        source: '/:path*(js|css)',
         headers: [
           {
             key: 'Cache-Control',
@@ -52,13 +38,11 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  // Optimize images for mobile
+  // Optimize images for mobile (better LCP)
   images: {
     formats: ['image/avif', 'image/webp'],
-    deviceSizes: [320, 375, 425, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
 
-  // Minimal config - let Next.js defaults handle everything
   // Service Worker: 2026-08-31-18:45
 }
 
