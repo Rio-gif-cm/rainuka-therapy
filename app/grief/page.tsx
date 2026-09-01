@@ -532,8 +532,6 @@ export default function GriefPage() {
             </div>
           </section>
         )}
-
-        {/* Final CTA - Removed to prevent duplicate */}
       </main>
 
       <Footer />

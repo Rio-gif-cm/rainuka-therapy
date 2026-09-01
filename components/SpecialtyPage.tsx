@@ -273,7 +273,7 @@ export function SpecialtyGrid({ children, cols = 2 }: SpecialtyGridProps) {
 interface SpecialtyCardProps {
   accent: SpecialtyAccent
   title?: ReactNode
-  icon?: string
+  icon?: string | ReactNode
   eyebrow?: string
   children: ReactNode
 }
@@ -291,9 +291,9 @@ export function SpecialtyCard({ accent, title, icon, eyebrow, children }: Specia
       }}
     >
       {icon && (
-        <p className="text-3xl mb-3 mt-0" aria-hidden="true">
+        <div className="text-3xl mb-3 mt-0" aria-hidden="true">
           {icon}
-        </p>
+        </div>
       )}
       {eyebrow && (
         <p
