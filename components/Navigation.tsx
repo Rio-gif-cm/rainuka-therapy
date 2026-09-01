@@ -69,6 +69,7 @@ export default function Navigation() {
     { href: '/about', label: 'About' },
     { href: '/perinatal', label: 'Perinatal' },
     { href: '/adhd', label: 'ADHD' },
+    { href: '/couples', label: 'Couples' },
     { href: '/career', label: 'Career' },
     { href: '/guides', label: 'Guides' },
     { href: '/back-to-school', label: 'Back to School' },
