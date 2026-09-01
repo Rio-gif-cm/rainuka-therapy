@@ -1,57 +1,92 @@
 'use client'
 
 import Link from 'next/link'
+import { colors, styles } from '@/app/styles'
 
 export default function HeroSection() {
   return (
-    <section className="hero-section py-16 md:py-24">
-      <div className="container-base flex flex-col lg:flex-row items-center gap-12">
+    <section style={{ ...styles.section, backgroundColor: colors.warmGray[50] }}>
+      <div style={{ ...styles.container, display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
         {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-warm-gray-900 mb-6 leading-tight">
+        <div style={{ flex: 1, textAlign: 'center' }}>
+          <h1 style={styles.h1}>
             Therapy for what's been invisible or misunderstood
           </h1>
           
-          <p className="text-lg md:text-xl text-warm-gray-700 mb-6 font-medium">
+          <p style={{ ...styles.p, fontSize: '1.125rem', fontWeight: 500 }}>
             Perinatal & reproductive mental health • Adult ADHD • Career transitions
           </p>
 
-          <p className="text-base md:text-lg text-warm-gray-600 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 2.5rem' }}>
             Trauma-informed, culturally humble, and practical. I specialize in what feels stuck—and help you find clarity, belonging, and your own answers.
           </p>
 
           {/* Trust signals */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-8 justify-center lg:justify-start text-sm text-warm-gray-700 mb-10 font-medium">
-            <div className="flex items-center gap-2">
-              <span className="text-sage-600 text-lg">✓</span>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'center', marginBottom: '2.5rem', fontSize: '0.875rem', color: colors.warmGray[700], fontWeight: 500 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }}>✓</span>
               <span>Telehealth • Sliding Scale</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sage-600 text-lg">✓</span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
+              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }}>✓</span>
               <span>HIPAA Secure</span>
             </div>
           </div>
 
           {/* CTA Button */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Link href="/booking" className="btn btn-primary px-8 py-3 text-lg">
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
+            <Link 
+              href="/booking" 
+              style={{ 
+                ...styles.button,
+                ...styles.btnPrimary,
+                minWidth: '200px',
+              }}
+              onMouseEnter={(e) => {
+                const target = e.target as HTMLElement
+                target.style.backgroundColor = colors.sage[700]
+                target.style.boxShadow = `0 10px 25px rgba(107, 148, 79, 0.15)`
+              }}
+              onMouseLeave={(e) => {
+                const target = e.target as HTMLElement
+                target.style.backgroundColor = colors.sage[600]
+                target.style.boxShadow = 'none'
+              }}
+            >
               Book a Free 15-Minute Call
             </Link>
-            <Link href="/about" className="btn btn-outline px-8 py-3 text-lg">
+            <Link 
+              href="/about" 
+              style={{ 
+                ...styles.button,
+                ...styles.btnOutline,
+                minWidth: '200px',
+              }}
+            >
               Learn More About My Approach
             </Link>
           </div>
         </div>
 
         {/* Hero Image Placeholder */}
-        <div className="flex-1 w-full h-full">
-          <div className="aspect-square rounded-2xl bg-gradient-to-br from-sage-200 via-sage-100 to-warm-gray-100 overflow-hidden shadow-xl flex items-center justify-center border border-sage-200">
-            <div className="text-center px-4">
-              <div className="text-7xl mb-4 opacity-80">👩‍⚕️</div>
-              <p className="text-warm-gray-700 font-semibold text-lg mb-2">
+        <div style={{ flex: 1, width: '100%' }}>
+          <div style={{
+            aspectRatio: '1',
+            borderRadius: '1rem',
+            background: `linear-gradient(to bottom right, ${colors.sage[200]} 0%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
+            overflow: 'hidden',
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            border: `1px solid ${colors.sage[200]}`,
+          }}>
+            <div style={{ textAlign: 'center', padding: '1rem' }}>
+              <div style={{ fontSize: '4.5rem', marginBottom: '1rem', opacity: 0.8 }}>👩‍⚕️</div>
+              <p style={{ ...styles.p, color: colors.warmGray[700], fontWeight: 600, fontSize: '1.125rem', marginBottom: '0.5rem' }}>
                 Your Photo Here
               </p>
-              <p className="text-sm text-warm-gray-600">
+              <p style={{ ...styles.p, fontSize: '0.875rem', color: colors.warmGray[600] }}>
                 Update with Rainuka's professional headshot
               </p>
             </div>

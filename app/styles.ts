@@ -1,0 +1,116 @@
+// Design system colors and styles as JavaScript objects
+export const colors = {
+  sage: {
+    50: '#f8faf7',
+    100: '#e8ede5',
+    200: '#d1dcc8',
+    300: '#b5c7aa',
+    400: '#9dbb8d',
+    500: '#82a86c',
+    600: '#6b944f',
+    700: '#547c3f',
+  },
+  warmGray: {
+    50: '#faf9f7',
+    100: '#ede8e3',
+    200: '#ddd4cc',
+    300: '#c9b8ac',
+    600: '#7a6f68',
+    700: '#5e534a',
+    900: '#3f3935',
+  },
+  accent: '#d97757',
+}
+
+export const styles = {
+  body: {
+    fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    backgroundColor: colors.warmGray[50],
+    color: colors.warmGray[700],
+    lineHeight: '1.6',
+  },
+  h1: {
+    fontFamily: 'var(--font-merriweather), serif',
+    fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+    fontWeight: 700,
+    color: colors.warmGray[900],
+    lineHeight: '1.3',
+    letterSpacing: '-0.5px',
+    marginBottom: '1.5rem',
+  },
+  h2: {
+    fontFamily: 'var(--font-merriweather), serif',
+    fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
+    fontWeight: 700,
+    color: colors.warmGray[900],
+    lineHeight: '1.3',
+    letterSpacing: '-0.5px',
+    marginBottom: '1.5rem',
+  },
+  h3: {
+    fontFamily: 'var(--font-merriweather), serif',
+    fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
+    fontWeight: 700,
+    color: colors.warmGray[900],
+    lineHeight: '1.3',
+    letterSpacing: '-0.5px',
+    marginBottom: '1rem',
+  },
+  p: {
+    fontSize: '1rem',
+    lineHeight: '1.75',
+    marginBottom: '1rem',
+    color: colors.warmGray[700],
+  },
+  button: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '0.875rem 1.75rem',
+    fontWeight: 600,
+    fontSize: '1rem',
+    borderRadius: '0.5rem',
+    border: 'none',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
+  },
+  btnPrimary: {
+    backgroundColor: colors.sage[600],
+    color: 'white',
+  },
+  btnPrimaryHover: {
+    backgroundColor: colors.sage[700],
+    boxShadow: `0 10px 25px rgba(107, 148, 79, 0.15)`,
+  },
+  btnOutline: {
+    backgroundColor: 'transparent',
+    color: colors.sage[600],
+    border: `2px solid ${colors.sage[600]}`,
+  },
+  btnOutlineHover: {
+    backgroundColor: colors.sage[50],
+    borderColor: colors.sage[700],
+    color: colors.sage[700],
+  },
+  section: {
+    padding: '2rem 1rem',
+  },
+  container: {
+    maxWidth: '1200px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+  },
+  card: {
+    backgroundColor: 'white',
+    borderRadius: '0.75rem',
+    padding: '2rem',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
+    border: `1px solid ${colors.warmGray[200]}`,
+  },
+  cardHover: {
+    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+  },
+}

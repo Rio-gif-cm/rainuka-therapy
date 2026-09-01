@@ -1,68 +1,99 @@
+'use client'
+
 import Link from 'next/link'
+import { colors, styles } from '@/app/styles'
 
 export default function Footer() {
   return (
-    <footer className="bg-warm-gray-900 text-cream-50 py-12 md:py-16">
-      <div className="container-base">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-          {/* About */}
-          <div>
-            <h4 className="font-serif font-bold text-cream-50 mb-4">Rainuka Oberoi, LCSW</h4>
-            <p className="text-sm leading-relaxed text-cream-100">
-              Trauma-informed therapy for perinatal mental health, adult ADHD, and career transitions.
-            </p>
-          </div>
+    <footer style={{
+      backgroundColor: colors.warmGray[900],
+      color: 'white',
+      paddingTop: '4rem',
+      paddingBottom: '2rem',
+      marginTop: '4rem',
+    }}>
+      <div style={{
+        maxWidth: '1200px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        paddingLeft: '1rem',
+        paddingRight: '1rem',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gap: '2rem',
+        marginBottom: '2rem',
+      }}>
+        <div>
+          <h3 style={{ ...styles.h3, color: 'white', marginBottom: '1rem' }}>
+            About
+          </h3>
+          <p style={{ ...styles.p, color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>
+            Trauma-informed therapy for perinatal mental health, adult ADHD, and career transitions.
+          </p>
+        </div>
 
-          {/* Services */}
-          <div>
-            <h5 className="font-semibold text-cream-50 mb-4">Services</h5>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/perinatal" className="text-cream-100 hover:text-cream-50">Perinatal Mental Health</Link></li>
-              <li><Link href="/adhd" className="text-cream-100 hover:text-cream-50">ADHD Therapy</Link></li>
-              <li><Link href="/career" className="text-cream-100 hover:text-cream-50">Career Transitions</Link></li>
-            </ul>
-          </div>
+        <div>
+          <h3 style={{ ...styles.h3, color: 'white', marginBottom: '1rem' }}>
+            Quick Links
+          </h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/about" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                About
+              </Link>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/booking" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                Book
+              </Link>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/faq" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                FAQ
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-          {/* Links */}
-          <div>
-            <h5 className="font-semibold text-cream-50 mb-4">Quick Links</h5>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="text-cream-100 hover:text-cream-50">About</Link></li>
-              <li><Link href="/faq" className="text-cream-100 hover:text-cream-50">FAQ</Link></li>
-              <li><Link href="/contact" className="text-cream-100 hover:text-cream-50">Contact</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h5 className="font-semibold text-cream-50 mb-4">Get in Touch</h5>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="tel:+1-555-123-4567" className="text-cream-100 hover:text-cream-50">
-                  (555) 123-4567
-                </a>
-              </li>
-              <li>
-                <a href="mailto:contact@rainukatherapy.com" className="text-cream-100 hover:text-cream-50">
-                  contact@rainukatherapy.com
-                </a>
-              </li>
-              <li className="text-xs text-cream-100 mt-4">
+        <div>
+          <h3 style={{ ...styles.h3, color: 'white', marginBottom: '1rem' }}>
+            Get in Touch
+          </h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <a href="tel:+1-555-123-4567" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                (555) 123-4567
+              </a>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <a href="mailto:contact@rainukatherapy.com" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                contact@rainukatherapy.com
+              </a>
+            </li>
+            <li>
+              <p style={{ ...styles.p, color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem' }}>
                 Telehealth • Sliding Scale Available
-              </li>
-            </ul>
-          </div>
+              </p>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div className="border-t border-warm-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between text-xs text-cream-200">
-            <p>&copy; {new Date().getFullYear()} Rainuka Oberoi, LCSW. All rights reserved.</p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="hover:text-cream-50">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-cream-50">Terms</Link>
-            </div>
-          </div>
-        </div>
+      <div style={{
+        borderTop: `1px solid ${colors.warmGray[700]}`,
+        paddingTop: '2rem',
+        textAlign: 'center',
+        color: 'rgba(255,255,255,0.6)',
+        fontSize: '0.875rem',
+      }}>
+        <p style={{ margin: 0, marginBottom: '0.5rem' }}>
+          © 2026 Rainuka Oberoi, LCSW. All rights reserved.
+        </p>
+        <p style={{ margin: 0 }}>
+          <Link href="/privacy" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+            Privacy Policy
+          </Link>
+        </p>
       </div>
     </footer>
   )
