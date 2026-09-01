@@ -5,6 +5,10 @@ import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 import { testimonialsByCategory } from '@/src/data/testimonials'
+import { CouplesIcon } from '@/components/SpecialtyIcons'
+
+// Couples custom SVG color
+const couplesColor = '#e07856'
 
 export default function CouplesPage() {
   return (
@@ -13,12 +17,12 @@ export default function CouplesPage() {
 
       <main className="flex-grow">
         {/* Hero - Couples: Warm rose for connection, warmth, and intimacy */}
-        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(254, 242, 242, 1) 0%, rgba(255, 248, 247, 1) 100%)'}}>
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(244, 165, 157, 0.15) 0%, rgba(255, 248, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Couples & Relationship Therapy
             </h1>
-            <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto">
+            <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto" style={{color: couplesColor}}>
               Reconnect with clarity. Navigate conflict with compassion. Rebuild trust after betrayal.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">

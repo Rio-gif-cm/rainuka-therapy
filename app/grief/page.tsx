@@ -5,7 +5,11 @@ import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 import TestimonialCard from '@/components/TestimonialCard'
+import { GriefIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
+
+// Grief custom SVG color
+const griefColor = '#334458'
 
 export default function GriefPage() {
   return (
@@ -529,37 +533,7 @@ export default function GriefPage() {
           </section>
         )}
 
-        {/* Final CTA */}
-        <section className="section-padding bg-white" style={{borderTop: `1px solid #e5dcd4`}}>
-          <div className="container-base text-center max-w-3xl mx-auto">
-            <IconHeading icon="💜" level={2} color={colors.warmGray[900]}>
-              You're Not Alone in This
-            </IconHeading>
-
-            <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
-              Grief is one of the most isolating human experiences. The world keeps moving, but you feel stuck. 
-              People want you to be "fine" by now. You might feel like no one understands—the specific weight of YOUR loss, YOUR love, YOUR devastation.
-            </p>
-
-            <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
-              In therapy, I create space where your grief doesn't need to be small or fast or convenient. 
-              Where the love you had is honored. Where you're not "moving on" but learning to move differently, 
-              carrying them with you in a way that lets you also live.
-            </p>
-
-            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: '#3f566d'}}>
-              Your grief is not a problem to be solved. It's evidence of love. And you deserve support in honoring it.
-            </p>
-
-            <Link href="/booking" className="inline-block btn btn-primary text-lg px-8 py-3">
-              Let's Talk About Your Loss
-            </Link>
-
-            <p className="text-warm-gray-600 text-sm mt-6">
-              Free 30-minute consultation • Confidential • Trauma-informed approach
-            </p>
-          </div>
-        </section>
+        {/* Final CTA - Removed to prevent duplicate */}
       </main>
 
       <Footer />
