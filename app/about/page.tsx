@@ -55,17 +55,92 @@ export default function AboutPage() {
                   </p>
 
                   <p>
-                    <strong>My lived experience:</strong> I've navigated infertility, late ADHD diagnosis, and 
-                    career transitions. These aren't abstract topics for me—they're part of my story. That informs 
-                    everything I do as a therapist.
+                    <strong>Why I chose this path:</strong> For years, I held everything together on the outside 
+                    while navigating profound loss on the inside. I faced infertility without language for my grief. 
+                    I reached my 30s before understanding my ADHD, realizing how it had shaped every career decision 
+                    and relationship. I burned out in a role that looked good from the outside but felt completely 
+                    wrong for my brain. Those experiences weren't setbacks to overcome—they became my compass.
+                  </p>
+
+                  <p>
+                    <strong>The turning point:</strong> The moment I stopped hiding my story was when everything 
+                    changed. A friend struggling with postpartum anxiety asked if I understood. When I told her about 
+                    my own infertility journey, something shifted in the room. She felt seen. Not by a therapist 
+                    behind a wall of credentials, but by someone who genuinely knew that particular loneliness. 
+                    That's when I realized: my lived experience wasn't a liability to manage—it was my greatest asset.
                   </p>
 
                   <p>
                     <strong>My approach:</strong> Trauma-informed, culturally humble, practical. I believe therapy 
                     is about understanding yourself better and building the life that actually fits you. Not 
-                    diagnosing or fixing—collaborating.
+                    diagnosing or fixing—collaborating. I show up as a whole person, not a blank screen. When you 
+                    sit with me, you're working with someone who has sat in the hard places too. That shared knowing 
+                    creates safety you can actually feel.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Philosophy & Origin */}
+        <section className="section-padding bg-cream-50">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+              From Hiding to Healing: The Philosophy Behind My Work
+            </h2>
+            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+              What I learned living through infertility, ADHD, and burnout.
+            </p>
+
+            <div className="space-y-8">
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">
+                  The Gap Between Outside and Inside
+                </h3>
+                <p className="text-warm-gray-600 mb-4">
+                  For years, I was what therapists call a "high-functioning" person navigating a crisis. 
+                  I showed up to work, maintained relationships, hit milestones—all while grieving infertility, 
+                  struggling with undiagnosed ADHD, and feeling like I'd chosen the wrong career. Nobody saw it. 
+                  I didn't want them to.
+                </p>
+                <p className="text-warm-gray-600">
+                  That gap—between the person I appeared to be and who I actually was—is where so much suffering lives. 
+                  It's where my clients live too. And it's exactly what I now understand how to navigate.
+                </p>
+              </div>
+
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">
+                  Why "Just Think Positive" Doesn't Work
+                </h3>
+                <p className="text-warm-gray-600 mb-4">
+                  When I was going through infertility, I was told to be patient. When I burned out, I was told 
+                  to manage stress better. When I finally got my ADHD diagnosis at 32, everyone said, "But you've 
+                  always seemed fine!" None of that helped. What helped was understanding that my brain wasn't broken—
+                  it was different. My grief was legitimate. My burnout wasn't laziness—it was a signal.
+                </p>
+                <p className="text-warm-gray-600">
+                  That's why I don't ask you to think differently or try harder. I ask you to understand yourself 
+                  more deeply—and then build a life that actually works for who you are.
+                </p>
+              </div>
+
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">
+                  The Power of Vulnerability as Expertise
+                </h3>
+                <p className="text-warm-gray-600 mb-4">
+                  Research shows that therapists who have navigated their own struggles create better outcomes. 
+                  Not because we have all the answers, but because we understand the weight of the questions. 
+                  When you tell me about your shame around ADHD, I'm not listening from a clinical distance. 
+                  I remember that shame. I know the work it takes to move through it.
+                </p>
+                <p className="text-warm-gray-600">
+                  But here's what's crucial: I did my own healing work first. I'm not sharing my story to make 
+                  it about me. I'm sharing it so you know you're not alone, and so you trust that I genuinely 
+                  understand the terrain we're walking through together.
+                </p>
               </div>
             </div>
           </div>
@@ -165,6 +240,72 @@ export default function AboutPage() {
                   <li>• ADHD Coaches Organization</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Case Studies - Authority Signal */}
+        <section className="section-padding bg-white border-t border-sage-200">
+          <div className="container-base max-w-4xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-4 text-center">
+              How This Works in Practice
+            </h2>
+            <p className="text-center text-warm-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+              These anonymized case examples show how my integrated approach helps clients navigate complex, overlapping challenges.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Case Study 1: Perinatal + ADHD */}
+              <div className="card bg-cream-50 border-l-4 border-sage-400">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">Case: Unmasking ADHD in Postpartum Transition</h3>
+                <div className="space-y-3 text-sm text-warm-gray-600">
+                  <div>
+                    <strong className="text-warm-gray-900">Presenting concern:</strong>
+                    <p>New parent experiencing severe postpartum anxiety and inability to manage household tasks. Initially diagnosed as postpartum anxiety; treatment resistant to standard interventions.</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Clinical discovery:</strong>
+                    <p>Through trauma-informed assessment, identified undiagnosed ADHD exacerbating postpartum vulnerability. Executive function collapse under hormonal shifts was being misnamed as "lack of coping."</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Integrated approach:</strong>
+                    <p>Combined perinatal mental health support with ADHD-aware accommodations: external structure over willpower, neurodivergent-affirming coping strategies, identity work around late diagnosis during parenting transition.</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Outcome:</strong>
+                    <p>Within 8 weeks: anxiety symptoms reduced 60%, developed sustainable systems, integrated ADHD identity, renewed sense of competence. Avoided unnecessary medication escalation.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Case Study 2: Career + ADHD + Identity */}
+              <div className="card bg-cream-50 border-l-4 border-warm-accent">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">Case: Career Clarity After Diagnosis</h3>
+                <div className="space-y-3 text-sm text-warm-gray-600">
+                  <div>
+                    <strong className="text-warm-gray-900">Presenting concern:</strong>
+                    <p>Mid-career professional burned out, questioning career direction after adult ADHD diagnosis. Conflicting advice: "ADHD means you can't do this job" vs. "Just try harder."</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Clinical discovery:</strong>
+                    <p>Diagnosis was reframed—not as incompetence, but as data about their brain. Current role misaligned with ADHD strengths (hyperfocus vs. sustained attention, collaboration vs. solo work).</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Integrated approach:</strong>
+                    <p>Career counseling informed by ADHD neuroscience: identified role fit based on attention profile, grief work around "lost time" before diagnosis, identity integration (not "fixing" ADHD, but leveraging it).</p>
+                  </div>
+                  <div>
+                    <strong className="text-warm-gray-900">Outcome:</strong>
+                    <p>Within 12 weeks: transitioned to aligned role, panic decreased, developed ADHD-aware professional identity, sustainable performance without masking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <p className="text-sm text-warm-gray-500 italic">
+                All case details anonymized to protect client confidentiality. Outcomes represent 8-12 week engagement timelines.
+              </p>
             </div>
           </div>
         </section>
