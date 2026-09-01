@@ -54,15 +54,15 @@ export default function HeroSection() {
         {/* Text Content */}
         <div style={{ flex: 1, textAlign: 'center' }}>
           <h1 style={styles.h1}>
-            Therapy for what you've been carrying alone
+            You don't have to carry this alone
           </h1>
           
           <p style={{ ...styles.p, fontSize: '1.125rem', fontWeight: 500 }}>
-            I specialize in what feels stuck: perinatal anxiety, adult ADHD diagnosis, and career crossroads
+            Perinatal anxiety. Late ADHD. Career doubt. These require understanding—and you'll get it here.
           </p>
 
           <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 1.5rem' }}>
-            Trauma-informed, culturally humble, and practical. I specialize in what feels stuck—and help you find clarity, belonging, and your own answers.
+            I meet you where you are. We work at your pace. You'll find your answers—not mine.
           </p>
 
           {/* MULTI-PERSONA DISCOVERY: Selector in Hero */}
@@ -81,7 +81,7 @@ export default function HeroSection() {
               color: colors.sage[700],
               marginBottom: '1.25rem',
             }}>
-              Which applies to you? (You might see yourself in more than one—that's exactly why I specialize in what feels stuck.)
+              Which one resonates? (Many of you see yourselves in multiple—and that's the work we do.)
             </p>
             
             <div style={{
@@ -206,12 +206,12 @@ export default function HeroSection() {
 
           {/* Fear-reduction messaging */}
           <p style={{ ...styles.p, fontSize: '0.9rem', color: colors.sage[700], fontWeight: 500, maxWidth: '42rem', margin: '0 auto 1rem', fontStyle: 'italic' }}>
-            Whether you've been in therapy before or this is your first time—there's no judgment here. You're not broken for reaching out. You're taking care of yourself.
+            First time or returning: you belong here. Seeking help isn't weakness—it's wisdom.
           </p>
 
           {/* First session clarity - addresses uncertainty barrier */}
           <p style={{ ...styles.p, fontSize: '0.875rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 2rem' }}>
-            Your first session: a conversation where you share what brought you here at your own pace. I listen, and we see if we're a good fit. You're in control.
+            First session: you talk, I listen. We'll know within 15 minutes if we fit. You lead the pace.
           </p>
 
           {/* Trust signals + Scarcity */}
@@ -231,11 +231,11 @@ export default function HeroSection() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
               <span style={{ color: colors.sage[600], fontSize: '1.125rem' }} aria-hidden="true">✓</span>
-              <span>HIPAA Secure</span>
+              <span>HIPAA Secure • I respond within 24h</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center', color: colors.warmGray[700], fontWeight: 600 }}>
               <span style={{ fontSize: '1.125rem' }} aria-hidden="true">⏰</span>
-              <span>Respond within 24 hours • Usually available within 1-2 weeks</span>
+              <span>Book within 1-2 weeks</span>
             </div>
           </div>
 
@@ -269,7 +269,7 @@ export default function HeroSection() {
                 target.style.outline = '2px solid transparent'
               }}
             >
-              Book a Free 15-Minute Call
+              Book Your Free Call
             </Link>
             <Link 
               href="/about" 
@@ -290,7 +290,7 @@ export default function HeroSection() {
                 target.style.outline = '2px solid transparent'
               }}
             >
-              See How I Work
+              Learn My Approach
             </Link>
           </div>
         </div>
