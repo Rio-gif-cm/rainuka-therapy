@@ -71,6 +71,58 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Why the Combination Matters */}
+        <section className="section-padding bg-warm-accent-light">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+              Why Perinatal + ADHD + Career
+            </h2>
+            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+              It's not three separate specializations. It's one integrated lens that catches what generalists miss.
+            </p>
+
+            <div className="space-y-8">
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">The Clinical Reality</h3>
+                <ul className="space-y-3 text-warm-gray-600">
+                  <li>
+                    <strong>Postpartum ADHD is underdiagnosed.</strong> Women with ADHD are 5x more likely to experience postpartum depression and anxiety—not because of mental illness alone, but because undiagnosed ADHD is a risk factor. Most therapists screen for depression; few screen for ADHD. The condition goes unnamed.
+                  </li>
+                  <li>
+                    <strong>Career transitions during perinatal shifts are high-risk.</strong> Matrescence—the identity transformation of becoming a parent—intersects with professional identity in ways that require clinical understanding, not just career coaching. Your executive function changes under hormonal and life transition stress.
+                  </li>
+                  <li>
+                    <strong>Generalists treat these separately; specialists see the connection.</strong> When perinatal mood, ADHD symptoms, and career indecision are addressed as one integrated story, not three separate problems, clarity emerges faster and shame decreases.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">Why This Combination Matters for You</h3>
+                <p className="text-warm-gray-600 mb-4">
+                  Many of my clients come in saying: "I feel like I'm falling apart postpartum. Am I depressed? Is it burnout? Am I in the wrong career? Do I need to quit?"
+                </p>
+                <p className="text-warm-gray-600 mb-4">
+                  The answer is often: "Yes, and also your ADHD. And that's making everything harder."
+                </p>
+                <p className="text-warm-gray-600">
+                  When we address all three together—recognizing how undiagnosed ADHD amplifies postpartum vulnerability, how perinatal shifts change executive function, how career decisions need to account for your neurodivergent brain under stress—you don't have to bounce between specialists. You get one coherent understanding of what's actually happening.
+                </p>
+              </div>
+
+              <div className="card bg-white">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">The Evidence</h3>
+                <ul className="space-y-2 text-warm-gray-600 text-sm">
+                  <li>✓ Specialist clinicians achieve significantly greater reductions in postpartum mood symptoms than generalists</li>
+                  <li>✓ Coordinated care addressing multiple domains results in higher treatment engagement and better outcomes</li>
+                  <li>✓ Women with ADHD show cyclical symptom patterns during reproductive transitions that require specialized understanding</li>
+                  <li>✓ Career identity transitions during perinatal periods benefit from integrated perinatal + neurodivergent-aware approaches</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Credentials */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">

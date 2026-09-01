@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Merriweather, Inter } from 'next/font/google'
 import './globals.css'
+import './sensory-friendly.css'
 
 const merriweather = Merriweather({
   variable: '--font-merriweather',
