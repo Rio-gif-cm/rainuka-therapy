@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 
 export default function HeroSection() {
   const [isMobile, setIsMobile] = useState(false)
+  const [selectedPersona, setSelectedPersona] = useState<string | null>(null)
 
   useEffect(() => {
     const handleResize = () => {
@@ -16,6 +17,30 @@ export default function HeroSection() {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
+
+  const personas = [
+    {
+      id: 'perinatal',
+      label: 'Perinatal Mental Health',
+      emoji: '🤰',
+      description: 'Pregnancy loss, infertility, postpartum anxiety—what you\'re carrying isn\'t weakness.',
+      link: '/perinatal',
+    },
+    {
+      id: 'adhd',
+      label: 'ADHD Therapy',
+      emoji: '🧠',
+      description: 'Late ADHD diagnosis? That shame + relief = what we work with.',
+      link: '/adhd',
+    },
+    {
+      id: 'career',
+      label: 'Career Transitions',
+      emoji: '🚀',
+      description: 'Career doubt, burnout, identity questions—transitions are hard. You don\'t have to figure it out alone.',
+      link: '/career',
+    },
+  ]
 
   return (
     <section style={{ ...styles.section, backgroundColor: colors.warmGray[50] }}>
@@ -39,6 +64,101 @@ export default function HeroSection() {
           <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 1.5rem' }}>
             Trauma-informed, culturally humble, and practical. I specialize in what feels stuck—and help you find clarity, belonging, and your own answers.
           </p>
+
+          {/* MULTI-PERSONA DISCOVERY: Selector in Hero */}
+          <div style={{ 
+            margin: '2rem auto',
+            padding: '2rem',
+            backgroundColor: colors.sage[50],
+            borderRadius: '0.75rem',
+            border: `1px solid ${colors.sage[200]}`,
+            maxWidth: '42rem',
+          }}>
+            <p style={{ 
+              ...styles.p, 
+              fontSize: '0.95rem', 
+              fontWeight: 600, 
+              color: colors.sage[700],
+              marginBottom: '1.25rem',
+            }}>
+              Which applies to you? (You might see yourself in more than one—that's exactly why I specialize in what feels stuck.)
+            </p>
+            
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, 1fr)',
+              gap: '0.75rem',
+            }}>
+              {personas.map((persona) => (
+                <button
+                  key={persona.id}
+                  onClick={() => setSelectedPersona(selectedPersona === persona.id ? null : persona.id)}
+                  style={{
+                    padding: '0.75rem 1rem',
+                    borderRadius: '0.5rem',
+                    border: `2px solid ${selectedPersona === persona.id ? colors.sage[600] : colors.sage[200]}`,
+                    backgroundColor: selectedPersona === persona.id ? colors.sage[100] : 'white',
+                    color: colors.sage[900],
+                    fontSize: '0.875rem',
+                    fontWeight: selectedPersona === persona.id ? 600 : 500,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                  }}
+                  onMouseEnter={(e) => {
+                    const target = e.currentTarget as HTMLElement
+                    target.style.backgroundColor = colors.sage[50]
+                    target.style.borderColor = colors.sage[400]
+                  }}
+                  onMouseLeave={(e) => {
+                    const target = e.currentTarget as HTMLElement
+                    target.style.backgroundColor = selectedPersona === persona.id ? colors.sage[100] : 'white'
+                    target.style.borderColor = selectedPersona === persona.id ? colors.sage[600] : colors.sage[200]
+                  }}
+                >
+                  <span style={{ marginRight: '0.5rem' }}>{persona.emoji}</span>
+                  {persona.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Show selected persona details */}
+            {selectedPersona && (
+              <div style={{
+                marginTop: '1.25rem',
+                paddingTop: '1.25rem',
+                borderTop: `1px solid ${colors.sage[200]}`,
+                animation: 'fadeIn 0.3s ease',
+              }}>
+                {personas
+                  .filter((p) => p.id === selectedPersona)
+                  .map((persona) => (
+                    <div key={persona.id}>
+                      <p style={{
+                        ...styles.p,
+                        color: colors.warmGray[700],
+                        marginBottom: '1rem',
+                        fontSize: '0.95rem',
+                      }}>
+                        {persona.description}
+                      </p>
+                      <Link
+                        href={persona.link}
+                        style={{
+                          display: 'inline-block',
+                          color: colors.sage[600],
+                          fontWeight: 600,
+                          fontSize: '0.875rem',
+                          textDecoration: 'none',
+                          borderBottom: `2px solid ${colors.sage[600]}`,
+                        }}
+                      >
+                        Learn more about {persona.label} →
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            )}
+          </div>
 
           {/* Fear-reduction messaging */}
           <p style={{ ...styles.p, fontSize: '0.9rem', color: colors.sage[700], fontWeight: 500, maxWidth: '42rem', margin: '0 auto 1rem', fontStyle: 'italic' }}>
@@ -170,6 +290,14 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Add fadeIn animation */}
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   )
 }

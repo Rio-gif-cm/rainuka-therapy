@@ -31,6 +31,11 @@ const specialties = [
 ]
 
 export default function NicheGrid() {
+  // Get all specialty links for "Explore other specialties" feature
+  const getOtherSpecialties = (currentSlug: string) => {
+    return specialties.filter((s) => s.slug !== currentSlug)
+  }
+
   return (
     <section style={{ ...styles.section, backgroundColor: 'white' }}>
       <div style={styles.container}>
@@ -39,7 +44,7 @@ export default function NicheGrid() {
             What I Specialize In
           </h2>
           <p style={{ ...styles.p, maxWidth: '42rem', margin: '0 auto', fontSize: '1.0625rem', color: colors.warmGray[600] }}>
-            Three areas where I've developed deep expertise—and where you might find yourself.
+            Three areas where I've developed deep expertise—and where you might find yourself. (Many clients discover they need support in more than one area.)
           </p>
         </div>
 
@@ -57,6 +62,7 @@ export default function NicheGrid() {
                   backgroundColor: 'white',
                   outline: '2px solid transparent',
                   outlineOffset: '2px',
+                  position: 'relative',
                 }}
                 onFocus={(e) => {
                   const el = e.currentTarget
@@ -87,9 +93,51 @@ export default function NicheGrid() {
                 >
                   Explore →
                 </span>
+
+                {/* MULTI-PERSONA: Cross-reference other specialties */}
+                {getOtherSpecialties(specialty.slug).length > 0 && (
+                  <div style={{
+                    marginTop: '1rem',
+                    paddingTop: '1rem',
+                    borderTop: `1px solid ${colors.sage[100]}`,
+                    fontSize: '0.8rem',
+                    color: colors.sage[600],
+                    fontStyle: 'italic',
+                  }}>
+                    💡 See also: {getOtherSpecialties(specialty.slug)
+                      .map((s) => s.title)
+                      .join(', ')}
+                  </div>
+                )}
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* MULTI-PERSONA: Expanded context for overlapping needs */}
+        <div style={{
+          marginTop: '3rem',
+          padding: '2rem',
+          backgroundColor: colors.sage[50],
+          borderRadius: '0.75rem',
+          border: `1px solid ${colors.sage[200]}`,
+          textAlign: 'center',
+        }}>
+          <p style={{
+            ...styles.p,
+            fontSize: '1rem',
+            color: colors.warmGray[700],
+            marginBottom: '1rem',
+          }}>
+            <strong>Finding yourself in multiple areas?</strong> That's common and expected. Many of my clients come in thinking they need support in one area, only to discover another piece of the puzzle—and that's where real progress happens.
+          </p>
+          <p style={{
+            ...styles.p,
+            fontSize: '0.95rem',
+            color: colors.warmGray[600],
+          }}>
+            In our first conversation, we'll figure out what feels most urgent right now and how the pieces fit together. No judgment, just clarity.
+          </p>
         </div>
       </div>
     </section>
