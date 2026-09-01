@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import { Merriweather, Inter } from 'next/font/google'
 import './globals.css'
 import './sensory-friendly.css'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import './micro-interactions.css'
+import GoogleAnalyticsWrapper from '@/components/GoogleAnalyticsWrapper'
 
 const merriweather = Merriweather({
   variable: '--font-merriweather',
@@ -206,7 +207,7 @@ export default function RootLayout({
         }}
       >
         {/* Google Analytics 4 - Event Tracking Setup */}
-        <GoogleAnalytics />
+        <GoogleAnalyticsWrapper />
 
         {/* Service Worker Registration & Performance Monitoring */}
         <ServiceWorkerRegister />

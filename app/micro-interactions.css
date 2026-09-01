@@ -1,0 +1,294 @@
+/* ========================================
+   UX ENHANCEMENT WAVE 1: MICRO-INTERACTIONS
+   Strategic visual feedback for interactive elements
+   
+   Key Principles:
+   - Delight without distraction (250-500ms interactions)
+   - Accessibility-first (respects prefers-reduced-motion)
+   - Consistent feedback pattern across elements
+   - Psychology: micro-interactions build confidence + trust
+   ======================================== */
+
+/* ========================================
+   1. LINK UNDERLINE SLIDE ANIMATION
+   Creates elastic reveal effect on hover
+   Psychology: Shows interactivity before click
+   ======================================== */
+
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--sage-600);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0.6;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  background-color: var(--sage-700);
+  opacity: 1;
+}
+
+/* Reduce motion support */
+@media (prefers-reduced-motion: reduce) {
+  a::after {
+    transition: none;
+  }
+  
+  a:hover::after {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   2. FORM INPUT FOCUS SPARKLE EFFECT
+   Micro-animation that draws attention to field
+   Psychology: Satisfying visual reward for interaction
+   ======================================== */
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 
+      0 0 0 3px rgba(157, 187, 141, 0.15),
+      inset 0 1px 2px rgba(157, 187, 141, 0.08),
+      0 0 0 0 rgba(107, 148, 79, 0.4);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 3px rgba(157, 187, 141, 0.25),
+      inset 0 1px 2px rgba(157, 187, 141, 0.12),
+      0 0 12px 6px rgba(107, 148, 79, 0);
+  }
+  100% {
+    box-shadow: 
+      0 0 0 3px rgba(157, 187, 141, 0.15),
+      inset 0 1px 2px rgba(157, 187, 141, 0.08),
+      0 0 0 0 rgba(107, 148, 79, 0);
+  }
+}
+
+/* Apply sparkle to form inputs on focus */
+.form-input:focus,
+.form-select:focus,
+textarea:focus {
+  animation: sparkle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-input:focus,
+  .form-select:focus,
+  textarea:focus {
+    animation: none;
+  }
+}
+
+/* ========================================
+   3. BUTTON PRESS FEEDBACK (Enhanced)
+   Compress + bounce effect on click
+   Psychology: Tactile feedback builds confidence
+   ======================================== */
+
+@keyframes buttonPress {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.96);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
+
+.btn-primary:active {
+  animation: buttonPress 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.btn-outline:active {
+  animation: buttonPress 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary:active,
+  .btn-outline:active {
+    animation: none;
+  }
+}
+
+/* ========================================
+   4. CARD ENTRANCE STAGGER ANIMATION
+   Staged reveal effect for grids of cards
+   Psychology: Guides user attention, reduces cognitive overload
+   ======================================== */
+
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-card-enter {
+  animation: cardEnter 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Stagger effect for multiple cards (nth-child delay) */
+.card:nth-child(1) { animation-delay: 0ms; }
+.card:nth-child(2) { animation-delay: 80ms; }
+.card:nth-child(3) { animation-delay: 160ms; }
+.card:nth-child(4) { animation-delay: 240ms; }
+.card:nth-child(5) { animation-delay: 320ms; }
+.card:nth-child(n+6) { animation-delay: 400ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-card-enter {
+    animation: none;
+  }
+}
+
+/* ========================================
+   5. HOVER DELAY FOR SMOOTHNESS
+   Prevents accidental hover triggers
+   Psychology: Reduces "jumpy" feel, increases perceived polish
+   
+   Uses media query to only apply on desktop (where hover is real)
+   ======================================== */
+
+@media (hover: hover) and (pointer: fine) {
+  /* Cards: Small delay before lifting */
+  .card {
+    transition-delay: 0.08s;
+  }
+
+  /* Buttons: Consistent hover delay */
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    transition-delay: 0.05s;
+  }
+}
+
+/* Touch devices: No delay (immediate feedback) */
+@media (hover: none) and (pointer: coarse) {
+  .card,
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    transition-delay: 0s;
+  }
+}
+
+/* ========================================
+   ENHANCED NICHE CARD MICRO-INTERACTIONS
+   Combine multiple micro-interactions for richness
+   ======================================== */
+
+.niche-card {
+  position: relative;
+  overflow: visible;
+}
+
+/* Enhanced arrow animation */
+.explore-arrow {
+  display: inline-block;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--sage-600);
+}
+
+.niche-card:hover .explore-arrow {
+  color: var(--sage-700);
+  transform: translateX(4px);
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(6px);
+  }
+}
+
+.niche-card:hover .explore-arrow {
+  animation: arrowPulse 0.6s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explore-arrow {
+    transition: none;
+  }
+
+  .niche-card:hover .explore-arrow {
+    animation: none;
+    transform: translateX(4px);
+  }
+}
+
+/* ========================================
+   FORM STATE MICRO-INTERACTIONS
+   Success and error states with visual feedback
+   ======================================== */
+
+@keyframes successPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(22, 163, 74, 0);
+  }
+}
+
+.form-input.border-green-500:focus {
+  animation: successPulse 0.6s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-input.border-green-500:focus {
+    animation: none;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY: REDUCED MOTION SUPPORT
+   Respects OS-level prefers-reduced-motion setting
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all micro-interactions */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Keep functional states (color, opacity) but no motion */
+  a {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
