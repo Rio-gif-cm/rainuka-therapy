@@ -450,7 +450,7 @@ export default function BookingForm() {
       {currentStep === 'confirmation' && (
         <div className="space-y-4 animate-fade-in-up">
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
-            Almost there — let&apos;s get you support
+            You&apos;re almost there
           </h3>
 
           <div className="card bg-sage-50 border border-sage-200">
@@ -469,8 +469,8 @@ export default function BookingForm() {
               <div className="flex gap-2">
                 <span className="text-xl">⏰</span>
                 <div>
-                  <p className="text-sm font-semibold text-warm-gray-900">Spots filling this month</p>
-                  <p className="text-xs text-warm-gray-600 mt-1">I respond to all requests within 24 hours. Most clients see me within 1-2 weeks.</p>
+                  <p className="text-sm font-semibold text-warm-gray-900">What&apos;s next</p>
+                  <p className="text-xs text-warm-gray-600 mt-1">I&apos;ll review your information and respond within 24 hours with available times for our free 15-minute call. Most people meet with me within 1-2 weeks.</p>
                 </div>
               </div>
               <div className="flex gap-2">
