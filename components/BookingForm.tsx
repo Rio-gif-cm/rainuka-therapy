@@ -260,12 +260,12 @@ export default function BookingForm() {
               className={`form-input transition-all ${
                 fieldTouched.name
                   ? fieldErrors.name
-                    ? 'border-red-500 bg-red-50 focus:border-red-500 focus:box-shadow-red'
+                    ? 'border-red-500 bg-red-50 focus:border-red-500'
                     : 'border-green-500 bg-green-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.name && !!fieldErrors.name}
-              aria-describedby={fieldTouched.name && fieldErrors.name ? `name-error` : undefined}
+              aria-describedby={fieldTouched.name && fieldErrors.name ? 'name-error' : undefined}
               required
             />
             {fieldTouched.name && fieldErrors.name && (
@@ -302,7 +302,7 @@ export default function BookingForm() {
                   : ''
               }`}
               aria-invalid={fieldTouched.email && !!fieldErrors.email}
-              aria-describedby={fieldTouched.email && fieldErrors.email ? `email-error` : undefined}
+              aria-describedby={fieldTouched.email && fieldErrors.email ? 'email-error' : undefined}
               required
             />
             {fieldTouched.email && fieldErrors.email && (
@@ -339,7 +339,7 @@ export default function BookingForm() {
                   : ''
               }`}
               aria-invalid={fieldTouched.phone && !!fieldErrors.phone}
-              aria-describedby={fieldTouched.phone && fieldErrors.phone ? `phone-error` : undefined}
+              aria-describedby={fieldTouched.phone && fieldErrors.phone ? 'phone-error' : undefined}
               required
             />
             {fieldTouched.phone && fieldErrors.phone && (
@@ -363,33 +363,71 @@ export default function BookingForm() {
           </h3>
 
           <div>
-            <label htmlFor="concern" className="form-label">
-              What's your primary concern? *
-            </label>
+            <div className="flex items-center justify-between mb-1">
+              <label htmlFor="concern" className="form-label">
+                What's your primary concern? *
+              </label>
+              {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
+                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                  ✓ Valid
+                </span>
+              )}
+            </div>
             <textarea
               id="concern"
               name="concern"
               value={formData.concern}
               onChange={handleInputChange}
+              onBlur={handleFieldBlur}
               placeholder="Share what's been on your mind... (just a few sentences is fine)"
-              className="form-input h-32 resize-none"
+              className={`form-input h-32 resize-none transition-all ${
+                fieldTouched.concern
+                  ? fieldErrors.concern
+                    ? 'border-red-500 bg-red-50 focus:border-red-500'
+                    : 'border-green-500 bg-green-50'
+                  : ''
+              }`}
+              aria-invalid={fieldTouched.concern && !!fieldErrors.concern}
+              aria-describedby={fieldTouched.concern && fieldErrors.concern ? 'concern-error' : 'concern-help'}
               required
             />
-            <p className="text-sm text-warm-gray-500 mt-2">
-              This helps me understand what you're navigating.
-            </p>
+            {fieldTouched.concern && fieldErrors.concern ? (
+              <p id="concern-error" className="text-red-600 text-sm mt-2 font-medium">
+                {fieldErrors.concern}
+              </p>
+            ) : (
+              <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
+                This helps me understand what you're navigating.
+              </p>
+            )}
           </div>
 
           <div>
-            <label htmlFor="preferredTime" className="form-label">
-              When are you usually available? *
-            </label>
+            <div className="flex items-center justify-between mb-1">
+              <label htmlFor="preferredTime" className="form-label">
+                When are you usually available? *
+              </label>
+              {formData.preferredTime && !fieldErrors.preferredTime && fieldTouched.preferredTime && (
+                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                  ✓ Valid
+                </span>
+              )}
+            </div>
             <select
               id="preferredTime"
               name="preferredTime"
               value={formData.preferredTime}
               onChange={handleInputChange}
-              className="form-input"
+              onBlur={handleFieldBlur}
+              className={`form-input transition-all ${
+                fieldTouched.preferredTime
+                  ? fieldErrors.preferredTime
+                    ? 'border-red-500 bg-red-50 focus:border-red-500'
+                    : 'border-green-500 bg-green-50'
+                  : ''
+              }`}
+              aria-invalid={fieldTouched.preferredTime && !!fieldErrors.preferredTime}
+              aria-describedby={fieldTouched.preferredTime && fieldErrors.preferredTime ? 'preferredTime-error' : undefined}
               required
             >
               <option value="">Select a time preference</option>
@@ -399,6 +437,11 @@ export default function BookingForm() {
               <option value="weekends">Weekends</option>
               <option value="flexible">Flexible</option>
             </select>
+            {fieldTouched.preferredTime && fieldErrors.preferredTime && (
+              <p id="preferredTime-error" className="text-red-600 text-sm mt-2 font-medium">
+                {fieldErrors.preferredTime}
+              </p>
+            )}
           </div>
         </div>
       )}
@@ -446,21 +489,65 @@ export default function BookingForm() {
             </p>
           </div>
 
-          <div className="flex items-start gap-3">
-            <input type="checkbox" id="consent" className="mt-1" required />
-            <label htmlFor="consent" className="text-sm text-warm-gray-600">
+          <div className={`flex items-start gap-3 p-4 rounded-lg transition-all ${
+            fieldTouched.consent && fieldErrors.consent
+              ? 'bg-red-50 border border-red-300'
+              : ''
+          }`}>
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              checked={formData.consent}
+              onChange={handleInputChange}
+              onBlur={handleFieldBlur}
+              className="mt-1.5 w-4 h-4 cursor-pointer"
+              aria-invalid={fieldTouched.consent && !!fieldErrors.consent}
+              aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
+            />
+            <label htmlFor="consent" className="text-sm text-warm-gray-600 cursor-pointer flex-1">
               I agree to be contacted by email and phone. I've read and understand the privacy policy.
             </label>
           </div>
+          {fieldTouched.consent && fieldErrors.consent && (
+            <p id="consent-error" className="text-red-600 text-sm font-medium">
+              {fieldErrors.consent}
+            </p>
+          )}
         </div>
       )}
 
       {/* Success Message */}
       {submitSuccess && (
-        <div className="card bg-green-50 border border-green-200 animate-fade-in-up">
-          <p className="text-green-900 font-semibold">
-            ✓ Thank you! I've received your information. You'll hear from me within 24 hours.
-          </p>
+        <div className="card bg-green-50 border-2 border-green-400 animate-fade-in-up">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">✓</span>
+            <div className="flex-1">
+              <p className="text-green-900 font-semibold mb-1">
+                Booking submitted successfully!
+              </p>
+              <p className="text-green-800 text-sm">
+                Thank you! I've received your information. You'll receive a confirmation email within 24 hours with available times for your free 15-minute consultation call.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Error Message */}
+      {submitError && (
+        <div className="card bg-red-50 border-2 border-red-400 animate-fade-in-up">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">⚠</span>
+            <div className="flex-1">
+              <p className="text-red-900 font-semibold mb-1">
+                Something went wrong
+              </p>
+              <p className="text-red-800 text-sm">
+                {submitError}
+              </p>
+            </div>
+          </div>
         </div>
       )}
 
@@ -473,7 +560,7 @@ export default function BookingForm() {
               if (currentStep === 'concern') setCurrentStep('contact')
               if (currentStep === 'confirmation') setCurrentStep('concern')
             }}
-            className="btn btn-outline"
+            className="btn btn-outline transition-all hover:shadow-md active:shadow-sm"
           >
             Back
           </button>
@@ -483,7 +570,7 @@ export default function BookingForm() {
           <button
             type="button"
             onClick={handleNextStep}
-            className="btn btn-primary ml-auto"
+            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
           >
             Continue
           </button>
@@ -493,9 +580,9 @@ export default function BookingForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn btn-primary ml-auto disabled:opacity-50 disabled:cursor-not-allowed"
+            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? 'Submitting...' : 'Secure My Consultation'}
+            {isSubmitting ? '⏳ Submitting...' : 'Secure My Consultation'}
           </button>
         )}
       </div>

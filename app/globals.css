@@ -293,6 +293,36 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(157, 187, 141, 0.1);
 }
 
+/* Validation states */
+.form-input[aria-invalid="true"],
+.form-select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.form-input[aria-invalid="true"]:focus,
+.form-select[aria-invalid="true"]:focus,
+textarea[aria-invalid="true"]:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Success state */
+.form-input.border-green-500,
+.form-select.border-green-500,
+textarea.border-green-500 {
+  border-color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+.form-input.border-green-500:focus,
+.form-select.border-green-500:focus,
+textarea.border-green-500:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+}
+
 .form-label {
   display: block;
   font-weight: 600;
