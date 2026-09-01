@@ -68,28 +68,36 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Hero Image Placeholder */}
+        {/* Hero Image Placeholder - Elegant Gradient */}
         <div style={{ flex: 1, width: '100%' }}>
           <div style={{
             aspectRatio: '1',
-            borderRadius: '1rem',
-            background: `linear-gradient(to bottom right, ${colors.sage[200]} 0%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
+            borderRadius: '1.5rem',
+            background: `linear-gradient(135deg, ${colors.sage[300]} 0%, ${colors.sage[200]} 25%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
             overflow: 'hidden',
-            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+            boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            border: `1px solid ${colors.sage[200]}`,
+            border: `1px solid ${colors.sage[100]}`,
+            position: 'relative',
           }}>
-            <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?w=600&h=600&fit=crop"
-              alt="Professional therapist - Rainuka Oberoi"
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-            />
+            <div style={{
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              background: 'radial-gradient(circle at 20% 80%, rgba(255,255,255,0.4) 0%, transparent 50%)',
+              pointerEvents: 'none',
+            }} />
+            <div style={{ textAlign: 'center', padding: '2rem', position: 'relative', zIndex: 1 }}>
+              <div style={{ fontSize: '5rem', marginBottom: '1.5rem', opacity: 0.9 }}>🌿</div>
+              <p style={{ ...styles.p, color: colors.sage[700], fontWeight: 600, fontSize: '1.25rem', marginBottom: '0.5rem' }}>
+                Space for Your Photo
+              </p>
+              <p style={{ ...styles.p, fontSize: '0.95rem', color: colors.sage[600] }}>
+                Professional headshot will appear here
+              </p>
+            </div>
           </div>
         </div>
       </div>

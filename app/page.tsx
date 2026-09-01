@@ -1,7 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
-import ImageGallery from '@/components/ImageGallery'
 import NicheGrid from '@/components/NicheGrid'
 import Link from 'next/link'
 
@@ -13,9 +12,6 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <HeroSection />
-
-        {/* Image Gallery */}
-        <ImageGallery />
 
         {/* Niche Grid */}
         <NicheGrid />
