@@ -106,28 +106,233 @@ export const styles = {
   card: {
     backgroundColor: 'white',
     borderRadius: '0.75rem',
-    /* Light card shadow hierarchy */
-    boxShadow: '0 1px 3px rgba(63, 57, 53, 0.05), 0 2px 6px rgba(63, 57, 53, 0.08)',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
     padding: '2rem',
     border: `1px solid ${colors.warmGray[200]}`,
     transition: 'all 0.3s ease',
   },
   cardHover: {
-    /* Focused card shadow hierarchy - elevated */
-    boxShadow: '0 4px 12px rgba(63, 57, 53, 0.08), 0 8px 24px rgba(63, 57, 53, 0.12)',
+    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
   },
-  floatingElement: {
-    boxShadow: '0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1)',
-    transition: 'all 0.3s ease',
+}
+
+// CONSOLIDATED REUSABLE STYLE OBJECTS - Reduces inline style bloat
+export const layoutStyles = {
+  flexCenter: {
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    justifyContent: 'center' as const,
   },
-  sectionGradientWarm: {
-    background: 'linear-gradient(180deg, var(--sage-50) 0%, white 100%)',
+  flexColCenter: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    alignItems: 'center' as const,
+    justifyContent: 'center' as const,
   },
-  sectionGradientSubtle: {
-    background: 'linear-gradient(180deg, var(--warm-gray-50) 0%, white 100%)',
+  flexBetween: {
+    display: 'flex' as const,
+    justifyContent: 'space-between' as const,
+    alignItems: 'center' as const,
   },
-  sectionGradientReverse: {
-    background: 'linear-gradient(180deg, white 0%, var(--sage-50) 100%)',
+  gridAutoFit: {
+    display: 'grid' as const,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '2rem',
+  },
+}
+
+export const footerStyles = {
+  footer: {
+    backgroundColor: colors.warmGray[900],
+    color: 'white',
+    paddingTop: '4rem',
+    paddingBottom: '2rem',
+    marginTop: '4rem',
+  },
+  footerContent: {
+    maxWidth: '1200px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    display: 'grid' as const,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+    gap: '2rem',
+    marginBottom: '2rem',
+  },
+  footerHeading: {
+    color: 'white',
+    marginBottom: '1rem',
+  },
+  footerList: {
+    listStyle: 'none' as const,
+    padding: 0,
+    margin: 0,
+  },
+  footerListItem: {
+    marginBottom: '0.5rem',
+  },
+  footerLink: {
+    color: 'rgba(255,255,255,0.8)',
+    textDecoration: 'none',
+  },
+  footerMeta: {
+    borderTop: `1px solid ${colors.warmGray[700]}`,
+    paddingTop: '2rem',
+    textAlign: 'center' as const,
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: '0.875rem',
+  },
+  footerMetaText: {
+    margin: 0,
+    marginBottom: '0.5rem',
+  },
+}
+
+export const heroStyles = {
+  heroContainer: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    alignItems: 'center' as const,
+    gap: '3rem',
+  },
+  heroContainerMobile: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    alignItems: 'center' as const,
+    gap: '1.5rem',
+  },
+  heroText: {
+    flex: 1,
+    textAlign: 'center' as const,
+  },
+  heroSubheading: {
+    fontSize: '1.125rem',
+    fontWeight: 500,
+  },
+  heroDescription: {
+    fontSize: '1.0625rem',
+    maxWidth: '42rem',
+    margin: '0 auto 2.5rem',
+  },
+  heroTrustSignals: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    gap: '2rem',
+    justifyContent: 'center',
+    marginBottom: '2.5rem',
+    fontSize: '0.875rem',
+    fontWeight: 500,
+  },
+  heroTrustSignalsMobile: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    gap: '1rem',
+    justifyContent: 'center',
+    marginBottom: '2.5rem',
+    fontSize: '0.875rem',
+    fontWeight: 500,
+  },
+  trustRow: {
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    gap: '0.5rem',
+    justifyContent: 'center',
+  },
+  checkmark: {
+    fontSize: '1.125rem',
+  },
+  ctaContainer: {
+    display: 'flex' as const,
+    flexDirection: 'column' as const,
+    gap: '1rem',
+    justifyContent: 'center',
+  },
+  heroImageContainer: {
+    flex: 1,
+    width: '100%',
+  },
+  heroImage: {
+    aspectRatio: '1' as const,
+    borderRadius: '1.5rem',
+    overflow: 'hidden' as const,
+    boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    justifyContent: 'center' as const,
+    position: 'relative' as const,
+    border: `1px solid ${colors.sage[100]}`,
+  },
+  heroImageGradient: {
+    position: 'absolute' as const,
+    width: '100%',
+    height: '100%',
+    background: 'radial-gradient(circle at 20% 80%, rgba(255,255,255,0.4) 0%, transparent 50%)',
+    pointerEvents: 'none' as const,
+  },
+}
+
+export const navigationStyles = {
+  nav: {
+    position: 'sticky' as const,
+    top: 0,
+    zIndex: 50,
+    backgroundColor: 'white',
+    borderBottom: `1px solid ${colors.warmGray[200]}`,
+  },
+  navContent: {
+    maxWidth: '1200px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    paddingTop: '1rem',
+    paddingBottom: '1rem',
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    justifyContent: 'space-between' as const,
+    flexWrap: 'wrap' as const,
+    gap: '1rem',
+  },
+  navContentMobile: {
+    maxWidth: '1200px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    paddingTop: '1rem',
+    paddingBottom: '1rem',
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    justifyContent: 'center' as const,
+    flexWrap: 'wrap' as const,
+    gap: '0.5rem',
+    flexDirection: 'column' as const,
+  },
+  navBrand: {
+    textDecoration: 'none',
+  },
+  navBrandText: {
+    fontSize: 'clamp(1rem, 4vw, 1.5rem)',
+    fontWeight: 700,
+    fontFamily: 'var(--font-merriweather), serif',
+    whiteSpace: 'nowrap' as const,
+  },
+  navLinks: {
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    gap: '2rem',
+    flexWrap: 'wrap' as const,
+    justifyContent: 'flex-end' as const,
+  },
+  navLinksMobile: {
+    display: 'flex' as const,
+    alignItems: 'center' as const,
+    gap: '1rem',
+    flexWrap: 'wrap' as const,
+    justifyContent: 'center' as const,
+    flexDirection: 'column' as const,
+    width: '100%',
   },
 }
 

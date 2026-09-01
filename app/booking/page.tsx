@@ -14,8 +14,11 @@ export default function BookingPage() {
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Schedule Your Free Consultation
             </h1>
-            <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto mb-4">
               15 minutes to explore if we're a good fit. No obligation, no pressure.
+            </p>
+            <p className="text-lg text-sage-700 font-medium max-w-2xl mx-auto">
+              ⏰ I usually respond within 24 hours and have availability within 1-2 weeks
             </p>
           </div>
         </section>

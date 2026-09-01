@@ -36,11 +36,16 @@ export default function HeroSection() {
             I specialize in what feels stuck: perinatal anxiety, adult ADHD diagnosis, and career crossroads
           </p>
 
-          <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 2.5rem' }}>
+          <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 1.5rem' }}>
             Trauma-informed, culturally humble, and practical. I specialize in what feels stuck—and help you find clarity, belonging, and your own answers.
           </p>
 
-          {/* Trust signals */}
+          {/* Fear-reduction messaging */}
+          <p style={{ ...styles.p, fontSize: '0.9rem', color: colors.sage[700], fontWeight: 500, maxWidth: '42rem', margin: '0 auto 2rem', fontStyle: 'italic' }}>
+            Whether you've been in therapy before or this is your first time—there's no judgment here. You're not broken for reaching out. You're taking care of yourself.
+          </p>
+
+          {/* Trust signals + Scarcity */}
           <div style={{ 
             display: 'flex', 
             flexDirection: 'column', 
@@ -58,6 +63,10 @@ export default function HeroSection() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
               <span style={{ color: colors.sage[600], fontSize: '1.125rem' }} aria-hidden="true">✓</span>
               <span>HIPAA Secure</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center', color: colors.warmGray[700], fontWeight: 600 }}>
+              <span style={{ fontSize: '1.125rem' }} aria-hidden="true">⏰</span>
+              <span>Respond within 24 hours • Usually available within 1-2 weeks</span>
             </div>
           </div>
 

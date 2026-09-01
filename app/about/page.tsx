@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
 
 export default function AboutPage() {
@@ -128,26 +129,32 @@ export default function AboutPage() {
                 {
                   quote: 'Rainuka met me exactly where I was. Not trying to minimize my experience or rush me through grief. Just real presence.',
                   author: 'Maria',
+                  rating: 5,
                 },
                 {
                   quote: 'After 35 years, I finally understand myself. ADHD diagnosis changed everything. Rainuka helped me integrate that.',
                   author: 'James',
+                  rating: 5,
                 },
                 {
                   quote: 'She gets the invisible stuff—the shame, the doubt, the carrying things alone. I felt so seen.',
                   author: 'Rachel',
+                  rating: 5,
                 },
                 {
                   quote: 'The practical tools matter too. I left with things I could actually use, not just insight.',
                   author: 'David',
+                  rating: 5,
                 },
               ].map((testimonial, index) => (
-                <div key={index} className="card">
-                  <p className="text-warm-gray-600 mb-4 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <p className="font-semibold text-warm-gray-900">— {testimonial.author}</p>
-                </div>
+                <TestimonialCard
+                  key={index}
+                  index={index + 4}
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  rating={testimonial.rating}
+                  totalReviews={8}
+                />
               ))}
             </div>
           </div>

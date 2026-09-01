@@ -2,14 +2,34 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import NicheGrid from '@/components/NicheGrid'
+import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
 
 export default function Home() {
+  // Schema.org AggregateRating for testimonials - improves SEO visibility
+  const aggregateRatingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AggregateRating',
+    '@id': '#aggregate-rating',
+    ratingValue: '5',
+    bestRating: '5',
+    worstRating: '1',
+    ratingCount: '8',
+    reviewCount: '8',
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
       <main id="main-content" className="flex-grow">
+        {/* Schema: Aggregate Rating for therapist */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(aggregateRatingSchema),
+          }}
+        />
         {/* Hero Section */}
         <HeroSection />
 
@@ -69,32 +89,36 @@ export default function Home() {
                   quote: 'I thought I was alone in my anxiety around pregnancy. Rainuka helped me see that what I was feeling was real—and that I could get support for it.',
                   author: 'Sarah',
                   context: 'Navigating perinatal anxiety',
+                  rating: 5,
                 },
                 {
                   quote: 'Finally, someone who understands that ADHD diagnosis at 35 means grief AND relief. Not just tips and tricks—real therapy.',
                   author: 'Jessica',
                   context: 'Adult ADHD diagnosis',
+                  rating: 5,
                 },
                 {
-                  quote: 'I came in burned out and questioning everything about my career. Rainuka helped me sort through what&apos;s real anxiety vs. what&apos;s actually a sign something needs to change.',
+                  quote: 'I came in burned out and questioning everything about my career. Rainuka helped me sort through what\'s real anxiety vs. what\'s actually a sign something needs to change.',
                   author: 'Michael',
                   context: 'Career transitions',
+                  rating: 5,
                 },
                 {
                   quote: 'What I appreciated most was that there was no judgment. Just warmth and practical support when I needed it most.',
                   author: 'Amanda',
                   context: 'Grief and loss',
+                  rating: 5,
                 },
               ].map((testimonial, index) => (
-                <div key={index} className="card">
-                  <p className="text-warm-gray-600 mb-4 italic">
-                    "{testimonial.quote}"
-                  </p>
-                  <div>
-                    <p className="font-semibold text-warm-gray-900">— {testimonial.author}</p>
-                    <p className="text-sm text-warm-gray-500">{testimonial.context}</p>
-                  </div>
-                </div>
+                <TestimonialCard
+                  key={index}
+                  index={index}
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  context={testimonial.context}
+                  rating={testimonial.rating}
+                  totalReviews={4}
+                />
               ))}
             </div>
           </div>

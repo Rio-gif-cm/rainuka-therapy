@@ -1,8 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { colors, styles } from '@/app/styles'
-// layoutStyles includes gridAutoFit pattern
+import { colors, styles, layoutStyles } from '@/app/styles'
 
 const specialties = [
   {
