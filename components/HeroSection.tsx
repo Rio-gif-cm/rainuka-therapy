@@ -98,7 +98,7 @@ export default function HeroSection() {
                     borderRadius: '0.5rem',
                     border: `2px solid ${selectedPersona === persona.id ? colors.sage[600] : colors.sage[200]}`,
                     backgroundColor: selectedPersona === persona.id ? colors.sage[100] : 'white',
-                    color: colors.sage[900],
+                    color: colors.warmGray[900],
                     fontSize: '0.875rem',
                     fontWeight: selectedPersona === persona.id ? 600 : 500,
                     cursor: 'pointer',
