@@ -283,3 +283,56 @@ textarea:focus {
     line-height: 1.6;
   }
 }
+
+/* NicheGrid card hover effects - works on both mouse and touch */
+.niche-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.niche-card:hover {
+  transform: translateY(-8px);
+  background-color: var(--sage-50);
+  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+.niche-card:active {
+  transform: translateY(-8px);
+  background-color: var(--sage-50);
+  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+/* Arrow animation on hover/active */
+.explore-arrow {
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: var(--sage-600);
+}
+
+.niche-card:hover .explore-arrow,
+.niche-card:active .explore-arrow {
+  color: var(--sage-700);
+  animation: arrowBounce 0.6s ease;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+/* Outline button hover effect - works on both mouse and touch */
+.btn-outline {
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--sage-50);
+  border-color: var(--sage-700);
+  color: var(--sage-700);
+}
+
+.btn-outline:active {
+  background-color: var(--sage-50);
+  border-color: var(--sage-700);
+  color: var(--sage-700);
+}
