@@ -83,6 +83,46 @@ const FAQData = [
     q: 'Should I quit my job before starting therapy?',
     a: 'Not necessarily. Let\'s talk through what\'s really happening first. Career therapy helps you decide, not pushes an answer.',
   },
+  {
+    q: 'Will therapy help my postpartum anxiety?',
+    a: 'Yes. Postpartum anxiety is treatable, and therapy helps you understand what\'s happening, calm your nervous system, and reconnect with your sense of self as a mother—often quickly.',
+  },
+  {
+    q: 'How long after birth should I wait to start therapy?',
+    a: 'You don\'t have to wait. We can work together anytime during pregnancy or postpartum. Early support prevents struggles from deepening, and we adjust to your energy and recovery needs.',
+  },
+  {
+    q: 'When should I seek an ADHD diagnosis?',
+    a: 'If you\'re struggling with focus, time management, emotional regulation, or organizing your life, evaluation might help. Many adults benefit from understanding their ADHD, with or without medication. We can explore whether diagnosis fits your needs.',
+  },
+  {
+    q: 'Is adult ADHD diagnosis worth it?',
+    a: 'It often is. A diagnosis can reduce shame, explain lifelong patterns, unlock accommodations at work, guide treatment options, and help you build systems that actually work for your brain—not against it.',
+  },
+  {
+    q: 'How do I know if my career change is burnout or misalignment?',
+    a: 'Burnout is exhaustion from overwork; misalignment is draining because the role doesn\'t fit your values or strengths. Therapy helps you untangle which one (or both) is true so you can make a move that actually helps.',
+  },
+  {
+    q: 'Can therapy help me fix a stalling career?',
+    a: 'Absolutely. We work through self-doubt, imposter feelings, networking anxiety, and career identity. Many clients clarify direction, find confidence to pursue opportunities, or pivot toward roles that feel more aligned.',
+  },
+  {
+    q: 'How do couples work on communication together?',
+    a: 'Couples therapy creates a safe space where both partners are heard, patterns are named, and new ways of connecting are practiced. Progress happens when both people feel understood and committed to change.',
+  },
+  {
+    q: 'What if my partner won\'t come to therapy with me?',
+    a: 'Individual therapy still helps tremendously. You can shift your patterns, set boundaries, and build clarity on what you need. Sometimes that creates space for your partner to be open to joining later.',
+  },
+  {
+    q: 'Do you offer evening or weekend appointments?',
+    a: 'Yes. I have limited evening and weekend slots to fit busy schedules. Let\'s find a time that works for you during your free consultation call.',
+  },
+  {
+    q: 'What if I can\'t commit to a regular weekly schedule?',
+    a: 'We can start with bi-weekly sessions or adjust frequency as your life changes. Consistency helps, but flexible scheduling makes therapy accessible to you.',
+  },
 ]
 
 // Schema.org FAQPage JSON-LD for rich snippets in Google Search
@@ -145,7 +185,7 @@ export default function FAQPage() {
               </h2>
 
               <div className="space-y-4">
-                {FAQData.slice(0, 5).map((faq, index) => (
+                {FAQData.slice(0, 4).map((faq, index) => (
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
@@ -164,7 +204,7 @@ export default function FAQPage() {
               </h2>
 
               <div className="space-y-4">
-                {FAQData.slice(5, 11).map((faq, index) => (
+                {FAQData.slice(4, 10).map((faq, index) => (
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
@@ -183,7 +223,7 @@ export default function FAQPage() {
               </h2>
 
               <div className="space-y-4">
-                {FAQData.slice(11, 15).map((faq, index) => (
+                {FAQData.slice(10, 14).map((faq, index) => (
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
@@ -202,7 +242,7 @@ export default function FAQPage() {
               </h2>
 
               <div className="space-y-4">
-                {FAQData.slice(15, 20).map((faq, index) => (
+                {FAQData.slice(14, 30).map((faq, index) => (
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
