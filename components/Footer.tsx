@@ -71,6 +71,11 @@ export default function Footer() {
               </Link>
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/holiday-stress" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                Holiday Stress Support
+              </Link>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
               <p style={{ ...styles.p, color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', margin: 0 }}>
                 Therapy for seasonal transitions & challenges
               </p>

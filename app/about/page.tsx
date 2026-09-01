@@ -468,6 +468,46 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Verified & Trusted */}
+        <section className="section-padding bg-white border-t border-sage-200">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+              Verified & Easy to Find
+            </h2>
+            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+              My credentials are independently verified across multiple directories and insurance networks.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="card bg-sage-50 border border-sage-200">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Licensed LCSW</h3>
+                <p className="text-warm-gray-600 text-sm">Clinical Social Work License, verified and in good standing.</p>
+              </div>
+              <div className="card bg-sage-50 border border-sage-200">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Listed on Major Directories</h3>
+                <p className="text-warm-gray-600 text-sm">Psychology Today, TherapyDen, and insurance provider networks.</p>
+              </div>
+              <div className="card bg-sage-50 border border-sage-200">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Insurance In-Network</h3>
+                <p className="text-warm-gray-600 text-sm">Accepted on major plans. Verify with your specific insurance.</p>
+              </div>
+              <div className="card bg-sage-50 border border-sage-200">
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Trauma-Informed Certified</h3>
+                <p className="text-warm-gray-600 text-sm">Trained and committed to trauma-informed, culturally responsive care.</p>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-cream-50 rounded-lg text-center">
+              <p className="text-warm-gray-600 mb-4">
+                Find me on your preferred platform or check insurance coverage.
+              </p>
+              <Link href="/providers" className="inline-block text-sage-600 font-semibold hover:text-sage-700 underline">
+                View All Directories & Insurance Networks →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="section-padding bg-sage-400 text-white">
           <div className="container-base text-center">

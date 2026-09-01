@@ -19,7 +19,7 @@ export default function ReferralCode({ code }: ReferralCodeProps) {
 
   // Share button helpers
   const shareToEmail = () => {
-    const subject = 'I Found a Therapist That's Really Helping Me';
+    const subject = "I Found a Therapist That's Really Helping Me";
     const body = `Hi! I wanted to share something with you.\n\nI've been working with Rainuka Oberoi, a therapist who specializes in perinatal mental health, ADHD, and career transitions. If you're thinking about therapy or have been considering it, she's wonderful.\n\nHere's a link to learn more: ${referralUrl}`;
     window.open(`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
   };

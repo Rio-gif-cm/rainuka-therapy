@@ -72,6 +72,7 @@ export default function Navigation() {
     { href: '/career', label: 'Career' },
     { href: '/guides', label: 'Guides' },
     { href: '/back-to-school', label: 'Back to School' },
+    { href: '/holiday-stress', label: 'Holiday Stress' },
     { href: '/referrals', label: 'Share' },
     { href: '/pricing', label: 'Pricing' },
     { href: '/faq', label: 'FAQ' },
