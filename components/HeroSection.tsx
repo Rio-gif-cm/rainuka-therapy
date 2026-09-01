@@ -52,11 +52,11 @@ export default function HeroSection() {
             fontWeight: 500,
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }}>✓</span>
+              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }} aria-hidden="true">✓</span>
               <span>Telehealth • Sliding Scale</span>
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
-              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }}>✓</span>
+              <span style={{ color: colors.sage[600], fontSize: '1.125rem' }} aria-hidden="true">✓</span>
               <span>HIPAA Secure</span>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function HeroSection() {
               pointerEvents: 'none',
             }} />
             <div style={{ textAlign: 'center', padding: '2rem', position: 'relative', zIndex: 1 }}>
-              <div style={{ fontSize: '5rem', marginBottom: '1.5rem', opacity: 0.9 }}>🌿</div>
+              <div style={{ fontSize: '5rem', marginBottom: '1.5rem', opacity: 0.9 }} aria-hidden="true">🌿</div>
               <p style={{ ...styles.p, color: colors.sage[700], fontWeight: 600, fontSize: '1.25rem', marginBottom: '0.5rem' }}>
                 Space for Your Photo
               </p>
