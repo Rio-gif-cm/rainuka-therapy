@@ -283,62 +283,65 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {/* Step 1: Contact Information */}
       {currentStep === 'contact' && (
       <div className="space-y-4 animate-fade-in-up">
-        {/* MICROCOPY WAVE 1: Pre-commitment reassurance - addresses hesitation at form start */}
-        <div className="mb-6 bg-dusk-50 border border-dusk-200 rounded-lg p-4 flex gap-3 items-start">
-          <span className="text-lg flex-shrink-0">💭</span>
+        {/* URGENCY BADGE + MICROCOPY: Time-sensitive messaging at form start */}
+        <div className="mb-6 bg-gradient-to-r from-honey-50 to-honey-50 border border-honey-200 rounded-lg p-4 flex gap-3 items-start">
+          <span className="text-lg flex-shrink-0">⏱️</span>
           <div className="text-sm">
-            <p className="text-dusk-800 font-medium mb-1">A quick note:</p>
-            <p className="text-dusk-700">
-              This 3-step form takes ~5 minutes. No commitment—just info to help me prepare for our free call.
+            <p className="text-honey-900 font-semibold mb-1">Fill in 3 quick details—5 min, no commitment.</p>
+            <p className="text-honey-800 text-xs">
+              💡 Spots fill within 1-2 weeks. Respond within 24 hours.
             </p>
           </div>
         </div>
 
-        <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
+        <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-2">
           Let&apos;s start with the basics
         </h3>
+        <p className="text-sm text-warm-gray-600 mb-6">Three fields. Then we&apos;ll move forward together.</p>
 
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label htmlFor="name" className={`form-label transition-colors ${
-                fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
-              }`}>
-                What should I call you? *
-              </label>
-              {formData.name && !fieldErrors.name && fieldTouched.name && (
-                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
-                  ✓ Valid
-                </span>
+          {/* FIELD GROUP: Combined visual container for contact info */}
+          <div className="bg-gradient-to-b from-white to-sage-50/30 rounded-xl border border-sage-100 p-6 space-y-4 shadow-sm">
+            <div>
+              <div className="flex items-center justify-between mb-1">
+                <label htmlFor="name" className={`form-label transition-colors ${
+                  fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
+                }`}>
+                  What should I call you? *
+                </label>
+                {formData.name && !fieldErrors.name && fieldTouched.name && (
+                  <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                    ✓ Valid
+                  </span>
+                )}
+              </div>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                onBlur={handleFieldBlur}
+                onFocus={handleFieldFocus}
+                placeholder="Jane or Jane Doe—your preferred name"
+                className={`form-input transition-all ${
+                  fieldTouched.name
+                    ? fieldErrors.name
+                      ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                      : 'border-sage-500 bg-sage-50'
+                    : ''
+                }`}
+                aria-invalid={fieldTouched.name && !!fieldErrors.name}
+                aria-describedby={fieldTouched.name && fieldErrors.name ? 'name-error' : undefined}
+                required
+              />
+              {fieldTouched.name && fieldErrors.name && (
+                <p id="name-error" className="text-alert-600 text-sm mt-2 font-medium">
+                  {fieldErrors.name}
+                </p>
               )}
             </div>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              onBlur={handleFieldBlur}
-              onFocus={handleFieldFocus}
-              placeholder="Jane or Jane Doe—your preferred name"
-              className={`form-input transition-all ${
-                fieldTouched.name
-                  ? fieldErrors.name
-                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                    : 'border-sage-500 bg-sage-50'
-                  : ''
-              }`}
-              aria-invalid={fieldTouched.name && !!fieldErrors.name}
-              aria-describedby={fieldTouched.name && fieldErrors.name ? 'name-error' : undefined}
-              required
-            />
-            {fieldTouched.name && fieldErrors.name && (
-              <p id="name-error" className="text-alert-600 text-sm mt-2 font-medium">
-                {fieldErrors.name}
-              </p>
-            )}
-          </div>
 
-          <div>
+            <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="email" className={`form-label transition-colors ${
                 fieldFocused.email ? 'text-sage-600' : 'text-warm-gray-900'
@@ -376,9 +379,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 {fieldErrors.email}
               </p>
             )}
-          </div>
+            </div>
 
-          <div>
+            <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="phone" className={`form-label transition-colors ${
                 fieldFocused.phone ? 'text-sage-600' : 'text-warm-gray-900'
@@ -416,11 +419,13 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 {fieldErrors.phone}
               </p>
             )}
-          </div>
+            </div>
+            </div>
+            {/* End of combined field group */}
 
-          <p className="text-sm text-warm-gray-500 mt-6">
-            * Required fields. I&apos;ll reach out within 24 hours to confirm your consultation.
-          </p>
+            <p className="text-xs text-warm-gray-500 mt-4">
+              * Required fields. I&apos;ll reach out within 24 hours to confirm your consultation.
+            </p>
         </div>
       )}
 
@@ -499,7 +504,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               )}
             </div>
             <div className="flex gap-4 mb-3">
-              <div className="flex items-center">
+              <div className="flex items-center gap-3">
                 <input
                   type="radio"
                   id="firstTimeYes"
@@ -519,13 +524,13 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                     const error = validateField('firstTimeTherapy', formData.firstTimeTherapy)
                     setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
                   }}
-                  className="w-4 h-4 cursor-pointer"
+                  className="w-8 h-8 cursor-pointer"
                 />
-                <label htmlFor="firstTimeYes" className="ml-2 text-sm text-warm-gray-600 cursor-pointer">
+                <label htmlFor="firstTimeYes" className="text-base text-warm-gray-600 cursor-pointer flex-shrink-0">
                   Yes, this is my first time
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center gap-3">
                 <input
                   type="radio"
                   id="firstTimeNo"
@@ -545,9 +550,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                     const error = validateField('firstTimeTherapy', formData.firstTimeTherapy)
                     setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
                   }}
-                  className="w-4 h-4 cursor-pointer"
+                  className="w-8 h-8 cursor-pointer"
                 />
-                <label htmlFor="firstTimeNo" className="ml-2 text-sm text-warm-gray-600 cursor-pointer">
+                <label htmlFor="firstTimeNo" className="text-base text-warm-gray-600 cursor-pointer flex-shrink-0">
                   I&apos;ve tried therapy before
                 </label>
               </div>
@@ -648,12 +653,11 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               checked={formData.consent}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
-              className="mt-1.5 w-4 h-4 sm:w-5 sm:h-5 cursor-pointer"
-              style={{ minWidth: '56px', minHeight: '56px', padding: '16px', appearance: 'none', WebkitAppearance: 'none' }}
+              className="w-8 h-8 cursor-pointer mt-0.5 flex-shrink-0"
               aria-invalid={fieldTouched.consent && !!fieldErrors.consent}
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
-            <label htmlFor="consent" className="text-sm text-warm-gray-600 cursor-pointer flex-1">
+            <label htmlFor="consent" className="text-base text-warm-gray-600 cursor-pointer flex-1">
               I'm ready to book. I understand I'll be contacted by phone and email, and I've reviewed the privacy policy.
             </label>
           </div>
@@ -753,9 +757,16 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
+            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden"
           >
-            {isSubmitting ? '🔒 Booking your session...' : 'Book my session'}
+            {isSubmitting ? (
+              <>🔒 Securing your spot...</>
+            ) : (
+              <>
+                ✓ Secure my 15-min call
+                <span className="absolute top-1 right-2 inline-block w-2 h-2 bg-honey-300 rounded-full animate-pulse"></span>
+              </>
+            )}
           </button>
         )}
       </div>
