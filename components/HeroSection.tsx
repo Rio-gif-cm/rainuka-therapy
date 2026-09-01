@@ -69,6 +69,8 @@ export default function HeroSection() {
                 ...styles.button,
                 ...styles.btnPrimary,
                 minWidth: '200px',
+                outline: '2px solid transparent',
+                outlineOffset: '2px',
               }}
               onMouseEnter={(e) => {
                 const target = e.target as HTMLElement
@@ -80,6 +82,14 @@ export default function HeroSection() {
                 target.style.backgroundColor = colors.sage[600]
                 target.style.boxShadow = 'none'
               }}
+              onFocus={(e) => {
+                const target = e.target as HTMLElement
+                target.style.outline = `2px solid ${colors.sage[600]}`
+              }}
+              onBlur={(e) => {
+                const target = e.target as HTMLElement
+                target.style.outline = '2px solid transparent'
+              }}
             >
               Book a Free 15-Minute Call
             </Link>
@@ -90,6 +100,16 @@ export default function HeroSection() {
                 ...styles.button,
                 ...styles.btnOutline,
                 minWidth: '200px',
+                outline: '2px solid transparent',
+                outlineOffset: '2px',
+              }}
+              onFocus={(e) => {
+                const target = e.target as HTMLElement
+                target.style.outline = `2px solid ${colors.sage[600]}`
+              }}
+              onBlur={(e) => {
+                const target = e.target as HTMLElement
+                target.style.outline = '2px solid transparent'
               }}
             >
               See How I Work
@@ -99,18 +119,22 @@ export default function HeroSection() {
 
         {/* Hero Image Placeholder - Elegant Gradient */}
         <div style={{ flex: 1, width: '100%' }}>
-          <div style={{
-            aspectRatio: '1',
-            borderRadius: '1.5rem',
-            background: `linear-gradient(135deg, ${colors.sage[300]} 0%, ${colors.sage[200]} 25%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
-            overflow: 'hidden',
-            boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            border: `1px solid ${colors.sage[100]}`,
-            position: 'relative',
-          }}>
+          <div 
+            style={{
+              aspectRatio: '1',
+              borderRadius: '1.5rem',
+              background: `linear-gradient(135deg, ${colors.sage[300]} 0%, ${colors.sage[200]} 25%, ${colors.sage[100]} 50%, ${colors.warmGray[100]} 100%)`,
+              overflow: 'hidden',
+              boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              border: `1px solid ${colors.sage[100]}`,
+              position: 'relative',
+            }}
+            role="img"
+            aria-label="Therapist photo placeholder with calming sage and warm gray gradient"
+          >
             <div style={{
               position: 'absolute',
               width: '100%',
