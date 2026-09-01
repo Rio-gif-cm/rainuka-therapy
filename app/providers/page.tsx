@@ -13,7 +13,7 @@ export default function ProviderDirectoriesPage() {
       verified: true,
       traffic: 'Highest organic reach',
       icon: '🔍',
-      url: 'https://www.psychologytoday.com/profile/rainuka-oberoi',
+      url: 'https://www.psychologytoday.com/',
       cost: '$29.95/month',
       benefits: ['Largest visibility', 'SEO advantage', 'Integrated messaging', 'Insurance filtering'],
     },
@@ -24,7 +24,7 @@ export default function ProviderDirectoriesPage() {
       verified: true,
       traffic: 'High engagement',
       icon: '🌈',
-      url: 'https://www.therapyden.com/therapist/rainuka-oberoi',
+      url: 'https://www.therapyden.com/',
       cost: 'Varies by market',
       benefits: ['Identity-inclusive filtering', 'Strong LGBTQ+ audience', 'Active community', 'Quality over quantity'],
     },
@@ -35,7 +35,7 @@ export default function ProviderDirectoriesPage() {
       verified: false,
       traffic: 'Growing referrals',
       icon: '⭐',
-      url: 'https://www.zocdoc.com/therapist',
+      url: 'https://www.zocdoc.com/',
       cost: 'Variable',
       benefits: ['Verified reviews', 'Real-time booking', 'Patient ratings', 'Mobile-first'],
     },
@@ -46,7 +46,7 @@ export default function ProviderDirectoriesPage() {
       verified: false,
       traffic: 'Consistent referrals',
       icon: '✨',
-      url: 'https://www.goodtherapy.org/therapists',
+      url: 'https://www.goodtherapy.org/',
       cost: '$49.95/month',
       benefits: ['Organic visibility', 'CE courses available', 'Practice tools', 'Affordable'],
     },
@@ -303,7 +303,7 @@ export default function ProviderDirectoriesPage() {
                       ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[600]
                     }}
                   >
-                    View Profile →
+                    Visit →
                   </a>
                 </div>
               </div>
