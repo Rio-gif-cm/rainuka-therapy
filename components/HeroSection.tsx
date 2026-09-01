@@ -136,24 +136,68 @@ export default function HeroSection() {
                       <p style={{
                         ...styles.p,
                         color: colors.warmGray[700],
-                        marginBottom: '1rem',
+                        marginBottom: '1.5rem',
                         fontSize: '0.95rem',
                       }}>
                         {persona.description}
                       </p>
-                      <Link
-                        href={persona.link}
-                        style={{
-                          display: 'inline-block',
-                          color: colors.sage[600],
-                          fontWeight: 600,
-                          fontSize: '0.875rem',
-                          textDecoration: 'none',
-                          borderBottom: `2px solid ${colors.sage[600]}`,
-                        }}
-                      >
-                        Learn more about {persona.label} →
-                      </Link>
+                      
+                      {/* Micro-CTA: Primary action after persona selection */}
+                      <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                        <Link
+                          href="/booking"
+                          style={{
+                            display: 'inline-block',
+                            backgroundColor: colors.sage[600],
+                            color: 'white',
+                            fontWeight: 600,
+                            fontSize: '0.875rem',
+                            textDecoration: 'none',
+                            padding: '0.625rem 1.25rem',
+                            borderRadius: '0.5rem',
+                            border: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s ease',
+                          }}
+                          onMouseEnter={(e) => {
+                            const target = e.currentTarget as HTMLElement
+                            target.style.backgroundColor = colors.sage[700]
+                            target.style.boxShadow = `0 4px 12px rgba(107, 148, 79, 0.2)`
+                          }}
+                          onMouseLeave={(e) => {
+                            const target = e.currentTarget as HTMLElement
+                            target.style.backgroundColor = colors.sage[600]
+                            target.style.boxShadow = 'none'
+                          }}
+                        >
+                          See if this applies to you
+                        </Link>
+                        <Link
+                          href={persona.link}
+                          style={{
+                            display: 'inline-block',
+                            color: colors.sage[600],
+                            fontWeight: 600,
+                            fontSize: '0.875rem',
+                            textDecoration: 'none',
+                            borderBottom: `2px solid ${colors.sage[600]}`,
+                            padding: '0.625rem 0',
+                            transition: 'all 0.2s ease',
+                          }}
+                          onMouseEnter={(e) => {
+                            const target = e.currentTarget as HTMLElement
+                            target.style.color = colors.sage[700]
+                            target.style.borderBottomColor = colors.sage[700]
+                          }}
+                          onMouseLeave={(e) => {
+                            const target = e.currentTarget as HTMLElement
+                            target.style.color = colors.sage[600]
+                            target.style.borderBottomColor = colors.sage[600]
+                          }}
+                        >
+                          Learn more →
+                        </Link>
+                      </div>
                     </div>
                   ))}
               </div>
