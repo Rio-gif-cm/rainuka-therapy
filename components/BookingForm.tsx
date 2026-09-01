@@ -648,7 +648,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
             <label htmlFor="consent" className="text-sm text-warm-gray-600 cursor-pointer flex-1">
-              I agree to be contacted by email and phone. I&apos;ve read and understand the privacy policy.
+              I'm ready—please reach out by email and phone to confirm our appointment. I've read and understand the privacy policy.
             </label>
           </div>
           {fieldTouched.consent && fieldErrors.consent && (
