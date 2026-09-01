@@ -456,6 +456,81 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             )}
           </div>
 
+          {/* First time therapy field - FRICTION REDUCTION: Reduces pre-commitment cognitive load */}
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <label className={`form-label transition-colors ${
+                fieldFocused.firstTimeTherapy ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
+                Is this your first time seeking therapy? *
+              </label>
+              {formData.firstTimeTherapy !== null && !fieldErrors.firstTimeTherapy && fieldTouched.firstTimeTherapy && (
+                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                  ✓ Valid
+                </span>
+              )}
+            </div>
+            <div className="flex gap-4 mb-3">
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="firstTimeYes"
+                  name="firstTimeTherapy"
+                  value="true"
+                  checked={formData.firstTimeTherapy === true}
+                  onChange={(e) => {
+                    const val = e.target.value === 'true'
+                    setFormData(prev => ({ ...prev, firstTimeTherapy: val }))
+                    if (fieldTouched.firstTimeTherapy) {
+                      const error = validateField('firstTimeTherapy', val)
+                      setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
+                    }
+                  }}
+                  onBlur={() => {
+                    setFieldTouched(prev => ({ ...prev, firstTimeTherapy: true }))
+                    const error = validateField('firstTimeTherapy', formData.firstTimeTherapy)
+                    setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
+                  }}
+                  className="w-4 h-4 cursor-pointer"
+                />
+                <label htmlFor="firstTimeYes" className="ml-2 text-sm text-warm-gray-600 cursor-pointer">
+                  Yes, this is my first time
+                </label>
+              </div>
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  id="firstTimeNo"
+                  name="firstTimeTherapy"
+                  value="false"
+                  checked={formData.firstTimeTherapy === false}
+                  onChange={(e) => {
+                    const val = e.target.value === 'true'
+                    setFormData(prev => ({ ...prev, firstTimeTherapy: val }))
+                    if (fieldTouched.firstTimeTherapy) {
+                      const error = validateField('firstTimeTherapy', val)
+                      setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
+                    }
+                  }}
+                  onBlur={() => {
+                    setFieldTouched(prev => ({ ...prev, firstTimeTherapy: true }))
+                    const error = validateField('firstTimeTherapy', formData.firstTimeTherapy)
+                    setFieldErrors(prev => ({ ...prev, firstTimeTherapy: error }))
+                  }}
+                  className="w-4 h-4 cursor-pointer"
+                />
+                <label htmlFor="firstTimeNo" className="ml-2 text-sm text-warm-gray-600 cursor-pointer">
+                  I&apos;ve tried therapy before
+                </label>
+              </div>
+            </div>
+            {fieldTouched.firstTimeTherapy && fieldErrors.firstTimeTherapy && (
+              <p id="firstTimeTherapy-error" className="text-red-600 text-sm font-medium">
+                {fieldErrors.firstTimeTherapy}
+              </p>
+            )}
+          </div>
+
           <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="preferredTime" className={`form-label transition-colors ${
