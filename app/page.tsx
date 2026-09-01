@@ -92,7 +92,7 @@ export default function Home() {
                   rating: 5,
                 },
                 {
-                  quote: 'ADHD diagnosis at 35 = grief + relief. Rainuka gets both. Finally, real therapy—not tips and tricks. She understood the grief I didn\\'t know I was carrying.',
+                  quote: 'ADHD diagnosis at 35 = grief + relief. Rainuka gets both. Finally, real therapy—not tips and tricks. She understood the grief I didn\'t know I was carrying.',
                   author: 'Jessica',
                   context: 'Marketing Manager | Adult ADHD Diagnosis',
                   rating: 5,
@@ -153,7 +153,7 @@ export default function Home() {
             <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
               Let&apos;s start with a free 15-minute conversation. I&apos;ll listen to what&apos;s brought you here, and you&apos;ll get a real sense of how we&apos;d work together.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50 transition-colors">
+            <Link href="/booking" style={{ display: 'inline-block', backgroundColor: 'white', color: '#6b944f', padding: '1rem 2rem', fontWeight: 600, borderRadius: '0.5rem', transition: 'all 0.15s ease-out', textDecoration: 'none', outline: '2px solid transparent', outlineOffset: '2px', cursor: 'pointer' }} className="cta-white" onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = 'scale(1.03)'; el.style.boxShadow = '0 10px 25px rgba(255,255,255,0.25)' }} onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = 'scale(1)'; el.style.boxShadow = 'none' }} onFocus={(e) => { const el = e.currentTarget as HTMLElement; el.style.outline = '2px solid #6b944f'; el.style.outlineOffset = '3px' }} onBlur={(e) => { const el = e.currentTarget as HTMLElement; el.style.outline = '2px solid transparent' }}>
               Book Your Free Call
             </Link>
           </div>
@@ -196,7 +196,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Link href="/faq" className="text-sage-400 font-semibold hover:text-sage-500">
+              <Link href="/faq" className="btn-link" style={{ fontSize: '1rem', fontWeight: 600 }}>
                 See all FAQs →
               </Link>
             </div>
