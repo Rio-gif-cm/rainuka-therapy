@@ -59,6 +59,8 @@ export default function NicheGrid() {
                   display: 'flex',
                   flexDirection: 'column',
                   backgroundColor: 'white',
+                  outline: '2px solid transparent',
+                  outlineOffset: '2px',
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget
@@ -76,8 +78,17 @@ export default function NicheGrid() {
                   const arrow = el.querySelector('[data-explore-arrow]') as HTMLElement
                   if (arrow) arrow.style.color = colors.sage[600]
                 }}
+                onFocus={(e) => {
+                  const el = e.currentTarget
+                  el.style.outline = `2px solid ${colors.sage[600]}`
+                }}
+                onBlur={(e) => {
+                  const el = e.currentTarget
+                  el.style.outline = '2px solid transparent'
+                }}
+                tabIndex={0}
               >
-                <div style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }}>
+                <div style={{ fontSize: '3.5rem', marginBottom: '1.5rem' }} aria-label={specialty.title}>
                   {specialty.icon}
                 </div>
                 <h3 style={{ ...styles.h3, marginBottom: '1rem', fontSize: '1.25rem' }}>

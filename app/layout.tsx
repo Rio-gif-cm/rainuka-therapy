@@ -31,11 +31,62 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Schema.org JSON-LD structured data for SEO
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'ProfessionalService'],
+    name: 'Rainuka Oberoi, LCSW',
+    description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
+    url: 'https://rainukatherapy.com',
+    telephone: '+1-XXX-XXX-XXXX', // Update with actual phone
+    email: 'contact@rainukatherapy.com', // Update with actual email
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'US',
+      addressRegion: 'CA', // Update with actual state
+      addressLocality: 'San Francisco', // Update with actual city
+    },
+    sameAs: [
+      // Add social media links
+    ],
+    areaServed: {
+      '@type': 'State',
+      name: 'California',
+    },
+    priceRange: '$$',
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      // Update with actual hours
+    },
+    specialties: [
+      'Perinatal Mental Health',
+      'Postpartum Anxiety',
+      'Adult ADHD Diagnosis',
+      'Career Counseling',
+      'Trauma-Informed Therapy',
+      'Reproductive Mental Health',
+    ],
+    knowsAbout: [
+      'Perinatal mental health',
+      'ADHD',
+      'Career transitions',
+      'Reproductive trauma',
+      'Postpartum anxiety',
+    ],
+    availableLanguage: ['en'],
+  }
+
   return (
     <html lang="en" className={`${merriweather.variable} ${inter.variable}`}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Therapy for perinatal mental health, adult ADHD, and career transitions." />
+        {/* Schema.org structured data for LocalBusiness + ProfessionalService */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema, null, 2),
+          }}
+        />
         {/* Build ID: b6b97ca-rebuilt */}
       </head>
       <body 
@@ -47,6 +98,13 @@ export default function RootLayout({
           lineHeight: '1.6',
         }}
       >
+        {/* Skip to main content link - visually hidden but keyboard accessible */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-sage-400 focus:text-white focus:px-4 focus:py-2 focus:rounded"
+        >
+          Skip to main content
+        </a>
         {children}
       </body>
     </html>

@@ -34,13 +34,16 @@ export default function HeroSection() {
           </div>
 
           {/* CTA Button */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', width: '100%', maxWidth: '320px' }}>
             <Link 
               href="/booking" 
               style={{ 
                 ...styles.button,
                 ...styles.btnPrimary,
-                minWidth: '200px',
+                width: '100%',
+                padding: '1rem 1.5rem',
+                fontSize: '1rem',
+                minHeight: '48px',
               }}
               onMouseEnter={(e) => {
                 const target = e.target as HTMLElement
@@ -60,7 +63,10 @@ export default function HeroSection() {
               style={{ 
                 ...styles.button,
                 ...styles.btnOutline,
-                minWidth: '200px',
+                width: '100%',
+                padding: '1rem 1.5rem',
+                fontSize: '1rem',
+                minHeight: '48px',
               }}
             >
               Learn More About My Approach
