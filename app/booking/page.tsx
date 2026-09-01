@@ -7,13 +7,12 @@ import ObjectionHandler from '@/components/ObjectionHandler'
 
 export const metadata: Metadata = {
   title: 'Book Your Free Therapy Consultation | Rainuka Oberoi, LCSW',
-  description: 'Schedule your free 15-minute therapy consultation with Rainuka Oberoi, LCSW. No obligation, no forms. Start healing today.',
+  description: 'Book your free 15-minute therapy consultation with Rainuka Oberoi, LCSW. Explore your needs, discuss your goals. No pressure, no obligation. Telehealth available.',
   openGraph: {
     title: 'Book Your Free Therapy Consultation | Rainuka Oberoi, LCSW',
     description: 'Schedule your free therapy consultation. No obligation, no forms. Telehealth available.',
     type: 'website',
   },
-  canonical: 'https://rainukatherapy.com/booking',
 }
 
 export default function BookingPage() {
@@ -26,7 +25,7 @@ export default function BookingPage() {
         <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Take Your First Step Toward Clarity
+              Schedule Your Breakthrough (Free)
             </h1>
             <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto mb-4">
               15 minutes to discover your path forward. No pressure, just clarity.
@@ -42,13 +41,19 @@ export default function BookingPage() {
           <div className="container-base">
             <div className="max-w-2xl mx-auto">
               {/* Trust Signal Before Form */}
-              <div className="card card-callout card-static bg-sage-50 mb-12">
+              {/* SOCIAL PROOF BADGE - High-impact trust signal */}
+              <div className="card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border-2 border-sage-200 shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="text-3xl">✓</div>
-                  <div>
-                    <p className="font-semibold text-warm-gray-900 text-lg mb-2">
-                      95% of clients move forward with ongoing therapy
-                    </p>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-3 mb-2">
+                      <p className="font-semibold text-warm-gray-900 text-lg">
+                        95% of clients move forward with ongoing therapy
+                      </p>
+                      <span className="inline-block bg-honey-100 text-honey-800 text-xs font-bold px-2.5 py-1 rounded-full">
+                        Verified Outcomes
+                      </span>
+                    </div>
                     <p className="text-warm-gray-600 text-sm">
                       Real connection creates real change. Read what clients are experiencing. <a href="/pricing" className="text-sage-600 hover:underline font-semibold">Full pricing and details are here.</a>
                     </p>

@@ -337,7 +337,7 @@ export default function HeroSection() {
             }}
           >
             <Link href="/booking" className="hero-cta-primary">
-              <span>Start Your Free Breakthrough Call</span>
+              <span>Claim Your Path Forward</span>
               <svg
                 width="16"
                 height="16"

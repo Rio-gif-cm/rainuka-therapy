@@ -6,6 +6,7 @@ import NicheGrid from '@/components/NicheGrid'
 import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
 import { homepageTestimonials } from '@/src/data/testimonials'
+import { getAggregateRatingSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
@@ -72,54 +73,15 @@ const faqs = [
 ]
 
 export default function Home() {
-  // Schema.org LocalBusiness markup for the homepage
-  const localBusinessSchema = {
-    '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'ProfessionalService'],
-    '@id': 'https://rainukatherapy.com#local-business',
-    name: 'Rainuka Oberoi, LCSW',
-    description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
-    url: 'https://rainukatherapy.com',
-    telephone: '+1-555-123-4567',
-    email: 'contact@rainukatherapy.com',
-    address: {
-      '@type': 'PostalAddress',
-      addressCountry: 'US',
-      addressRegion: 'CA',
-      addressLocality: 'San Francisco',
-    },
-    areaServed: {
-      '@type': 'State',
-      name: 'California',
-    },
-    priceRange: '$$',
-    image: 'https://rainukatherapy.com/logo.png', // Update with actual image URL
-    sameAs: [], // Add social media links
-  }
-
-  // Schema.org AggregateRating — count must match the reviews actually rendered.
-  const aggregateRatingSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'AggregateRating',
-    '@id': '#aggregate-rating',
-    ratingValue: '5',
-    bestRating: '5',
-    worstRating: '1',
-    ratingCount: String(testimonials.length),
-    reviewCount: String(testimonials.length),
-  }
+  // AggregateRating schema for social proof (testimonials)
+  // LocalBusiness schema is now in layout.tsx as the single source of truth
+  const aggregateRatingSchema = getAggregateRatingSchema(testimonials.length)
 
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
       <main id="main-content" className="flex-grow">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -170,7 +132,7 @@ export default function Home() {
                 In Their Words
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
-                What clients say
+                Stories of transformation from people just like you
               </h2>
             </div>
 
@@ -266,7 +228,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center items-center">
               <Link href="/booking" className="btn-primary">
-                Get Your Personalized Plan
+                Let's Build Your Clarity Together
               </Link>
               <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
                 Learn more about me →
