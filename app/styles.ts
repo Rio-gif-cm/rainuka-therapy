@@ -338,6 +338,95 @@ export const navigationStyles = {
 
 // Global CSS styles for hover effects that work on touch & mouse
 export const globalStyles = `
+/* Enhanced Button States - Better Visual Feedback */
+/* PRIMARY BUTTON: Hover (scale up + shadow lift) + Focus (ring) + Active (press down) */
+.btn-primary {
+  transition: all 0.15s ease-out;
+  background-color: ${colors.sage[600]};
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-primary:hover {
+  background-color: ${colors.sage[700]};
+  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+  transform: scale(1.03);
+}
+
+.btn-primary:focus {
+  outline: 2px solid ${colors.sage[600]};
+  outline-offset: 3px;
+  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
+  background-color: ${colors.sage[700]};
+}
+
+/* OUTLINE BUTTON: Enhanced states with better feedback */
+.btn-outline {
+  transition: all 0.15s ease-out;
+  background-color: transparent;
+  color: ${colors.sage[600]};
+  border: 2px solid ${colors.sage[600]};
+  cursor: pointer;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.btn-outline:hover {
+  background-color: ${colors.sage[50]};
+  border-color: ${colors.sage[700]};
+  color: ${colors.sage[700]};
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+  transform: scale(1.02);
+}
+
+.btn-outline:focus {
+  outline: 2px solid ${colors.sage[600]};
+  outline-offset: 3px;
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+}
+
+.btn-outline:active {
+  background-color: ${colors.sage[50]};
+  border-color: ${colors.sage[700]};
+  color: ${colors.sage[700]};
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
+}
+
+/* LINK BUTTONS: Subtle hover with underline enhancement */
+.btn-link {
+  transition: all 0.15s ease-out;
+  color: ${colors.sage[600]};
+  text-decoration: none;
+  border-bottom: 2px solid ${colors.sage[600]};
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: ${colors.sage[700]};
+  border-bottom-color: ${colors.sage[700]};
+}
+
+.btn-link:focus {
+  outline: 2px solid ${colors.sage[600]};
+  outline-offset: 3px;
+}
+
+.btn-link:active {
+  opacity: 0.85;
+  transform: scale(0.98);
+}
+
 /* NicheGrid card hover effects - works on both mouse and touch */
 .niche-card {
   transition: all 0.3s ease;
@@ -353,6 +442,11 @@ export const globalStyles = `
   transform: translateY(-8px);
   background-color: ${colors.sage[50]};
   box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+.niche-card:focus-within {
+  outline: 2px solid ${colors.sage[600]};
+  outline-offset: 2px;
 }
 
 /* Arrow animation on hover/active */
@@ -373,23 +467,23 @@ export const globalStyles = `
   50% { transform: translateX(4px); }
 }
 
-/* Outline button hover effect - works on both mouse and touch */
-.btn-outline {
-  transition: all 0.3s ease;
-  background-color: transparent;
-  color: ${colors.sage[600]};
-  border: 2px solid ${colors.sage[600]};
-}
-
-.btn-outline:hover {
-  background-color: ${colors.sage[50]};
-  border-color: ${colors.sage[700]};
-  color: ${colors.sage[700]};
-}
-
-.btn-outline:active {
-  background-color: ${colors.sage[50]};
-  border-color: ${colors.sage[700]};
-  color: ${colors.sage[700]};
+/* Reduced motion support - respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .btn-outline,
+  .btn-link,
+  .niche-card {
+    transition: none;
+  }
+  
+  .btn-primary:hover,
+  .btn-outline:hover {
+    transform: none;
+  }
+  
+  .btn-primary:active,
+  .btn-outline:active {
+    transform: none;
+  }
 }
 `

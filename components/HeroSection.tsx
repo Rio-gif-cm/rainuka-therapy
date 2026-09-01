@@ -243,54 +243,23 @@ export default function HeroSection() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
             <Link 
               href="/booking" 
+              className="btn-primary"
               style={{ 
                 ...styles.button,
-                ...styles.btnPrimary,
                 minWidth: '200px',
-                outline: '2px solid transparent',
-                outlineOffset: '2px',
-              }}
-              onMouseEnter={(e) => {
-                const target = e.target as HTMLElement
-                target.style.backgroundColor = colors.sage[700]
-                target.style.boxShadow = `0 10px 25px rgba(107, 148, 79, 0.15)`
-              }}
-              onMouseLeave={(e) => {
-                const target = e.target as HTMLElement
-                target.style.backgroundColor = colors.sage[600]
-                target.style.boxShadow = 'none'
-              }}
-              onFocus={(e) => {
-                const target = e.target as HTMLElement
-                target.style.outline = `2px solid ${colors.sage[600]}`
-              }}
-              onBlur={(e) => {
-                const target = e.target as HTMLElement
-                target.style.outline = '2px solid transparent'
               }}
             >
-              Book Your Free Call
+              Book a Free 15-Minute Call
             </Link>
             <Link 
               href="/about" 
               className="btn-outline"
               style={{ 
                 ...styles.button,
-                ...styles.btnOutline,
                 minWidth: '200px',
-                outline: '2px solid transparent',
-                outlineOffset: '2px',
-              }}
-              onFocus={(e) => {
-                const target = e.target as HTMLElement
-                target.style.outline = `2px solid ${colors.sage[600]}`
-              }}
-              onBlur={(e) => {
-                const target = e.target as HTMLElement
-                target.style.outline = '2px solid transparent'
               }}
             >
-              Learn My Approach
+              See How I Work
             </Link>
           </div>
         </div>

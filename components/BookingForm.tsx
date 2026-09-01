@@ -6,7 +6,6 @@ type FormStep = 'contact' | 'concern' | 'confirmation'
 
 interface PreCommitmentData {
   whatBringsYou: string
-  hopingTherapyHelps: string
   firstTimeTherapy: boolean | null
   preferences: string
 }
@@ -16,11 +15,22 @@ interface FieldErrors {
   email?: string
   phone?: string
   concern?: string
+  firstTimeTherapy?: string
   preferredTime?: string
   consent?: string
 }
 
 interface FieldTouched {
+  name?: boolean
+  email?: boolean
+  phone?: boolean
+  concern?: boolean
+  firstTimeTherapy?: boolean
+  preferredTime?: boolean
+  consent?: boolean
+}
+
+interface FieldFocused {
   name?: boolean
   email?: boolean
   phone?: boolean
@@ -40,11 +50,13 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     email: '',
     phone: '',
     concern: '',
+    firstTimeTherapy: null as boolean | null,
     preferredTime: '',
     consent: false,
   })
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
   const [fieldTouched, setFieldTouched] = useState<FieldTouched>({})
+  const [fieldFocused, setFieldFocused] = useState<FieldFocused>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
@@ -64,7 +76,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     return name.trim().length >= 2
   }
 
-  const validateField = (name: string, value: string | boolean): string | undefined => {
+  const validateField = (name: string, value: string | boolean | null): string | undefined => {
     switch (name) {
       case 'name':
         if (!value || (typeof value === 'string' && !validateName(value as string))) {
@@ -82,8 +94,13 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         }
         break
       case 'concern':
-        if (!value || (typeof value === 'string' && (value as string).trim().length < 10)) {
-          return 'Please provide at least 10 characters describing your concern'
+        if (!value || (typeof value === 'string' && (value as string).trim().length < 15)) {
+          return "Tell me what brought you here and what you're hoping to work on—even a few sentences helps."
+        }
+        break
+      case 'firstTimeTherapy':
+        if (value === null) {
+          return 'Let me know if this is your first time seeking therapy.'
         }
         break
       case 'preferredTime':
@@ -128,10 +145,23 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       [name]: true,
     }))
 
+    setFieldFocused(prev => ({
+      ...prev,
+      [name]: false,
+    }))
+
     const error = validateField(name, fieldValue)
     setFieldErrors(prev => ({
       ...prev,
       [name]: error,
+    }))
+  }
+
+  const handleFieldFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name } = e.target
+    setFieldFocused(prev => ({
+      ...prev,
+      [name]: true,
     }))
   }
 
@@ -144,6 +174,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       errors.phone = validateField('phone', formData.phone)
     } else if (step === 'concern') {
       errors.concern = validateField('concern', formData.concern)
+      errors.firstTimeTherapy = validateField('firstTimeTherapy', formData.firstTimeTherapy)
       errors.preferredTime = validateField('preferredTime', formData.preferredTime)
     } else if (step === 'confirmation') {
       errors.consent = validateField('consent', formData.consent)
@@ -205,7 +236,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         setFieldErrors({})
         // Reset form after 3 seconds
         setTimeout(() => {
-          setFormData({ name: '', email: '', phone: '', concern: '', preferredTime: '', consent: false })
+          setFormData({ name: '', email: '', phone: '', concern: '', firstTimeTherapy: null, preferredTime: '', consent: false })
           setCurrentStep('contact')
           setSubmitSuccess(false)
           setFieldTouched({})
@@ -251,7 +282,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label htmlFor="name" className="form-label">
+              <label htmlFor="name" className={`form-label transition-colors ${
+                fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
                 Your Name *
               </label>
               {formData.name && !fieldErrors.name && fieldTouched.name && (
@@ -267,6 +300,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               value={formData.name}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
+              onFocus={handleFieldFocus}
               placeholder="Jane Doe"
               className={`form-input transition-all ${
                 fieldTouched.name
@@ -288,7 +322,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label htmlFor="email" className="form-label">
+              <label htmlFor="email" className={`form-label transition-colors ${
+                fieldFocused.email ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
                 Email Address *
               </label>
               {formData.email && !fieldErrors.email && fieldTouched.email && (
@@ -304,6 +340,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               value={formData.email}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
+              onFocus={handleFieldFocus}
               placeholder="jane@example.com"
               className={`form-input transition-all ${
                 fieldTouched.email
@@ -325,7 +362,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label htmlFor="phone" className="form-label">
+              <label htmlFor="phone" className={`form-label transition-colors ${
+                fieldFocused.phone ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
                 Phone Number *
               </label>
               {formData.phone && !fieldErrors.phone && fieldTouched.phone && (
@@ -341,6 +380,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               value={formData.phone}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
+              onFocus={handleFieldFocus}
               placeholder="(555) 123-4567"
               className={`form-input transition-all ${
                 fieldTouched.phone
@@ -375,8 +415,10 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label htmlFor="concern" className="form-label">
-                What&apos;s your primary concern? *
+              <label htmlFor="concern" className={`form-label transition-colors ${
+                fieldFocused.concern ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
+                What brings you here, and what are you hoping to work on? *
               </label>
               {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -390,7 +432,8 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               value={formData.concern}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
-              placeholder="Share what&apos;s been on your mind... (just a few sentences is fine)"
+              onFocus={handleFieldFocus}
+              placeholder="What brought you here and what are you hoping to work on? (E.g., I've been feeling anxious about work and I want to feel more confident in meetings.)"
               className={`form-input h-32 resize-none transition-all ${
                 fieldTouched.concern
                   ? fieldErrors.concern
@@ -408,14 +451,16 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               </p>
             ) : (
               <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                This helps me understand what you&apos;re navigating.
+                This helps me understand what's bringing you in and what you're hoping to change.
               </p>
             )}
           </div>
 
           <div>
             <div className="flex items-center justify-between mb-1">
-              <label htmlFor="preferredTime" className="form-label">
+              <label htmlFor="preferredTime" className={`form-label transition-colors ${
+                fieldFocused.preferredTime ? 'text-sage-600' : 'text-warm-gray-900'
+              }`}>
                 When are you usually available? *
               </label>
               {formData.preferredTime && !fieldErrors.preferredTime && fieldTouched.preferredTime && (
@@ -430,6 +475,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               value={formData.preferredTime}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
+              onFocus={handleFieldFocus}
               className={`form-input transition-all ${
                 fieldTouched.preferredTime
                   ? fieldErrors.preferredTime

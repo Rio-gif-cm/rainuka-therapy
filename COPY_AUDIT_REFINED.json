@@ -1,0 +1,63 @@
+{
+  "headline": {
+    "current": "Therapy for what you've been carrying alone",
+    "refined": "You don't have to carry this alone",
+    "analysis": "More active. 'You' = agency. Shorter. Reverses negative frame.",
+    "word_reduction": "8 \u2192 6 words (-25%)"
+  },
+  "subheadline": {
+    "current": "I specialize in what feels stuck: perinatal anxiety, adult ADHD diagnosis, and career crossroads",
+    "refined": "Perinatal anxiety. Late ADHD. Career doubt. These require understanding\u2014and you'll get it here.",
+    "analysis": "Active voice. Specific conditions (power words). Promise clarity. '\u2014and you'll get it here' creates action.",
+    "word_reduction": "18 \u2192 15 words (-17%)"
+  },
+  "descriptor": {
+    "current": "Trauma-informed, culturally humble, and practical. I specialize in what feels stuck\u2014and help you find clarity, belonging, and your own answers.",
+    "refined": "I meet you where you are. We work at your pace. You'll find your answers\u2014not mine.",
+    "analysis": "Shows method (not jargon). Active verbs. 'Your answers\u2014not mine' affirms autonomy. Remove 'trauma-informed' buzzword.",
+    "word_reduction": "26 \u2192 20 words (-23%)"
+  },
+  "persona_prompt": {
+    "current": "Which applies to you? (You might see yourself in more than one\u2014that's exactly why I specialize in what feels stuck.)",
+    "refined": "Which one resonates? (Many of you see yourselves in multiple\u2014and that's the work we do.)",
+    "analysis": "Remove redundant 'what feels stuck.' 'Resonates' is warmer than 'applies.' 'The work we do' = action-oriented.",
+    "word_reduction": "26 \u2192 20 words (-23%)"
+  },
+  "fear_reduction": {
+    "current": "Whether you've been in therapy before or this is your first time\u2014there's no judgment here. You're not broken for reaching out. You're taking care of yourself.",
+    "refined": "First time or returning: you belong here. Seeking help isn't weakness\u2014it's wisdom.",
+    "analysis": "Direct address of fear. Remove 'broken' double-negative. 'Wisdom' affirms strength. Power verb: 'Seeking' vs 'taking care of.'",
+    "word_reduction": "43 \u2192 15 words (-65%)"
+  },
+  "first_session": {
+    "current": "Your first session: a conversation where you share what brought you here at your own pace. I listen, and we see if we're a good fit. You're in control.",
+    "refined": "First session: you talk, I listen. We'll know within 15 minutes if we fit. You lead the pace.",
+    "analysis": "Active. Specific timeline removes anxiety. 'You lead' > 'You're in control' (shorter, clearer).",
+    "word_reduction": "37 \u2192 22 words (-41%)"
+  },
+  "trust_signals": {
+    "current": [
+      "Telehealth \u2022 Sliding Scale",
+      "HIPAA Secure",
+      "Respond within 24 hours \u2022 Usually available within 1-2 weeks"
+    ],
+    "refined": [
+      "Telehealth \u2022 Sliding Scale",
+      "HIPAA Secure \u2022 I respond within 24h",
+      "Book within 1-2 weeks"
+    ],
+    "analysis": "Remove 'Usually' (erodes trust). Remove 'Respond within 24 hours' redundancy. 'I respond' > passive. 'Book within' is concrete."
+  },
+  "cta_primary": {
+    "current": "Book a Free 15-Minute Call",
+    "refined": "Book Your Free Call",
+    "analysis": "Shorter. 'Your' adds ownership. '15-Minute' is implicit in booking flow.",
+    "word_reduction": "5 \u2192 4 words (-20%)"
+  },
+  "cta_secondary": {
+    "current": "See How I Work",
+    "refined": "Learn My Approach",
+    "analysis": "'Learn' is active. 'Approach' is more specific than 'how I work.'",
+    "word_reduction": "4 \u2192 3 words (-25%)"
+  }
+}

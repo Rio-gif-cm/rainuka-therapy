@@ -153,7 +153,7 @@ export default function Home() {
             <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
               Let&apos;s start with a free 15-minute conversation. I&apos;ll listen to what&apos;s brought you here, and you&apos;ll get a real sense of how we&apos;d work together.
             </p>
-            <Link href="/booking" style={{ display: 'inline-block', backgroundColor: 'white', color: '#6b944f', padding: '1rem 2rem', fontWeight: 600, borderRadius: '0.5rem', transition: 'all 0.15s ease-out', textDecoration: 'none', outline: '2px solid transparent', outlineOffset: '2px', cursor: 'pointer' }} className="cta-white" onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = 'scale(1.03)'; el.style.boxShadow = '0 10px 25px rgba(255,255,255,0.25)' }} onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = 'scale(1)'; el.style.boxShadow = 'none' }} onFocus={(e) => { const el = e.currentTarget as HTMLElement; el.style.outline = '2px solid #6b944f'; el.style.outlineOffset = '3px' }} onBlur={(e) => { const el = e.currentTarget as HTMLElement; el.style.outline = '2px solid transparent' }}>
+            <Link href="/booking" className="inline-block" style={{ display: 'inline-block', backgroundColor: 'white', color: '#6b944f', padding: '1rem 2rem', fontWeight: 600, borderRadius: '0.5rem', transition: 'all 0.15s ease-out', textDecoration: 'none', outline: '2px solid transparent', outlineOffset: '2px', cursor: 'pointer' }}>
               Book Your Free Call
             </Link>
           </div>
