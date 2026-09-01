@@ -239,6 +239,27 @@ export default function HeroSection() {
             </div>
           </div>
 
+          {/* REASSURANCE CALLOUT: Anxiety-reduction micro-banner before CTA (Wave 1 implementation) */}
+          <div style={{
+            margin: '2rem auto 2.5rem',
+            padding: '1.25rem 1.5rem',
+            backgroundColor: colors.sage[50],
+            border: `1px solid ${colors.sage[200]}`,
+            borderRadius: '0.75rem',
+            maxWidth: '42rem',
+            textAlign: 'center',
+          }}>
+            <p style={{
+              ...styles.p,
+              fontSize: '0.95rem',
+              fontWeight: 500,
+              color: colors.warmGray[700],
+              margin: 0,
+            }}>
+              <span style={{ color: colors.sage[600], fontWeight: 600 }}>What happens next:</span> You pick a time. We talk. No forms beforehand. No judgment. Just a conversation to see if we're a fit.
+            </p>
+          </div>
+
           {/* CTA Button */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
             <Link 
