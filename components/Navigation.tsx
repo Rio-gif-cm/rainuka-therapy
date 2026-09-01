@@ -129,8 +129,9 @@ export default function Navigation() {
               isMobile={isMobile}
             />
           ))}
+          <SensoryFriendlyToggle isMobile={isMobile} />
           <Link 
-            href="/booking" 
+            href="/booking"
             style={{ 
               ...styles.button,
               ...styles.btnPrimary,
