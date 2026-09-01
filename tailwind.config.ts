@@ -27,6 +27,15 @@ const config: Config = {
           700: '#5e534a',
           900: '#3f3935',
         },
+        'cream': {
+          50: '#fdfbf8',
+          100: '#f5f0eb',
+        },
+        'warm-accent': {
+          light: '#f5ede6',
+          DEFAULT: '#d97757',
+          dark: '#c96547',
+        },
       },
       fontFamily: {
         'serif': ['var(--font-merriweather)', 'Georgia', 'serif'],

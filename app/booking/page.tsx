@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import BookingFormWrapper from '@/components/BookingFormWrapper'
 import PrivacyAssuranceSection from '@/components/PrivacyAssuranceSection'
+import ObjectionHandler from '@/components/ObjectionHandler'
 
 export default function BookingPage() {
   return (
@@ -60,6 +61,9 @@ export default function BookingPage() {
 
         {/* Privacy Assurance Section */}
         <PrivacyAssuranceSection />
+
+        {/* Objection Handler: Cost & Time Concerns */}
+        <ObjectionHandler />
 
         {/* Info Section */}
         <section className="section-padding bg-cream-50">
