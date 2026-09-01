@@ -129,21 +129,25 @@ export default function AboutPage() {
                 {
                   quote: 'Rainuka met me exactly where I was. Not trying to minimize my experience or rush me through grief. Just real presence.',
                   author: 'Maria',
+                  context: 'Artist | Navigating Perinatal Loss',
                   rating: 5,
                 },
                 {
                   quote: 'After 35 years, I finally understand myself. ADHD diagnosis changed everything. Rainuka helped me integrate that.',
                   author: 'James',
+                  context: 'Executive Coach | Late-Life ADHD Recognition',
                   rating: 5,
                 },
                 {
                   quote: 'She gets the invisible stuff—the shame, the doubt, the carrying things alone. I felt so seen.',
                   author: 'Rachel',
+                  context: 'Teacher | Postpartum Anxiety & Burnout',
                   rating: 5,
                 },
                 {
                   quote: 'The practical tools matter too. I left with things I could actually use, not just insight.',
                   author: 'David',
+                  context: 'Startup Founder | Career Transition & Stress',
                   rating: 5,
                 },
               ].map((testimonial, index) => (

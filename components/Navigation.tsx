@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { colors, styles } from '@/app/styles'
 import { useState, useEffect } from 'react'
+import SensoryFriendlyToggle from './SensoryFriendlyToggle'
 
 interface NavLinkProps {
   href: string

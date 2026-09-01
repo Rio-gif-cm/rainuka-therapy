@@ -152,11 +152,14 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
                   Perfectionism & Overwork
                 </h3>
+                <p className="text-warm-gray-600 mb-3">
+                  Not everything requires perfection to be valuable—but high-achievers often learned it does. Perfectionism usually isn't a character flaw; it's a learned survival strategy. Early on, maybe perfect grades meant love. Maybe mistakes meant shame. Maybe "good enough" never felt safe. That strategy kept you safe then. It's exhausting you now.
+                </p>
                 <p className="text-warm-gray-600">
-                  Not everything requires perfection to be valuable—but high-achievers often learned it does. We separate your standards (worth keeping) from the fear underneath them (worth releasing). Your ambition doesn't need anxiety as its fuel.
+                  We separate your standards (worth keeping) from the fear underneath them (worth releasing). Your ambition doesn't need anxiety as its fuel. You can keep your drive and release the perfectionism running on panic.
                 </p>
               </div>
 

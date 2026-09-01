@@ -43,7 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.3;
   color: var(--warm-gray-900);
-  letter-spacing: -0.5px;
+  /* Slight letter-spacing reduction for sophistication; still readable for neurodiverse users */
+  letter-spacing: -0.25px;
 }
 
 h1 {
@@ -68,8 +69,10 @@ h4 {
 
 p {
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.85;
   margin-bottom: 1rem;
+  /* Letter-spacing for ADHD/dyslexia clarity: prevents letter crowding, improves visual distinction */
+  letter-spacing: 0.015em;
   color: var(--warm-gray-700);
 }
 
@@ -352,7 +355,8 @@ textarea.border-green-500:focus {
   font-weight: 600;
   color: var(--warm-gray-900);
   margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+  /* Increased to 1rem for older adult accessibility (WCAG guidance for older users); was 0.95rem */
+  font-size: 1rem;
 }
 
 /* Animations */
@@ -545,4 +549,217 @@ section:not(:first-of-type)::before {
     rgba(157, 187, 141, 0.4) 75%,
     transparent 100%);
   margin-bottom: 2rem;
+}
+
+/* ========================================
+   DEEP ACCESSIBILITY LAYER
+   Supports users with vestibular disorders, migraines, 
+   ADHD, autism, trauma, and motion sensitivity.
+   Respects OS-level "Reduce Motion" accessibility setting.
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all animations and transitions globally */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Remove parallax and position-based animations */
+  .hero-section {
+    animation: none !important;
+  }
+
+  /* Remove card elevation on hover (preserve color change for visual feedback) */
+  .card:hover {
+    transform: none !important;
+    box-shadow: 
+      0 1px 2px rgba(63, 57, 53, 0.04),
+      0 4px 8px rgba(107, 148, 79, 0.05),
+      0 12px 24px rgba(63, 57, 53, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  }
+
+  /* Remove button transform on hover/active (keep color/shadow for feedback) */
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-secondary:hover,
+  .btn-secondary:active {
+    transform: none !important;
+  }
+
+  /* Remove niche card elevation (preserve background color change) */
+  .niche-card:hover,
+  .niche-card:active {
+    transform: none !important;
+  }
+
+  /* Disable arrow animation */
+  .niche-card:hover .explore-arrow,
+  .niche-card:active .explore-arrow {
+    animation: none !important;
+  }
+
+  /* Remove floating element shadow enhancement */
+  .floating-element:hover {
+    box-shadow: 0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1) !important;
+  }
+
+  /* Remove form focus animations */
+  .form-input:focus,
+  .form-select:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 2px rgba(157, 187, 141, 0.2) !important;
+  }
+
+  /* Preserve functional transitions: focus indicators, color changes, opacity */
+  a {
+    text-decoration-color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Keep opacity changes for visual state feedback but instant */
+  [aria-disabled="true"],
+  [disabled] {
+    opacity: 0.5;
+  }
+}
+
+/* ========================================
+   NEURODIVERGENT-AFFIRMING DESIGN
+   Ensure predictability, clarity, and sensory safety
+   for users with ADHD, autism, and cognitive disabilities.
+   ======================================== */
+
+/* Consistent, predictable focus states (required for WCAG 2.1 Focus Visible) */
+:focus-visible {
+  outline: 3px solid var(--sage-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Semantic button states: visible, clear, persistent */
+button:active,
+[role="button"]:active {
+  /* Active state is visible; no hover-only states */
+  opacity: 0.85;
+}
+
+/* Skip to main content link for keyboard users */
+.sr-only:focus,
+[class*="sr-only"]:focus,
+.skip-to-main:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Ensure all interactive elements are keyboard accessible and have sufficient click target size */
+button,
+[role="button"],
+a,
+input[type="checkbox"],
+input[type="radio"],
+select {
+  min-height: 44px; /* Slightly larger for touch; 48px is standard */
+  min-width: 44px;
+}
+
+/* Mobile: ensure 48px+ touch targets for accessibility */
+@media (max-width: 768px) {
+  button,
+  [role="button"],
+  .btn {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* Link underlines: always visible (especially for color-blind users) */
+a {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.25em;
+}
+
+a[aria-current="page"] {
+  font-weight: 600;
+  color: var(--sage-700);
+}
+
+/* High contrast for form inputs in focus state */
+.form-input:focus,
+.form-select:focus,
+textarea:focus {
+  outline: 2px solid var(--sage-500);
+  outline-offset: 2px;
+}
+
+/* Error states: use color AND icon/text, not color alone */
+.form-input[aria-invalid="true"]::after,
+.form-select[aria-invalid="true"]::after,
+textarea[aria-invalid="true"]::after {
+  content: " ⚠"; /* Visual icon in addition to color */
+}
+
+/* Loading states: subtle pulse instead of spin (vestibular-friendly) */
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.loader {
+  animation: subtle-pulse 1.5s ease-in-out infinite;
+}
+
+/* Ensure text is left-aligned, never justified (improves readability for dyslexia) */
+body,
+p,
+li,
+td {
+  text-align: left;
+}
+
+/* Improved line-height for readability (especially for neurodivergent users) */
+body {
+  line-height: 1.6;
+}
+
+p, li {
+  line-height: 1.75;
+}
+
+/* Headings: clear hierarchy, high contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--warm-gray-900);
+  font-weight: 700;
+}
+
+/* Success indication: use color + text, not color alone */
+.success-message::before {
+  content: "✓ ";
+  font-weight: 700;
+}
+
+/* Ensure table headers are marked semantically */
+table thead th {
+  font-weight: 700;
+  background-color: var(--sage-50);
+  border-bottom: 2px solid var(--sage-300);
 }
