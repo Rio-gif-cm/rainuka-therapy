@@ -286,7 +286,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <label htmlFor="name" className={`form-label transition-colors ${
                 fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
               }`}>
-                Your Name *
+                What should I call you? *
               </label>
               {formData.name && !fieldErrors.name && fieldTouched.name && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -302,7 +302,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="Jane Doe"
+              placeholder="Jane or Jane Doe—whatever feels right"
               className={`form-input transition-all ${
                 fieldTouched.name
                   ? fieldErrors.name
@@ -326,7 +326,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <label htmlFor="email" className={`form-label transition-colors ${
                 fieldFocused.email ? 'text-sage-600' : 'text-warm-gray-900'
               }`}>
-                Email Address *
+                Best email to reach you *
               </label>
               {formData.email && !fieldErrors.email && fieldTouched.email && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -342,7 +342,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="jane@example.com"
+              placeholder="name@domain.com"
               className={`form-input transition-all ${
                 fieldTouched.email
                   ? fieldErrors.email
@@ -593,6 +593,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <p><span className="font-medium">Email:</span> {formData.email}</p>
               <p><span className="font-medium">Phone:</span> {formData.phone}</p>
               <p><span className="font-medium">Primary Concern:</span> {formData.concern}</p>
+              <p><span className="font-medium">First time seeking therapy?:</span> {formData.firstTimeTherapy ? 'Yes' : 'I\'ve sought therapy before'}</p>
               <p><span className="font-medium">Preferred Time:</span> {formData.preferredTime}</p>
             </div>
           </div>
