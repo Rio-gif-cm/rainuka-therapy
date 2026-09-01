@@ -13,9 +13,13 @@ import {
   SpecialtyChecklist,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
+import { PerinatalIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
 const accent = specialtyAccents.perinatal
+
+// Perinatal custom SVG color
+const perinatalColor = '#c97660'
 
 export const metadata: Metadata = {
   title: 'Perinatal Therapy | Pregnancy Loss, Postpartum Anxiety, Infertility | Rainuka Oberoi, LCSW',
@@ -43,7 +47,7 @@ export default function PerinatalPage() {
         />
 
         {/* 1 — Who this is for */}
-        <SpecialtySection tone="white" width="wide">
+        <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
@@ -71,28 +75,28 @@ export default function PerinatalPage() {
             title="How I Support You"
           />
           <SpecialtyGrid>
-            <SpecialtyCard accent={accent} icon="🛡️" title="Trauma-Informed">
+            <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Trauma-Informed">
               <p>
                 Perinatal experiences—especially loss and reproductive trauma—are deeply held in
                 the body. I work slowly, respecting your nervous system and your timeline.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🤍" title="Validation, Not Platitudes">
+            <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Validation, Not Platitudes">
               <p>
                 No &quot;you should just be grateful&quot; or &quot;at least you can try again.&quot;
                 Your grief is real. Your anxiety is real. And both can coexist with joy.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🧰" title="Practical Tools">
+            <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Practical Tools">
               <p>
                 You&apos;ll learn strategies to manage anxiety, process grief, and rebuild identity.
                 Therapy that fits into your actual life.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🌍" title="Culturally Humble">
+            <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Culturally Humble">
               <p>
                 Reproductive choices vary by culture, community, and values. I meet you where you
                 are, not where I think you &quot;should&quot; be.
@@ -215,14 +219,14 @@ export default function PerinatalPage() {
 
           <div className="mt-6">
             <SpecialtyGrid>
-              <SpecialtyCard accent={accent} icon="💻" title="Telehealth Available">
+              <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Telehealth Available">
                 <p>
                   Sessions from home, your office, or wherever feels comfortable. 28 states served.
                   Built for new parents who can&apos;t easily leave the house.
                 </p>
               </SpecialtyCard>
 
-              <SpecialtyCard accent={accent} icon="🤝" title="Sliding Scale">
+              <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Sliding Scale">
                 <p>
                   Financial stress from infertility or loss shouldn&apos;t keep you from care.
                   We&apos;ll figure out rates that work for you.

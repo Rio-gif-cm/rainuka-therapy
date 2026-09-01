@@ -54,16 +54,16 @@ export default function NeurodivergentPage() {
 
             <div className="max-w-3xl mx-auto text-warm-gray-700 space-y-6">
               <p>
-                Not compliance. Not masking more convincingly. Real affirmation of your neurodivergent
-                identity, your strengths, and your actual needs.
+                Not compliance. Not teaching you to mask more convincingly so the neurotypical world stops noticing you&apos;re different.
+                Real affirmation of your neurodivergent identity, your actual strengths, and what your brain actually needs to thrive.
               </p>
 
               <div className="p-6 rounded" style={{ backgroundColor: '#f0f6f8', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   We work from the neurodiversity paradigm: ADHD and autism are natural variations in
-                  how brains work, not defects to be cured or normalized. The goal is a life that fits
-                  you—not a you that fits someone else&apos;s life.
+                  how brains work, not defects to be cured or &quot;corrected&quot; so you fit the mold. The goal is a life that fits
+                  you—not a you that fits someone else&apos;s expectations. You&apos;ve been trying to be normal for long enough. Let&apos;s build something that actually works.
                 </p>
               </div>
             </div>
@@ -79,19 +79,19 @@ export default function NeurodivergentPage() {
                 {
                   title: 'Strengths-Based, Not Deficit-Focused',
                   description:
-                    'ADHD hyperfocus, autistic pattern recognition, creative problem-solving—your neurodivergence comes with real gifts. We explore what you are good at and build on it, not just manage symptoms.',
+                    'ADHD hyperfocus, autistic pattern recognition, deep integrity, fierce loyalty, creative problem-solving—your neurodivergence comes with real gifts that aren&apos;t just &quot;managing compensations.&quot; We explore what you are genuinely good at and build on it, not just manage or minimize symptoms. You don&apos;t need to be less of who you are.',
                   icon: '💪',
                 },
                 {
                   title: 'Identity-First Language',
                   description:
-                    'I use "autistic person" and "ADHD adult," not "person with autism." Your neurodivergence is integral to your identity, not a condition to be discussed at arm\'s length. If you prefer otherwise, we use your language.',
+                    'I use &quot;autistic person&quot; and &quot;ADHD adult,&quot; not &quot;person with autism&quot; or &quot;individual with ADHD.&quot; Your neurodivergence is integral to your identity—it shapes how you think, relate, and move through the world. It&apos;s not something separate to discuss at arm&apos;s length. If you prefer person-first language or something else entirely, we use your language.',
                   icon: '💬',
                 },
                 {
                   title: 'Sensory-Informed Care',
                   description:
-                    'Sensory processing affects everything: emotions, executive function, how you move through the world. We talk about your sensory needs and build regulation into your actual coping strategies.',
+                    'Sensory processing affects everything—how you regulate emotions, how executive function works, how you move through the world and relate to your own body. We talk about your sensory needs openly and build regulation into your actual coping strategies. Not as an accommodation, but as central to understanding you.',
                   icon: '🌊',
                 },
               ].map((item, index) => (

@@ -547,10 +547,6 @@ export default function CouplesPage() {
                 or consciously choose to separate, a skilled therapist can guide you through it.
               </p>
             </div>
-
-            <Link href="/booking" className="inline-block btn btn-primary">
-              Get Support That Gets You
-            </Link>
           </div>
         </section>
       </main>

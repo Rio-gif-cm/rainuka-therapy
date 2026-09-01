@@ -54,16 +54,16 @@ export default function BIPOCPage() {
 
             <div className="max-w-3xl mx-auto text-warm-gray-700 space-y-6">
               <p>
-                Not colorblindness. Not &quot;I don&apos;t see race.&quot; Real recognition of who you
-                are, what you have survived, and the systemic forces shaping your daily life.
+                Not colorblindness. Not &quot;I don&apos;t see race&quot; (which is just another way of saying &quot;I will ignore who you are&quot;). 
+                Real, active recognition of who you are, what you have survived, and the systemic forces shaping your daily life.
               </p>
 
               <div className="p-6 rounded" style={{ backgroundColor: '#fdf7f4', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
-                  Your anger at injustice is not a pathology. Your caution in unsafe spaces is wisdom,
-                  not paranoia. We name oppression directly instead of treating it as background noise
-                  in your own story.
+                  Your anger at injustice is not a pathology to manage—it&apos;s a rational response to real harm. Your caution in unsafe spaces is wisdom,
+                  not paranoia or defensiveness. We name oppression directly and clearly, not as background noise in your own story. 
+                  You won&apos;t have to explain racism to me. We can focus on how to survive it and thrive anyway.
                 </p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function BIPOCPage() {
                 {
                   title: 'Cultural Humility, Not Expertise',
                   description:
-                    'I do not claim to know your culture better than you do. Cultural humility means I stay curious about your lived experience, acknowledge what I do not know, and adapt to what you need—not the other way around.',
+                    'I do not claim to know your culture or your family better than you do. I won&apos;t pretend I understand what it means to be you. Cultural humility means I stay genuinely curious about your lived experience, acknowledge openly what I do not know, and adapt to what you actually need—not the other way around. You are the expert on your own life.',
                   icon: '🙏',
                 },
                 {

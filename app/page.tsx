@@ -5,7 +5,7 @@ import HeroSection from '@/components/HeroSection'
 import NicheGrid from '@/components/NicheGrid'
 import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
-import { homepageTestimonials } from '@/src/data/testimonials'
+import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -24,12 +24,13 @@ export const metadata: Metadata = {
  * with a single sage accent band as the emotional peak):
  *
  *   1. Hero              — warm tint  (bg set inside HeroSection)
- *   2. Specializations   — white      (bg set inside NicheGrid)
- *   3. Approach          — warm tint
- *   4. Social proof      — white
- *   5. CTA               — sage accent  ← peak
- *   6. FAQ teaser        — warm tint
- *   7. Footer CTA        — white        ← soft landing into the footer
+ *   2. Hero Social Proof — white      ← NEW: 2 testimonials for early impact
+ *   3. Specializations   — white      (bg set inside NicheGrid)
+ *   4. Approach          — warm tint
+ *   5. Social proof      — white
+ *   6. CTA               — sage accent  ← peak
+ *   7. FAQ teaser        — warm tint
+ *   8. Footer CTA        — white        ← soft landing into the footer
  */
 
 const approach = [
@@ -50,8 +51,8 @@ const approach = [
   },
 ]
 
-// Use imported testimonials from data file
-const testimonials = homepageTestimonials
+// Note: testimonials is now imported at the top for accessing specific items
+// homepageTestimonials is used for the full section below
 
 const faqs = [
   {
@@ -73,7 +74,7 @@ const faqs = [
 ]
 
 export default function Home() {
-  // AggregateRating schema for social proof (testimonials)
+  // AggregateRating schema for social proof (all testimonials)
   // LocalBusiness schema is now in layout.tsx as the single source of truth
   const aggregateRatingSchema = getAggregateRatingSchema(testimonials.length)
 
@@ -92,10 +93,42 @@ export default function Home() {
         {/* ---------- 1. Hero — warm tint ---------- */}
         <HeroSection />
 
-        {/* ---------- 2. Specializations — white ---------- */}
+        {/* ---------- 2. Hero Social Proof — white, immediate impact ---------- */}
+        <section className="section-padding bg-white border-b border-sage-100">
+          <div className="container-base">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+                What clients say
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <TestimonialCard
+                key="jessica-adhd"
+                index={0}
+                quote={testimonials[1].quote}
+                author={testimonials[1].author}
+                context={testimonials[1].context}
+                rating={testimonials[1].rating}
+                totalReviews={homepageTestimonials.length}
+              />
+              <TestimonialCard
+                key="priya-perinatal"
+                index={1}
+                quote={testimonials[5].quote}
+                author={testimonials[5].author}
+                context={testimonials[5].context}
+                rating={testimonials[5].rating}
+                totalReviews={homepageTestimonials.length}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* ---------- 3. Specializations — white ---------- */}
         <NicheGrid />
 
-        {/* ---------- 3. Approach — warm tint ---------- */}
+        {/* ---------- 4. Approach — warm tint ---------- */}
         <section className="section-padding bg-warm-gray-50 border-t border-sage-100">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center">
@@ -124,7 +157,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 4. Social proof — white ---------- */}
+        {/* ---------- 5. Social proof — white ---------- */}
         <section className="section-padding bg-white">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -152,7 +185,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 5. CTA — sage accent (the peak) ---------- */}
+        {/* ---------- 6. CTA — sage accent (the peak) ---------- */}
         <section className="section-padding text-white" style={{ backgroundColor: '#547c3f' }}>
           <div className="container-base text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to Reclaim Your Peace?</h2>
@@ -182,7 +215,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 6. FAQ teaser — warm tint ---------- */}
+        {/* ---------- 7. FAQ teaser — warm tint ---------- */}
         <section className="section-padding bg-warm-gray-50">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -216,7 +249,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 7. Footer CTA — white, soft landing ---------- */}
+        {/* ---------- 8. Footer CTA — white, soft landing ---------- */}
         <section className="section-padding bg-white border-t border-sage-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">
@@ -226,14 +259,9 @@ export default function Home() {
               That&apos;s a reasonable place to be. Reaching out isn&apos;t a commitment to
               anything—it&apos;s just a conversation. Whenever you&apos;re ready, I&apos;m here.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center items-center">
-              <Link href="/booking" className="btn-primary">
-                Let's Build Your Clarity Together
-              </Link>
-              <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
-                Learn more about me →
-              </Link>
-            </div>
+            <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
+              Learn more about me →
+            </Link>
             <p className="text-sm text-warm-gray-600 mt-8">
               Telehealth • Sliding scale • I respond within 24 hours
             </p>

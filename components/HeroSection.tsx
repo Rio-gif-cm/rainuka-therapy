@@ -270,6 +270,135 @@ export default function HeroSection() {
             </span>
           </h1>
 
+          {/* ── Trust signals badges (below headline) ──────────────────────── */}
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '1rem',
+              margin: 0,
+              marginBottom: '2rem',
+              justifyContent: 'center',
+            }}
+            className="md:mx-0 mx-auto md:justify-start md:mb-8"
+          >
+            {/* Badge 1: Licensed LCSW */}
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 0.875rem',
+                borderRadius: '0.375rem',
+                backgroundColor: 'rgba(157, 187, 141, 0.12)',
+                border: `1px solid ${colors.sage[300]}`,
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                color: colors.sage[700],
+                lineHeight: 1.35,
+              }}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 3l7 3v5.5c0 4.3-2.9 8.2-7 9.5-4.1-1.3-7-5.2-7-9.5V6l7-3z" />
+                <path d="M9.2 12.2l2 2 3.6-3.9" />
+              </svg>
+              <span>Licensed LCSW</span>
+            </div>
+
+            {/* Badge 2: Accepting New Clients */}
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 0.875rem',
+                borderRadius: '0.375rem',
+                backgroundColor: 'rgba(217, 119, 87, 0.12)',
+                border: `1px solid rgba(217, 119, 87, 0.35)`,
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                color: colors.accent,
+                lineHeight: 1.35,
+              }}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4M10 12h4" />
+              </svg>
+              <span>Now accepting new clients</span>
+            </div>
+
+            {/* Badge 3: Years of Experience */}
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.5rem 0.875rem',
+                borderRadius: '0.375rem',
+                backgroundColor: 'rgba(209, 220, 200, 0.20)',
+                border: `1px solid ${colors.sage[200]}`,
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                color: colors.sage[700],
+                lineHeight: 1.35,
+              }}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M12 7.6V12l2.8 1.7" />
+              </svg>
+              <span>12+ years experience</span>
+            </div>
+          </div>
+
+          {/* Subheadline — warm, benefit-focused, concrete specifics */}
+          <p
+            style={{
+              fontSize: 'clamp(1.0625rem, 1.5vw, 1.1875rem)',
+              lineHeight: 1.7,
+              fontWeight: 500,
+              color: colors.warmGray[700],
+              margin: 0,
+              marginBottom: '2rem',
+              maxWidth: '38rem',
+              textWrap: 'pretty',
+            }}
+            className="md:mx-0 mx-auto md:mb-8"
+          >
+            Sliding scale therapy for perinatal anxiety, adult ADHD, and career transitions. <strong style={{ fontWeight: 600, color: colors.sage[700] }}>First 15 min free.</strong>
+          </p>
+
           {/* Lede */}
           <p
             style={{

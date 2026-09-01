@@ -32,59 +32,59 @@ export interface SpecialtyAccent {
 }
 
 export const specialtyAccents = {
-  // clay — warmth, hope, safety. Softest of the accents.
+  // perinatal — soft pink/rose. Nurturing, maternal, compassionate
   perinatal: {
-    accent: '#d97757',        // clay-500
-    accentText: '#a5503a',    // clay-700  (AA on white)
-    accentDeep: '#a5503a',    // clay-700
-    tint: 'rgba(217, 119, 87, 0.07)',
-    tintStrong: 'rgba(217, 119, 87, 0.12)',
-    heroTint: 'rgba(217, 119, 87, 0.10)',
+    accent: '#e8a8a0',        // soft rose-500
+    accentText: '#c97660',    // rose-700  (AA on white)
+    accentDeep: '#b85a47',    // rose-800
+    tint: 'rgba(232, 168, 160, 0.08)',
+    tintStrong: 'rgba(201, 118, 96, 0.14)',
+    heroTint: 'rgba(232, 168, 160, 0.12)',
   },
-  // dusk — clarity and focus without overstimulation
+  // adhd — energetic orange. Dynamic, bright, forward
   adhd: {
-    accent: '#61809f',        // dusk-500
-    accentText: '#3f566d',    // dusk-700  (AA on white)
-    accentDeep: '#4d6a86',    // dusk-600
-    tint: 'rgba(97, 128, 159, 0.07)',
-    tintStrong: 'rgba(97, 128, 159, 0.12)',
-    heroTint: 'rgba(97, 128, 159, 0.10)',
+    accent: '#ff8c42',        // energetic orange-500
+    accentText: '#e67e31',    // orange-700  (AA on white)
+    accentDeep: '#d47120',    // orange-800
+    tint: 'rgba(255, 140, 66, 0.09)',
+    tintStrong: 'rgba(230, 126, 49, 0.15)',
+    heroTint: 'rgba(255, 140, 66, 0.10)',
   },
-  // honey — confidence, professionalism, forward momentum
+  // career — professional blue. Confident, clear, upward
   career: {
-    accent: '#c08f5c',        // honey-500
-    accentText: '#84603c',    // honey-700 (AA on white)
-    accentDeep: '#84603c',    // honey-700
-    tint: 'rgba(192, 143, 92, 0.08)',
-    tintStrong: 'rgba(192, 143, 92, 0.14)',
-    heroTint: 'rgba(192, 143, 92, 0.10)',
+    accent: '#1e88e5',        // professional blue-500
+    accentText: '#1565c0',    // blue-700 (AA on white)
+    accentDeep: '#0d47a1',    // blue-900
+    tint: 'rgba(30, 136, 229, 0.08)',
+    tintStrong: 'rgba(21, 101, 192, 0.14)',
+    heroTint: 'rgba(30, 136, 229, 0.10)',
   },
-  // dusk (deep) — depth, compassion, holding space
+  // grief — calm blue. Deep, holding, composed
   grief: {
-    accent: '#4d6a86',        // dusk-600
+    accent: '#4d6a86',        // calm dusk-600
     accentText: '#334458',    // dusk-800 (AA on white)
-    accentDeep: '#3f566d',    // dusk-700
-    tint: 'rgba(77, 106, 134, 0.08)',
-    tintStrong: 'rgba(77, 106, 134, 0.14)',
-    heroTint: 'rgba(77, 106, 134, 0.11)',
+    accentDeep: '#25364a',    // dusk-900
+    tint: 'rgba(77, 106, 134, 0.09)',
+    tintStrong: 'rgba(51, 68, 88, 0.15)',
+    heroTint: 'rgba(77, 106, 134, 0.12)',
   },
-  // blush — connection, warmth, intimacy
+  // couples — warm peach. Intimate, connected, warm
   couples: {
-    accent: '#a87372',        // blush-500
-    accentText: '#714a49',    // blush-700 (AA on white)
-    accentDeep: '#8c5c5b',    // blush-600
-    tint: 'rgba(168, 115, 114, 0.07)',
-    tintStrong: 'rgba(168, 115, 114, 0.13)',
-    heroTint: 'rgba(168, 115, 114, 0.10)',
+    accent: '#f4a59d',        // warm peach-500
+    accentText: '#e07856',    // peach-700 (AA on white)
+    accentDeep: '#c85a3a',    // peach-800
+    tint: 'rgba(244, 165, 157, 0.09)',
+    tintStrong: 'rgba(224, 120, 86, 0.15)',
+    heroTint: 'rgba(244, 165, 157, 0.11)',
   },
-  // dusk (steel) — steadiness, trust, directness
+  // men — steel blue. Strong, steady, trustworthy
   men: {
-    accent: '#4d6a86',        // dusk-600
-    accentText: '#3f566d',    // dusk-700 (AA on white)
-    accentDeep: '#4d6a86',    // dusk-600
-    tint: 'rgba(77, 106, 134, 0.07)',
-    tintStrong: 'rgba(77, 106, 134, 0.13)',
-    heroTint: 'rgba(77, 106, 134, 0.11)',
+    accent: '#2c5aa0',        // steel blue-600
+    accentText: '#1e3a8a',    // blue-900 (AA on white)
+    accentDeep: '#15237e',    // dark blue
+    tint: 'rgba(44, 90, 160, 0.08)',
+    tintStrong: 'rgba(30, 58, 138, 0.14)',
+    heroTint: 'rgba(44, 90, 160, 0.10)',
   },
 } satisfies Record<string, SpecialtyAccent>
 
@@ -150,8 +150,9 @@ export function SpecialtyHero({
 
           <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">{description}</p>
 
-          <Link href={ctaHref} className="inline-block btn btn-primary">
-            {ctaLabel}
+          {/* First gate CTA: "See if this applies to you" — scrolls to content */}
+          <Link href={`#suitability`} className="inline-block btn btn-primary">
+            See if this applies to you
           </Link>
 
           {trust.length > 0 && (
@@ -493,7 +494,7 @@ export function SpecialtyCTA({
             className="inline-block bg-white px-8 py-4 font-semibold rounded-lg transition-transform hover:-translate-y-0.5"
             style={{ color: accent.accentDeep }}
           >
-            {ctaLabel}
+            Book my session
           </Link>
           {footnote && (
             <p className="text-sm mt-6 mb-0 text-white" style={{ opacity: 0.8 }}>

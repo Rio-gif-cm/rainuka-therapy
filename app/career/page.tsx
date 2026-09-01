@@ -13,9 +13,13 @@ import {
   SpecialtyFAQ,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
+import { CareerIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
 const accent = specialtyAccents.career
+
+// Career custom SVG color
+const careerColor = '#1565c0'
 
 export default function CareerPage() {
   return (
@@ -33,7 +37,7 @@ export default function CareerPage() {
         />
 
         {/* 1 — Who this is for */}
-        <SpecialtySection tone="white" width="wide">
+        <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
@@ -128,35 +132,35 @@ export default function CareerPage() {
             title="What We Work On Together"
           />
           <SpecialtyGrid>
-            <SpecialtyCard accent={accent} icon="🔋" title="Burnout Recovery">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Burnout Recovery">
               <p>
                 Understanding what led to burnout. Rest without guilt. Rebuilding sustainable work
                 habits that survive contact with a real job.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🧭" title="Values Clarification">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Values Clarification">
               <p>
                 What actually matters to YOU—not your parents, not your peers. What work feels
                 aligned with your values and your life.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🔀" title="Decision-Making Paralysis">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Decision-Making Paralysis">
               <p>
                 Working through analysis paralysis. Building tolerance for uncertainty. Moving from
                 &quot;I don&apos;t know&quot; to &quot;here&apos;s what I&apos;ll try.&quot;
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🎭" title="Imposter Syndrome">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Imposter Syndrome">
               <p>
                 The voice that says &quot;they&apos;ll figure out you don&apos;t belong.&quot;
                 Building evidence-based confidence instead of louder reassurance.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="⚖️" title="Perfectionism & Overwork">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Perfectionism & Overwork">
               <p>
                 Perfectionism usually isn&apos;t a character flaw; it&apos;s a learned survival
                 strategy. Maybe perfect grades meant love. Maybe mistakes meant shame.
@@ -167,7 +171,7 @@ export default function CareerPage() {
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🌾" title="Grief for Paths Not Taken">
+            <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Grief for Paths Not Taken">
               <p>
                 Mourning the career you thought you&apos;d have. Building genuine excitement for
                 what&apos;s actually possible from here.

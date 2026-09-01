@@ -15,9 +15,13 @@ import {
   SpecialtyFAQ,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
+import { ADHDIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
 const accent = specialtyAccents.adhd
+
+// ADHD custom SVG color
+const adhdColor = '#e67e31'
 
 export const metadata: Metadata = {
   title: 'Adult ADHD Therapy | Diagnosis, Executive Function | Rainuka Oberoi, LCSW',
@@ -46,7 +50,7 @@ export default function ADHDPage() {
         />
 
         {/* 1 — Who this is for */}
-        <SpecialtySection tone="white" width="wide">
+        <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
@@ -100,42 +104,42 @@ export default function ADHDPage() {
             title="How I Work With ADHD"
           />
           <SpecialtyGrid>
-            <SpecialtyCard accent={accent} icon="💪" title="Strengths-Based">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Strengths-Based">
               <p>
                 ADHD ≠ deficit. Your brain is different, not broken. We&apos;ll understand your
                 specific presentation and build on your actual strengths.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🕊️" title="No Shame">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="No Shame">
               <p>
                 You&apos;re not lazy. You&apos;re not broken. You&apos;re not &quot;not trying hard
                 enough.&quot; Therapy helps you replace shame with self-understanding.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🧰" title="Practical Systems">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Practical Systems">
               <p>
                 Not shame-based productivity tips. Real strategies that work WITH your ADHD brain—
                 time management, task initiation, emotional regulation tools.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🌱" title="Grief + Excitement">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Grief + Excitement">
               <p>
                 We process grief for lost time while exploring what&apos;s possible now. ADHD
                 identity integration, not just diagnosis acceptance.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="🗣️" title="Neurodivergent-Affirming Language">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Neurodivergent-Affirming Language">
               <p>
                 You&apos;ll never hear &quot;fix your brain&quot; or &quot;overcome your ADHD.&quot;
                 We work with your neurodiversity, not against it.
               </p>
             </SpecialtyCard>
 
-            <SpecialtyCard accent={accent} icon="👩" title="ADHD in Women">
+            <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="ADHD in Women">
               <p>
                 High masking, perfectionism, and anxiety that hides the hyperactivity. You learned
                 early how to appear &quot;normal&quot; while burning out internally.

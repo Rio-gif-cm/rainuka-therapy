@@ -54,16 +54,17 @@ export default function LGBTQPage() {
 
             <div className="max-w-3xl mx-auto text-warm-gray-700 space-y-6">
               <p>
-                Not tolerance. Not &quot;I&apos;m fine with it.&quot; Real affirmation of your identity,
-                your relationships, and your lived experience—held as fact, not as a topic up for debate.
+                Not tolerance. Not &quot;I&apos;m fine with it.&quot; Not a therapist who tolerates you like you&apos;re
+                doing them a favor. Real affirmation of your identity, your relationships, and your lived experience—held as 
+                simple fact, not as a topic up for debate or therapy to resolve.
               </p>
 
               <div className="p-6 rounded" style={{ backgroundColor: '#fcf6f6', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   You are not here to be evaluated, diagnosed as confused, or talked out of yourself.
-                  You are here to do the work you came to do—with a therapist who has already accepted
-                  the premise of your life.
+                  There is no &quot;but let&apos;s work on&quot; hiding underneath my affirmation. You are here to do the work you came to do—with 
+                  a therapist who has already accepted the premise of your life and who celebrates who you are.
                 </p>
               </div>
             </div>
@@ -79,7 +80,7 @@ export default function LGBTQPage() {
                 {
                   title: 'Gender-Affirming Care',
                   description:
-                    'If you are pursuing HRT, surgery, or social transition, I support that—not as therapy to change you, but as care for your wellbeing. No gatekeeping. No "are you sure?" My job is to support your decisions about your own body.',
+                    'If you are pursuing HRT, surgery, or social transition, I support that fully—not as therapy to change you, but as care for your wellbeing and your autonomy. No gatekeeping. No &quot;are you sure?&quot; or &quot;let&apos;s talk about this more&quot; disguised as clinical responsibility. My job is to support your decisions about your own body and your own life.',
                   icon: '🌱',
                 },
                 {
@@ -91,7 +92,7 @@ export default function LGBTQPage() {
                 {
                   title: 'Intersectionality Matters',
                   description:
-                    'You are not just LGBTQ+. You are also LGBTQ+ and neurodivergent, and BIPOC, and disabled, and working-class, and more. I work with the whole of who you are, not checking boxes.',
+                    'You are not just LGBTQ+. You are also LGBTQ+ and neurodivergent, LGBTQ+ and BIPOC, LGBTQ+ and disabled, and everything else you carry. Each identity matters. Each identity affects how you move through the world. I work with the whole of who you are—not checking boxes or treating identities separately.',
                   icon: '🔗',
                 },
               ].map((item, index) => (
