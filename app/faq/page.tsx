@@ -146,7 +146,7 @@ export default function FAQPage() {
 
               <div className="space-y-4">
                 {FAQData.slice(0, 5).map((faq, index) => (
-                  <details key={index} className="card cursor-pointer">
+                  <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
                       <span className="text-sage-400">▼</span>
@@ -165,7 +165,7 @@ export default function FAQPage() {
 
               <div className="space-y-4">
                 {FAQData.slice(5, 11).map((faq, index) => (
-                  <details key={index} className="card cursor-pointer">
+                  <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
                       <span className="text-sage-400">▼</span>
@@ -184,7 +184,7 @@ export default function FAQPage() {
 
               <div className="space-y-4">
                 {FAQData.slice(11, 15).map((faq, index) => (
-                  <details key={index} className="card cursor-pointer">
+                  <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
                       <span className="text-sage-400">▼</span>
@@ -203,7 +203,7 @@ export default function FAQPage() {
 
               <div className="space-y-4">
                 {FAQData.slice(15, 20).map((faq, index) => (
-                  <details key={index} className="card cursor-pointer">
+                  <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
                       <span className="text-sage-400">▼</span>
@@ -222,7 +222,7 @@ export default function FAQPage() {
               <p className="text-warm-gray-600 mb-6">
                 I'm here to answer anything. Reach out or ask me directly during your free consultation.
               </p>
-              <Link href="/contact" className="inline-block btn btn-primary">
+              <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.75rem', fontWeight: 600, fontSize: '1rem', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
                 Get In Touch
               </Link>
             </div>
