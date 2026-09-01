@@ -71,6 +71,7 @@ export default function Navigation() {
     { href: '/adhd', label: 'ADHD' },
     { href: '/couples', label: 'Couples' },
     { href: '/career', label: 'Career' },
+    { href: '/grief', label: 'Grief' },
     { href: '/guides', label: 'Guides' },
     { href: '/back-to-school', label: 'Back to School' },
     { href: '/holiday-stress', label: 'Holiday Stress' },
