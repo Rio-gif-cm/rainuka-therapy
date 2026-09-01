@@ -16,7 +16,7 @@ export interface Testimonial {
   author: string
   context: string
   rating: number
-  category?: 'perinatal' | 'adhd' | 'career' | 'couples' | 'grief' | 'general'
+  category?: 'perinatal' | 'adhd' | 'career' | 'couples' | 'grief' | 'parenting' | 'general'
 }
 
 export const testimonials: Testimonial[] = [
@@ -117,9 +117,59 @@ export const testimonials: Testimonial[] = [
   // FIRST-GENERATION IMMIGRANT EXPERIENCE (NEW)
   {
     quote:
-      'Coming to therapy felt like a betrayal—you don\'t talk about family stuff outside the family. But I was carrying generational trauma, immigrant grief, and pressure to be the \"model minority.\" Rainuka created space where I could honor my parents\' sacrifice AND grieve what that sacrifice cost me. She gets that my mental health isn\'t separate from my cultural identity. I\'m healing in my own way, not in someone else\'s timeline.',
+      'Coming to therapy felt like a betrayal—you don\'t talk about family stuff outside the family. But I was carrying generational trauma, immigrant grief, and pressure to be the "model minority." Rainuka created space where I could honor my parents\' sacrifice AND grieve what that sacrifice cost me. She gets that my mental health isn\'t separate from my cultural identity. I\'m healing in my own way, not in someone else\'s timeline.',
     author: 'Raj',
     context: 'First-Generation Indian-American | Generational Trauma & Identity Integration',
+    rating: 5,
+    category: 'general',
+  },
+
+  // LGBTQ+ COUPLE (NEW)
+  {
+    quote:
+      'We weren\'t even sure if couples therapy would "get" us—as a same-sex couple. But from day one, Rainuka saw US, not a checkbox. We came in because we\'d hit a wall after 7 years. We were both people-pleasers, so we\'d avoided every hard conversation. Turns out we had a lot to say. She taught us how to disagree without it feeling like betrayal. Now we actually fight better—which sounds weird, but it means we\'re honest. We\'re building something real instead of just trying not to rock the boat.',
+    author: 'Jamie & Casey',
+    context: 'Same-Sex Couple | 7-Year Partnership & Communication Repair',
+    rating: 5,
+    category: 'couples',
+  },
+
+  // LATINO/MASCULINE PERSPECTIVE (NEW)
+  {
+    quote:
+      'Growing up Latino, therapy was "for women" or "for people who couldn\'t handle things." I came in reluctantly—my wife basically said it was therapy or she was done. I thought I was fine. But Rainuka asked me questions no one had asked. She helped me see that dismissing my feelings wasn\'t strength; it was leaving my family with only half of me. Learning to name what I actually feel—not just "I\'m fine" or "I\'m angry"—has changed my marriage and how I parent. I wish I\'d done this years ago.',
+    author: 'David',
+    context: 'Latino Father of Two | Emotional Expression & Family Connection',
+    rating: 5,
+    category: 'couples',
+  },
+
+  // PARENTING/CO-PARENTING STRESS (NEW)
+  {
+    quote:
+      'Co-parenting with my ex was a nightmare. We could not be in the same room without tension. My kids felt it, and it was eating me alive. I came to Rainuka exhausted and resentful. She didn\'t fix my ex (obviously), but she helped me manage my own emotional reactivity and see my kids\'s needs clearly instead of through my hurt. We developed actual strategies for parallel parenting. My kids are calmer. I sleep better. And I don\'t dread pickups anymore.',
+    author: 'Jennifer',
+    context: 'Mother of Two | Co-Parenting Conflict & Healing',
+    rating: 5,
+    category: 'parenting',
+  },
+
+  // ASIAN/MIDDLE EASTERN STRESS & IDENTITY (NEW)
+  {
+    quote:
+      'I\'m second-generation Palestinian-American, and I was drowning in code-switching. At work, I\'m one person. At home with family, another. And then the news cycles hit, and I\'m carrying a grief and anger I can\'t even name at the office. Rainuka saw the whole picture. She helped me understand that my anxiety isn\'t "just anxiety"—it\'s a legitimate response to displacement, belonging anxiety, and cultural pressure. She validated that carrying two worlds is exhausting. Now I\'m building a life where I don\'t have to pick sides; I can integrate both parts of myself.',
+    author: 'Noor',
+    context: 'Second-Generation Palestinian-American | Cultural Identity & Belonging',
+    rating: 5,
+    category: 'general',
+  },
+
+  // QUEER SOLO (NEW)
+  {
+    quote:
+      'Coming out at 32 after 10 years of marriage wasn\'t linear or clean. I was grieving the life I\'d planned while also finally feeling alive for the first time. Rainuka didn\'t try to fix it or judge me. She held space for both—the loss AND the liberation. She helped me navigate the aftermath with my ex, come out to my parents, and build a new identity as a queer woman that felt genuinely mine. It was some of the hardest and most honest work I\'ve ever done. I\'m not the same person, and I\'m grateful for that.',
+    author: 'Claire',
+    context: 'Queer Woman | Late-Life Coming Out & Identity Reconstruction',
     rating: 5,
     category: 'general',
   },
@@ -134,6 +184,7 @@ export const testimonialsByCategory = {
   career: testimonials.filter((t) => t.category === 'career'),
   couples: testimonials.filter((t) => t.category === 'couples'),
   grief: testimonials.filter((t) => t.category === 'grief'),
+  parenting: testimonials.filter((t) => t.category === 'parenting'),
   general: testimonials.filter((t) => t.category === 'general' || !t.category),
 }
 
