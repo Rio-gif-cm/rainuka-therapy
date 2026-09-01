@@ -107,7 +107,7 @@ export default function Home() {
               Ready to talk?
             </h2>
             <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
-              Let's start with a free 15-minute conversation. I'll listen to what's brought you here, and you'll get a real sense of how we'd work together.
+              Let&apos;s start with a free 15-minute conversation. I&apos;ll listen to what&apos;s brought you here, and you&apos;ll get a real sense of how we&apos;d work together.
             </p>
             <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50 transition-colors">
               Book Your Free Call
@@ -125,20 +125,20 @@ export default function Home() {
             <div className="max-w-3xl mx-auto space-y-6">
               {[
                 {
-                  q: 'How long is the free consultation?',
-                  a: 'Fifteen minutes. We\'ll chat about what\'s bringing you in, I\'ll share a bit about how I work, and we\'ll see if it feels like a fit.',
+                  q: "How long is the free consultation?",
+                  a: "Fifteen minutes. We'll chat about what's bringing you in, I'll share a bit about how I work, and we'll see if it feels like a fit.",
                 },
                 {
-                  q: 'How much does therapy cost?',
-                  a: 'I offer sliding scale sessions from $80-$150 per 50-minute session. Let\'s figure out what works for your budget.',
+                  q: "How much does therapy cost?",
+                  a: "I offer sliding scale sessions from $80-$150 per 50-minute session. Let's figure out what works for your budget.",
                 },
                 {
-                  q: 'Do you take insurance?',
-                  a: 'I\'m currently in-network with [insurance providers]. I\'m also happy to provide you with a superbill for out-of-network claims.',
+                  q: "Do you take insurance?",
+                  a: "I'm currently in-network with [insurance providers]. I'm also happy to provide you with a superbill for out-of-network claims.",
                 },
                 {
-                  q: 'Are sessions confidential?',
-                  a: 'Yes. Everything you share is protected by HIPAA and therapist-client privilege. The only exceptions are mandatory reporting situations.',
+                  q: "Are sessions confidential?",
+                  a: "Yes. Everything you share is protected by HIPAA and therapist-client privilege. The only exceptions are mandatory reporting situations.",
                 },
               ].map((faq, index) => (
                 <details key={index} className="card cursor-pointer">

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { colors, styles } from '@/app/styles'
+// layoutStyles includes gridAutoFit pattern
 
 const specialties = [
   {
@@ -43,11 +44,7 @@ export default function NicheGrid() {
           </p>
         </div>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '2rem',
-        }}>
+        <div style={layoutStyles.gridAutoFit}>
           {specialties.map((specialty) => (
             <Link href={specialty.link} key={specialty.slug} style={{ textDecoration: 'none' }}>
               <div

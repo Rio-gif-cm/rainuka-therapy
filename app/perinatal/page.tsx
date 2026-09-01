@@ -14,7 +14,7 @@ export default function PerinatalPage() {
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Perinatal Mental Health Therapy
             </h1>
-            <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto">
+            <p className="text-xl font-semibold text-sage-600 mb-4 max-w-2xl mx-auto">
               Pregnancy, loss, postpartum. What you're carrying isn't weakness.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
@@ -22,7 +22,7 @@ export default function PerinatalPage() {
               I specialize in what often goes unnamed—and help you feel less alone.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
-              Book a Free Consultation
+              Schedule Your Free 30-Min Call
             </Link>
           </div>
         </section>
@@ -110,6 +110,16 @@ export default function PerinatalPage() {
               What You'll Get in Therapy
             </h2>
 
+            {/* Reassurance Box - Trauma-Informed Microcopy */}
+            <div className="mb-8 p-6 rounded-lg bg-sage-50 border-l-4 border-sage-400">
+              <p className="text-sm font-semibold text-sage-700 uppercase tracking-wide mb-2">
+                Safe Space for Your Experience
+              </p>
+              <p className="text-warm-gray-700">
+                This is a judgment-free environment. Your timeline, your pace. Every emotion you bring—grief, joy, rage, ambivalence—is welcomed here.
+              </p>
+            </div>
+
             <div className="space-y-6 text-warm-gray-600">
               <p>
                 <strong>A space where you're not "too much."</strong> Your anxiety isn't annoying. 
@@ -181,7 +191,7 @@ export default function PerinatalPage() {
               You're not alone in this
             </h2>
             <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
-              Let's talk about what you're carrying.
+              Let's talk about what you're carrying. No judgment, no pressure—just compassionate support tailored to your experience.
             </p>
             <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
               Schedule Your Free Call
