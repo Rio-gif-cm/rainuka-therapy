@@ -107,7 +107,7 @@ export default function Home() {
               Ready to talk?
             </h2>
             <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
-              Let's schedule a free 15-minute call to see if we're a good fit. No obligation, no pressure.
+              Let's start with a free 15-minute conversation. I'll listen to what's brought you here, and you'll get a real sense of how we'd work together.
             </p>
             <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50 transition-colors">
               Book Your Free Call
