@@ -276,10 +276,21 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
       {/* Step 1: Contact Information */}
       {currentStep === 'contact' && (
-        <div className="space-y-4 animate-fade-in-up">
-          <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
-            Let&apos;s start with the basics
-          </h3>
+      <div className="space-y-4 animate-fade-in-up">
+        {/* MICROCOPY WAVE 1: Pre-commitment reassurance - addresses hesitation at form start */}
+        <div className="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4 flex gap-3 items-start">
+          <span className="text-lg flex-shrink-0">💭</span>
+          <div className="text-sm">
+            <p className="text-blue-900 font-medium mb-1">A quick note:</p>
+            <p className="text-blue-800">
+              This 3-step form takes ~5 minutes. No commitment—just info to help me prepare for our free call.
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
+          Let&apos;s start with the basics
+        </h3>
 
           <div>
             <div className="flex items-center justify-between mb-1">
@@ -659,35 +670,60 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         </div>
       )}
 
-      {/* Success Message */}
+      {/* Success Message - MICROCOPY WAVE 1: Celebratory state with timeline clarity */}
       {submitSuccess && (
         <div className="card bg-green-50 border-2 border-green-400 animate-fade-in-up">
           <div className="flex items-start gap-3">
-            <span className="text-2xl">✓</span>
+            <span className="text-3xl">🎉</span>
             <div className="flex-1">
-              <p className="text-green-900 font-semibold mb-1">
-                Booking submitted successfully!
+              <p className="text-green-900 font-semibold mb-2">
+                Your call is booked!
               </p>
-              <p className="text-green-800 text-sm">
-                Thank you! I&apos;ve received your information. You&apos;ll receive a confirmation email within 24 hours with available times for your free 15-minute consultation call.
+              <p className="text-green-800 text-sm mb-4">
+                Thank you! I've received your information and will reach out within 24 hours with available times for your free 15-minute consultation.
               </p>
+              <div className="bg-white/60 rounded p-3 text-xs text-green-900 border border-green-200">
+                <p className="font-medium mb-2">What to expect:</p>
+                <ul className="space-y-1 list-disc list-inside">
+                  <li>📧 Confirmation email within 1 hour</li>
+                  <li>📞 Phone call within 24 hours</li>
+                  <li>📅 First call typically within 1-2 weeks</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       )}
 
-      {/* Error Message */}
+      {/* Error Message - MICROCOPY WAVE 1: Warm recovery with multiple paths */}
       {submitError && (
         <div className="card bg-red-50 border-2 border-red-400 animate-fade-in-up">
           <div className="flex items-start gap-3">
-            <span className="text-2xl">⚠</span>
+            <span className="text-2xl">⚠️</span>
             <div className="flex-1">
-              <p className="text-red-900 font-semibold mb-1">
-                Something went wrong
+              <p className="text-red-900 font-semibold mb-2">
+                We hit a small hiccup
               </p>
-              <p className="text-red-800 text-sm">
+              <p className="text-red-800 text-sm mb-4">
                 {submitError}
               </p>
+              <div className="flex gap-3 flex-wrap">
+                <button
+                  onClick={() => {
+                    setSubmitError(null)
+                  }}
+                  className="text-sm font-medium text-red-700 hover:text-red-900 hover:underline transition-colors"
+                >
+                  ↻ Try again
+                </button>
+                <span className="text-red-700">•</span>
+                <a
+                  href="mailto:hello@rainukatherapy.com"
+                  className="text-sm font-medium text-red-700 hover:text-red-900 hover:underline transition-colors"
+                >
+                  📧 Email me directly
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -724,7 +760,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             disabled={isSubmitting}
             className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? '⏳ Submitting...' : 'Secure My Consultation'}
+            {isSubmitting ? '🔒 Securing your information...' : 'Secure My Consultation'}
           </button>
         )}
       </div>
