@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { colors, layout } from '@/app/styles'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 /**
  * HeroSection — premium, calm, layered.
@@ -15,11 +15,14 @@ import { useState, useEffect } from 'react'
  *
  * Nothing moves quickly, nothing shouts. Depth comes from stacked translucency
  * rather than hard borders or heavy shadows.
+ *
+ * REFACTORED: Mobile-first Tailwind with responsive prefixes (sm:, md:, lg:)
+ * Removed JS state for responsive logic; uses @media queries instead.
  */
 
 /* Fine film grain — keeps flat gradients from banding and adds tactile warmth. */
 const GRAIN =
-  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")"
+  "url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\\\")"
 
 /* ── Typographic scale (rem) ───────────────────────────────────────────────
    eyebrow .8125 · micro .8125 · small .9375 · body 1.0625 · lede 1.1875
@@ -106,20 +109,7 @@ function TrustIcon({ name }: { name: string }) {
 }
 
 export default function HeroSection() {
-  const [isMobile, setIsMobile] = useState(false)
-  const [isDesktop, setIsDesktop] = useState(false)
   const [selectedPersona, setSelectedPersona] = useState<string | null>(null)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640)
-      setIsDesktop(window.innerWidth >= 1024)
-    }
-
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
 
   const active = personas.find((p) => p.id === selectedPersona) ?? null
 
@@ -131,10 +121,7 @@ export default function HeroSection() {
         overflow: 'hidden',
         backgroundColor: colors.warmGray[50],
         /* Hero band on the 8px scale: --section-y-lg (80/96/128px) vertical,
-           --container-gutter horizontal. Replaces the off-scale
-           `3.5rem 1.25rem 4rem` / `6rem 2rem 6.5rem` pair, which was
-           asymmetric top-to-bottom and used a 20px gutter that didn't line
-           up with any other section on the page. */
+           --container-gutter horizontal. */
         paddingTop: layout.sectionYLg,
         paddingBottom: layout.sectionYLg,
         paddingLeft: layout.gutter,
@@ -194,15 +181,14 @@ export default function HeroSection() {
           maxWidth: '76rem',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: isDesktop ? 'minmax(0, 1.08fr) minmax(0, 0.92fr)' : '1fr',
-          /* 8px scale: 64px desktop / 48px tablet+mobile. Was 4.5rem/3.5rem,
-             both off-scale. */
-          gap: isDesktop ? '4rem' : '3rem',
+          gridTemplateColumns: '1fr',
+          gap: '3rem', // mobile: 3rem (24px)
           alignItems: 'center',
         }}
+        className="md:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] md:gap-16" /* md: 4rem (64px) */
       >
         {/* ══ Column A — the message ══════════════════════════════════════ */}
-        <div style={{ textAlign: isDesktop ? 'left' : 'center' }}>
+        <div className="text-center md:text-left">
           {/* Eyebrow */}
           <div
             style={{
@@ -216,8 +202,15 @@ export default function HeroSection() {
               boxShadow: '0 1px 2px rgba(63, 57, 53, 0.04)',
               backdropFilter: 'blur(8px)',
               WebkitBackdropFilter: 'blur(8px)',
-              marginBottom: isMobile ? '1.5rem' : '2rem',
+              marginBottom: '1.5rem', // sm: 1.5rem, md: 2rem
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              letterSpacing: '0.06em',
+              textTransform: 'uppercase',
+              color: colors.sage[700],
+              lineHeight: 1,
             }}
+            className="md:mb-8"
           >
             <span
               className="hero-pulse-dot"
@@ -230,18 +223,7 @@ export default function HeroSection() {
                 flexShrink: 0,
               }}
             />
-            <span
-              style={{
-                fontSize: '0.8125rem',
-                fontWeight: 600,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                color: colors.sage[700],
-                lineHeight: 1,
-              }}
-            >
-              Perinatal · ADHD · Career
-            </span>
+            <span>Perinatal · ADHD · Career</span>
           </div>
 
           {/* Display headline */}
@@ -257,9 +239,8 @@ export default function HeroSection() {
               marginBottom: '1.5rem',
               textWrap: 'balance',
               maxWidth: '18ch',
-              marginLeft: isDesktop ? 0 : 'auto',
-              marginRight: isDesktop ? 0 : 'auto',
             }}
+            className="md:mx-0 mx-auto"
           >
             You don&apos;t have to
             <br />
@@ -299,10 +280,9 @@ export default function HeroSection() {
               margin: 0,
               marginBottom: '1rem',
               maxWidth: '34rem',
-              marginLeft: isDesktop ? 0 : 'auto',
-              marginRight: isDesktop ? 0 : 'auto',
               textWrap: 'pretty',
             }}
+            className="md:mx-0 mx-auto"
           >
             Perinatal anxiety. Late ADHD. Career doubt. These require
             understanding&mdash;and you&apos;ll get it here.
@@ -314,12 +294,11 @@ export default function HeroSection() {
               lineHeight: 1.75,
               color: colors.warmGray[600],
               margin: 0,
-              marginBottom: isMobile ? '2rem' : '2.5rem',
+              marginBottom: '2rem', // sm: 2rem, md: 2.5rem
               maxWidth: '32rem',
-              marginLeft: isDesktop ? 0 : 'auto',
-              marginRight: isDesktop ? 0 : 'auto',
               textWrap: 'pretty',
             }}
+            className="md:mx-0 mx-auto md:mb-10"
           >
             I meet you where you are. We work at your pace. You&apos;ll find your
             answers&mdash;not mine.
@@ -329,15 +308,15 @@ export default function HeroSection() {
           <div
             style={{
               display: 'flex',
-              flexDirection: isMobile ? 'column' : 'row',
+              flexDirection: 'column',
               alignItems: 'center',
-              justifyContent: isDesktop ? 'flex-start' : 'center',
-              gap: isMobile ? '0.875rem' : '1.25rem',
+              gap: '0.875rem', // sm: 0.875rem, md: 1.25rem
               marginBottom: '1.25rem',
             }}
+            className="md:flex-row md:justify-start md:gap-5"
           >
-            <Link href="/booking" className="hero-cta-primary">
-              <span>Claim Your Path Forward</span>
+            <Link href="/booking" className="hero-cta-primary w-full md:w-auto">
+              <span>Start Your Free Breakthrough Call</span>
               <svg
                 width="16"
                 height="16"
@@ -354,7 +333,7 @@ export default function HeroSection() {
               </svg>
             </Link>
 
-            <Link href="/about" className="hero-cta-ghost">
+            <Link href="/about" className="hero-cta-ghost w-full md:w-auto">
               Learn My Approach
             </Link>
           </div>
@@ -366,9 +345,10 @@ export default function HeroSection() {
               lineHeight: 1.6,
               color: colors.warmGray[600],
               margin: 0,
-              marginBottom: isMobile ? '2.25rem' : '3rem',
+              marginBottom: '2.25rem', // sm: 2.25rem, md: 3rem
               letterSpacing: '0.01em',
             }}
+            className="md:mb-12"
           >
             Free &middot; 15 minutes &middot; No forms beforehand &middot; No obligation
           </p>
@@ -379,14 +359,12 @@ export default function HeroSection() {
               display: 'flex',
               flexWrap: 'wrap',
               alignItems: 'stretch',
-              justifyContent: isDesktop ? 'flex-start' : 'center',
               gap: 0,
               paddingTop: '1.5rem',
               borderTop: `1px solid ${colors.warmGray[200]}`,
               maxWidth: '36rem',
-              marginLeft: isDesktop ? 0 : 'auto',
-              marginRight: isDesktop ? 0 : 'auto',
             }}
+            className="md:justify-start justify-center md:mx-0 mx-auto"
           >
             {trustSignals.map((signal, i) => (
               <div
@@ -395,16 +373,17 @@ export default function HeroSection() {
                   display: 'flex',
                   alignItems: 'flex-start',
                   gap: '0.5625rem',
-                  padding: isMobile ? '0.5rem 0' : '0 1.25rem',
-                  paddingLeft: isMobile ? 0 : i === 0 ? 0 : '1.25rem',
+                  padding: '0.5rem 0', // mobile stacking: 0.5rem padding-y
+                  paddingLeft: i === 0 ? 0 : '1.25rem', // md: left padding between items
                   borderLeft:
-                    isMobile || i === 0
+                    i === 0
                       ? 'none'
                       : `1px solid ${colors.warmGray[200]}`,
-                  flex: isMobile ? '1 1 100%' : '0 1 auto',
-                  justifyContent: isMobile ? 'center' : 'flex-start',
+                  flex: '1 1 100%',
+                  justifyContent: 'center',
                   textAlign: 'left',
                 }}
+                className="md:flex-none md:basis-auto md:justify-start md:px-5 md:first:px-0 md:first:border-l-0"
               >
                 <span style={{ marginTop: '0.125rem', flexShrink: 0, lineHeight: 0 }}>
                   <TrustIcon name={signal.icon} />
@@ -446,7 +425,7 @@ export default function HeroSection() {
             aria-label="Therapist photo placeholder with calming sage and warm gray gradient"
             style={{
               position: 'relative',
-              aspectRatio: isDesktop ? '4 / 5' : '4 / 3.4',
+              aspectRatio: '4 / 3.4', // mobile aspect ratio
               borderRadius: '1.75rem',
               overflow: 'hidden',
               background: [
@@ -463,6 +442,7 @@ export default function HeroSection() {
               alignItems: 'center',
               justifyContent: 'center',
             }}
+            className="md:aspect-[4/5]" /* desktop aspect ratio */
           >
             {/* grain on the plate too, so it reads as one material */}
             <span
@@ -531,9 +511,6 @@ export default function HeroSection() {
           <div
             style={{
               position: 'absolute',
-              left: isDesktop ? '-1.25rem' : '50%',
-              transform: isDesktop ? 'none' : 'translateX(-50%)',
-              bottom: isDesktop ? '2rem' : '-1.25rem',
               display: 'flex',
               alignItems: 'center',
               gap: '0.625rem',
@@ -546,7 +523,12 @@ export default function HeroSection() {
               boxShadow:
                 '0 1px 2px rgba(63,57,53,0.05), 0 16px 32px -16px rgba(63, 57, 53, 0.28)',
               whiteSpace: 'nowrap',
+              /* Mobile: centered below plate */
+              left: '50%',
+              transform: 'translateX(-50%)',
+              bottom: '-1.25rem',
             }}
+            className="md:left-auto md:transform-none md:bottom-8 md:-left-5" /* Desktop: left side, -1.25rem (20px) */
           >
             <TrustIcon name="clock" />
             <span
@@ -567,13 +549,14 @@ export default function HeroSection() {
       <div
         style={{
           maxWidth: '48rem',
-          margin: isDesktop ? '5rem auto 0' : '4rem auto 0',
+          margin: '4rem auto 0', // sm: 4rem top, md: 5rem top
           position: 'relative',
         }}
+        className="md:mt-20"
       >
         <div
           style={{
-            padding: isMobile ? '1.75rem 1.25rem' : '2.5rem',
+            padding: '1.75rem 1.25rem', // mobile: 1.75rem 1.25rem
             borderRadius: '1.5rem',
             backgroundColor: 'rgba(255, 255, 255, 0.66)',
             backdropFilter: 'blur(16px)',
@@ -582,6 +565,7 @@ export default function HeroSection() {
             boxShadow:
               '0 1px 2px rgba(63,57,53,0.03), 0 24px 48px -28px rgba(84, 124, 63, 0.20)',
           }}
+          className="md:p-10"
         >
           <p
             style={{
@@ -605,9 +589,10 @@ export default function HeroSection() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: isMobile ? '1fr' : 'repeat(3, minmax(0, 1fr))',
+              gridTemplateColumns: '1fr', // mobile: 1 column
               gap: '0.75rem',
             }}
+            className="md:grid-cols-3"
           >
             {personas.map((persona) => {
               const isActive = selectedPersona === persona.id
@@ -728,13 +713,14 @@ export default function HeroSection() {
           style={{
             margin: '2.5rem auto 0',
             maxWidth: '42rem',
-            padding: isMobile ? '1.25rem 1.25rem' : '1.375rem 1.75rem',
+            padding: '1.25rem 1.25rem', // mobile: 1.25rem
             borderRadius: '1rem',
             backgroundColor: 'rgba(248, 250, 247, 0.8)',
             border: `1px solid ${colors.sage[100]}`,
             borderLeft: `3px solid ${colors.sage[400]}`,
             textAlign: 'center',
           }}
+          className="md:p-6"
         >
           <p
             style={{
@@ -854,6 +840,7 @@ export default function HeroSection() {
 
         .hero-cta-sm { padding: 0.75rem 1.25rem; font-size: 0.875rem; border-radius: 0.75rem; }
 
+        /* Mobile-first responsive adjustments via media query (no JS state needed) */
         @media (max-width: 640px) {
           .hero-cta-primary,
           .hero-cta-ghost { width: 100%; }
