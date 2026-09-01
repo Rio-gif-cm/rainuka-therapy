@@ -38,7 +38,7 @@ export default function BookingPage() {
                 </p>
               </div>
 
-              <BookingForm />
+              <BookingFormWrapper />
             </div>
           </div>
         </section>
