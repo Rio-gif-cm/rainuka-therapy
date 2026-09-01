@@ -15,7 +15,7 @@ export const colors = {
     100: '#ede8e3',
     200: '#ddd4cc',
     300: '#c9b8ac',
-    600: '#7a6f68',
+    600: '#5e534a',
     700: '#5e534a',
     900: '#3f3935',
   },
@@ -109,8 +109,67 @@ export const styles = {
     padding: '2rem',
     boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
     border: `1px solid ${colors.warmGray[200]}`,
+    transition: 'all 0.3s ease',
   },
   cardHover: {
     boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
   },
 }
+
+// Global CSS styles for hover effects that work on touch & mouse
+export const globalStyles = `
+/* NicheGrid card hover effects - works on both mouse and touch */
+.niche-card {
+  transition: all 0.3s ease;
+}
+
+.niche-card:hover {
+  transform: translateY(-8px);
+  background-color: ${colors.sage[50]};
+  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+.niche-card:active {
+  transform: translateY(-8px);
+  background-color: ${colors.sage[50]};
+  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+/* Arrow animation on hover/active */
+.explore-arrow {
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: ${colors.sage[600]};
+}
+
+.niche-card:hover .explore-arrow,
+.niche-card:active .explore-arrow {
+  color: ${colors.sage[700]};
+  animation: arrowBounce 0.6s ease;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+
+/* Outline button hover effect - works on both mouse and touch */
+.btn-outline {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: ${colors.sage[600]};
+  border: 2px solid ${colors.sage[600]};
+}
+
+.btn-outline:hover {
+  background-color: ${colors.sage[50]};
+  border-color: ${colors.sage[700]};
+  color: ${colors.sage[700]};
+}
+
+.btn-outline:active {
+  background-color: ${colors.sage[50]};
+  border-color: ${colors.sage[700]};
+  color: ${colors.sage[700]};
+}
+`

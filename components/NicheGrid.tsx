@@ -51,32 +51,16 @@ export default function NicheGrid() {
           {specialties.map((specialty) => (
             <Link href={specialty.link} key={specialty.slug} style={{ textDecoration: 'none' }}>
               <div
+                className="niche-card"
                 style={{
                   ...styles.card,
                   height: '100%',
                   cursor: 'pointer',
-                  transition: 'all 0.3s ease',
                   display: 'flex',
                   flexDirection: 'column',
                   backgroundColor: 'white',
                   outline: '2px solid transparent',
                   outlineOffset: '2px',
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget
-                  el.style.transform = 'translateY(-8px)'
-                  el.style.boxShadow = '0 20px 40px -10px rgba(107, 148, 79, 0.12)'
-                  el.style.backgroundColor = colors.sage[50]
-                  const arrow = el.querySelector('[data-explore-arrow]') as HTMLElement
-                  if (arrow) arrow.style.color = colors.sage[700]
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget
-                  el.style.transform = 'translateY(0)'
-                  el.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)'
-                  el.style.backgroundColor = 'white'
-                  const arrow = el.querySelector('[data-explore-arrow]') as HTMLElement
-                  if (arrow) arrow.style.color = colors.sage[600]
                 }}
                 onFocus={(e) => {
                   const el = e.currentTarget
@@ -97,14 +81,13 @@ export default function NicheGrid() {
                 <p style={{ ...styles.p, color: colors.warmGray[600], marginBottom: '1.5rem', flex: 1 }}>
                   {specialty.description}
                 </p>
-                <span style={{
-                  display: 'inline-block',
-                  color: specialty.color,
-                  fontWeight: 600,
-                  fontSize: '0.95rem',
-                  transition: 'color 0.3s ease',
-                }}
-                data-explore-arrow
+                <span 
+                  className="explore-arrow"
+                  style={{
+                    display: 'inline-block',
+                    fontWeight: 600,
+                    fontSize: '0.95rem',
+                  }}
                 >
                   Explore →
                 </span>

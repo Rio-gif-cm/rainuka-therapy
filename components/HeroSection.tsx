@@ -2,19 +2,38 @@
 
 import Link from 'next/link'
 import { colors, styles } from '@/app/styles'
+import { useState, useEffect } from 'react'
 
 export default function HeroSection() {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640)
+    }
+    
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <section style={{ ...styles.section, backgroundColor: colors.warmGray[50] }}>
-      <div style={{ ...styles.container, display: 'flex', flexDirection: 'column', gap: '3rem', alignItems: 'center' }}>
+      <div style={{ 
+        ...styles.container, 
+        display: 'flex', 
+        flexDirection: 'column', 
+        gap: isMobile ? '1.5rem' : '3rem', 
+        alignItems: 'center',
+      }}>
         {/* Text Content */}
         <div style={{ flex: 1, textAlign: 'center' }}>
           <h1 style={styles.h1}>
-            Therapy for what's been invisible or misunderstood
+            Therapy for what you've been carrying alone
           </h1>
           
           <p style={{ ...styles.p, fontSize: '1.125rem', fontWeight: 500 }}>
-            Perinatal & reproductive mental health • Adult ADHD • Career transitions
+            I specialize in what feels stuck: perinatal anxiety, adult ADHD diagnosis, and career crossroads
           </p>
 
           <p style={{ ...styles.p, fontSize: '1.0625rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 2.5rem' }}>
@@ -22,7 +41,16 @@ export default function HeroSection() {
           </p>
 
           {/* Trust signals */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'center', marginBottom: '2.5rem', fontSize: '0.875rem', color: colors.warmGray[700], fontWeight: 500 }}>
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: isMobile ? '1rem' : '2rem', 
+            justifyContent: 'center', 
+            marginBottom: '2.5rem', 
+            fontSize: '0.875rem', 
+            color: colors.warmGray[700], 
+            fontWeight: 500,
+          }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', justifyContent: 'center' }}>
               <span style={{ color: colors.sage[600], fontSize: '1.125rem' }}>✓</span>
               <span>Telehealth • Sliding Scale</span>
@@ -34,16 +62,13 @@ export default function HeroSection() {
           </div>
 
           {/* CTA Button */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center', width: '100%', maxWidth: '320px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', justifyContent: 'center' }}>
             <Link 
               href="/booking" 
               style={{ 
                 ...styles.button,
                 ...styles.btnPrimary,
-                width: '100%',
-                padding: '1rem 1.5rem',
-                fontSize: '1rem',
-                minHeight: '48px',
+                minWidth: '200px',
               }}
               onMouseEnter={(e) => {
                 const target = e.target as HTMLElement
@@ -60,16 +85,14 @@ export default function HeroSection() {
             </Link>
             <Link 
               href="/about" 
+              className="btn-outline"
               style={{ 
                 ...styles.button,
                 ...styles.btnOutline,
-                width: '100%',
-                padding: '1rem 1.5rem',
-                fontSize: '1rem',
-                minHeight: '48px',
+                minWidth: '200px',
               }}
             >
-              Learn More About My Approach
+              See How I Work
             </Link>
           </div>
         </div>

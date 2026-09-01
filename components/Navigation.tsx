@@ -1,72 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
 import { colors, styles } from '@/app/styles'
-import { useState, useEffect } from 'react'
-
-interface NavLinkProps {
-  href: string
-  label: string
-  isActive: boolean
-  isMobile?: boolean
-}
-
-function NavLink({ href, label, isActive, isMobile }: NavLinkProps) {
-  return (
-    <Link 
-      href={href} 
-      style={{ 
-        color: isActive ? colors.sage[600] : colors.warmGray[700],
-        textDecoration: 'none', 
-        fontSize: isMobile ? '0.9rem' : '0.95rem', 
-        fontWeight: 500,
-        paddingBottom: '0.25rem',
-        borderBottom: isActive ? `2px solid ${colors.sage[600]}` : '2px solid transparent',
-        transition: 'all 0.3s ease',
-        display: 'flex',
-        alignItems: 'center',
-      }}
-      onMouseEnter={(e) => {
-        if (!isActive) {
-          const target = e.currentTarget as HTMLElement
-          target.style.color = colors.sage[600]
-        }
-      }}
-      onMouseLeave={(e) => {
-        if (!isActive) {
-          const target = e.currentTarget as HTMLElement
-          target.style.color = colors.warmGray[700]
-        }
-      }}
-    >
-      {label}
-    </Link>
-  )
-}
 
 export default function Navigation() {
-  const pathname = usePathname()
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640)
-    }
-    
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  const navItems = [
-    { href: '/about', label: 'About' },
-    { href: '/perinatal', label: 'Perinatal' },
-    { href: '/adhd', label: 'ADHD' },
-    { href: '/career', label: 'Career' },
-    { href: '/faq', label: 'FAQ' },
-  ]
-
   return (
     <nav style={{
       position: 'sticky',
@@ -81,22 +18,39 @@ export default function Navigation() {
         marginRight: 'auto',
         paddingLeft: '1rem',
         paddingRight: '1rem',
-        paddingTop: '1rem',
-        paddingBottom: '1rem',
+        paddingTop: '1.25rem',
+        paddingBottom: '1.25rem',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: isMobile ? 'center' : 'space-between',
-        flexWrap: 'wrap',
-        gap: isMobile ? '0.5rem' : '1rem',
-        flexDirection: isMobile ? 'column' : 'row',
+        justifyContent: 'space-between',
       }}>
-        <Link href="/" style={{ textDecoration: 'none', marginRight: isMobile ? '0rem' : '1rem' }}>
+        <Link href="/" style={{ textDecoration: 'none', marginRight: '2rem' }}>
           <div style={{
-            fontSize: isMobile ? '1rem' : 'clamp(1rem, 4vw, 1.5rem)',
+            fontSize: '1.5rem',
             fontWeight: 700,
             color: colors.sage[600],
             fontFamily: 'var(--font-merriweather), serif',
-            whiteSpace: 'nowrap',
+            transition: 'color 0.2s ease',
+            outline: '2px solid transparent',
+            outlineOffset: '2px',
+            borderRadius: '0.25rem',
+            padding: '0.25rem',
+          }}
+          onMouseEnter={(e) => {
+            const target = e.currentTarget as HTMLElement
+            target.style.color = colors.sage[700]
+          }}
+          onMouseLeave={(e) => {
+            const target = e.currentTarget as HTMLElement
+            target.style.color = colors.sage[600]
+          }}
+          onFocus={(e) => {
+            const target = e.currentTarget as HTMLElement
+            target.style.outline = `2px solid ${colors.sage[600]}`
+          }}
+          onBlur={(e) => {
+            const target = e.currentTarget as HTMLElement
+            target.style.outline = '2px solid transparent'
           }}>
             Rainuka Oberoi, LCSW
           </div>
@@ -105,31 +59,137 @@ export default function Navigation() {
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: isMobile ? '1rem' : '2rem',
+          gap: '2.5rem',
           flexWrap: 'wrap',
-          justifyContent: isMobile ? 'center' : 'flex-end',
-          flexDirection: isMobile ? 'column' : 'row',
-          width: isMobile ? '100%' : 'auto',
+          justifyContent: 'flex-end',
         }}>
-          {navItems.map((item) => (
-            <NavLink
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              isActive={pathname === item.href}
-              isMobile={isMobile}
-            />
-          ))}
+          <Link href="/about" 
+            style={{ color: colors.warmGray[700], textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s ease', paddingBottom: '0.25rem', borderBottom: `2px solid transparent`, outline: '2px solid transparent', outlineOffset: '2px', borderRadius: '0.25rem', padding: '0.25rem' }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.sage[600]
+              target.style.borderBottomColor = colors.sage[600]
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.warmGray[700]
+              target.style.borderBottomColor = 'transparent'
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
+            }}>
+            About
+          </Link>
+          <Link href="/perinatal" 
+            style={{ color: colors.warmGray[700], textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s ease', paddingBottom: '0.25rem', borderBottom: `2px solid transparent`, outline: '2px solid transparent', outlineOffset: '2px', borderRadius: '0.25rem', padding: '0.25rem' }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.sage[600]
+              target.style.borderBottomColor = colors.sage[600]
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.warmGray[700]
+              target.style.borderBottomColor = 'transparent'
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
+            }}>
+            Perinatal
+          </Link>
+          <Link href="/adhd" 
+            style={{ color: colors.warmGray[700], textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s ease', paddingBottom: '0.25rem', borderBottom: `2px solid transparent`, outline: '2px solid transparent', outlineOffset: '2px', borderRadius: '0.25rem', padding: '0.25rem' }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.sage[600]
+              target.style.borderBottomColor = colors.sage[600]
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.warmGray[700]
+              target.style.borderBottomColor = 'transparent'
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
+            }}>
+            ADHD
+          </Link>
+          <Link href="/career" 
+            style={{ color: colors.warmGray[700], textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s ease', paddingBottom: '0.25rem', borderBottom: `2px solid transparent`, outline: '2px solid transparent', outlineOffset: '2px', borderRadius: '0.25rem', padding: '0.25rem' }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.sage[600]
+              target.style.borderBottomColor = colors.sage[600]
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.warmGray[700]
+              target.style.borderBottomColor = 'transparent'
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
+            }}>
+            Career
+          </Link>
+          <Link href="/faq" 
+            style={{ color: colors.warmGray[700], textDecoration: 'none', fontSize: '0.95rem', fontWeight: 500, transition: 'color 0.2s ease', paddingBottom: '0.25rem', borderBottom: `2px solid transparent`, outline: '2px solid transparent', outlineOffset: '2px', borderRadius: '0.25rem', padding: '0.25rem' }}
+            onMouseEnter={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.sage[600]
+              target.style.borderBottomColor = colors.sage[600]
+            }}
+            onMouseLeave={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.color = colors.warmGray[700]
+              target.style.borderBottomColor = 'transparent'
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
+            }}>
+            FAQ
+          </Link>
           <Link 
             href="/booking" 
-            aria-label="Book a free 15-minute consultation call"
             style={{ 
               ...styles.button,
               ...styles.btnPrimary,
               padding: '0.5rem 1.25rem',
               fontSize: '0.9rem',
-              whiteSpace: 'nowrap',
-              minWidth: 'auto',
+              outline: '2px solid transparent',
+              outlineOffset: '2px',
+            }}
+            onFocus={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = `2px solid ${colors.sage[600]}`
+            }}
+            onBlur={(e) => {
+              const target = e.currentTarget as HTMLElement
+              target.style.outline = '2px solid transparent'
             }}
           >
             Book

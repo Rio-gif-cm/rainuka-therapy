@@ -186,10 +186,10 @@ export default function FAQPage() {
             {/* CTA */}
             <div className="bg-sage-50 p-8 rounded-lg text-center">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
-                Have a question we didn't cover?
+                Still have questions?
               </h3>
               <p className="text-warm-gray-600 mb-6">
-                Feel free to reach out or ask during your free consultation.
+                I'm here to answer anything. Reach out or ask me directly during your free consultation.
               </p>
               <Link href="/contact" className="inline-block btn btn-primary">
                 Get In Touch
