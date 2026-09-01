@@ -420,7 +420,7 @@ export default function HeroSection() {
         {/* ══ Column B — the portrait plate ═══════════════════════════════ */}
         <div style={{ width: '100%', position: 'relative' }}>
           <div
-            className="hero-plate"
+            className="hero-plate md:aspect-[4/5]"
             role="img"
             aria-label="Therapist photo placeholder with calming sage and warm gray gradient"
             style={{
@@ -442,7 +442,6 @@ export default function HeroSection() {
               alignItems: 'center',
               justifyContent: 'center',
             }}
-            className="md:aspect-[4/5]" /* desktop aspect ratio */
           >
             {/* grain on the plate too, so it reads as one material */}
             <span
