@@ -81,15 +81,15 @@ export default function HeroSection() {
             justifyContent: 'center',
             border: `1px solid ${colors.sage[200]}`,
           }}>
-            <div style={{ textAlign: 'center', padding: '1rem' }}>
-              <div style={{ fontSize: '4.5rem', marginBottom: '1rem', opacity: 0.8 }}>👩‍⚕️</div>
-              <p style={{ ...styles.p, color: colors.warmGray[700], fontWeight: 600, fontSize: '1.125rem', marginBottom: '0.5rem' }}>
-                Your Photo Here
-              </p>
-              <p style={{ ...styles.p, fontSize: '0.875rem', color: colors.warmGray[600] }}>
-                Update with Rainuka's professional headshot
-              </p>
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a5?w=600&h=600&fit=crop"
+              alt="Professional therapist - Rainuka Oberoi"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
           </div>
         </div>
       </div>
