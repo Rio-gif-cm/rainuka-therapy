@@ -12,7 +12,8 @@ export default function HolidayStressPage() {
 
       <main className="flex-grow">
         {/* Hero - Holiday Stress: Cool silver/blue for calm and reassurance */}
-        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(240, 248, 255, 1) 0%, rgba(245, 247, 250, 1) 100%)'}}}>
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(240, 248, 255, 1) 0%, rgba(245, 247, 250, 1) 100%)'}}>
+
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Holiday Stress is Real
