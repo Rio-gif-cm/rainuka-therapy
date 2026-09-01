@@ -156,7 +156,7 @@ export default function CareerPage() {
                   Perfectionism & Overwork
                 </h3>
                 <p className="text-warm-gray-600">
-                  Understanding what perfectionism costs you. Building permission to be "good enough."
+                  Not everything requires perfection to be valuable—but high-achievers often learned it does. We separate your standards (worth keeping) from the fear underneath them (worth releasing). Your ambition doesn't need anxiety as its fuel.
                 </p>
               </div>
 
