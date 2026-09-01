@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
     type: 'website',
   },
+  // Tailwind CSS will now compile correctly with Next.js 16 auto-detection
 }
 
 export default function RootLayout({
