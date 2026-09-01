@@ -4,6 +4,13 @@ import { useState } from 'react'
 
 type FormStep = 'contact' | 'concern' | 'confirmation'
 
+interface PreCommitmentData {
+  whatBringsYou: string
+  hopingTherapyHelps: string
+  firstTimeTherapy: boolean | null
+  preferences: string
+}
+
 interface FieldErrors {
   name?: string
   email?: string
@@ -22,7 +29,11 @@ interface FieldTouched {
   consent?: boolean
 }
 
-export default function BookingForm() {
+interface BookingFormProps {
+  preCommitmentData?: PreCommitmentData | null
+}
+
+export default function BookingForm({ preCommitmentData }: BookingFormProps = {}) {
   const [currentStep, setCurrentStep] = useState<FormStep>('contact')
   const [formData, setFormData] = useState({
     name: '',
@@ -450,7 +461,7 @@ export default function BookingForm() {
       {currentStep === 'confirmation' && (
         <div className="space-y-4 animate-fade-in-up">
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
-            You&apos;re almost there
+            Almost ready to book
           </h3>
 
           <div className="card bg-sage-50 border border-sage-200">
@@ -464,29 +475,34 @@ export default function BookingForm() {
             </div>
           </div>
 
+          {/* MICROCOPY OPTIMIZATION: Reassurance moved UP, before CTA - addresses trust anxiety before submission */}
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <div className="flex gap-3">
+              <span className="text-lg flex-shrink-0">✓</span>
+              <div>
+                <p className="text-sm font-semibold text-green-900">100% confidential &amp; HIPAA-protected</p>
+                <p className="text-xs text-green-800 mt-1">Your privacy and trust matter. Everything you share is secure and stays between us.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-5">
             <div className="space-y-3">
               <div className="flex gap-2">
                 <span className="text-xl">⏰</span>
                 <div>
-                  <p className="text-sm font-semibold text-warm-gray-900">What&apos;s next</p>
+                  <p className="text-sm font-semibold text-warm-gray-900">What happens next</p>
                   <p className="text-xs text-warm-gray-600 mt-1">I&apos;ll review your information and respond within 24 hours with available times for our free 15-minute call. Most people meet with me within 1-2 weeks.</p>
                 </div>
               </div>
               <div className="flex gap-2">
-                <span className="text-xl">✓</span>
+                <span className="text-xl">📋</span>
                 <div>
-                  <p className="text-sm font-semibold text-warm-gray-900">100% confidential &amp; HIPAA-protected</p>
-                  <p className="text-xs text-warm-gray-600 mt-1">Your privacy and trust matter. Everything stays between us.</p>
+                  <p className="text-sm font-semibold text-warm-gray-900">No commitment yet</p>
+                  <p className="text-xs text-warm-gray-600 mt-1">This is just a chance to connect and see if we&apos;re a good fit. You decide after our call.</p>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <p className="text-sm text-blue-900">
-              <strong>What happens next:</strong> I&apos;ll review your information and send you a confirmation email within 24 hours with available times for your free 15-minute consultation call. No commitment beyond that—just a chance to connect.
-            </p>
           </div>
 
           <div className={`flex items-start gap-3 p-4 rounded-lg transition-all ${
