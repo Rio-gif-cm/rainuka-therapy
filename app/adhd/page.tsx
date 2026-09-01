@@ -174,6 +174,41 @@ export default function ADHDPage() {
           </div>
         </section>
 
+        {/* Social Proof: Confidence Building */}
+        <section className="section-padding bg-white">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              You're In Good Company
+            </h2>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-8">
+              <div className="text-center p-6 bg-sage-50 rounded-lg">
+                <p className="text-4xl font-bold text-sage-600 mb-2">60%+</p>
+                <p className="text-warm-gray-600">
+                  of ADHD diagnoses happen in adulthood, many in the 30s–50s
+                </p>
+              </div>
+
+              <div className="text-center p-6 bg-sage-50 rounded-lg">
+                <p className="text-4xl font-bold text-sage-600 mb-2">3:1</p>
+                <p className="text-warm-gray-600">
+                  Women historically under-diagnosed due to masking and different presentation
+                </p>
+              </div>
+            </div>
+
+            <p className="text-center text-warm-gray-600 mb-6">
+              Late diagnosis isn't a flaw. It's actually common—and it changes everything when you finally understand yourself.
+            </p>
+
+            <div className="bg-cream-50 border-l-4 border-sage-400 p-6 rounded">
+              <p className="text-warm-gray-600 italic">
+                "What feels broken about you has a name. And understanding it—with support—is where real change starts."
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
