@@ -148,6 +148,43 @@ export default function ADHDPage() {
           </div>
         </section>
 
+        {/* Identity Affirmation: The Shame-to-Self-Compassion Shift */}
+        <section className="section-padding bg-white border-t-4 border-sage-400">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              You Are Not Broken. Identity Reconstruction Starts Here.
+            </h2>
+
+            <div className="space-y-6 text-warm-gray-600">
+              <p className="text-lg leading-relaxed">
+                For decades, you may have believed: <em>"Something is fundamentally wrong with me."</em> 
+                That belief didn't come from nowhere. It's the result of repeated experiences—missed deadlines, forgotten promises, 
+                relationships strained, criticism internalized—until struggling with tasks began to feel like evidence of who you are.
+              </p>
+
+              <div className="bg-cream-50 p-8 rounded-lg border-l-4 border-sage-400 space-y-4">
+                <p className="font-semibold text-warm-gray-900">
+                  Research on late ADHD diagnosis shows us something crucial:
+                </p>
+                <ul className="space-y-3">
+                  <li><strong>Shame is inherited, not intrinsic.</strong> You internalized criticism because your ADHD went unrecognized. That doesn't make you broken—it makes you human, responding to years of misunderstanding.</li>
+                  <li><strong>Self-compassion rewires how you treat yourself.</strong> Studies show that adults with ADHD who develop self-compassion experience marked improvement in mental health—not because they lower their standards, but because they stop weaponizing failure against themselves.</li>
+                  <li><strong>Identity reconstruction is the real work.</strong> Therapy isn't about "fixing" you. It's about rewriting the story you've been telling yourself. Instead of "I'm lazy," it becomes "I was working with challenges no one recognized."</li>
+                </ul>
+              </div>
+
+              <p className="text-lg font-semibold text-sage-600">
+                The shift you're making now is not from broken to fixed. It's from self-attack to self-understanding.
+              </p>
+
+              <p>
+                That doesn't happen overnight. But it begins with a single truth: Your ADHD brain isn't proof that you're not good enough. 
+                It's proof that you've been surviving without the tools you needed. Now that you know, everything changes.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* For Women */}
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
