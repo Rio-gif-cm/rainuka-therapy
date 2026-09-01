@@ -9,6 +9,8 @@ export const colors = {
     500: '#82a86c',
     600: '#6b944f',
     700: '#547c3f',
+    800: '#40602f',
+    900: '#2f4723',
   },
   warmGray: {
     50: '#faf9f7',
@@ -21,6 +23,17 @@ export const colors = {
   },
   accent: '#d97757',
 }
+
+/**
+ * Extended sage ramp (includes the deeper 800/900 steps used by text-heavy
+ * surfaces). Kept as a named alias so `colors.sage` stays the canonical token
+ * set while components that need the darker end can reach for `sageGreen`.
+ */
+export const sageGreen = {
+  ...colors.sage,
+  800: '#456634',
+  900: '#35502a',
+} as const
 
 export const styles = {
   body: {

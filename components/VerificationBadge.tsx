@@ -25,18 +25,18 @@ export default function VerificationBadge({
         alignItems: 'center',
         gap: '0.5rem',
         padding: '0.5rem 1rem',
-        backgroundColor: verified ? colors.sageGreen[50] : colors.warmGray[50],
-        border: `2px solid ${verified ? colors.sageGreen[300] : colors.warmGray[300]}`,
+        backgroundColor: verified ? colors.sage[50] : colors.warmGray[50],
+        border: `2px solid ${verified ? colors.sage[300] : colors.warmGray[300]}`,
         borderRadius: '8px',
         fontSize: '0.875rem',
         fontWeight: '500',
-        color: verified ? colors.sageGreen[700] : colors.warmGray[700],
+        color: verified ? colors.sage[700] : colors.warmGray[700],
         transition: 'all 0.2s ease',
         cursor: url ? 'pointer' : 'default',
       }}
       onMouseEnter={(e) => {
         if (url) {
-          (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 12px ${verified ? colors.sageGreen[200] : colors.warmGray[200]}`
+          (e.currentTarget as HTMLElement).style.boxShadow = `0 4px 12px ${verified ? colors.sage[200] : colors.warmGray[200]}`
           ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'
         }
       }}

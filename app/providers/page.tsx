@@ -84,10 +84,10 @@ export default function ProviderDirectoriesPage() {
       {/* Hero Section */}
       <section
         style={{
-          backgroundColor: colors.sageGreen[50],
+          backgroundColor: colors.sage[50],
           paddingTop: '4rem',
           paddingBottom: '3rem',
-          borderBottom: `3px solid ${colors.sageGreen[200]}`,
+          borderBottom: `3px solid ${colors.sage[200]}`,
         }}
       >
         <div
@@ -99,14 +99,14 @@ export default function ProviderDirectoriesPage() {
             paddingRight: '1.5rem',
           }}
         >
-          <h1 style={{ ...styles.h1, marginBottom: '1rem', color: colors.sageGreen[900] }}>
+          <h1 style={{ ...styles.h1, marginBottom: '1rem', color: colors.sage[900] }}>
             Where to Find Us
           </h1>
           <p
             style={{
               ...styles.p,
               fontSize: '1.1rem',
-              color: colors.sageGreen[800],
+              color: colors.sage[800],
               marginBottom: 0,
             }}
           >
@@ -176,7 +176,7 @@ export default function ProviderDirectoriesPage() {
                   ;(e.currentTarget as HTMLElement).style.boxShadow =
                     '0 8px 16px rgba(0,0,0,0.1)'
                   ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)'
-                  ;(e.currentTarget as HTMLElement).style.borderColor = colors.sageGreen[300]
+                  ;(e.currentTarget as HTMLElement).style.borderColor = colors.sage[300]
                 }}
                 onMouseLeave={(e) => {
                   ;(e.currentTarget as HTMLElement).style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)'
@@ -194,7 +194,7 @@ export default function ProviderDirectoriesPage() {
                     <p
                       style={{
                         fontSize: '0.75rem',
-                        color: colors.sageGreen[600],
+                        color: colors.sage[600],
                         fontWeight: '600',
                         margin: '0.25rem 0 0 0',
                       }}
@@ -256,7 +256,7 @@ export default function ProviderDirectoriesPage() {
                           style={{
                             position: 'absolute',
                             left: 0,
-                            color: colors.sageGreen[600],
+                            color: colors.sage[600],
                           }}
                         >
                           •
@@ -285,7 +285,7 @@ export default function ProviderDirectoriesPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      backgroundColor: colors.sageGreen[600],
+                      backgroundColor: colors.sage[600],
                       color: 'white',
                       padding: '0.5rem 1rem',
                       borderRadius: '6px',
@@ -297,10 +297,10 @@ export default function ProviderDirectoriesPage() {
                       cursor: 'pointer',
                     }}
                     onMouseEnter={(e) => {
-                      ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[700]
+                      ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[700]
                     }}
                     onMouseLeave={(e) => {
-                      ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[600]
+                      ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[600]
                     }}
                   >
                     Visit →
@@ -347,13 +347,13 @@ export default function ProviderDirectoriesPage() {
                 <div
                   key={idx}
                   style={{
-                    backgroundColor: colors.sageGreen[50],
-                    border: `1px solid ${colors.sageGreen[200]}`,
+                    backgroundColor: colors.sage[50],
+                    border: `1px solid ${colors.sage[200]}`,
                     borderRadius: '8px',
                     padding: '1rem',
                     textAlign: 'center',
                     fontSize: '0.9rem',
-                    color: colors.sageGreen[900],
+                    color: colors.sage[900],
                     fontWeight: '500',
                   }}
                 >
@@ -395,7 +395,7 @@ export default function ProviderDirectoriesPage() {
                 backgroundColor: colors.warmGray[100],
                 padding: '1.5rem',
                 borderRadius: '12px',
-                borderLeft: `4px solid ${colors.sageGreen[600]}`,
+                borderLeft: `4px solid ${colors.sage[600]}`,
               }}
             >
               <h3 style={{ ...styles.h3, marginBottom: '0.5rem', color: colors.warmGray[900] }}>
@@ -411,7 +411,7 @@ export default function ProviderDirectoriesPage() {
                 backgroundColor: colors.warmGray[100],
                 padding: '1.5rem',
                 borderRadius: '12px',
-                borderLeft: `4px solid ${colors.sageGreen[600]}`,
+                borderLeft: `4px solid ${colors.sage[600]}`,
               }}
             >
               <h3 style={{ ...styles.h3, marginBottom: '0.5rem', color: colors.warmGray[900] }}>
@@ -427,7 +427,7 @@ export default function ProviderDirectoriesPage() {
                 backgroundColor: colors.warmGray[100],
                 padding: '1.5rem',
                 borderRadius: '12px',
-                borderLeft: `4px solid ${colors.sageGreen[600]}`,
+                borderLeft: `4px solid ${colors.sage[600]}`,
               }}
             >
               <h3 style={{ ...styles.h3, marginBottom: '0.5rem', color: colors.warmGray[900] }}>
@@ -444,21 +444,21 @@ export default function ProviderDirectoriesPage() {
         {/* Call to Action */}
         <section
           style={{
-            backgroundColor: colors.sageGreen[50],
-            border: `2px solid ${colors.sageGreen[200]}`,
+            backgroundColor: colors.sage[50],
+            border: `2px solid ${colors.sage[200]}`,
             borderRadius: '12px',
             padding: '2rem',
             textAlign: 'center',
             marginBottom: '2rem',
           }}
         >
-          <h2 style={{ ...styles.h2, marginBottom: '1rem', color: colors.sageGreen[900] }}>
+          <h2 style={{ ...styles.h2, marginBottom: '1rem', color: colors.sage[900] }}>
             Ready to Start?
           </h2>
           <p
             style={{
               ...styles.p,
-              color: colors.sageGreen[800],
+              color: colors.sage[800],
               marginBottom: '1.5rem',
             }}
           >
@@ -469,7 +469,7 @@ export default function ProviderDirectoriesPage() {
             href="/booking"
             style={{
               display: 'inline-block',
-              backgroundColor: colors.sageGreen[600],
+              backgroundColor: colors.sage[600],
               color: 'white',
               padding: '1rem 2rem',
               borderRadius: '8px',
@@ -480,10 +480,10 @@ export default function ProviderDirectoriesPage() {
               marginRight: '1rem',
             }}
             onMouseEnter={(e) => {
-              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[700]
+              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[700]
             }}
             onMouseLeave={(e) => {
-              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[600]
+              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[600]
             }}
           >
             Book Appointment
@@ -493,17 +493,17 @@ export default function ProviderDirectoriesPage() {
             style={{
               display: 'inline-block',
               backgroundColor: 'transparent',
-              color: colors.sageGreen[700],
+              color: colors.sage[700],
               padding: '1rem 2rem',
               borderRadius: '8px',
               textDecoration: 'none',
               fontSize: '1rem',
               fontWeight: '600',
-              border: `2px solid ${colors.sageGreen[600]}`,
+              border: `2px solid ${colors.sage[600]}`,
               transition: 'all 0.2s ease',
             }}
             onMouseEnter={(e) => {
-              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sageGreen[50]
+              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[50]
             }}
             onMouseLeave={(e) => {
               ;(e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'
