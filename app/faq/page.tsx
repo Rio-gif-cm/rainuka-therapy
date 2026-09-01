@@ -25,23 +25,23 @@ const FAQData = [
   },
   {
     q: 'How much does therapy cost?',
-    a: 'Sliding scale sessions range from $80–$150 per 50-minute session. We\'ll work within your budget.',
+    a: 'Standard rate is $150/session for 50-minute therapy. I offer sliding scale ($80–$120) for limited slots based on financial need. For detailed pricing, insurance info, and payment options, see our pricing page.',
   },
   {
     q: 'Do you take insurance?',
-    a: 'I\'m in-network with several insurance providers and offer superbills for out-of-network reimbursement. Ask during your free call.',
+    a: 'I\'m in-network with several insurance providers. I also offer superbills for out-of-network reimbursement, which can reduce your out-of-pocket cost significantly. Ask during your free call.',
+  },
+  {
+    q: 'What if I can\'t afford $150/session?',
+    a: 'We have several options: sliding scale (if slots are available), out-of-network insurance reimbursement, payment plans, or resources elsewhere. Financial barriers shouldn\'t prevent you from getting help.',
+  },
+  {
+    q: 'Can I get reimbursed by insurance if you\'re out-of-network?',
+    a: 'Yes, if you have out-of-network (OON) mental health benefits. I provide a superbill (detailed receipt), you submit it to insurance, and they reimburse you directly. Many clients go from $150 out-of-pocket to just $50–$75 effective cost.',
   },
   {
     q: 'How often do people typically meet?',
     a: 'Most start with weekly 50-minute sessions and adjust to bi-weekly after establishing momentum.',
-  },
-  {
-    q: 'What if I have to reschedule or cancel?',
-    a: 'Just give 24 hours notice—no charge for rescheduling with advance warning.',
-  },
-  {
-    q: 'What if I can\'t afford regular therapy?',
-    a: 'I offer sliding scale rates, payment plans, and referrals to lower-cost options if needed.',
   },
   {
     q: 'Is telehealth as effective as in-person?',

@@ -1,6 +1,9 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import SectionDivider from '@/components/SectionDivider'
+import { IconHeading, IconListItem } from '@/components/IconComponents'
+import { colors } from '@/app/styles'
 
 export default function PerinatalPage() {
   return (
@@ -30,9 +33,9 @@ export default function PerinatalPage() {
         {/* Who I Help */}
         <section className="section-padding bg-white">
           <div className="container-base">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="🤰" level={2} color={colors.warmGray[900]}>
               If You're Carrying...
-            </h2>
+            </IconHeading>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
@@ -43,21 +46,22 @@ export default function PerinatalPage() {
                 'Identity shifts in motherhood',
                 '"Was I ready for this?" doubts',
               ].map((item, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="text-2xl" style={{color: '#d97757'}}>✓</div>
-                  <p className="text-warm-gray-600">{item}</p>
-                </div>
+                <IconListItem key={index} icon="✓" color="#d97757">
+                  {item}
+                </IconListItem>
               ))}
             </div>
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* My Approach */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="🛡️" level={2} color={colors.warmGray[900]}>
               My Approach
-            </h2>
+            </IconHeading>
 
             <div className="space-y-6">
               <div>

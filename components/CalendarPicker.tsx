@@ -77,17 +77,6 @@ export default function CalendarPicker({
             defaultMonth={minDate || new Date()}
             showOutsideDays={false}
             className="p-4"
-            classNames={{
-              months: 'space-y-4',
-              month: 'space-y-4',
-              head_cell: 'text-xs font-medium text-gray-600 h-10 w-10 p-0',
-              cell: 'h-10 w-10 p-0 text-center text-sm',
-              day: 'h-10 w-10 p-0 font-normal',
-              day_selected: 'bg-green-600 text-white rounded-md',
-              day_today: 'bg-gray-100',
-              day_disabled: 'text-gray-300 cursor-not-allowed',
-              day_outside: 'text-gray-400',
-            }}
           />
         </div>
         {internalSelectedDate && (

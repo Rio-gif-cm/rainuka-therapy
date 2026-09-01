@@ -88,7 +88,7 @@ export function getAvailableSlotsForDate(date: Date): TimeSlot[] {
   }
 
   // Fall back to weekly schedule
-  const dayName = date.toLocaleDateString('en-US', { weekday: 'lowercase' })
+  const dayName = date.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase()
   return weeklySchedule[dayName] || []
 }
 

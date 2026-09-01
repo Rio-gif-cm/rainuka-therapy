@@ -111,8 +111,8 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         }
         break
       case 'preferredTime':
-        if (!value) {
-          return "Let me know what works best for your schedule."
+        if (!value && !formData.selectedDate) {
+          return "Pick a date and time that works for you."
         }
         break
       case 'consent':
@@ -243,7 +243,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         setFieldErrors({})
         // Reset form after 3 seconds
         setTimeout(() => {
-          setFormData({ name: '', email: '', phone: '', concern: '', firstTimeTherapy: null, preferredTime: '', consent: false })
+          setFormData({ name: '', email: '', phone: '', concern: '', firstTimeTherapy: null, preferredTime: '', selectedDate: null, selectedTime: '', consent: false })
           setCurrentStep('contact')
           setSubmitSuccess(false)
           setFieldTouched({})
@@ -559,47 +559,28 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             )}
           </div>
 
+          {/* Calendar Picker for Date & Time Selection */}
           <div>
-            <div className="flex items-center justify-between mb-1">
-              <label htmlFor="preferredTime" className={`form-label transition-colors ${
-                fieldFocused.preferredTime ? 'text-sage-600' : 'text-warm-gray-900'
-              }`}>
-                What times work best for you? *
-              </label>
-              {formData.preferredTime && !fieldErrors.preferredTime && fieldTouched.preferredTime && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
-                  ✓ Valid
-                </span>
-              )}
-            </div>
-            <select
-              id="preferredTime"
-              name="preferredTime"
-              value={formData.preferredTime}
-              onChange={handleInputChange}
-              onBlur={handleFieldBlur}
-              onFocus={handleFieldFocus}
-              className={`form-input transition-all ${
-                fieldTouched.preferredTime
-                  ? fieldErrors.preferredTime
-                    ? 'border-red-500 bg-red-50 focus:border-red-500'
-                    : 'border-green-500 bg-green-50'
-                  : ''
-              }`}
-              aria-invalid={fieldTouched.preferredTime && !!fieldErrors.preferredTime}
-              aria-describedby={fieldTouched.preferredTime && fieldErrors.preferredTime ? 'preferredTime-error' : undefined}
-              required
-            >
-              <option value="">Choose what works for your schedule</option>
-              <option value="morning">Morning (8am-12pm)</option>
-              <option value="afternoon">Afternoon (12pm-5pm)</option>
-              <option value="evening">Evening (5pm-8pm)</option>
-              <option value="weekends">Weekends</option>
-              <option value="flexible">Flexible</option>
-            </select>
-            {fieldTouched.preferredTime && fieldErrors.preferredTime && (
-              <p id="preferredTime-error" className="text-red-600 text-sm mt-2 font-medium">
-                {fieldErrors.preferredTime}
+            <CalendarPicker
+              onDateTimeSelect={(date, time) => {
+                setFormData(prev => ({
+                  ...prev,
+                  selectedDate: date,
+                  selectedTime: time,
+                  preferredTime: `${date.toLocaleDateString()} ${time}` // For API compatibility
+                }))
+                setFieldTouched(prev => ({ ...prev, preferredTime: true }))
+                setFieldErrors(prev => {
+                  const { preferredTime, ...rest } = prev
+                  return rest
+                })
+              }}
+              selectedDate={formData.selectedDate || undefined}
+              selectedTime={formData.selectedTime || undefined}
+            />
+            {formData.selectedDate && formData.selectedTime && (
+              <p className="text-xs text-warm-gray-500 mt-3 italic">
+                💡 We'll confirm this time within 24 hours of your request.
               </p>
             )}
           </div>

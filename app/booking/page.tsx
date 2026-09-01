@@ -38,7 +38,7 @@ export default function BookingPage() {
                       95% of clients book ongoing sessions after their free call
                     </p>
                     <p className="text-warm-gray-600 text-sm">
-                      Real therapy that creates real change. See what clients are experiencing.
+                      Real therapy that creates real change. See what clients are experiencing. <a href="/pricing" className="text-sage-600 hover:underline font-semibold">Full pricing details are here.</a>
                     </p>
                   </div>
                 </div>
