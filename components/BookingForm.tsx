@@ -35,6 +35,7 @@ interface FieldFocused {
   email?: boolean
   phone?: boolean
   concern?: boolean
+  firstTimeTherapy?: boolean
   preferredTime?: boolean
   consent?: boolean
 }

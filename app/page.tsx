@@ -36,6 +36,21 @@ export default function Home() {
         {/* Niche Grid */}
         <NicheGrid />
 
+        {/* Engagement Bridge: Micro-CTA After Persona Selection */}
+        <section className="section-padding bg-sage-50 border-t border-sage-200">
+          <div className="container-base max-w-2xl mx-auto text-center">
+            <p className="text-lg text-warm-gray-700 mb-6 italic">
+              Does one of these feel familiar? Or maybe you're wondering if therapy can actually help with what you're carrying right now.
+            </p>
+            <p className="text-base text-warm-gray-600 mb-8">
+              The answer is yes. And the way we'd work together is probably different than you expect—more practical, more human, less like a diagnosis waiting to happen.
+            </p>
+            <Link href="/booking" className="inline-block text-sage-600 font-semibold hover:text-sage-700 transition-colors">
+              Let's talk about what brought you here →
+            </Link>
+          </div>
+        </section>
+
         {/* Approach Section */}
         <section className="section-padding section-gradient-warm">
           <div className="container-base">
