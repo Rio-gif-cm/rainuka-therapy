@@ -5,83 +5,83 @@ import Link from 'next/link'
 const FAQData = [
   {
     q: 'Is this first-time therapy?',
-    a: 'It doesn\'t matter. Whether you\'ve been in therapy before or this is your first time, I meet you where you are. No judgment.',
+    a: 'It doesn\'t matter—whether you\'ve been before or this is your first time, I meet you where you are with no judgment.',
   },
   {
     q: 'Will you judge me?',
-    a: 'No. My job isn\'t to judge—it\'s to understand. Anything you share is confidential and non-judgmental.',
+    a: 'No. My job is to understand, not judge. Everything you share stays confidential and judgment-free.',
   },
   {
     q: 'How is therapy different from talking to friends?',
-    a: 'Friends care about you but aren\'t trained to help you process complex emotions or build new patterns. Therapy gives you that specialized support plus confidentiality and safety.',
+    a: 'Friends care but aren\'t trained to help you process emotions or build new patterns. Therapy offers specialized support with confidentiality and safety.',
   },
   {
     q: 'Will you tell me what to do?',
-    a: 'No. I\'ll help you think clearly so YOU can decide. My role is support, not direction.',
+    a: 'No. I help you think clearly so you can decide. My role is support and guidance, not direction.',
   },
   {
     q: 'How long does therapy typically take?',
-    a: 'It depends. Some people benefit from 6-8 sessions; others work with me for months or years. We\'ll figure out what feels right for you.',
+    a: 'It varies. Some benefit from 6–8 sessions; others work with me for months or years. We\'ll figure out what\'s right for you.',
   },
   {
     q: 'How much does therapy cost?',
-    a: 'I offer sliding scale sessions from $80-$150 per 50-minute session. We\'ll figure out what works for your budget.',
+    a: 'Sliding scale sessions range from $80–$150 per 50-minute session. We\'ll work within your budget.',
   },
   {
     q: 'Do you take insurance?',
-    a: 'I\'m in-network with several insurance providers. I also offer superbills for out-of-network reimbursement. Ask during your free call.',
+    a: 'I\'m in-network with several insurance providers and offer superbills for out-of-network reimbursement. Ask during your free call.',
   },
   {
     q: 'How often do people typically meet?',
-    a: 'Most people start with weekly 50-minute sessions. Some adjust to bi-weekly after establishing momentum.',
+    a: 'Most start with weekly 50-minute sessions and adjust to bi-weekly after establishing momentum.',
   },
   {
     q: 'What if I have to reschedule or cancel?',
-    a: 'Life happens. Just give me 24 hours notice. No charge for rescheduling with notice.',
+    a: 'Just give 24 hours notice—no charge for rescheduling with advance warning.',
   },
   {
     q: 'What if I can\'t afford regular therapy?',
-    a: 'I offer sliding scale rates and can work with you on payment plans. If neither works, I\'m happy to refer you to lower-cost options.',
+    a: 'I offer sliding scale rates, payment plans, and referrals to lower-cost options if needed.',
   },
   {
     q: 'Is telehealth as effective as in-person?',
-    a: 'Research says yes. Telehealth works great for therapy. You\'re comfortable, no commute, and the connection is real.',
+    a: 'Research confirms yes. You stay comfortable, avoid commute, and the connection is real.',
   },
   {
     q: 'Is therapy confidential?',
-    a: 'Yes. Everything you share is protected by HIPAA and therapist-client privilege. The only exceptions are mandatory reporting situations (risk of harm to yourself or others).',
+    a: 'Yes—everything is protected by HIPAA and therapist-client privilege, except mandatory reporting situations (risk of harm).',
   },
   {
     q: 'What happens if you think I\'m a danger to myself or others?',
-    a: 'I\'m required by law to take action (contact emergency services, family members, or authorities). We\'ll talk about this during your first session.',
+    a: 'I\'m required by law to take action (emergency services, family contact, or authorities). We\'ll discuss this during your first session.',
   },
   {
     q: 'Do you use my information for anything else?',
-    a: 'No. Your information is kept secure and used only for your care. I don\'t use client information for marketing or research.',
+    a: 'No. Your information stays secure and is used only for your care—never for marketing or research.',
   },
   {
     q: 'What\'s your data security like?',
-    a: 'Telehealth is through HIPAA-compliant, encrypted video. Your session notes are stored securely. All data is protected.',
+    a: 'Sessions use HIPAA-compliant, encrypted video. Notes are stored securely with full data protection.',
   },
   {
     q: 'Do I need to have a diagnosis to work with you?',
-    a: 'No. You don\'t need ADHD diagnosis to work on ADHD concerns. You don\'t need perinatal diagnosis to explore reproductive mental health. We work with what\'s happening for you.',
+    a: 'No. You don\'t need an ADHD or perinatal diagnosis to explore those concerns. We work with what\'s happening for you.',
   },
   {
     q: 'Is postpartum depression/anxiety real?',
-    a: 'Absolutely. Perinatal mental health challenges are real, common, and treatable. You\'re not weak or broken.',
+    a: 'Absolutely. Perinatal mental health challenges are real, common, treatable—and you\'re not weak or broken.',
   },
   {
     q: 'Can I do therapy while pregnant?',
-    a: 'Yes. Therapy during pregnancy can be incredibly helpful for anxiety management, processing fears, and preparing for birth and postpartum.',
+    a: 'Yes. Therapy during pregnancy helps with anxiety, processing fears, and preparing for birth and postpartum.',
   },
   {
     q: 'Will therapy help with ADHD symptoms?',
-    a: 'Therapy isn\'t a replacement for medication. But it helps you understand your ADHD, build systems that work for you, and process shame.',
+    a: 'Therapy complements medication by helping you understand ADHD, build systems that work, and process shame.',
   },
   {
     q: 'Should I quit my job before starting therapy?',
-    a: 'Not necessarily. Let\'s talk through what\'s really going on first. Career therapy helps you decide, not pushes you toward an answer.',
+    a: 'Not necessarily. Let\'s talk through what\'s really happening first. Career therapy helps you decide, not pushes an answer.',
   },
 ]
 
