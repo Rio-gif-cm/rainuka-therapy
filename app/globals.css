@@ -104,6 +104,18 @@ a:hover {
   border: none;
   text-decoration: none;
   white-space: nowrap;
+  /* Mobile-first: minimum 48px height for touch targets */
+  min-height: 48px;
+}
+
+/* Larger buttons on mobile (56×56px) for anxiety-prone users */
+@media (max-width: 640px) {
+  .btn {
+    min-height: 56px;
+    min-width: 56px;
+    padding: 1rem 1.5rem;
+    font-size: 1.0625rem;
+  }
 }
 
 .btn-primary {

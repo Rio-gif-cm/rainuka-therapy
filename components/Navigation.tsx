@@ -22,10 +22,15 @@ function NavLink({ href, label, isActive, isMobile }: NavLinkProps) {
         fontSize: isMobile ? '0.9rem' : '0.95rem', 
         fontWeight: 500,
         paddingBottom: '0.25rem',
-        borderBottom: isActive ? `2px solid ${colors.sage[600]}` : '2px solid transparent',
-        transition: 'all 0.3s ease',
+        /* Mobile-first touch target: 56×56px for anxiety users */
+        padding: isMobile ? '0.75rem 1rem' : '0.5rem 0rem',
+        minHeight: isMobile ? '56px' : 'auto',
+        minWidth: isMobile ? '56px' : 'auto',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
+        borderBottom: isActive ? `2px solid ${colors.sage[600]}` : '2px solid transparent',
+        transition: 'all 0.3s ease',
       }}
       onMouseEnter={(e) => {
         if (!isActive) {
@@ -66,6 +71,9 @@ export default function Navigation() {
     { href: '/career', label: 'Career' },
     { href: '/faq', label: 'FAQ' },
   ]
+
+  // Mobile nav link padding to meet 56×56px touch target
+  const mobileNavLinkPadding = isMobile ? '0.75rem 1rem' : '0rem'
 
   return (
     <nav style={{
@@ -125,10 +133,14 @@ export default function Navigation() {
             style={{ 
               ...styles.button,
               ...styles.btnPrimary,
-              padding: '0.5rem 1.25rem',
-              fontSize: '0.9rem',
+              padding: isMobile ? '1rem 1.5rem' : '0.5rem 1.25rem',
+              minHeight: isMobile ? '56px' : 'auto',
+              minWidth: isMobile ? '56px' : 'auto',
+              fontSize: isMobile ? '1rem' : '0.9rem',
               whiteSpace: 'nowrap',
-              minWidth: 'auto',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             Book

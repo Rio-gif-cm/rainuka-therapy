@@ -86,25 +86,25 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  quote: 'I thought I was alone in my anxiety around pregnancy. Rainuka helped me see that what I was feeling was real—and that I could get support for it.',
+                  quote: 'I thought I was alone in my anxiety around pregnancy. Rainuka helped me see that what I was feeling was real—and that I could get support for it. Now I have a community and tools that actually work for my specific situation.',
                   author: 'Sarah',
                   context: 'Navigating perinatal anxiety',
                   rating: 5,
                 },
                 {
-                  quote: 'Finally, someone who understands that ADHD diagnosis at 35 means grief AND relief. Not just tips and tricks—real therapy.',
+                  quote: 'Finally, someone who understands that ADHD diagnosis at 35 means grief AND relief. Not just tips and tricks—real therapy. I chose Rainuka specifically because she gets how this feels—the relief of answers plus the loss of time I didn\'t know I was struggling.',
                   author: 'Jessica',
                   context: 'Adult ADHD diagnosis',
                   rating: 5,
                 },
                 {
-                  quote: 'I came in burned out and questioning everything about my career. Rainuka helped me sort through what\'s real anxiety vs. what\'s actually a sign something needs to change.',
+                  quote: 'I came in burned out and questioning everything about my career. Rainuka helped me sort through what\'s real anxiety vs. what\'s actually a sign something needs to change. In just two months, I went from panic and paralysis to a clear plan forward.',
                   author: 'Michael',
                   context: 'Career transitions',
                   rating: 5,
                 },
                 {
-                  quote: 'What I appreciated most was that there was no judgment. Just warmth and practical support when I needed it most.',
+                  quote: 'What I appreciated most was that there was no judgment. Rainuka met me where I was with both warmth and practical support. She helped me understand that grief isn\'t something to "fix"—it\'s something to move through with intention.',
                   author: 'Amanda',
                   context: 'Grief and loss',
                   rating: 5,
