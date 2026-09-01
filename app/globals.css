@@ -283,6 +283,18 @@ textarea {
   font-family: inherit;
   transition: all 0.3s ease;
   background-color: white;
+  /* Mobile-first touch targets: 48px minimum height for WCAG compliance */
+  min-height: 48px;
+}
+
+/* Larger touch targets on mobile (56px total = 48px content + padding) */
+@media (max-width: 640px) {
+  .form-input,
+  .form-select,
+  textarea {
+    padding: 1rem;
+    min-height: 56px;
+  }
 }
 
 .form-input:focus,

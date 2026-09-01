@@ -8,8 +8,8 @@ export default function PerinatalPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero */}
-        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
+        {/* Hero - Perinatal: Warm rose accents for warmth, hope, and safety */}
+        <section className="hero-section bg-gradient-to-br from-rose-50 to-sage-50 py-20" style={{background: 'linear-gradient(135deg, rgba(255, 245, 243, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Perinatal Mental Health Therapy

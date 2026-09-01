@@ -41,8 +41,13 @@ export default function HeroSection() {
           </p>
 
           {/* Fear-reduction messaging */}
-          <p style={{ ...styles.p, fontSize: '0.9rem', color: colors.sage[700], fontWeight: 500, maxWidth: '42rem', margin: '0 auto 2rem', fontStyle: 'italic' }}>
+          <p style={{ ...styles.p, fontSize: '0.9rem', color: colors.sage[700], fontWeight: 500, maxWidth: '42rem', margin: '0 auto 1rem', fontStyle: 'italic' }}>
             Whether you've been in therapy before or this is your first time—there's no judgment here. You're not broken for reaching out. You're taking care of yourself.
+          </p>
+
+          {/* First session clarity - addresses uncertainty barrier */}
+          <p style={{ ...styles.p, fontSize: '0.875rem', color: colors.warmGray[600], maxWidth: '42rem', margin: '0 auto 2rem' }}>
+            Your first session: a conversation where you share what brought you here at your own pace. I listen, and we see if we're a good fit. You're in control.
           </p>
 
           {/* Trust signals + Scarcity */}

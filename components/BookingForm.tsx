@@ -501,7 +501,8 @@ export default function BookingForm() {
               checked={formData.consent}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
-              className="mt-1.5 w-4 h-4 cursor-pointer"
+              className="mt-1.5 w-4 h-4 sm:w-5 sm:h-5 cursor-pointer"
+              style={{ minWidth: '56px', minHeight: '56px', padding: '16px', appearance: 'none', WebkitAppearance: 'none' }}
               aria-invalid={fieldTouched.consent && !!fieldErrors.consent}
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
