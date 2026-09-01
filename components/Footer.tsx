@@ -43,6 +43,11 @@ export default function Footer() {
               </Link>
             </li>
             <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/providers" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                Directories & Insurance
+              </Link>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
               <Link href="/booking" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
                 Book
               </Link>

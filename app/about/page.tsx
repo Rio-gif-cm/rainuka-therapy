@@ -392,6 +392,82 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* Diversity & Inclusion Commitment */}
+        <section className="section-padding bg-white border-t border-sage-200">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6 text-center">
+              My Commitment to Accessibility & Inclusion
+            </h2>
+            <p className="text-center text-warm-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+              I don't just work with all people—I actively affirm the full humanity of clients from marginalized communities.
+            </p>
+
+            <div className="space-y-8">
+              <div className="card bg-sage-50">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-4">I work affirmatively with:</h3>
+                <ul className="space-y-3 text-warm-gray-600">
+                  <li className="flex gap-3">
+                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span><strong className="text-warm-gray-900">BIPOC clients</strong> navigating racialized stress, discrimination, identity affirmation, and the complex intersection of systemic inequity and mental health</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span><strong className="text-warm-gray-900">LGBTQ+ clients</strong> (including trans and non-binary folks)—your identity is celebrated, not pathologized, and I provide affirming care grounded in your values</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span><strong className="text-warm-gray-900">Neurodivergent clients</strong> (ADHD, autism, and other neurotypes)—your brain isn't broken, it's different, and we leverage your strengths</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span><strong className="text-warm-gray-900">Disabled clients</strong>—I'm committed to genuine accessibility, accommodation, and affirming your whole self without cure narrative</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span><strong className="text-warm-gray-900">Low-income and first-generation clients</strong>—cost won't be a barrier to your care. Therapy should be accessible.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="card bg-white border border-sage-200">
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-4">What this commitment looks like in practice:</h3>
+                <ul className="space-y-3 text-warm-gray-600">
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>I've done my own work around bias, privilege, and blind spots—and I continue doing it. This isn't one-time work; it's ongoing.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>I don't claim expertise in all experiences. I'm a learner, and I actively welcome your feedback and course-correction.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>I understand how systemic oppression shapes mental health. Your struggles aren't just "in your head"—context matters.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>I center your values, culture, community, and lived experience—not my clinical assumptions or worldview.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>Therapy is accessible: transparent pricing, sliding scale options available, no surprise fees, flexible scheduling where possible.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
+                    <span>I stay accountable: regular clinical consultation, ongoing training in culturally responsive care, and to your direct feedback.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="card bg-cream-50 border-l-4 border-warm-accent">
+                <p className="text-warm-gray-600 italic">
+                  This commitment isn't performative or something I "also do." It's baked into how I show up every session. If you ever feel like your identity, background, or experience isn't being honored, I want to know. Feedback helps me be better.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="section-padding bg-sage-400 text-white">
           <div className="container-base text-center">

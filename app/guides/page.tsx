@@ -40,15 +40,35 @@ export default function GuidesPage() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-6 py-16">
-          <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-6">
-            Guides & Resources
-          </h1>
-          <p className="text-xl text-warm-gray-600 mb-4">
-            Thoughtful, practical articles to help you understand therapy, mental health, and yourself better.
-          </p>
-          <p className="text-lg text-warm-gray-500">
-            Whether you're preparing for your first session, navigating perinatal anxiety, dealing with an ADHD diagnosis, or rethinking your career, these guides are here to meet you where you are.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
+            <div>
+              <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-6">
+                Guides & Resources
+              </h1>
+              <p className="text-xl text-warm-gray-600 mb-4">
+                Thoughtful, practical articles to help you understand therapy, mental health, and yourself better.
+              </p>
+              <p className="text-lg text-warm-gray-500">
+                Whether you're preparing for your first session, navigating perinatal anxiety, dealing with an ADHD diagnosis, or rethinking your career, these guides are here to meet you where you are.
+              </p>
+            </div>
+          </div>
+
+          {/* Links Section */}
+          <div className="flex flex-wrap gap-6 text-sm border-t border-sage-100 pt-6">
+            <Link 
+              href="/guides/archive" 
+              className="text-sage-600 hover:text-sage-700 font-semibold flex items-center gap-2"
+            >
+              📚 View Archive
+            </Link>
+            <Link 
+              href="/feed.xml" 
+              className="text-sage-600 hover:text-sage-700 font-semibold flex items-center gap-2"
+            >
+              📡 Subscribe (RSS)
+            </Link>
+          </div>
         </section>
 
         {/* Guides Grid */}
