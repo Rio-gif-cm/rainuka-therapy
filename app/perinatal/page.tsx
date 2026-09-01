@@ -161,10 +161,11 @@ export default function PerinatalPage() {
                 <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>
                   Your Anxiety Has a Name
                 </h3>
+                <p className="mb-3">
+                  Postpartum anxiety affects 1 in 5 mothers. It's not weakness—it's a biological response to hormonal shifts and identity changes.
+                </p>
                 <p>
-                  Postpartum anxiety affects 1 in 5 mothers. It's not weakness or failure—it's a biological response 
-                  to massive hormonal shifts, identity changes, and the enormity of new responsibility. Your brain is 
-                  working overtime to protect your baby. That's real. That's treatable.
+                  Your brain is working overtime to protect your baby. That's real. That's treatable.
                 </p>
               </div>
 
@@ -172,10 +173,14 @@ export default function PerinatalPage() {
                 <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>
                   Mixed Feelings Don't Mean You Love Less
                 </h3>
+                <p className="mb-3">
+                  You can feel profound love for your baby AND want space. You can grieve a pregnancy loss AND feel relief.
+                </p>
+                <p className="mb-3">
+                  You can be grateful AND exhausted. This is emotional honesty.
+                </p>
                 <p>
-                  You can feel profound love for your baby AND want space. You can grieve a pregnancy loss AND feel relief. 
-                  You can be grateful AND exhausted. This isn't maternal ambivalence—it's emotional honesty. Holding all 
-                  of these feelings at once is healthy. It's human. Therapy helps you stop being ashamed of your complexity.
+                  Therapy helps you stop being ashamed of your complexity.
                 </p>
               </div>
 
