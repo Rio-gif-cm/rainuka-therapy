@@ -18,12 +18,12 @@ export default function GriefPage() {
 
       <main className="flex-grow">
         {/* Hero - Grief: Deep indigo accents (#3f566d) for depth, compassion, and holding space */}
-        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(241, 244, 249, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(77, 106, 134, 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Grief Therapy That Honors Your Loss
             </h1>
-            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#3f566d'}}>
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: griefColor}}>
               Loss is real. Your grief is normal.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
