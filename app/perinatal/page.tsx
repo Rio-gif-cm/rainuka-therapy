@@ -11,6 +11,7 @@ import {
   SpecialtyCard,
   SpecialtyNote,
   SpecialtyChecklist,
+  SpecialtyWhyRainuka,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
 import { PerinatalIcon } from '@/components/SpecialtyIcons'
@@ -40,8 +41,8 @@ export default function PerinatalPage() {
         <SpecialtyHero
           accent={accent}
           eyebrow="Perinatal Mental Health"
-          title="Perinatal Therapy That Honors Your Journey"
-          lead="Pregnancy, loss, postpartum. What you're carrying isn't weakness."
+          title="Perinatal Therapy That Honors Your Body & Mind"
+          lead="🤰 Pregnancy, loss, postpartum. What you're carrying isn't weakness."
           description="Infertility shame. Pregnancy loss grief. Postpartum anxiety and OCD. Reproductive trauma. I specialize in what often goes unnamed—and help you feel less alone."
           ctaLabel="Get Support That Gets You"
         />
@@ -258,6 +259,10 @@ export default function PerinatalPage() {
             </div>
           </SpecialtySection>
         )}
+
+        <SpecialtyWhyRainuka accent={accent}>
+          I specialize in perinatal mental health—pregnancy loss, postpartum anxiety, infertility grief. These experiences reshape your body and identity. I meet the complex emotions with trauma-informed care, validation instead of platitudes, and cultural humility about reproductive choices.
+        </SpecialtyWhyRainuka>
 
         <SpecialtyCTA
           accent={accent}

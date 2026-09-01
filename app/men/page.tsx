@@ -15,7 +15,7 @@ export default function MenPage() {
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(242, 245, 250, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Therapy for Men Who Actually Want to Understand Themselves
+              Therapy for Men: Depth Without the Shame
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#4d6a86'}}>
               Seeking help isn't weakness. It's wisdom.
@@ -287,6 +287,18 @@ export default function MenPage() {
             <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#4d6a86'}}>
               Schedule Your Free Call
             </Link>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: '#4d6a86'}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#4d6a86'}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Men's therapy isn't 'fix your emotions fast.' It's space to explore vulnerability, identity, and what you're carrying without judgment. Build emotional literacy and connection.
+            </p>
           </div>
         </section>
       </main>

@@ -11,6 +11,7 @@ import {
   SpecialtyNote,
   SpecialtyChecklist,
   SpecialtyFAQ,
+  SpecialtyWhyRainuka,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
 import { CareerIcon } from '@/components/SpecialtyIcons'
@@ -30,8 +31,8 @@ export default function CareerPage() {
         <SpecialtyHero
           accent={accent}
           eyebrow="Career & Burnout"
-          title="Career Clarity That Actually Fits You"
-          lead="Career transitions don't have to feel impossible."
+          title="Career Clarity That Honors Your Whole Self"
+          lead="🎯 Career transitions don't have to feel impossible."
           description="Burnout, doubt, identity questions, career anxiety—you don't have to figure it out alone. Practical. Warm. Secular."
           ctaLabel="Get Support That Gets You"
         />
@@ -232,6 +233,10 @@ export default function CareerPage() {
             </div>
           </SpecialtySection>
         )}
+
+        <SpecialtyWhyRainuka accent={accent}>
+          Career transitions expose identity questions. I help you move through burnout, perfectionism, and paralysis—with trauma-informed understanding of how work shapes your nervous system and practical strategy for what comes next.
+        </SpecialtyWhyRainuka>
 
         <SpecialtyCTA
           accent={accent}

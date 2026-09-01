@@ -13,6 +13,7 @@ import {
   SpecialtyChecklist,
   SpecialtyStat,
   SpecialtyFAQ,
+  SpecialtyWhyRainuka,
   SpecialtyCTA,
 } from '@/components/SpecialtyPage'
 import { ADHDIcon } from '@/components/SpecialtyIcons'
@@ -43,8 +44,8 @@ export default function ADHDPage() {
         <SpecialtyHero
           accent={accent}
           eyebrow="Adult ADHD"
-          title="ADHD Therapy That Actually Understands You"
-          lead="Diagnosed at 30? 40? 50? Finally it makes sense."
+          title="ADHD Therapy That Reframes Your Brain, Not Your Shame"
+          lead="🧠 Diagnosed at 30? 40? 50? Finally it makes sense."
           description="Late ADHD diagnosis comes with grief, relief, and confusion. Therapy to understand yourself—not fix yourself. Shame-aware. Neurodivergent-affirming."
           ctaLabel="Get Support That Gets You"
         />
@@ -271,6 +272,10 @@ export default function ADHDPage() {
             </div>
           </SpecialtySection>
         )}
+
+        <SpecialtyWhyRainuka accent={accent}>
+          Late diagnosis is reorienting. I help you untangle ADHD from perfectionism, shame, and identity loss. Your neurodivergence isn't broken—it's real, and it deserves affirming, shame-aware support grounded in neurodiversity psychology.
+        </SpecialtyWhyRainuka>
 
         <SpecialtyCTA
           accent={accent}

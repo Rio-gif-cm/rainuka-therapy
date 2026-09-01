@@ -62,11 +62,11 @@ const faqSchema = {
 }
 
 export const metadata = {
-  title: 'Therapy for Parents & Caregivers | Rainuka Oberoi, LCSW',
+  title: 'Parenting Therapy: Managing the Weight | Rainuka Oberoi, LCSW',
   description:
     'Therapy for parenting anxiety, caregiver burnout, parental guilt, and boundary-setting. For parents, single parents, and sandwich-generation caregivers who are running on empty.',
   openGraph: {
-    title: 'Therapy for Parents & Caregivers | Rainuka Oberoi, LCSW',
+    title: 'Parenting Therapy: Managing the Weight | Rainuka Oberoi, LCSW',
     description:
       'Parenting anxiety, caregiver burnout, guilt, and boundaries. Support for the person doing the caring.',
     type: 'website',
@@ -693,6 +693,18 @@ export default function ParentsPage() {
             <Link href="/booking" className="inline-block btn btn-primary">
               Schedule Your Free Consultation
             </Link>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: '#7a9b6f'}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#7a9b6f'}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Parenting resurrects your own attachment wounds. I help you break cycles, manage overwhelm, and build secure attachment with your kids—while tending to your nervous system.
+            </p>
           </div>
         </section>
       </main>

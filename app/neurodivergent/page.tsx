@@ -26,7 +26,7 @@ export default function NeurodivergentPage() {
         >
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Therapy for Neurodivergent Minds
+              Neurodivergent Therapy: Your Brain Is Not the Problem
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: ACCENT }}>
               Your brain isn&apos;t broken. It&apos;s wired differently. Let&apos;s work with that.
@@ -367,6 +367,18 @@ export default function NeurodivergentPage() {
 
             <p className="text-warm-gray-600 text-sm mt-6">
               Telehealth • Sliding scale available • Sensory-informed • Affirming
+            </p>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: '#8366d0'}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#8366d0'}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Autism, ADHD, dyslexia, dyspraxia—neurodivergence often masks trauma and identity questions. I provide affirming, neurotype-aware therapy that celebrates how you think.
             </p>
           </div>
         </section>

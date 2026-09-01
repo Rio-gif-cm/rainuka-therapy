@@ -21,7 +21,7 @@ export default function GriefPage() {
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(77, 106, 134, 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Grief Therapy That Honors Your Loss
+              Grief That Honors Every Loss—Big or Small
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: griefColor}}>
               Loss is real. Your grief is normal.
@@ -532,6 +532,18 @@ export default function GriefPage() {
             </div>
           </section>
         )}
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: griefColor}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: griefColor}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Grief is love with nowhere to go. I create space for all types of loss—death, miscarriage, estrangement, identity shifts. Your grief integrates; it doesn't disappear.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

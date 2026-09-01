@@ -26,7 +26,7 @@ export default function BIPOCPage() {
         >
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Therapy for BIPOC Journeys
+              BIPOC Therapy: Healing from Systemic Impact
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: ACCENT }}>
               Cultural identity as strength. Racism trauma witnessed and held.
@@ -336,6 +336,18 @@ export default function BIPOCPage() {
 
             <p className="text-warm-gray-600 text-sm mt-6">
               Telehealth • Sliding scale available • Confidential & secure
+            </p>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: '#b8714f'}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#b8714f'}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Race and identity shape trauma. I integrate understanding of racism, cultural identity, and systemic stress into my approach. Your experience is valid—your therapist gets it.
             </p>
           </div>
         </section>

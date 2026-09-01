@@ -20,7 +20,7 @@ export default function CouplesPage() {
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(244, 165, 157, 0.15) 0%, rgba(255, 248, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Couples & Relationship Therapy
+              Couples Therapy That Rebuilds Connection & Trust
             </h1>
             <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto" style={{color: couplesColor}}>
               Reconnect with clarity. Navigate conflict with compassion. Rebuild trust after betrayal.
@@ -551,6 +551,18 @@ export default function CouplesPage() {
                 or consciously choose to separate, a skilled therapist can guide you through it.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: couplesColor}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: couplesColor}}>
+              Why Rainuka for Your Relationship
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Conflict often masks deeper disconnection. I help you and your partner understand each other's nervous systems, heal attachment wounds, and rebuild intimacy with depth.
+            </p>
           </div>
         </section>
       </main>

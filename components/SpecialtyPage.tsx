@@ -86,6 +86,42 @@ export const specialtyAccents = {
     tintStrong: 'rgba(30, 58, 138, 0.14)',
     heroTint: 'rgba(44, 90, 160, 0.10)',
   },
+  // parents — warm sage. Grounded, nurturing, supportive
+  parents: {
+    accent: '#7a9b6f',        // sage green-600
+    accentText: '#5a7754',    // sage-700 (AA on white)
+    accentDeep: '#3d5236',    // sage-900
+    tint: 'rgba(122, 155, 111, 0.08)',
+    tintStrong: 'rgba(90, 119, 84, 0.14)',
+    heroTint: 'rgba(122, 155, 111, 0.10)',
+  },
+  // lgbtq — spectrum rainbow. Affirming, vibrant, inclusive
+  lgbtq: {
+    accent: '#c85a9f',        // spectrum magenta-500
+    accentText: '#a0396f',    // magenta-700 (AA on white)
+    accentDeep: '#7d2557',    // magenta-900
+    tint: 'rgba(200, 90, 159, 0.08)',
+    tintStrong: 'rgba(160, 57, 111, 0.14)',
+    heroTint: 'rgba(200, 90, 159, 0.10)',
+  },
+  // bipoc — earth tone. Grounded, healing, powerful
+  bipoc: {
+    accent: '#b8714f',        // terra cotta-500
+    accentText: '#8b4d2e',    // terra-700 (AA on white)
+    accentDeep: '#613220',    // terra-900
+    tint: 'rgba(184, 113, 79, 0.08)',
+    tintStrong: 'rgba(139, 77, 46, 0.14)',
+    heroTint: 'rgba(184, 113, 79, 0.10)',
+  },
+  // neurodivergent — vibrant violet. Celebrating unique minds
+  neurodivergent: {
+    accent: '#8366d0',        // violet-500
+    accentText: '#5e4d94',    // violet-700 (AA on white)
+    accentDeep: '#3d2c5f',    // violet-900
+    tint: 'rgba(131, 102, 208, 0.08)',
+    tintStrong: 'rgba(94, 77, 148, 0.14)',
+    heroTint: 'rgba(131, 102, 208, 0.10)',
+  },
 } satisfies Record<string, SpecialtyAccent>
 
 export type SpecialtyKey = keyof typeof specialtyAccents
@@ -454,6 +490,28 @@ export function SpecialtyFAQ({ accent, items }: SpecialtyFAQProps) {
         </details>
       ))}
     </div>
+  )
+}
+
+/* ------------------------------------------------------------------ */
+/* Why Rainuka — specialty-specific unique approach explanation        */
+/* ------------------------------------------------------------------ */
+
+interface SpecialtyWhyRainukaProps {
+  accent: SpecialtyAccent
+  children: ReactNode
+}
+
+export function SpecialtyWhyRainuka({ accent, children }: SpecialtyWhyRainukaProps) {
+  return (
+    <section className="section-padding bg-white border-t-4" style={{ borderColor: accent.accent }}>
+      <div className="container-base max-w-3xl mx-auto">
+        <h2 className="text-2xl font-serif font-bold mb-4" style={{ color: accent.accentText }}>
+          Why Rainuka for Your Journey
+        </h2>
+        <p className="text-lg text-warm-gray-700 leading-relaxed">{children}</p>
+      </div>
+    </section>
   )
 }
 

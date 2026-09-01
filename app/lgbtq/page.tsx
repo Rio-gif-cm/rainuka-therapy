@@ -6,7 +6,7 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata = {
-  title: 'LGBTQ+ Affirming Therapy | Identity-Centered Care | Rainuka Oberoi, LCSW',
+  title: 'LGBTQ+ Therapy That Affirms Your Wholeness | Identity-Centered Care | Rainuka Oberoi, LCSW',
   description:
     'Affirming therapy for LGBTQ+ clients: coming out, identity, relationships, family, trauma. No gatekeeping. Your identity is valid. Telehealth, sliding scale.',
 }
@@ -26,7 +26,7 @@ export default function LGBTQPage() {
         >
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              LGBTQ+ Affirming Therapy
+              LGBTQ+ Therapy That Affirms Your Wholeness
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: ACCENT }}>
               Your identity is valid. Therapy that affirms who you are, not fixes you.
@@ -294,6 +294,18 @@ export default function LGBTQPage() {
 
             <p className="text-warm-gray-600 text-sm mt-6">
               Telehealth • Sliding scale available • Confidential & secure
+            </p>
+          </div>
+        </section>
+
+        {/* Why Rainuka */}
+        <section className="section-padding bg-white border-t-4" style={{borderColor: '#c85a9f'}}>
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#c85a9f'}}>
+              Why Rainuka for Your Journey
+            </h2>
+            <p className="text-lg text-warm-gray-700 leading-relaxed">
+              Coming out, transition, chosen family, discrimination—these are real experiences that shape your nervous system. I provide affirmative, trauma-informed care grounded in queer psychology.
             </p>
           </div>
         </section>
