@@ -1,0 +1,169 @@
+{
+  "1_aspire_therapy_nyc": {
+    "name": "Aspire Therapy NYC",
+    "url": "https://www.aspiretherapynyc.com/",
+    "hero_messaging": "Therapy in NYC | Anxiety, OCD, ADHD & LGBTQ+",
+    "positioning_strategy": "Niche multiplication - appeals to multiple personas",
+    "specializations": [
+      "anxiety",
+      "OCD",
+      "ADHD",
+      "LGBTQ+"
+    ],
+    "pricing_model": "Transparent ($200-250/session shown)",
+    "features": {
+      "pricing_transparency": true,
+      "specialization_pages": true,
+      "booking_system": true,
+      "insurance_info": false,
+      "testimonials": false,
+      "team_bios": true
+    },
+    "strengths": [
+      "Clear specialization focus visible in homepage",
+      "Pricing displayed (builds trust)",
+      "Multiple niche landing pages",
+      "LGBTQ+ inclusive messaging"
+    ],
+    "gaps": [
+      "No social proof/testimonials",
+      "No perinatal specialization",
+      "Missing career/life transition focus",
+      "Insurance ambiguity may deter some"
+    ],
+    "copy_tone": "Clinical yet approachable",
+    "design_pattern": "Multi-niche selector on hero (broad appeal)"
+  },
+  "2_red_elm_psychotherapy": {
+    "name": "Red Elm Psychotherapy",
+    "url": "https://www.redelmpsychotherapy.com/",
+    "hero_messaging": "OCD & Perinatal Specialists",
+    "positioning_strategy": "Deep expertise in 2 complementary areas",
+    "specializations": [
+      "perinatal/postpartum",
+      "OCD"
+    ],
+    "pricing_model": "Not transparent (contact for rates)",
+    "features": {
+      "pricing_transparency": false,
+      "specialization_pages": true,
+      "booking_system": true,
+      "insurance_info": true,
+      "testimonials": false,
+      "team_bios": true
+    },
+    "strengths": [
+      "Perinatal specialization (direct Rainuka overlap)",
+      "Group practice visibility (scale + variety)",
+      "Trauma-informed messaging",
+      "Clear booking integration"
+    ],
+    "gaps": [
+      "No pricing shown (friction)",
+      "No ADHD specialization",
+      "No career/life transition messaging",
+      "Missing social proof"
+    ],
+    "copy_tone": "Warm, validating, trauma-informed",
+    "design_pattern": "Dual-specialization authority play"
+  },
+  "3_thrive_psychotherapy_nyc": {
+    "name": "Thrive Psychotherapy NYC",
+    "url": "https://thrivepsychotherapynyc.com/",
+    "hero_messaging": "OCD & Trauma Specialists",
+    "positioning_strategy": "Deep expertise + educational transparency",
+    "specializations": [
+      "OCD",
+      "trauma",
+      "PTSD"
+    ],
+    "pricing_model": "Transparent ($150-200/session shown)",
+    "features": {
+      "pricing_transparency": true,
+      "specialization_pages": true,
+      "booking_system": true,
+      "insurance_info": true,
+      "testimonials": false,
+      "team_bios": true
+    },
+    "strengths": [
+      "Pricing transparency builds trust",
+      "Educational content (ERP methodology)",
+      "Evidence-based language",
+      "Clear treatment approach"
+    ],
+    "gaps": [
+      "No social proof/testimonials",
+      "No perinatal focus",
+      "No ADHD/career messaging",
+      "Narrow niche breadth (limits addressable market)"
+    ],
+    "copy_tone": "Educational, technical-yet-warm",
+    "design_pattern": "Authority through methodology education"
+  },
+  "4_magenta_therapy": {
+    "name": "Magenta Therapy",
+    "url": "https://magentatherapy.com/",
+    "hero_messaging": "Online Therapy in New York, Insurance Accepted",
+    "positioning_strategy": "Access-first (insurance focus)",
+    "specializations": [
+      "anxiety",
+      "depression",
+      "OCD",
+      "couples"
+    ],
+    "pricing_model": "Not transparent (insurance-only messaging)",
+    "features": {
+      "pricing_transparency": false,
+      "specialization_pages": false,
+      "booking_system": false,
+      "insurance_info": true,
+      "testimonials": false,
+      "team_bios": false
+    },
+    "strengths": [
+      "Insurance messaging (accessibility)",
+      "Online delivery clear"
+    ],
+    "gaps": [
+      "Weak specialization messaging",
+      "No pricing shown",
+      "No booking integration visible",
+      "Generic homepage (low conversion)"
+    ],
+    "copy_tone": "Generic, clinical",
+    "design_pattern": "Insurance-focused, lacks personality"
+  },
+  "5_my_ap_therapy": {
+    "name": "My AP Therapy",
+    "url": "https://www.myaptherapy.com/",
+    "hero_messaging": "Anxiety Therapy for High-Functioning Adults NYC",
+    "positioning_strategy": "Persona-specific (high-functioning professionals)",
+    "specializations": [
+      "anxiety",
+      "depression",
+      "trauma"
+    ],
+    "pricing_model": "Not transparent",
+    "features": {
+      "pricing_transparency": false,
+      "specialization_pages": false,
+      "booking_system": true,
+      "insurance_info": true,
+      "testimonials": false,
+      "team_bios": false
+    },
+    "strengths": [
+      "Persona specificity in hero (high-functioning adults)",
+      "Direct booking access"
+    ],
+    "gaps": [
+      "No pricing transparency",
+      "Limited specialization detail",
+      "No social proof",
+      "Missing unique value proposition"
+    ],
+    "copy_tone": "Professional, corporate",
+    "design_pattern": "Persona-targeting in headline"
+  }
+}

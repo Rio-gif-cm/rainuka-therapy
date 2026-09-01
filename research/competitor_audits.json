@@ -1,0 +1,100 @@
+{
+  "https://magentatherapy.com/": {
+    "url": "https://magentatherapy.com/",
+    "title": "Online Therapy in New York, Insurance Accepted | Magenta Therapy",
+    "content_length": 1969,
+    "has_pricing": false,
+    "has_specializations": false,
+    "has_testimonials": false,
+    "has_credentials": true,
+    "has_booking": false,
+    "has_insurance": true,
+    "niche_mentions": [
+      "anxiety",
+      "depression",
+      "ocd",
+      "men",
+      "couples",
+      "therapy"
+    ]
+  },
+  "https://www.myaptherapy.com/": {
+    "url": "https://www.myaptherapy.com/",
+    "title": "Anxiety Therapy for High-Functioning Adults NYC | My AP Therapy",
+    "content_length": 1724,
+    "has_pricing": false,
+    "has_specializations": false,
+    "has_testimonials": false,
+    "has_credentials": true,
+    "has_booking": true,
+    "has_insurance": true,
+    "niche_mentions": [
+      "anxiety",
+      "depression",
+      "trauma",
+      "men",
+      "therapy"
+    ]
+  },
+  "https://www.aspiretherapynyc.com/": {
+    "url": "https://www.aspiretherapynyc.com/",
+    "title": "Therapy in NYC | Anxiety, OCD, ADHD & LGBTQ+ | Aspire",
+    "content_length": 8296,
+    "has_pricing": true,
+    "has_specializations": true,
+    "has_testimonials": false,
+    "has_credentials": true,
+    "has_booking": true,
+    "has_insurance": false,
+    "niche_mentions": [
+      "adhd",
+      "anxiety",
+      "ocd",
+      "career",
+      "lgbtq",
+      "men",
+      "couples",
+      "therapy"
+    ]
+  },
+  "https://www.redelmpsychotherapy.com/": {
+    "url": "https://www.redelmpsychotherapy.com/",
+    "title": "Red Elm Psychotherapy | OCD & Perinatal Specialists Vienna",
+    "content_length": 4805,
+    "has_pricing": false,
+    "has_specializations": true,
+    "has_testimonials": false,
+    "has_credentials": true,
+    "has_booking": true,
+    "has_insurance": true,
+    "niche_mentions": [
+      "perinatal",
+      "postpartum",
+      "anxiety",
+      "depression",
+      "ocd",
+      "trauma",
+      "career",
+      "men",
+      "therapy"
+    ]
+  },
+  "https://thrivepsychotherapynyc.com/": {
+    "url": "https://thrivepsychotherapynyc.com/",
+    "title": "Thrive Psychotherapy | NYC Therapy Services For OCD & Trauma",
+    "content_length": 4239,
+    "has_pricing": true,
+    "has_specializations": true,
+    "has_testimonials": false,
+    "has_credentials": true,
+    "has_booking": true,
+    "has_insurance": true,
+    "niche_mentions": [
+      "anxiety",
+      "ocd",
+      "trauma",
+      "men",
+      "therapy"
+    ]
+  }
+}
