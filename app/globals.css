@@ -457,3 +457,68 @@ textarea.border-green-500:focus {
   border-color: var(--sage-700);
   color: var(--sage-700);
 }
+
+/* Enhanced Section Dividers - Professional Polish Layer */
+.section-divider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--sage-300) 15%, 
+    var(--sage-300) 85%, 
+    transparent 100%);
+  margin: 0;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--sage-400);
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -3.5px;
+}
+
+/* Visual accent bar at top of sections */
+.section-accent-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    var(--sage-400) 0%, 
+    var(--sage-500) 50%, 
+    var(--sage-400) 100%);
+  opacity: 0.6;
+}
+
+/* Refined card borders for better visual hierarchy */
+.card-elevated {
+  border: 1px solid var(--sage-200);
+  border-top: 2px solid var(--sage-400);
+  position: relative;
+}
+
+/* Section spacing enhancement */
+section {
+  position: relative;
+}
+
+section:not(:first-of-type)::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(157, 187, 141, 0.4) 25%,
+    rgba(157, 187, 141, 0.4) 75%,
+    transparent 100%);
+  margin-bottom: 2rem;
+}

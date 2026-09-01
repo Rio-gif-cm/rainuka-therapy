@@ -145,6 +145,14 @@ export default function RootLayout({
     <html lang="en" className={`${merriweather.variable} ${inter.variable}`}>
       <head>
         <meta name="description" content="Therapy for perinatal mental health, adult ADHD, and career transitions." />
+        {/* Prefetch critical pages for faster mobile LCP */}
+        <link rel="prefetch" href="/" as="document" />
+        <link rel="prefetch" href="/booking" as="document" />
+        <link rel="prefetch" href="/about" as="document" />
+        <link rel="prefetch" href="/perinatal" as="document" />
+        <link rel="prefetch" href="/adhd" as="document" />
+        {/* Preload critical fonts */}
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" as="style" />
         {/* Schema.org structured data for LocalBusiness + ProfessionalService */}
         <script
           type="application/ld+json"
