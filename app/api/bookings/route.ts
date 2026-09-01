@@ -23,31 +23,36 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // TODO: Send to backend API or email service
-    // For now, log the submission
-    console.log('Booking submission:', {
+    // Note: Email integration pending backend implementation
+    // When ready, implement via process.env.EMAIL_API_URL with proper error handling
+    const bookingData = {
       name,
       email,
       phone,
       concern,
       preferredTime,
       timestamp: new Date().toISOString(),
-    })
-
-    // Placeholder: Send email notification
-    // const emailResponse = await fetch(process.env.EMAIL_API_URL || '', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Authorization': `Bearer ${process.env.EMAIL_API_KEY}`,
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     to: process.env.ADMIN_EMAIL,
-    //     subject: `New Booking Request from ${name}`,
-    //     template: 'booking-notification',
-    //     data: { name, email, phone, concern, preferredTime },
-    //   }),
-    // })
+    }
+    
+    // TODO (BACKEND): Integrate email service to notify admin and client
+    // See commented example below for implementation template
+    // try {
+    //   const emailResponse = await fetch(process.env.EMAIL_API_URL || '', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Authorization': `Bearer ${process.env.EMAIL_API_KEY}`,
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       to: process.env.ADMIN_EMAIL,
+    //       subject: `New Booking Request from ${name}`,
+    //       template: 'booking-notification',
+    //       data: bookingData,
+    //     }),
+    //   });
+    // } catch (emailError) {
+    //   console.error('Email notification failed:', emailError);
+    // }
 
     return NextResponse.json(
       {

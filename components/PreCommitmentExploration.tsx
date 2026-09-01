@@ -28,7 +28,7 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
     preferences: false,
   })
 
-  const handleChange = (field: keyof PreCommitmentData, value: any) => {
+  const handleChange = (field: keyof PreCommitmentData, value: string | boolean) => {
     setData(prev => ({
       ...prev,
       [field]: value,

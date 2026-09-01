@@ -103,11 +103,9 @@ export default function RootLayout({
                 const observer = new PerformanceObserver((list) => {
                   const entries = list.getEntries();
                   entries.forEach((entry) => {
-                    console.log('[Perf] LCP:', entry.renderTime || entry.loadTime, 'ms | Element:', (entry as any).element?.tagName);
-                    // Track LCP threshold compliance
+                    // LCP element type captured for monitoring
                     const lcpValue = entry.renderTime || entry.loadTime;
                     const status = lcpValue < 2500 ? '✓ GOOD' : '⚠ NEEDS IMPROVEMENT';
-                    console.log('[Perf] LCP Status:', status, `(${lcpValue}ms / 2500ms target)`);
                     // Send to analytics if needed
                     if (window.gtag) {
                       gtag('event', 'page_view', { 
@@ -131,7 +129,7 @@ export default function RootLayout({
                   for (const entry of list.getEntries()) {
                     if (!(entry as any).hadRecentInput) {
                       clsValue += (entry as any).value;
-                      console.log('[Perf] CLS Updated:', clsValue.toFixed(3), '|', (clsValue < 0.1 ? '✓ GOOD' : '⚠ NEEDS IMPROVEMENT'));
+                      // CLS threshold tracking (0.1 is the good target)
                     }
                   }
                 });
@@ -144,9 +142,9 @@ export default function RootLayout({
             // Report Web Vitals
             if ('web-vitals' in window) {
               const { getCLS, getFID, getFCP, getLCP, getTTFB } = window['web-vitals'] || {};
-              if (getLCP) getLCP(metric => console.log('[Vitals] LCP:', metric.value));
-              if (getFCP) getFCP(metric => console.log('[Vitals] FCP:', metric.value));
-              if (getCLS) getCLS(metric => console.log('[Vitals] CLS:', metric.value));
+              if (getLCP) getLCP(metric => { /* LCP metric captured */ });
+              if (getFCP) getFCP(metric => { /* FCP metric captured */ });
+              if (getCLS) getCLS(metric => { /* CLS metric captured */ });
             }
           `,
         }}

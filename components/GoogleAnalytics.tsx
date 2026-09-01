@@ -98,9 +98,6 @@ export default function GoogleAnalytics() {
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
-        onLoad={() => {
-          console.log('[Analytics] GA4 script loaded');
-        }}
         onError={(e) => {
           console.error('[Analytics] GA4 script failed to load:', e);
         }}
@@ -124,11 +121,7 @@ export default function GoogleAnalytics() {
               send_page_view: true,
               anonymize_ip: true
             });
-            console.log('[Analytics] GA4 initialized with ID: ${GA_ID}');
           `,
-        }}
-        onLoad={() => {
-          console.log('[Analytics] GA4 initialization complete');
         }}
       />
     </>

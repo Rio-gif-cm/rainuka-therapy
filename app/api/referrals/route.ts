@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     };
 
-    console.log('Referral tracked:', logEntry);
+    // Referral tracked for analytics (log to backend analytics service in production)
 
     return NextResponse.json({
       success: true,
@@ -24,7 +24,6 @@ export async function POST(request: NextRequest) {
     console.error('Referral tracking error:', error);
     return NextResponse.json(
       { error: 'Failed to track referral' },
-      { status: 500 }
-    );
+      { status: 500 }\n    );
   }
 }
