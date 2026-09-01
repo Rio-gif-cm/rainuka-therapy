@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import BookingForm from '@/components/BookingForm'
+import BookingFormWrapper from '@/components/BookingFormWrapper'
+import PrivacyAssuranceSection from '@/components/PrivacyAssuranceSection'
 
 export default function BookingPage() {
   return (
@@ -41,6 +42,9 @@ export default function BookingPage() {
             </div>
           </div>
         </section>
+
+        {/* Privacy Assurance Section */}
+        <PrivacyAssuranceSection />
 
         {/* Info Section */}
         <section className="section-padding bg-cream-50">
