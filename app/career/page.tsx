@@ -8,8 +8,8 @@ export default function CareerPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero */}
-        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
+        {/* Hero - Career: Gold/Amber for confidence, professionalism, forward momentum */}
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(255, 248, 240, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Career Transitions & Burnout
@@ -44,7 +44,7 @@ export default function CareerPage() {
                 'Trapped in perfectionism + overwork spiral',
               ].map((item, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="text-2xl">✓</div>
+                  <div className="text-2xl" style={{color: '#b45309'}}>✓</div>
                   <p className="text-warm-gray-600">{item}</p>
                 </div>
               ))}
@@ -114,7 +114,7 @@ export default function CareerPage() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Burnout Recovery
                 </h3>
                 <p className="text-warm-gray-600">
@@ -123,7 +123,7 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Values Clarification
                 </h3>
                 <p className="text-warm-gray-600">
@@ -133,7 +133,7 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Decision-Making Paralysis
                 </h3>
                 <p className="text-warm-gray-600">
@@ -143,7 +143,7 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Imposter Syndrome
                 </h3>
                 <p className="text-warm-gray-600">
@@ -152,7 +152,7 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Perfectionism & Overwork
                 </h3>
                 <p className="text-warm-gray-600">
@@ -161,7 +161,7 @@ export default function CareerPage() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
+                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
                   Grief for Paths Not Taken
                 </h3>
                 <p className="text-warm-gray-600">
@@ -199,16 +199,16 @@ export default function CareerPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="section-padding bg-sage-400 text-white">
+        {/* CTA - Career gold accent */}
+        <section className="section-padding text-white" style={{backgroundColor: '#b45309'}}>
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               You don't have to figure this out alone
             </h2>
-            <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
+            <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
               Let's talk about what's holding you back—and what's possible.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
+            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#b45309'}}>
               Book Your Free Call
             </Link>
           </div>

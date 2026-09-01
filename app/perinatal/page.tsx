@@ -8,13 +8,13 @@ export default function PerinatalPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero - Perinatal: Warm rose accents for warmth, hope, and safety */}
-        <section className="hero-section bg-gradient-to-br from-rose-50 to-sage-50 py-20" style={{background: 'linear-gradient(135deg, rgba(255, 245, 243, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
+        {/* Hero - Perinatal: Warm rose accents (#d97757) for warmth, hope, and safety */}
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(255, 245, 243, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Perinatal Mental Health Therapy
             </h1>
-            <p className="text-xl font-semibold text-sage-600 mb-4 max-w-2xl mx-auto">
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#d97757'}}>
               Pregnancy, loss, postpartum. What you're carrying isn't weakness.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
@@ -44,7 +44,7 @@ export default function PerinatalPage() {
                 '"Was I ready for this?" doubts',
               ].map((item, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="text-2xl">✓</div>
+                  <div className="text-2xl" style={{color: '#d97757'}}>✓</div>
                   <p className="text-warm-gray-600">{item}</p>
                 </div>
               ))}
@@ -111,8 +111,8 @@ export default function PerinatalPage() {
             </h2>
 
             {/* Reassurance Box - Trauma-Informed Microcopy */}
-            <div className="mb-8 p-6 rounded-lg bg-sage-50 border-l-4 border-sage-400">
-              <p className="text-sm font-semibold text-sage-700 uppercase tracking-wide mb-2">
+            <div className="mb-8 p-6 rounded-lg border-l-4" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)', borderLeftColor: '#d97757'}}>
+              <p className="text-sm font-semibold uppercase tracking-wide mb-2" style={{color: '#d97757'}}>
                 Safe Space for Your Experience
               </p>
               <p className="text-warm-gray-700">
@@ -157,8 +157,8 @@ export default function PerinatalPage() {
             </h2>
 
             <div className="space-y-6 text-warm-gray-600">
-              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+              <div className="p-6 rounded-lg border-l-4" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)', borderLeftColor: '#d97757'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>
                   Your Anxiety Has a Name
                 </h3>
                 <p>
@@ -168,8 +168,8 @@ export default function PerinatalPage() {
                 </p>
               </div>
 
-              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+              <div className="p-6 rounded-lg border-l-4" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)', borderLeftColor: '#d97757'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>
                   Mixed Feelings Don't Mean You Love Less
                 </h3>
                 <p>
@@ -179,8 +179,8 @@ export default function PerinatalPage() {
                 </p>
               </div>
 
-              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+              <div className="p-6 rounded-lg border-l-4" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)', borderLeftColor: '#d97757'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>
                   Recovery Is Real
                 </h3>
                 <p>
@@ -209,16 +209,16 @@ export default function PerinatalPage() {
                 <li>• Mindfulness and grounding techniques</li>
               </ul>
 
-              <div className="mt-8 p-6 bg-sage-50 rounded-lg">
-                <p className="font-semibold text-warm-gray-900 mb-2">Telehealth Available</p>
+              <div className="mt-8 p-6 rounded-lg" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>Telehealth Available</p>
                 <p>
                   Sessions from home, your office, or wherever feels comfortable. 
                   28 states served. Perfect for new parents who can't leave the house.
                 </p>
               </div>
 
-              <div className="p-6 bg-sage-50 rounded-lg">
-                <p className="font-semibold text-warm-gray-900 mb-2">Sliding Scale</p>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(217, 119, 87, 0.08)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#d97757'}}>Sliding Scale</p>
                 <p>
                   Financial stress from infertility or loss shouldn't keep you from care. 
                   We'll figure out rates that work for you.
@@ -228,16 +228,16 @@ export default function PerinatalPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="section-padding bg-sage-400 text-white">
+        {/* CTA - Perinatal rose accent */}
+        <section className="section-padding text-white" style={{backgroundColor: '#d97757'}}>
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               You're not alone in this
             </h2>
-            <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
+            <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
               Let's talk about what you're carrying. No judgment, no pressure—just compassionate support tailored to your experience.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
+            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#d97757'}}>
               Schedule Your Free Call
             </Link>
           </div>

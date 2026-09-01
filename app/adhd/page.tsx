@@ -8,8 +8,8 @@ export default function ADHDPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero */}
-        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
+        {/* Hero - ADHD: Clear sky blue for clarity, focus, calm without overstimulation */}
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(240, 249, 255, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               ADHD Therapy for Adults
@@ -44,7 +44,7 @@ export default function ADHDPage() {
                 'Career/relationship patterns suddenly making sense',
               ].map((item, index) => (
                 <div key={index} className="flex gap-4">
-                  <div className="text-2xl">✓</div>
+                  <div className="text-2xl" style={{color: '#0369a1'}}>✓</div>
                   <p className="text-warm-gray-600">{item}</p>
                 </div>
               ))}
@@ -65,8 +65,8 @@ export default function ADHDPage() {
                 prioritizes and organizes things differently than neurotypical brains.
               </p>
 
-              <div className="bg-white p-6 rounded-lg">
-                <p className="font-semibold text-warm-gray-900 mb-4">
+              <div className="bg-white p-6 rounded-lg border-l-4" style={{borderLeftColor: '#0369a1'}}>
+                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: '#0369a1'}}>
                   This might show up as:
                 </p>
                 <ul className="space-y-2">
@@ -149,7 +149,7 @@ export default function ADHDPage() {
         </section>
 
         {/* Identity Affirmation: The Shame-to-Self-Compassion Shift */}
-        <section className="section-padding bg-white border-t-4 border-sage-400">
+        <section className="section-padding bg-white border-t-4" style={{borderTopColor: '#0369a1'}}>
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
               You Are Not Broken. Identity Reconstruction Starts Here.
@@ -162,18 +162,18 @@ export default function ADHDPage() {
                 relationships strained, criticism internalized—until struggling with tasks began to feel like evidence of who you are.
               </p>
 
-              <div className="bg-cream-50 p-8 rounded-lg border-l-4 border-sage-400 space-y-4">
-                <p className="font-semibold text-warm-gray-900">
+              <div className="p-8 rounded-lg border-l-4" style={{backgroundColor: 'rgba(3, 105, 161, 0.06)', borderLeftColor: '#0369a1'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: '#0369a1'}}>
                   Research on late ADHD diagnosis shows us something crucial:
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mt-4">
                   <li><strong>Shame is inherited, not intrinsic.</strong> You internalized criticism because your ADHD went unrecognized. That doesn't make you broken—it makes you human, responding to years of misunderstanding.</li>
                   <li><strong>Self-compassion rewires how you treat yourself.</strong> Studies show that adults with ADHD who develop self-compassion experience marked improvement in mental health—not because they lower their standards, but because they stop weaponizing failure against themselves.</li>
                   <li><strong>Identity reconstruction is the real work.</strong> Therapy isn't about "fixing" you. It's about rewriting the story you've been telling yourself. Instead of "I'm lazy," it becomes "I was working with challenges no one recognized."</li>
                 </ul>
               </div>
 
-              <p className="text-lg font-semibold text-sage-600">
+              <p className="text-lg font-semibold" style={{color: '#0369a1'}}>
                 The shift you're making now is not from broken to fixed. It's from self-attack to self-understanding.
               </p>
 
@@ -219,15 +219,15 @@ export default function ADHDPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-8">
-              <div className="text-center p-6 bg-sage-50 rounded-lg">
-                <p className="text-4xl font-bold text-sage-600 mb-2">60%+</p>
+              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(3, 105, 161, 0.08)'}}>
+                <p className="text-4xl font-bold mb-2" style={{color: '#0369a1'}}>60%+</p>
                 <p className="text-warm-gray-600">
                   of ADHD diagnoses happen in adulthood, many in the 30s–50s
                 </p>
               </div>
 
-              <div className="text-center p-6 bg-sage-50 rounded-lg">
-                <p className="text-4xl font-bold text-sage-600 mb-2">3:1</p>
+              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(3, 105, 161, 0.08)'}}>
+                <p className="text-4xl font-bold mb-2" style={{color: '#0369a1'}}>3:1</p>
                 <p className="text-warm-gray-600">
                   Women historically under-diagnosed due to masking and different presentation
                 </p>
@@ -238,7 +238,7 @@ export default function ADHDPage() {
               Late diagnosis isn't a flaw. It's actually common—and it changes everything when you finally understand yourself.
             </p>
 
-            <div className="bg-cream-50 border-l-4 border-sage-400 p-6 rounded">
+            <div className="bg-cream-50 border-l-4 p-6 rounded" style={{borderLeftColor: '#0369a1'}}>
               <p className="text-warm-gray-600 italic">
                 "What feels broken about you has a name. And understanding it—with support—is where real change starts."
               </p>
@@ -257,7 +257,7 @@ export default function ADHDPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do I need medication?
-                  <span className="text-sage-400">▼</span>
+                  <span style={{color: '#0369a1'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   That's between you and your psychiatrist. Therapy helps you understand yourself while medication 
@@ -268,7 +268,7 @@ export default function ADHDPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Will therapy help me be "more productive"?
-                  <span className="text-sage-400">▼</span>
+                  <span style={{color: '#0369a1'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Not in the hustle-culture sense. But yes—you'll learn strategies that work WITH your brain, 
@@ -279,7 +279,7 @@ export default function ADHDPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if I have ADHD + anxiety/depression?
-                  <span className="text-sage-400">▼</span>
+                  <span style={{color: '#0369a1'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   This is common. We address all of it together. Sometimes anxiety is worsened by ADHD struggles; 
@@ -290,16 +290,16 @@ export default function ADHDPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="section-padding bg-sage-400 text-white">
+        {/* CTA - ADHD clear sky blue */}
+        <section className="section-padding text-white" style={{backgroundColor: '#0369a1'}}>
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               Finally understanding yourself
             </h2>
-            <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
+            <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
               ADHD diagnosis changes everything. Let's make sense of it together.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
+            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#0369a1'}}>
               Book Your Free Call
             </Link>
           </div>
