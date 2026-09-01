@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { colors, styles, layoutStyles, layout } from '@/app/styles'
+import { colors, styles, layout } from '@/app/styles'
 
 const specialties = [
   {

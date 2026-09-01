@@ -1,8 +1,20 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import BookingFormWrapper from '@/components/BookingFormWrapper'
 import PrivacyAssuranceSection from '@/components/PrivacyAssuranceSection'
 import ObjectionHandler from '@/components/ObjectionHandler'
+
+export const metadata: Metadata = {
+  title: 'Book Your Free Therapy Consultation | Rainuka Oberoi, LCSW',
+  description: 'Schedule your free 15-minute therapy consultation with Rainuka Oberoi, LCSW. No obligation, no forms. Start healing today.',
+  openGraph: {
+    title: 'Book Your Free Therapy Consultation | Rainuka Oberoi, LCSW',
+    description: 'Schedule your free therapy consultation. No obligation, no forms. Telehealth available.',
+    type: 'website',
+  },
+  canonical: 'https://rainukatherapy.com/booking',
+}
 
 export default function BookingPage() {
   return (

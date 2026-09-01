@@ -72,6 +72,31 @@ const faqs = [
 ]
 
 export default function Home() {
+  // Schema.org LocalBusiness markup for the homepage
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['LocalBusiness', 'ProfessionalService'],
+    '@id': 'https://rainukatherapy.com#local-business',
+    name: 'Rainuka Oberoi, LCSW',
+    description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
+    url: 'https://rainukatherapy.com',
+    telephone: '+1-555-123-4567',
+    email: 'contact@rainukatherapy.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'US',
+      addressRegion: 'CA',
+      addressLocality: 'San Francisco',
+    },
+    areaServed: {
+      '@type': 'State',
+      name: 'California',
+    },
+    priceRange: '$$',
+    image: 'https://rainukatherapy.com/logo.png', // Update with actual image URL
+    sameAs: [], // Add social media links
+  }
+
   // Schema.org AggregateRating — count must match the reviews actually rendered.
   const aggregateRatingSchema = {
     '@context': 'https://schema.org',
@@ -89,6 +114,12 @@ export default function Home() {
       <Navigation />
 
       <main id="main-content" className="flex-grow">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
