@@ -97,9 +97,11 @@ export default function RootLayout({
   }
 
   // Schema.org JSON-LD structured data for SEO
+  // Enhanced with therapist credential markup for YMYL credibility signals
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'ProfessionalService'],
+    '@id': 'https://rainukatherapy.com#organization',
     name: 'Rainuka Oberoi, LCSW',
     description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
     url: 'https://rainukatherapy.com',
@@ -123,6 +125,36 @@ export default function RootLayout({
       '@type': 'OpeningHoursSpecification',
       // Update with actual hours
     },
+    // THERAPIST CREDENTIAL MARKUP - SEO credibility enhancement for YMYL
+    hasCredential: [
+      {
+        '@type': 'Credential',
+        '@id': 'https://rainukatherapy.com#lcsw-credential',
+        name: 'Licensed Clinical Social Worker (LCSW)',
+        credentialCategory: 'License',
+        areaServed: {
+          '@type': 'State',
+          name: 'California',
+        },
+        credentialSubject: {
+          '@type': 'Person',
+          name: 'Rainuka Oberoi',
+        },
+        // Extend with actual license details when available:
+        // validFrom: 'YYYY-MM-DD',
+        // validThrough: 'YYYY-MM-DD',
+        // sameAs: 'https://search.dca.ca.gov/' // California license lookup URL
+      },
+    ],
+    // Enhanced specialties for structured medical data
+    medicalSpecialty: [
+      'Perinatal Mental Health',
+      'Postpartum Anxiety',
+      'Reproductive Trauma',
+      'Adult ADHD Diagnosis',
+      'Career Counseling',
+      'Trauma-Informed Therapy',
+    ],
     specialties: [
       'Perinatal Mental Health',
       'Postpartum Anxiety',

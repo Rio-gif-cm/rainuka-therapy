@@ -149,6 +149,50 @@ export default function PerinatalPage() {
           </div>
         </section>
 
+        {/* Hope & Recovery - Research-Backed */}
+        <section className="section-padding bg-white">
+          <div className="container-base max-w-3xl mx-auto">
+            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+              You're Not Broken—Your Brain Is Adapting
+            </h2>
+
+            <div className="space-y-6 text-warm-gray-600">
+              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+                  Your Anxiety Has a Name
+                </h3>
+                <p>
+                  Postpartum anxiety affects 1 in 5 mothers. It's not weakness or failure—it's a biological response 
+                  to massive hormonal shifts, identity changes, and the enormity of new responsibility. Your brain is 
+                  working overtime to protect your baby. That's real. That's treatable.
+                </p>
+              </div>
+
+              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+                  Mixed Feelings Don't Mean You Love Less
+                </h3>
+                <p>
+                  You can feel profound love for your baby AND want space. You can grieve a pregnancy loss AND feel relief. 
+                  You can be grateful AND exhausted. This isn't maternal ambivalence—it's emotional honesty. Holding all 
+                  of these feelings at once is healthy. It's human. Therapy helps you stop being ashamed of your complexity.
+                </p>
+              </div>
+
+              <div className="p-6 bg-sage-50 rounded-lg border-l-4 border-sage-500">
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2">
+                  Recovery Is Real
+                </h3>
+                <p>
+                  Perinatal mental health conditions respond to treatment. With the right support—therapy, possibly 
+                  medication, and practical strategies—most clients see significant improvement. You won't feel this way forever. 
+                  This is a moment in time, not your identity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Modalities */}
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
