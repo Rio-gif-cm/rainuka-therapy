@@ -47,6 +47,7 @@ interface BookingFormProps {
 
 export default function BookingForm({ preCommitmentData }: BookingFormProps) {
   const [currentStep, setCurrentStep] = useState<FormStep>('contact')
+  const [showConcernField, setShowConcernField] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -101,7 +102,8 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         // WAVE 1 FIX: Reduced minimum from 15 to 10 chars (micro-commitment friendly)
         // Research: form abandonment increases 8% per required field. Lowering textarea threshold
         // encourages brief answers, reducing cognitive load on sensitive topic.
-        if (!value || (typeof value === 'string' && (value as string).trim().length < 10)) {
+        // Also: concerns field is now optional (only required if user expands it)
+        if (value && (typeof value === 'string' && (value as string).trim().length < 10)) {
           return "Share a bit about what's on your mind—even one sentence helps me prepare. We can dive deeper during our call."
         }
         break
@@ -262,22 +264,30 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
-      {/* Progress indicators */}
-      <div className="flex gap-4 mb-8">
-        {['contact', 'concern', 'confirmation'].map((step, index) => (
-          <div key={step} className="flex items-center gap-2">
-            <div
-              className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
-                currentStep === step || ['contact', 'concern'].includes(currentStep)
-                  ? 'bg-sage-400 text-white'
-                  : 'bg-warm-gray-200 text-warm-gray-600'
-              }`}
-            >
-              {index + 1}
+      {/* Progress indicators with step text */}
+      <div className="mb-8">
+        <div className="flex gap-4 mb-3">
+          {['contact', 'concern', 'confirmation'].map((step, index) => (
+            <div key={step} className="flex items-center gap-2">
+              <div
+                className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
+                  currentStep === step || ['contact', 'concern'].includes(currentStep)
+                    ? 'bg-sage-400 text-white'
+                    : 'bg-warm-gray-200 text-warm-gray-600'
+                }`}
+              >
+                {index + 1}
+              </div>
+              {index < 2 && <div className="hidden sm:block w-8 h-1 bg-warm-gray-200"></div>}
             </div>
-            {index < 2 && <div className="hidden sm:block w-8 h-1 bg-warm-gray-200"></div>}
-          </div>
-        ))}
+          ))}
+        </div>
+        {/* Step counter text */}
+        <div className="text-xs font-semibold text-sage-600 uppercase tracking-wide">
+          {currentStep === 'contact' && 'Step 1 of 3: Your Contact Information'}
+          {currentStep === 'concern' && 'Step 2 of 3: Your Concerns & Availability'}
+          {currentStep === 'confirmation' && 'Step 3 of 3: Review & Confirm'}
+        </div>
       </div>
 
       {/* Step 1: Contact Information */}
@@ -300,7 +310,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         <p className="text-sm text-warm-gray-600 mb-6">Three fields. Then we&apos;ll move forward together.</p>
 
           {/* FIELD GROUP: Combined visual container for contact info */}
-          <div className="bg-gradient-to-b from-white to-sage-50/30 rounded-xl border border-sage-100 p-6 space-y-4 shadow-sm">
+            <div className="bg-gradient-to-br from-sage-50 to-sage-100 rounded-xl border-2 border-sage-200 p-6 space-y-4 shadow-sm">
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label htmlFor="name" className={`form-label transition-colors ${
@@ -322,7 +332,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 onChange={handleInputChange}
                 onBlur={handleFieldBlur}
                 onFocus={handleFieldFocus}
-                placeholder="Jane or Jane Doe—your preferred name"
+                placeholder="e.g. Sarah or Sarah Chen"
                 className={`form-input transition-all ${
                   fieldTouched.name
                     ? fieldErrors.name
@@ -432,63 +442,83 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {/* Step 2: Primary Concern */}
       {currentStep === 'concern' && (
         <div className="space-y-4 animate-fade-in-up">
-          <div className="text-xs text-warm-gray-500 font-medium uppercase tracking-wide">Step 2 of 3</div>
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-2">
             What brings you here?
           </h3>
-          <p className="text-sm text-warm-gray-600 mb-6">We&apos;re almost there. Just a couple more details to help me understand your situation.</p>
+          <p className="text-sm text-warm-gray-600 mb-6">We're almost there. Just a couple more details to help me understand your situation.</p>
 
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label htmlFor="concern" className={`form-label transition-colors ${
-                fieldFocused.concern ? 'text-sage-600' : 'text-warm-gray-900'
-              }`}>
-                What brings you here, and what are you hoping to work on? *
-              </label>
-              {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
-                  ✓ Valid
-                </span>
-              )}
-            </div>
-            <textarea
-              id="concern"
-              name="concern"
-              value={formData.concern}
-              onChange={handleInputChange}
-              onBlur={handleFieldBlur}
-              onFocus={handleFieldFocus}
-              placeholder="For example: 'I've been dealing with work stress and anxiety' or 'I'm struggling with depression.' We'll dig deeper during our call."
-              className={`form-input h-32 resize-none transition-all ${
-                fieldTouched.concern
-                  ? fieldErrors.concern
-                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                    : 'border-sage-500 bg-sage-50'
-                  : ''
-              }`}
-              aria-invalid={fieldTouched.concern && !!fieldErrors.concern}
-              aria-describedby={fieldTouched.concern && fieldErrors.concern ? 'concern-error' : 'concern-help'}
-              required
-            />
-            {fieldTouched.concern && fieldErrors.concern ? (
-              <p id="concern-error" className="text-alert-600 text-sm mt-2 font-medium">
-                {fieldErrors.concern}
-              </p>
-            ) : (
-              <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                This helps me understand what brought you in and what you're hoping to change—a sentence or two is plenty, and we can explore more during our call.
-              </p>
+          {/* TOGGLE FOR CONCERNS FIELD */}
+          <div className="bg-sage-50 border border-sage-200 rounded-lg p-4">
+            <button
+              type="button"
+              onClick={() => setShowConcernField(!showConcernField)}
+              className="flex items-center justify-between w-full text-left"
+            >
+              <span className="font-semibold text-warm-gray-900 flex items-center gap-2">
+                <span className={`text-lg transition-transform ${showConcernField ? 'rotate-90' : ''}`}>▶</span>
+                Tell me about your concerns (optional but helpful)
+              </span>
+              <span className={`text-sm font-medium text-sage-600 transition-all ${showConcernField ? 'opacity-100' : 'opacity-0'}`}>
+                ✓ Expanded
+              </span>
+            </button>
+
+            {/* CONCERNS FIELD - EXPANDABLE */}
+            {showConcernField && (
+              <div className="mt-4 pt-4 border-t border-sage-200 space-y-3 animate-fade-in-up">
+                <div>
+                  <div className="flex items-center justify-between mb-1">
+                    <label htmlFor="concern" className={`form-label transition-colors ${
+                      fieldFocused.concern ? 'text-sage-600' : 'text-warm-gray-900'
+                    }`}>
+                      What brings you here, and what are you hoping to work on? *
+                    </label>
+                    {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
+                      <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                        ✓ Valid
+                      </span>
+                    )}
+                  </div>
+                  <textarea
+                    id="concern"
+                    name="concern"
+                    value={formData.concern}
+                    onChange={handleInputChange}
+                    onBlur={handleFieldBlur}
+                    onFocus={handleFieldFocus}
+                    placeholder="e.g. 'I've been dealing with work stress and anxiety' or 'I'm struggling with depression.' We'll dig deeper during our call."
+                    className={`form-input h-32 resize-none transition-all ${
+                      fieldTouched.concern
+                        ? fieldErrors.concern
+                          ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                          : 'border-sage-500 bg-sage-50'
+                        : ''
+                    }`}
+                    aria-invalid={fieldTouched.concern && !!fieldErrors.concern}
+                    aria-describedby={fieldTouched.concern && fieldErrors.concern ? 'concern-error' : 'concern-help'}
+                  />
+                  {fieldTouched.concern && fieldErrors.concern ? (
+                    <p id="concern-error" className="text-alert-600 text-sm mt-2 font-medium">
+                      {fieldErrors.concern}
+                    </p>
+                  ) : (
+                    <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
+                      This helps me understand what brought you in and what you're hoping to change—a sentence or two is plenty, and we can explore more during our call.
+                    </p>
+                  )}
+                </div>
+
+                {/* WAVE 1 OPTIMIZATION: Micro-reassurance inserted after heavy field */}
+                {/* Research: Adding reassurance copy between fields reduces anxiety-driven abandonment by ~7-12% */}
+                {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
+                  <div className="bg-dusk-50 border border-dusk-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
+                    <span className="text-sm flex-shrink-0">👍</span>
+                    <p className="text-xs text-dusk-700">Great—I've got a good sense of your situation. Just a couple more quick details and you'll be done.</p>
+                  </div>
+                )}
+              </div>
             )}
           </div>
-
-          {/* WAVE 1 OPTIMIZATION: Micro-reassurance inserted after heavy field */}
-          {/* Research: Adding reassurance copy between fields reduces anxiety-driven abandonment by ~7-12% */}
-          {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-            <div className="bg-dusk-50 border border-dusk-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
-              <span className="text-sm flex-shrink-0">👍</span>
-              <p className="text-xs text-dusk-700">Great—I've got a good sense of your situation. Just a couple more quick details and you'll be done.</p>
-            </div>
-          )}
 
           <div>
             <div className="flex items-center justify-between mb-3">
@@ -757,7 +787,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden"
+            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden py-4 px-8 text-lg font-semibold bg-sage-700 hover:bg-sage-800 text-white"
           >
             {isSubmitting ? (
               <>🔒 Securing your spot...</>
