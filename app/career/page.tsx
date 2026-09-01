@@ -1,6 +1,9 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import SectionDivider from '@/components/SectionDivider'
+import { IconHeading, IconListItem } from '@/components/IconComponents'
+import { colors } from '@/app/styles'
 
 export default function CareerPage() {
   return (
@@ -30,9 +33,9 @@ export default function CareerPage() {
         {/* Who I Help */}
         <section className="section-padding bg-white">
           <div className="container-base">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="🚀" level={2} color={colors.warmGray[900]}>
               Are You...
-            </h2>
+            </IconHeading>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
@@ -43,21 +46,22 @@ export default function CareerPage() {
                 'Misaligned with your job values',
                 'Trapped in perfectionism + overwork spiral',
               ].map((item, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="text-2xl" style={{color: '#b45309'}}>✓</div>
-                  <p className="text-warm-gray-600">{item}</p>
-                </div>
+                <IconListItem key={index} icon="✓" color="#b45309">
+                  {item}
+                </IconListItem>
               ))}
             </div>
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* What I'm NOT */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="💡" level={2} color={colors.warmGray[900]}>
               Important: What I'm NOT
-            </h2>
+            </IconHeading>
 
             <div className="space-y-6 text-warm-gray-600">
               <p>

@@ -217,14 +217,19 @@ export default function FAQPage() {
             {/* CTA */}
             <div className="bg-sage-50 p-8 rounded-lg text-center">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
-                Still have questions?
+                Want more details about pricing?
               </h3>
               <p className="text-warm-gray-600 mb-6">
-                I'm here to answer anything. Reach out or ask me directly during your free consultation.
+                I have detailed information about sliding scale, insurance options, superbills, and payment plans on our pricing page. Still have questions? I\'m here to answer anything during your free consultation.
               </p>
-              <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.75rem', fontWeight: 600, fontSize: '1rem', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
-                Get In Touch
-              </Link>
+              <div className="flex gap-4 justify-center flex-wrap">
+                <Link href="/pricing" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.75rem', fontWeight: 600, fontSize: '1rem', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
+                  View Pricing
+                </Link>
+                <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.75rem', fontWeight: 600, fontSize: '1rem', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
+                  Get In Touch
+                </Link>
+              </div>
             </div>
           </div>
         </section>

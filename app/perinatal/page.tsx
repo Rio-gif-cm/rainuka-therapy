@@ -155,6 +155,8 @@ export default function PerinatalPage() {
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* Hope & Recovery - Research-Backed */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
