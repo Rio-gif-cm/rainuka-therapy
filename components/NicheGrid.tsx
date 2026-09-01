@@ -92,7 +92,9 @@ export default function NicheGrid() {
                   fontWeight: 600,
                   fontSize: '0.95rem',
                   transition: 'color 0.3s ease',
-                }}>
+                }}
+                data-explore-arrow
+                >
                   Explore →
                 </span>
               </div>
