@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         {/* Hero Section */}
         <HeroSection />
 
