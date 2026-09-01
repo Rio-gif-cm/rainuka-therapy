@@ -1,0 +1,198 @@
+/* ============================================================================
+   SENSORY-FRIENDLY MODE (Trauma-Informed Accessibility)
+   ============================================================================
+   
+   Reduces sensory overwhelm for trauma survivors with:
+   - Disabled animations & transitions
+   - High contrast option
+   - Dark mode support
+   - Respects prefers-reduced-motion
+   
+   Toggle via SensoryFriendlyToggle component → localStorage → CSS vars
+   ============================================================================ */
+
+/* CSS Variables for sensory-friendly mode control */
+:root {
+  --sensory-friendly: 0;
+  --motion-enabled: 1;
+}
+
+/* DISABLE ALL ANIMATIONS & TRANSITIONS when sensory-friendly mode is ON */
+html.sensory-friendly-mode,
+html[style*="--sensory-friendly: 1"] {
+  --motion-enabled: 0 !important;
+}
+
+html.sensory-friendly-mode * {
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+}
+
+html.sensory-friendly-mode {
+  /* Increase contrast */
+  --warm-gray-900: #1a1614 !important; /* Darker text */
+  --sage-700: #2d4a23 !important;      /* Darker sage accents */
+  
+  /* High contrast mode: boost color saturation */
+  --sage-600: #5a8c3d !important;
+  --accent-warm: #c85a3d !important;
+}
+
+html.sensory-friendly-mode body {
+  background-color: #faf9f7 !important;
+  color: #1a1614 !important;
+}
+
+/* Disable all hover effects (replace with focus-visible) */
+html.sensory-friendly-mode a:hover,
+html.sensory-friendly-mode button:hover,
+html.sensory-friendly-mode [role="button"]:hover {
+  transition: none !important;
+  text-decoration: inherit !important;
+}
+
+/* Ensure focus states remain visible and strong */
+html.sensory-friendly-mode :focus-visible {
+  outline: 4px solid var(--sage-600) !important;
+  outline-offset: 3px !important;
+}
+
+/* Disable autoplay for any media */
+html.sensory-friendly-mode video[autoplay],
+html.sensory-friendly-mode audio[autoplay] {
+  autoplay: none !important;
+}
+
+/* Ensure buttons have clear focus states (for keyboard navigation) */
+html.sensory-friendly-mode button:focus-visible,
+html.sensory-friendly-mode [role="button"]:focus-visible,
+html.sensory-friendly-mode a:focus-visible {
+  box-shadow: 0 0 0 4px rgba(107, 148, 79, 0.3) !important;
+  outline: 3px solid var(--sage-700) !important;
+  outline-offset: 2px !important;
+}
+
+/* Remove box-shadows (can feel aggressive/overwhelming) */
+html.sensory-friendly-mode {
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+}
+
+html.sensory-friendly-mode * {
+  box-shadow: none !important;
+}
+
+/* Simplify visual hierarchy: no gradient backgrounds */
+html.sensory-friendly-mode [style*="background: linear-gradient"],
+html.sensory-friendly-mode [style*="background-image"] {
+  background-image: none !important;
+  background: var(--warm-gray-50) !important;
+}
+
+/* Ensure smooth (not sudden) scroll behavior */
+html.sensory-friendly-mode {
+  scroll-behavior: smooth;
+}
+
+/* Respect system prefers-reduced-motion setting (always) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+/* High contrast mode: increase border visibility */
+html.sensory-friendly-mode input,
+html.sensory-friendly-mode textarea,
+html.sensory-friendly-mode select,
+html.sensory-friendly-mode button {
+  border: 2px solid var(--warm-gray-900) !important;
+}
+
+html.sensory-friendly-mode input:focus,
+html.sensory-friendly-mode textarea:focus,
+html.sensory-friendly-mode select:focus {
+  border-color: var(--sage-700) !important;
+}
+
+/* Increase line-height for better readability */
+html.sensory-friendly-mode body {
+  line-height: 1.8 !important;
+}
+
+html.sensory-friendly-mode p,
+html.sensory-friendly-mode li {
+  line-height: 1.9 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Increase heading size for accessibility */
+html.sensory-friendly-mode h1 {
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem) !important;
+}
+
+html.sensory-friendly-mode h2 {
+  font-size: clamp(1.875rem, 4.2vw, 2.75rem) !important;
+}
+
+/* Simplify cards: remove decorative shadows */
+html.sensory-friendly-mode .card,
+html.sensory-friendly-mode [class*="card"] {
+  border: 1px solid var(--warm-gray-300) !important;
+  box-shadow: none !important;
+}
+
+/* Ensure sufficient whitespace (40-50% of layout) */
+html.sensory-friendly-mode main,
+html.sensory-friendly-mode section,
+html.sensory-friendly-mode article {
+  padding: 3rem 1.5rem !important;
+}
+
+/* Disable hover states on links (can be startling) */
+html.sensory-friendly-mode a {
+  transition: none !important;
+}
+
+html.sensory-friendly-mode a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+/* Ensure buttons have clear visual states (not animated) */
+html.sensory-friendly-mode button {
+  border: 2px solid var(--sage-600);
+  background-color: var(--sage-50);
+  color: var(--sage-700);
+}
+
+html.sensory-friendly-mode button:hover {
+  background-color: var(--sage-100);
+  border-color: var(--sage-700);
+}
+
+html.sensory-friendly-mode button:active {
+  background-color: var(--sage-200);
+}
+
+/* Remove all filters and visual effects */
+html.sensory-friendly-mode * {
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Ensure form labels are bold for clarity */
+html.sensory-friendly-mode label {
+  font-weight: 600 !important;
+}
+
+/* Disable flickering: set opacity to 1 */
+html.sensory-friendly-mode * {
+  opacity: 1 !important;
+}

@@ -61,7 +61,7 @@ export default function SensoryFriendlyToggle({ isMobile = false }: SensoryFrien
         padding: isMobile ? '0.75rem 1rem' : '0.5rem 0.75rem',
         minHeight: isMobile ? '56px' : '44px',
         minWidth: isMobile ? '56px' : 'auto',
-        backgroundColor: isEnabled ? colors.sage[100] : 'transparent',
+        backgroundColor: isEnabled ? '#e6f2ed' : 'transparent',
         border: `1px solid ${isEnabled ? colors.sage[400] : colors.warmGray[300]}`,
         borderRadius: '0.375rem',
         cursor: 'pointer',
@@ -69,7 +69,6 @@ export default function SensoryFriendlyToggle({ isMobile = false }: SensoryFrien
         fontWeight: 500,
         color: isEnabled ? colors.sage[700] : colors.warmGray[700],
         transition: 'none', // Disable transition in this component itself
-        backgroundColor: isEnabled ? '#e6f2ed' : 'transparent',
         whiteSpace: 'nowrap',
       }}
     >
