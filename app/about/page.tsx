@@ -179,25 +179,25 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  quote: 'Rainuka met me exactly where I was. Not trying to minimize my experience or rush me through grief. Just real presence.',
+                  quote: 'Met me exactly where I was. No minimizing, no rushing. Just real presence.',
                   author: 'Maria',
                   context: 'Artist | Navigating Perinatal Loss',
                   rating: 5,
                 },
                 {
-                  quote: 'After 35 years, I finally understand myself. ADHD diagnosis changed everything. Rainuka helped me integrate that.',
+                  quote: '35 years to understand myself. ADHD diagnosis changed everything—Rainuka helped me integrate it.',
                   author: 'James',
                   context: 'Executive Coach | Late-Life ADHD Recognition',
                   rating: 5,
                 },
                 {
-                  quote: 'She gets the invisible stuff—the shame, the doubt, the carrying things alone. I felt so seen.',
+                  quote: 'She gets the invisible stuff: shame, doubt, carrying alone. I felt truly seen.',
                   author: 'Rachel',
                   context: 'Teacher | Postpartum Anxiety & Burnout',
                   rating: 5,
                 },
                 {
-                  quote: 'The practical tools matter too. I left with things I could actually use, not just insight.',
+                  quote: 'Practical tools that actually work—not just insight.',
                   author: 'David',
                   context: 'Startup Founder | Career Transition & Stress',
                   rating: 5,
