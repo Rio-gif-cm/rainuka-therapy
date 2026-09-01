@@ -366,7 +366,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <label htmlFor="phone" className={`form-label transition-colors ${
                 fieldFocused.phone ? 'text-sage-600' : 'text-warm-gray-900'
               }`}>
-                Phone Number *
+                How to reach you by phone *
               </label>
               {formData.phone && !fieldErrors.phone && fieldTouched.phone && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -382,7 +382,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="(555) 123-4567"
+              placeholder="555-123-4567 or +1-555-123-4567"
               className={`form-input transition-all ${
                 fieldTouched.phone
                   ? fieldErrors.phone
@@ -410,9 +410,11 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {/* Step 2: Primary Concern */}
       {currentStep === 'concern' && (
         <div className="space-y-4 animate-fade-in-up">
-          <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
+          <div className="text-xs text-warm-gray-500 font-medium uppercase tracking-wide">Step 2 of 3</div>
+          <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-2">
             What brings you here?
           </h3>
+          <p className="text-sm text-warm-gray-600 mb-6">We&apos;re almost there. Just a couple more details to help me understand your situation.</p>
 
           <div>
             <div className="flex items-center justify-between mb-1">
@@ -434,7 +436,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="What brought you here and what are you hoping to work on? (E.g., I've been feeling anxious about work and I want to feel more confident in meetings.)"
+              placeholder="Describe your situation—no judgment, just what brought you here and what you're hoping to work on. (E.g., I've been feeling anxious about work and I want to feel more confident in meetings.)"
               className={`form-input h-32 resize-none transition-all ${
                 fieldTouched.concern
                   ? fieldErrors.concern
@@ -452,7 +454,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               </p>
             ) : (
               <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                This helps me understand what's bringing you in and what you're hoping to change.
+                This helps me understand what brought you in and what you're hoping to change—so I can see how to best support you.
               </p>
             )}
           </div>
@@ -537,7 +539,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <label htmlFor="preferredTime" className={`form-label transition-colors ${
                 fieldFocused.preferredTime ? 'text-sage-600' : 'text-warm-gray-900'
               }`}>
-                When are you usually available? *
+                What times work best for you? *
               </label>
               {formData.preferredTime && !fieldErrors.preferredTime && fieldTouched.preferredTime && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -563,7 +565,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               aria-describedby={fieldTouched.preferredTime && fieldErrors.preferredTime ? 'preferredTime-error' : undefined}
               required
             >
-              <option value="">Select a time preference</option>
+              <option value="">Choose what works for your schedule</option>
               <option value="morning">Morning (8am-12pm)</option>
               <option value="afternoon">Afternoon (12pm-5pm)</option>
               <option value="evening">Evening (5pm-8pm)</option>
