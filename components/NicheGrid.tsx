@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { colors, styles, layoutStyles } from '@/app/styles'
+import { colors, styles, layoutStyles, layout } from '@/app/styles'
 
 const specialties = [
   {
@@ -41,28 +41,28 @@ export default function NicheGrid() {
       <div style={styles.container}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={{ ...styles.h2, textAlign: 'center', marginBottom: '1rem' }}>
-            What I Specialize In
+            Find Your Path Forward
           </h2>
           <p style={{ ...styles.p, maxWidth: '42rem', margin: '0 auto', fontSize: '1.0625rem', color: colors.warmGray[600] }}>
             Three areas where I've developed deep expertise—and where you might find yourself. (Many clients discover they need support in more than one area.)
           </p>
         </div>
 
-        <div style={layoutStyles.gridAutoFit}>
+        <div style={{
+          display: 'grid' as const,
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(280px, 100%), 1fr))',
+          gap: layout.gapCard,
+        }}>
           {specialties.map((specialty) => (
             <Link href={specialty.link} key={specialty.slug} style={{ textDecoration: 'none' }}>
               <div
                 className="niche-card"
                 style={{
-                  ...styles.card,
                   height: '100%',
-                  cursor: 'pointer',
                   display: 'flex',
                   flexDirection: 'column',
-                  backgroundColor: 'white',
                   outline: '2px solid transparent',
                   outlineOffset: '2px',
-                  position: 'relative',
                 }}
                 onFocus={(e) => {
                   const el = e.currentTarget
@@ -91,7 +91,7 @@ export default function NicheGrid() {
                     fontSize: '0.95rem',
                   }}
                 >
-                  Explore →
+                  Find Your Path →
                 </span>
 
                 {/* MULTI-PERSONA: Cross-reference other specialties */}
@@ -115,12 +115,8 @@ export default function NicheGrid() {
         </div>
 
         {/* MULTI-PERSONA: Expanded context for overlapping needs */}
-        <div style={{
+        <div className="card card-tinted card-static" style={{
           marginTop: '3rem',
-          padding: '2rem',
-          backgroundColor: colors.sage[50],
-          borderRadius: '0.75rem',
-          border: `1px solid ${colors.sage[200]}`,
           textAlign: 'center',
         }}>
           <p style={{

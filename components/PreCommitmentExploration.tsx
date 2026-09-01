@@ -53,14 +53,14 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
   return (
     <>
       {/* URGENCY SIGNAL: Social Proof + Timeline (High-Impact Trust Builder) */}
-      <div className="card bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 mb-8">
+      <div className="card bg-gradient-to-br from-sage-50 to-sage-50 border-2 border-sage-200 mb-8">
         <div className="flex gap-4 items-start">
           <span className="text-3xl flex-shrink-0">✓</span>
           <div className="flex-grow">
-            <p className="font-semibold text-green-900 text-lg mb-1">
+            <p className="font-semibold text-sage-800 text-lg mb-1">
               95% of clients book ongoing sessions after their free call
             </p>
-            <p className="text-sm text-green-800">
+            <p className="text-sm text-sage-700">
               This takes 2 minutes. Most people book within 1-2 weeks of their free call.
             </p>
           </div>
@@ -92,8 +92,8 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
               className={`form-input h-28 resize-none transition-all ${
                 fieldTouched.whatBringsYou
                   ? data.whatBringsYou.trim().length >= 10
-                    ? 'border-green-500 bg-green-50'
-                    : 'border-orange-400 bg-orange-50'
+                    ? 'border-sage-500 bg-sage-50'
+                    : 'border-honey-300 bg-honey-50'
                   : ''
               }`}
             />

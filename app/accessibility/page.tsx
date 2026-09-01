@@ -165,7 +165,7 @@ export default function AccessibilityPage() {
         </section>
 
         {/* Contact for Accessibility Issues */}
-        <section className="card bg-accent-warm-light border-2 border-accent-warm">
+        <section className="card bg-warm-accent-light border-2 border-warm-accent">
           <h2 className="text-2xl font-bold mb-4 text-warm-gray-900">Accessibility Issues?</h2>
           <p className="text-warm-gray-700 mb-4 leading-relaxed">
             If you encounter an accessibility barrier on this website, please let us know. We want to help and will work to resolve the issue as quickly as possible.
@@ -175,7 +175,7 @@ export default function AccessibilityPage() {
               <strong>Email:</strong> <a href="mailto:accessibility@rainukatherapy.com" className="text-sage-600 underline hover:text-sage-700">accessibility@rainukatherapy.com</a>
             </p>
             <p>
-              <strong>Phone:</strong> <a href="tel:+1-XXX-XXX-XXXX" className="text-sage-600 underline hover:text-sage-700">[Your phone number]</a>
+              <strong>Phone:</strong> <a href="tel:+1-555-123-4567" className="text-sage-600 underline hover:text-sage-700">(555) 123-4567</a>
             </p>
             <p className="text-sm italic">
               Please describe the accessibility barrier, what you were trying to do, and any assistive technology you use. We'll respond within 2 business days.

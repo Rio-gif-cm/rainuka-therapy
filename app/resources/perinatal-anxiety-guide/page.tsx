@@ -20,26 +20,26 @@ export default function PerinatalAnxietyGuide() {
       {/* Hero Section */}
       <section className="px-4 py-16 md:py-24 bg-sage-100">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-warm-gray-900 mb-6">
             Signs You Might Have Perinatal Anxiety
           </h1>
-          <p className="text-xl text-gray-700 mb-8">
+          <p className="text-xl text-warm-gray-700 mb-8">
             A practical guide to understanding postpartum anxiety symptoms,
             when to seek help, and what therapy can offer.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-sm text-gray-600">
+            <div className="card card-compact card-static">
+              <p className="text-sm text-warm-gray-600">
                 <strong>1 in 5 mothers</strong> experience perinatal anxiety
               </p>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-sm">
-              <p className="text-sm text-gray-600">
+            <div className="card card-compact card-static">
+              <p className="text-sm text-warm-gray-600">
                 Most see <strong>50%+ improvement</strong> in 6-8 weeks
               </p>
             </div>
           </div>
-          <p className="text-gray-600 italic">
+          <p className="text-warm-gray-600 italic">
             Reading time: 8 minutes | Last updated: August 2026
           </p>
         </div>
@@ -48,11 +48,11 @@ export default function PerinatalAnxietyGuide() {
       {/* Quick Checklist CTA */}
       <section className="px-4 py-12 bg-white border-t-2 border-sage-200">
         <div className="max-w-3xl mx-auto">
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">
+          <div className="bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded">
+            <h2 className="text-lg font-semibold text-warm-gray-900 mb-4">
               Quick Check: Do Any of These Sound Like You?
             </h2>
-            <ul className="space-y-2 text-gray-700 mb-6">
+            <ul className="space-y-2 text-warm-gray-700 mb-6">
               <li className="flex items-start">
                 <input
                   type="checkbox"
@@ -131,13 +131,13 @@ export default function PerinatalAnxietyGuide() {
                 </label>
               </li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="text-warm-gray-700 mb-4">
               If 3+ of these resonate with you, you might have perinatal anxiety.
               <strong> This is treatable.</strong>
             </p>
             <a
               href="#booking"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded transition"
+              className="inline-block bg-dusk-600 hover:bg-dusk-700 text-white font-semibold py-3 px-6 rounded transition"
             >
               Schedule a Free 15-Minute Consultation
             </a>
@@ -147,7 +147,7 @@ export default function PerinatalAnxietyGuide() {
 
       {/* Main Content */}
       <section className="px-4 py-12">
-        <div className="max-w-3xl mx-auto prose prose-lg prose-headings:text-gray-900 prose-a:text-blue-600 max-w-none">
+        <div className="max-w-3xl mx-auto prose prose-lg prose-headings:text-warm-gray-900 prose-a:text-dusk-600 max-w-none">
           <h2>What Is Perinatal Anxiety?</h2>
           <p>
             Perinatal anxiety refers to anxiety that develops during pregnancy
@@ -304,19 +304,19 @@ export default function PerinatalAnxietyGuide() {
         className="px-4 py-16 bg-sage-100 border-t-2 border-sage-300"
       >
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-warm-gray-900 mb-4">
             You Don't Have to Do This Alone
           </h2>
-          <p className="text-lg text-gray-700 mb-8">
+          <p className="text-lg text-warm-gray-700 mb-8">
             I specialize in perinatal mental health and have worked with hundreds
             of mothers through this exact experience. Let's talk about what you're
             experiencing and what therapy can offer.
           </p>
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+          <div className="card card-static">
+            <h3 className="text-xl font-semibold text-warm-gray-900 mb-4">
               Free 15-Minute Consultation
             </h3>
-            <p className="text-gray-700 mb-6">
+            <p className="text-warm-gray-700 mb-6">
               We'll discuss your symptoms, your concerns, and whether therapy is
               right for you. No judgment, no pressure.
             </p>
@@ -324,11 +324,11 @@ export default function PerinatalAnxietyGuide() {
               href="https://calendly.com/rainuka"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition text-lg"
+              className="inline-block bg-dusk-600 hover:bg-dusk-700 text-white font-semibold py-4 px-8 rounded-lg transition text-lg"
             >
               Schedule Your Free Consultation
             </a>
-            <p className="text-sm text-gray-600 mt-4">
+            <p className="text-sm text-warm-gray-600 mt-4">
               Available for in-person and telehealth sessions
             </p>
           </div>
@@ -338,7 +338,7 @@ export default function PerinatalAnxietyGuide() {
       {/* Trust Markers */}
       <section className="px-4 py-12 bg-white">
         <div className="max-w-3xl mx-auto">
-          <p className="text-center text-sm text-gray-600 mb-8">
+          <p className="text-center text-sm text-warm-gray-600 mb-8">
             <strong>About the Author</strong>
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
@@ -346,15 +346,15 @@ export default function PerinatalAnxietyGuide() {
               <div className="w-24 h-24 bg-sage-200 rounded-full mx-auto"></div>
             </div>
             <div className="sm:w-3/4">
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-lg font-semibold text-warm-gray-900">
                 Rainuka Oberoi, LCSW
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-warm-gray-700 mb-4">
                 Licensed Clinical Social Worker specializing in perinatal mental
                 health, ADHD in adults, and career transitions. 12+ years helping
                 clients navigate anxiety, identity, and life changes.
               </p>
-              <ul className="text-sm text-gray-600 space-y-1">
+              <ul className="text-sm text-warm-gray-600 space-y-1">
                 <li>✓ Licensed in California (LCSW #123456)</li>
                 <li>✓ Specialized training in perinatal anxiety</li>
                 <li>✓ CBT, somatic, and attachment-focused therapy</li>
@@ -366,18 +366,18 @@ export default function PerinatalAnxietyGuide() {
       </section>
 
       {/* FAQ Section */}
-      <section className="px-4 py-12 bg-gray-50">
+      <section className="px-4 py-12 bg-warm-gray-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-2xl font-bold text-warm-gray-900 mb-8 text-center">
             Frequently Asked Questions
           </h2>
 
           <div className="space-y-6">
-            <details className="bg-white p-6 rounded-lg cursor-pointer">
-              <summary className="font-semibold text-gray-900">
+            <details className="card card-compact card-static cursor-pointer">
+              <summary className="font-semibold text-warm-gray-900">
                 Is perinatal anxiety different from postpartum depression?
               </summary>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-warm-gray-700">
                 Yes. Anxiety is characterized by racing thoughts, hypervigilance,
                 and a sense of threat. Depression is characterized by numbness,
                 hopelessness, and lack of motivation. Many people experience both,
@@ -385,11 +385,11 @@ export default function PerinatalAnxietyGuide() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg cursor-pointer">
-              <summary className="font-semibold text-gray-900">
+            <details className="card card-compact card-static cursor-pointer">
+              <summary className="font-semibold text-warm-gray-900">
                 Can I breastfeed if I take medication for anxiety?
               </summary>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-warm-gray-700">
                 Many SSRIs (Sertraline, Paroxetine) are considered safe during
                 breastfeeding. Your OB or psychiatrist can review your specific
                 situation and recommend options. Don't stop medication without
@@ -397,22 +397,22 @@ export default function PerinatalAnxietyGuide() {
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg cursor-pointer">
-              <summary className="font-semibold text-gray-900">
+            <details className="card card-compact card-static cursor-pointer">
+              <summary className="font-semibold text-warm-gray-900">
                 How quickly does therapy help?
               </summary>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-warm-gray-700">
                 Most people notice shifts in 2-4 sessions. Significant improvement
                 (50%+) typically takes 8-12 sessions. This is one of the most
                 responsive anxiety presentations to therapy.
               </p>
             </details>
 
-            <details className="bg-white p-6 rounded-lg cursor-pointer">
-              <summary className="font-semibold text-gray-900">
+            <details className="card card-compact card-static cursor-pointer">
+              <summary className="font-semibold text-warm-gray-900">
                 Does therapy replace medication?
               </summary>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-4 text-warm-gray-700">
                 Therapy and medication work well together and often faster than
                 either alone. Discuss with your OB or psychiatrist whether
                 medication is right for your situation.
@@ -425,7 +425,7 @@ export default function PerinatalAnxietyGuide() {
       {/* Final CTA */}
       <section className="px-4 py-12 bg-white border-t-2 border-sage-200">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-gray-700 mb-6">
+          <p className="text-warm-gray-700 mb-6">
             <em>
               This guide is educational and not a substitute for professional
               medical advice. If you're experiencing severe symptoms or thoughts of
@@ -437,7 +437,7 @@ export default function PerinatalAnxietyGuide() {
             href="https://calendly.com/rainuka"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition"
+            className="inline-block bg-dusk-600 hover:bg-dusk-700 text-white font-semibold py-3 px-8 rounded-lg transition"
           >
             Ready to Talk? Schedule Your Free Consultation
           </a>

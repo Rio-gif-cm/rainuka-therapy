@@ -14,10 +14,10 @@ export default function BookingPage() {
         <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Schedule Your Free Consultation
+              Take Your First Step Toward Clarity
             </h1>
             <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto mb-4">
-              15 minutes to explore if we're a good fit. No obligation, no pressure.
+              15 minutes to discover your path forward. No pressure, just clarity.
             </p>
             <p className="text-lg text-sage-700 font-medium max-w-2xl mx-auto">
               ⏰ I usually respond within 24 hours and have availability within 1-2 weeks
@@ -30,15 +30,15 @@ export default function BookingPage() {
           <div className="container-base">
             <div className="max-w-2xl mx-auto">
               {/* Trust Signal Before Form */}
-              <div className="bg-sage-50 p-8 rounded-lg mb-12 border-l-4 border-sage-400">
+              <div className="card card-callout card-static bg-sage-50 mb-12">
                 <div className="flex items-start gap-4">
                   <div className="text-3xl">✓</div>
                   <div>
                     <p className="font-semibold text-warm-gray-900 text-lg mb-2">
-                      95% of clients book ongoing sessions after their free call
+                      95% of clients move forward with ongoing therapy
                     </p>
                     <p className="text-warm-gray-600 text-sm">
-                      Real therapy that creates real change. See what clients are experiencing. <a href="/pricing" className="text-sage-600 hover:underline font-semibold">Full pricing details are here.</a>
+                      Real connection creates real change. Read what clients are experiencing. <a href="/pricing" className="text-sage-600 hover:underline font-semibold">Full pricing and details are here.</a>
                     </p>
                   </div>
                 </div>
@@ -46,11 +46,10 @@ export default function BookingPage() {
 
               <div className="mb-12">
                 <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
-                  Let's get started
+                  Tell Me Your Story
                 </h2>
                 <p className="text-warm-gray-600">
-                  I'll use the information below to reach out and schedule your free 15-minute consultation. 
-                  I respond within 24 hours.
+                  I'll use this information to reach out and schedule your free 15-minute call. I respond within 24 hours.
                 </p>
               </div>
 
@@ -98,7 +97,7 @@ export default function BookingPage() {
               </div>
             </div>
 
-            <div className="bg-sage-50 p-8 rounded-lg mt-12">
+            <div className="card card-tinted card-static mt-12">
               <h3 className="text-xl font-bold text-warm-gray-900 mb-4">Practical Details</h3>
               <div className="space-y-4 text-warm-gray-600">
                 <p>

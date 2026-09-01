@@ -65,10 +65,10 @@ export default function CalendarPicker({
     <div className="space-y-6">
       {/* Calendar Section */}
       <div className="space-y-3">
-        <label className="block text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-warm-gray-700">
           Choose a date that works for you
         </label>
-        <div className="inline-block border border-gray-200 rounded-lg overflow-hidden bg-white shadow-sm">
+        <div className="card card-static inline-block">
           <DayPicker
             mode="single"
             selected={internalSelectedDate}
@@ -80,7 +80,7 @@ export default function CalendarPicker({
           />
         </div>
         {internalSelectedDate && (
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-warm-gray-600">
             Selected: <span className="font-semibold">{format(internalSelectedDate, 'EEEE, MMMM d')}</span>
           </p>
         )}
@@ -89,7 +89,7 @@ export default function CalendarPicker({
       {/* Time Selection Section */}
       {internalSelectedDate && (
         <div className="space-y-3">
-          <label className="block text-sm font-medium text-gray-700">
+          <label className="block text-sm font-medium text-warm-gray-700">
             Choose a time
           </label>
           {availableSlots.length > 0 ? (
@@ -100,8 +100,8 @@ export default function CalendarPicker({
                   onClick={() => handleTimeSelect(slot)}
                   className={`py-2 px-3 rounded-md text-sm font-medium transition-colors border-2 ${
                     selectedSlot === slot.start
-                      ? 'bg-green-600 text-white border-green-600'
-                      : 'bg-white text-gray-700 border-gray-200 hover:border-green-500 hover:bg-green-50'
+                      ? 'bg-sage-600 text-white border-sage-600'
+                      : 'bg-white text-warm-gray-700 border-warm-gray-200 hover:border-sage-500 hover:bg-sage-50'
                   }`}
                 >
                   {formatTimeSlot(slot.start)}
@@ -109,7 +109,7 @@ export default function CalendarPicker({
               ))}
             </div>
           ) : (
-            <p className="text-sm text-gray-500 italic">
+            <p className="text-sm text-warm-gray-500 italic">
               No availability on this date. Please choose another.
             </p>
           )}
@@ -118,12 +118,12 @@ export default function CalendarPicker({
 
       {/* Selection Summary */}
       {internalSelectedDate && selectedSlot && (
-        <div className="bg-green-50 border border-green-200 rounded-md p-3">
-          <p className="text-sm text-gray-700">
+        <div className="bg-sage-50 border border-sage-200 rounded-md p-3">
+          <p className="text-sm text-warm-gray-700">
             ✓ Appointment requested for <span className="font-semibold">{format(internalSelectedDate, 'MMMM d, yyyy')}</span> at{' '}
             <span className="font-semibold">{formatTimeSlot(selectedSlot)}</span>
           </p>
-          <p className="text-xs text-gray-600 mt-1">
+          <p className="text-xs text-warm-gray-600 mt-1">
             We'll confirm this time within 24 hours
           </p>
         </div>

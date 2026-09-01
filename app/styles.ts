@@ -1,5 +1,5 @@
 // Design system colors and styles as JavaScript objects
-export const colors = {
+const baseColors = {
   sage: {
     50: '#f8faf7',
     100: '#e8ede5',
@@ -9,30 +9,70 @@ export const colors = {
     500: '#82a86c',
     600: '#6b944f',
     700: '#547c3f',
-    800: '#40602f',
-    900: '#2f4723',
+    800: '#426232',
+    900: '#334c27',
   },
   warmGray: {
     50: '#faf9f7',
     100: '#ede8e3',
     200: '#ddd4cc',
     300: '#c9b8ac',
-    600: '#5e534a',
+    400: '#ab9c91',
+    500: '#8f8279',
+    600: '#7a6f68',
     700: '#5e534a',
+    800: '#4c443e',
     900: '#3f3935',
   },
   accent: '#d97757',
 }
 
 /**
- * Extended sage ramp (includes the deeper 800/900 steps used by text-heavy
- * surfaces). Kept as a named alias so `colors.sage` stays the canonical token
- * set while components that need the darker end can reach for `sageGreen`.
+ * Public token object. `sageGreen` is a legacy alias for the sage ramp — older
+ * surfaces (providers directory, verification badge) address it by that name,
+ * so both keys resolve to the exact same values.
  */
-export const sageGreen = {
-  ...colors.sage,
-  800: '#456634',
-  900: '#35502a',
+export const colors = {
+  ...baseColors,
+  sageGreen: baseColors.sage,
+}
+
+// ---------------------------------------------------------------
+// SPACING SCALE — 8px base unit.
+// Mirrors the --space-* / --section-y / --container-* custom properties
+// in app/globals.css. Inline-styled components must pull from here so
+// they share the same vertical rhythm as class-based ones.
+// ---------------------------------------------------------------
+export const spacing = {
+  1: '0.5rem',  //   8px
+  2: '1rem',    //  16px
+  3: '1.5rem',  //  24px
+  4: '2rem',    //  32px
+  5: '2.5rem',  //  40px
+  6: '3rem',    //  48px
+  7: '3.5rem',  //  56px
+  8: '4rem',    //  64px
+  10: '5rem',   //  80px
+  12: '6rem',   //  96px
+  16: '8rem',   // 128px
+} as const
+
+export const layout = {
+  // Section vertical rhythm — resolved from the CSS custom properties so
+  // inline sections step up at the same breakpoints as .section-padding.
+  sectionY: 'var(--section-y)',
+  sectionYSm: 'var(--section-y-sm)',
+  sectionYLg: 'var(--section-y-lg)',
+  // Container widths
+  containerMax: 'var(--container-max)',
+  containerWide: 'var(--container-wide)',
+  containerProse: 'var(--container-prose)',
+  containerNarrow: 'var(--container-narrow)',
+  gutter: 'var(--container-gutter)',
+  // Grid gaps
+  gapTight: 'var(--gap-tight)',
+  gapCard: 'var(--gap-card)',
+  gapFeature: 'var(--gap-feature)',
 } as const
 
 export const styles = {
@@ -106,26 +146,53 @@ export const styles = {
     borderColor: colors.sage[700],
     color: colors.sage[700],
   },
+  /**
+   * Standard section band. Matches `.section-padding` in globals.css
+   * (64px mobile / 80px tablet / 96px desktop) so inline-styled sections
+   * sit on the same vertical rhythm as class-based ones.
+   * Previously a flat 2rem, which made the hero and niche grid cramped
+   * relative to every neighbouring section.
+   */
   section: {
-    padding: '2rem 1rem',
+    paddingTop: layout.sectionY,
+    paddingBottom: layout.sectionY,
   },
+  /** Tight interstitial band. Matches `.section-padding-sm`. */
+  sectionSm: {
+    paddingTop: layout.sectionYSm,
+    paddingBottom: layout.sectionYSm,
+  },
+  /** Hero / major opening band. Matches `.section-padding-lg`. */
+  sectionLg: {
+    paddingTop: layout.sectionYLg,
+    paddingBottom: layout.sectionYLg,
+  },
+  /** Page shell. Matches `.container-base` (1280px + responsive gutter). */
   container: {
-    maxWidth: '1200px',
+    maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
+    paddingLeft: layout.gutter,
+    paddingRight: layout.gutter,
+    width: '100%',
   },
+  /**
+   * @deprecated Card surfaces are owned by the unified card system in
+   * app/globals.css. Use `className="card"` (plus card-warm/card-info/
+   * card-success/card-compact/card-static) instead of spreading these objects,
+   * so radius, shadow depth, padding, border and hover lift stay in sync.
+   */
   card: {
     backgroundColor: 'white',
-    borderRadius: '0.75rem',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
-    padding: '2rem',
-    border: `1px solid ${colors.warmGray[200]}`,
-    transition: 'all 0.3s ease',
+    borderRadius: 'var(--card-radius)',
+    boxShadow: 'var(--card-shadow-rest)',
+    padding: 'var(--card-padding)',
+    border: `var(--card-border-width) solid var(--card-border-color)`,
+    transition: 'var(--card-transition)',
   },
+  /** @deprecated See `card` above — use the `.card` class hover state. */
   cardHover: {
-    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+    boxShadow: 'var(--card-shadow-hover)',
   },
 }
 
@@ -150,7 +217,12 @@ export const layoutStyles = {
   gridAutoFit: {
     display: 'grid' as const,
     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: '2rem',
+    gap: layout.gapCard, // 32px — matches .grid-cards in globals.css
+  },
+  gridAutoFitTight: {
+    display: 'grid' as const,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+    gap: layout.gapTight, // 24px
   },
 }
 
@@ -158,24 +230,26 @@ export const footerStyles = {
   footer: {
     backgroundColor: colors.warmGray[900],
     color: 'white',
-    paddingTop: '4rem',
-    paddingBottom: '2rem',
-    marginTop: '4rem',
+    paddingTop: spacing[8],    // 64px
+    paddingBottom: spacing[4], // 32px
+    // No marginTop: sections own their own bottom padding, and stacking a
+    // 4rem margin on top of a section's padding produced an oversized,
+    // inconsistent gap above the footer on every page.
   },
   footerContent: {
-    maxWidth: '1200px',
+    maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
+    paddingLeft: layout.gutter,
+    paddingRight: layout.gutter,
     display: 'grid' as const,
     gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-    gap: '2rem',
-    marginBottom: '2rem',
+    gap: layout.gapCard,       // 32px
+    marginBottom: spacing[6],  // 48px
   },
   footerHeading: {
     color: 'white',
-    marginBottom: '1rem',
+    marginBottom: spacing[2],  // 16px
   },
   footerList: {
     listStyle: 'none' as const,
@@ -183,7 +257,7 @@ export const footerStyles = {
     margin: 0,
   },
   footerListItem: {
-    marginBottom: '0.5rem',
+    marginBottom: spacing[1],  // 8px
   },
   footerLink: {
     color: 'rgba(255,255,255,0.8)',
@@ -191,14 +265,19 @@ export const footerStyles = {
   },
   footerMeta: {
     borderTop: `1px solid ${colors.warmGray[700]}`,
-    paddingTop: '2rem',
+    maxWidth: layout.containerMax,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: layout.gutter,
+    paddingRight: layout.gutter,
+    paddingTop: spacing[4],    // 32px
     textAlign: 'center' as const,
     color: 'rgba(255,255,255,0.6)',
     fontSize: '0.875rem',
   },
   footerMetaText: {
     margin: 0,
-    marginBottom: '0.5rem',
+    marginBottom: spacing[1],  // 8px
   },
 }
 
@@ -293,33 +372,35 @@ export const navigationStyles = {
     backgroundColor: 'white',
     borderBottom: `1px solid ${colors.warmGray[200]}`,
   },
+  /* Aligned to layout.containerMax + gutter so the brand and nav links
+     sit on the exact same left/right edge as page content below. */
   navContent: {
-    maxWidth: '1200px',
+    maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-    paddingTop: '1rem',
-    paddingBottom: '1rem',
+    paddingLeft: layout.gutter,
+    paddingRight: layout.gutter,
+    paddingTop: spacing[2],
+    paddingBottom: spacing[2],
     display: 'flex' as const,
     alignItems: 'center' as const,
     justifyContent: 'space-between' as const,
     flexWrap: 'wrap' as const,
-    gap: '1rem',
+    gap: spacing[2],
   },
   navContentMobile: {
-    maxWidth: '1200px',
+    maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
-    paddingLeft: '1rem',
-    paddingRight: '1rem',
-    paddingTop: '1rem',
-    paddingBottom: '1rem',
+    paddingLeft: layout.gutter,
+    paddingRight: layout.gutter,
+    paddingTop: spacing[2],
+    paddingBottom: spacing[2],
     display: 'flex' as const,
     alignItems: 'center' as const,
     justifyContent: 'center' as const,
     flexWrap: 'wrap' as const,
-    gap: '0.5rem',
+    gap: spacing[1],
     flexDirection: 'column' as const,
   },
   navBrand: {
@@ -440,23 +521,9 @@ export const globalStyles = `
   transform: scale(0.98);
 }
 
-/* NicheGrid card hover effects - works on both mouse and touch */
-.niche-card {
-  transition: all 0.3s ease;
-}
-
-.niche-card:hover {
-  transform: translateY(-8px);
-  background-color: ${colors.sage[50]};
-  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
-}
-
-.niche-card:active {
-  transform: translateY(-8px);
-  background-color: ${colors.sage[50]};
-  box-shadow: 0 20px 40px -10px rgba(107, 148, 79, 0.12);
-}
-
+  /* NicheGrid card geometry, depth, padding and lift are owned by the unified
+     card system in app/globals.css (.card / .niche-card). Only focus affordance
+     lives here so it can't drift from the shared surface. */
 .niche-card:focus-within {
   outline: 2px solid ${colors.sage[600]};
   outline-offset: 2px;

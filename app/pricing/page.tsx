@@ -62,7 +62,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <div className="bg-cream-50 p-8 rounded-lg border border-cream-200">
+            <div className="card card-tinted card-static">
               <p className="text-warm-gray-700 text-center">
                 <strong>Ready to start?</strong> The free 15-minute consultation is where we discuss your specific situation, answer any questions, and talk about payment options that work for you.
               </p>
@@ -89,7 +89,7 @@ export default function PricingPage() {
               Therapy should be accessible to everyone who needs it. I have a limited number of reduced-fee slots available based on financial need.
             </p>
 
-            <div className="bg-white p-8 rounded-lg border border-sage-200 mb-8">
+            <div className="card card-static mb-8">
               <h3 className="text-xl font-bold text-warm-gray-900 mb-6">How Sliding Scale Works</h3>
               
               <div className="space-y-6">
@@ -152,7 +152,7 @@ export default function PricingPage() {
 
             <div className="space-y-8">
               {/* In-Network */}
-              <div className="bg-cream-50 p-8 rounded-lg border border-cream-200">
+              <div className="card card-tinted card-static">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">
                   ✓ In-Network Insurance
                 </h3>
@@ -212,7 +212,7 @@ export default function PricingPage() {
               </div>
 
               {/* No Insurance */}
-              <div className="bg-cream-50 p-8 rounded-lg border border-cream-200">
+              <div className="card card-tinted card-static">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">
                   🤝 Payment Plans (No Insurance)
                 </h3>
@@ -235,7 +235,7 @@ export default function PricingPage() {
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg border border-sage-200 text-center">
+              <div className="card card-compact card-static text-center">
                 <div className="text-4xl mb-4">💳</div>
                 <h3 className="font-bold text-warm-gray-900 mb-3">Credit/Debit Card</h3>
                 <p className="text-warm-gray-600 text-sm">
@@ -243,7 +243,7 @@ export default function PricingPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg border border-sage-200 text-center">
+              <div className="card card-compact card-static text-center">
                 <div className="text-4xl mb-4">🏦</div>
                 <h3 className="font-bold text-warm-gray-900 mb-3">Bank Transfer</h3>
                 <p className="text-warm-gray-600 text-sm">
@@ -251,7 +251,7 @@ export default function PricingPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg border border-sage-200 text-center">
+              <div className="card card-compact card-static text-center">
                 <div className="text-4xl mb-4">🛡️</div>
                 <h3 className="font-bold text-warm-gray-900 mb-3">Insurance Direct</h3>
                 <p className="text-warm-gray-600 text-sm">
@@ -260,7 +260,7 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg mt-8 border border-sage-200">
+            <div className="card card-compact card-static mt-8">
               <p className="text-warm-gray-600 text-center">
                 <strong>Questions about payment?</strong> We can discuss any concerns during your free consultation. The goal is to set up something that feels sustainable for you.
               </p>
@@ -381,7 +381,7 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg border border-sage-200">
+            <div className="card card-static">
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="text-3xl flex-shrink-0">🔓</div>

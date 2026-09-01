@@ -196,17 +196,17 @@ export default function ContactPage() {
             </h2>
 
             <div className="space-y-4">
-              <div className="flex justify-between items-center p-4 bg-cream-50 rounded-lg">
+              <div className="card card-tinted card-compact card-static flex justify-between items-center">
                 <span className="font-semibold text-warm-gray-900">Monday - Friday</span>
                 <span className="text-warm-gray-600">9:00 AM - 5:00 PM EST</span>
               </div>
 
-              <div className="flex justify-between items-center p-4 bg-cream-50 rounded-lg">
+              <div className="card card-tinted card-compact card-static flex justify-between items-center">
                 <span className="font-semibold text-warm-gray-900">Tuesday - Thursday Evenings</span>
                 <span className="text-warm-gray-600">6:00 PM - 8:00 PM EST</span>
               </div>
 
-              <div className="flex justify-between items-center p-4 bg-cream-50 rounded-lg">
+              <div className="card card-tinted card-compact card-static flex justify-between items-center">
                 <span className="font-semibold text-warm-gray-900">Saturday</span>
                 <span className="text-warm-gray-600">By appointment</span>
               </div>

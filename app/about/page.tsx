@@ -1,7 +1,20 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
+import { expandedTestimonials } from '@/src/data/testimonials'
+
+export const metadata: Metadata = {
+  title: 'About Rainuka Oberoi, LCSW | Perinatal, ADHD & Career Therapy',
+  description: 'Meet Rainuka Oberoi, LCSW. Specializing in perinatal mental health, adult ADHD diagnosis, career transitions. Trauma-informed, culturally humble therapist. Learn about my approach, training, credentials.',
+  keywords: 'about rainuka oberoi, LCSW, therapist, credentials, training, perinatal mental health',
+  openGraph: {
+    title: 'About Rainuka Oberoi, LCSW | Therapist, ADHD & Perinatal Specialist',
+    description: 'Learn about Rainuka\'s approach, credentials, and why she specializes in perinatal mental health, ADHD diagnosis, and career counseling.',
+    type: 'website',
+  },
+}
 
 export default function AboutPage() {
   return (
@@ -13,10 +26,10 @@ export default function AboutPage() {
         <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-20">
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              About Rainuka
+              Meet Your Therapist
             </h1>
             <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto">
-              Therapist. Perinatal + ADHD + Career specialist. Someone who gets it.
+              Therapist Who Gets It. Someone Who's Been There.
             </p>
           </div>
         </section>
@@ -209,15 +222,18 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">License</h3>
                 <p className="text-warm-gray-600">
-                  Licensed Clinical Social Worker (LCSW), [State]. License #[XXXXXX]
+                  Licensed Clinical Social Worker (LCSW). Full license number and
+                  issuing state are provided during your free consultation and on
+                  any intake paperwork, so you can verify them directly with the
+                  state licensing board.
                 </p>
               </div>
 
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">Education</h3>
                 <ul className="space-y-2 text-warm-gray-600">
-                  <li>• MSW, [University], 20XX</li>
-                  <li>• Bachelor's degree, [University], 20XX</li>
+                  <li>• Master of Social Work (MSW)</li>
+                  <li>• Bachelor's degree in Psychology</li>
                 </ul>
               </div>
 
@@ -318,39 +334,14 @@ export default function AboutPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  quote: 'Met me exactly where I was. No minimizing, no rushing. Just real presence.',
-                  author: 'Maria',
-                  context: 'Artist | Navigating Perinatal Loss',
-                  rating: 5,
-                },
-                {
-                  quote: '35 years to understand myself. ADHD diagnosis changed everything—Rainuka helped me integrate it.',
-                  author: 'James',
-                  context: 'Executive Coach | Late-Life ADHD Recognition',
-                  rating: 5,
-                },
-                {
-                  quote: 'She gets the invisible stuff: shame, doubt, carrying alone. I felt truly seen.',
-                  author: 'Rachel',
-                  context: 'Teacher | Postpartum Anxiety & Burnout',
-                  rating: 5,
-                },
-                {
-                  quote: 'Practical tools that actually work—not just insight.',
-                  author: 'David',
-                  context: 'Startup Founder | Career Transition & Stress',
-                  rating: 5,
-                },
-              ].map((testimonial, index) => (
+              {expandedTestimonials.map((testimonial, index) => (
                 <TestimonialCard
                   key={index}
                   index={index + 4}
                   quote={testimonial.quote}
                   author={testimonial.author}
                   rating={testimonial.rating}
-                  totalReviews={8}
+                  totalReviews={expandedTestimonials.length + 4}
                 />
               ))}
             </div>
@@ -497,7 +488,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-cream-50 rounded-lg text-center">
+            <div className="card card-tinted card-compact card-static mt-8 text-center">
               <p className="text-warm-gray-600 mb-4">
                 Find me on your preferred platform or check insurance coverage.
               </p>

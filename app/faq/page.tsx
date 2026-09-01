@@ -101,10 +101,10 @@ const faqSchema = {
 
 export const metadata = {
   title: 'Therapy FAQs - Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
-  description: 'Common questions about therapy with Rainuka: Is therapy confidential? How much does it cost? What about ADHD diagnosis and perinatal anxiety? Get answers to your therapy questions.',
+  description: 'Answers to therapy questions: confidentiality, pricing, ADHD diagnosis, perinatal anxiety, and what to expect. Get your questions answered by Rainuka Oberoi, LCSW.',
   openGraph: {
     title: 'Frequently Asked Questions About Therapy | Rainuka Oberoi, LCSW',
-    description: 'Your therapy questions answered: confidentiality, pricing, specialties, and what to expect.',
+    description: 'Common questions answered: confidentiality, pricing, specialties, and what to expect from therapy.',
     type: 'website',
   },
 }
@@ -215,7 +215,7 @@ export default function FAQPage() {
             </div>
 
             {/* CTA */}
-            <div className="bg-sage-50 p-8 rounded-lg text-center">
+            <div className="card card-tinted card-static text-center">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
                 Want more details about pricing?
               </h3>

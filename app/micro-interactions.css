@@ -1,143 +1,87 @@
 /* ========================================
-   UX ENHANCEMENT WAVE 1: MICRO-INTERACTIONS
-   Strategic visual feedback for interactive elements
-   
-   Key Principles:
-   - Delight without distraction (250-500ms interactions)
-   - Accessibility-first (respects prefers-reduced-motion)
-   - Consistent feedback pattern across elements
-   - Psychology: micro-interactions build confidence + trust
+   MICRO-INTERACTIONS
+
+   Small, quiet feedback for interactive elements. Every value
+   here comes from the motion system declared in globals.css:
+
+     --ease-standard   cubic-bezier(0.2, 0.8, 0.2, 1)
+     --duration-fast   150ms   state echoes (colour, press)
+     --duration-base   250ms   hover, focus, small reveals
+     --duration-slow   400ms   surfaces in motion, entrances
+
+   Principles:
+   - One easing curve, three durations. No local exceptions.
+   - Motion confirms; it never performs. Nothing overshoots,
+     nothing bounces, nothing pulses to attract attention.
+   - Anything that moves must also be correct when it doesn't,
+     because prefers-reduced-motion removes all of it.
+
+   This site's audience includes people who are anxious,
+   overstimulated, or motion-sensitive. Springy motion reads as
+   instability to them, so there is none of it here.
    ======================================== */
 
 /* ========================================
-   1. LINK UNDERLINE SLIDE ANIMATION
-   Creates elastic reveal effect on hover
-   Psychology: Shows interactivity before click
+   1. LINK AFFORDANCE
+
+   Links are underlined at rest in globals.css (a permanent,
+   colour-blind-safe affordance). Hover therefore only needs to
+   deepen the colour — it should not introduce a second, sliding
+   underline on top of the real one.
+
+   The previous implementation animated an ::after bar with a
+   spring curve and forced `display: inline-block` on every
+   anchor, which stopped multi-line links from wrapping and
+   double-underlined them mid-transition. Both are removed.
    ======================================== */
 
 a {
-  position: relative;
-  display: inline-block;
-}
-
-a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--sage-600);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  opacity: 0.6;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-  background-color: var(--sage-700);
-  opacity: 1;
-}
-
-/* Reduce motion support */
-@media (prefers-reduced-motion: reduce) {
-  a::after {
-    transition: none;
-  }
-  
-  a:hover::after {
-    transform: none;
-    opacity: 1;
-  }
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    text-decoration-color var(--duration-fast) var(--ease-standard);
 }
 
 /* ========================================
-   2. FORM INPUT FOCUS SPARKLE EFFECT
-   Micro-animation that draws attention to field
-   Psychology: Satisfying visual reward for interaction
+   2. FORM FIELD FOCUS
+
+   The focus ring itself is defined in globals.css and simply
+   fades in. There is no keyframed "sparkle": a field that
+   flashes when focused is startling on a booking form, which is
+   exactly where a nervous visitor is most likely to hesitate.
    ======================================== */
 
-@keyframes sparkle {
-  0% {
-    box-shadow: 
-      0 0 0 3px rgba(157, 187, 141, 0.15),
-      inset 0 1px 2px rgba(157, 187, 141, 0.08),
-      0 0 0 0 rgba(107, 148, 79, 0.4);
-  }
-  50% {
-    box-shadow: 
-      0 0 0 3px rgba(157, 187, 141, 0.25),
-      inset 0 1px 2px rgba(157, 187, 141, 0.12),
-      0 0 12px 6px rgba(107, 148, 79, 0);
-  }
-  100% {
-    box-shadow: 
-      0 0 0 3px rgba(157, 187, 141, 0.15),
-      inset 0 1px 2px rgba(157, 187, 141, 0.08),
-      0 0 0 0 rgba(107, 148, 79, 0);
-  }
-}
-
-/* Apply sparkle to form inputs on focus */
-.form-input:focus,
-.form-select:focus,
-textarea:focus {
-  animation: sparkle 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-input:focus,
-  .form-select:focus,
-  textarea:focus {
-    animation: none;
-  }
+.form-input,
+.form-select,
+textarea {
+  transition:
+    border-color var(--duration-base) var(--ease-standard),
+    background-color var(--duration-base) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard);
 }
 
 /* ========================================
-   3. BUTTON PRESS FEEDBACK (Enhanced)
-   Compress + bounce effect on click
-   Psychology: Tactile feedback builds confidence
+   3. BUTTON PRESS
+
+   Press feedback is a transition on :active in globals.css —
+   the hover lift settling back to rest. It is not a keyframe
+   animation, because a keyframe runs to completion on its own
+   schedule and can finish after the pointer has already left,
+   which is what made the old version feel disconnected from
+   the click.
    ======================================== */
 
-@keyframes buttonPress {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.96);
-  }
-  100% {
-    transform: scale(0.98);
-  }
-}
-
-.btn-primary:active {
-  animation: buttonPress 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.btn-outline:active {
-  animation: buttonPress 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .btn-primary:active,
-  .btn-outline:active {
-    animation: none;
-  }
-}
-
 /* ========================================
-   4. CARD ENTRANCE STAGGER ANIMATION
-   Staged reveal effect for grids of cards
-   Psychology: Guides user attention, reduces cognitive overload
+   4. CARD ENTRANCE
+
+   Opt-in only, via .animate-card-enter. A short rise and fade,
+   no overshoot. `both` holds the start and end frames so the
+   card is never briefly invisible before the animation begins.
    ======================================== */
 
 @keyframes cardEnter {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -146,149 +90,70 @@ textarea:focus {
 }
 
 .animate-card-enter {
-  animation: cardEnter 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation: cardEnter var(--duration-slow) var(--ease-standard) both;
 }
 
-/* Stagger effect for multiple cards (nth-child delay) */
-.card:nth-child(1) { animation-delay: 0ms; }
-.card:nth-child(2) { animation-delay: 80ms; }
-.card:nth-child(3) { animation-delay: 160ms; }
-.card:nth-child(4) { animation-delay: 240ms; }
-.card:nth-child(5) { animation-delay: 320ms; }
-.card:nth-child(n+6) { animation-delay: 400ms; }
+/* Stagger, scoped to cards that actually opted into the entrance.
+   Previously these delays were applied to every .card on the site,
+   including static ones, which meant any unrelated transition on a
+   card silently inherited a delay of up to 400ms and felt broken.
+
+   The ramp is deliberately short and caps out quickly: a long
+   cascade makes a page feel slow to assemble rather than calm. */
+.animate-card-enter:nth-child(2) { animation-delay: 60ms; }
+.animate-card-enter:nth-child(3) { animation-delay: 120ms; }
+.animate-card-enter:nth-child(4) { animation-delay: 180ms; }
+.animate-card-enter:nth-child(n+5) { animation-delay: 240ms; }
+
+/* ========================================
+   5. HOVER RESPONSIVENESS
+
+   No transition-delay. The old build delayed card hovers by 80ms
+   and button hovers by 50ms to "prevent accidental triggers", but
+   a delay before a hover response reads as lag, not polish — the
+   element appears to hesitate before answering. Hover starts
+   immediately; the easing curve does the smoothing.
+   ======================================== */
+
+/* ========================================
+   6. DIRECTIONAL ARROW
+
+   Defined in globals.css: a 4px nudge that holds while hovered,
+   rather than a loop that slides out and snaps back. A repeating
+   animation next to a call to action competes with the words.
+   ======================================== */
+
+/* ========================================
+   7. VALIDATION FEEDBACK
+
+   Success and error states are communicated with colour, border,
+   icon and text — never with motion. A field that pulses green
+   on success draws the eye backwards, to a thing already
+   finished, and away from the next field.
+   ======================================== */
+
+/* ========================================
+   REDUCED MOTION
+
+   globals.css carries the site-wide safety net. This block
+   covers what this file introduces, so the rules stay next to
+   the motion they undo.
+   ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
+  a,
+  .form-input,
+  .form-select,
+  textarea {
+    transition: none !important;
+  }
+
+  /* The entrance must never leave content invisible: if the
+     animation is suppressed, the finished state is the state. */
   .animate-card-enter {
-    animation: none;
-  }
-}
-
-/* ========================================
-   5. HOVER DELAY FOR SMOOTHNESS
-   Prevents accidental hover triggers
-   Psychology: Reduces "jumpy" feel, increases perceived polish
-   
-   Uses media query to only apply on desktop (where hover is real)
-   ======================================== */
-
-@media (hover: hover) and (pointer: fine) {
-  /* Cards: Small delay before lifting */
-  .card {
-    transition-delay: 0.08s;
-  }
-
-  /* Buttons: Consistent hover delay */
-  .btn-primary,
-  .btn-secondary,
-  .btn-outline {
-    transition-delay: 0.05s;
-  }
-}
-
-/* Touch devices: No delay (immediate feedback) */
-@media (hover: none) and (pointer: coarse) {
-  .card,
-  .btn-primary,
-  .btn-secondary,
-  .btn-outline {
-    transition-delay: 0s;
-  }
-}
-
-/* ========================================
-   ENHANCED NICHE CARD MICRO-INTERACTIONS
-   Combine multiple micro-interactions for richness
-   ======================================== */
-
-.niche-card {
-  position: relative;
-  overflow: visible;
-}
-
-/* Enhanced arrow animation */
-.explore-arrow {
-  display: inline-block;
-  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  color: var(--sage-600);
-}
-
-.niche-card:hover .explore-arrow {
-  color: var(--sage-700);
-  transform: translateX(4px);
-}
-
-@keyframes arrowPulse {
-  0%, 100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform: translateX(6px);
-  }
-}
-
-.niche-card:hover .explore-arrow {
-  animation: arrowPulse 0.6s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .explore-arrow {
-    transition: none;
-  }
-
-  .niche-card:hover .explore-arrow {
-    animation: none;
-    transform: translateX(4px);
-  }
-}
-
-/* ========================================
-   FORM STATE MICRO-INTERACTIONS
-   Success and error states with visual feedback
-   ======================================== */
-
-@keyframes successPulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(22, 163, 74, 0);
-  }
-}
-
-.form-input.border-green-500:focus {
-  animation: successPulse 0.6s ease-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .form-input.border-green-500:focus {
-    animation: none;
-  }
-}
-
-/* ========================================
-   ACCESSIBILITY: REDUCED MOTION SUPPORT
-   Respects OS-level prefers-reduced-motion setting
-   ======================================== */
-
-@media (prefers-reduced-motion: reduce) {
-  /* Disable all micro-interactions */
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-
-  /* Keep functional states (color, opacity) but no motion */
-  a {
-    text-decoration: underline;
-    text-decoration-color: currentColor;
-  }
-
-  a:hover {
-    text-decoration: underline;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    animation-delay: 0ms !important;
   }
 }

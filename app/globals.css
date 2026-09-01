@@ -1,9 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
-/* Design System Colors */
+/* ========================================
+   DESIGN SYSTEM COLOR TOKENS
+   Mirrors tailwind.config.ts exactly. Sage is the brand; warm-gray/cream
+   carry every neutral; clay/dusk/honey/blush are the muted persona accents;
+   `alert` is the ONLY red and it is a desaturated brick.
+   Never introduce a raw Tailwind palette hue (blue/emerald/rose/...).
+   ======================================== */
 :root {
+  /* Brand — sage */
   --sage-50: #f8faf7;
   --sage-100: #e8ede5;
   --sage-200: #d1dcc8;
@@ -12,74 +18,510 @@
   --sage-500: #82a86c;
   --sage-600: #6b944f;
   --sage-700: #547c3f;
+  --sage-800: #426232;
+  --sage-900: #334c27;
+
+  /* Neutrals — warm-gray */
   --warm-gray-50: #faf9f7;
   --warm-gray-100: #ede8e3;
   --warm-gray-200: #ddd4cc;
   --warm-gray-300: #c9b8ac;
+  --warm-gray-400: #ab9c91;
+  --warm-gray-500: #8f8279;
   --warm-gray-600: #7a6f68;
   --warm-gray-700: #5e534a;
+  --warm-gray-800: #4c443e;
   --warm-gray-900: #3f3935;
+
+  /* Neutrals — cream */
+  --cream-50: #fdfbf8;
+  --cream-100: #f5f0eb;
+  --cream-200: #ebe3da;
+  --cream-300: #ded3c6;
+
+  /* Persona accent — clay (warmth, invitation, CTAs, perinatal) */
+  --clay-50: #fdf7f4;
+  --clay-100: #f7e9e1;
+  --clay-200: #eed6c8;
+  --clay-500: #d97757;
+  --clay-600: #c96547;
+  --clay-700: #a5503a;
+
+  /* Persona accent — dusk (steady, grounded; men, ADHD, grief, info) */
+  --dusk-50: #f5f7fa;
+  --dusk-100: #e6ecf3;
+  --dusk-200: #ccd8e5;
+  --dusk-300: #a8bcd1;
+  --dusk-500: #61809f;
+  --dusk-600: #4d6a86;
+  --dusk-700: #3f566d;
+  --dusk-800: #334458;
+
+  /* Persona accent — honey (career, seasonal, caution) */
+  --honey-50: #fdf9f1;
+  --honey-100: #f7eedc;
+  --honey-200: #eedfc0;
+  --honey-400: #d4a574;
+  --honey-500: #c08f5c;
+  --honey-700: #84603c;
+
+  /* Persona accent — blush (tender; couples, testimonials) */
+  --blush-50: #fcf6f6;
+  --blush-100: #f4e6e6;
+  --blush-500: #a87372;
+  --blush-600: #8c5c5b;
+  --blush-700: #714a49;
+
+  /* Semantic — alert (muted brick; the only red) */
+  --alert-50: #fcf5f3;
+  --alert-100: #f5e3dd;
+  --alert-500: #ab5943;
+  --alert-600: #934833;
+  --alert-700: #763a2a;
+
+  /* Legacy aliases */
   --accent-warm: #d97757;
   --accent-warm-dark: #c96547;
-}
 
-* {
-  scroll-behavior: smooth;
+  /* ----------------------------------------
+     GRADIENT TOKENS — sophisticated + subtle.
+     Every one is a low-contrast wash: the endpoints never differ by more
+     than roughly one neutral step, so they read as light falling across a
+     surface rather than as a colour band.
+     ---------------------------------------- */
+  --grad-sage-mist: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--sage-50) 45%, var(--sage-100) 100%);
+  --grad-sage-veil: linear-gradient(180deg, var(--sage-50) 0%, #ffffff 100%);
+  --grad-sage-veil-up: linear-gradient(180deg, #ffffff 0%, var(--sage-50) 100%);
+  --grad-warm-linen: linear-gradient(135deg, var(--cream-50) 0%, var(--warm-gray-50) 50%, var(--cream-100) 100%);
+  --grad-warm-veil: linear-gradient(180deg, var(--warm-gray-50) 0%, #ffffff 100%);
+  --grad-card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.35) 100%);
+  --grad-clay-veil: linear-gradient(135deg, var(--clay-50) 0%, #ffffff 100%);
+  --grad-dusk-veil: linear-gradient(135deg, var(--dusk-50) 0%, #ffffff 100%);
+  --grad-honey-veil: linear-gradient(135deg, var(--honey-50) 0%, #ffffff 100%);
+  --grad-blush-veil: linear-gradient(135deg, var(--blush-50) 0%, #ffffff 100%);
+
+  /* ========================================
+     SPACING & LAYOUT RHYTHM TOKENS — 8px base unit
+     Single source of truth for vertical rhythm. Every section pad,
+     container width and grid gap on the site resolves to a step here,
+     so the whole page breathes on one consistent scale.
+     Tailwind equivalents shown in parentheses.
+     ======================================== */
+
+  /* Base 8px scale */
+  --space-1: 0.5rem;   /*   8px  (2)  */
+  --space-2: 1rem;     /*  16px  (4)  */
+  --space-3: 1.5rem;   /*  24px  (6)  */
+  --space-4: 2rem;     /*  32px  (8)  */
+  --space-5: 2.5rem;   /*  40px  (10) */
+  --space-6: 3rem;     /*  48px  (12) */
+  --space-7: 3.5rem;   /*  56px  (14) */
+  --space-8: 4rem;     /*  64px  (16) */
+  --space-10: 5rem;    /*  80px  (20) */
+  --space-12: 6rem;    /*  96px  (24) */
+  --space-16: 8rem;    /* 128px  (32) */
+
+  /* Vertical section rhythm — one fluid step per breakpoint.
+     --section-y      standard band
+     --section-y-sm   tight interstitials (micro-CTA, notes)
+     --section-y-lg   heroes and major openings
+     Overridden in the breakpoint blocks below. */
+  --section-y: var(--space-8);      /* 64px mobile */
+  --section-y-sm: var(--space-5);   /* 40px mobile */
+  --section-y-lg: var(--space-10);  /* 80px mobile */
+
+  /* Container widths + gutters */
+  --container-max: 80rem;     /* 1280px — full page shell        */
+  --container-wide: 64rem;    /* 1024px — feature / card layouts */
+  --container-prose: 48rem;   /*  768px — long-form reading      */
+  --container-narrow: 42rem;  /*  672px — focused single column  */
+  --container-gutter: 1.5rem; /*   24px */
+
+  /* Grid gaps — cards ride the same rhythm as section padding */
+  --gap-tight: var(--space-3);   /* 24px dense clusters */
+  --gap-card: var(--space-4);    /* 32px card grids     */
+  --gap-feature: var(--space-6); /* 48px 2-up features  */
+
+  /* Stack rhythm — space between blocks inside a section */
+  --stack-heading: var(--space-3); /* 24px heading -> body     */
+  --stack-block: var(--space-6);   /* 48px block  -> block     */
+  --stack-lead: var(--space-8);    /* 64px intro  -> content   */
+
+  /* ========================================
+     TYPOGRAPHY SYSTEM
+     Modular scale, ratio 1.25 (major third).
+     Every step is fluid between a 375px and a 1280px viewport:
+       clamp(min, intercept + slope*vw, max)
+     Base: 16px mobile -> 17px desktop. Desktop steps are exactly
+     1.25x apart; mobile uses a compressed 1.18 ratio so long
+     headings don't blow out narrow screens.
+
+     Use the tokens. Never hardcode a font-size.
+     ======================================== */
+
+  /* --- Families --------------------------------------------------- */
+  /* Fraunces: variable optical-size serif for editorial display type.
+     Inter: neutral grotesque for UI, body and dense text. */
+  --font-serif: var(--font-fraunces), 'Iowan Old Style', 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Legacy alias: keeps pre-existing var(--font-merriweather) call sites working. */
+  --font-merriweather: var(--font-serif);
+
+  /* --- Scale steps ------------------------------------------------- */
+  /* Negative steps are deliberately held ABOVE the pure 1.25 ratio
+     (which would give 12.8px / 10.2px). Nothing on a mental-health
+     site should render below 13px. Accessibility beats arithmetic. */
+  --step--2: 0.8125rem;  /* 13px — legal, micro-meta. Floor. */
+  --step--1: 0.875rem;   /* 14px — captions, labels, eyebrows */
+  --step-0:  clamp(1rem, 0.9741rem + 0.0069vw, 1.0625rem);        /* 16 -> 17  body */
+  --step-1:  clamp(1.18rem, 1.1186rem + 0.0164vw, 1.3281rem);     /* 19 -> 21  lead / intro */
+  --step-2:  clamp(1.3924rem, 1.2815rem + 0.0296vw, 1.6602rem);   /* 22 -> 27  h4 */
+  --step-3:  clamp(1.643rem, 1.464rem + 0.0478vw, 2.0752rem);     /* 26 -> 33  h3 */
+  --step-4:  clamp(1.9388rem, 1.6673rem + 0.0724vw, 2.594rem);    /* 31 -> 42  h2 */
+  --step-5:  clamp(2.2878rem, 1.8921rem + 0.1055vw, 3.2425rem);   /* 37 -> 52  h1 */
+  --step-6:  clamp(2.6996rem, 2.1387rem + 0.1496vw, 4.0531rem);   /* 43 -> 65  display */
+
+  /* --- Leading: tightens as type grows ----------------------------- */
+  --leading-display: 1.05;
+  --leading-h1: 1.08;
+  --leading-h2: 1.16;
+  --leading-h3: 1.24;
+  --leading-h4: 1.32;
+  --leading-lead: 1.5;
+  --leading-body: 1.7;
+  --leading-meta: 1.55;
+
+  /* --- Tracking: negative for display, positive for small ---------- */
+  --tracking-display: -0.032em;
+  --tracking-h1: -0.026em;
+  --tracking-h2: -0.02em;
+  --tracking-h3: -0.015em;
+  --tracking-h4: -0.01em;
+  --tracking-lead: -0.005em;
+  --tracking-body: 0.01em;   /* slight positive: letter-crowding aid */
+  --tracking-meta: 0.015em;
+  --tracking-eyebrow: 0.09em; /* uppercase needs air */
+
+  /* --- Weights ----------------------------------------------------- */
+  /* Editorial serif looks expensive LIGHT and large, not bold and small.
+     Weight climbs as size falls, so optical heft stays constant. */
+  --weight-display: 400;
+  --weight-h1: 400;
+  --weight-h2: 500;
+  --weight-h3: 600;
+  --weight-h4: 600;
+  --weight-body: 400;
+  --weight-emphasis: 600;
+
+  /* --- Measure (line length) --------------------------------------- */
+  --measure: 68ch;        /* ideal editorial column */
+  --measure-narrow: 46ch; /* pull quotes, hero copy */
+  --measure-wide: 80ch;
+
+  /* ========================================
+     CARD SYSTEM TOKENS
+     Single source of truth for every card surface on the site.
+     Change a value here and niche cards, testimonials, FAQ,
+     benefit cards and guide cards all move together.
+     ======================================== */
+
+  /* Geometry */
+  --card-radius: 0.75rem;
+  --card-padding: 2rem;
+  --card-padding-compact: 1.5rem;
+  --card-padding-mobile: 1.5rem;
+
+  /* Border treatment: hairline frame + coloured top accent */
+  --card-border-width: 1px;
+  --card-border-color: rgba(209, 220, 200, 0.6);
+  --card-border-color-hover: rgba(130, 168, 108, 0.7);
+  --card-accent-width: 3px;
+  --card-accent-color: var(--sage-600);
+
+  /* Surface */
+  --card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.3) 100%);
+  --card-surface-hover: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 247, 0.5) 100%);
+
+  /* Shadow depth ladder: rest -> hover -> pressed */
+  --card-shadow-rest:
+    0 1px 2px rgba(63, 57, 53, 0.04),
+    0 4px 8px rgba(107, 148, 79, 0.05),
+    0 12px 24px rgba(63, 57, 53, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --card-shadow-hover:
+    0 2px 4px rgba(63, 57, 53, 0.08),
+    0 8px 16px rgba(107, 148, 79, 0.12),
+    0 24px 48px rgba(63, 57, 53, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  --card-shadow-active:
+    0 1px 3px rgba(63, 57, 53, 0.1),
+    0 6px 12px rgba(107, 148, 79, 0.12),
+    0 14px 28px rgba(63, 57, 53, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+
+  /* Motion — see MOTION SYSTEM below for the tokens used here */
+  --card-lift: -4px;
+  --card-lift-active: -2px;
+  --card-transition:
+    box-shadow var(--duration-slow) var(--ease-standard),
+    transform var(--duration-slow) var(--ease-standard),
+    border-color var(--duration-base) var(--ease-standard),
+    background var(--duration-base) var(--ease-standard);
+
+  /* ========================================
+     MOTION SYSTEM
+     One easing curve. Three durations. No exceptions.
+
+     Motion on this site confirms that something happened.
+     It never performs. Nothing overshoots, nothing bounces,
+     nothing springs back — for an anxious or motion-sensitive
+     visitor, a bouncing element reads as instability, and this
+     is a therapy practice, not a toy.
+     ======================================== */
+
+  /* The single easing curve for the entire site.
+     Quick to leave, long gentle settle, never past the target. */
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* 150ms — state echoes: colour, border, opacity, press */
+  --duration-fast: 150ms;
+  /* 250ms — the default: hover, focus, small reveals */
+  --duration-base: 250ms;
+  /* 400ms — surfaces in motion: cards, entrances, elevation */
+  --duration-slow: 400ms;
+  /* Deliberate exception: the ambient loading pulse only.
+     A loader cycling at 400ms reads as frantic, which is the
+     opposite of what a waiting state should communicate. */
+  --duration-ambient: 1600ms;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  font-weight: var(--weight-body);
   background-color: var(--warm-gray-50);
   color: var(--warm-gray-700);
-  line-height: 1.6;
+  line-height: var(--leading-body);
+  letter-spacing: var(--tracking-body);
+  /* Editorial refinements: proportional-but-lining figures, real kerning,
+     and contextual alternates. These are what separate "typeset" from "typed". */
+  font-kerning: normal;
+  font-variant-numeric: proportional-nums;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-merriweather);
-  font-weight: 700;
-  line-height: 1.3;
+  font-family: var(--font-serif);
   color: var(--warm-gray-900);
-  /* Slight letter-spacing reduction for sophistication; still readable for neurodiverse users */
-  letter-spacing: -0.25px;
+  /* Balanced ragging: keeps multi-line headlines from orphaning a word.
+     Progressive enhancement — ignored by browsers that lack it. */
+  text-wrap: balance;
+  /* Optical sizing lets Fraunces thicken strokes at small sizes and
+     refine them at display sizes automatically. */
+  font-optical-sizing: auto;
+  font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
 }
 
+/* Each step gets its OWN weight, tracking and leading.
+   Large type: light weight, tight tracking, tight leading.
+   Small type: heavier weight, looser tracking, looser leading. */
+
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: var(--step-5);
+  font-weight: var(--weight-h1);
+  line-height: var(--leading-h1);
+  letter-spacing: var(--tracking-h1);
   margin-bottom: 1.5rem;
+  max-width: var(--measure-narrow);
 }
 
 h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  margin-bottom: 1.5rem;
+  font-size: var(--step-4);
+  font-weight: var(--weight-h2);
+  line-height: var(--leading-h2);
+  letter-spacing: var(--tracking-h2);
+  margin-bottom: 1.25rem;
+  max-width: 34ch;
 }
 
 h3 {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  margin-bottom: 1rem;
+  font-size: var(--step-3);
+  font-weight: var(--weight-h3);
+  line-height: var(--leading-h3);
+  letter-spacing: var(--tracking-h3);
+  margin-bottom: 0.875rem;
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: var(--step-2);
+  font-weight: var(--weight-h4);
+  line-height: var(--leading-h4);
+  letter-spacing: var(--tracking-h4);
   margin-bottom: 0.75rem;
 }
 
+h5 {
+  font-size: var(--step-1);
+  font-weight: var(--weight-emphasis);
+  line-height: var(--leading-lead);
+  letter-spacing: var(--tracking-lead);
+  margin-bottom: 0.5rem;
+}
+
+/* h6 is the one heading that reads as a sans eyebrow, not a serif title. */
+h6 {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 600;
+  line-height: var(--leading-meta);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--warm-gray-600);
+  margin-bottom: 0.5rem;
+}
+
+/* Headings that immediately follow body copy need breathing room above.
+   Owl selector keeps vertical rhythm without per-component margins. */
+* + h2 { margin-top: 3rem; }
+* + h3 { margin-top: 2.25rem; }
+* + h4 { margin-top: 1.75rem; }
+
 p {
-  font-size: 1rem;
-  line-height: 1.85;
-  margin-bottom: 1rem;
-  /* Letter-spacing for ADHD/dyslexia clarity: prevents letter crowding, improves visual distinction */
-  letter-spacing: 0.015em;
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
+  margin-bottom: 1.25rem;
+  /* Slight positive tracking prevents letter crowding — an ADHD/dyslexia aid. */
+  letter-spacing: var(--tracking-body);
   color: var(--warm-gray-700);
+  /* Cap the measure. Long lines are the #1 reason body copy reads cheap. */
+  max-width: var(--measure);
+  /* Avoid single-word last lines. */
+  text-wrap: pretty;
+}
+
+/* ========================================
+   TYPOGRAPHY UTILITY CLASSES
+   Semantic names, not size names, so the scale can be
+   retuned without touching a single component.
+   ======================================== */
+
+/* Oversized hero statement — one per page, maximum. */
+.type-display {
+  font-family: var(--font-serif);
+  font-size: var(--step-6);
+  font-weight: var(--weight-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  color: var(--warm-gray-900);
+  font-optical-sizing: auto;
+  text-wrap: balance;
+  max-width: var(--measure-narrow);
+}
+
+/* Standfirst / intro paragraph. Sits between a headline and body copy. */
+.type-lead {
+  font-family: var(--font-sans);
+  font-size: var(--step-1);
+  font-weight: 400;
+  line-height: var(--leading-lead);
+  letter-spacing: var(--tracking-lead);
+  color: var(--warm-gray-600);
+  max-width: 54ch;
+  text-wrap: pretty;
+}
+
+/* Small print: captions, disclaimers, timestamps. */
+.type-meta {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 500;
+  line-height: var(--leading-meta);
+  letter-spacing: var(--tracking-meta);
+  color: var(--warm-gray-600);
+}
+
+.type-micro {
+  font-family: var(--font-sans);
+  font-size: var(--step--2);
+  font-weight: 500;
+  line-height: var(--leading-meta);
+  letter-spacing: var(--tracking-meta);
+  color: var(--warm-gray-600);
+}
+
+/* Uppercase section label above a heading. */
+.type-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--step--1);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--sage-700);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* Serif pull quote / testimonial voice. */
+.type-quote {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  letter-spacing: var(--tracking-h4);
+  color: var(--warm-gray-900);
+  font-optical-sizing: auto;
+  max-width: var(--measure-narrow);
+  text-wrap: pretty;
+}
+
+/* Tabular figures for prices, times and any aligned numeric column. */
+.type-numeric {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: 'tnum' 1, 'lnum' 1;
+}
+
+/* Constrain any block to a comfortable reading measure. */
+.measure { max-width: var(--measure); }
+.measure-narrow { max-width: var(--measure-narrow); }
+.measure-wide { max-width: var(--measure-wide); }
+
+/* Headings inside cards and other tight containers should not be
+   measure-capped — the container is already doing that job. */
+.card h1, .card h2, .card h3, .card h4,
+.card p,
+.niche-card h1, .niche-card h2, .niche-card h3, .niche-card h4,
+.niche-card p {
+  max-width: none;
+}
+
+/* Centred blocks need auto margins for the measure cap to look intentional. */
+.text-center > p,
+.text-center > h1,
+.text-center > h2,
+.text-center > .type-lead,
+.text-center > .type-display {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
   color: var(--sage-600);
   text-decoration: none;
-  transition: all 0.3s ease;
+
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    text-decoration-color var(--duration-fast) var(--ease-standard);
 }
 
 a:hover {
@@ -102,7 +544,14 @@ a:hover {
   font-weight: 600;
   font-size: 1rem;
   border-radius: 0.375rem;
-  transition: all 0.3s ease-in-out;
+  /* Named properties, not `all`: transitioning `all` animates layout
+     properties too, which is what produces jitter on hover. */
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
   cursor: pointer;
   border: none;
   text-decoration: none;
@@ -127,13 +576,18 @@ a:hover {
   box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
   outline: 2px solid transparent;
   outline-offset: 2px;
-  transition: all 0.15s ease-out;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
 }
 
 .btn-primary:hover {
   background-color: var(--sage-700);
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-  transform: scale(1.03);
+  /* Lift rather than grow. Scaling a button resamples its label and
+     reads as a pop; a 2px rise reads as a reply. */
+  transform: translateY(-2px);
 }
 
 .btn-primary:focus {
@@ -143,7 +597,8 @@ a:hover {
 }
 
 .btn-primary:active {
-  transform: scale(0.98);
+  /* Settle back to rest — the press is felt as the lift disappearing. */
+  transform: translateY(0);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
   background-color: var(--sage-700);
 }
@@ -160,13 +615,23 @@ a:hover {
   transform: translateY(-2px);
 }
 
+.btn-secondary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
+}
+
 .btn-outline {
   border: 2px solid var(--sage-600);
   color: var(--sage-600);
   background-color: transparent;
   outline: 2px solid transparent;
   outline-offset: 2px;
-  transition: all 0.15s ease-out;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
 }
 
 .btn-outline:hover {
@@ -174,7 +639,7 @@ a:hover {
   border-color: var(--sage-700);
   color: var(--sage-700);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-  transform: scale(1.02);
+  transform: translateY(-1px);
 }
 
 .btn-outline:focus {
@@ -187,37 +652,166 @@ a:hover {
   background-color: var(--sage-50);
   border-color: var(--sage-700);
   color: var(--sage-700);
-  transform: scale(0.98);
+  transform: translateY(0);
   box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
 }
 
-/* Utilities */
-.container-base {
+/* ========================================
+   HERO CTA BUTTONS — ensure 48px+ tap target at all widths
+   ======================================== */
+.hero-cta-primary,
+.hero-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard),
+    transform var(--duration-base) var(--ease-standard);
+}
+
+.hero-cta-primary {
+  background-color: var(--sage-600);
+  color: white;
+  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
+}
+
+.hero-cta-primary:hover {
+  background-color: var(--sage-700);
+  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+  transform: translateY(-2px);
+}
+
+.hero-cta-primary:focus-visible {
+  outline: 3px solid var(--sage-600);
+  outline-offset: 3px;
+}
+
+.hero-cta-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
+}
+
+.hero-cta-ghost {
+  background-color: transparent;
+  color: var(--sage-600);
+  border: 2px solid var(--sage-600);
+}
+
+.hero-cta-ghost:hover {
+  background-color: var(--sage-50);
+  border-color: var(--sage-700);
+  color: var(--sage-700);
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+  transform: translateY(-1px);
+}
+
+.hero-cta-ghost:focus-visible {
+  outline: 3px solid var(--sage-600);
+  outline-offset: 3px;
+}
+
+.hero-cta-ghost:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
+}
+
+/* Mobile: ensure buttons are full-width and meet tap target on narrow screens */
+@media (max-width: 640px) {
+  .hero-cta-primary,
+  .hero-cta-ghost {
+    width: 100%;
+  }
+
+  .hero-cta-arrow {
+    display: none;
+  }
+}
+
+/* ========================================
+   LAYOUT PRIMITIVES
+   Compose pages from these instead of ad-hoc padding utilities.
+
+   Sections (vertical rhythm):
+     .section-padding     standard band (64 / 80 / 96px)
+     .section-padding-sm  tight interstitial (40 / 48 / 56px)
+     .section-padding-lg  hero / major opening (80 / 96 / 128px)
+
+   Containers (horizontal rhythm + max-width):
+     .container-base      1280px page shell
+     .container-wide      1024px feature + card layouts
+     .container-prose      768px long-form reading
+     .container-narrow     672px focused single column
+   All four supply the same responsive gutter, so never pair them
+   with px-* utilities.
+
+   Grids:
+     .grid-cards          responsive auto-fit card grid, 32px gap
+     .stack-block         48px rhythm between sibling blocks
+   ======================================== */
+
+.container-base,
+.container-wide,
+.container-prose,
+.container-narrow {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: 80rem;
+  padding-left: var(--container-gutter);
+  padding-right: var(--container-gutter);
   width: 100%;
 }
 
+.container-base { max-width: var(--container-max); }
+.container-wide { max-width: var(--container-wide); }
+.container-prose { max-width: var(--container-prose); }
+.container-narrow { max-width: var(--container-narrow); }
+
 .section-padding {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
 }
 
-@media (min-width: 768px) {
-  .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+.section-padding-sm {
+  padding-top: var(--section-y-sm);
+  padding-bottom: var(--section-y-sm);
 }
 
-@media (min-width: 1024px) {
-  .section-padding {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
+.section-padding-lg {
+  padding-top: var(--section-y-lg);
+  padding-bottom: var(--section-y-lg);
+}
+
+/* Responsive card grid — replaces hand-rolled grid md:grid-cols-N gap-N */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-card);
+}
+
+.grid-cards-tight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap-tight);
+}
+
+/* Consistent rhythm between stacked blocks inside a section */
+.stack-block > * + * {
+  margin-top: var(--stack-block);
+}
+
+/* Section heading cluster: heading + lead paragraph, then breathing room */
+.section-heading {
+  margin-bottom: var(--stack-lead);
 }
 
 .hero-section {
@@ -227,8 +821,20 @@ a:hover {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--sage-50) 100%);
+  padding-top: var(--section-y-lg);
+  padding-bottom: var(--section-y-lg);
+  background: var(--grad-sage-mist);
   box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5), 0 20px 40px -10px rgba(107, 148, 79, 0.12);
+}
+
+/* A second, barely-perceptible sage bloom in the hero corner — adds depth
+   without adding another colour. */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 15% 15%, rgba(130, 168, 108, 0.07) 0%, transparent 58%);
 }
 
 @media (min-width: 768px) {
@@ -237,46 +843,119 @@ a:hover {
   }
 }
 
-.card {
-  background-color: white;
-  border-radius: 0.75rem;
-  /* Enhanced shadow hierarchy: deeper base + stronger hover elevation */
-  box-shadow: 
-    0 1px 2px rgba(63, 57, 53, 0.04),
-    0 4px 8px rgba(107, 148, 79, 0.05),
-    0 12px 24px rgba(63, 57, 53, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  padding: 2rem;
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-  /* Subtle side + bottom border for visual definition + sage top accent for hierarchy */
-  border: 1px solid rgba(209, 220, 200, 0.6);
-  border-top: 3px solid #6b944f;
+/* ========================================
+   UNIFIED CARD SYSTEM
+   One rule set drives every card surface:
+   .card              — the base surface (testimonials, FAQ, benefits, guides)
+   .niche-card        — the same surface, wired for whole-card link affordance
+   Variants: .card-sage / .card-warm / .card-info / .card-success (accent hue)
+             .card-compact / .card-flush (padding scale)
+             .card-static (opt out of the hover lift)
+   Do NOT add one-off bg-white + rounded-lg + shadow-* card styles in JSX —
+   compose these classes instead so radius, depth, padding and lift stay in sync.
+   ======================================== */
+
+.card,
+.niche-card {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.3) 100%);
+  background-color: white;
+  background: var(--card-surface);
+  border-radius: var(--card-radius);
+  border: var(--card-border-width) solid var(--card-border-color);
+  border-top: var(--card-accent-width) solid var(--card-accent-color);
+  box-shadow: var(--card-shadow-rest);
+  padding: var(--card-padding);
+  transition: var(--card-transition);
 }
 
-/* Card variant with rose/warm accent for testimonials & CTAs */
-.card.card-warm {
-  border-top-color: #d97757;
+/* Accent variants — the only thing a variant is allowed to change is hue */
+.card.card-sage,
+.niche-card.card-sage {
+  --card-accent-color: var(--sage-600);
 }
 
-/* Card variant with sage accent (default) */
-.card.card-sage {
-  border-top-color: #6b944f;
+.card.card-warm,
+.niche-card.card-warm,
+.card.card-elevated,
+.niche-card.card-elevated {
+  --card-accent-color: var(--accent-warm);
 }
 
-/* Card variant with soft blue accent for FAQ/information cards */
-.card.card-info {
-  border-top-color: #6b94cf;
+.card.card-info,
+.niche-card.card-info {
+  --card-accent-color: var(--dusk-500);
 }
 
-/* Card variant with soft gold accent for success/highlights */
-.card.card-success {
-  border-top-color: #d4a574;
+.card.card-success,
+.niche-card.card-success {
+  --card-accent-color: var(--honey-400);
 }
 
-.card::before {
+/* Remaining persona accent variants, so a page never needs an inline hex */
+.card.card-clay,
+.niche-card.card-clay {
+  --card-accent-color: var(--clay-500);
+}
+
+.card.card-dusk,
+.niche-card.card-dusk {
+  --card-accent-color: var(--dusk-600);
+}
+
+.card.card-honey,
+.niche-card.card-honey {
+  --card-accent-color: var(--honey-500);
+}
+
+.card.card-blush,
+.niche-card.card-blush {
+  --card-accent-color: var(--blush-500);
+}
+
+/* Padding scale */
+.card.card-compact,
+.niche-card.card-compact {
+  padding: var(--card-padding-compact);
+}
+
+.card.card-flush,
+.niche-card.card-flush {
+  padding: 0;
+}
+
+/* Tinted panel variant — same geometry/depth, sage-washed surface.
+   Use for supporting/explainer panels instead of a bespoke rounded div. */
+.card.card-tinted {
+  background: linear-gradient(135deg, var(--sage-50) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border-color: var(--sage-200);
+}
+
+.card.card-tinted:hover,
+.card.card-tinted:focus-within {
+  background: linear-gradient(135deg, var(--sage-50) 0%, rgba(255, 255, 255, 0.85) 100%);
+}
+
+/* Left-accent callout variant — same radius, depth, padding and border weight
+   as every other card; the accent simply moves from the top edge to the left.
+   Pages may override just the hue with an inline borderLeftColor. */
+.card.card-callout,
+.niche-card.card-callout {
+  border-top: var(--card-border-width) solid var(--card-border-color);
+  border-left: 4px solid var(--card-accent-color);
+}
+
+.card.card-callout:hover,
+.card.card-callout:focus-within,
+.niche-card.card-callout:hover,
+.niche-card.card-callout:focus-within {
+  border-top-color: var(--card-border-color-hover);
+  border-left-color: var(--card-accent-color);
+}
+
+/* Shared decorative layers: specular top highlight + soft interior wash */
+.card::before,
+.niche-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -285,57 +964,119 @@ a:hover {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent);
   pointer-events: none;
-  /* Top accent border: subtle gradient to enhance perceived depth */
   z-index: 2;
 }
 
-.card::after {
+.card::after,
+.niche-card::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 20% 30%, rgba(130, 168, 108, 0.02) 0%, transparent 60%);
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(130, 168, 108, 0.04) 0%, transparent 60%);
+  border-radius: var(--card-radius);
   pointer-events: none;
-  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity var(--duration-slow) var(--ease-standard);
 }
 
-.card > * {
+.card > *,
+.niche-card > * {
   position: relative;
   z-index: 1;
 }
 
-.card:hover {
-  /* Enhanced elevation on hover with stronger shadow hierarchy for interactive feedback */
-  box-shadow: 
-    0 2px 4px rgba(63, 57, 53, 0.08),
-    0 8px 16px rgba(107, 148, 79, 0.12),
-    0 24px 48px rgba(63, 57, 53, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
-  border-color: rgba(130, 168, 108, 0.7);
-  border-top-color: inherit;
-  transform: translateY(-6px);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 247, 0.5) 100%);
+/* Single hover treatment: same lift, same depth step, same border warm-up */
+.card:hover,
+.card:focus-within,
+.niche-card:hover,
+.niche-card:focus-within {
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--card-border-color-hover);
+  border-top-color: var(--card-accent-color);
+  transform: translateY(var(--card-lift));
+  background: var(--card-surface-hover);
 }
 
-/* Section gradient backgrounds */
+.card:hover::after,
+.card:focus-within::after,
+.niche-card:hover::after,
+.niche-card:focus-within::after {
+  opacity: 1;
+}
+
+/* Pressed state for the cards that are actually clickable */
+.niche-card:active,
+a:active > .card,
+a:active > .niche-card {
+  transform: translateY(var(--card-lift-active));
+  box-shadow: var(--card-shadow-active);
+}
+
+/* Opt-out for cards used as static content panels */
+.card.card-static:hover,
+.card.card-static:focus-within {
+  transform: none;
+  box-shadow: var(--card-shadow-rest);
+}
+
+/* Mobile: tighten padding, drop the lift (no hover on touch) */
+@media (max-width: 640px) {
+  .card,
+  .niche-card {
+    padding: var(--card-padding-mobile);
+  }
+}
+
+.niche-card {
+  cursor: pointer;
+}
+
+/* ========================================
+   SECTION GRADIENT BACKGROUNDS
+   Alternate these down a page to create rhythm out of light rather than
+   out of colour. All are sage/warm-neutral washes — never a saturated band.
+   ======================================== */
 .section-gradient-warm {
-  background: linear-gradient(180deg, var(--sage-50) 0%, white 100%);
+  background: var(--grad-sage-veil);
 }
 
 .section-gradient-subtle {
-  background: linear-gradient(180deg, var(--warm-gray-50) 0%, white 100%);
+  background: var(--grad-warm-veil);
 }
 
 .section-gradient-reverse {
-  background: linear-gradient(180deg, white 0%, var(--sage-50) 100%);
+  background: var(--grad-sage-veil-up);
 }
+
+/* Diagonal sage mist — for hero-adjacent or closing sections */
+.section-gradient-mist {
+  background: var(--grad-sage-mist);
+}
+
+/* Warm linen — cream/warm-gray, for editorial or long-read sections */
+.section-gradient-linen {
+  background: var(--grad-warm-linen);
+}
+
+/* Persona-tinted section washes. Use at most once per page, for the
+   section that carries that persona's message. */
+.section-gradient-clay  { background: var(--grad-clay-veil); }
+.section-gradient-dusk  { background: var(--grad-dusk-veil); }
+.section-gradient-honey { background: var(--grad-honey-veil); }
+.section-gradient-blush { background: var(--grad-blush-veil); }
+
+/* Soft tint panels — a flat persona wash for callouts inside a section */
+.tint-sage  { background: var(--sage-50); }
+.tint-clay  { background: var(--clay-50); }
+.tint-dusk  { background: var(--dusk-50); }
+.tint-honey { background: var(--honey-50); }
+.tint-blush { background: var(--blush-50); }
+.tint-alert { background: var(--alert-50); }
 
 /* Floating elements with enhanced shadow */
 .floating-element {
   box-shadow: 0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1);
-  transition: all 0.3s ease;
+  transition: box-shadow var(--duration-slow) var(--ease-standard);
 }
 
 .floating-element:hover {
@@ -351,7 +1092,10 @@ textarea {
   border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
-  transition: all 0.3s ease;
+  transition:
+    border-color var(--duration-base) var(--ease-standard),
+    background-color var(--duration-base) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard);
   background-color: white;
   /* Mobile-first touch targets: 48px minimum height for WCAG compliance */
   min-height: 48px;
@@ -378,34 +1122,35 @@ textarea:focus {
     inset 0 1px 2px rgba(157, 187, 141, 0.08);
 }
 
-/* Validation states */
+/* Validation states — muted brick, never a harsh alarm red. Colour is only
+   ever one of several cues (icon + message text carry the meaning too). */
 .form-input[aria-invalid="true"],
 .form-select[aria-invalid="true"],
 textarea[aria-invalid="true"] {
-  border-color: #ef4444;
-  background-color: #fef2f2;
+  border-color: var(--alert-500);
+  background-color: var(--alert-50);
 }
 
 .form-input[aria-invalid="true"]:focus,
 .form-select[aria-invalid="true"]:focus,
 textarea[aria-invalid="true"]:focus {
-  border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+  border-color: var(--alert-500);
+  box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.12);
 }
 
 /* Success state */
-.form-input.border-green-500,
-.form-select.border-green-500,
-textarea.border-green-500 {
-  border-color: #16a34a;
-  background-color: #f0fdf4;
+.form-input.border-sage-500,
+.form-select.border-sage-500,
+textarea.border-sage-500 {
+  border-color: #6b944f;
+  background-color: #f8faf7;
 }
 
-.form-input.border-green-500:focus,
-.form-select.border-green-500:focus,
-textarea.border-green-500:focus {
-  border-color: #16a34a;
-  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+.form-input.border-sage-500:focus,
+.form-select.border-sage-500:focus,
+textarea.border-sage-500:focus {
+  border-color: #6b944f;
+  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
 }
 
 .form-label {
@@ -439,104 +1184,139 @@ textarea.border-green-500:focus {
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeInUp var(--duration-slow) var(--ease-standard) both;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out;
+  animation: fadeIn var(--duration-slow) var(--ease-standard) both;
 }
 
-/* Mobile adjustments */
+/* Tablet/iPad specific adjustments (768px — improve mid-size layout) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .grid-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .card h1, .card h2, .card h3 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Ensure buttons don't overlap or squeeze on tablet */
+  .btn-primary, .btn-secondary, .btn-outline {
+    min-height: 48px;
+    padding: 0.875rem 1.5rem;
+  }
+
+  /* Hero section spacing improvements for tablet */
+  .hero-section {
+    min-height: 600px;
+  }
+}
+
+/* Mobile adjustments (375px — ultra-narrow)
+   Adding specific handling for phones that were previously treated as "640px default" */
+@media (max-width: 375px) {
+  :root {
+    /* Tighter gutter on ultra-narrow: keep text readable, avoid cramping */
+    --container-gutter: 1rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    /* Prevent overflow on very narrow screens */
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .btn {
+    min-height: 48px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-secondary, .btn-outline {
+    width: 100%;
+  }
+
+  /* Grid cards need to be full-width on ultra-narrow to prevent cramping */
+  .grid-cards, .grid-cards-tight {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reduce card padding on 375px */
+  .card, .niche-card {
+    padding: var(--card-padding-mobile);
+  }
+
+  /* Hero section text should not have max-width constraints */
+  .hero-section h1,
+  .hero-section h2 {
+    max-width: none;
+  }
+
+  /* Ensure all interactive elements meet 48px minimum */
+  a[role="button"], button, [role="button"] {
+    min-height: 48px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Mobile adjustments (general 640px and below)
+   NOTE: heading and body sizes are NOT overridden here. The fluid clamp()
+   scale already resolves to its mobile end below 768px, and hardcoding
+   sizes here would flatten the modular ratio. Only rhythm is tuned. */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  h1, h2 {
+    /* Slightly tighter leading is safe once type is physically smaller. */
+    line-height: 1.14;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  /* On a narrow screen the viewport IS the measure — uncapping avoids
+     a too-short column when combined with container padding. */
+  h1, h2, p, .type-lead, .type-display, .type-quote {
+    max-width: none;
   }
 
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
+  /* Reclaim vertical space: the desktop owl-margins are too generous here. */
+  * + h2 { margin-top: 2.25rem; }
+  * + h3 { margin-top: 1.75rem; }
 }
 
-/* NicheGrid card hover effects - works on both mouse and touch */
-.niche-card {
-  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-  cursor: pointer;
-  position: relative;
-  border-top: 3px solid #6b944f;
-  border-left: 1px solid rgba(209, 220, 200, 0.6);
-  border-right: 1px solid rgba(209, 220, 200, 0.6);
-  border-bottom: 1px solid rgba(209, 220, 200, 0.6);
-  border-radius: 0.75rem;
+
+/* NicheGrid interaction extras — surface itself comes from the unified card
+   system above; only the affordance-specific bits live here. */
+.niche-card:hover,
+.niche-card:focus-within {
+  background: var(--sage-50);
 }
 
-.niche-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 30% 30%, rgba(130, 168, 108, 0.03) 0%, transparent 70%);
-  pointer-events: none;
-  border-radius: 0.75rem;
-  opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-.niche-card:hover {
-  transform: translateY(-8px);
-  background-color: var(--sage-50);
-  box-shadow: 
-    0 2px 4px rgba(63, 57, 53, 0.08),
-    0 8px 16px rgba(107, 148, 79, 0.12),
-    0 24px 48px rgba(63, 57, 53, 0.15);
-}
-
-.niche-card:hover::after {
-  opacity: 1;
-}
-
-.niche-card:active {
-  transform: translateY(-8px);
-  background-color: var(--sage-50);
-  box-shadow: 
-    0 2px 4px rgba(63, 57, 53, 0.08),
-    0 8px 16px rgba(107, 148, 79, 0.12),
-    0 24px 48px rgba(63, 57, 53, 0.15);
-}
-
-/* Arrow animation on hover/active */
+/* Arrow nudge on hover/active.
+   Previously a 600ms keyframe loop that slid out and snapped back —
+   it drew the eye away from the card it was meant to point at. Now
+   the arrow simply moves and stays put while hovered, which is what
+   a directional affordance should do. */
 .explore-arrow {
   display: inline-block;
-  transition: all 0.3s ease;
+  transition:
+    transform var(--duration-base) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
   color: var(--sage-600);
 }
 
 .niche-card:hover .explore-arrow,
 .niche-card:active .explore-arrow {
   color: var(--sage-700);
-  animation: arrowBounce 0.6s ease;
+  transform: translateX(4px);
 }
 
-@keyframes arrowBounce {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(4px); }
-}
-
-/* Outline button hover effect - works on both mouse and touch */
-.btn-outline {
-  transition: all 0.3s ease;
-}
-
+/* Outline button hover/active colours — works on mouse and touch.
+   Transition intentionally omitted here: the canonical one is declared
+   on .btn-outline above, and redeclaring `all 0.3s ease` at this point
+   in the cascade was quietly overriding it. */
 .btn-outline:hover {
   background-color: var(--sage-50);
   border-color: var(--sage-700);
@@ -590,13 +1370,8 @@ textarea.border-green-500:focus {
   opacity: 0.6;
 }
 
-/* Refined card borders for better visual hierarchy */
-.card-elevated {
-  border: 1px solid var(--sage-200);
-  border-top: 3px solid #d97757;
-  position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.3) 100%);
-}
+/* .card-elevated is retained as a legacy alias only; it maps to the warm accent
+   variant in the unified card system above and carries no geometry of its own. */
 
 /* Section spacing enhancement */
 section {
@@ -638,14 +1413,13 @@ section:not(:first-of-type)::before {
     animation: none !important;
   }
 
-  /* Remove card elevation on hover (preserve color change for visual feedback) */
-  .card:hover {
+  /* Cards keep the border/background feedback but never move or re-elevate */
+  .card:hover,
+  .card:focus-within,
+  .niche-card:hover,
+  .niche-card:focus-within {
     transform: none !important;
-    box-shadow: 
-      0 1px 2px rgba(63, 57, 53, 0.04),
-      0 4px 8px rgba(107, 148, 79, 0.05),
-      0 12px 24px rgba(63, 57, 53, 0.08),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+    box-shadow: var(--card-shadow-rest) !important;
   }
 
   /* Remove button transform on hover/active (keep color/shadow for feedback) */
@@ -656,9 +1430,10 @@ section:not(:first-of-type)::before {
     transform: none !important;
   }
 
-  /* Remove niche card elevation (preserve background color change) */
-  .niche-card:hover,
-  .niche-card:active {
+  .card:active,
+  .niche-card:active,
+  a:active > .card,
+  a:active > .niche-card {
     transform: none !important;
   }
 
@@ -778,7 +1553,11 @@ textarea[aria-invalid="true"]::after {
   content: " ⚠"; /* Visual icon in addition to color */
 }
 
-/* Loading states: subtle pulse instead of spin (vestibular-friendly) */
+/* Loading states: a slow opacity breath instead of a spinner.
+   Spinners imply speed and create rotational motion that can trigger
+   vestibular symptoms; a soft fade reads as "still working" without
+   demanding attention. Uses --duration-ambient, the one sanctioned
+   exception to the 150/250/400 scale. */
 @keyframes subtle-pulse {
   0%, 100% {
     opacity: 1;
@@ -789,7 +1568,7 @@ textarea[aria-invalid="true"]::after {
 }
 
 .loader {
-  animation: subtle-pulse 1.5s ease-in-out infinite;
+  animation: subtle-pulse var(--duration-ambient) var(--ease-standard) infinite;
 }
 
 /* Ensure text is left-aligned, never justified (improves readability for dyslexia) */
@@ -800,20 +1579,34 @@ td {
   text-align: left;
 }
 
-/* Improved line-height for readability (especially for neurodivergent users) */
+/* Improved line-height for readability (especially for neurodivergent users).
+   These inherit from the type scale tokens so there is exactly one place
+   to retune leading. Previously these hardcoded values silently overrode
+   the heading/body rules defined above. */
 body {
-  line-height: 1.6;
+  line-height: var(--leading-body);
 }
 
 p, li {
-  line-height: 1.75;
+  line-height: var(--leading-body);
 }
 
-/* Headings: clear hierarchy, high contrast */
+li {
+  font-size: var(--step-0);
+  letter-spacing: var(--tracking-body);
+  margin-bottom: 0.5rem;
+  max-width: var(--measure);
+}
+
+/* Headings: clear hierarchy, high contrast.
+   Weight is intentionally NOT set here — each level owns its own weight
+   in the type scale above (400 for display sizes, up to 600 for small
+   ones) so optical heft stays even across the ramp. A blanket 700 here
+   would flatten that hierarchy. */
 h1, h2, h3, h4, h5, h6 {
   color: var(--warm-gray-900);
-  font-weight: 700;
 }
+
 
 /* Success indication: use color + text, not color alone */
 .success-message::before {
@@ -830,7 +1623,10 @@ table thead th {
 
 /* LINK BUTTONS: Subtle hover with underline enhancement */
 .btn-link {
-  transition: all 0.15s ease-out;
+  transition:
+    color var(--duration-fast) var(--ease-standard),
+    border-bottom-color var(--duration-fast) var(--ease-standard),
+    opacity var(--duration-fast) var(--ease-standard);
   color: var(--sage-600);
   text-decoration: none;
   border-bottom: 2px solid var(--sage-600);
@@ -853,27 +1649,114 @@ table thead th {
 
 .btn-link:active {
   opacity: 0.85;
-  transform: scale(0.98);
 }
 
-/* Reduced motion support - respect user preferences */
+/* ------------------------------------------------------------------ */
+/* Specialty page template (components/SpecialtyPage.tsx)              */
+/* Shared rhythm so every persona page reads identically.              */
+/* ------------------------------------------------------------------ */
+
+/* Body copy inside cards / callouts / FAQ answers: consistent spacing,
+   no trailing margin so card padding stays even. */
+.specialty-card-body > *:last-child {
+  margin-bottom: 0;
+}
+
+.specialty-card-body p {
+  margin-bottom: 1rem;
+}
+
+.specialty-card-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.specialty-card-body ul > li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.specialty-card-body ul > li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--warm-gray-300);
+}
+
+.specialty-card-body ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* FAQ accordion: hide the native disclosure marker on all browsers. */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ========================================
+   REDUCED MOTION — FINAL SAFETY NET
+   Last in the cascade on purpose: whatever any rule above
+   declared, these win. The rules earlier in this file cover
+   specific components; this block guarantees that anything
+   added later is caught by default rather than by memory.
+   ======================================== */
 @media (prefers-reduced-motion: reduce) {
-  .btn-primary,
-  .btn-outline,
-  .btn-link,
-  .niche-card,
-  a {
-    transition: none;
+  /* Nothing animates, nothing transitions, nothing auto-scrolls.
+     Durations collapse to ~0 rather than `none` so that
+     transitionend / animationend listeners still fire and no
+     JS that waits on them can hang. */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
   }
-  
+
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  /* Neutralise every displacement in the system. State is still
+     communicated — colour, border, shadow and outline all remain —
+     but nothing changes position or size. */
   .btn-primary:hover,
-  .btn-outline:hover,
-  .niche-card:hover {
-    transform: none;
-  }
-  
   .btn-primary:active,
-  .btn-outline:active {
-    transform: none;
+  .btn-secondary:hover,
+  .btn-secondary:active,
+  .btn-outline:hover,
+  .btn-outline:active,
+  .btn-link:active,
+  .card:hover,
+  .card:focus-within,
+  .card:active,
+  .niche-card:hover,
+  .niche-card:focus-within,
+  .niche-card:active,
+  a:active > .card,
+  a:active > .niche-card,
+  .niche-card:hover .explore-arrow,
+  .niche-card:active .explore-arrow {
+    transform: none !important;
+  }
+
+  /* The loading pulse is the one looping animation on the site.
+     Hold it at full opacity rather than leaving it mid-fade. */
+  .loader {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Entrance animations must not leave content stranded at
+     opacity 0 if the animation is effectively skipped. */
+  .animate-fade-in,
+  .animate-fade-in-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

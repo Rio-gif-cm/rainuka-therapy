@@ -84,17 +84,17 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     switch (name) {
       case 'name':
         if (!value || (typeof value === 'string' && !validateName(value as string))) {
-          return "Just need your name so I know what to call you."
+          return "Your name helps me know how to greet you. First name or full name—whatever feels right."
         }
         break
       case 'email':
         if (!value || (typeof value === 'string' && !validateEmail(value as string))) {
-          return "So I can send you confirmation and next steps—let me know if I got it right."
+          return "I'll send your confirmation and availability to this email. Double-check it's correct."
         }
         break
       case 'phone':
         if (!value || (typeof value === 'string' && !validatePhone(value as string))) {
-          return "I'll need a complete number to reach you."
+          return "Please enter a complete phone number (at least 10 digits) so I can call to confirm."
         }
         break
       case 'concern':
@@ -102,22 +102,22 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         // Research: form abandonment increases 8% per required field. Lowering textarea threshold
         // encourages brief answers, reducing cognitive load on sensitive topic.
         if (!value || (typeof value === 'string' && (value as string).trim().length < 10)) {
-          return "Just a sentence or two about what brought you here helps me understand your situation."
+          return "Share a bit about what's on your mind—even one sentence helps me prepare. We can dive deeper during our call."
         }
         break
       case 'firstTimeTherapy':
         if (value === null) {
-          return 'Let me know if this is your first time seeking therapy.'
+          return "Please let me know if this is your first time exploring therapy - it helps me understand where you're coming from."
         }
         break
       case 'preferredTime':
         if (!value && !formData.selectedDate) {
-          return "Pick a date and time that works for you."
+          return "Choose a date and time that works best for your free call. I'll confirm within 24 hours."
         }
         break
       case 'consent':
         if (!value) {
-          return "I need you to agree so I can move forward—your privacy matters to me too."
+          return "I need you to confirm you're ready to move forward and that you've read the privacy policy."
         }
         break
     }
@@ -284,11 +284,11 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {currentStep === 'contact' && (
       <div className="space-y-4 animate-fade-in-up">
         {/* MICROCOPY WAVE 1: Pre-commitment reassurance - addresses hesitation at form start */}
-        <div className="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4 flex gap-3 items-start">
+        <div className="mb-6 bg-dusk-50 border border-dusk-200 rounded-lg p-4 flex gap-3 items-start">
           <span className="text-lg flex-shrink-0">💭</span>
           <div className="text-sm">
-            <p className="text-blue-900 font-medium mb-1">A quick note:</p>
-            <p className="text-blue-800">
+            <p className="text-dusk-800 font-medium mb-1">A quick note:</p>
+            <p className="text-dusk-700">
               This 3-step form takes ~5 minutes. No commitment—just info to help me prepare for our free call.
             </p>
           </div>
@@ -306,7 +306,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 What should I call you? *
               </label>
               {formData.name && !fieldErrors.name && fieldTouched.name && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -319,12 +319,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="Jane or Jane Doe—whatever feels right"
+              placeholder="Jane or Jane Doe—your preferred name"
               className={`form-input transition-all ${
                 fieldTouched.name
                   ? fieldErrors.name
-                    ? 'border-red-500 bg-red-50 focus:border-red-500'
-                    : 'border-green-500 bg-green-50'
+                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                    : 'border-sage-500 bg-sage-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.name && !!fieldErrors.name}
@@ -332,7 +332,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.name && fieldErrors.name && (
-              <p id="name-error" className="text-red-600 text-sm mt-2 font-medium">
+              <p id="name-error" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.name}
               </p>
             )}
@@ -346,7 +346,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 Best email to reach you *
               </label>
               {formData.email && !fieldErrors.email && fieldTouched.email && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -359,12 +359,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="name@domain.com"
+              placeholder="you@example.com"
               className={`form-input transition-all ${
                 fieldTouched.email
                   ? fieldErrors.email
-                    ? 'border-red-500 bg-red-50 focus:border-red-500'
-                    : 'border-green-500 bg-green-50'
+                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                    : 'border-sage-500 bg-sage-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.email && !!fieldErrors.email}
@@ -372,7 +372,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.email && fieldErrors.email && (
-              <p id="email-error" className="text-red-600 text-sm mt-2 font-medium">
+              <p id="email-error" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.email}
               </p>
             )}
@@ -386,7 +386,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 How to reach you by phone *
               </label>
               {formData.phone && !fieldErrors.phone && fieldTouched.phone && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -399,12 +399,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="555-123-4567 or +1-555-123-4567"
+              placeholder="(555) 123-4567 or +1-555-123-4567"
               className={`form-input transition-all ${
                 fieldTouched.phone
                   ? fieldErrors.phone
-                    ? 'border-red-500 bg-red-50 focus:border-red-500'
-                    : 'border-green-500 bg-green-50'
+                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                    : 'border-sage-500 bg-sage-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.phone && !!fieldErrors.phone}
@@ -412,7 +412,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.phone && fieldErrors.phone && (
-              <p id="phone-error" className="text-red-600 text-sm mt-2 font-medium">
+              <p id="phone-error" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.phone}
               </p>
             )}
@@ -441,7 +441,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 What brings you here, and what are you hoping to work on? *
               </label>
               {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -453,12 +453,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
               onFocus={handleFieldFocus}
-              placeholder="E.g., 'Anxiety about work' or 'Struggling with depression'—even one sentence helps me understand."
+              placeholder="For example: 'I've been dealing with work stress and anxiety' or 'I'm struggling with depression.' We'll dig deeper during our call."
               className={`form-input h-32 resize-none transition-all ${
                 fieldTouched.concern
                   ? fieldErrors.concern
-                    ? 'border-red-500 bg-red-50 focus:border-red-500'
-                    : 'border-green-500 bg-green-50'
+                    ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
+                    : 'border-sage-500 bg-sage-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.concern && !!fieldErrors.concern}
@@ -466,7 +466,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.concern && fieldErrors.concern ? (
-              <p id="concern-error" className="text-red-600 text-sm mt-2 font-medium">
+              <p id="concern-error" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.concern}
               </p>
             ) : (
@@ -479,9 +479,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           {/* WAVE 1 OPTIMIZATION: Micro-reassurance inserted after heavy field */}
           {/* Research: Adding reassurance copy between fields reduces anxiety-driven abandonment by ~7-12% */}
           {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
+            <div className="bg-dusk-50 border border-dusk-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
               <span className="text-sm flex-shrink-0">👍</span>
-              <p className="text-xs text-blue-800">Great—I've got a good sense of your situation. Just a couple more quick details and you'll be done.</p>
+              <p className="text-xs text-dusk-700">Great—I've got a good sense of your situation. Just a couple more quick details and you'll be done.</p>
             </div>
           )}
 
@@ -493,7 +493,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 Is this your first time seeking therapy? *
               </label>
               {formData.firstTimeTherapy !== null && !fieldErrors.firstTimeTherapy && fieldTouched.firstTimeTherapy && (
-                <span className="text-green-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -553,7 +553,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               </div>
             </div>
             {fieldTouched.firstTimeTherapy && fieldErrors.firstTimeTherapy && (
-              <p id="firstTimeTherapy-error" className="text-red-600 text-sm font-medium">
+              <p id="firstTimeTherapy-error" className="text-alert-600 text-sm font-medium">
                 {fieldErrors.firstTimeTherapy}
               </p>
             )}
@@ -607,17 +607,17 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           </div>
 
           {/* MICROCOPY OPTIMIZATION: Reassurance moved UP, before CTA - addresses trust anxiety before submission */}
-          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+          <div className="card card-tinted card-compact card-static">
             <div className="flex gap-3">
               <span className="text-lg flex-shrink-0">✓</span>
               <div>
-                <p className="text-sm font-semibold text-green-900">100% confidential &amp; HIPAA-protected</p>
-                <p className="text-xs text-green-800 mt-1">Your privacy and trust matter. Everything you share is secure and stays between us.</p>
+                <p className="text-sm font-semibold text-sage-800">100% confidential &amp; HIPAA-protected</p>
+                <p className="text-xs text-sage-700 mt-1">Your privacy and trust matter. Everything you share is secure and stays between us.</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-lg p-5">
+          <div className="bg-gradient-to-r from-honey-50 to-honey-50 border border-honey-200 rounded-lg p-5">
             <div className="space-y-3">
               <div className="flex gap-2">
                 <span className="text-xl">⏰</span>
@@ -638,7 +638,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
           <div className={`flex items-start gap-3 p-4 rounded-lg transition-all ${
             fieldTouched.consent && fieldErrors.consent
-              ? 'bg-red-50 border border-red-300'
+              ? 'bg-alert-50 border border-alert-300'
               : ''
           }`}>
             <input
@@ -654,11 +654,11 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
             <label htmlFor="consent" className="text-sm text-warm-gray-600 cursor-pointer flex-1">
-              I'm ready—please reach out by email and phone to confirm our appointment. I've read and understand the privacy policy.
+              I'm ready to book. I understand I'll be contacted by phone and email, and I've reviewed the privacy policy.
             </label>
           </div>
           {fieldTouched.consent && fieldErrors.consent && (
-            <p id="consent-error" className="text-red-600 text-sm font-medium">
+            <p id="consent-error" className="text-alert-600 text-sm font-medium">
               {fieldErrors.consent}
             </p>
           )}
@@ -667,22 +667,22 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
       {/* Success Message - MICROCOPY WAVE 1: Celebratory state with timeline clarity */}
       {submitSuccess && (
-        <div className="card bg-green-50 border-2 border-green-400 animate-fade-in-up">
+        <div className="card bg-sage-50 border-2 border-sage-400 animate-fade-in-up">
           <div className="flex items-start gap-3">
             <span className="text-3xl">🎉</span>
             <div className="flex-1">
-              <p className="text-green-900 font-semibold mb-2">
-                Your call is booked!
+              <p className="text-sage-800 font-semibold mb-2">
+                Great! Your session is booked.
               </p>
-              <p className="text-green-800 text-sm mb-4">
-                Thank you! I've received your information and will reach out within 24 hours with available times for your free 15-minute consultation.
+              <p className="text-sage-700 text-sm mb-4">
+                I've received your information and will contact you within 24 hours to confirm your free 15-minute call and find a time that works for you.
               </p>
-              <div className="bg-white/60 rounded p-3 text-xs text-green-900 border border-green-200">
-                <p className="font-medium mb-2">What to expect:</p>
+              <div className="bg-white/60 rounded p-3 text-xs text-sage-800 border border-sage-200">
+                <p className="font-medium mb-2">What happens next:</p>
                 <ul className="space-y-1 list-disc list-inside">
                   <li>📧 Confirmation email within 1 hour</li>
-                  <li>📞 Phone call within 24 hours</li>
-                  <li>📅 First call typically within 1-2 weeks</li>
+                  <li>📞 I'll call within 24 hours to confirm</li>
+                  <li>📅 We'll schedule your free call for the next 1-2 weeks</li>
                 </ul>
               </div>
             </div>
@@ -692,14 +692,14 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
       {/* Error Message - MICROCOPY WAVE 1: Warm recovery with multiple paths */}
       {submitError && (
-        <div className="card bg-red-50 border-2 border-red-400 animate-fade-in-up">
+        <div className="card bg-alert-50 border-2 border-alert-300 animate-fade-in-up">
           <div className="flex items-start gap-3">
             <span className="text-2xl">⚠️</span>
             <div className="flex-1">
-              <p className="text-red-900 font-semibold mb-2">
-                We hit a small hiccup
+              <p className="text-alert-700 font-semibold mb-2">
+                Something went wrong
               </p>
-              <p className="text-red-800 text-sm mb-4">
+              <p className="text-alert-600 text-sm mb-4">
                 {submitError}
               </p>
               <div className="flex gap-3 flex-wrap">
@@ -707,14 +707,14 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                   onClick={() => {
                     setSubmitError(null)
                   }}
-                  className="text-sm font-medium text-red-700 hover:text-red-900 hover:underline transition-colors"
+                  className="text-sm font-medium text-alert-600 hover:text-alert-700 hover:underline transition-colors"
                 >
-                  ↻ Try again
+                  ↻ Try submitting again
                 </button>
-                <span className="text-red-700">•</span>
+                <span className="text-alert-600">•</span>
                 <a
                   href="mailto:hello@rainukatherapy.com"
-                  className="text-sm font-medium text-red-700 hover:text-red-900 hover:underline transition-colors"
+                  className="text-sm font-medium text-alert-600 hover:text-alert-700 hover:underline transition-colors"
                 >
                   📧 Email me directly
                 </a>
@@ -755,7 +755,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             disabled={isSubmitting}
             className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? '🔒 Securing your information...' : 'Secure My Consultation'}
+            {isSubmitting ? '🔒 Booking your session...' : 'Book my session'}
           </button>
         )}
       </div>

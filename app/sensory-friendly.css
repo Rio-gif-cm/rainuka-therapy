@@ -33,11 +33,11 @@ html.sensory-friendly-mode * {
 html.sensory-friendly-mode {
   /* Increase contrast */
   --warm-gray-900: #1a1614 !important; /* Darker text */
-  --sage-700: #2d4a23 !important;      /* Darker sage accents */
+  --sage-700: #334c27 !important;      /* Darker sage accents */
   
   /* High contrast mode: boost color saturation */
-  --sage-600: #5a8c3d !important;
-  --accent-warm: #c85a3d !important;
+  --sage-600: #6b944f !important;
+  --accent-warm: #c96547 !important;
 }
 
 html.sensory-friendly-mode body {

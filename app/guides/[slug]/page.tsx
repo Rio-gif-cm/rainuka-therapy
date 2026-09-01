@@ -89,7 +89,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
 
           {/* CTA */}
           <aside className="mt-16 pt-12 border-t border-sage-200">
-            <div className="bg-sage-50 p-8 rounded-lg">
+            <div className="card card-tinted card-static">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
                 Ready to start your therapy journey?
               </h3>

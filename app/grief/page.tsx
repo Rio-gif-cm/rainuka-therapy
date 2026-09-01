@@ -4,6 +4,8 @@ import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+import TestimonialCard from '@/components/TestimonialCard'
+import { testimonialsByCategory } from '@/src/data/testimonials'
 
 export default function GriefPage() {
   return (
@@ -11,13 +13,13 @@ export default function GriefPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero - Grief: Deep indigo accents (#5B6B8B) for depth, compassion, and holding space */}
+        {/* Hero - Grief: Deep indigo accents (#3f566d) for depth, compassion, and holding space */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(241, 244, 249, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Grief & Loss Therapy
+              Grief Therapy That Honors Your Loss
             </h1>
-            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#5B6B8B'}}>
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#3f566d'}}>
               Loss is real. Your grief is normal.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
@@ -25,7 +27,7 @@ export default function GriefPage() {
               Every loss deserves space to be felt, understood, and integrated—not &quot;moved past.&quot;
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
-              Schedule Your Free 30-Min Call
+              Get Support That Gets You
             </Link>
           </div>
         </section>
@@ -43,7 +45,7 @@ export default function GriefPage() {
                 the weight of meaning. When someone or something mattered, losing them matters too.
               </p>
 
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+              <div className="bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded">
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Truth:</p>
                 <p>
                   Grief is the normal, healthy response to loss. There&apos;s no timeline for &quot;getting over it.&quot; 
@@ -64,7 +66,7 @@ export default function GriefPage() {
         <SectionDivider />
 
         {/* Types of Grief */}
-        <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+        <section className="section-padding bg-gradient-to-b from-white to-warm-gray-50">
           <div className="container-base">
             <IconHeading icon="🌍" level={2} color={colors.warmGray[900]}>
               Types of Grief & Loss
@@ -103,7 +105,7 @@ export default function GriefPage() {
                   icon: '🌫️'
                 },
               ].map((type, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:border-blue-300 transition">
+                <div key={index} className="card card-compact card-static">
                   <p className="text-4xl mb-3">{type.icon}</p>
                   <h3 className="text-xl font-semibold text-warm-gray-900 mb-2">{type.title}</h3>
                   <p className="text-warm-gray-700">{type.description}</p>
@@ -111,7 +113,7 @@ export default function GriefPage() {
               ))}
             </div>
 
-            <div className="mt-12 max-w-3xl mx-auto bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+            <div className="mt-12 max-w-3xl mx-auto bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded">
               <p className="font-semibold text-warm-gray-900 mb-2">Important:</p>
               <p className="text-warm-gray-700">
                 If your loss isn&apos;t listed here, it still matters. Grief meets us in places others might not understand—
@@ -181,12 +183,12 @@ export default function GriefPage() {
                     ]
                   }
                 ].map((phase, index) => (
-                  <div key={index} className="border-l-4 border-blue-400 pl-6 py-4">
+                  <div key={index} className="border-l-4 border-dusk-300 pl-6 py-4">
                     <h4 className="text-lg font-semibold text-warm-gray-900 mb-3">{phase.period}</h4>
                     <ul className="space-y-2">
                       {phase.details.map((detail, i) => (
                         <li key={i} className="flex items-start">
-                          <span className="text-blue-400 mr-3 mt-1">•</span>
+                          <span className="text-dusk-300 mr-3 mt-1">•</span>
                           <span className="text-warm-gray-700">{detail}</span>
                         </li>
                       ))}
@@ -195,7 +197,7 @@ export default function GriefPage() {
                 ))}
               </div>
 
-              <div className="mt-8 bg-amber-50 border-l-4 border-amber-400 p-6 rounded">
+              <div className="mt-8 bg-honey-50 border-l-4 border-honey-300 p-6 rounded">
                 <p className="font-semibold text-warm-gray-900 mb-2">⚠️ When Grief Becomes &quot;Complicated&quot;:</p>
                 <p className="text-warm-gray-700 mb-3">
                   Most people experience &quot;uncomplicated grief&quot;—intense, painful, but manageable. 
@@ -219,7 +221,7 @@ export default function GriefPage() {
         <SectionDivider />
 
         {/* Therapeutic Approaches */}
-        <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+        <section className="section-padding bg-gradient-to-b from-white to-warm-gray-50">
           <div className="container-base">
             <IconHeading icon="🧠" level={2} color={colors.warmGray[900]}>
               How Grief Therapy Works
@@ -276,7 +278,7 @@ export default function GriefPage() {
                   icon: '🤝'
                 }
               ].map((item, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 border border-gray-200">
+                <div key={index} className="card card-compact card-static">
                   <div className="flex items-start gap-3 mb-4">
                     <span className="text-3xl">{item.icon}</span>
                     <div className="flex-1">
@@ -287,7 +289,7 @@ export default function GriefPage() {
                   <ul className="space-y-2 ml-12">
                     {item.details.map((detail, i) => (
                       <li key={i} className="flex items-start">
-                        <span className="text-blue-400 mr-3 mt-0.5 flex-shrink-0">▸</span>
+                        <span className="text-dusk-300 mr-3 mt-0.5 flex-shrink-0">▸</span>
                         <span className="text-warm-gray-700">{detail}</span>
                       </li>
                     ))}
@@ -295,7 +297,7 @@ export default function GriefPage() {
                 </div>
               ))}
 
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mt-8">
+              <div className="bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded mt-8">
                 <p className="font-semibold text-warm-gray-900 mb-2">What Grief Therapy Is NOT:</p>
                 <ul className="space-y-2 text-warm-gray-700">
                   <li>• Trying to make you stop grieving ("you just need to move on")</li>
@@ -365,12 +367,12 @@ export default function GriefPage() {
                     ]
                   }
                 ].map((category, index) => (
-                  <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <div key={index} className="bg-warm-gray-50 rounded-lg p-6 border border-warm-gray-200">
                     <h4 className="text-lg font-semibold text-warm-gray-900 mb-4">{category.title}</h4>
                     <ul className="space-y-2">
                       {category.items.map((item, i) => (
                         <li key={i} className="flex items-start">
-                          <span className="text-blue-400 mr-3 mt-1">✓</span>
+                          <span className="text-dusk-300 mr-3 mt-1">✓</span>
                           <span className="text-warm-gray-700">{item}</span>
                         </li>
                       ))}
@@ -379,7 +381,7 @@ export default function GriefPage() {
                 ))}
               </div>
 
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded mt-8">
+              <div className="bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded mt-8">
                 <p className="font-semibold text-warm-gray-900 mb-2">🆘 Crisis Support (If You&apos;re in Danger):</p>
                 <ul className="space-y-2 text-warm-gray-700">
                   <li>• <strong>988 Suicide & Crisis Lifeline:</strong> Call or text 988 (24/7, US)</li>
@@ -395,7 +397,7 @@ export default function GriefPage() {
         <SectionDivider />
 
         {/* Grief FAQ */}
-        <section className="section-padding bg-gradient-to-b from-white to-gray-50">
+        <section className="section-padding bg-gradient-to-b from-white to-warm-gray-50">
           <div className="container-base">
             <IconHeading icon="❓" level={2} color={colors.warmGray[900]}>
               Grief FAQ: Questions You Might Be Asking
@@ -452,12 +454,12 @@ export default function GriefPage() {
                   a: `Pet loss is real grief. Your pet was there when you woke up, greeted you when you came home, and provided unconditional love. That bond mattered. Society often calls this "disenfranchised grief"—grief that's not socially acknowledged, which makes it lonelier. Your grief is valid. A good therapist honors the depth of your bond with your animal.`
                 }
               ].map((item, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 border border-gray-200">
-                  <h4 className="text-lg font-semibold text-warm-gray-900 mb-3 text-blue-700">
+                <div key={index} className="card card-compact card-static">
+                  <h4 className="text-lg font-semibold text-warm-gray-900 mb-3 text-dusk-700">
                     Q: {item.q}
                   </h4>
                   <p className="text-warm-gray-700 leading-relaxed">
-                    <span className="font-semibold text-blue-600">A: </span>{item.a}
+                    <span className="font-semibold text-dusk-600">A: </span>{item.a}
                   </p>
                 </div>
               ))}
@@ -468,7 +470,7 @@ export default function GriefPage() {
         <SectionDivider />
 
         {/* Closing: You're Not Alone */}
-        <section className="section-padding bg-gradient-to-b from-white to-blue-50">
+        <section className="section-padding bg-gradient-to-b from-white to-dusk-50">
           <div className="container-base text-center max-w-3xl mx-auto">
             <IconHeading icon="💜" level={2} color={colors.warmGray[900]}>
               You&apos;re Not Alone in This
@@ -485,12 +487,72 @@ export default function GriefPage() {
               carrying them with you in a way that lets you also live.
             </p>
 
-            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: '#5B6B8B'}}>
+            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: '#3f566d'}}>
               Your grief is not a problem to be solved. It&apos;s evidence of love. And you deserve support in honoring it.
             </p>
 
             <Link href="/booking" className="inline-block btn btn-primary text-lg px-8 py-3">
               Let&apos;s Talk About Your Loss
+            </Link>
+
+            <p className="text-warm-gray-600 text-sm mt-6">
+              Free 30-minute consultation • Confidential • Trauma-informed approach
+            </p>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        {testimonialsByCategory.grief.length > 0 && (
+          <section className="section-padding bg-warm-gray-50" style={{borderTop: `1px solid #e5dcd4`}}>
+            <div className="container-base max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-4">
+                  Stories of Living with Loss
+                </h2>
+                <p className="text-lg text-warm-gray-600">
+                  How others have found meaning and continuity after grief
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-8">
+                {testimonialsByCategory.grief.map((testimonial, index) => (
+                  <TestimonialCard
+                    key={index}
+                    index={index}
+                    quote={testimonial.quote}
+                    author={testimonial.author}
+                    rating={testimonial.rating}
+                    totalReviews={testimonialsByCategory.grief.length}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Final CTA */}
+        <section className="section-padding bg-white" style={{borderTop: `1px solid #e5dcd4`}}>
+          <div className="container-base text-center max-w-3xl mx-auto">
+            <IconHeading icon="💜" level={2} color={colors.warmGray[900]}>
+              You're Not Alone in This
+            </IconHeading>
+
+            <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
+              Grief is one of the most isolating human experiences. The world keeps moving, but you feel stuck. 
+              People want you to be "fine" by now. You might feel like no one understands—the specific weight of YOUR loss, YOUR love, YOUR devastation.
+            </p>
+
+            <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
+              In therapy, I create space where your grief doesn't need to be small or fast or convenient. 
+              Where the love you had is honored. Where you're not "moving on" but learning to move differently, 
+              carrying them with you in a way that lets you also live.
+            </p>
+
+            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: '#3f566d'}}>
+              Your grief is not a problem to be solved. It's evidence of love. And you deserve support in honoring it.
+            </p>
+
+            <Link href="/booking" className="inline-block btn btn-primary text-lg px-8 py-3">
+              Let's Talk About Your Loss
             </Link>
 
             <p className="text-warm-gray-600 text-sm mt-6">

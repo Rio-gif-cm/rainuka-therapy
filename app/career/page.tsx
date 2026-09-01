@@ -1,9 +1,21 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import Link from 'next/link'
-import SectionDivider from '@/components/SectionDivider'
-import { IconHeading, IconListItem } from '@/components/IconComponents'
-import { colors } from '@/app/styles'
+import TestimonialCard from '@/components/TestimonialCard'
+import {
+  specialtyAccents,
+  SpecialtyHero,
+  SpecialtySection,
+  SpecialtySectionHeader,
+  SpecialtyGrid,
+  SpecialtyCard,
+  SpecialtyNote,
+  SpecialtyChecklist,
+  SpecialtyFAQ,
+  SpecialtyCTA,
+} from '@/components/SpecialtyPage'
+import { testimonialsByCategory } from '@/src/data/testimonials'
+
+const accent = specialtyAccents.career
 
 export default function CareerPage() {
   return (
@@ -11,224 +23,218 @@ export default function CareerPage() {
       <Navigation />
 
       <main className="flex-grow">
-        {/* Hero - Career: Gold/Amber for confidence, professionalism, forward momentum */}
-        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(255, 248, 240, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
-          <div className="container-base text-center animate-fade-in-up">
-            <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Career Transitions & Burnout
-            </h1>
-            <p className="text-xl text-warm-gray-600 mb-4 max-w-2xl mx-auto">
-              Career transitions don't have to feel impossible.
+        <SpecialtyHero
+          accent={accent}
+          eyebrow="Career & Burnout"
+          title="Career Clarity That Actually Fits You"
+          lead="Career transitions don't have to feel impossible."
+          description="Burnout, doubt, identity questions, career anxiety—you don't have to figure it out alone. Practical. Warm. Secular."
+          ctaLabel="Get Support That Gets You"
+        />
+
+        {/* 1 — Who this is for */}
+        <SpecialtySection tone="white" width="wide">
+          <SpecialtySectionHeader
+            accent={accent}
+            eyebrow="Who I help"
+            title="Are You…"
+            intro="Career questions are rarely just about the job. If any of these are yours right now, we have somewhere to start."
+          />
+          <SpecialtyChecklist
+            accent={accent}
+            items={[
+              "Burned out so deep you can't see a way out",
+              '"Is this really what I want?" (identity questions)',
+              "Dealing with imposter syndrome (they'll figure it out)",
+              'Worried about career-change FOMO (what if I choose wrong?)',
+              'Misaligned with the values your job asks of you',
+              'Trapped in a perfectionism and overwork spiral',
+            ]}
+          />
+        </SpecialtySection>
+
+        {/* 2 — What I'm not */}
+        <SpecialtySection tone="sage">
+          <SpecialtySectionHeader
+            accent={accent}
+            eyebrow="Setting expectations"
+            title="Important: What I'm NOT"
+          />
+
+          <SpecialtyNote accent={accent} title="I'm not a life coach.">
+            <p className="mb-0">
+              I&apos;m not going to tell you what job to get or whether you should quit.
             </p>
-            <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
-              Burnout, doubt, identity questions, career anxiety—you don't have to figure it out alone.
-              Practical. Warm. Secular.
-            </p>
-            <Link href="/booking" className="inline-block btn btn-primary">
-              Book a Free Consultation
-            </Link>
+          </SpecialtyNote>
+
+          <div className="mt-6">
+            <SpecialtyGrid>
+              <SpecialtyCard accent={accent} title="What I AM">
+                <p>
+                  A therapist who helps you work through the mental and emotional pieces of career
+                  decisions. Process fear. Untangle real anxiety from decision avoidance. Clarify
+                  your values. Build confidence.
+                </p>
+              </SpecialtyCard>
+
+              <SpecialtyCard accent={accent} title="The difference">
+                <p>
+                  You make the decision. I help you think clearly so <strong>you</strong> can
+                  decide—without the fog, the panic, or the borrowed &quot;shoulds.&quot;
+                </p>
+              </SpecialtyCard>
+            </SpecialtyGrid>
           </div>
-        </section>
+        </SpecialtySection>
 
-        {/* Who I Help */}
-        <section className="section-padding bg-white">
-          <div className="container-base">
-            <IconHeading icon="🚀" level={2} color={colors.warmGray[900]}>
-              Are You...
-            </IconHeading>
+        {/* 3 — Why therapy */}
+        <SpecialtySection tone="white">
+          <SpecialtySectionHeader
+            accent={accent}
+            eyebrow="Why this works"
+            title="Why Therapy for Career Stuff"
+            intro="Career decisions are identity decisions. &ldquo;What should I do?&rdquo; is really &ldquo;Who am I?&rdquo;"
+          />
 
+          <SpecialtyChecklist
+            accent={accent}
+            cols={1}
+            items={[
+              <>
+                <strong>Burnout isn&apos;t laziness.</strong> It&apos;s your system telling you
+                something has to change.
+              </>,
+              <>
+                <strong>Doubt doesn&apos;t mean you&apos;re failing.</strong> It means you&apos;re
+                paying attention to something real.
+              </>,
+              <>
+                <strong>Clarity beats certainty.</strong> Therapy helps you untangle genuine anxiety
+                from fear of change, so you can move without waiting to feel sure.
+              </>,
+              <>
+                <strong>Your values, not the borrowed ones.</strong> We clarify what actually
+                matters to you—not what you think you &quot;should&quot; want.
+              </>,
+            ]}
+          />
+        </SpecialtySection>
+
+        {/* 4 — What we work on */}
+        <SpecialtySection tone="cream" width="wide">
+          <SpecialtySectionHeader
+            accent={accent}
+            eyebrow="In session"
+            title="What We Work On Together"
+          />
+          <SpecialtyGrid>
+            <SpecialtyCard accent={accent} icon="🔋" title="Burnout Recovery">
+              <p>
+                Understanding what led to burnout. Rest without guilt. Rebuilding sustainable work
+                habits that survive contact with a real job.
+              </p>
+            </SpecialtyCard>
+
+            <SpecialtyCard accent={accent} icon="🧭" title="Values Clarification">
+              <p>
+                What actually matters to YOU—not your parents, not your peers. What work feels
+                aligned with your values and your life.
+              </p>
+            </SpecialtyCard>
+
+            <SpecialtyCard accent={accent} icon="🔀" title="Decision-Making Paralysis">
+              <p>
+                Working through analysis paralysis. Building tolerance for uncertainty. Moving from
+                &quot;I don&apos;t know&quot; to &quot;here&apos;s what I&apos;ll try.&quot;
+              </p>
+            </SpecialtyCard>
+
+            <SpecialtyCard accent={accent} icon="🎭" title="Imposter Syndrome">
+              <p>
+                The voice that says &quot;they&apos;ll figure out you don&apos;t belong.&quot;
+                Building evidence-based confidence instead of louder reassurance.
+              </p>
+            </SpecialtyCard>
+
+            <SpecialtyCard accent={accent} icon="⚖️" title="Perfectionism & Overwork">
+              <p>
+                Perfectionism usually isn&apos;t a character flaw; it&apos;s a learned survival
+                strategy. Maybe perfect grades meant love. Maybe mistakes meant shame.
+              </p>
+              <p>
+                That strategy kept you safe then. It&apos;s exhausting you now. We separate your
+                standards (worth keeping) from the fear underneath them (worth releasing).
+              </p>
+            </SpecialtyCard>
+
+            <SpecialtyCard accent={accent} icon="🌾" title="Grief for Paths Not Taken">
+              <p>
+                Mourning the career you thought you&apos;d have. Building genuine excitement for
+                what&apos;s actually possible from here.
+              </p>
+            </SpecialtyCard>
+          </SpecialtyGrid>
+        </SpecialtySection>
+
+        {/* 5 — FAQ */}
+        <SpecialtySection tone="white">
+          <SpecialtySectionHeader
+            accent={accent}
+            eyebrow="Questions"
+            title="How It Works"
+          />
+          <SpecialtyFAQ
+            accent={accent}
+            items={[
+              {
+                q: 'How often do we meet, and for how long?',
+                a: 'Typically weekly, 50-minute sessions. Some people need 6 sessions; some need 20. It depends on what you\u2019re navigating and what feels right—we reassess as we go.',
+              },
+              {
+                q: 'Does telehealth actually work for career work?',
+                a: 'Very well. No interruptions, no commute eating your energy, and continuity of thinking between sessions. You\u2019re in your own space, which usually makes the honest conversations easier.',
+              },
+              {
+                q: 'What happens in the first few sessions?',
+                a: 'We map what led to the burnout or the doubt, name the pressures you\u2019re actually under, and start clarifying your values. You leave with a clearer picture of the problem, not just a vaguer feeling about it.',
+              },
+              {
+                q: 'Will you tell me whether to quit my job?',
+                a: 'No. That decision is yours, and it should be. My job is to clear enough fog that you can make it deliberately rather than reactively—and to be there for the fallout either way.',
+              },
+            ]}
+          />
+        </SpecialtySection>
+
+        {/* Testimonials */}
+        {testimonialsByCategory.career.length > 0 && (
+          <SpecialtySection tone="warm-tint" width="wide">
+            <SpecialtySectionHeader
+              accent={accent}
+              eyebrow="What Clients Say"
+              title="From Burnout to Clarity"
+            />
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                'Burned out so deep you can\'t see a way out',
-                '"Is this really what I want?" (identity questions)',
-                'Dealing with imposter syndrome (they\'ll figure it out)',
-                'Worried about career change FOMO (what if I choose wrong?)',
-                'Misaligned with your job values',
-                'Trapped in perfectionism + overwork spiral',
-              ].map((item, index) => (
-                <IconListItem key={index} icon="✓" color="#b45309">
-                  {item}
-                </IconListItem>
+              {testimonialsByCategory.career.map((testimonial, index) => (
+                <TestimonialCard
+                  key={index}
+                  index={index}
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  rating={testimonial.rating}
+                  totalReviews={testimonialsByCategory.career.length}
+                />
               ))}
             </div>
-          </div>
-        </section>
+          </SpecialtySection>
+        )}
 
-        <SectionDivider margin="3rem" />
-
-        {/* What I'm NOT */}
-        <section className="section-padding bg-sage-50">
-          <div className="container-base max-w-3xl mx-auto">
-            <IconHeading icon="💡" level={2} color={colors.warmGray[900]}>
-              Important: What I'm NOT
-            </IconHeading>
-
-            <div className="space-y-6 text-warm-gray-600">
-              <p>
-                I'm not a life coach. I'm not going to tell you what job to get or whether you should quit.
-              </p>
-
-              <p>
-                <strong>What I AM:</strong> A therapist who helps you work through the mental and emotional pieces 
-                of career decisions. Process fear. Untangle real anxiety from decision avoidance. Clarify your values. 
-                Build confidence.
-              </p>
-
-              <p>
-                <strong>The difference:</strong> You make the decision. I help you think clearly so YOU can decide.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <SectionDivider margin="3rem" />
-
-        {/* Why Therapy Helps */}
-        <section className="section-padding bg-white">
-          <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
-              Why Therapy for Career Stuff
-            </h2>
-
-            <div className="space-y-6 text-warm-gray-600">
-              <p>
-                Career decisions are identity decisions. "What should I do?" is really "Who am I?"
-              </p>
-
-              <p>
-                <strong>Burnout isn't laziness.</strong> It's your system telling you something's gotta change.
-              </p>
-
-              <p>
-                <strong>Doubt doesn't mean you're failing.</strong> It means you're paying attention to something real.
-              </p>
-
-              <p>
-                Therapy helps you untangle what's real anxiety vs. fear of change. Clarify what actually matters to you 
-                (not what you think you "should" want). Build confidence in whatever path you choose.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* What We Work On */}
-        <section className="section-padding bg-cream-50">
-          <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
-              What We Work On Together
-            </h2>
-
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
-                  Burnout Recovery
-                </h3>
-                <p className="text-warm-gray-600">
-                  Understanding what led to burnout. Rest without guilt. Rebuilding sustainable work habits.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
-                  Values Clarification
-                </h3>
-                <p className="text-warm-gray-600">
-                  What actually matters to YOU (not your parents, not your peers). What work feels aligned with 
-                  your values and your life.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
-                  Decision-Making Paralysis
-                </h3>
-                <p className="text-warm-gray-600">
-                  Working through analysis paralysis. Building tolerance for uncertainty. 
-                  Moving from "I don't know" to "Here's what I'll try."
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
-                  Imposter Syndrome
-                </h3>
-                <p className="text-warm-gray-600">
-                  The voice that says "they'll figure out you don't belong." Building evidence-based confidence.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
-                  Perfectionism & Overwork
-                </h3>
-                <p className="text-warm-gray-600 mb-3">
-                  Perfectionism usually isn't a character flaw; it's a learned survival strategy from childhood.
-                </p>
-                <p className="text-warm-gray-600 mb-3">
-                  Maybe perfect grades meant love. Maybe mistakes meant shame. That strategy kept you safe then.
-                </p>
-                <p className="text-warm-gray-600 mb-3">
-                  It's exhausting you now.
-                </p>
-                <p className="text-warm-gray-600">
-                  We separate your standards (worth keeping) from the fear underneath them (worth releasing).
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3" style={{color: '#b45309'}}>
-                  Grief for Paths Not Taken
-                </h3>
-                <p className="text-warm-gray-600">
-                  Mourning the career you thought you'd have. Building excitement for what's actually possible.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* How It Works */}
-        <section className="section-padding bg-white">
-          <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
-              How It Works
-            </h2>
-
-            <div className="space-y-6 text-warm-gray-600">
-              <p>
-                Telehealth works great for career work. No interruptions. Continuity of thinking between sessions. 
-                You're in your comfortable space.
-              </p>
-
-              <p>
-                Typically, we meet weekly for 50-minute sessions. Some people need 6 sessions; some need 20.
-              </p>
-
-              <p>
-                It depends on what you're navigating and what feels right.
-              </p>
-
-              <p>
-                <strong>What to expect:</strong> We'll explore what led to burnout or doubt and clarify your values.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA - Career gold accent */}
-        <section className="section-padding text-white" style={{backgroundColor: '#b45309'}}>
-          <div className="container-base text-center">
-            <h2 className="text-3xl font-serif font-bold mb-4">
-              You don't have to figure this out alone
-            </h2>
-            <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
-              Let's talk about what's holding you back—and what's possible.
-            </p>
-            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#b45309'}}>
-              Book Your Free Call
-            </Link>
-          </div>
-        </section>
+        <SpecialtyCTA
+          accent={accent}
+          title="You don't have to figure this out alone"
+          body="Let's talk about what's holding you back—and what's possible."
+          ctaLabel="Book Your Free Call"
+        />
       </main>
 
       <Footer />

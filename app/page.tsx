@@ -1,9 +1,22 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import NicheGrid from '@/components/NicheGrid'
 import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
+import { homepageTestimonials } from '@/src/data/testimonials'
+
+export const metadata: Metadata = {
+  title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
+  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Rainuka Oberoi, LCSW.',
+  keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, trauma-informed',
+  openGraph: {
+    title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
+    description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach.',
+    type: 'website',
+  },
+}
 
 /**
  * Homepage narrative arc (background rhythm alternates tint / white,
@@ -36,36 +49,8 @@ const approach = [
   },
 ]
 
-const testimonials = [
-  {
-    quote:
-      'Alone in my anxiety around pregnancy. Rainuka validated my fear + gave me tools that actually work. Now I have community.',
-    author: 'Sarah',
-    context: 'Software Engineer | Expecting First Child',
-    rating: 5,
-  },
-  {
-    quote:
-      'ADHD diagnosis at 35 = grief + relief. Rainuka gets both. Finally, real therapy\u2014not tips and tricks. She understood the grief I didn\u2019t know I was carrying.',
-    author: 'Jessica',
-    context: 'Marketing Manager | Adult ADHD Diagnosis',
-    rating: 5,
-  },
-  {
-    quote:
-      'Burned out + doubting everything. In 2 months with Rainuka: panic \u2192 clear plan. She untangled real anxiety from legit signals my career needed to change.',
-    author: 'Michael',
-    context: 'Senior Operations Lead | Career Transition',
-    rating: 5,
-  },
-  {
-    quote:
-      'No judgment. Rainuka met me where I was\u2014warm + practical. She reframed grief: not something to fix, but to move through with intention.',
-    author: 'Amanda',
-    context: 'Nonprofit Director | Navigating Loss',
-    rating: 5,
-  },
-]
+// Use imported testimonials from data file
+const testimonials = homepageTestimonials
 
 const faqs = [
   {
@@ -177,7 +162,7 @@ export default function Home() {
         {/* ---------- 5. CTA — sage accent (the peak) ---------- */}
         <section className="section-padding text-white" style={{ backgroundColor: '#547c3f' }}>
           <div className="container-base text-center">
-            <h2 className="text-4xl font-serif font-bold mb-6">Ready to talk?</h2>
+            <h2 className="text-4xl font-serif font-bold mb-6">Ready to Reclaim Your Peace?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#e8ede5' }}>
               Let&apos;s start with a free 15-minute conversation. I&apos;ll listen to what&apos;s
               brought you here, and you&apos;ll get a real sense of how we&apos;d work together.
@@ -196,7 +181,7 @@ export default function Home() {
                 cursor: 'pointer',
               }}
             >
-              Book Your Free Call
+              Start Your Breakthrough Session
             </Link>
             <p className="text-sm mt-6" style={{ color: '#d1dcc8' }}>
               No forms beforehand. No obligation to continue.
@@ -242,7 +227,7 @@ export default function Home() {
         <section className="section-padding bg-white border-t border-sage-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">
-              Still deciding?
+              Ready for Clarity?
             </h2>
             <p className="text-lg text-warm-gray-600 mb-8">
               That&apos;s a reasonable place to be. Reaching out isn&apos;t a commitment to
@@ -250,7 +235,7 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center items-center">
               <Link href="/booking" className="btn-primary">
-                Book a Free 15-Minute Call
+                Get Your Personalized Plan
               </Link>
               <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
                 Learn more about me →
