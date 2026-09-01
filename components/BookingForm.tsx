@@ -139,7 +139,7 @@ export default function BookingForm() {
     }
 
     const filteredErrors = Object.fromEntries(
-      Object.entries(errors).filter(([_, v]) => v !== undefined)
+      Object.entries(errors).filter(([, v]) => v !== undefined)
     )
 
     if (Object.keys(filteredErrors).length > 0) {
@@ -235,7 +235,7 @@ export default function BookingForm() {
       {currentStep === 'contact' && (
         <div className="space-y-4 animate-fade-in-up">
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
-            Let's start with the basics
+            Let&apos;s start with the basics
           </h3>
 
           <div>
@@ -350,7 +350,7 @@ export default function BookingForm() {
           </div>
 
           <p className="text-sm text-warm-gray-500 mt-6">
-            * Required fields. I'll reach out within 24 hours to confirm your consultation.
+            * Required fields. I&apos;ll reach out within 24 hours to confirm your consultation.
           </p>
         </div>
       )}
@@ -365,7 +365,7 @@ export default function BookingForm() {
           <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="concern" className="form-label">
-                What's your primary concern? *
+                What&apos;s your primary concern? *
               </label>
               {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
                 <span className="text-green-600 text-sm font-medium flex items-center gap-1">
@@ -379,7 +379,7 @@ export default function BookingForm() {
               value={formData.concern}
               onChange={handleInputChange}
               onBlur={handleFieldBlur}
-              placeholder="Share what's been on your mind... (just a few sentences is fine)"
+              placeholder="Share what&apos;s been on your mind... (just a few sentences is fine)"
               className={`form-input h-32 resize-none transition-all ${
                 fieldTouched.concern
                   ? fieldErrors.concern
@@ -397,7 +397,7 @@ export default function BookingForm() {
               </p>
             ) : (
               <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                This helps me understand what you're navigating.
+                This helps me understand what you&apos;re navigating.
               </p>
             )}
           </div>
@@ -450,7 +450,7 @@ export default function BookingForm() {
       {currentStep === 'confirmation' && (
         <div className="space-y-4 animate-fade-in-up">
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
-            You're almost there
+            Almost there — let&apos;s get you support
           </h3>
 
           <div className="card bg-sage-50 border border-sage-200">
@@ -469,15 +469,15 @@ export default function BookingForm() {
               <div className="flex gap-2">
                 <span className="text-xl">⏰</span>
                 <div>
-                  <p className="text-sm font-semibold text-warm-gray-900">What's next</p>
-                  <p className="text-xs text-warm-gray-600 mt-1">I'll review your information and respond within 24 hours with available times for our free 15-minute call. Most people meet with me within 1-2 weeks.</p>
+                  <p className="text-sm font-semibold text-warm-gray-900">Spots filling this month</p>
+                  <p className="text-xs text-warm-gray-600 mt-1">I respond to all requests within 24 hours. Most clients see me within 1-2 weeks.</p>
                 </div>
               </div>
               <div className="flex gap-2">
                 <span className="text-xl">✓</span>
                 <div>
-                  <p className="text-sm font-semibold text-warm-gray-900">Your privacy is protected</p>
-                  <p className="text-xs text-warm-gray-600 mt-1">Everything stays between us. Your information is 100% confidential and HIPAA-protected.</p>
+                  <p className="text-sm font-semibold text-warm-gray-900">100% confidential &amp; HIPAA-protected</p>
+                  <p className="text-xs text-warm-gray-600 mt-1">Your privacy and trust matter. Everything stays between us.</p>
                 </div>
               </div>
             </div>
@@ -485,7 +485,7 @@ export default function BookingForm() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <p className="text-sm text-blue-900">
-              <strong>This is a free exploration call.</strong> We'll chat about what brought you here and whether working together feels like a good fit. No pressure, no commitment beyond this conversation.
+              <strong>What happens next:</strong> I&apos;ll review your information and send you a confirmation email within 24 hours with available times for your free 15-minute consultation call. No commitment beyond that—just a chance to connect.
             </p>
           </div>
 
@@ -505,8 +505,8 @@ export default function BookingForm() {
               aria-invalid={fieldTouched.consent && !!fieldErrors.consent}
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
-            <label htmlFor="consent" className="text-sm text-warm-gray-600">
-              I agree to be contacted by email and phone to schedule this free consultation. I've read and understand the privacy policy.
+            <label htmlFor="consent" className="text-sm text-warm-gray-600 cursor-pointer flex-1">
+              I agree to be contacted by email and phone. I&apos;ve read and understand the privacy policy.
             </label>
           </div>
           {fieldTouched.consent && fieldErrors.consent && (
@@ -527,7 +527,7 @@ export default function BookingForm() {
                 Booking submitted successfully!
               </p>
               <p className="text-green-800 text-sm">
-                Thank you! I've received your information. You'll receive a confirmation email within 24 hours with available times for your free 15-minute consultation call.
+                Thank you! I&apos;ve received your information. You&apos;ll receive a confirmation email within 24 hours with available times for your free 15-minute consultation call.
               </p>
             </div>
           </div>
