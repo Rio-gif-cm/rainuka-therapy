@@ -89,9 +89,13 @@ export default function Footer() {
         <p style={{ margin: 0, marginBottom: '0.5rem' }}>
           © 2026 Rainuka Oberoi, LCSW. All rights reserved.
         </p>
-        <p style={{ margin: 0 }}>
+        <p style={{ margin: 0, display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link href="/privacy" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
             Privacy Policy
+          </Link>
+          <span style={{ color: 'rgba(255,255,255,0.4)' }}>•</span>
+          <Link href="/accessibility" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+            Accessibility
           </Link>
         </p>
       </div>
