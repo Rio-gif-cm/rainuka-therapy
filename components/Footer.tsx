@@ -57,6 +57,24 @@ export default function Footer() {
 
         <div>
           <h3 style={{ ...styles.h3, color: 'white', marginBottom: '1rem' }}>
+            Seasonal Support
+          </h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <Link href="/back-to-school" style={{ color: 'rgba(255,255,255,0.8)', textDecoration: 'none' }}>
+                Back to School Anxiety
+              </Link>
+            </li>
+            <li style={{ marginBottom: '0.5rem' }}>
+              <p style={{ ...styles.p, color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', margin: 0 }}>
+                Therapy for seasonal transitions & challenges
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style={{ ...styles.h3, color: 'white', marginBottom: '1rem' }}>
             Get in Touch
           </h3>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

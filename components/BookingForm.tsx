@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import CalendarPicker from './CalendarPicker'
 
 type FormStep = 'contact' | 'concern' | 'confirmation'
 
@@ -52,7 +53,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     phone: '',
     concern: '',
     firstTimeTherapy: null as boolean | null,
-    preferredTime: '',
+    preferredTime: '', // Used for API compatibility
+    selectedDate: null as Date | null, // Calendar picker: selected date
+    selectedTime: '', // Calendar picker: selected time (HH:MM format)
     consent: false,
   })
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})

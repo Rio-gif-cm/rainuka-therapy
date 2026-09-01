@@ -70,6 +70,7 @@ export default function Navigation() {
     { href: '/perinatal', label: 'Perinatal' },
     { href: '/adhd', label: 'ADHD' },
     { href: '/career', label: 'Career' },
+    { href: '/back-to-school', label: 'Back to School' },
     { href: '/faq', label: 'FAQ' },
   ]
 

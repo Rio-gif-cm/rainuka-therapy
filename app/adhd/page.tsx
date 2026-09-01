@@ -1,6 +1,9 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import SectionDivider from '@/components/SectionDivider'
+import { IconHeading, IconListItem } from '@/components/IconComponents'
+import { colors } from '@/app/styles'
 
 export default function ADHDPage() {
   return (
@@ -30,9 +33,9 @@ export default function ADHDPage() {
         {/* Who I Help */}
         <section className="section-padding bg-white">
           <div className="container-base">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="🧠" level={2} color={colors.warmGray[900]}>
               If You're Experiencing...
-            </h2>
+            </IconHeading>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
@@ -43,21 +46,22 @@ export default function ADHDPage() {
                 'ADHD + anxiety + depression overlap (common)',
                 'Career/relationship patterns suddenly making sense',
               ].map((item, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="text-2xl" style={{color: '#0369a1'}}>✓</div>
-                  <p className="text-warm-gray-600">{item}</p>
-                </div>
+                <IconListItem key={index} icon="✓" color={colors.sage[600]}>
+                  {item}
+                </IconListItem>
               ))}
             </div>
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* What is ADHD */}
         <section className="section-padding bg-sage-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="🧠" level={2} color={colors.warmGray[900]}>
               What ADHD Actually Is
-            </h2>
+            </IconHeading>
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
@@ -86,6 +90,8 @@ export default function ADHDPage() {
             </div>
           </div>
         </section>
+
+        <SectionDivider margin="3rem" />
 
         {/* My Approach */}
         <section className="section-padding bg-white">
@@ -148,12 +154,14 @@ export default function ADHDPage() {
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* Identity Affirmation: The Shame-to-Self-Compassion Shift */}
         <section className="section-padding bg-white border-t-4" style={{borderTopColor: '#0369a1'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="💡" level={2} color={colors.warmGray[900]}>
               You Are Not Broken. Identity Reconstruction Starts Here.
-            </h2>
+            </IconHeading>
 
             <div className="space-y-6 text-warm-gray-600">
               <p className="text-lg leading-relaxed mb-4">
@@ -186,12 +194,14 @@ export default function ADHDPage() {
           </div>
         </section>
 
+        <SectionDivider margin="3rem" />
+
         {/* For Women */}
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
+            <IconHeading icon="👩" level={2} color={colors.warmGray[900]}>
               ADHD in Women
-            </h2>
+            </IconHeading>
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
@@ -211,6 +221,8 @@ export default function ADHDPage() {
             </div>
           </div>
         </section>
+
+        <SectionDivider margin="3rem" />
 
         {/* Social Proof: Confidence Building */}
         <section className="section-padding bg-white">
