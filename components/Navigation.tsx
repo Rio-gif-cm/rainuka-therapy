@@ -1,23 +1,25 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { colors, styles } from '@/app/styles'
+import { useState, useEffect } from 'react'
 
 interface NavLinkProps {
   href: string
   label: string
   isActive: boolean
+  isMobile?: boolean
 }
 
-function NavLink({ href, label, isActive }: NavLinkProps) {
+function NavLink({ href, label, isActive, isMobile }: NavLinkProps) {
   return (
     <Link 
       href={href} 
       style={{ 
         color: isActive ? colors.sage[600] : colors.warmGray[700],
         textDecoration: 'none', 
-        fontSize: '0.95rem', 
+        fontSize: isMobile ? '0.9rem' : '0.95rem', 
         fontWeight: 500,
         paddingBottom: '0.25rem',
         borderBottom: isActive ? `2px solid ${colors.sage[600]}` : '2px solid transparent',
@@ -45,6 +47,17 @@ function NavLink({ href, label, isActive }: NavLinkProps) {
 
 export default function Navigation() {
   const pathname = usePathname()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640)
+    }
+    
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const navItems = [
     { href: '/about', label: 'About' },
@@ -72,25 +85,18 @@ export default function Navigation() {
         paddingBottom: '1rem',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: isMobile ? 'center' : 'space-between',
         flexWrap: 'wrap',
-        gap: '1rem',
-        '@media (max-width: 375px)': {
-          flexDirection: 'column',
-          alignItems: 'center',
-        }
+        gap: isMobile ? '0.5rem' : '1rem',
+        flexDirection: isMobile ? 'column' : 'row',
       }}>
-        <Link href="/" style={{ textDecoration: 'none', marginRight: '1rem' }}>
+        <Link href="/" style={{ textDecoration: 'none', marginRight: isMobile ? '0rem' : '1rem' }}>
           <div style={{
-            fontSize: 'clamp(1rem, 4vw, 1.5rem)',
+            fontSize: isMobile ? '1rem' : 'clamp(1rem, 4vw, 1.5rem)',
             fontWeight: 700,
             color: colors.sage[600],
             fontFamily: 'var(--font-merriweather), serif',
             whiteSpace: 'nowrap',
-            '@media (max-width: 375px)': {
-              fontSize: '1rem',
-              marginBottom: '0.5rem',
-            }
           }}>
             Rainuka Oberoi, LCSW
           </div>
@@ -99,16 +105,11 @@ export default function Navigation() {
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '2rem',
+          gap: isMobile ? '1rem' : '2rem',
           flexWrap: 'wrap',
-          justifyContent: 'flex-end',
-          '@media (max-width: 375px)': {
-            flexDirection: 'column',
-            gap: '1rem',
-            justifyContent: 'center',
-            width: '100%',
-            alignItems: 'center',
-          }
+          justifyContent: isMobile ? 'center' : 'flex-end',
+          flexDirection: isMobile ? 'column' : 'row',
+          width: isMobile ? '100%' : 'auto',
         }}>
           {navItems.map((item) => (
             <NavLink
@@ -116,10 +117,12 @@ export default function Navigation() {
               href={item.href}
               label={item.label}
               isActive={pathname === item.href}
+              isMobile={isMobile}
             />
           ))}
           <Link 
             href="/booking" 
+            aria-label="Book a free 15-minute consultation call"
             style={{ 
               ...styles.button,
               ...styles.btnPrimary,
