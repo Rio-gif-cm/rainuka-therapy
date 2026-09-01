@@ -156,10 +156,16 @@ export default function CareerPage() {
                   Perfectionism & Overwork
                 </h3>
                 <p className="text-warm-gray-600 mb-3">
-                  Not everything requires perfection to be valuable—but high-achievers often learned it does. Perfectionism usually isn't a character flaw; it's a learned survival strategy. Early on, maybe perfect grades meant love. Maybe mistakes meant shame. Maybe "good enough" never felt safe. That strategy kept you safe then. It's exhausting you now.
+                  Perfectionism usually isn't a character flaw; it's a learned survival strategy from childhood.
+                </p>
+                <p className="text-warm-gray-600 mb-3">
+                  Maybe perfect grades meant love. Maybe mistakes meant shame. That strategy kept you safe then.
+                </p>
+                <p className="text-warm-gray-600 mb-3">
+                  It's exhausting you now.
                 </p>
                 <p className="text-warm-gray-600">
-                  We separate your standards (worth keeping) from the fear underneath them (worth releasing). Your ambition doesn't need anxiety as its fuel. You can keep your drive and release the perfectionism running on panic.
+                  We separate your standards (worth keeping) from the fear underneath them (worth releasing).
                 </p>
               </div>
 
@@ -189,14 +195,15 @@ export default function CareerPage() {
               </p>
 
               <p>
-                Typically, we meet weekly for 50-minute sessions. Some people need 6 sessions; some need 20. 
+                Typically, we meet weekly for 50-minute sessions. Some people need 6 sessions; some need 20.
+              </p>
+
+              <p>
                 It depends on what you're navigating and what feels right.
               </p>
 
               <p>
-                <strong>What to expect:</strong> We'll explore what led to burnout or doubt. Clarify your values. 
-                Work through anxiety about change. Build confidence. You'll leave knowing yourself better and clearer 
-                about what's possible.
+                <strong>What to expect:</strong> We'll explore what led to burnout or doubt and clarify your values.
               </p>
             </div>
           </div>

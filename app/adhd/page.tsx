@@ -156,10 +156,11 @@ export default function ADHDPage() {
             </h2>
 
             <div className="space-y-6 text-warm-gray-600">
-              <p className="text-lg leading-relaxed">
-                For decades, you may have believed: <em>"Something is fundamentally wrong with me."</em> 
-                That belief didn't come from nowhere. It's the result of repeated experiences—missed deadlines, forgotten promises, 
-                relationships strained, criticism internalized—until struggling with tasks began to feel like evidence of who you are.
+              <p className="text-lg leading-relaxed mb-4">
+                For decades, you may have believed: <em>"Something is fundamentally wrong with me."</em> That belief didn't come from nowhere.
+              </p>
+              <p className="text-lg leading-relaxed mb-4">
+                It's the result of repeated experiences—missed deadlines, forgotten promises, relationships strained, criticism internalized—until struggling felt like evidence of who you are.
               </p>
 
               <div className="p-8 rounded-lg border-l-4" style={{backgroundColor: 'rgba(3, 105, 161, 0.06)', borderLeftColor: '#0369a1'}}>
@@ -167,9 +168,9 @@ export default function ADHDPage() {
                   Research on late ADHD diagnosis shows us something crucial:
                 </p>
                 <ul className="space-y-3 mt-4">
-                  <li><strong>Shame is inherited, not intrinsic.</strong> You internalized criticism because your ADHD went unrecognized. That doesn't make you broken—it makes you human, responding to years of misunderstanding.</li>
-                  <li><strong>Self-compassion rewires how you treat yourself.</strong> Studies show that adults with ADHD who develop self-compassion experience marked improvement in mental health—not because they lower their standards, but because they stop weaponizing failure against themselves.</li>
-                  <li><strong>Identity reconstruction is the real work.</strong> Therapy isn't about "fixing" you. It's about rewriting the story you've been telling yourself. Instead of "I'm lazy," it becomes "I was working with challenges no one recognized."</li>
+                  <li><strong>Shame is inherited, not intrinsic.</strong> You internalized criticism because your ADHD went unrecognized.</li>
+                  <li><strong>Self-compassion rewires how you treat yourself.</strong> Adults with ADHD who develop self-compassion experience marked improvement in mental health.</li>
+                  <li><strong>Identity reconstruction is the real work.</strong> Therapy is about rewriting the story you've told yourself. Instead of "I'm lazy," it becomes "I was working with challenges no one recognized."</li>
                 </ul>
               </div>
 
