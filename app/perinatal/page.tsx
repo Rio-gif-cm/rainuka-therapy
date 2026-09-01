@@ -234,7 +234,7 @@ export default function PerinatalPage() {
 
         {/* Testimonials */}
         {testimonialsByCategory.perinatal.length > 0 && (
-          <SpecialtySection tone="warm-tint" width="wide">
+          <SpecialtySection tone="tint" width="wide">
             <SpecialtySectionHeader
               accent={accent}
               eyebrow="What Clients Say"
