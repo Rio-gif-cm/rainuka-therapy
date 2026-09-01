@@ -62,7 +62,7 @@ export default function Home() {
                     description: 'You&apos;ll get real tools you can use today—not just insight. Therapy that fits into your actual life.',
                   },
                 ].map((approach, index) => (
-                  <div key={index} className="text-center">
+                  <div key={index} className="card card-elevated text-center">
                     <h3 className="font-serif text-xl font-bold text-warm-gray-900 mb-3">
                       {approach.title}
                     </h3>
@@ -165,7 +165,7 @@ export default function Home() {
                   a: "Yes. Everything you share is protected by HIPAA and therapist-client privilege. The only exceptions are mandatory reporting situations.",
                 },
               ].map((faq, index) => (
-                <details key={index} className="card cursor-pointer">
+                <details key={index} className="card card-elevated cursor-pointer">
                   <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                     {faq.q}
                     <span className="text-sage-400">▼</span>

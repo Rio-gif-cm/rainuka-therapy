@@ -43,7 +43,7 @@ export default function TestimonialCard({
           __html: JSON.stringify(reviewSchema),
         }}
       />
-      <div className="card">
+      <div className="card card-elevated">
         {/* Star Rating Display */}
         <div className="mb-3 flex gap-1">
           {[...Array(rating)].map((_, i) => (
