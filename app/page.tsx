@@ -86,25 +86,25 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
-                  quote: 'I thought I was alone in my anxiety around pregnancy. Rainuka helped me see that what I was feeling was real—and that I could get support for it. Now I have a community and tools that actually work for my specific situation.',
+                  quote: 'Alone in my anxiety around pregnancy. Rainuka validated my fear + gave me tools that actually work. Now I have community.',
                   author: 'Sarah',
                   context: 'Software Engineer | Expecting First Child',
                   rating: 5,
                 },
                 {
-                  quote: 'Finally, someone who understands that ADHD diagnosis at 35 means grief AND relief. Not just tips and tricks—real therapy. I chose Rainuka specifically because she gets how this feels—the relief of answers plus the loss of time I didn\'t know I was struggling.',
+                  quote: 'ADHD diagnosis at 35 = grief + relief. Rainuka gets both. Finally, real therapy—not tips and tricks. She understood the grief I didn\\'t know I was carrying.',
                   author: 'Jessica',
                   context: 'Marketing Manager | Adult ADHD Diagnosis',
                   rating: 5,
                 },
                 {
-                  quote: 'I came in burned out and questioning everything about my career. Rainuka helped me sort through what\'s real anxiety vs. what\'s actually a sign something needs to change. In just two months, I went from panic and paralysis to a clear plan forward.',
+                  quote: 'Burned out + doubting everything. In 2 months with Rainuka: panic → clear plan. She untangled real anxiety from legit signals my career needed to change.',
                   author: 'Michael',
                   context: 'Senior Operations Lead | Career Transition',
                   rating: 5,
                 },
                 {
-                  quote: 'What I appreciated most was that there was no judgment. Rainuka met me where I was with both warmth and practical support. She helped me understand that grief isn\'t something to "fix"—it\'s something to move through with intention.',
+                  quote: 'No judgment. Rainuka met me where I was—warm + practical. She reframed grief: not something to fix, but to move through with intention.',
                   author: 'Amanda',
                   context: 'Nonprofit Director | Navigating Loss',
                   rating: 5,
@@ -120,6 +120,26 @@ export default function Home() {
                   totalReviews={4}
                 />
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof Before CTA - Strongest Testimonial */}
+        <section className="section-padding bg-warm-gray-50">
+          <div className="container-base max-w-3xl mx-auto">
+            <div className="card card-elevated bg-white border-l-4 border-sage-400">
+              <div className="flex items-start gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-sage-400">★</span>
+                ))}
+              </div>
+              <blockquote className="text-xl font-serif italic text-warm-gray-900 mb-4">
+                &quot;Finally, someone who understands that ADHD diagnosis at 35 means grief AND relief. Not just tips and tricks—real therapy. I chose Rainuka specifically because she gets how this feels—the relief of answers plus the loss of time I didn&apos;t know I was struggling.&quot;
+              </blockquote>
+              <div>
+                <p className="font-semibold text-warm-gray-900">Jessica</p>
+                <p className="text-warm-gray-600 text-sm">Marketing Manager | Adult ADHD Diagnosis</p>
+              </div>
             </div>
           </div>
         </section>

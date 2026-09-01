@@ -28,6 +28,21 @@ export default function BookingPage() {
         <section className="section-padding bg-white">
           <div className="container-base">
             <div className="max-w-2xl mx-auto">
+              {/* Trust Signal Before Form */}
+              <div className="bg-sage-50 p-8 rounded-lg mb-12 border-l-4 border-sage-400">
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl">✓</div>
+                  <div>
+                    <p className="font-semibold text-warm-gray-900 text-lg mb-2">
+                      95% of clients book ongoing sessions after their free call
+                    </p>
+                    <p className="text-warm-gray-600 text-sm">
+                      Real therapy that creates real change. See what clients are experiencing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div className="mb-12">
                 <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
                   Let's get started
