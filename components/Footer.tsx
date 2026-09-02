@@ -183,6 +183,7 @@ export default function Footer() {
         <div className="flex items-center flex-wrap gap-3 text-xs">
           {[
             { href: '/privacy', label: 'Privacy Policy' },
+            { href: '/terms', label: 'Terms of Service' },
             { href: '/accessibility', label: 'Accessibility' },
           ].map((link, i) => (
             <span key={link.href} className="inline-flex items-center gap-3">
