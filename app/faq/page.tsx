@@ -5,123 +5,127 @@ import Link from 'next/link'
 const FAQData = [
   {
     q: 'Is this first-time therapy?',
-    a: 'It doesn\'t matter—whether you\'ve been before or this is your first time, I meet you where you are with no judgment.',
+    a: 'Doesn\'t matter—whether you\'ve done this before or you\'re walking in cold, I meet you where you are. No shame. No assumptions.',
   },
   {
     q: 'Will you judge me?',
-    a: 'No. My job is to understand, not judge. Everything you share stays confidential and judgment-free.',
+    a: 'Not at all. I\'ve heard it all, and nothing surprises me. You\'re paying me to understand what\'s happening for you, not to evaluate whether it\'s "right" or "wrong."',
   },
   {
     q: 'How is therapy different from talking to friends?',
-    a: 'Friends care but aren\'t trained to help you process emotions or build new patterns. Therapy offers specialized support with confidentiality and safety.',
+    a: 'Friends are amazing, but they can\'t step outside the relationship to help you see patterns. I can. Plus, there\'s no fallout—you don\'t have to manage my feelings or worry I\'ll judge you at parties.',
   },
   {
     q: 'Will you tell me what to do?',
-    a: 'No. I help you think clearly so you can decide. My role is support and guidance, not direction.',
+    a: 'No. You\'re the expert on your life. I help you think through what\'s actually true, name what matters, and then you decide.',
   },
   {
     q: 'How long does therapy typically take?',
-    a: 'It varies. Some benefit from 6–8 sessions; others work with me for months or years. We\'ll figure out what\'s right for you.',
+    a: 'It varies wildly. Some people feel relief in 6–8 sessions. Others work with me for months or years. We figure it out together as you go.',
   },
   {
     q: 'How much does therapy cost?',
-    a: 'Standard rate is $150/session for 50-minute therapy. I offer sliding scale ($80–$120) for limited slots based on financial need. For detailed pricing, insurance info, and payment options, see our pricing page.',
+    a: '$150/session for 50 minutes. If that\'s tight, I have sliding scale ($80–$120) for a few slots. Insurance options exist too—more on the pricing page. Real talk: cost shouldn\'t be the reason you don\'t start.',
   },
   {
     q: 'Do you take insurance?',
-    a: 'I\'m in-network with several insurance providers. I also offer superbills for out-of-network reimbursement, which can reduce your out-of-pocket cost significantly. Ask during your free call.',
+    a: 'I\'m in-network with several providers. If I\'m out-of-network for you, I give you a superbill and many clients end up paying $50–$75 out-of-pocket instead of $150. Ask during our free call—we\'ll figure out your best option.',
   },
   {
     q: 'What if I can\'t afford $150/session?',
-    a: 'We have several options: sliding scale (if slots are available), out-of-network insurance reimbursement, payment plans, or resources elsewhere. Financial barriers shouldn\'t prevent you from getting help.',
+    a: 'Let\'s work with what you have. Sliding scale, insurance workarounds, payment plans, or I can point you to resources. Money shouldn\'t be the wall between you and help.',
   },
   {
     q: 'Can I get reimbursed by insurance if you\'re out-of-network?',
-    a: 'Yes, if you have out-of-network (OON) mental health benefits. I provide a superbill (detailed receipt), you submit it to insurance, and they reimburse you directly. Many clients go from $150 out-of-pocket to just $50–$75 effective cost.',
+    a: 'Yes, if your plan covers out-of-network mental health. I give you a detailed receipt (superbill), you send it to insurance, they cut you a check. Lots of people go from paying full price to paying $50–$75.',
   },
   {
     q: 'How often do people typically meet?',
-    a: 'Most start with weekly 50-minute sessions and adjust to bi-weekly after establishing momentum.',
+    a: 'Most start weekly. Once we build momentum and you feel steadier, we might stretch to every other week. We adjust based on what\'s actually happening.',
   },
   {
     q: 'Is telehealth as effective as in-person?',
-    a: 'Research confirms yes. You stay comfortable, avoid commute, and the connection is real.',
+    a: 'Yes. Research backs it up. You\'re in your own space (less intimidating), no commute, and the connection is real. I can see your face and hear what you\'re saying.',
   },
   {
     q: 'Is therapy confidential?',
-    a: 'Yes—everything is protected by HIPAA and therapist-client privilege, except mandatory reporting situations (risk of harm).',
+    a: 'Completely. HIPAA protects everything. I don\'t tell anyone. The only exceptions: if you tell me you\'re planning to hurt yourself or someone else, I have to act.',
   },
   {
     q: 'What happens if you think I\'m a danger to myself or others?',
-    a: 'I\'m required by law to take action (emergency services, family contact, or authorities). We\'ll discuss this during your first session.',
+    a: 'I\'m legally required to step in—I call emergency services, your family, or local authorities. Sounds scary, but it\'s about keeping you safe. We talk about this upfront in your first session.',
   },
   {
     q: 'Do you use my information for anything else?',
-    a: 'No. Your information stays secure and is used only for your care—never for marketing or research.',
+    a: 'Never. Your info is just for your care. Not for marketing, research, or anything else. It stays secure and it\'s yours.',
   },
   {
     q: 'What\'s your data security like?',
-    a: 'Sessions use HIPAA-compliant, encrypted video. Notes are stored securely with full data protection.',
+    a: 'Our video platform is HIPAA-compliant and encrypted. Notes live in a secure system with full data protection. I take this seriously because you have to be able to trust me.',
   },
   {
     q: 'Do I need to have a diagnosis to work with you?',
-    a: 'No. You don\'t need an ADHD or perinatal diagnosis to explore those concerns. We work with what\'s happening for you.',
+    a: 'No. You don\'t need a label to explore what\'s happening. If you\'re wondering about ADHD or perinatal anxiety, we can talk through it without a formal diagnosis on the table.',
   },
   {
     q: 'Is postpartum depression/anxiety real?',
-    a: 'Absolutely. Perinatal mental health challenges are real, common, treatable—and you\'re not weak or broken.',
+    a: 'One hundred percent. It\'s as real as any other health condition. It\'s common, treatable, and you\'re not weak or broken for experiencing it.',
   },
   {
     q: 'Can I do therapy while pregnant?',
-    a: 'Yes. Therapy during pregnancy helps with anxiety, processing fears, and preparing for birth and postpartum.',
+    a: 'Absolutely. Pregnancy is a big transition. Therapy helps with the anxiety, fears about birth, questions about motherhood—all of it. We can work together before the baby comes.',
   },
   {
     q: 'Will therapy help with ADHD symptoms?',
-    a: 'Therapy complements medication by helping you understand ADHD, build systems that work, and process shame.',
+    a: 'It works best alongside medication if you take it. Therapy helps you stop blaming yourself for ADHD stuff, build systems that fit your brain, and untangle the shame.',
   },
   {
     q: 'Should I quit my job before starting therapy?',
-    a: 'Not necessarily. Let\'s talk through what\'s really happening first. Career therapy helps you decide, not pushes an answer.',
+    a: 'Hold on—let\'s talk first about what\'s really going on. Job burnout and misalignment look similar but they\'re different. Therapy helps you untangle it so you don\'t make a move you\'ll regret.',
   },
   {
     q: 'Will therapy help my postpartum anxiety?',
-    a: 'Yes. Postpartum anxiety is treatable, and therapy helps you understand what\'s happening, calm your nervous system, and reconnect with your sense of self as a mother—often quickly.',
+    a: 'Yes. Postpartum anxiety is really treatable. We work on understanding what\'s happening in your body and mind, calming your nervous system, and helping you reconnect with yourself as a mom. Many clients feel better faster than they expect.',
   },
   {
     q: 'How long after birth should I wait to start therapy?',
-    a: 'You don\'t have to wait. We can work together anytime during pregnancy or postpartum. Early support prevents struggles from deepening, and we adjust to your energy and recovery needs.',
+    a: 'You don\'t have to wait. Start anytime during pregnancy or postpartum. Early support stops things from piling up. And I adjust to your energy and recovery—no pressure to be ready for anything.',
   },
   {
     q: 'When should I seek an ADHD diagnosis?',
-    a: 'If you\'re struggling with focus, time management, emotional regulation, or organizing your life, evaluation might help. Many adults benefit from understanding their ADHD, with or without medication. We can explore whether diagnosis fits your needs.',
+    a: 'If focus, time management, emotional regulation, or organization have always been hard, a diagnosis might be the answer. It explains lifelong stuff and opens doors to help. We can explore whether it fits what you\'re dealing with.',
   },
   {
     q: 'Is adult ADHD diagnosis worth it?',
-    a: 'It often is. A diagnosis can reduce shame, explain lifelong patterns, unlock accommodations at work, guide treatment options, and help you build systems that actually work for your brain—not against it.',
+    a: 'Often, yes. A diagnosis can kill the shame, explain patterns that made no sense, unlock workplace accommodations, and help you build systems that actually work for how your brain works instead of fighting it.',
   },
   {
     q: 'How do I know if my career change is burnout or misalignment?',
-    a: 'Burnout is exhaustion from overwork; misalignment is draining because the role doesn\'t fit your values or strengths. Therapy helps you untangle which one (or both) is true so you can make a move that actually helps.',
+    a: 'Burnout is exhaustion from overwork. Misalignment is draining because the job doesn\'t fit your values. Often it\'s both. Therapy helps you see clearly so your next move actually helps.',
   },
   {
     q: 'Can therapy help me fix a stalling career?',
-    a: 'Absolutely. We work through self-doubt, imposter feelings, networking anxiety, and career identity. Many clients clarify direction, find confidence to pursue opportunities, or pivot toward roles that feel more aligned.',
+    a: 'Yes. Self-doubt, imposter feelings, networking fear—we work through it. Clients often clarify what they actually want, find the confidence to go after it, or pivot to something that fits.',
+  },
+  {
+    q: 'What if I cry or get upset during a session?',
+    a: 'That\'s the whole point. Sessions are built for you to feel things and work through them. Crying is information. Getting frustrated is real. You\'re safe here.',
   },
   {
     q: 'How do couples work on communication together?',
-    a: 'Couples therapy creates a safe space where both partners are heard, patterns are named, and new ways of connecting are practiced. Progress happens when both people feel understood and committed to change.',
+    a: 'Both of you get heard. We name what\'s actually happening (not just surface stuff), and you practice new ways of connecting while I\'m in the room. Real change happens when both people feel understood and actually want to shift.',
   },
   {
     q: 'What if my partner won\'t come to therapy with me?',
-    a: 'Individual therapy still helps tremendously. You can shift your patterns, set boundaries, and build clarity on what you need. Sometimes that creates space for your partner to be open to joining later.',
+    a: 'Individual therapy still works. You can shift how you show up, set boundaries that matter, and get clarity on what you need. Sometimes that opens the door for your partner to join later.',
   },
   {
     q: 'Do you offer evening or weekend appointments?',
-    a: 'Yes. I have limited evening and weekend slots to fit busy schedules. Let\'s find a time that works for you during your free consultation call.',
+    a: 'Yes—I have some evening and weekend slots. Let\'s find a time that doesn\'t destroy your week during your free call.',
   },
   {
     q: 'What if I can\'t commit to a regular weekly schedule?',
-    a: 'We can start with bi-weekly sessions or adjust frequency as your life changes. Consistency helps, but flexible scheduling makes therapy accessible to you.',
+    a: 'We can work bi-weekly or adjust as your life changes. Weekly is ideal, but consistent beats perfect. Flexibility means you actually come.',
   },
 ]
 
@@ -242,7 +246,7 @@ export default function FAQPage() {
               </h2>
 
               <div className="space-y-4">
-                {FAQData.slice(14, 30).map((faq, index) => (
+                {FAQData.slice(14, 32).map((faq, index) => (
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
@@ -260,7 +264,7 @@ export default function FAQPage() {
                 Want more details about pricing?
               </h3>
               <p className="text-warm-gray-600 mb-6">
-                I have detailed information about sliding scale, insurance options, superbills, and payment plans on our pricing page. Still have questions? I\'m here to answer anything during your free consultation.
+                I have detailed information about sliding scale, insurance options, superbills, and payment plans on our pricing page. Still have questions? I'm here to answer anything during your free consultation.
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
                 <Link href="/pricing" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '0.875rem 1.75rem', fontWeight: 600, fontSize: '1rem', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', textDecoration: 'none' }}>
