@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'About Rainuka — Licensed Therapist',
     description: 'Meet Rainuka Oberoi, trauma-informed therapist licensed in Canada, California, and Florida. Specializing in perinatal mental health, ADHD diagnosis, career transitions.',
     type: 'website',
-    url: 'https://wonderloud-therapy.com/about',
+    url: 'https://rainukatherapy.com/about',
   },
 }
 
@@ -29,7 +29,7 @@ export default function AboutPage() {
         <section className="hero-section bg-gradient-to-br from-cream-50 to-burgundy-50 py-12 md:py-16 lg:py-20">
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
-              Meet Your Therapist
+              Rainuka Oberoi, Licensed Therapist
             </h1>
             <p className="text-lg md:text-xl text-warm-gray-600 max-w-2xl mx-auto">
               Someone who actually gets it. Not from a textbook.
