@@ -42,12 +42,12 @@ const approach = [
   {
     title: 'Culturally Humble',
     description:
-      'Your values matter. I\u2019m learning from you.',
+      'Your values matter. I'm learning from you.',
   },
   {
     title: 'Practical',
     description:
-      'Real tools today\u2014not just insight. Therapy that fits your life.',
+      'Real tools that work today, not just insight. Therapy that fits your actual life.',
   },
 ]
 
@@ -57,15 +57,15 @@ const approach = [
 const faqs = [
   {
     q: 'How long is the free consultation?',
-    a: 'Fifteen minutes. We\u2019ll chat about what\u2019s bringing you in, I\u2019ll share a bit about how I work, and we\u2019ll see if it feels like a fit.',
+    a: 'Fifteen minutes. We'll chat about what's bringing you in, I'll share a bit about how I work, and we'll see if it feels like a fit.',
   },
   {
     q: 'How much does therapy cost?',
-    a: 'I offer sliding scale sessions from $80\u2013$150 per 50-minute session. Let\u2019s figure out what works for your budget.',
+    a: 'I offer sliding scale sessions from $80–$150 per 50-minute session. Let's figure out what works for your budget.',
   },
   {
     q: 'Do you take insurance?',
-    a: 'I\u2019m happy to provide a superbill for out-of-network reimbursement, and I can walk you through how to use it on our first call.',
+    a: 'I'm happy to provide a superbill for out-of-network reimbursement, and I can walk you through how to use it on our first call.',
   },
   {
     q: 'Are sessions confidential?',
@@ -139,8 +139,7 @@ export default function Home() {
                 Therapy that fits the life you actually have
               </h2>
               <p className="text-lg text-warm-gray-600">
-                Therapy isn&apos;t about being &quot;fixed.&quot; It&apos;s about understanding
-                yourself better and finding clarity in the middle of what feels complicated.
+                You don't come to fix what's broken. You come to understand why you react the way you do, to see patterns you keep missing, and to find solid ground when everything feels tangled.
               </p>
             </div>
 
@@ -162,10 +161,10 @@ export default function Home() {
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
-                In Their Words
+                Real feedback from real clients
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
-                Stories of transformation from people just like you
+                What people say when the session ends
               </h2>
             </div>
 
@@ -188,9 +187,9 @@ export default function Home() {
         {/* ---------- 6. CTA — burgundy accent (the peak) ---------- */}
         <section className="section-padding text-white" style={{ backgroundColor: '#6d3a47' }}>
           <div className="container-base text-center">
-            <h2 className="text-4xl font-serif font-bold mb-6">Ready to Reclaim Your Peace?</h2>
+            <h2 className="text-4xl font-serif font-bold mb-6">Ready to start?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#ede3e5' }}>
-              Free 15-minute call. We'll listen, connect, see if we fit.
+              Free 15-minute call. We talk, listen, see if this fits.
             </p>
             <Link
               href="/booking"
@@ -206,10 +205,10 @@ export default function Home() {
                 cursor: 'pointer',
               }}
             >
-              Start Your Breakthrough Session
+              Book your consultation
             </Link>
             <p className="text-sm mt-6" style={{ color: '#c19b9f' }}>
-              No forms beforehand. No obligation to continue.
+              No forms beforehand. No commitment to continue.
             </p>
           </div>
         </section>
@@ -219,7 +218,7 @@ export default function Home() {
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
-                Before You Reach Out
+                Before you reach out
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
                 Common questions
@@ -252,10 +251,10 @@ export default function Home() {
         <section className="section-padding bg-white border-t border-sage-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">
-              Ready for Clarity?
+              Questions? Start here.
             </h2>
             <p className="text-lg text-warm-gray-600 mb-8">
-              Just a conversation. Whenever you\u2019re ready, I\u2019m here.
+              I respond within 24 hours. Let's talk about what you need.
             </p>
             <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
               Learn more about me →
