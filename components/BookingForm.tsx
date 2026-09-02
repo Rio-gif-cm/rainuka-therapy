@@ -636,7 +636,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <p><span className="font-medium">Email:</span> {formData.email}</p>
               <p><span className="font-medium">Phone:</span> {formData.phone}</p>
               {formData.concern && <p><span className="font-medium">What brings you here:</span> {formData.concern}</p>}
-              <p><span className="font-medium">First time in therapy?:</span> {formData.firstTimeTherapy ? 'Yes' : 'I've sought therapy before'}</p>
+              <p><span className="font-medium">First time in therapy?:</span> {formData.firstTimeTherapy ? 'Yes' : 'I\'ve sought therapy before'}</p>
               <p><span className="font-medium">Preferred time:</span> {formData.preferredTime}</p>
             </div>
           </div>
