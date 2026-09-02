@@ -1019,5 +1019,131 @@ input[type="checkbox"]:focus-visible {
   gap: var(--stack-block);
 }
 
+/* ========================================
+   DESKTOP UX AUDIT OPTIMIZATIONS (1440px+)
+   Phase 1: Desktop-First Refinements
+   ======================================== */
+
+/* Improvement #1: Hero Line-Width Optimization */
+@media (min-width: 1024px) {
+  .prose-width-desktop {
+    max-width: 65ch;  /* ~658px, optimal for reading */
+  }
+}
+
+/* Improvement #3: Section Spacing Expansion */
+@media (min-width: 1280px) {
+  .section-padding {
+    padding-top: 4rem;    /* 64px */
+    padding-bottom: 4rem;
+  }
+  
+  .section-padding-lg {
+    padding-top: 5rem;    /* 80px */
+    padding-bottom: 5rem;
+  }
+  
+  .section-padding-xl {
+    padding-top: 6rem;    /* 96px */
+    padding-bottom: 6rem;
+  }
+}
+
+/* Improvement #8: Text Color Hierarchy */
+.text-primary {
+  color: var(--warm-gray-900);  /* #3f3935 */
+}
+
+.text-secondary {
+  color: var(--warm-gray-700);  /* #5e534a */
+}
+
+.text-tertiary {
+  color: var(--warm-gray-600);  /* #7a6f68 */
+}
+
+.text-quaternary {
+  color: var(--warm-gray-400);  /* #ab9c91 */
+}
+
+/* Improvement #11: Desktop Line-Height Optimization */
+@media (min-width: 1024px) {
+  p, li, dd, .prose-content {
+    line-height: 1.75;  /* 28px on 1rem base */
+  }
+  
+  h1 {
+    line-height: 1.2;
+  }
+  
+  h2 {
+    line-height: 1.35;
+  }
+  
+  article, .long-form {
+    line-height: 1.8;
+  }
+}
+
+/* Improvement #10: Enhanced Focus States */
+@media (min-width: 1024px) {
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    outline: 3px solid var(--burgundy-600);
+    outline-offset: 3px;
+    border-radius: 0.375rem;
+  }
+  
+  button:focus-visible {
+    box-shadow: 
+      0 0 0 3px var(--burgundy-600),
+      0 0 0 6px var(--warm-gray-50);
+  }
+  
+  a:focus-visible {
+    background: var(--burgundy-100);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+}
+
+/* Improvement #9: Card Spacing & Shadows Desktop */
+@media (min-width: 1024px) {
+  .card {
+    padding: 2rem;  /* Grows from 1.5rem */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Improvement #6: Form Input Desktop Scale */
+@media (min-width: 1024px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea,
+  select {
+    padding: 1rem 1.25rem;  /* py-4 px-5 equivalent */
+    font-size: 1rem;        /* 16px for comfortable reading */
+    min-height: 48px;
+  }
+  
+  .form-label {
+    font-size: 1rem;        /* Scales from 0.9375rem */
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Utility: Form input desktop variant */
+.form-input-desktop {
+  @apply py-4 px-5 text-lg;
+}
+
 
 

@@ -152,7 +152,6 @@ export default function PrivacyPage() {
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
             <strong>Security protections:</strong>
           </p>
-          </p>
           <ul
             style={{
               marginBottom: '2rem',
