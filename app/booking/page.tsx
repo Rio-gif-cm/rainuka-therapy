@@ -139,7 +139,7 @@ export default function BookingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  That's what the free call is for.
+                  That's what the free call is for. No pressure to decide before we talk.
                 </p>
               </details>
 
@@ -159,7 +159,7 @@ export default function BookingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  24 hours response. 1-2 week openings.
+                  I'll respond within 24 hours. Most people meet with me within 1-2 weeks.
                 </p>
               </details>
 
@@ -169,7 +169,7 @@ export default function BookingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Just give 24-hour notice.
+                  Give 24 hours notice if you can. Life happens—we'll figure it out.
                 </p>
               </details>
 
@@ -179,7 +179,7 @@ export default function BookingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  In-network + superbills.
+                  Yes. I'm in-network with some insurances, and I can provide superbills for out-of-network plans.
                 </p>
               </details>
             </div>

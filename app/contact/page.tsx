@@ -156,7 +156,7 @@ export default function ContactPage() {
                 <div className="text-4xl mb-4">📅</div>
                 <h3 className="font-bold text-warm-gray-900 mb-2">Book Online</h3>
                 <p className="text-sm text-warm-gray-600 mb-4">
-                  Schedule your free consultation directly in your preferred time.
+                  Pick a time that works for you.
                 </p>
                 <a href="/booking" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
                   Book Now →
@@ -167,7 +167,7 @@ export default function ContactPage() {
                 <div className="text-4xl mb-4">💬</div>
                 <h3 className="font-bold text-warm-gray-900 mb-2">Email</h3>
                 <p className="text-sm text-warm-gray-600 mb-4">
-                  Prefer written communication? Send me an email.
+                  Send me a message anytime.
                 </p>
                 <a href="mailto:contact@rainukatherapy.com" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
                   Send Email →
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 <div className="text-4xl mb-4">☎️</div>
                 <h3 className="font-bold text-warm-gray-900 mb-2">Call</h3>
                 <p className="text-sm text-warm-gray-600 mb-4">
-                  Prefer to talk? Give me a call during business hours.
+                  Give me a call. I'm here Mon-Fri 9am-5pm EST.
                 </p>
                 <a href="tel:+1-555-123-4567" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
                   Call Now →
@@ -212,7 +212,7 @@ export default function ContactPage() {
               </div>
 
               <p className="text-sm text-warm-gray-600 mt-6">
-                * Response times may be longer during holidays or emergency closures
+                Heads up: I might be slower around holidays or if something unexpected comes up.
               </p>
             </div>
           </div>
