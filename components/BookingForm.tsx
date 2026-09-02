@@ -478,7 +478,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 required
               />
               {fieldTouched.phone && fieldErrors.phone && (
-                <p id="phone-error" className="text-alert-600 text-sm mt-2 font-medium">
+                <p id="phone-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                   {fieldErrors.phone}
                 </p>
               )}
