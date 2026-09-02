@@ -1,1 +1,3145 @@
-[]
+[
+  {
+    "page": "home",
+    "url": "http://localhost:3000/",
+    "timestamp": "2026-09-02T05:29:12.708Z",
+    "timing": {
+      "totalLoadTime": 1955,
+      "dcl": 0.30000000074505806,
+      "loadComplete": 0.10000000149011612,
+      "jsHeapSize": 11530748
+    },
+    "resources": {
+      "totalRequests": 30,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 44,
+      "totalSize": 471852
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "594",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "834",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_219uq1s._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "570",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_084mvkl._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/favicon.ico?favicon.2vob68tjqpejf.ico",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326951568&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120385422&dp=%2F&sid=1788326951&sct=1&seg=0&dl=http%3A%2F%2Flocalhost%2F&dt=Trauma-Informed%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.anonymize_ip=true&tfd=1088",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "url": "http://localhost:3000/about",
+    "timestamp": "2026-09-02T05:29:14.314Z",
+    "timing": {
+      "totalLoadTime": 1513,
+      "dcl": 0.09999999776482582,
+      "loadComplete": 0,
+      "jsHeapSize": 11657492
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 37,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1ihvo1x._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1rs56tg._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326953465&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=7&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119259606~120385423&dp=%2Fabout&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fabout&dt=About%20Rainuka%20Oberoi%20%7C%20Licensed%20Therapist%20(Canada%2C%20California%2C%20Florida)&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=791",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "contact",
+    "url": "http://localhost:3000/contact",
+    "timestamp": "2026-09-02T05:29:15.878Z",
+    "timing": {
+      "totalLoadTime": 1469,
+      "dcl": 0.10000000149011612,
+      "loadComplete": 0,
+      "jsHeapSize": 10627712
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/contact",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0rwev8y._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1u_74tl._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326955068&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=0&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120385423&dp=%2Fcontact&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fcontact&dt=Wonderloud%20Therapy%20%7C%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=821",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "booking",
+    "url": "http://localhost:3000/booking",
+    "timestamp": "2026-09-02T05:29:17.467Z",
+    "timing": {
+      "totalLoadTime": 1508,
+      "dcl": 0,
+      "loadComplete": 0.10000000149011612,
+      "jsHeapSize": 14137860
+    },
+    "resources": {
+      "totalRequests": 30,
+      "imageCount": 0,
+      "styleSheets": 2,
+      "scripts": 27,
+      "totalSize": 469917
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_react-day-picker_src_style_03pf1y4.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_148k4gt._.js",
+        "method": "GET",
+        "size": "521",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_073ujri._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_1jdh3zc._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326956608&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=14&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938469~118897920~118897930~120385423&dp=%2Fbooking&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fbooking&dt=Book%20Your%20Free%20Therapy%20Consultation%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=785",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "providers",
+    "url": "http://localhost:3000/providers",
+    "timestamp": "2026-09-02T05:29:19.046Z",
+    "timing": {
+      "totalLoadTime": 1504,
+      "dcl": 0.19999999925494194,
+      "loadComplete": 0,
+      "jsHeapSize": 16658756
+    },
+    "resources": {
+      "totalRequests": 28,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 24,
+      "totalSize": 469807
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/providers",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ilhx-b._.js",
+        "method": "GET",
+        "size": "411",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0sw5-r7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326958329&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=9&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938468~118897920~118897930~120385423&dp=%2Fproviders&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fproviders&dt=Wonderloud%20Therapy%20%7C%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=924",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "guides",
+    "url": "http://localhost:3000/guides",
+    "timestamp": "2026-09-02T05:29:20.619Z",
+    "timing": {
+      "totalLoadTime": 1503,
+      "dcl": 0.10000000149011612,
+      "loadComplete": 0,
+      "jsHeapSize": 10276440
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/guides",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1npw5tq._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1u_74tl._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326959972&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=8&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616986~115938466~115938468~118897920~118897930~120385423&dp=%2Fguides&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fguides&dt=Therapy%20Guides%20%26%20Resources%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=980",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "pricing",
+    "url": "http://localhost:3000/pricing",
+    "timestamp": "2026-09-02T05:29:22.181Z",
+    "timing": {
+      "totalLoadTime": 1504,
+      "dcl": 0.19999999925494194,
+      "loadComplete": 0,
+      "jsHeapSize": 11907348
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/pricing",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_11e7fgi._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1u_74tl._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326961349&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=10&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938465~115938468~118897920~118897930~120385422~120412527&dp=%2Fpricing&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fpricing&dt=Wonderloud%20Therapy%20%7C%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=799",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "adhd",
+    "url": "http://localhost:3000/adhd",
+    "timestamp": "2026-09-02T05:29:23.571Z",
+    "timing": {
+      "totalLoadTime": 1308,
+      "dcl": 0.19999999925494194,
+      "loadComplete": 0,
+      "jsHeapSize": 14965192
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 27,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_00rdwny._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0074ms3._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326962843&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=3&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120385422&dp=%2Fadhd&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fadhd&dt=Adult%20ADHD%20Therapy%20%7C%20Diagnosis%2C%20Executive%20Function%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=726",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "couples",
+    "url": "http://localhost:3000/couples",
+    "timestamp": "2026-09-02T05:29:25.625Z",
+    "timing": {
+      "totalLoadTime": 1993,
+      "dcl": 0.19999999925494194,
+      "loadComplete": 0,
+      "jsHeapSize": 10838168
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/couples",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_13n7bim._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ocrpzp._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326964560&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=9&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938465~115938469~118897920~118897930~119259606~119404699~120385423&dp=%2Fcouples&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fcouples&dt=Wonderloud%20Therapy%20%7C%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=1051",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "lgbtq",
+    "url": "http://localhost:3000/lgbtq",
+    "timestamp": "2026-09-02T05:29:27.188Z",
+    "timing": {
+      "totalLoadTime": 1503,
+      "dcl": 0,
+      "loadComplete": 0,
+      "jsHeapSize": 11050384
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/lgbtq",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_16vfwe1._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ocrpzp._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326966408&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=0&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120385422&dp=%2Flgbtq&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Flgbtq&dt=LGBTQ%2B%20Therapy%20That%20Affirms%20Your%20Wholeness%20%7C%20Identity-Centered%20Care%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=851",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "bipoc",
+    "url": "http://localhost:3000/bipoc",
+    "timestamp": "2026-09-02T05:29:28.751Z",
+    "timing": {
+      "totalLoadTime": 1503,
+      "dcl": 0.29999999701976776,
+      "loadComplete": 0,
+      "jsHeapSize": 11400316
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/bipoc",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0y78x2w._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ocrpzp._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326967971&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=18&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~120385423&dp=%2Fbipoc&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fbipoc&dt=BIPOC%20Therapy%20%7C%20Cultural%20Humility%20%26%20Anti-Racism%20Care%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=846",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "men",
+    "url": "http://localhost:3000/men",
+    "timestamp": "2026-09-02T05:29:30.323Z",
+    "timing": {
+      "totalLoadTime": 1511,
+      "dcl": 0.10000000149011612,
+      "loadComplete": 0,
+      "jsHeapSize": 10913888
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 25,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/men",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_19hxl2l._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ocrpzp._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326969490&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=7&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938469~118897920~118897930~119259605~119404698~120385423&dp=%2Fmen&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fmen&dt=Wonderloud%20Therapy%20%7C%20Therapy%20for%20Perinatal%2C%20ADHD%20%26%20Career&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=802",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "perinatal",
+    "url": "http://localhost:3000/perinatal",
+    "timestamp": "2026-09-02T05:29:31.894Z",
+    "timing": {
+      "totalLoadTime": 1508,
+      "dcl": 0,
+      "loadComplete": 0,
+      "jsHeapSize": 10614656
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 27,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1pnyfo3._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0074ms3._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326970894&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=2&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115938466~115938468~118897920~118897930~120385423&dp=%2Fperinatal&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Fperinatal&dt=Perinatal%20Therapy%20%7C%20Pregnancy%20Loss%2C%20Postpartum%20Anxiety%2C%20Infertility%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=634",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  },
+  {
+    "page": "faq",
+    "url": "http://localhost:3000/faq",
+    "timestamp": "2026-09-02T05:29:33.480Z",
+    "timing": {
+      "totalLoadTime": 1516,
+      "dcl": 0,
+      "loadComplete": 0,
+      "jsHeapSize": 11062784
+    },
+    "resources": {
+      "totalRequests": 29,
+      "imageCount": 0,
+      "styleSheets": 1,
+      "scripts": 26,
+      "totalSize": 469854
+    },
+    "images": [],
+    "rawResources": [
+      {
+        "url": "http://localhost:3000/faq",
+        "method": "GET",
+        "size": "unknown",
+        "type": "document",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__1h13not._.css",
+        "method": "GET",
+        "size": "unknown",
+        "type": "stylesheet",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/54fc36028e2bb174.p.20jfceqj9zyw9.woff2",
+        "method": "GET",
+        "size": "120800",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/66b33cc02d8f8b9d.p.3slq8sz4zhb1g.woff2",
+        "method": "GET",
+        "size": "149512",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/media/83afe278b6a6bb3c.p.2bn3s6zvc0dyp.woff2",
+        "method": "GET",
+        "size": "48432",
+        "type": "font",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1di75ot._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_164kp-6._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_1amofcm._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_next-devtools_index_090k2jm.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1anvha4._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_%40swc_helpers_cjs_1r9vbqw._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/turbopack-_08bm286._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/components_GoogleAnalytics_tsx_1dzkgp7._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/booking",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1at3dns._.js",
+        "method": "GET",
+        "size": "458",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1z_8uxs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_1u_74tl._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/node_modules_next_023ipzs._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/about",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/perinatal",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "http://localhost:3000/adhd",
+        "method": "GET",
+        "size": "unknown",
+        "type": "other",
+        "status": 200
+      },
+      {
+        "url": "http://localhost:3000/_next/static/chunks/_0ik97_z._.js",
+        "method": "GET",
+        "size": "unknown",
+        "type": "script",
+        "status": 304
+      },
+      {
+        "url": "https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER",
+        "method": "GET",
+        "size": "150652",
+        "type": "script",
+        "status": 200
+      },
+      {
+        "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-PLACEHOLDER&gtm=45je68v1za200&_p=1788326972756&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=673357564.1788326952&frm=0&pscdl=noapi&rcb=18&sr=800x600&uaa=x86&uab=64&uafvl=Not%253FA_Brand%3B24.0.0.0%7CChromium%3B152.0.7977.54&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&_s=1&tag_exp=115616985~115938466~115938468~118897920~118897930~120385422&dp=%2Ffaq&sid=1788326951&sct=1&seg=1&dl=http%3A%2F%2Flocalhost%2Ffaq&dt=Therapy%20FAQs%20-%20Perinatal%2C%20ADHD%20%26%20Career%20%7C%20Wonderloud%20Therapy&_tu=QA&en=page_view&_ee=1&ep.anonymize_ip=true&tfd=918",
+        "method": "POST",
+        "size": "0",
+        "type": "fetch",
+        "status": 204
+      }
+    ]
+  }
+]

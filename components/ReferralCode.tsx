@@ -65,7 +65,7 @@ export default function ReferralCode({ code }: ReferralCodeProps) {
         <div>
           <p className="text-sm font-medium text-warm-gray-700 mb-3">Share</p>
           <button onClick={shareToEmail} className="card card-compact card-static hover:bg-warm-gray-50 w-full flex items-center justify-center gap-2">
-            <Mail size={18} />
+            <MailIcon />
             <span>Email a Friend</span>
           </button>
         </div>
