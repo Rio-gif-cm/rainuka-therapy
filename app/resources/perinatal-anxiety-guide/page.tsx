@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function PerinatalAnxietyGuide() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-burgundy-50 to-white">
+    <main id="main-content" className="min-h-screen bg-gradient-to-b from-burgundy-50 to-white" role="main">
       {/* Hero Section */}
       <section className="px-4 py-16 md:py-24 bg-burgundy-100">
         <div className="max-w-3xl mx-auto text-center">

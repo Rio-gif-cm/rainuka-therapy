@@ -12,7 +12,7 @@ export default async function WelcomePage({ searchParams }: { searchParams: Prom
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-warm-gray-50 via-white to-warm-gray-50">
-      <div className="max-w-2xl mx-auto px-4 py-20">
+      <main id="main-content" role="main" className="max-w-2xl mx-auto px-4 py-20">
         {hasReferral && (
           <div className="bg-dusk-50 border border-dusk-200 rounded-lg p-4 mb-8 text-center">
             <p className="text-dusk-700 font-medium">Thank you for being recommended.</p>
@@ -45,7 +45,7 @@ export default async function WelcomePage({ searchParams }: { searchParams: Prom
             Learn More
           </Link>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
