@@ -1,179 +1,209 @@
-=============================================================================
-RAINUKA-THERAPY TECHNICAL AUDIT REPORT - EXECUTIVE SUMMARY
-September 1, 2024
-=============================================================================
+═══════════════════════════════════════════════════════════════════════════════
+                    SPACING & LAYOUT CONSISTENCY AUDIT
+                            Summary Report
+═══════════════════════════════════════════════════════════════════════════════
 
-BUILD STATUS: ✅ SUCCESS (9.4 seconds total)
+Repository: rainuka-therapy
+Date: 2026-09-01
+Files Audited: 15+ (globals.css, styles.ts, tailwind.config.ts, 5 components)
 
-=============================================================================
-ISSUES IDENTIFIED & RANKED BY SEVERITY
-=============================================================================
+───────────────────────────────────────────────────────────────────────────────
+KEY FINDINGS
+───────────────────────────────────────────────────────────────────────────────
 
-1. 🔴 CRITICAL [FIXED] - Smart Quotes in Source Files
-   Status: RESOLVED
-   Root Cause: 34 TypeScript/TSX files contained Unicode smart quotes
-   Files Affected: 34 (globally fixed)
-   Impact: Build failure (now resolved)
-   
-2. 🟠 HIGH - No Automated Test Suite  
-   Status: OPEN
-   Current: 0 test files found
-   Impact: No regression detection, high risk for production
-   Effort: 16 hours to implement
-   Priority: P2 (This week)
-   
-3. 🟡 MEDIUM - package.json Missing "type": "module"
-   Status: OPEN
-   Impact: 25-36ms build overhead per build
-   Effort: < 1 minute
-   Priority: P1 (Do immediately)
-   
-4. 🟡 MEDIUM - Minimal Error Recovery in API Routes
-   Status: OPEN
-   Files: app/api/bookings/route.ts, app/api/referrals/route.ts
-   Impact: Reduced debugging capability
-   Effort: 1-2 hours
-   Priority: P3
-   
-5. 🔵 LOW - Large Functions (100+ lines)
-   Status: OPEN
-   Count: 81 functions exceed 100 lines
-   Impact: Maintainability, testing complexity
-   Effort: 8 hours
-   Priority: P3
-   
-6. 🔵 LOW - Console Statements in Production
-   Status: OPEN
-   Count: 31 console.log/warn/error calls
-   Impact: Minor (some are intentional)
-   Effort: 2 hours
-   Priority: P4
-   
-7. 🔵 LOW - Bundle Size
-   Status: MONITOR
-   Largest Chunk: 222.6 KB
-   Total JS: 817.7 KB (acceptable)
-   Total CSS: 85.8 KB (good)
-   Priority: P4
-   
-8. 🟢 INFO - TypeScript Strict Mode
-   Status: ✅ COMPLIANT
-   Configuration: Enabled in tsconfig.json
-   Impact: Strong type safety
-   
-9. 🟢 INFO - Route Volume
-   Status: ✅ HEALTHY
-   Total Routes: 41 (37 static, 4 dynamic)
-   Build Time: 9.4s (acceptable)
-   
-10. 🔵 LOW - Turbopack Stability
-    Status: MONITOR
-    Configuration: Using Turbopack (experimental)
-    Fallback: Webpack available if needed
+✅ STRENGTHS:
+  • 8px grid system well-defined across 3 sources (CSS/TS/Tailwind)
+  • Section padding responsively scaled (64px mobile, 96px desktop)
+  • Grid gaps consistently named (--gap-tight, --gap-card, --gap-feature)
+  • Button touch targets meet WCAG (48px min-height)
+  • Typography hierarchy clear and proportional
 
-=============================================================================
-BUILD METRICS
-=============================================================================
+⚠️  ISSUES FOUND (7 total):
 
-Build Time:           9.4 seconds
-├─ Turbopack Compile: 844ms (✅ fast)
-├─ TypeScript Check:  4.6s  (✅ good)
-└─ Static Gen:        575ms (✅ fast)
+  1. HEADING MARGINS BREAK 8px SCALE
+     • h3 margin-bottom: 1rem (OK) but * + h3 margin-top: 2.25rem (NOT OK)
+     • h4 margin-bottom: 0.75rem (NOT OK, should be 1rem or 0.5rem)
+     • Impact: Mid-content rhythm feels jagged
 
-Code Quality:
-├─ TypeScript Errors:  0 (✅ pass)
-├─ Strict Mode:        ✅ enabled
-└─ Type Safety:        🟢 strong
+  2. BUTTON PADDING NOT ON SCALE
+     • Desktop: 0.875rem × 1.75rem (14px × 28px - both broken)
+     • Mobile: 1rem × 1.5rem (16px × 24px - OK)
+     • Fix: Use 1rem × 1.5rem everywhere
 
-Routes:
-├─ Total:            41
-├─ Static Pages:     37
-├─ Dynamic API:      2
-├─ Dynamic Other:    1
-└─ Status:           ✅ healthy
+  3. INCONSISTENT GRID GAPS
+     • Hero persona buttons: gap-3rem (48px)
+     • Niche cards: gap-card (32px)
+     • Page testimonials: gap-8 (32px)
+     • Issue: 48px vs 32px creates visual discord
 
-Bundle Sizes:
-├─ Total JS:         817.7 KB  (🟡 monitor)
-├─ Largest Chunk:    222.6 KB  (🟡 monitor)
-├─ Total CSS:        85.8 KB   (✅ good)
-└─ Status:           acceptable
+  4. OVER-SPACING IN SECTION TRANSITIONS
+     • Hero → Testimonials: section-padding (64px) + mb-12 (48px) = 112px
+     • Should be: 96px max (one full --section-y-lg unit)
 
-Security:
-├─ Hardcoded Secrets: ✅ none found
-├─ Vulnerable Deps:   ✅ none
-└─ Status:            ✅ pass
+  5. MOBILE BREATHING ROOM NOT PROPORTIONAL
+     • 64px padding on 375px viewport = 17% of height
+     • 96px padding on 1280px viewport = 7.5% of height
+     • Need: Mobile-specific scale (48px at smallest)
 
-=============================================================================
-ACTION ITEMS (PRIORITIZED)
-=============================================================================
+  6. CARD PADDING APPLICATION INCONSISTENT
+     • Tokens defined (--card-padding: 2rem, --card-padding-compact: 1.5rem)
+     • But components use inline padding instead of CSS class
+     • Risk: Changes to tokens won't cascade
 
-⚡ P1 - DO NOW (< 1 hour)
-  [ ] Add "type": "module" to package.json
-  [ ] Test rebuild verification
-  [ ] Commit and push
+  7. HEADING-TO-BODY SPACING LACKS CLARITY
+     • No unified rule for "text after heading" vs "heading after text"
+     • Owl selector attempts this but values break 8px scale
 
-📅 P2 - THIS WEEK (4-16 hours)  
-  [ ] Set up Jest + React Testing Library (2h)
-  [ ] Write core component tests (6h)
-  [ ] Write API route tests (4h)
-  [ ] Integrate into CI/CD (2h)
+───────────────────────────────────────────────────────────────────────────────
+RECOMMENDED IMPROVEMENTS (Priority: P0-P3)
+───────────────────────────────────────────────────────────────────────────────
 
-🔧 P3 - NEXT SPRINT (10-14 hours)
-  [ ] Extract large components (8h)
-  [ ] Improve API error handling (2h)
-  [ ] Optimize bundle size (3h)
+P0 (Highest Priority - Fix Before Next Deploy):
 
-💡 P4 - NICE TO HAVE (2-4 hours)
-  [ ] Wrap console logs (1h)
-  [ ] Add error tracking (2-3h)
-  [ ] Performance monitoring (1-2h)
+  ✓ Normalize heading margins to 8px scale
+    Files: app/globals.css (lines 367-407)
+    h3/h4 margins: 1rem, 1.5rem, 2rem (multiples of 8px)
+    Effort: 2 min  | Impact: High
 
-=============================================================================
-TOTAL TECHNICAL DEBT: ~27 hours
-Recommended Timeline: 2-3 weeks (P1+P2 this week, P3 next week, P4 ongoing)
+  ✓ Harmonize button padding globally
+    Files: app/globals.css (lines 549-572)
+    Change to: 1rem × 1.5rem (16px × 24px, all breakpoints)
+    Effort: 2 min  | Impact: High
 
-=============================================================================
-COMPLIANCE CHECKLIST
-=============================================================================
+P1 (Should Complete Soon):
 
-✅ TypeScript strict mode enabled
-✅ Build succeeds (0 errors)
-✅ No hardcoded secrets
-✅ All dependencies resolved
-✅ No critical vulnerabilities
-⚠️  ESLint configured (default only)
-❌ No automated tests
-❌ No Prettier config
+  ✓ Unify grid gaps across all components
+    Files: HeroSection.tsx, NicheGrid.tsx, page.tsx, styles.ts
+    Enforce: gap-card (32px) by default, gap-feature (48px) only for 2-up
+    Effort: 20 min | Impact: High
 
-=============================================================================
-NEXT STEPS
-=============================================================================
+  ✓ Fix mb-12 → mb-8 section intro cascades
+    Files: app/page.tsx (multiple sections)
+    Change: Text-center intro divs from mb-12 to mb-8
+    Effort: 5 min  | Impact: Medium
 
-1. Immediately: Add "type": "module" to package.json
-2. This week: Initialize Jest and write core tests
-3. Next sprint: Refactor large components
-4. Ongoing: Monitor production errors and performance
+P2 (Polish - Schedule for Next Sprint):
 
-For detailed analysis, see:
-- TECHNICAL_AUDIT_REPORT.md (comprehensive findings with recommendations)
-- ACTION_PRIORITY_LIST.md (implementation steps and code examples)
-- TECHNICAL_AUDIT_REPORT.json (machine-readable data)
+  ✓ Add mobile-specific section padding
+    Files: app/globals.css (add @media <= 480px rule)
+    Set: --section-y to 48px on mobile instead of 64px
+    Effort: 3 min  | Impact: Medium
 
-=============================================================================
-AUDIT METHODOLOGY
-=============================================================================
+  ✓ Card padding audit & enforcement
+    Files: All components using .card class
+    Ensure: All use CSS tokens, not inline padding
+    Effort: 30 min | Impact: High
 
-This audit applied the Debug Pro 7-step protocol:
-1. ✅ Reproduce - Full build execution (SUCCESS)
-2. ✅ Isolate - Identified smart quote syntax errors in 34 files
-3. ✅ Hypothesize - Turbopack parser failing on Unicode characters
-4. ✅ Instrument - Scanned all .ts/.tsx files for issues
-5. ✅ Verify - Confirmed fix by rebuilding successfully
-6. ✅ Fix - Applied global smart quote replacement
-7. ✅ Regression Test - Build passes with 0 errors
+P3 (Nice-to-Have - Documentation):
 
-=============================================================================
-Report Generated: September 1, 2024
-Audit Duration: Full technical analysis + 34 file fixes + 3 report documents
-Status: COMPLETE - Ready for team review and action
-=============================================================================
+  ✓ Card compact variant guidance
+    Files: app/globals.css
+    Add: .card-compact class with 24px padding, 2px accent
+    Effort: 5 min  | Impact: Low
+
+  ✓ Section dividers (visual clarity)
+    Files: app/globals.css
+    Add: .section-divider class (1px border-bottom)
+    Effort: 3 min  | Impact: Low
+
+  ✓ DESIGN_SYSTEM.md (developer onboarding)
+    Files: Create app/DESIGN_SYSTEM.md
+    Content: Spacing scale reference, anti-patterns, best practices
+    Effort: 15 min | Impact: Low
+
+───────────────────────────────────────────────────────────────────────────────
+IMPLEMENTATION CHECKLIST
+───────────────────────────────────────────────────────────────────────────────
+
+Phase 1 - P0 Issues (15 minutes):
+  □ Update heading margins in globals.css
+  □ Update button padding in globals.css
+  □ Test on desktop, tablet, mobile (visual regression)
+  □ Commit: "fix: heading & button spacing align to 8px grid"
+
+Phase 2 - P1 Issues (30 minutes):
+  □ Grep all components for grid gaps
+  □ Normalize to layout.gapCard / layout.gapFeature
+  □ Fix mb-12 → mb-8 in page.tsx sections
+  □ Commit: "refactor: grid gaps and section transitions"
+
+Phase 3 - P2 Issues (45 minutes):
+  □ Add mobile @media rule for --section-y
+  □ Audit card padding across all components
+  □ Replace inline padding with CSS tokens
+  □ Commit: "fix: card padding consistency and mobile spacing"
+
+Phase 4 - P3 Issues (30 minutes):
+  □ Add .card-compact variant
+  □ Add .section-divider class
+  □ Create DESIGN_SYSTEM.md
+  □ Commit: "docs: design system spacing reference"
+
+Total Estimated Time: 2 hours 15 minutes
+Risk Level: Low (CSS-only, no breaking changes)
+
+───────────────────────────────────────────────────────────────────────────────
+TESTING STRATEGY
+───────────────────────────────────────────────────────────────────────────────
+
+After each phase, verify:
+
+  1. Visual Regression Tests (3 breakpoints):
+     • 375px (iPhone SE)
+     • 768px (iPad)
+     • 1280px (MacBook 13")
+
+  2. Spacing Validation:
+     • Use Firefox DevTools with grid overlay
+     • All padding/margin values should be 8px multiples
+     • Section-to-section gaps should be 64px, 96px, or 128px max
+
+  3. Content Test Pages:
+     • /                  (homepage - all 8 sections)
+     • /about             (single-column content)
+     • /perinatal         (specialty page)
+     • /adhd              (specialty page)
+     • /career            (specialty page)
+     • /booking           (form layout)
+     • /faq               (accordion spacing)
+
+  4. Breathing Room Check:
+     • Sections shouldn't feel isolated (no 112px+ gaps)
+     • Mobile shouldn't feel cramped (48px min on smallest)
+     • Desktop shouldn't have dead space (96px balanced)
+
+───────────────────────────────────────────────────────────────────────────────
+METRICS (Before vs After)
+───────────────────────────────────────────────────────────────────────────────
+
+Before Audit:
+  • 2 values not on 8px scale in button padding
+  • 4 values not on 8px scale in heading margins
+  • 3+ instances of 112px+ section gaps
+  • 6+ components using inline padding instead of tokens
+
+After Improvements:
+  • 0 off-scale spacing values (100% compliance)
+  • All section gaps ≤ 96px
+  • 100% card padding usage via CSS tokens
+  • Mobile viewport breathing room proportional (48px-64px range)
+
+───────────────────────────────────────────────────────────────────────────────
+NEXT REVIEW CYCLE
+───────────────────────────────────────────────────────────────────────────────
+
+Quarterly Audit Schedule:
+  • 2026-12-01: Check for spacing drift (new components, ad-hoc styling)
+  • 2027-03-01: Validate breakpoint consistency (new device sizes)
+  • 2027-06-01: Full refresh (library updates, theme changes)
+
+Ongoing Enforcement:
+  • Code review checklist: "All spacing on 8px scale? Y/N"
+  • GitHub Actions: Linter rule (TBD) to catch non-standard values
+  • Design hand-off: Always use spacing.* or layout.* tokens
+
+═══════════════════════════════════════════════════════════════════════════════
+                           Audit Complete ✓
+                    Repository: rainuka-therapy
+                    Date: 2026-09-01
+═══════════════════════════════════════════════════════════════════════════════
