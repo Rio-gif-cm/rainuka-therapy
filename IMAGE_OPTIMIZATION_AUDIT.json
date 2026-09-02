@@ -1,0 +1,179 @@
+{
+  "timestamp": "2026-09-02T05:19:34.577Z",
+  "findings": [
+    {
+      "category": "Inventory",
+      "severity": "info",
+      "title": "Image Asset Distribution",
+      "description": "Found 0 img tags in components. 2 use Next.js Image component. 0 background images. 5 public image files.",
+      "details": {
+        "htmlImgTags": 0,
+        "nextImageComponents": 2,
+        "backgroundImages": 0,
+        "publicImageFiles": 5
+      }
+    },
+    {
+      "category": "Responsiveness",
+      "severity": "critical",
+      "title": "Responsive Image Attributes",
+      "description": "Only 0/0 img tags include srcset/sizes attributes. Next.js Image components handle responsiveness automatically.",
+      "recommendation": "Use srcset/sizes on native img tags or migrate to Next.js Image component for built-in optimization.",
+      "details": {
+        "responsive": 0,
+        "nonResponsive": 0
+      }
+    },
+    {
+      "category": "Accessibility",
+      "severity": "info",
+      "title": "Alt Text Coverage",
+      "description": "0/0 img tags have alt text. Missing alt text harms accessibility and SEO.",
+      "recommendation": "Ensure all decorative images have alt=\"\" and content images have descriptive alt text (50-125 chars).",
+      "details": {
+        "withAlt": 0,
+        "withoutAlt": 0
+      }
+    },
+    {
+      "category": "Performance",
+      "severity": "info",
+      "title": "Image Format Optimization",
+      "description": "0 WebP images, 0 legacy formats (JPG/PNG). WebP saves 25-35% bandwidth.",
+      "recommendation": "Convert JPG/PNG to WebP. Use <picture> element or Next.js Image with multiple formats.",
+      "details": {
+        "webp": 0,
+        "avif": 0,
+        "jpg": 0,
+        "png": 0,
+        "svg": 5
+      }
+    },
+    {
+      "category": "Performance",
+      "severity": "info",
+      "title": "Image File Sizes",
+      "description": "Total image assets: 0.00MB. 0 images exceed 100KB (unoptimized).",
+      "recommendation": "Compress images using tools like ImageOptim, TinyPNG, or Squoosh. Target: <100KB per image.",
+      "details": {
+        "totalSizeMB": "0.00",
+        "largeImages": []
+      }
+    },
+    {
+      "category": "Performance",
+      "severity": "info",
+      "title": "Lazy Loading Implementation",
+      "description": "0 img tags use loading=\"lazy\". 0 load eagerly, impacting page performance.",
+      "recommendation": "Add loading=\"lazy\" to below-the-fold images. Next.js Image lazy-loads by default. Consider blur placeholders for perceived performance.",
+      "details": {
+        "lazyLoaded": 0,
+        "eagerLoaded": 0
+      }
+    },
+    {
+      "category": "Optimization",
+      "severity": "info",
+      "title": "SVG Usage Patterns",
+      "description": "5 files reference SVGs (inline or imported). SVGs are scalable and cacheable when optimized.",
+      "recommendation": "Ensure SVGs are minified. Use inline SVGs for simple icons, external files for complex graphics.",
+      "details": {
+        "filesWithSvg": 5,
+        "examples": [
+          {
+            "file": ".\\components\\HeroSection.tsx",
+            "count": 7
+          },
+          {
+            "file": ".\\components\\Navigation.tsx",
+            "count": 3
+          },
+          {
+            "file": ".\\components\\SensoryFriendlyToggle.tsx",
+            "count": 1
+          }
+        ]
+      }
+    }
+  ],
+  "improvements": [
+    {
+      "priority": 1,
+      "title": "Implement srcset/sizes on all img tags",
+      "description": "For native HTML img tags, add srcset with 1x, 2x variants and sizes attribute for viewport-aware loading.",
+      "example": "<img\n  src=\"image-sm.jpg\"\n  srcset=\"image-sm.jpg 480w, image-md.jpg 1024w, image-lg.jpg 1440w\"\n  sizes=\"(max-width: 768px) 100vw, (max-width: 1440px) 50vw, 1440px\"\n  alt=\"Descriptive text\"\n  loading=\"lazy\"\n  decoding=\"async\"\n/>",
+      "impact": "Reduces data transfer by 20-40% on mobile, improves LCP."
+    },
+    {
+      "priority": 2,
+      "title": "Migrate to Next.js Image component",
+      "description": "Next.js Image handles responsive images, lazy loading, format selection, and placeholder blur automatically.",
+      "example": "import Image from 'next/image'\n\n<Image\n  src=\"/image.jpg\"\n  alt=\"Descriptive text\"\n  width={800}\n  height={600}\n  sizes=\"(max-width: 768px) 100vw, 50vw\"\n  placeholder=\"blur\"\n  blurDataURL=\"data:image/...\"\n/>",
+      "impact": "Automatic format selection (WebP/AVIF), blur placeholders, 15-30% better LCP."
+    },
+    {
+      "priority": 1,
+      "title": "Convert images to WebP with JPEG/PNG fallback",
+      "description": "Use <picture> element or Next.js Image to serve WebP to modern browsers with fallback for legacy support.",
+      "example": "<picture>\n  <source srcset=\"image.webp\" type=\"image/webp\" />\n  <source srcset=\"image.jpg\" type=\"image/jpeg\" />\n  <img src=\"image.jpg\" alt=\"...\" loading=\"lazy\" />\n</picture>",
+      "impact": "Saves 25-35% bandwidth, faster load times, improved Core Web Vitals."
+    },
+    {
+      "priority": 3,
+      "title": "Add loading=\"lazy\" to below-the-fold images",
+      "description": "Defer loading of images not visible on initial page load to improve page speed.",
+      "example": "<img src=\"...\" alt=\"...\" loading=\"lazy\" decoding=\"async\" />",
+      "impact": "Reduces initial page load time by 10-25%, improves FCP/LCP."
+    },
+    {
+      "priority": 2,
+      "title": "Implement blur placeholder strategy",
+      "description": "Use low-quality image placeholders or blur-up effect while high-quality images load. Improves perceived performance.",
+      "example": "// Use plaiceholder or blurHash libraries\n<Image\n  src=\"/image.jpg\"\n  alt=\"...\"\n  placeholder=\"blur\"\n  blurDataURL=\"data:image/jpeg;base64,...\"\n/>",
+      "impact": "Perceived performance +30%, reduces layout shift perception."
+    },
+    {
+      "priority": 2,
+      "title": "Optimize image dimensions and aspect ratios",
+      "description": "Define explicit width/height to prevent Cumulative Layout Shift. Maintain consistent aspect ratios across components.",
+      "example": "// Define aspect ratio in Tailwind or CSS\n<div className=\"aspect-video\">\n  <Image src=\"...\" alt=\"...\" fill />\n</div>",
+      "impact": "Eliminates layout shift, improves CLS metric, smoother UX."
+    },
+    {
+      "priority": 3,
+      "title": "Add detailed alt text to all images",
+      "description": "Write descriptive alt text (50-125 chars) that conveys the image purpose. For decorative images, use alt=\"\".",
+      "example": "// Content image\n<img alt=\"Rainuka Oberoi, LCSW therapist, offering trauma-informed therapy\" />\n\n// Decorative image\n<img alt=\"\" aria-hidden=\"true\" />",
+      "impact": "Better accessibility (WCAG compliance), improved SEO, +5-10% CTR on therapeutic services."
+    },
+    {
+      "priority": 1,
+      "title": "Compress and optimize all image assets",
+      "description": "Use ImageOptim, TinyPNG, or Squoosh to reduce file sizes without quality loss. Target < 100KB per image.",
+      "example": "# Use tools: squoosh-cli, cwebp, or online optimizers\nsquoosh-cli --webp *.jpg",
+      "impact": "Reduces bandwidth by 30-50%, improves LCP by 15-25%, decreases bounce rate by 10-15%."
+    },
+    {
+      "priority": 2,
+      "title": "Implement responsive image containers",
+      "description": "Use container queries or aspect ratio CSS to ensure images scale smoothly without distortion on all devices.",
+      "example": "<div className=\"w-full max-w-2xl aspect-[4/3]\">\n  <Image src=\"...\" alt=\"...\" fill className=\"object-cover\" />\n</div>",
+      "impact": "Better visual consistency, improved mobile UX, prevents layout shift."
+    },
+    {
+      "priority": 3,
+      "title": "Set up image serving from CDN",
+      "description": "Use Cloudinary, Vercel Image Optimization, or similar CDN to serve images optimized for client device/browser.",
+      "example": "Vercel Image Optimization is built-in for next/image when deployed to Vercel.",
+      "impact": "Automatic format selection, dynamic resizing, global caching, ~40% faster delivery."
+    }
+  ],
+  "stats": {
+    "totalImages": 0,
+    "responsiveImages": 0,
+    "webpImages": 0,
+    "altTextPresent": 0,
+    "lazyLoading": 0,
+    "fileSize": {}
+  }
+}
