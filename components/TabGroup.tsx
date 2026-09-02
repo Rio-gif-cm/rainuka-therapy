@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 /**
  * TabGroup
  * 
  * Reusable tab component for condensing long page content.
+ * Uses CSS transitions instead of framer-motion for better performance.
  * Used on About page to organize: Philosophy | Credentials | Impact | Testimonials
  * 
  * Usage:
@@ -67,16 +67,17 @@ export function TabGroup({
       </div>
 
       {/* Tab Content */}
-      <motion.div
+      <div
         key={activeTab}
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -8 }}
-        transition={{ duration: 0.2 }}
+        className="transition-all duration-200 ease-out"
+        style={{
+          opacity: 1,
+          transform: 'translateY(0)',
+        }}
         role="tabpanel"
       >
         {tabs[activeTab].props.children}
-      </motion.div>
+      </div>
     </div>
   );
 }
