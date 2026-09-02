@@ -4,6 +4,7 @@ import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+import { getPerinatalFAQSchema } from '@/lib/faq-schema'
 
 interface FAQItem {
   q: string
@@ -164,7 +165,7 @@ export default function PerinatalFAQPage() {
         }}
       />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - matches /perinatal warm rose */}
         <section
           className="hero-section py-20"

@@ -138,18 +138,11 @@ const FAQData = [
 ]
 
 // Schema.org FAQPage JSON-LD for rich snippets in Google Search
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: FAQData.map(faq => ({
-    '@type': 'Question',
-    name: faq.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.a,
-    },
-  })),
-}
+const faqSchema = getFAQPageSchema(
+  FAQData,
+  'https://rainuka-therapy.com/faq',
+  'Therapy FAQs'
+)
 
 export default function FAQPage() {
   return (
@@ -164,7 +157,7 @@ export default function FAQPage() {
         }}
       />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero */}
         <section className="py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base text-center">

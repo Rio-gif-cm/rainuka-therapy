@@ -10,7 +10,7 @@ export default function MenPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(242, 245, 250, 1) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">

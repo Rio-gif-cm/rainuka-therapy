@@ -17,7 +17,7 @@ export default function GriefPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Grief: Deep indigo accents (#3f566d) for depth, compassion, and holding space */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(77, 106, 134, 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">

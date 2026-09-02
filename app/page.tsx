@@ -8,6 +8,7 @@ import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclai
 import Link from 'next/link'
 import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
+import { buttonClass, buttonPresets } from '@/lib/button-styles'
 
 export const metadata: Metadata = {
   title: 'Therapy for Perinatal, ADHD & Career | Wonderloud',
@@ -199,17 +200,7 @@ export default function Home() {
             </p>
             <Link
               href="/booking"
-              style={{
-                display: 'inline-block',
-                backgroundColor: '#3d8aa8',
-                color: 'white',
-                padding: '1rem 2rem',
-                fontWeight: 600,
-                borderRadius: '0.5rem',
-                transition: 'all 0.15s ease-out',
-                textDecoration: 'none',
-                cursor: 'pointer',
-              }}
+              className={buttonPresets.heroCtaPrimary}
             >
               Book your consultation
             </Link>

@@ -119,7 +119,7 @@ export default function FinancialAccessPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero */}
         <section
           className="hero-section py-20"

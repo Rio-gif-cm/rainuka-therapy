@@ -15,7 +15,7 @@ export default function CouplesPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Couples: Warm rose for connection, warmth, and intimacy */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(244, 165, 157, 0.15) 0%, rgba(255, 248, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">

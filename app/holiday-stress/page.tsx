@@ -10,7 +10,7 @@ export default function HolidayStressPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Holiday Stress: Cool silver/blue for calm and reassurance */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(240, 248, 255, 1) 0%, rgba(245, 247, 250, 1) 100%)'}}>
 

@@ -294,12 +294,12 @@ export default function ButtonGallery() {
           Accessibility Testing
         </h2>
         <div style={{
-          backgroundColor: 'var(--sage-50)',
+          backgroundColor: 'var(--burgundy-50)',
           padding: '2rem',
           borderRadius: '0.75rem',
-          border: '1px solid var(--sage-200)',
+          border: '1px solid var(--burgundy-200)',
         }}>
-          <h3 style={{ marginBottom: '1rem', color: 'var(--sage-700)' }}>
+          <h3 style={{ marginBottom: '1rem', color: 'var(--burgundy-700)' }}>
             Keyboard Navigation
           </h3>
           <p style={{ marginBottom: '1.5rem', color: 'var(--warm-gray-700)' }}>
@@ -313,7 +313,7 @@ export default function ButtonGallery() {
             <EnhancedButton variant="outline">Tab Test 3</EnhancedButton>
           </div>
 
-          <h3 style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--sage-700)' }}>
+          <h3 style={{ marginTop: '2rem', marginBottom: '1rem', color: 'var(--burgundy-700)' }}>
             Color Contrast
           </h3>
           <p style={{ color: 'var(--warm-gray-700)' }}>

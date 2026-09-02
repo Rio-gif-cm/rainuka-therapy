@@ -18,7 +18,7 @@ export default function LGBTQPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - LGBTQ+: Soft plum accent for identity, pride, and affirmation */}
         <section
           className="hero-section py-20"

@@ -18,7 +18,7 @@ export default function BIPOCPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - BIPOC: Warm terracotta for heritage, grounding, and cultural strength */}
         <section
           className="hero-section py-20"

@@ -6,7 +6,7 @@ export default function PricingPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero Section */}
         <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-burgundy-50 to-cream-50">
           <div className="container-base text-center">

@@ -106,7 +106,7 @@ export default function TermsPage() {
             2. Scope of Services
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
-            <strong>Therapy services</strong> provided by a Licensed Clinical Social Worker (LCSW) focus on mental health support, counseling, and therapeutic guidance.
+            <strong>Therapy services</strong> provided by a Licensed Clinical Therapist focus on mental health support, counseling, and therapeutic guidance.
           </p>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
             <strong>What therapy is NOT:</strong>

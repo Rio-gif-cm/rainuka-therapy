@@ -18,7 +18,7 @@ export default function NeurodivergentPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Neurodivergent: Calm slate-teal for regulation, clarity, and low sensory load */}
         <section
           className="hero-section py-20"

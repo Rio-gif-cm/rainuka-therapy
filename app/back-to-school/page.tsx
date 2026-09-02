@@ -10,7 +10,7 @@ export default function BackToSchoolPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Back to School: Warm golden/peachy for comfort and reassurance */}
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(255, 251, 240, 1) 0%, rgba(248, 247, 245, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">

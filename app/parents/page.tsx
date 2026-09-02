@@ -85,7 +85,7 @@ export default function ParentsPage() {
         }}
       />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - Parents: Warm amber for steadiness, care, and being held */}
         <section
           className="hero-section py-20"

@@ -23,7 +23,7 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero */}
         <section className="hero-section bg-gradient-to-br from-cream-50 to-burgundy-50 py-12 md:py-16 lg:py-20">
           <div className="container-base text-center animate-fade-in-up">

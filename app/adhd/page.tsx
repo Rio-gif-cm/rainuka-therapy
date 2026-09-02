@@ -43,7 +43,7 @@ export default function ADHDPage() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         <div className="max-w-4xl mx-auto px-6 pt-8">
           <Breadcrumb
             items={[

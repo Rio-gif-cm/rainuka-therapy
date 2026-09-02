@@ -143,7 +143,7 @@ export default function ADHDFAQPage() {
         }}
       />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero - matches /adhd clear sky blue */}
         <section
           className="hero-section py-20"

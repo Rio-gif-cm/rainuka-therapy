@@ -244,6 +244,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       return
     }
 
+    // Track form submission attempt
+    trackFormSubmit('booking_form', currentStep)
+
     setIsSubmitting(true)
     setSubmitError(null)
 
@@ -257,6 +260,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       })
 
       if (response.ok) {
+        // Track successful form submission (conversion)
+        trackFormSuccess('booking_form', 'booking_request')
+        
         setSubmitSuccess(true)
         setFieldErrors({})
         // Reset form after 3 seconds
@@ -361,7 +367,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 required
               />
               {fieldTouched.name && fieldErrors.name && (
-                <p id="name-error" className="text-alert-600 text-sm mt-2 font-medium">
+                <p id="name-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                   {fieldErrors.name}
                 </p>
               )}
@@ -401,7 +407,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.email && fieldErrors.email && (
-              <p id="email-error" className="text-alert-600 text-sm mt-2 font-medium">
+              <p id="email-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.email}
               </p>
             )}
@@ -441,7 +447,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               required
             />
             {fieldTouched.phone && fieldErrors.phone && (
-              <p id="phone-error" className="text-alert-600 text-sm mt-2 font-medium">
+              <p id="phone-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                 {fieldErrors.phone}
               </p>
             )}

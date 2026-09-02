@@ -37,7 +37,7 @@ export default function GuidesPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-6 py-16">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
