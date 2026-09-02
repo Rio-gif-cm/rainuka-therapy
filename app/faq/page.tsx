@@ -168,7 +168,7 @@ export default function FAQPage() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
+        <section className="py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Frequently Asked Questions
@@ -193,7 +193,7 @@ export default function FAQPage() {
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
-                      <span className="text-sage-400">▼</span>
+                      <span className="text-burgundy-400">▼</span>
                     </summary>
                     <p className="text-warm-gray-600 mt-4">{faq.a}</p>
                   </details>
@@ -212,7 +212,7 @@ export default function FAQPage() {
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
-                      <span className="text-sage-400">▼</span>
+                      <span className="text-burgundy-400">▼</span>
                     </summary>
                     <p className="text-warm-gray-600 mt-4">{faq.a}</p>
                   </details>
@@ -231,7 +231,7 @@ export default function FAQPage() {
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
-                      <span className="text-sage-400">▼</span>
+                      <span className="text-burgundy-400">▼</span>
                     </summary>
                     <p className="text-warm-gray-600 mt-4">{faq.a}</p>
                   </details>
@@ -250,7 +250,7 @@ export default function FAQPage() {
                   <details key={index} className="card card-info cursor-pointer">
                     <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                       {faq.q}
-                      <span className="text-sage-400">▼</span>
+                      <span className="text-burgundy-400">▼</span>
                     </summary>
                     <p className="text-warm-gray-600 mt-4">{faq.a}</p>
                   </details>

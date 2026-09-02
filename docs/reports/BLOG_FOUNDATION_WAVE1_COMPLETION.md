@@ -203,7 +203,7 @@ Successfully completed the Blog Foundation Wave 1 task: research blog effectiven
 ## 8. ACCESSIBILITY & UX
 
 - ✅ Semantic HTML (h1-h3 structure preserved in MDX)
-- ✅ Accessible link contrast (sage-600 @ 4.5:1 WCAG AA)
+- ✅ Accessible link contrast (burgundy-600 @ 4.5:1 WCAG AA)
 - ✅ Mobile responsive (card grid adapts to 320px-768px)
 - ✅ Touch targets: ≥56px on mobile (article links)
 - ✅ Loading performance: Static generation (0 ms server delay)

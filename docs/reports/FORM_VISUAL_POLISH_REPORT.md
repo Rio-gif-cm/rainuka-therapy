@@ -71,7 +71,7 @@
 .form-select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--sage-500);
+  border-color: var(--burgundy-500);
   box-shadow: 0 0 0 3px rgba(157, 187, 141, 0.1);
 }
 ```
@@ -82,7 +82,7 @@ textarea:focus {
 .form-select:focus,
 textarea:focus {
   outline: none;
-  border-color: var(--sage-500);
+  border-color: var(--burgundy-500);
   background-color: rgba(248, 250, 247, 0.8);  /* Subtle sage highlight */
   box-shadow: 
     0 0 0 3px rgba(157, 187, 141, 0.15),      /* Outer glow ring */
@@ -144,14 +144,14 @@ setFieldFocused(prev => ({
 **Example (name field):**
 ```tsx
 <label htmlFor="name" className={`form-label transition-colors ${
-  fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
+  fieldFocused.name ? 'text-burgundy-600' : 'text-warm-gray-900'
 }`}>
   Your Name *
 </label>
 ```
 
 **Why This Works:**
-- Sage-600 is complementary to sage-500 border color
+- Sage-600 is complementary to burgundy-500 border color
 - `transition-colors` creates smooth 0.3s animation
 - Color shift signals "active field" without cognitive load
 - Maintains accessibility (sufficient color contrast)
@@ -180,15 +180,15 @@ Input: White background, warm-gray-200 border
 
 **On Focus:**
 ```
-Label: "Your Name *" (transitions to sage-600 color)
-Input: Sage-50 background, sage-500 border
+Label: "Your Name *" (transitions to burgundy-600 color)
+Input: Sage-50 background, burgundy-500 border
        + outer ring glow (0 0 0 3px rgba(157, 187, 141, 0.15))
        + inset accent (inset 0 1px 2px rgba(157, 187, 141, 0.08))
 ```
 
 **Invalid Focus:**
 ```
-Label: "Your Name *" (sage-600 color still)
+Label: "Your Name *" (burgundy-600 color still)
 Input: Red-50 background (from validation), red-500 border
        + outer ring glow (0 0 0 3px rgba(239, 68, 68, 0.1)) [existing]
        + inset accent adds subtle premium feel
@@ -196,7 +196,7 @@ Input: Red-50 background (from validation), red-500 border
 
 **Valid Focus:**
 ```
-Label: "Your Name *" (sage-600 color still)
+Label: "Your Name *" (burgundy-600 color still)
 Input: Green-50 background (from validation), green-500 border
        ✓ Valid checkmark appears
        + outer ring glow (0 0 0 3px rgba(22, 163, 74, 0.1)) [existing]

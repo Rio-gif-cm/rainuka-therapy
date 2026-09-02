@@ -419,7 +419,7 @@ export default function CalendarPicker({
       role="application"
       aria-label="Date picker calendar"
       tabIndex={0}
-      className="p-4 bg-white border border-sage-200 rounded-lg"
+      className="p-4 bg-white border border-burgundy-200 rounded-lg"
     >
       {/* Calendar header */}
       <div className="flex justify-between items-center mb-4">
@@ -431,7 +431,7 @@ export default function CalendarPicker({
             1
           ))}
           aria-label="Previous month"
-          className="px-3 py-1 hover:bg-sage-100 rounded"
+          className="px-3 py-1 hover:bg-burgundy-100 rounded"
         >
           ← Prev
         </button>
@@ -446,7 +446,7 @@ export default function CalendarPicker({
             1
           ))}
           aria-label="Next month"
-          className="px-3 py-1 hover:bg-sage-100 rounded"
+          className="px-3 py-1 hover:bg-burgundy-100 rounded"
         >
           Next →
         </button>
@@ -484,8 +484,8 @@ export default function CalendarPicker({
               p-2 text-center text-sm rounded
               ${!day ? 'bg-transparent' : ''}
               ${selectedDate?.getDate() === day 
-                ? 'bg-sage-600 text-white font-semibold' 
-                : 'hover:bg-sage-100 text-warm-gray-900'
+                ? 'bg-burgundy-600 text-white font-semibold' 
+                : 'hover:bg-burgundy-100 text-warm-gray-900'
               }
             `}
           >
@@ -676,8 +676,8 @@ export default function SensoryFriendlyToggle() {
       className={`
         px-4 py-2 rounded-lg font-semibold transition-all
         ${isEnabled 
-          ? 'bg-sage-600 text-white hover:bg-sage-700' 
-          : 'bg-sage-100 text-sage-900 hover:bg-sage-200'
+          ? 'bg-burgundy-600 text-white hover:bg-burgundy-700' 
+          : 'bg-burgundy-100 text-burgundy-900 hover:bg-burgundy-200'
         }
       `}
     >

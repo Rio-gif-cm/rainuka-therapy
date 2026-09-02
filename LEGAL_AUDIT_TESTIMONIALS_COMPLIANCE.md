@@ -136,7 +136,7 @@ of their testimonial at any time by contacting us.
 ```tsx
 export default function TestimonialConsentDisclaimer() {
   return (
-    <div className="bg-sage-50 border-l-4 border-sage-600 p-4 mb-8 text-sm text-warm-gray-700">
+    <div className="bg-burgundy-50 border-l-4 border-burgundy-600 p-4 mb-8 text-sm text-warm-gray-700">
       <p>
         <strong>Privacy Notice:</strong> All testimonials are shared with explicit written consent. 
         If you're a client and would like your testimonial removed, contact us anytime.
@@ -151,7 +151,7 @@ Add a subtle privacy footer to `TestimonialCard.tsx`:
 
 ```tsx
 {/* Privacy Attribution Footer */}
-<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-sage-100">
+<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-burgundy-100">
   Shared with client consent
 </p>
 ```
@@ -327,7 +327,7 @@ reframe changed everything. We work WITH my ADHD now, not against it."
 ```tsx
 export default function TestimonialConsentDisclaimer() {
   return (
-    <div className="mb-8 p-4 bg-sage-50 border-l-4 border-sage-600 rounded">
+    <div className="mb-8 p-4 bg-burgundy-50 border-l-4 border-burgundy-600 rounded">
       <p className="text-sm text-warm-gray-700">
         <strong>Privacy Notice:</strong> All testimonials shared here are from clients 
         who gave explicit written consent. Clients may request testimonial removal at 
@@ -344,7 +344,7 @@ Add footer with consent attribution:
 
 ```tsx
 {/* Footer: Privacy Attribution */}
-<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-sage-100">
+<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-burgundy-100">
   Shared with consent
 </p>
 ```

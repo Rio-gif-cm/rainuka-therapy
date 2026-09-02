@@ -55,16 +55,16 @@ export default function GuidesPage() {
           </div>
 
           {/* Links Section */}
-          <div className="flex flex-wrap gap-6 text-sm border-t border-sage-100 pt-6">
+          <div className="flex flex-wrap gap-6 text-sm border-t border-burgundy-100 pt-6">
             <Link 
               href="/guides/archive" 
-              className="text-sage-600 hover:text-sage-700 font-semibold flex items-center gap-2"
+              className="text-burgundy-600 hover:text-burgundy-700 font-semibold flex items-center gap-2"
             >
               📚 View Archive
             </Link>
             <Link 
               href="/feed.xml" 
-              className="text-sage-600 hover:text-sage-700 font-semibold flex items-center gap-2"
+              className="text-burgundy-600 hover:text-burgundy-700 font-semibold flex items-center gap-2"
             >
               📡 Subscribe (RSS)
             </Link>
@@ -82,7 +82,7 @@ export default function GuidesPage() {
                 <Link href={`/guides/${guide.slug}`} className="block no-underline h-full">
                   <div className="flex flex-col h-full">
                     {/* Title */}
-                    <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3 group-hover:text-sage-600 transition-colors">
+                    <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3 group-hover:text-burgundy-600 transition-colors">
                       {guide.frontmatter.title}
                     </h2>
 
@@ -92,10 +92,10 @@ export default function GuidesPage() {
                     </p>
 
                     {/* Metadata Footer */}
-                    <div className="flex flex-wrap gap-4 text-sm text-warm-gray-500 border-t border-sage-100 pt-4">
+                    <div className="flex flex-wrap gap-4 text-sm text-warm-gray-500 border-t border-burgundy-100 pt-4">
                       <span>{guide.frontmatter.readTime} read</span>
                       <span>{guide.frontmatter.date}</span>
-                      <span className="ml-auto text-sage-600 font-semibold group-hover:text-sage-700">
+                      <span className="ml-auto text-burgundy-600 font-semibold group-hover:text-burgundy-700">
                         Read →
                       </span>
                     </div>
@@ -113,7 +113,7 @@ export default function GuidesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="max-w-4xl mx-auto px-6 py-16 bg-sage-50 rounded-lg mt-12">
+        <section className="max-w-4xl mx-auto px-6 py-16 bg-burgundy-50 rounded-lg mt-12">
           <div className="text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-4">
               Ready to go deeper?
@@ -123,7 +123,7 @@ export default function GuidesPage() {
             </p>
             <Link
               href="/booking"
-              className="inline-block bg-sage-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-sage-700 transition-colors"
+              className="inline-block bg-burgundy-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-burgundy-700 transition-colors"
             >
               Schedule a consultation
             </Link>

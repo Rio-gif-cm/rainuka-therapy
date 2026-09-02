@@ -73,7 +73,7 @@ I've created **3-5 visual humanization concepts** to make Rainuka's therapy site
                    "Quote text..."
                    - Maya C. (Perinatal)
                    
-Avatar: Sage-200 circle + sage-700 initials + tiny leaf 🍃 accent
+Avatar: Sage-200 circle + burgundy-700 initials + tiny leaf 🍃 accent
 ```
 **Why:** Humanizes testimonials; privacy-friendly (no client photos); niche micro-icons reinforce specializations.
 
@@ -86,7 +86,7 @@ Avatar: Sage-200 circle + sage-700 initials + tiny leaf 🍃 accent
 │(Peri)│          │(Career)
 └──────┴──────────┴──────┘
 
-Sage-600 stroke + sage-200 fill, 120x120px, hover scale 1.1
+Sage-600 stroke + burgundy-200 fill, 120x120px, hover scale 1.1
 ```
 **Why:** Cohesive visual identity; communicates specialization at a glance; feels intentional + cared-for (not emoji placeholders).
 

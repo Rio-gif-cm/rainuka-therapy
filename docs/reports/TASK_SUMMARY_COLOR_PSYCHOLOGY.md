@@ -34,7 +34,7 @@ Implemented **persona-specific color psychology enhancements** across the rainuk
 - **Accent Color:** Rose/Terracotta (#d97757)
 - **Psychology:** Warmth, hope, safety, compassion
 - **Implementation:**
-  - Hero gradient: Warm rose undertones (rgba 255, 245, 243 → sage-50)
+  - Hero gradient: Warm rose undertones (rgba 255, 245, 243 → burgundy-50)
   - Checkmarks: Rose colored (#d97757)
   - Info boxes: Rose background (8% opacity) + rose left borders
   - CTA button: Solid rose background
@@ -48,7 +48,7 @@ Implemented **persona-specific color psychology enhancements** across the rainuk
 - **Accent Color:** Sky Blue (#0369a1)
 - **Psychology:** Clarity, focus, calm without overstimulation
 - **Implementation:**
-  - Hero gradient: Sky blue undertones (rgba 240, 249, 255 → sage-50)
+  - Hero gradient: Sky blue undertones (rgba 240, 249, 255 → burgundy-50)
   - Checkmarks: Sky blue colored (#0369a1)
   - Statistic boxes: Blue background (8% opacity)
   - Research box: Blue tinted background + blue left border
@@ -63,7 +63,7 @@ Implemented **persona-specific color psychology enhancements** across the rainuk
 - **Accent Color:** Gold/Amber (#b45309)
 - **Psychology:** Confidence, professionalism, forward momentum, achievement
 - **Implementation:**
-  - Hero gradient: Golden undertones (rgba 255, 248, 240 → sage-50)
+  - Hero gradient: Golden undertones (rgba 255, 248, 240 → burgundy-50)
   - Checkmarks: Gold colored (#b45309)
   - Section headings in "What We Work On": Gold colored
   - CTA button: Solid gold background
@@ -112,7 +112,7 @@ Implemented **persona-specific color psychology enhancements** across the rainuk
 - No Tailwind config changes needed
 
 ### Consistency Pattern:
-1. **Hero sections:** Persona-specific warm gradient (left) → sage-50 (right)
+1. **Hero sections:** Persona-specific warm gradient (left) → burgundy-50 (right)
 2. **Accent elements:** Persona color on checkmarks, headings, stats
 3. **Info boxes:** Persona color backgrounds (8% opacity) + left borders
 4. **CTAs:** Solid persona color background with white text

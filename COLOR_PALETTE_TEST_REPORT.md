@@ -197,7 +197,7 @@ The new palette doesn't eliminate warmth—it just repositions it as "profession
 
 ### Concern: "Burgundy is darker and may feel heavier"
 **Mitigation:** ✅ Tested and verified
-- The 50-100 tones (#f7f3f4, #ede3e5) used for backgrounds are as light as sage-100
+- The 50-100 tones (#f7f3f4, #ede3e5) used for backgrounds are as light as burgundy-100
 - Deeper tones (#6d3a47) only used for accents and CTAs, where weight is intentional
 - Gradient backgrounds prevent any "heavy" feeling
 

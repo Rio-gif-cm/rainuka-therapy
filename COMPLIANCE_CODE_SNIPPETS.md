@@ -126,7 +126,7 @@ Ready-to-use code for fixing critical gaps.
 <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginTop: '1rem' }}>
   <strong>Office of the Privacy Commissioner of Canada</strong><br />
   Toll-free: 1-800-282-1376<br />
-  Website: <a href="https://www.priv.gc.ca" className="text-sage-600 underline">www.priv.gc.ca</a>
+  Website: <a href="https://www.priv.gc.ca" className="text-burgundy-600 underline">www.priv.gc.ca</a>
 </p>
 ```
 
@@ -308,9 +308,9 @@ export default function TermsPage() {
       
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-12 md:py-16 bg-gradient-to-br from-cream-50 to-sage-50">
+        <section className="py-12 md:py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base">
-            <Link href="/" className="text-sage-600 hover:text-sage-700 mb-8 inline-flex items-center">
+            <Link href="/" className="text-burgundy-600 hover:text-burgundy-700 mb-8 inline-flex items-center">
               ← Back to home
             </Link>
             <h1 className="text-4xl font-bold mb-2 text-warm-gray-900">Terms of Service</h1>

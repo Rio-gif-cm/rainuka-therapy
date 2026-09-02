@@ -89,8 +89,8 @@ export const specialtyAccents = {
   // parents - warm sage. Grounded, nurturing, supportive
   parents: {
     accent: '#7a9b6f',        // sage green-600
-    accentText: '#5a7754',    // sage-700 (AA on white)
-    accentDeep: '#3d5236',    // sage-900
+    accentText: '#5a7754',    // burgundy-700 (AA on white)
+    accentDeep: '#3d5236',    // burgundy-900
     tint: 'rgba(122, 155, 111, 0.08)',
     tintStrong: 'rgba(90, 119, 84, 0.14)',
     heroTint: 'rgba(122, 155, 111, 0.10)',
@@ -217,7 +217,7 @@ export type SectionTone = 'white' | 'sage' | 'cream' | 'tint'
 
 const toneClass: Record<Exclude<SectionTone, 'tint'>, string> = {
   white: 'bg-white',
-  sage: 'bg-sage-50',
+  sage: 'bg-burgundy-50',
   cream: 'bg-cream-50',
 }
 

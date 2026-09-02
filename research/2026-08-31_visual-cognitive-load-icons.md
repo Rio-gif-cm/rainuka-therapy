@@ -83,7 +83,7 @@
 - Dividers create hierarchy without overwhelming
 
 **How We Use It:**
-- Add subtle sage-200 horizontal dividers between major sections
+- Add subtle burgundy-200 horizontal dividers between major sections
 - Use 2-3rem spacing + divider lines between "problem" → "solution" content
 - Keep dividers minimal (1px line, not decorative)
 
@@ -152,7 +152,7 @@
 
 ### Wave 1 (This Task)
 **ADD: Subtle Section Dividers**
-- Implement `.section-divider` component (1px sage-200 line)
+- Implement `.section-divider` component (1px burgundy-200 line)
 - Add between persona page sections
 - Update adhd/perinatal/career pages
 
@@ -186,7 +186,7 @@
 
 ✅ **Keep:** Existing sage green + warm gray palette (psychologically sound)
 ✅ **Keep:** Existing emoji icons (perinatal, ADHD, career) — recognized + meaningful
-✅ **Add:** Subtle section dividers (sage-200, 1px)
+✅ **Add:** Subtle section dividers (burgundy-200, 1px)
 ✅ **Add:** Icons in section headers (reinforce meaning)
 ✅ **Consider:** Checkmarks in symptom lists (future wave)
 

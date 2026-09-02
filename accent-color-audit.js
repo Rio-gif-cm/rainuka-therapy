@@ -17,7 +17,7 @@ const ACCENT_COLORS = {
   'burgundy': { type: 'primary', usage: 'Brand primary', variants: ['burgundy-50', 'burgundy-600', 'burgundy-900'] },
   'sea-blue': { type: 'secondary-accent', usage: 'Cool accent, CTAs, secondary highlights', variants: ['sea-blue-400', 'sea-blue-600'] },
   'deep-gray': { type: 'secondary', usage: 'Dark contrast, grounded states', variants: ['deep-gray-600', 'deep-gray-900'] },
-  'sage': { type: 'primary-alias', usage: 'Legacy alias for burgundy', variants: ['sage-50', 'sage-600', 'sage-900'] },
+  'sage': { type: 'primary-alias', usage: 'Legacy alias for burgundy', variants: ["burgundy-50', "burgundy-600', "burgundy-900'] },
   'clay': { type: 'persona-accent', usage: 'Warmth, invitation, CTAs, perinatal', variants: ['clay-50', 'clay-600'] },
   'dusk': { type: 'persona-accent', usage: 'Steady, grounded; men, ADHD, grief', variants: ['dusk-50', 'dusk-600'] },
   'honey': { type: 'persona-accent', usage: 'Career, seasonal, caution', variants: ['honey-50', 'honey-600'] },

@@ -22,7 +22,7 @@ export default function BookingPage() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
+        <section className="py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Let's Talk
@@ -39,7 +39,7 @@ export default function BookingPage() {
             <div className="max-w-2xl mx-auto">
               {/* Trust Signal Before Form */}
               {/* SOCIAL PROOF BADGE - High-impact trust signal */}
-              <div className="card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border-2 border-sage-200 shadow-sm">
+              <div className="card card-callout card-static bg-gradient-to-r from-burgundy-50 to-burgundy-100 mb-12 border-2 border-burgundy-200 shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="text-3xl">✓</div>
                   <div className="flex-1">
@@ -136,7 +136,7 @@ export default function BookingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if I'm not sure if I'm "ready" for therapy?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   That's what the free call is for. No pressure to decide before we talk.
@@ -146,7 +146,7 @@ export default function BookingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What happens in the free 15-minute call?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   We'll chat, see if we fit. You ask questions too.
@@ -156,7 +156,7 @@ export default function BookingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   How quickly can I get an appointment?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   I'll respond within 24 hours. Most people meet with me within 1-2 weeks.
@@ -166,7 +166,7 @@ export default function BookingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if I have to reschedule?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Give 24 hours notice if you can. Life happens—we'll figure it out.
@@ -176,7 +176,7 @@ export default function BookingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do you work with insurance?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. I'm in-network with some insurances, and I can provide superbills for out-of-network plans.

@@ -44,21 +44,21 @@
 
 /* Add focus-visible for keyboard navigation (better than :focus) */
 .btn-primary:focus-visible {
-  outline: 3px solid var(--sage-600);
+  outline: 3px solid var(--burgundy-600);
   outline-offset: 4px;
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
 }
 
 /* Secondary button enhanced */
 .btn-secondary:focus-visible {
-  outline: 3px solid var(--sage-700);
+  outline: 3px solid var(--burgundy-700);
   outline-offset: 4px;
   box-shadow: 0 8px 20px rgba(107, 148, 79, 0.2);
 }
 
 /* Outline button enhanced */
 .btn-outline:focus-visible {
-  outline: 3px solid var(--sage-600);
+  outline: 3px solid var(--burgundy-600);
   outline-offset: 4px;
 }
 
@@ -118,10 +118,10 @@ textarea[aria-invalid="true"]:focus {
 }
 
 /* Success state - sage confirmation */
-.form-input.border-sage-500:focus,
-.form-select.border-sage-500:focus,
-textarea.border-sage-500:focus {
-  border-color: var(--sage-600);
+.form-input.border-burgundy-500:focus,
+.form-select.border-burgundy-500:focus,
+textarea.border-burgundy-500:focus {
+  border-color: var(--burgundy-600);
   box-shadow:
     0 0 0 4px rgba(107, 148, 79, 0.12),
     inset 0 1px 2px rgba(107, 148, 79, 0.08);
@@ -154,7 +154,7 @@ textarea.border-sage-500:focus {
   display: inline-block;
   width: 1.25rem;
   height: 1.25rem;
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   animation: successCheckmark var(--duration-base) var(--ease-standard) both;
   margin-left: 0.5rem;
   flex-shrink: 0;
@@ -174,7 +174,7 @@ textarea.border-sage-500:focus {
 
 .form-success-message {
   animation: successMessageFadeIn var(--duration-base) var(--ease-standard) both;
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   font-size: 0.875rem;
   font-weight: 500;
   margin-top: 0.25rem;
@@ -203,7 +203,7 @@ textarea.border-sage-500:focus {
 }
 
 .card:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
 }
 
@@ -254,7 +254,7 @@ textarea.border-sage-500:focus {
 .form-input:focus ~ .form-label,
 .form-select:focus ~ .form-label,
 textarea:focus ~ .form-label {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
 }
 
 /* ========================================

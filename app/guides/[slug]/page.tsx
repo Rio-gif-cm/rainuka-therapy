@@ -65,7 +65,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
       <main className="flex-grow">
         <article className="max-w-3xl mx-auto px-6 py-12">
           {/* Header */}
-          <header className="mb-12 border-b border-sage-200 pb-8">
+          <header className="mb-12 border-b border-burgundy-200 pb-8">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               {guide.frontmatter.title}
             </h1>
@@ -88,7 +88,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
           </div>
 
           {/* CTA */}
-          <aside className="mt-16 pt-12 border-t border-sage-200">
+          <aside className="mt-16 pt-12 border-t border-burgundy-200">
             <div className="card card-tinted card-static">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
                 Ready to start your therapy journey?
@@ -98,7 +98,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
               </p>
               <a
                 href="/booking"
-                className="inline-block bg-sage-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-sage-700 transition-colors"
+                className="inline-block bg-burgundy-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-burgundy-700 transition-colors"
               >
                 Schedule a consultation
               </a>

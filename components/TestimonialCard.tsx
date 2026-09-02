@@ -49,7 +49,7 @@ export default function TestimonialCard({
           {[...Array(rating)].map((_, i) => (
             <span
               key={i}
-              className="text-sage-600 text-2xl drop-shadow-md transition-transform hover:scale-110"
+              className="text-burgundy-600 text-2xl drop-shadow-md transition-transform hover:scale-110"
               style={{ 
                 textShadow: '0 2px 4px rgba(107, 148, 79, 0.15)',
                 letterSpacing: '0.05em'
@@ -65,7 +65,7 @@ export default function TestimonialCard({
         <div className="mb-4 relative pl-6">
           {/* Quote Icon - Subtle Sage Accent */}
           <span
-            className="absolute left-0 top-0 text-3xl text-sage-400 opacity-60 leading-none"
+            className="absolute left-0 top-0 text-3xl text-burgundy-400 opacity-60 leading-none"
             aria-hidden="true"
           >
             "
@@ -76,7 +76,7 @@ export default function TestimonialCard({
         </div>
 
         {/* Author Attribution - Cleaner Styling */}
-        <div className="border-t border-sage-100 pt-4">
+        <div className="border-t border-burgundy-100 pt-4">
           <p className="font-semibold text-warm-gray-900 text-base">
             {author}
           </p>

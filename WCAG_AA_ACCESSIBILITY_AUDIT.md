@@ -379,7 +379,7 @@ export default function SensoryFriendlyToggle() {
       onClick={() => setIsEnabled(!isEnabled)}
       aria-label={`Sensory-friendly mode ${isEnabled ? 'enabled' : 'disabled'}`}
       aria-pressed={isEnabled}
-      className="px-3 py-2 rounded-lg bg-sage-100 hover:bg-sage-200"
+      className="px-3 py-2 rounded-lg bg-burgundy-100 hover:bg-burgundy-200"
     >
       {isEnabled ? '✓ Sensory-Friendly Mode' : '◇ Standard Mode'}
     </button>

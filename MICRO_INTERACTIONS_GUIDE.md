@@ -37,7 +37,7 @@ This document outlines the micro-interaction enhancements applied to the rainuka
 #### After (Enhanced)
 ```
 Hover State:
-  - Background darkens (sage-700)
+  - Background darkens (burgundy-700)
   - Shadow deepens: 0 10px 25px rgba(107, 148, 79, 0.25)
   - Lift: translateY(-2px) — smooth, responsive
   - Duration: 250ms with ease-standard curve
@@ -48,7 +48,7 @@ Active State (Press Feedback):
   - Duration: 150ms — quick press response
   
 Focus-Visible (Keyboard Navigation):
-  - Ring: 3px solid sage-600
+  - Ring: 3px solid burgundy-600
   - Offset: 4px
   - Combined with hover shadow for clarity
   
@@ -70,14 +70,14 @@ Disabled State:
 ### 2. Form Input Focus States
 
 #### Before
-- Focus: Border color sage-500 + sage glow (3px ring)
+- Focus: Border color burgundy-500 + sage glow (3px ring)
 - Background: Light sage tint
 - No visual hierarchy between rest/focus
 
 #### After (Enhanced)
 ```
 Focus State:
-  - Border: 1.5px solid sage-500
+  - Border: 1.5px solid burgundy-500
   - Background: rgba(248, 250, 247, 0.8) — subtle lift
   - Box-shadow (layered):
     • Outer glow: 0 0 0 4px rgba(157, 187, 141, 0.2)
@@ -92,7 +92,7 @@ Error State:
   - Never jarring; colour + icon + text carry meaning
   
 Success State:
-  - Border: 1.5px solid sage-600
+  - Border: 1.5px solid burgundy-600
   - Background: rgba(248, 250, 247, 0.5)
   - Checkmark (✓) animates in with ease
 ```
@@ -170,7 +170,7 @@ Hover State:
   - Arrow nudge animation on .explore-arrow child (4px right)
   
 Focus-Visible:
-  - Outline: 2px solid sage-600
+  - Outline: 2px solid burgundy-600
   - Offset: 2px
   - Respects keyboard navigation
 ```

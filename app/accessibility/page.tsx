@@ -9,7 +9,7 @@ export default function AccessibilityPage() {
       <div className="container-base section-padding">
         <Link 
           href="/" 
-          className="text-sage-600 hover:text-sage-700 mb-8 inline-flex items-center"
+          className="text-burgundy-600 hover:text-burgundy-700 mb-8 inline-flex items-center"
         >
           ← Back to home
         </Link>
@@ -123,7 +123,7 @@ export default function AccessibilityPage() {
         {/* LGBTQ+ Affirmation */}
         <section>
           <h2 className="text-2xl font-bold mb-4 text-warm-gray-900">LGBTQ+ Affirming Practice</h2>
-          <div className="card bg-sage-50 border-l-4 border-l-sage-600">
+          <div className="card bg-burgundy-50 border-l-4 border-l-burgundy-600">
             <p className="text-warm-gray-700 mb-4 leading-relaxed">
               <strong>I work with LGBTQ+, trans, nonbinary, and gender-nonconforming clients. Your identity is not the problem-it's a source of strength.</strong>
             </p>
@@ -172,10 +172,10 @@ export default function AccessibilityPage() {
           </p>
           <div className="space-y-3 text-warm-gray-700">
             <p>
-              <strong>Email:</strong> <a href="mailto:accessibility@rainukatherapy.com" className="text-sage-600 underline hover:text-sage-700">accessibility@rainukatherapy.com</a>
+              <strong>Email:</strong> <a href="mailto:accessibility@rainukatherapy.com" className="text-burgundy-600 underline hover:text-burgundy-700">accessibility@rainukatherapy.com</a>
             </p>
             <p>
-              <strong>Phone:</strong> <a href="tel:+1-555-123-4567" className="text-sage-600 underline hover:text-sage-700">(555) 123-4567</a>
+              <strong>Phone:</strong> <a href="tel:+1-555-123-4567" className="text-burgundy-600 underline hover:text-burgundy-700">(555) 123-4567</a>
             </p>
             <p className="text-sm italic">
               Please describe the accessibility barrier, what you were trying to do, and any assistive technology you use. We'll respond within 2 business days.
@@ -202,22 +202,22 @@ export default function AccessibilityPage() {
           </p>
           <ul className="list-disc list-inside text-warm-gray-700 space-y-2">
             <li>
-              <a href="https://www.w3.org/WAI/WCAG21/quickref/" className="text-sage-600 underline hover:text-sage-700">
+              <a href="https://www.w3.org/WAI/WCAG21/quickref/" className="text-burgundy-600 underline hover:text-burgundy-700">
                 WCAG 2.1 Quick Reference
               </a> - Web Accessibility Guidelines
             </li>
             <li>
-              <a href="https://www.a11yproject.com/" className="text-sage-600 underline hover:text-sage-700">
+              <a href="https://www.a11yproject.com/" className="text-burgundy-600 underline hover:text-burgundy-700">
                 A11y Project
               </a> - Community for web accessibility
             </li>
             <li>
-              <a href="https://www.section508.gov/" className="text-sage-600 underline hover:text-sage-700">
+              <a href="https://www.section508.gov/" className="text-burgundy-600 underline hover:text-burgundy-700">
                 Section 508
               </a> - U.S. Federal accessibility standards
             </li>
             <li>
-              <a href="https://webaim.org/" className="text-sage-600 underline hover:text-sage-700">
+              <a href="https://webaim.org/" className="text-burgundy-600 underline hover:text-burgundy-700">
                 WebAIM
               </a> - Web accessibility information and resources
             </li>

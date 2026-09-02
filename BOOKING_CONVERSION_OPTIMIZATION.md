@@ -50,7 +50,7 @@ Visually appears as 3 separate questions
 
 **After:**
 ```jsx
-<div className="bg-gradient-to-b from-white to-sage-50/30 rounded-xl border border-sage-100 p-6 space-y-4 shadow-sm">
+<div className="bg-gradient-to-b from-white to-burgundy-50/30 rounded-xl border border-burgundy-100 p-6 space-y-4 shadow-sm">
   <div>
     {/* Name field */}
   </div>
@@ -138,7 +138,7 @@ Visually appears as 3 separate questions
 
 The social proof badge was already present in HEAD:
 ```jsx
-<div className="card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border-2 border-sage-200 shadow-sm">
+<div className="card card-callout card-static bg-gradient-to-r from-burgundy-50 to-burgundy-100 mb-12 border-2 border-burgundy-200 shadow-sm">
   <div className="flex items-start gap-4">
     <div className="text-3xl">✓</div>
     <div className="flex-1">
@@ -161,7 +161,7 @@ The social proof badge was already present in HEAD:
 **Features:**
 - ✅ "Verified Outcomes" badge adds credibility
 - ✅ Checkmark emoji conveys validation
-- ✅ Gradient background (sage-50 to sage-100) creates emphasis
+- ✅ Gradient background (burgundy-50 to burgundy-100) creates emphasis
 - ✅ Positioned above form (pre-commitment trust signal)
 
 ---

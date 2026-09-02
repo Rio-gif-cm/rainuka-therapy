@@ -61,7 +61,7 @@ export default function CouplesPage() {
         <SectionDivider margin="3rem" />
 
         {/* Communication Patterns */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="💬" level={2} color={colors.warmGray[900]}>
               Communication Patterns That Hurt (& How to Change Them)
@@ -165,7 +165,7 @@ export default function CouplesPage() {
                   <p className="text-sm text-warm-gray-700">Leads with criticism. Focuses on what the partner did wrong. Can feel contemptuous when stressed.</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-sage-50 to-sage-100 p-6 rounded-lg">
+                <div className="bg-gradient-to-br from-burgundy-50 to-burgundy-100 p-6 rounded-lg">
                   <p className="font-semibold text-warm-gray-900 mb-2">Placater</p>
                   <p className="text-sm text-warm-gray-700">Avoids conflict at all costs. Accommodates their partner's needs over their own. Can build resentment over time.</p>
                 </div>
@@ -284,7 +284,7 @@ export default function CouplesPage() {
               </p>
 
               <div className="space-y-4">
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-sage-50 to-white" style={{borderLeftColor: '#6b944f'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: '#6b944f'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Love Maps (Gottman)</p>
                   <p className="text-sm text-warm-gray-700">
                     Deep knowledge of your partner's inner world-dreams, fears, values, daily stresses. 
@@ -319,7 +319,7 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-sage-50 to-white" style={{borderLeftColor: '#82a86c'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: '#82a86c'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Shared Meaning</p>
                   <p className="text-sm text-warm-gray-700">
                     What do you want your relationship to <em>be</em>? Beyond daily logistics, what shared values or vision 
@@ -347,7 +347,7 @@ export default function CouplesPage() {
         <SectionDivider margin="3rem" />
 
         {/* FAQ */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
               Frequently Asked Questions
@@ -467,7 +467,7 @@ export default function CouplesPage() {
         <SectionDivider margin="3rem" />
 
         {/* My Approach */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
               How I Work With Couples

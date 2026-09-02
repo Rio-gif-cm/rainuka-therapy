@@ -8,7 +8,7 @@ export default function PricingPage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-sage-50 to-cream-50">
+        <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-burgundy-50 to-cream-50">
           <div className="container-base text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
               Transparent Pricing
@@ -22,7 +22,7 @@ export default function PricingPage() {
         {/* Standard Rate Section */}
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
-            <div className="bg-gradient-to-br from-sage-50 to-cream-50 p-6 md:p-10 lg:p-12 rounded-lg border border-sage-200 mb-6 md:mb-8">
+            <div className="bg-gradient-to-br from-burgundy-50 to-cream-50 p-6 md:p-10 lg:p-12 rounded-lg border border-burgundy-200 mb-6 md:mb-8">
               <h2 className="text-xl md:text-2xl font-serif font-bold text-warm-gray-900 mb-2 text-center">
                 Standard Session Rate
               </h2>
@@ -31,7 +31,7 @@ export default function PricingPage() {
               </p>
               
               <div className="text-center">
-                <div className="text-5xl md:text-6xl font-bold text-sage-700 mb-2">
+                <div className="text-5xl md:text-6xl font-bold text-burgundy-700 mb-2">
                   $150
                 </div>
                 <p className="text-warm-gray-600 text-base md:text-lg">
@@ -39,23 +39,23 @@ export default function PricingPage() {
                 </p>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-sage-200">
+              <div className="mt-8 pt-8 border-t border-burgundy-200">
                 <h3 className="font-semibold text-warm-gray-900 mb-4">What's Included</h3>
                 <ul className="space-y-3 text-warm-gray-600">
                   <li className="flex items-start gap-3">
-                    <span className="text-sage-500 font-bold">✓</span>
+                    <span className="text-burgundy-500 font-bold">✓</span>
                     <span>50-minute confidential therapy session via secure video</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-sage-500 font-bold">✓</span>
+                    <span className="text-burgundy-500 font-bold">✓</span>
                     <span>Trauma-informed, personalized approach to your specific needs</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-sage-500 font-bold">✓</span>
+                    <span className="text-burgundy-500 font-bold">✓</span>
                     <span>HIPAA-compliant confidentiality and secure platform</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-sage-500 font-bold">✓</span>
+                    <span className="text-burgundy-500 font-bold">✓</span>
                     <span>Between-session support via email when needed</span>
                   </li>
                 </ul>
@@ -69,7 +69,7 @@ export default function PricingPage() {
               <div className="text-center mt-6">
                 <a 
                   href="/booking" 
-                  className="inline-block px-8 py-3 bg-sage-600 text-white font-semibold rounded-lg hover:bg-sage-700 transition-colors"
+                  className="inline-block px-8 py-3 bg-burgundy-600 text-white font-semibold rounded-lg hover:bg-burgundy-700 transition-colors"
                 >
                   Schedule Free Consultation
                 </a>
@@ -79,7 +79,7 @@ export default function PricingPage() {
         </section>
 
         {/* Sliding Scale Section */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Sliding Scale Options
@@ -95,7 +95,7 @@ export default function PricingPage() {
               <div className="space-y-4 md:space-y-6">
                 <div>
                   <h4 className="font-semibold text-warm-gray-900 mb-3 flex items-center gap-2">
-                    <span className="bg-sage-200 text-sage-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+                    <span className="bg-burgundy-200 text-burgundy-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
                     Income-Based Rate Range
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
@@ -105,7 +105,7 @@ export default function PricingPage() {
 
                 <div>
                   <h4 className="font-semibold text-warm-gray-900 mb-3 flex items-center gap-2">
-                    <span className="bg-sage-200 text-sage-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+                    <span className="bg-burgundy-200 text-burgundy-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
                     Limited Availability
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
@@ -115,7 +115,7 @@ export default function PricingPage() {
 
                 <div>
                   <h4 className="font-semibold text-warm-gray-900 mb-3 flex items-center gap-2">
-                    <span className="bg-sage-200 text-sage-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+                    <span className="bg-burgundy-200 text-burgundy-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
                     No Financial Verification Stress
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
@@ -125,7 +125,7 @@ export default function PricingPage() {
 
                 <div>
                   <h4 className="font-semibold text-warm-gray-900 mb-3 flex items-center gap-2">
-                    <span className="bg-sage-200 text-sage-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
+                    <span className="bg-burgundy-200 text-burgundy-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
                     Same Quality Care
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
@@ -134,7 +134,7 @@ export default function PricingPage() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-sage-200 bg-sage-50 p-6 rounded">
+              <div className="mt-8 pt-8 border-t border-burgundy-200 bg-burgundy-50 p-6 rounded">
                 <p className="text-warm-gray-700 text-center font-medium">
                   <strong>To inquire about sliding scale availability:</strong> Mention it during your free consultation, and we'll explore what makes sense for your financial situation.
                 </p>
@@ -170,7 +170,7 @@ export default function PricingPage() {
               </div>
 
               {/* Out-of-Network Superbill */}
-              <div className="bg-gradient-to-br from-sage-50 to-cream-50 p-8 rounded-lg border border-sage-200">
+              <div className="bg-gradient-to-br from-burgundy-50 to-cream-50 p-8 rounded-lg border border-burgundy-200">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">
                   💰 Out-of-Network Reimbursement (Superbill)
                 </h3>
@@ -178,23 +178,23 @@ export default function PricingPage() {
                   If you have out-of-network (OON) mental health benefits, you may be able to get reimbursed <strong>even though I don't take your insurance directly.</strong>
                 </p>
 
-                <div className="bg-white p-6 rounded mb-6 border border-sage-100">
+                <div className="bg-white p-6 rounded mb-6 border border-burgundy-100">
                   <h4 className="font-semibold text-warm-gray-900 mb-4">How It Works</h4>
                   <div className="space-y-4 text-warm-gray-600 text-sm">
                     <div className="flex gap-4">
-                      <span className="text-sage-600 font-bold flex-shrink-0">Step 1:</span>
+                      <span className="text-burgundy-600 font-bold flex-shrink-0">Step 1:</span>
                       <span>You attend your therapy session at the full rate ($150/session)</span>
                     </div>
                     <div className="flex gap-4">
-                      <span className="text-sage-600 font-bold flex-shrink-0">Step 2:</span>
+                      <span className="text-burgundy-600 font-bold flex-shrink-0">Step 2:</span>
                       <span>I provide you with a superbill (detailed receipt with diagnosis, CPT codes, and session fee)</span>
                     </div>
                     <div className="flex gap-4">
-                      <span className="text-sage-600 font-bold flex-shrink-0">Step 3:</span>
+                      <span className="text-burgundy-600 font-bold flex-shrink-0">Step 3:</span>
                       <span>You submit the superbill to your insurance company</span>
                     </div>
                     <div className="flex gap-4">
-                      <span className="text-sage-600 font-bold flex-shrink-0">Step 4:</span>
+                      <span className="text-burgundy-600 font-bold flex-shrink-0">Step 4:</span>
                       <span>Insurance reimburses you directly (typically 50-80% of the session cost)</span>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export default function PricingPage() {
                   <strong>Real example:</strong> A client pays $150/session upfront but gets reimbursed $100 by insurance. Their effective cost is only $50/session-without me ever discounting or dealing with insurance directly.
                 </p>
 
-                <div className="bg-white p-4 rounded border-l-4 border-sage-400">
+                <div className="bg-white p-4 rounded border-l-4 border-burgundy-400">
                   <p className="text-warm-gray-600 text-sm">
                     <strong>💡 Pro tip:</strong> Many people with PPO or POS plans have OON mental health benefits they don't know about. During your consultation, we can discuss whether this option might work for you.
                   </p>
@@ -228,7 +228,7 @@ export default function PricingPage() {
         </section>
 
         {/* Payment Methods Section */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-6 md:mb-8 text-center">
               Payment Methods
@@ -279,7 +279,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Is there a free consultation?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. The first 15-minute call is completely free and is just to see if we're a good fit. During this call, we'll also discuss payment options, insurance, and any financial concerns you have. You're under no obligation to move forward.
@@ -289,7 +289,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do you really have sliding scale, or is it just talk?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   I genuinely maintain a few sliding-scale slots. They're limited because I need to keep my practice sustainable, but they're real-not a marketing gimmick. If you have financial constraints, we discuss it honestly during our consultation. No shame, no judgment.
@@ -299,7 +299,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if I can't afford $80-$150 per session?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   We have three options: (1) Sliding scale if a slot is available, (2) Out-of-network insurance reimbursement if you have OON benefits, or (3) Explore if there are other resources in your area I can recommend. I'm committed to helping you find a solution, but I also need to be honest if my practice can't be the right fit right now.
@@ -309,7 +309,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   How do I know if my insurance covers out-of-network therapy?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Call the number on the back of your insurance card and ask about out-of-network (OON) mental health benefits. Ask specifically: "What's my reimbursement percentage for out-of-network therapy?" Typically it's 50-80%. During your free consultation, we can discuss your specific plan.
@@ -319,7 +319,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do you offer payment plans?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. We can discuss payment arrangements based on your financial situation. Life happens-job changes, unexpected expenses, hard times. If you're in ongoing treatment with me, we can find a way to make it work, within reason.
@@ -329,7 +329,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do I pay for cancellations?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   If you cancel with less than 24 hours' notice, I charge the full session fee. Life gets messy, and I try to be flexible with one-offs, but I hold the time for you. If you need to reschedule, just let me know as soon as you can.
@@ -339,7 +339,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Why are your rates transparent?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Because therapy is already vulnerable and scary. The last thing you need is to wonder if you can afford it or if you're being taken advantage of. Transparency is respect. I believe you should know what you're getting into before you make any decision.
@@ -349,7 +349,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if insurance denies my claim or superbill?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Sometimes insurance denies claims for various reasons (authorization issues, diagnosis code mismatches, coverage limits). If that happens, we'll problem-solve together. I'll appeal if needed or help you understand your options. You're not alone in figuring this out.
@@ -359,7 +359,7 @@ export default function PricingPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Do you offer teletherapy at the same rate?
-                  <span className="text-sage-400">▼</span>
+                  <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. Telehealth is my primary modality. Whether you're in your home, office, or anywhere comfortable, the rate and level of care are the same. Video therapy can be just as effective as in-person-and it's often more convenient.
@@ -370,7 +370,7 @@ export default function PricingPage() {
         </section>
 
         {/* Trust & Transparency Section */}
-        <section className="section-padding bg-gradient-to-br from-sage-50 to-cream-50">
+        <section className="section-padding bg-gradient-to-br from-burgundy-50 to-cream-50">
           <div className="container-base max-w-2xl mx-auto">
             <div className="text-center mb-8 md:mb-12">
               <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
@@ -438,7 +438,7 @@ export default function PricingPage() {
             </p>
             <a 
               href="/booking" 
-              className="inline-block px-10 py-4 bg-sage-600 text-white font-semibold rounded-lg hover:bg-sage-700 transition-colors text-lg"
+              className="inline-block px-10 py-4 bg-burgundy-600 text-white font-semibold rounded-lg hover:bg-burgundy-700 transition-colors text-lg"
             >
               Schedule Your Free Consultation
             </a>

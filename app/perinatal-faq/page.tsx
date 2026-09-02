@@ -94,7 +94,7 @@ const treatmentFAQ: FAQItem[] = [
   },
   {
     q: 'Can I take medication while pregnant or breastfeeding?',
-    a: 'Many are considered compatible with pregnancy and lactation, and the risks of untreated depression and anxiety are real and often understated in these conversations. Prescribing is outside my scope as an LCSW, but I can help you frame the questions and refer you to a reproductive psychiatrist who specializes in exactly this.',
+    a: 'Many are considered compatible with pregnancy and lactation, and the risks of untreated depression and anxiety are real and often understated in these conversations. Prescribing is outside my scope as a licensed therapist, but I can help you frame the questions and refer you to a reproductive psychiatrist who specializes in exactly this.',
   },
   {
     q: 'How long does treatment for perinatal mental health issues take?',
@@ -142,7 +142,7 @@ function FAQSection({ title, items }: { title: string; items: FAQItem[] }) {
           <details key={index} className="card card-info cursor-pointer">
             <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
               {faq.q}
-              <span className="text-sage-400">▼</span>
+              <span className="text-burgundy-400">▼</span>
             </summary>
             <p className="text-warm-gray-600 mt-4">{faq.a}</p>
           </details>
@@ -219,7 +219,7 @@ export default function PerinatalFAQPage() {
             <FAQSection title="Loss, Infertility &amp; Grief" items={lossFertilityFAQ} />
             <FAQSection title="Starting Therapy &amp; Treatment" items={treatmentFAQ} />
 
-            <div className="bg-sage-50 p-8 rounded-lg text-center">
+            <div className="bg-burgundy-50 p-8 rounded-lg text-center">
               <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
                 Still have questions?
               </h3>
@@ -241,25 +241,25 @@ export default function PerinatalFAQPage() {
 
         <SectionDivider margin="3rem" />
 
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="🔗" level={2} color={colors.warmGray[900]}>
               Related Pages
             </IconHeading>
             <div className="flex gap-4 flex-wrap">
-              <Link href="/perinatal" className="text-sage-600 underline">
+              <Link href="/perinatal" className="text-burgundy-600 underline">
                 Perinatal Mental Health Therapy
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/parents" className="text-sage-600 underline">
+              <Link href="/parents" className="text-burgundy-600 underline">
                 Parents &amp; Caregivers
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/grief" className="text-sage-600 underline">
+              <Link href="/grief" className="text-burgundy-600 underline">
                 Grief Support
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/faq" className="text-sage-600 underline">
+              <Link href="/faq" className="text-burgundy-600 underline">
                 General FAQ
               </Link>
             </div>

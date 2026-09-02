@@ -92,16 +92,16 @@
 
 ### Sage Usage (Brand Primary)
 ```
-✓ .btn-primary background-color: var(--sage-600)
-✓ .btn-secondary background-color: var(--sage-600)
-✓ .btn-outline border-color & color: var(--sage-600)
-✓ a { color: var(--sage-600) }
-✓ :focus-visible { outline: 3px solid var(--sage-500) }
-✓ .card border-top-color: var(--sage-600)
+✓ .btn-primary background-color: var(--burgundy-600)
+✓ .btn-secondary background-color: var(--burgundy-600)
+✓ .btn-outline border-color & color: var(--burgundy-600)
+✓ a { color: var(--burgundy-600) }
+✓ :focus-visible { outline: 3px solid var(--burgundy-500) }
+✓ .card border-top-color: var(--burgundy-600)
 ✓ .hero-section { background: var(--grad-sage-mist) }
-✓ .explore-arrow { color: var(--sage-600) }
-✓ .type-eyebrow { color: var(--sage-700) }
-✓ Table headers { background-color: var(--sage-50) }
+✓ .explore-arrow { color: var(--burgundy-600) }
+✓ .type-eyebrow { color: var(--burgundy-700) }
+✓ Table headers { background-color: var(--burgundy-50) }
 ```
 
 ### Warm Gray Usage (Dominant Neutral)
@@ -138,12 +138,12 @@ All gradients stay within brand + neutral + persona palette:
 
 | Gradient | Endpoints | Usage |
 |----------|-----------|-------|
-| `--grad-sage-mist` | warm-gray-50 → sage-100 | Hero section, major sections |
-| `--grad-sage-veil` | sage-50 → white | Section backgrounds |
-| `--grad-sage-veil-up` | white → sage-50 | Reverse section backgrounds |
+| `--grad-sage-mist` | warm-gray-50 → burgundy-100 | Hero section, major sections |
+| `--grad-sage-veil` | burgundy-50 → white | Section backgrounds |
+| `--grad-sage-veil-up` | white → burgundy-50 | Reverse section backgrounds |
 | `--grad-warm-linen` | cream-50 → warm-gray-50 → cream-100 | Editorial/long-read sections |
 | `--grad-warm-veil` | warm-gray-50 → white | Neutral section backgrounds |
-| `--grad-card-surface` | rgba(white, 0.98) → rgba(sage-50, 0.35) | Card surfaces |
+| `--grad-card-surface` | rgba(white, 0.98) → rgba(burgundy-50, 0.35) | Card surfaces |
 | `--grad-clay-veil` | clay-50 → white | Clay persona sections |
 | `--grad-dusk-veil` | dusk-50 → white | Dusk persona sections |
 | `--grad-honey-veil` | honey-50 → white | Honey persona sections |

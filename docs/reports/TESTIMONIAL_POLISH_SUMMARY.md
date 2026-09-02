@@ -35,7 +35,7 @@ After:  text-2xl (24px), drop-shadow-md, text-shadow for depth
 ```
 New feature: Decorative quote mark (") rendered as:
         - Size: text-3xl (30px) for visual prominence
-        - Color: sage-400 (lighter than sage-600) for subtle sophistication
+        - Color: burgundy-400 (lighter than burgundy-600) for subtle sophistication
         - Opacity: 60% for balanced design (not overwhelming)
         - Positioning: Absolute left-0 top-0 with pl-6 offset on quote paragraph
         - Accessibility: aria-hidden for semantic correctness
@@ -45,7 +45,7 @@ New feature: Decorative quote mark (") rendered as:
 ```
 Before: Adjacent paragraphs with no visual separation
 After:  
-        - Border separator: border-t border-sage-100 (subtle horizontal line)
+        - Border separator: border-t border-burgundy-100 (subtle horizontal line)
         - Padding: pt-4 for breathing room
         - Author name: text-base (consistent), semibold
         - Role text: text-xs, font-medium, tracking-tight (professional appearance)

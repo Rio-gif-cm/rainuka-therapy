@@ -11,7 +11,7 @@
 ## 1. PRIMARY COLOR VERIFICATION
 
 ### Sage Green (Brand Primary)
-- **Defined:** `--sage-600: #6b944f` ✅
+- **Defined:** `--burgundy-600: #6b944f` ✅
 - **Hex Match:** Confirmed in both files
 - **Usage:**
   - CSS: Links, CTA buttons, focus rings, card accent borders
@@ -132,7 +132,7 @@ Lines 124–131 (CSS) and 61–65 (TS):
 |-----------|--|--|---|---|
 | Color scales | Lines 11–80 | Lines 2–38 | ✅ | Byte-for-byte identical |
 | Spacing values | Lines 111–122 | Lines 46–58 | ✅ | Identical scales |
-| Button styles | Lines 573–657 | Lines 131–196 | ✅ | Same sage-600/700 colors |
+| Button styles | Lines 573–657 | Lines 131–196 | ✅ | Same burgundy-600/700 colors |
 | Section padding | Lines 779–792 | Lines 157–169 | ✅ | Both use CSS custom properties |
 | Card tokens | Lines 228–260 | Lines 185–196 | ✅ | Unified system |
 
@@ -210,7 +210,7 @@ Lines 847–1002 (CSS) establish unified card system:
 --card-padding: 2rem
 --card-border-width: 1px
 --card-accent-width: 3px
---card-accent-color: var(--sage-600)  /* Primary */
+--card-accent-color: var(--burgundy-600)  /* Primary */
 --card-shadow-rest / --card-shadow-hover / --card-shadow-active
 --card-transition: box-shadow 400ms, transform 400ms, border-color 250ms, background 250ms
 ```
@@ -223,10 +223,10 @@ Lines 847–1002 (CSS) establish unified card system:
 ## 8. ACCESSIBILITY & SEMANTICS
 
 ### Focus Management
-- **Focus ring:** `outline: 3px solid var(--sage-500)` (line 533, CSS)
+- **Focus ring:** `outline: 3px solid var(--burgundy-500)` (line 533, CSS)
 - **Offset:** `outline-offset: 2px` (consistent throughout)
 - ✅ All interactive elements have visible focus states
-- ✅ Outline color uses sage-500, not pure blue
+- ✅ Outline color uses burgundy-500, not pure blue
 
 ### Touch Targets
 - Buttons: `min-height: 48px` (line 560, CSS)
@@ -251,7 +251,7 @@ Lines 551–568 (CSS):
 ### Semantic Hierarchy
 - `<h1>`–`<h6>` use serif (Fraunces), weight increases as size decreases
 - `<p>` and body text use sans-serif (Inter) with positive tracking (0.01em) for dyslexia/ADHD aid
-- `.type-eyebrow` uses sage-700 (line 469)
+- `.type-eyebrow` uses burgundy-700 (line 469)
 - All semantic type classes documented and in use
 
 ---

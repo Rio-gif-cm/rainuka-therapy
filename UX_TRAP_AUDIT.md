@@ -47,7 +47,7 @@ Add a sticky floating "Back" button (bottom-right, mobile-friendly) + anchor lin
 <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 md:opacity-0 md:hover:opacity-100 transition-opacity z-40">
   <Link 
     href="/" 
-    className="inline-flex items-center gap-2 bg-sage-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-sage-700"
+    className="inline-flex items-center gap-2 bg-burgundy-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-burgundy-700"
   >
     ← Home
   </Link>
@@ -85,7 +85,7 @@ Add explicit "Looking for therapy yourself?" section above fold:
   <div className="card card-static">
     {/* Referral section stays */}
   </div>
-  <div className="card card-static bg-sage-50">
+  <div className="card card-static bg-burgundy-50">
     <h3 className="font-semibold text-warm-gray-900 mb-2">Looking for therapy yourself?</h3>
     <p className="text-sm text-warm-gray-600 mb-4">
       Ready to start your own therapeutic journey.
@@ -118,7 +118,7 @@ Add explicit "Looking for therapy yourself?" section above fold:
   <IconHeading>What Disability-Affirming Therapy Means</IconHeading>
   {/* 150+ lines */}
 </section>
-<section className="section-padding bg-gradient-to-b from-white to-sage-50">
+<section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
   <IconHeading>Our Accessibility Commitments</IconHeading>
   {/* 170+ lines */}
 </section>
@@ -140,7 +140,7 @@ const sections = [
   <ul className="space-y-2">
     {sections.map(s => (
       <li key={s.id}>
-        <a href={`#${s.id}`} className="text-sm text-sage-600 hover:text-sage-700">
+        <a href={`#${s.id}`} className="text-sm text-burgundy-600 hover:text-burgundy-700">
           {s.label}
         </a>
       </li>
@@ -253,7 +253,7 @@ onKeyDown={handleKeyDown}
 **Evidence:**
 ```tsx
 // accessibility/page.tsx
-<Link href="/" className="text-sage-600 hover:text-sage-700 mb-8 inline-flex items-center">
+<Link href="/" className="text-burgundy-600 hover:text-burgundy-700 mb-8 inline-flex items-center">
   ← Back to home
 </Link>
 ```
@@ -263,7 +263,7 @@ Add consistent "Back to Home" pattern across all sub-pages:
 ```tsx
 <Link 
   href="/" 
-  className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-700 mb-8 font-medium"
+  className="inline-flex items-center gap-2 text-burgundy-600 hover:text-burgundy-700 mb-8 font-medium"
   aria-label="Back to home"
 >
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -289,7 +289,7 @@ Add consistent "Back to Home" pattern across all sub-pages:
 **Evidence:**
 ```tsx
 // financial-access/page.tsx: CTA at very end
-<section className="section-padding bg-gradient-to-b from-white to-sage-50">
+<section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
   <div className="container-base text-center max-w-3xl mx-auto">
     <Link href="/booking" className="inline-block btn btn-primary...">
       Book a Free Consultation
@@ -311,7 +311,7 @@ useEffect(() => {
 }, []);
 
 // Mobile sticky footer (shows on scroll past hero)
-<div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-sage-100 p-4 shadow-lg">
+<div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-burgundy-100 p-4 shadow-lg">
   <Link href="/booking" className="block btn btn-primary btn-lg w-full">
     Book a Free Consultation
   </Link>
@@ -346,7 +346,7 @@ Add visible skip link (always visible or on Tab):
 // In layout or each page
 <a 
   href="#main-content" 
-  className="fixed top-0 left-0 z-50 px-4 py-2 bg-sage-600 text-white font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+  className="fixed top-0 left-0 z-50 px-4 py-2 bg-burgundy-600 text-white font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
   style={{ transform: 'translateY(-100%)', transition: 'transform 0.2s ease' }}
   onFocus={(e) => { e.currentTarget.style.transform = 'translateY(0)'; }}
   onBlur={(e) => { e.currentTarget.style.transform = 'translateY(-100%)'; }}

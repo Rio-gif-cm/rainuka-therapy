@@ -98,7 +98,7 @@ html.sensory-friendly-mode * {
 
 /* Increase contrast */
 --warm-gray-900: #1a1614 (darker text)
---sage-700: #2d4a23 (darker accents)
+--burgundy-700: #2d4a23 (darker accents)
 
 /* Remove aggressive visual effects */
 box-shadow: none !important;

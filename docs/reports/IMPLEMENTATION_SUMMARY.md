@@ -19,7 +19,7 @@ Implemented visual cognitive load reduction via section dividers and icon system
 Created reusable, accessible components:
 
 **SectionDivider.tsx** (721 bytes)
-- Subtle 1px sage-200 horizontal line
+- Subtle 1px burgundy-200 horizontal line
 - Creates visual breaks between content sections
 - Reduces cognitive strain via "pause points"
 - Accessible: `role="separator"` + `aria-hidden="true"`
@@ -91,7 +91,7 @@ Created reusable, accessible components:
 
 ✅ **Kept:** Existing sage green (#6b944f) + warm gray palette (psychologically sound)
 ✅ **Kept:** Existing emoji icons (🧠 🤰 🚀 etc.) — recognized + meaningful
-✅ **Added:** Subtle section dividers (sage-200, 1px)
+✅ **Added:** Subtle section dividers (burgundy-200, 1px)
 ✅ **Added:** Icons to section headings (reinforce meaning + visual hierarchy)
 ✅ **Added:** Checkmarks to symptom lists (affirmation for isolated users)
 ✅ **Validated:** Color psychology research confirms sage green + warm accents for wellness
@@ -162,7 +162,7 @@ Optional enhancements for future consideration:
 ```
 feat: Visual Cognitive Load Reduction Wave 1 - Add section dividers and icon system
 
-- Add SectionDivider component with subtle visual breaks (1px sage-200 lines)
+- Add SectionDivider component with subtle visual breaks (1px burgundy-200 lines)
 - Add IconHeading & IconListItem components for consistent icon + text design
 - Implements cognitive load reduction via visual breaks between content sections
 - Reduces mental strain for anxious/neurodivergent users with 'calm states'

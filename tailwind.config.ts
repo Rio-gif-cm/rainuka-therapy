@@ -158,9 +158,9 @@ const config: Config = {
       },
       backgroundImage: {
         // Sophisticated, barely-there gradients. Nothing above ~8% chroma shift.
-        'sage-mist': 'linear-gradient(135deg, #faf9f7 0%, #f8faf7 45%, #e8ede5 100%)',
-        'sage-veil': 'linear-gradient(180deg, #f8faf7 0%, #ffffff 100%)',
-        'sage-veil-up': 'linear-gradient(180deg, #ffffff 0%, #f8faf7 100%)',
+        "burgundy-mist': 'linear-gradient(135deg, #faf9f7 0%, #f8faf7 45%, #e8ede5 100%)',
+        "burgundy-veil': 'linear-gradient(180deg, #f8faf7 0%, #ffffff 100%)',
+        "burgundy-veil-up': 'linear-gradient(180deg, #ffffff 0%, #f8faf7 100%)',
         'warm-linen': 'linear-gradient(135deg, #fdfbf8 0%, #faf9f7 50%, #f5f0eb 100%)',
         'warm-veil': 'linear-gradient(180deg, #faf9f7 0%, #ffffff 100%)',
         'clay-veil': 'linear-gradient(135deg, #fdf7f4 0%, #ffffff 100%)',

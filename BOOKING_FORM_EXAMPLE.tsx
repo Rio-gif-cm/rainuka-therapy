@@ -259,10 +259,10 @@ export function BookingFormExample() {
         <div
           style={{
             padding: '1.5rem',
-            backgroundColor: 'var(--sage-50)',
+            backgroundColor: 'var(--burgundy-50)',
             borderRadius: '0.5rem',
             marginBottom: '1.5rem',
-            border: '1px solid var(--sage-100)',
+            border: '1px solid var(--burgundy-100)',
           }}
         >
           <p>

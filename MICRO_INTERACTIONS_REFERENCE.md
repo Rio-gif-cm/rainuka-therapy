@@ -18,7 +18,7 @@ All animations use: **cubic-bezier(0.2, 0.8, 0.2, 1)** — smooth, natural ease 
 
 ```
 Hover:
-  - BG: sage-600 → sage-700
+  - BG: burgundy-600 → burgundy-700
   - Shadow: 0 4px 6px → 0 10px 25px (primary)
   - Lift: translateY(0) → translateY(-2px)
   - Duration: 250ms
@@ -30,7 +30,7 @@ Active (Press):
   - Duration: 150ms (quick press response)
 
 Focus-Visible:
-  - Ring: 3px solid sage-600
+  - Ring: 3px solid burgundy-600
   - Offset: 4px
   - Combined with hover shadow
 ```
@@ -39,7 +39,7 @@ Focus-Visible:
 
 ```
 Focus:
-  - Border: warm-gray-200 → sage-500
+  - Border: warm-gray-200 → burgundy-500
   - Background: white → rgba(248, 250, 247, 0.8)
   - Box-shadow: 0 0 0 4px rgba(157, 187, 141, 0.2) + inset highlights
   - Duration: 250ms
@@ -107,10 +107,10 @@ Step Exit:
 --duration-slow: 400ms;
 
 /* Colors (for reference) */
---sage-50: #f8faf7;
---sage-500: #82a86c;
---sage-600: #6b944f;
---sage-700: #547c3f;
+--burgundy-50: #f8faf7;
+--burgundy-500: #82a86c;
+--burgundy-600: #6b944f;
+--burgundy-700: #547c3f;
 --alert-50: #fcf5f3;
 --alert-500: #ab5943;
 --alert-600: #934833;

@@ -34,14 +34,14 @@ export default function ReferralCode({ code }: ReferralCodeProps) {
               <button
                 onClick={handleCopy}
                 className={`flex-shrink-0 p-2 rounded-md transition-all ${
-                  copied ? 'bg-sage-100 text-sage-600' : 'bg-warm-gray-100 text-warm-gray-600 hover:bg-warm-gray-200'
+                  copied ? 'bg-burgundy-100 text-burgundy-600' : 'bg-warm-gray-100 text-warm-gray-600 hover:bg-warm-gray-200'
                 }`}
               >
                 <Copy size={18} />
               </button>
             </div>
           </div>
-          {copied && <p className="text-xs text-sage-600 mt-2">✓ Copied</p>}
+          {copied && <p className="text-xs text-burgundy-600 mt-2">✓ Copied</p>}
         </div>
 
         <div>

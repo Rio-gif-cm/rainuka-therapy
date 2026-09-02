@@ -14,7 +14,7 @@ This document prioritizes the 10 conversion improvements identified in the funne
 **What to Do:**
 - Add fixed/sticky "Book Free Call" button to Navigation component
 - Position: top-right, always visible on scroll
-- Styling: Use sage-400 accent color, 16px font, padding: 12px 24px
+- Styling: Use burgundy-400 accent color, 16px font, padding: 12px 24px
 - Behavior: Clicking scrolls to booking section or opens modal
 
 **Files to Modify:**
@@ -34,7 +34,7 @@ This document prioritizes the 10 conversion improvements identified in the funne
 
 **What to Do:**
 - Add "95% move forward with therapy" badge to ALL hero sections
-- Format: Icon (✓) + text in colored box (sage-50 background, sage-400 border)
+- Format: Icon (✓) + text in colored box (burgundy-50 background, burgundy-400 border)
 - Placement: Below main heading, before description
 
 **Pages to Update:**
@@ -47,7 +47,7 @@ This document prioritizes the 10 conversion improvements identified in the funne
 **Implementation:**
 ```jsx
 // In SpecialtyHero component:
-<div className="card card-callout bg-sage-50 mb-6 border-l-4 border-sage-400">
+<div className="card card-callout bg-burgundy-50 mb-6 border-l-4 border-burgundy-400">
   <div className="flex items-center gap-3">
     <span className="text-2xl">✓</span>
     <p className="font-semibold">95% move forward with therapy. Real connection, real change.</p>
@@ -139,7 +139,7 @@ Section 3: Confirmation (1 checkbox)
   <Separator>/</Separator>
   <span>Adult ADHD</span>
   <Separator>/</Separator>
-  <Link href="/booking" className="text-sage-600 font-semibold">Book Consultation</Link>
+  <Link href="/booking" className="text-burgundy-600 font-semibold">Book Consultation</Link>
 </Breadcrumb>
 ```
 
@@ -245,12 +245,12 @@ Section 3: Confirmation (1 checkbox)
     <div className="text-2xl mb-2">📋</div>
     <p className="text-sm font-semibold">Fill Form (2 min)</p>
   </div>
-  <div className="text-2xl text-sage-300">→</div>
+  <div className="text-2xl text-burgundy-300">→</div>
   <div>
     <div className="text-2xl mb-2">📞</div>
     <p className="text-sm font-semibold">Free 15-min Call (24h)</p>
   </div>
-  <div className="text-2xl text-sage-300">→</div>
+  <div className="text-2xl text-burgundy-300">→</div>
   <div>
     <div className="text-2xl mb-2">✅</div>
     <p className="text-sm font-semibold">Schedule Session</p>
@@ -274,7 +274,7 @@ Section 3: Confirmation (1 checkbox)
 
 **Implementation:**
 ```jsx
-<div className="flex gap-8 justify-center py-4 border-t border-sage-200 text-sm">
+<div className="flex gap-8 justify-center py-4 border-t border-burgundy-200 text-sm">
   <div className="flex items-center gap-2">
     <span>🔒</span>
     <span>HIPAA Secure</span>

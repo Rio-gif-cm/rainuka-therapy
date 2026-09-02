@@ -22,7 +22,7 @@ export default function HeroSection() {
           quality={90}
         />
         {/* Sage overlay (translucent) */}
-        <div className="absolute inset-0 bg-gradient-to-r from-sage-50/60 via-transparent to-warm-gray-50/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-burgundy-50/60 via-transparent to-warm-gray-50/60" />
       </div>
       
       {/* Content: text-right on desktop, stacked on mobile */}
@@ -30,7 +30,7 @@ export default function HeroSection() {
         <div className="hidden md:block" /> {/* Spacer for photo */}
         
         <div className="flex flex-col justify-center">
-          <p className="text-sm uppercase tracking-widest text-sage-600 mb-2">
+          <p className="text-sm uppercase tracking-widest text-burgundy-600 mb-2">
             Therapy that fits your actual life
           </p>
           
@@ -130,13 +130,13 @@ export default function TestimonialCard({
       <div className="flex items-start gap-4 mb-4">
         {/* Avatar Circle */}
         <div className="relative flex-shrink-0">
-          <div className="w-12 h-12 bg-sage-200 rounded-full flex items-center justify-center">
-            <span className="font-semibold text-sage-700 text-sm">
+          <div className="w-12 h-12 bg-burgundy-200 rounded-full flex items-center justify-center">
+            <span className="font-semibold text-burgundy-700 text-sm">
               {initials}
             </span>
           </div>
           {/* Niche micro-icon (optional) */}
-          <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-1 border border-sage-100">
+          <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-1 border border-burgundy-100">
             <span className="text-xs">{nicheIcons[niche]}</span>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function TestimonialCard({
         {/* Stars */}
         <div className="flex gap-1">
           {[...Array(rating)].map((_, i) => (
-            <span key={i} className="text-sage-600">★</span>
+            <span key={i} className="text-burgundy-600">★</span>
           ))}
         </div>
       </div>
@@ -155,12 +155,12 @@ export default function TestimonialCard({
       </p>
 
       {/* Author */}
-      <div className="border-t border-sage-100 pt-3">
+      <div className="border-t border-burgundy-100 pt-3">
         <p className="font-semibold text-warm-gray-900 text-sm">
           {author}
         </p>
         {context && (
-          <p className="text-xs text-sage-600 mt-1">
+          <p className="text-xs text-burgundy-600 mt-1">
             {context}
           </p>
         )}
@@ -407,7 +407,7 @@ export function VideoTestimonial({
                 setIsPlaying(true)
               }
             }}
-            className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center hover:bg-sage-700 transition"
+            className="w-16 h-16 bg-burgundy-600 rounded-full flex items-center justify-center hover:bg-burgundy-700 transition"
             aria-label="Play video"
           >
             <span className="text-white text-xl">▶</span>
@@ -509,7 +509,7 @@ export function AmbientPhotoHero({
       />
 
       {/* Overlay for text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-r from-warm-gray-50/40 to-sage-50/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-warm-gray-50/40 to-burgundy-50/40" />
 
       {/* Content */}
       <div className="relative z-10 container-base py-12">

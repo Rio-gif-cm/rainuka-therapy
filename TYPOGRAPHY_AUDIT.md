@@ -157,7 +157,7 @@ Recommendation: Change h4 to weight 500 (medium), keeping h5 at 600.
 **Issue 4.2: No Explicit Bold Range Contrast Check**  
 No validation that body text at 16px/400 + strong text at 16px/600 meets WCAG contrast.  
 (Should pass, but not explicitly checked in the audit.)  
-Recommendation: Verify contrast on multiple backgrounds (white, sage-50, cream-100).
+Recommendation: Verify contrast on multiple backgrounds (white, burgundy-50, cream-100).
 
 ---
 
@@ -508,7 +508,7 @@ Before committing improvements:
 - [ ] Test h1/h2/h3 wrapping on 320px, 375px, 768px, 1280px viewports.
 - [ ] Verify button font-size on mobile still meets 48px minimum touch target.
 - [ ] Check body text line-height on long paragraphs (400+ words); ensure no rivers.
-- [ ] Validate contrast ratios on white, sage-50, cream-100 backgrounds.
+- [ ] Validate contrast ratios on white, burgundy-50, cream-100 backgrounds.
 - [ ] Test zoom to 200%; ensure text stays readable without horizontal scroll.
 - [ ] Check small text (meta, micro) on both light and dark backgrounds.
 - [ ] Verify no regressions in testimonial cards, FAQ, or form labels.

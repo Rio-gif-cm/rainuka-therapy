@@ -258,7 +258,7 @@ Same pattern as ADHD page:
 **Add:**
 ```tsx
 {/* NEW: Specialty FAQ Navigation */}
-<div className="mb-16 p-8 bg-sage-50 rounded-lg">
+<div className="mb-16 p-8 bg-burgundy-50 rounded-lg">
   <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-6">
     Looking for something more specific?
   </h2>
@@ -271,7 +271,7 @@ Same pattern as ADHD page:
       <p className="text-sm text-warm-gray-600 mb-4">
         Late diagnosis, executive dysfunction, rejection sensitivity, medication + therapy, workplace accommodations.
       </p>
-      <Link href="/adhd-faq" className="inline-block font-bold text-sage-600 hover:underline">
+      <Link href="/adhd-faq" className="inline-block font-bold text-burgundy-600 hover:underline">
         Go to ADHD FAQ →
       </Link>
     </div>
@@ -280,7 +280,7 @@ Same pattern as ADHD page:
       <p className="text-sm text-warm-gray-600 mb-4">
         Pregnancy anxiety, postpartum depression/anxiety, intrusive thoughts, birth trauma, pregnancy loss, infertility.
       </p>
-      <Link href="/perinatal-faq" className="inline-block font-bold text-sage-600 hover:underline">
+      <Link href="/perinatal-faq" className="inline-block font-bold text-burgundy-600 hover:underline">
         Go to Perinatal FAQ →
       </Link>
     </div>
@@ -304,19 +304,19 @@ Same pattern as ADHD page:
 **Location:** In the "Related Pages" section at bottom  
 **Current:**
 ```tsx
-<Link href="/adhd" className="text-sage-600 underline">
+<Link href="/adhd" className="text-burgundy-600 underline">
   ADHD Therapy for Adults
 </Link>
 <span className="text-warm-gray-300">•</span>
-<Link href="/parents" className="text-sage-600 underline">
+<Link href="/parents" className="text-burgundy-600 underline">
   Parents & Caregivers
 </Link>
 <span className="text-warm-gray-300">•</span>
-<Link href="/faq" className="text-sage-600 underline">
+<Link href="/faq" className="text-burgundy-600 underline">
   General FAQ
 </Link>
 <span className="text-warm-gray-300">•</span>
-<Link href="/pricing" className="text-sage-600 underline">
+<Link href="/pricing" className="text-burgundy-600 underline">
   Pricing & Insurance
 </Link>
 ```
@@ -327,19 +327,19 @@ Same pattern as ADHD page:
   <div>
     <h3 className="font-bold text-warm-gray-900 mb-2">ADHD-Related Specialties</h3>
     <div className="flex gap-4 flex-wrap">
-      <Link href="/adhd" className="text-sage-600 underline">
+      <Link href="/adhd" className="text-burgundy-600 underline">
         ADHD Therapy for Adults
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/career" className="text-sage-600 underline">
+      <Link href="/career" className="text-burgundy-600 underline">
         Career + Burnout
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/couples" className="text-sage-600 underline">
+      <Link href="/couples" className="text-burgundy-600 underline">
         Couples Therapy
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/parents" className="text-sage-600 underline">
+      <Link href="/parents" className="text-burgundy-600 underline">
         Parenting + ADHD
       </Link>
     </div>
@@ -347,15 +347,15 @@ Same pattern as ADHD page:
   <div>
     <h3 className="font-bold text-warm-gray-900 mb-2">General Resources</h3>
     <div className="flex gap-4 flex-wrap">
-      <Link href="/faq" className="text-sage-600 underline">
+      <Link href="/faq" className="text-burgundy-600 underline">
         General FAQ
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/perinatal-faq" className="text-sage-600 underline">
+      <Link href="/perinatal-faq" className="text-burgundy-600 underline">
         Perinatal & Postpartum FAQ
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/pricing" className="text-sage-600 underline">
+      <Link href="/pricing" className="text-burgundy-600 underline">
         Pricing & Insurance
       </Link>
     </div>
@@ -383,19 +383,19 @@ Same pattern as ADHD page:
   <div>
     <h3 className="font-bold text-warm-gray-900 mb-2">Perinatal & Postpartum Support</h3>
     <div className="flex gap-4 flex-wrap">
-      <Link href="/perinatal" className="text-sage-600 underline">
+      <Link href="/perinatal" className="text-burgundy-600 underline">
         Perinatal Therapy
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/grief" className="text-sage-600 underline">
+      <Link href="/grief" className="text-burgundy-600 underline">
         Grief Support
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/parents" className="text-sage-600 underline">
+      <Link href="/parents" className="text-burgundy-600 underline">
         Parents & Caregivers
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/couples" className="text-sage-600 underline">
+      <Link href="/couples" className="text-burgundy-600 underline">
         Couples Therapy
       </Link>
     </div>
@@ -403,15 +403,15 @@ Same pattern as ADHD page:
   <div>
     <h3 className="font-bold text-warm-gray-900 mb-2">Comorbidity & Context</h3>
     <div className="flex gap-4 flex-wrap">
-      <Link href="/adhd-faq" className="text-sage-600 underline">
+      <Link href="/adhd-faq" className="text-burgundy-600 underline">
         ADHD FAQ
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/faq" className="text-sage-600 underline">
+      <Link href="/faq" className="text-burgundy-600 underline">
         General FAQ
       </Link>
       <span className="text-warm-gray-300">•</span>
-      <Link href="/anxiety" className="text-sage-600 underline">
+      <Link href="/anxiety" className="text-burgundy-600 underline">
         Anxiety Support
       </Link>
     </div>
@@ -436,7 +436,7 @@ Same pattern as ADHD page:
 **Add:**
 ```tsx
 {/* NEW: Next Steps CTA */}
-<section className="section-padding bg-warm-gray-50 border-t border-sage-100">
+<section className="section-padding bg-warm-gray-50 border-t border-burgundy-100">
   <div className="container-base max-w-3xl mx-auto text-center">
     <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-6">
       Ready to explore therapy?
@@ -600,7 +600,7 @@ Same pattern as ADHD page:
 **Add:**
 ```tsx
 {/* NEW: Specialty Discovery */}
-<section className="section-padding bg-sage-50 border-b border-sage-200">
+<section className="section-padding bg-burgundy-50 border-b border-burgundy-200">
   <div className="container-base max-w-3xl mx-auto">
     <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
       Not sure which specialty fits?

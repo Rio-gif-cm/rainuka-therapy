@@ -51,14 +51,14 @@ Implemented comprehensive button state improvements across the therapy website t
 ```css
 transform: scale(1.03);
 box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-background-color: sage-700;
+background-color: burgundy-700;
 ```
 - **Psychology**: Scale-up signals click-readiness; shadow lift creates depth.
 - **Timing**: 150ms transition (0.15s ease-out) for snappy, responsive feel.
 
 **Focus State** (Keyboard)
 ```css
-outline: 2px solid sage-600;
+outline: 2px solid burgundy-600;
 outline-offset: 3px;
 box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
 ```
@@ -78,8 +78,8 @@ box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
 ```css
 transform: scale(1.02);
 box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-background-color: sage-50;
-border-color: sage-700;
+background-color: burgundy-50;
+border-color: burgundy-700;
 ```
 - **Subtlety**: Smaller scale (1.02 vs 1.03) for secondary action differentiation.
 - **Clarity**: Background fill + border color change signal interaction.
@@ -91,18 +91,18 @@ border-color: sage-700;
 **New CSS Class**
 ```css
 .btn-link {
-  color: sage-600;
-  border-bottom: 2px solid sage-600;
+  color: burgundy-600;
+  border-bottom: 2px solid burgundy-600;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: sage-700;
-  border-bottom-color: sage-700;
+  color: burgundy-700;
+  border-bottom-color: burgundy-700;
 }
 
 .btn-link:focus {
-  outline: 2px solid sage-600;
+  outline: 2px solid burgundy-600;
   outline-offset: 3px;
 }
 ```
@@ -216,7 +216,7 @@ Visual Polish: Enhanced Button States
 
 ### Booking Page (/booking)
 - **Form Submit Button**: Using existing form validation feedback
-- **Form Inputs**: Enhanced focus states with sage-500 outline
+- **Form Inputs**: Enhanced focus states with burgundy-500 outline
 
 ### FAQ Page (/faq)
 - **CTA**: "Get In Touch" → `.btn-primary`

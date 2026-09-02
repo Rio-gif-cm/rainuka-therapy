@@ -53,21 +53,21 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
   return (
     <>
       {/* URGENCY SIGNAL: Social Proof + Timeline (High-Impact Trust Builder) */}
-      <div className="card bg-gradient-to-br from-sage-50 to-sage-50 border-2 border-sage-200 mb-8">
+      <div className="card bg-gradient-to-br from-burgundy-50 to-burgundy-50 border-2 border-burgundy-200 mb-8">
         <div className="flex gap-4 items-start">
           <span className="text-3xl flex-shrink-0">✓</span>
           <div className="flex-grow">
-            <p className="font-semibold text-sage-800 text-lg mb-1">
+            <p className="font-semibold text-burgundy-800 text-lg mb-1">
               95% of clients book ongoing sessions after their free call
             </p>
-            <p className="text-sm text-sage-700">
+            <p className="text-sm text-burgundy-700">
               This takes 2 minutes. Most people book within 1-2 weeks of their free call.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="card bg-gradient-to-br from-sage-50 to-cream-50 border-2 border-sage-200 mb-8">
+      <div className="card bg-gradient-to-br from-burgundy-50 to-cream-50 border-2 border-burgundy-200 mb-8">
         <div className="mb-6">
           <h3 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
             Before We Book: Let Me Understand
@@ -92,7 +92,7 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
               className={`form-input h-28 resize-none transition-all ${
                 fieldTouched.whatBringsYou
                   ? data.whatBringsYou.trim().length >= 10
-                    ? 'border-sage-500 bg-sage-50'
+                    ? 'border-burgundy-500 bg-burgundy-50'
                     : 'border-honey-300 bg-honey-50'
                   : ''
               }`}
@@ -114,8 +114,8 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
                 onBlur={() => handleFieldBlur('firstTimeTherapy')}
                 className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all ${
                   data.firstTimeTherapy === true
-                    ? 'bg-sage-400 text-white border-2 border-sage-500 shadow-md'
-                    : 'bg-white text-warm-gray-600 border-2 border-warm-gray-200 hover:border-sage-300'
+                    ? 'bg-burgundy-400 text-white border-2 border-burgundy-500 shadow-md'
+                    : 'bg-white text-warm-gray-600 border-2 border-warm-gray-200 hover:border-burgundy-300'
                 }`}
               >
                 Yes, first time
@@ -126,8 +126,8 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
                 onBlur={() => handleFieldBlur('firstTimeTherapy')}
                 className={`flex-1 px-4 py-3 rounded-lg font-medium transition-all ${
                   data.firstTimeTherapy === false
-                    ? 'bg-sage-400 text-white border-2 border-sage-500 shadow-md'
-                    : 'bg-white text-warm-gray-600 border-2 border-warm-gray-200 hover:border-sage-300'
+                    ? 'bg-burgundy-400 text-white border-2 border-burgundy-500 shadow-md'
+                    : 'bg-white text-warm-gray-600 border-2 border-warm-gray-200 hover:border-burgundy-300'
                 }`}
               >
                 No, I've tried before
@@ -158,7 +158,7 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
         </div>
 
         {/* CTA to move to form - OPTIMIZED WITH PROGRESS + OUTCOME-FIRST COPY */}
-        <div className="mt-8 pt-6 border-t border-sage-200">
+        <div className="mt-8 pt-6 border-t border-burgundy-200">
           <button
             type="button"
             onClick={handleContinue}

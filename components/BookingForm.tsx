@@ -272,7 +272,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
                   currentStep === step || ['contact', 'concern'].includes(currentStep)
-                    ? 'bg-sage-400 text-white'
+                    ? 'bg-burgundy-400 text-white'
                     : 'bg-warm-gray-200 text-warm-gray-600'
                 }`}
               >
@@ -283,7 +283,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           ))}
         </div>
         {/* Step counter text */}
-        <div className="text-xs font-semibold text-sage-600 uppercase tracking-wide">
+        <div className="text-xs font-semibold text-burgundy-600 uppercase tracking-wide">
           {currentStep === 'contact' && 'Step 1 of 3: Your Contact Information'}
           {currentStep === 'concern' && 'Step 2 of 3: Your Concerns & Availability'}
           {currentStep === 'confirmation' && 'Step 3 of 3: Review & Confirm'}
@@ -294,11 +294,11 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {currentStep === 'contact' && (
       <div className="space-y-4 animate-fade-in-up">
         {/* REASSURANCE + TIMELINE: Honest expectations at form start */}
-        <div className="mb-6 bg-gradient-to-r from-sage-50 to-sage-50 border border-sage-200 rounded-lg p-4 flex gap-3 items-start">
+        <div className="mb-6 bg-gradient-to-r from-burgundy-50 to-burgundy-50 border border-burgundy-200 rounded-lg p-4 flex gap-3 items-start">
           <span className="text-lg flex-shrink-0">✓</span>
           <div className="text-sm">
-            <p className="text-sage-900 font-semibold mb-1">Just three questions. I'll reach out within 24 hours.</p>
-            <p className="text-sage-800 text-xs">
+            <p className="text-burgundy-900 font-semibold mb-1">Just three questions. I'll reach out within 24 hours.</p>
+            <p className="text-burgundy-800 text-xs">
               No pressure. You decide after we talk.
             </p>
           </div>
@@ -310,16 +310,16 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         <p className="text-sm text-warm-gray-600 mb-6">Three fields. Then we&apos;ll move forward together.</p>
 
           {/* FIELD GROUP: Combined visual container for contact info */}
-            <div className="bg-gradient-to-br from-sage-50 to-sage-100 rounded-xl border-2 border-sage-200 p-6 space-y-4 shadow-sm">
+            <div className="bg-gradient-to-br from-burgundy-50 to-burgundy-100 rounded-xl border-2 border-burgundy-200 p-6 space-y-4 shadow-sm">
             <div>
               <div className="flex items-center justify-between mb-1">
                 <label htmlFor="name" className={`form-label transition-colors ${
-                  fieldFocused.name ? 'text-sage-600' : 'text-warm-gray-900'
+                  fieldFocused.name ? 'text-burgundy-600' : 'text-warm-gray-900'
                 }`}>
                   What should I call you? *
                 </label>
                 {formData.name && !fieldErrors.name && fieldTouched.name && (
-                  <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                  <span className="text-burgundy-600 text-sm font-medium flex items-center gap-1">
                     ✓ Valid
                   </span>
                 )}
@@ -337,7 +337,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                   fieldTouched.name
                     ? fieldErrors.name
                       ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                      : 'border-sage-500 bg-sage-50'
+                      : 'border-burgundy-500 bg-burgundy-50'
                     : ''
                 }`}
                 aria-invalid={fieldTouched.name && !!fieldErrors.name}
@@ -354,12 +354,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="email" className={`form-label transition-colors ${
-                fieldFocused.email ? 'text-sage-600' : 'text-warm-gray-900'
+                fieldFocused.email ? 'text-burgundy-600' : 'text-warm-gray-900'
               }`}>
                 Best email to reach you *
               </label>
               {formData.email && !fieldErrors.email && fieldTouched.email && (
-                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-burgundy-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -377,7 +377,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 fieldTouched.email
                   ? fieldErrors.email
                     ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                    : 'border-sage-500 bg-sage-50'
+                    : 'border-burgundy-500 bg-burgundy-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.email && !!fieldErrors.email}
@@ -394,12 +394,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             <div>
             <div className="flex items-center justify-between mb-1">
               <label htmlFor="phone" className={`form-label transition-colors ${
-                fieldFocused.phone ? 'text-sage-600' : 'text-warm-gray-900'
+                fieldFocused.phone ? 'text-burgundy-600' : 'text-warm-gray-900'
               }`}>
                 How to reach you by phone *
               </label>
               {formData.phone && !fieldErrors.phone && fieldTouched.phone && (
-                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-burgundy-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -417,7 +417,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 fieldTouched.phone
                   ? fieldErrors.phone
                     ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                    : 'border-sage-500 bg-sage-50'
+                    : 'border-burgundy-500 bg-burgundy-50'
                   : ''
               }`}
               aria-invalid={fieldTouched.phone && !!fieldErrors.phone}
@@ -448,7 +448,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           <p className="text-sm text-warm-gray-600 mb-6">We're almost there. Just a couple more details to help me understand your situation.</p>
 
           {/* TOGGLE FOR CONCERNS FIELD */}
-          <div className="bg-sage-50 border border-sage-200 rounded-lg p-4">
+          <div className="bg-burgundy-50 border border-burgundy-200 rounded-lg p-4">
             <button
               type="button"
               onClick={() => setShowConcernField(!showConcernField)}
@@ -458,23 +458,23 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 <span className={`text-lg transition-transform ${showConcernField ? 'rotate-90' : ''}`}>▶</span>
                 Tell me what brings you here (optional but helpful)
               </span>
-              <span className={`text-sm font-medium text-sage-600 transition-all ${showConcernField ? 'opacity-100' : 'opacity-0'}`}>
+              <span className={`text-sm font-medium text-burgundy-600 transition-all ${showConcernField ? 'opacity-100' : 'opacity-0'}`}>
                 ✓ Expanded
               </span>
             </button>
 
             {/* CONCERNS FIELD - EXPANDABLE */}
             {showConcernField && (
-              <div className="mt-4 pt-4 border-t border-sage-200 space-y-3 animate-fade-in-up">
+              <div className="mt-4 pt-4 border-t border-burgundy-200 space-y-3 animate-fade-in-up">
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <label htmlFor="concern" className={`form-label transition-colors ${
-                      fieldFocused.concern ? 'text-sage-600' : 'text-warm-gray-900'
+                      fieldFocused.concern ? 'text-burgundy-600' : 'text-warm-gray-900'
                     }`}>
                       What brings you here, and what are you hoping to work on? *
                     </label>
                     {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-                      <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                      <span className="text-burgundy-600 text-sm font-medium flex items-center gap-1">
                         ✓ Valid
                       </span>
                     )}
@@ -491,7 +491,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                       fieldTouched.concern
                         ? fieldErrors.concern
                           ? 'border-alert-500 bg-alert-50 focus:border-alert-500'
-                          : 'border-sage-500 bg-sage-50'
+                          : 'border-burgundy-500 bg-burgundy-50'
                         : ''
                     }`}
                     aria-invalid={fieldTouched.concern && !!fieldErrors.concern}
@@ -511,9 +511,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 {/* WAVE 1 OPTIMIZATION: Micro-reassurance inserted after heavy field */}
                 {/* Research: Adding reassurance copy between fields reduces anxiety-driven abandonment by ~7-12% */}
                 {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-                  <div className="bg-sage-50 border border-sage-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
+                  <div className="bg-burgundy-50 border border-burgundy-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
                     <span className="text-sm flex-shrink-0">✓</span>
-                    <p className="text-xs text-sage-700">Thanks for sharing. Two more questions and we're through.</p>
+                    <p className="text-xs text-burgundy-700">Thanks for sharing. Two more questions and we're through.</p>
                   </div>
                 )}
               </div>
@@ -523,12 +523,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           <div>
             <div className="flex items-center justify-between mb-3">
               <label className={`form-label transition-colors ${
-                fieldFocused.firstTimeTherapy ? 'text-sage-600' : 'text-warm-gray-900'
+                fieldFocused.firstTimeTherapy ? 'text-burgundy-600' : 'text-warm-gray-900'
               }`}>
                 Is this your first time seeking therapy? *
               </label>
               {formData.firstTimeTherapy !== null && !fieldErrors.firstTimeTherapy && fieldTouched.firstTimeTherapy && (
-                <span className="text-sage-600 text-sm font-medium flex items-center gap-1">
+                <span className="text-burgundy-600 text-sm font-medium flex items-center gap-1">
                   ✓ Valid
                 </span>
               )}
@@ -629,7 +629,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             Almost ready to book
           </h3>
 
-          <div className="card bg-sage-50 border border-sage-200">
+          <div className="card bg-burgundy-50 border border-burgundy-200">
             <h4 className="font-semibold text-warm-gray-900 mb-4">Your Information</h4>
             <div className="space-y-3 text-sm">
               <p><span className="font-medium">Name:</span> {formData.name}</p>
@@ -646,8 +646,8 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             <div className="flex gap-3">
               <span className="text-lg flex-shrink-0">✓</span>
               <div>
-                <p className="text-sm font-semibold text-sage-800">100% confidential &amp; HIPAA-protected</p>
-                <p className="text-xs text-sage-700 mt-1">Your privacy matters. Everything you share stays between us.</p>
+                <p className="text-sm font-semibold text-burgundy-800">100% confidential &amp; HIPAA-protected</p>
+                <p className="text-xs text-burgundy-700 mt-1">Your privacy matters. Everything you share stays between us.</p>
               </div>
             </div>
           </div>
@@ -701,17 +701,17 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
 
       {/* Success Message - MICROCOPY WAVE 1: Celebratory state with timeline clarity */}
       {submitSuccess && (
-        <div className="card bg-sage-50 border-2 border-sage-400 animate-fade-in-up">
+        <div className="card bg-burgundy-50 border-2 border-burgundy-400 animate-fade-in-up">
           <div className="flex items-start gap-3">
             <span className="text-3xl">🎉</span>
             <div className="flex-1">
-              <p className="text-sage-800 font-semibold mb-2">
+              <p className="text-burgundy-800 font-semibold mb-2">
                 Perfect. I've got your information.
               </p>
-              <p className="text-sage-700 text-sm mb-4">
+              <p className="text-burgundy-700 text-sm mb-4">
                 I'll reach out within 24 hours to confirm the time and make sure it works for you.
               </p>
-              <div className="bg-white/60 rounded p-3 text-xs text-sage-800 border border-sage-200">
+              <div className="bg-white/60 rounded p-3 text-xs text-burgundy-800 border border-burgundy-200">
                 <p className="font-medium mb-2">What happens next:</p>
                 <ul className="space-y-1 list-disc list-inside">
                   <li>📧 Confirmation email within 1 hour</li>
@@ -787,7 +787,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden py-4 px-8 text-lg font-semibold bg-sage-700 hover:bg-sage-800 text-white"
+            className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden py-4 px-8 text-lg font-semibold bg-burgundy-700 hover:bg-burgundy-800 text-white"
           >
             {isSubmitting ? (
               <>📤 Sending your information...</>

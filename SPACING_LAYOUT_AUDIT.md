@@ -211,7 +211,7 @@ On a 375px mobile, 64px top+bottom padding on a section = 17% of viewport height
 **Location:** page.tsx (line 97)
 
 ```jsx
-<section className="section-padding bg-white border-b border-sage-100">
+<section className="section-padding bg-white border-b border-burgundy-100">
   <div className="container-base">
     <div className="max-w-3xl mx-auto text-center mb-12">
 ```
@@ -239,7 +239,7 @@ Then between sections (if borders exist), another 64px gap.
 --card-border-width: 1px;
 --card-border-color: rgba(209, 220, 200, 0.6);
 --card-accent-width: 3px;
---card-accent-color: var(--sage-600);
+--card-accent-color: var(--burgundy-600);
 ```
 
 **Problem:**
@@ -434,7 +434,7 @@ grep -r "padding.*2rem\|1.5rem" components/ app/ --include="*.tsx" | grep -v lay
 ```css
 /* Subtle section divider: 1px border at full-width scale */
 .section-divider {
-  border-bottom: 1px solid var(--sage-200);
+  border-bottom: 1px solid var(--burgundy-200);
   opacity: 0.4;
 }
 

@@ -24,7 +24,7 @@ export default function AboutPage() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-12 md:py-16 lg:py-20">
+        <section className="hero-section bg-gradient-to-br from-cream-50 to-burgundy-50 py-12 md:py-16 lg:py-20">
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-warm-gray-900 mb-3 md:mb-4">
               Meet Your Therapist
@@ -41,7 +41,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 max-w-5xl mx-auto">
               {/* Photo placeholder */}
               <div className="flex items-center justify-center">
-                <div className="aspect-square rounded-lg bg-gradient-to-br from-sage-200 to-warm-accent-light overflow-hidden shadow-lg flex items-center justify-center w-80 h-80">
+                <div className="aspect-square rounded-lg bg-gradient-to-br from-burgundy-200 to-warm-accent-light overflow-hidden shadow-lg flex items-center justify-center w-80 h-80">
                   <div className="text-center">
                     <div className="text-6xl mb-4">👩‍⚕️</div>
                     <p className="text-warm-gray-600 font-medium">
@@ -54,7 +54,7 @@ export default function AboutPage() {
               {/* Bio Content */}
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
-                  Rainuka Oberoi <span className="text-lg text-sage-600 font-normal">(she/her)</span>
+                  Rainuka Oberoi <span className="text-lg text-burgundy-600 font-normal">(she/her)</span>
                 </h2>
 
                 <div className="space-y-6 text-warm-gray-600">
@@ -63,8 +63,8 @@ export default function AboutPage() {
                   </p>
 
                   {/* Age requirement notice */}
-                  <div className="bg-sage-50 border-l-4 border-sage-400 rounded p-4">
-                    <p className="font-medium text-sage-800 text-sm">
+                  <div className="bg-burgundy-50 border-l-4 border-burgundy-400 rounded p-4">
+                    <p className="font-medium text-burgundy-800 text-sm">
                       <strong>Important:</strong> This practice is for adults 18 and older. I work with adult mental health and do not work with minors.
                     </p>
                   </div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
         </section>
 
         {/* Credentials */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-8 md:mb-12 text-center">
               Credentials & Training
@@ -249,7 +249,7 @@ export default function AboutPage() {
         </section>
 
         {/* Case Studies - Authority Signal */}
-        <section className="section-padding bg-white border-t border-sage-200">
+        <section className="section-padding bg-white border-t border-burgundy-200">
           <div className="container-base max-w-4xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-4 text-center">
               How This Works in Practice
@@ -260,7 +260,7 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Case Study 1: Perinatal + ADHD */}
-              <div className="card bg-cream-50 border-l-4 border-sage-400">
+              <div className="card bg-cream-50 border-l-4 border-burgundy-400">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">Case: Unmasking ADHD in Postpartum Transition</h3>
                 <div className="space-y-3 text-sm text-warm-gray-600">
                   <div>
@@ -321,6 +321,10 @@ export default function AboutPage() {
               What People Say
             </h2>
 
+            <div className="max-w-4xl mx-auto mb-8">
+              <TestimonialConsentDisclaimer />
+            </div>
+
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {expandedTestimonials.map((testimonial, index) => (
                 <TestimonialCard
@@ -372,7 +376,7 @@ export default function AboutPage() {
         </section>
 
         {/* Diversity & Inclusion Commitment */}
-        <section className="section-padding bg-white border-t border-sage-200">
+        <section className="section-padding bg-white border-t border-burgundy-200">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               My Commitment to Accessibility & Inclusion
@@ -382,33 +386,33 @@ export default function AboutPage() {
             </p>
 
             <div className="space-y-8">
-              <div className="card bg-sage-50">
+              <div className="card bg-burgundy-50">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">I work affirmatively with:</h3>
                 <ul className="space-y-3 text-warm-gray-600">
                   <li className="flex gap-3">
-                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span className="text-burgundy-400 font-bold flex-shrink-0">•</span>
                     <span><strong className="text-warm-gray-900">BIPOC clients</strong> navigating racialized stress, discrimination, identity affirmation, and the complex intersection of systemic inequity and mental health</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span className="text-burgundy-400 font-bold flex-shrink-0">•</span>
                     <span><strong className="text-warm-gray-900">LGBTQ+ clients</strong> (including trans and non-binary folks)-your identity is celebrated, not pathologized, and I provide affirming care grounded in your values</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span className="text-burgundy-400 font-bold flex-shrink-0">•</span>
                     <span><strong className="text-warm-gray-900">Neurodivergent clients</strong> (ADHD, autism, and other neurotypes)-your brain isn't broken, it's different, and we leverage your strengths</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span className="text-burgundy-400 font-bold flex-shrink-0">•</span>
                     <span><strong className="text-warm-gray-900">Disabled clients</strong>-I'm committed to genuine accessibility, accommodation, and affirming your whole self without cure narrative</span>
                   </li>
                   <li className="flex gap-3">
-                    <span className="text-sage-400 font-bold flex-shrink-0">•</span>
+                    <span className="text-burgundy-400 font-bold flex-shrink-0">•</span>
                     <span><strong className="text-warm-gray-900">Low-income and first-generation clients</strong>-cost won't be a barrier to your care. Therapy should be accessible.</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="card bg-white border border-sage-200">
+              <div className="card bg-white border border-burgundy-200">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-4">What this commitment looks like in practice:</h3>
                 <ul className="space-y-3 text-warm-gray-600">
                   <li className="flex gap-3">
@@ -448,7 +452,7 @@ export default function AboutPage() {
         </section>
 
         {/* Verified & Trusted */}
-        <section className="section-padding bg-white border-t border-sage-200">
+        <section className="section-padding bg-white border-t border-burgundy-200">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
               Verified & Easy to Find
@@ -458,19 +462,19 @@ export default function AboutPage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="card bg-sage-50 border border-sage-200">
+              <div className="card bg-burgundy-50 border border-burgundy-200">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Licensed LCSW</h3>
                 <p className="text-warm-gray-600 text-sm">Clinical Social Work License, verified and in good standing.</p>
               </div>
-              <div className="card bg-sage-50 border border-sage-200">
+              <div className="card bg-burgundy-50 border border-burgundy-200">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Listed on Major Directories</h3>
                 <p className="text-warm-gray-600 text-sm">Psychology Today, TherapyDen, and insurance provider networks.</p>
               </div>
-              <div className="card bg-sage-50 border border-sage-200">
+              <div className="card bg-burgundy-50 border border-burgundy-200">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Insurance In-Network</h3>
                 <p className="text-warm-gray-600 text-sm">Accepted on major plans. Verify with your specific insurance.</p>
               </div>
-              <div className="card bg-sage-50 border border-sage-200">
+              <div className="card bg-burgundy-50 border border-burgundy-200">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Trauma-Informed Certified</h3>
                 <p className="text-warm-gray-600 text-sm">Trained and committed to trauma-informed, culturally responsive care.</p>
               </div>
@@ -480,7 +484,7 @@ export default function AboutPage() {
               <p className="text-warm-gray-600 mb-4">
                 Find me on your preferred platform or check insurance coverage.
               </p>
-              <Link href="/providers" className="inline-block text-sage-600 font-semibold hover:text-sage-700 underline">
+              <Link href="/providers" className="inline-block text-burgundy-600 font-semibold hover:text-burgundy-700 underline">
                 View All Directories & Insurance Networks →
               </Link>
             </div>
@@ -488,15 +492,15 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-sage-400 text-white">
+        <section className="section-padding bg-burgundy-400 text-white">
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               Ready to get started?
             </h2>
-            <p className="text-lg mb-8 text-sage-50 max-w-2xl mx-auto">
+            <p className="text-lg mb-8 text-burgundy-50 max-w-2xl mx-auto">
               Let's talk about what you're navigating.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded-lg hover:bg-sage-50">
+            <Link href="/booking" className="inline-block bg-white text-burgundy-400 px-8 py-4 font-semibold rounded-lg hover:bg-burgundy-50">
               Book Your Free Call
             </Link>
           </div>

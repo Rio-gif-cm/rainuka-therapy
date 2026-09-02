@@ -58,7 +58,7 @@
 
 ### Hero Sections
 All hero sections maintain:
-- **Base palette:** Warm gray (sage-50 on right) + persona-specific warm tone (on left)
+- **Base palette:** Warm gray (burgundy-50 on right) + persona-specific warm tone (on left)
 - **Direction:** 135deg gradient creates welcoming diagonal flow
 - **Consistency:** Each therapy context has distinct visual identity while maintaining site cohesion
 

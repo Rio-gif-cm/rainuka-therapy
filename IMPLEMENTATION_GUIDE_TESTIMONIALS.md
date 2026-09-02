@@ -11,12 +11,12 @@ Copy-paste ready code for all Week 1 compliance actions.
 ```tsx
 export default function TestimonialConsentDisclaimer() {
   return (
-    <div className="mb-8 p-4 bg-sage-50 border-l-4 border-sage-600 rounded">
+    <div className="mb-8 p-4 bg-burgundy-50 border-l-4 border-burgundy-600 rounded">
       <p className="text-sm text-warm-gray-700 leading-relaxed">
         <strong className="text-warm-gray-900">Privacy Notice:</strong> All testimonials 
         shared here are from clients who gave explicit written consent. Clients may request 
         removal of their testimonial at any time by{' '}
-        <a href="mailto:contact@rainukatherapy.com" className="text-sage-600 underline hover:text-sage-700">
+        <a href="mailto:contact@rainukatherapy.com" className="text-burgundy-600 underline hover:text-burgundy-700">
           contacting us
         </a>
         .
@@ -36,7 +36,7 @@ Replace the closing `</div>` on line 88 with this updated version:
 
 ```tsx
         {/* Footer: Privacy Attribution */}
-        <p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-sage-100">
+        <p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-burgundy-100">
           Shared with consent
         </p>
       </div>
@@ -99,7 +99,7 @@ export default function TestimonialCard({
           {[...Array(rating)].map((_, i) => (
             <span
               key={i}
-              className="text-sage-600 text-2xl drop-shadow-md transition-transform hover:scale-110"
+              className="text-burgundy-600 text-2xl drop-shadow-md transition-transform hover:scale-110"
               style={{ 
                 textShadow: '0 2px 4px rgba(107, 148, 79, 0.15)',
                 letterSpacing: '0.05em'
@@ -115,7 +115,7 @@ export default function TestimonialCard({
         <div className="mb-4 relative pl-6">
           {/* Quote Icon - Subtle Sage Accent */}
           <span
-            className="absolute left-0 top-0 text-3xl text-sage-400 opacity-60 leading-none"
+            className="absolute left-0 top-0 text-3xl text-burgundy-400 opacity-60 leading-none"
             aria-hidden="true"
           >
             "
@@ -126,7 +126,7 @@ export default function TestimonialCard({
         </div>
 
         {/* Author Attribution - Cleaner Styling */}
-        <div className="border-t border-sage-100 pt-4">
+        <div className="border-t border-burgundy-100 pt-4">
           <p className="font-semibold text-warm-gray-900 text-base">
             {author}
           </p>
@@ -137,7 +137,7 @@ export default function TestimonialCard({
           )}
           
           {/* Footer: Privacy Attribution */}
-          <p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-sage-100">
+          <p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-burgundy-100">
             Shared with consent
           </p>
         </div>
@@ -164,14 +164,14 @@ import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclai
 
 Change:
 ```tsx
-<p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+<p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
   What clients say
 </p>
 ```
 
 To:
 ```tsx
-<p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+<p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
   Client Stories
 </p>
 ```
@@ -200,7 +200,7 @@ Also update the second testimonials section title for consistency:
 
 Change:
 ```tsx
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                 In Their Words
               </p>
 ```
@@ -227,7 +227,7 @@ Find the testimonials section and add disclaimer before the grid:
           <section className="section-padding bg-white">
             <div className="container-base">
               <div className="max-w-3xl mx-auto text-center mb-12">
-                <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+                <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                   Client Stories
                 </p>
               </div>
@@ -262,7 +262,7 @@ import TestimonialCard from '@/components/TestimonialCard'
           <section className="section-padding bg-white">
             <div className="container-base">
               <div className="max-w-3xl mx-auto text-center mb-12">
-                <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+                <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                   Client Stories: Career Transitions
                 </p>
                 <h2 className="text-4xl font-serif font-bold text-warm-gray-900">

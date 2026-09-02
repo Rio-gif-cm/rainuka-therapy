@@ -42,7 +42,7 @@ placeholder="e.g., Alex, Marcus, Jamie, or your preferred name"
 **After**:
 ```tsx
 <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
-  Rainuka Oberoi, LCSW <span className="text-lg text-sage-600 font-normal">(she/her)</span>
+  Rainuka Oberoi, LCSW <span className="text-lg text-burgundy-600 font-normal">(she/her)</span>
 </h2>
 ```
 

@@ -84,7 +84,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
           style={{
             width: '100%',
             padding: '0.875rem 1rem',
-            border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--sage-600)' : '1.5px solid var(--warm-gray-200)',
+            border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--burgundy-600)' : '1.5px solid var(--warm-gray-200)',
             borderRadius: '0.5rem',
             fontSize: '1rem',
             fontFamily: 'inherit',
@@ -105,7 +105,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
               top: '50%',
               transform: 'translateY(-50%)',
               animation: 'successCheckmark var(--duration-base) var(--ease-standard) both',
-              color: 'var(--sage-600)',
+              color: 'var(--burgundy-600)',
               fontSize: '1.25rem',
               fontWeight: 'bold',
             }}
@@ -140,7 +140,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
           className="form-success-message"
           style={{
             animation: 'successMessageFadeIn var(--duration-base) var(--ease-standard) both',
-            color: 'var(--sage-600)',
+            color: 'var(--burgundy-600)',
             fontSize: '0.875rem',
             fontWeight: 500,
             marginTop: '0.375rem',
@@ -190,21 +190,21 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
 }) => {
   const variantStyles = {
     primary: {
-      backgroundColor: 'var(--sage-600)',
+      backgroundColor: 'var(--burgundy-600)',
       color: 'white',
       boxShadow: '0 4px 6px rgba(107, 148, 79, 0.15)',
       border: 'none',
     },
     secondary: {
-      backgroundColor: 'var(--sage-600)',
+      backgroundColor: 'var(--burgundy-600)',
       color: 'white',
       boxShadow: '0 4px 6px rgba(107, 148, 79, 0.15)',
       border: 'none',
     },
     outline: {
       backgroundColor: 'transparent',
-      color: 'var(--sage-600)',
-      border: '2px solid var(--sage-600)',
+      color: 'var(--burgundy-600)',
+      border: '2px solid var(--burgundy-600)',
       boxShadow: 'none',
     },
   }
@@ -455,7 +455,7 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
         style={{
           width: '100%',
           padding: '0.875rem 1rem',
-          border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--sage-600)' : '1.5px solid var(--warm-gray-200)',
+          border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--burgundy-600)' : '1.5px solid var(--warm-gray-200)',
           borderRadius: '0.5rem',
           fontSize: '1rem',
           fontFamily: 'inherit',
@@ -491,7 +491,7 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
           className="form-success-message"
           style={{
             animation: 'successMessageFadeIn var(--duration-base) var(--ease-standard) both',
-            color: 'var(--sage-600)',
+            color: 'var(--burgundy-600)',
             fontSize: '0.875rem',
             fontWeight: 500,
             marginTop: '0.375rem',

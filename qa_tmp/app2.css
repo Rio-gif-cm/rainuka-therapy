@@ -1473,27 +1473,27 @@
     border-color: var(--color-red-400);
   }
 
-  .border-sage-100 {
+  .border-burgundy-100 {
     border-color: #e8ede5;
   }
 
-  .border-sage-200 {
+  .border-burgundy-200 {
     border-color: #d1dcc8;
   }
 
-  .border-sage-300 {
+  .border-burgundy-300 {
     border-color: #b5c7aa;
   }
 
-  .border-sage-400 {
+  .border-burgundy-400 {
     border-color: #9dbb8d;
   }
 
-  .border-sage-500 {
+  .border-burgundy-500 {
     border-color: #82a86c;
   }
 
-  .border-sage-600 {
+  .border-burgundy-600 {
     border-color: #6b944f;
   }
 
@@ -1517,7 +1517,7 @@
     border-color: #c9b8ac;
   }
 
-  .border-l-sage-600 {
+  .border-l-burgundy-600 {
     border-left-color: #6b944f;
   }
 
@@ -1565,23 +1565,23 @@
     background-color: var(--color-red-50);
   }
 
-  .bg-sage-50 {
+  .bg-burgundy-50 {
     background-color: #f8faf7;
   }
 
-  .bg-sage-100 {
+  .bg-burgundy-100 {
     background-color: #e8ede5;
   }
 
-  .bg-sage-200 {
+  .bg-burgundy-200 {
     background-color: #d1dcc8;
   }
 
-  .bg-sage-400 {
+  .bg-burgundy-400 {
     background-color: #9dbb8d;
   }
 
-  .bg-sage-600 {
+  .bg-burgundy-600 {
     background-color: #6b944f;
   }
 
@@ -1682,12 +1682,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .from-sage-50 {
+  .from-burgundy-50 {
     --tw-gradient-from: #f8faf7;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .from-sage-200 {
+  .from-burgundy-200 {
     --tw-gradient-from: #d1dcc8;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
@@ -1788,12 +1788,12 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .to-sage-50 {
+  .to-burgundy-50 {
     --tw-gradient-to: #f8faf7;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .to-sage-100 {
+  .to-burgundy-100 {
     --tw-gradient-to: #e8ede5;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
@@ -2127,27 +2127,27 @@
     color: var(--color-red-900);
   }
 
-  .text-sage-50 {
+  .text-burgundy-50 {
     color: #f8faf7;
   }
 
-  .text-sage-400 {
+  .text-burgundy-400 {
     color: #9dbb8d;
   }
 
-  .text-sage-500 {
+  .text-burgundy-500 {
     color: #82a86c;
   }
 
-  .text-sage-600 {
+  .text-burgundy-600 {
     color: #6b944f;
   }
 
-  .text-sage-700 {
+  .text-burgundy-700 {
     color: #547c3f;
   }
 
-  .text-sage-800 {
+  .text-burgundy-800 {
     color: #426232;
   }
 
@@ -2315,11 +2315,11 @@
   }
 
   @media (hover: hover) {
-    .group-hover\:text-sage-600:is(:where(.group):hover *) {
+    .group-hover\:text-burgundy-600:is(:where(.group):hover *) {
       color: #6b944f;
     }
 
-    .group-hover\:text-sage-700:is(:where(.group):hover *) {
+    .group-hover\:text-burgundy-700:is(:where(.group):hover *) {
       color: #547c3f;
     }
   }
@@ -2350,11 +2350,11 @@
       border-color: #ccd8e5;
     }
 
-    .hover\:border-sage-300:hover {
+    .hover\:border-burgundy-300:hover {
       border-color: #b5c7aa;
     }
 
-    .hover\:border-sage-500:hover {
+    .hover\:border-burgundy-500:hover {
       border-color: #82a86c;
     }
 
@@ -2362,11 +2362,11 @@
       background-color: #3f566d;
     }
 
-    .hover\:bg-sage-50:hover {
+    .hover\:bg-burgundy-50:hover {
       background-color: #f8faf7;
     }
 
-    .hover\:bg-sage-700:hover {
+    .hover\:bg-burgundy-700:hover {
       background-color: #547c3f;
     }
 
@@ -2394,11 +2394,11 @@
       color: var(--color-red-900);
     }
 
-    .hover\:text-sage-500:hover {
+    .hover\:text-burgundy-500:hover {
       color: #82a86c;
     }
 
-    .hover\:text-sage-700:hover {
+    .hover\:text-burgundy-700:hover {
       color: #547c3f;
     }
 
@@ -2452,7 +2452,7 @@
     border-color: #ab5943;
   }
 
-  .focus\:bg-sage-400:focus {
+  .focus\:bg-burgundy-400:focus {
     background-color: #9dbb8d;
   }
 
@@ -2587,14 +2587,14 @@
 }
 
 :root {
-  --sage-50: #f8faf7;
-  --sage-100: #e8ede5;
-  --sage-200: #d1dcc8;
-  --sage-300: #b5c7aa;
-  --sage-400: #9dbb8d;
-  --sage-500: #82a86c;
-  --sage-600: #6b944f;
-  --sage-700: #547c3f;
+  --burgundy-50: #f8faf7;
+  --burgundy-100: #e8ede5;
+  --burgundy-200: #d1dcc8;
+  --burgundy-300: #b5c7aa;
+  --burgundy-400: #9dbb8d;
+  --burgundy-500: #82a86c;
+  --burgundy-600: #6b944f;
+  --burgundy-700: #547c3f;
   --warm-gray-50: #faf9f7;
   --warm-gray-100: #ede8e3;
   --warm-gray-200: #ddd4cc;
@@ -2612,7 +2612,7 @@
   --card-border-color: #d1dcc899;
   --card-border-color-hover: #82a86cb3;
   --card-accent-width: 3px;
-  --card-accent-color: var(--sage-600);
+  --card-accent-color: var(--burgundy-600);
   --card-surface: linear-gradient(135deg, #fffffffa 0%, #f8faf74d 100%);
   --card-surface-hover: linear-gradient(135deg, #fff 0%, #f8faf780 100%);
   --card-shadow-rest: 0 1px 2px #3f39350a,
@@ -2688,19 +2688,19 @@ p {
 }
 
 a {
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   transition: color var(--duration-fast) var(--ease-standard),
     text-decoration-color var(--duration-fast) var(--ease-standard);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
   text-decoration: underline;
 }
 
 :focus-visible {
-  outline: 3px solid var(--sage-500);
+  outline: 3px solid var(--burgundy-500);
   outline-offset: 2px;
 }
 
@@ -2735,7 +2735,7 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--sage-600);
+  background-color: var(--burgundy-600);
   color: #fff;
   outline-offset: 2px;
   transition: background-color var(--duration-fast) var(--ease-standard),
@@ -2746,31 +2746,31 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background-color: var(--sage-700);
+  background-color: var(--burgundy-700);
   transform: translateY(-2px);
   box-shadow: 0 10px 25px #6b944f40;
 }
 
 .btn-primary:focus {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 3px;
   box-shadow: 0 10px 25px #6b944f40;
 }
 
 .btn-primary:active {
-  background-color: var(--sage-700);
+  background-color: var(--burgundy-700);
   transform: translateY(0);
   box-shadow: 0 4px 12px #6b944f26;
 }
 
 .btn-secondary {
-  background-color: var(--sage-600);
+  background-color: var(--burgundy-600);
   color: #fff;
   box-shadow: 0 4px 6px #6b944f26;
 }
 
 .btn-secondary:hover {
-  background-color: var(--sage-700);
+  background-color: var(--burgundy-700);
   transform: translateY(-2px);
   box-shadow: 0 8px 12px #6b944f40;
 }
@@ -2781,8 +2781,8 @@ a:hover {
 }
 
 .btn-outline {
-  border: 2px solid var(--sage-600);
-  color: var(--sage-600);
+  border: 2px solid var(--burgundy-600);
+  color: var(--burgundy-600);
   outline-offset: 2px;
   transition: background-color var(--duration-fast) var(--ease-standard),
     border-color var(--duration-fast) var(--ease-standard),
@@ -2794,23 +2794,23 @@ a:hover {
 }
 
 .btn-outline:hover {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
+  background-color: var(--burgundy-50);
+  border-color: var(--burgundy-700);
+  color: var(--burgundy-700);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px #6b944f1f;
 }
 
 .btn-outline:focus {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 3px;
   box-shadow: 0 4px 12px #6b944f1f;
 }
 
 .btn-outline:active {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
+  background-color: var(--burgundy-50);
+  border-color: var(--burgundy-700);
+  color: var(--burgundy-700);
   transform: translateY(0);
   box-shadow: 0 2px 6px #6b944f1a;
 }
@@ -2844,7 +2844,7 @@ a:hover {
 }
 
 .hero-section {
-  background: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--sage-50) 100%);
+  background: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--burgundy-50) 100%);
   justify-content: center;
   align-items: center;
   min-height: 600px;
@@ -2874,7 +2874,7 @@ a:hover {
 }
 
 .card.card-sage, .niche-card.card-sage {
-  --card-accent-color: var(--sage-600);
+  --card-accent-color: var(--burgundy-600);
 }
 
 .card.card-warm, .niche-card.card-warm, .card.card-elevated, .niche-card.card-elevated {
@@ -2958,7 +2958,7 @@ a:hover {
 }
 
 .section-gradient-warm {
-  background: linear-gradient(180deg, var(--sage-50) 0%, white 100%);
+  background: linear-gradient(180deg, var(--burgundy-50) 0%, white 100%);
 }
 
 .section-gradient-subtle {
@@ -2966,7 +2966,7 @@ a:hover {
 }
 
 .section-gradient-reverse {
-  background: linear-gradient(180deg, white 0%, var(--sage-50) 100%);
+  background: linear-gradient(180deg, white 0%, var(--burgundy-50) 100%);
 }
 
 .floating-element {
@@ -2998,7 +2998,7 @@ a:hover {
 }
 
 .form-input:focus, .form-select:focus, textarea:focus {
-  border-color: var(--sage-500);
+  border-color: var(--burgundy-500);
   background-color: #f8faf7cc;
   outline: none;
   box-shadow: 0 0 0 3px #9dbb8d26, inset 0 1px 2px #9dbb8d14;
@@ -3014,12 +3014,12 @@ a:hover {
   box-shadow: 0 0 0 3px #ab59431a;
 }
 
-.form-input.border-sage-500, .form-select.border-sage-500, textarea.border-sage-500 {
+.form-input.border-burgundy-500, .form-select.border-burgundy-500, textarea.border-burgundy-500 {
   background-color: #f8faf7;
   border-color: #6b944f;
 }
 
-.form-input.border-sage-500:focus, .form-select.border-sage-500:focus, textarea.border-sage-500:focus {
+.form-input.border-burgundy-500:focus, .form-select.border-burgundy-500:focus, textarea.border-burgundy-500:focus {
   border-color: #6b944f;
   box-shadow: 0 0 0 3px #6b944f1a;
 }
@@ -3082,17 +3082,17 @@ a:hover {
 }
 
 .niche-card:hover, .niche-card:focus-within {
-  background: var(--sage-50);
+  background: var(--burgundy-50);
 }
 
 .explore-arrow {
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   transition: all .3s;
   display: inline-block;
 }
 
 .niche-card:hover .explore-arrow, .niche-card:active .explore-arrow {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
   animation: .6s arrowBounce;
 }
 
@@ -3111,16 +3111,16 @@ a:hover {
 }
 
 .btn-outline:hover, .btn-outline:active {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
+  background-color: var(--burgundy-50);
+  border-color: var(--burgundy-700);
+  color: var(--burgundy-700);
 }
 
 .section-divider {
   background: linear-gradient(90deg, 
     transparent 0%, 
-    var(--sage-300) 15%, 
-    var(--sage-300) 85%, 
+    var(--burgundy-300) 15%, 
+    var(--burgundy-300) 85%, 
     transparent 100%);
   justify-content: center;
   align-items: center;
@@ -3132,7 +3132,7 @@ a:hover {
 
 .section-divider:before {
   content: "";
-  background-color: var(--sage-400);
+  background-color: var(--burgundy-400);
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -3144,9 +3144,9 @@ a:hover {
 
 .section-accent-bar {
   background: linear-gradient(90deg, 
-    var(--sage-400) 0%, 
-    var(--sage-500) 50%, 
-    var(--sage-400) 100%);
+    var(--burgundy-400) 0%, 
+    var(--burgundy-500) 50%, 
+    var(--burgundy-400) 100%);
   opacity: .6;
   height: 3px;
   position: absolute;
@@ -3215,7 +3215,7 @@ section:not(:first-of-type):before {
 }
 
 :focus-visible {
-  outline: 3px solid var(--sage-500);
+  outline: 3px solid var(--burgundy-500);
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -3253,12 +3253,12 @@ a {
 }
 
 a[aria-current="page"] {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
   font-weight: 600;
 }
 
 .form-input:focus, .form-select:focus, textarea:focus {
-  outline: 2px solid var(--sage-500);
+  outline: 2px solid var(--burgundy-500);
   outline-offset: 2px;
 }
 
@@ -3303,14 +3303,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 table thead th {
-  background-color: var(--sage-50);
-  border-bottom: 2px solid var(--sage-300);
+  background-color: var(--burgundy-50);
+  border-bottom: 2px solid var(--burgundy-300);
   font-weight: 700;
 }
 
 .btn-link {
-  color: var(--sage-600);
-  border-bottom: 2px solid var(--sage-600);
+  color: var(--burgundy-600);
+  border-bottom: 2px solid var(--burgundy-600);
   outline-offset: 2px;
   cursor: pointer;
   outline: 2px solid #0000;
@@ -3321,12 +3321,12 @@ table thead th {
 }
 
 .btn-link:hover {
-  color: var(--sage-700);
-  border-bottom-color: var(--sage-700);
+  color: var(--burgundy-700);
+  border-bottom-color: var(--burgundy-700);
 }
 
 .btn-link:focus {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 3px;
 }
 
@@ -3694,8 +3694,8 @@ html.sensory-friendly-mode * {
 
 html.sensory-friendly-mode {
   --warm-gray-900: #1a1614 !important;
-  --sage-700: #334c27 !important;
-  --sage-600: #6b944f !important;
+  --burgundy-700: #334c27 !important;
+  --burgundy-600: #6b944f !important;
   --accent-warm: #c96547 !important;
 }
 
@@ -3711,7 +3711,7 @@ html.sensory-friendly-mode a:hover, html.sensory-friendly-mode button:hover, htm
 }
 
 html.sensory-friendly-mode :focus-visible {
-  outline: 4px solid var(--sage-600) !important;
+  outline: 4px solid var(--burgundy-600) !important;
   outline-offset: 3px !important;
 }
 
@@ -3720,7 +3720,7 @@ html.sensory-friendly-mode video[autoplay], html.sensory-friendly-mode audio[aut
 }
 
 html.sensory-friendly-mode button:focus-visible, html.sensory-friendly-mode [role="button"]:focus-visible, html.sensory-friendly-mode a:focus-visible {
-  outline: 3px solid var(--sage-700) !important;
+  outline: 3px solid var(--burgundy-700) !important;
   outline-offset: 2px !important;
   box-shadow: 0 0 0 4px #6b944f4d !important;
 }
@@ -3758,7 +3758,7 @@ html.sensory-friendly-mode input, html.sensory-friendly-mode textarea, html.sens
 }
 
 html.sensory-friendly-mode input:focus, html.sensory-friendly-mode textarea:focus, html.sensory-friendly-mode select:focus {
-  border-color: var(--sage-700) !important;
+  border-color: var(--burgundy-700) !important;
 }
 
 html.sensory-friendly-mode body {
@@ -3797,18 +3797,18 @@ html.sensory-friendly-mode a:hover {
 }
 
 html.sensory-friendly-mode button {
-  border: 2px solid var(--sage-600);
-  background-color: var(--sage-50);
-  color: var(--sage-700);
+  border: 2px solid var(--burgundy-600);
+  background-color: var(--burgundy-50);
+  color: var(--burgundy-700);
 }
 
 html.sensory-friendly-mode button:hover {
-  background-color: var(--sage-100);
-  border-color: var(--sage-700);
+  background-color: var(--burgundy-100);
+  border-color: var(--burgundy-700);
 }
 
 html.sensory-friendly-mode button:active {
-  background-color: var(--sage-200);
+  background-color: var(--burgundy-200);
 }
 
 html.sensory-friendly-mode * {
@@ -3832,7 +3832,7 @@ a {
 
 a:after {
   content: "";
-  background-color: var(--sage-600);
+  background-color: var(--burgundy-600);
   transform-origin: 100%;
   opacity: .6;
   width: 100%;
@@ -3846,7 +3846,7 @@ a:after {
 
 a:hover:after {
   transform-origin: 0;
-  background-color: var(--sage-700);
+  background-color: var(--burgundy-700);
   opacity: 1;
   transform: scaleX(1);
 }
@@ -3978,13 +3978,13 @@ a:hover:after {
 }
 
 .explore-arrow {
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   transition: all .35s cubic-bezier(.34, 1.56, .64, 1);
   display: inline-block;
 }
 
 .niche-card:hover .explore-arrow {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
   transform: translateX(4px);
 }
 
@@ -4025,12 +4025,12 @@ a:hover:after {
   }
 }
 
-.form-input.border-sage-500:focus {
+.form-input.border-burgundy-500:focus {
   animation: .6s ease-out successPulse;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .form-input.border-sage-500:focus {
+  .form-input.border-burgundy-500:focus {
     animation: none;
   }
 

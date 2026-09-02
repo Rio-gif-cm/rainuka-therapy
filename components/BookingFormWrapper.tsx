@@ -29,12 +29,12 @@ export default function BookingFormWrapper() {
   return (
     <>
       {/* Confirmation message showing pre-commitment was recorded */}
-      <div className="card bg-sage-50 border border-sage-200 mb-8">
+      <div className="card bg-burgundy-50 border border-burgundy-200 mb-8">
         <div className="flex gap-3 items-start">
           <span className="text-2xl">✓</span>
           <div>
-            <p className="font-semibold text-sage-800">I've heard you</p>
-            <p className="text-sm text-sage-700 mt-1">
+            <p className="font-semibold text-burgundy-800">I've heard you</p>
+            <p className="text-sm text-burgundy-700 mt-1">
               I saw what you shared about {preCommitmentData?.whatBringsYou?.substring(0, 30)}... I think I can help. Now let's get you on the calendar.
             </p>
           </div>

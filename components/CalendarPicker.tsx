@@ -100,8 +100,8 @@ export default function CalendarPicker({
                   onClick={() => handleTimeSelect(slot)}
                   className={`py-2 px-3 rounded-md text-sm font-medium transition-colors border-2 ${
                     selectedSlot === slot.start
-                      ? 'bg-sage-600 text-white border-sage-600'
-                      : 'bg-white text-warm-gray-700 border-warm-gray-200 hover:border-sage-500 hover:bg-sage-50'
+                      ? 'bg-burgundy-600 text-white border-burgundy-600'
+                      : 'bg-white text-warm-gray-700 border-warm-gray-200 hover:border-burgundy-500 hover:bg-burgundy-50'
                   }`}
                 >
                   {formatTimeSlot(slot.start)}
@@ -118,7 +118,7 @@ export default function CalendarPicker({
 
       {/* Selection Summary */}
       {internalSelectedDate && selectedSlot && (
-        <div className="bg-sage-50 border border-sage-200 rounded-md p-3">
+        <div className="bg-burgundy-50 border border-burgundy-200 rounded-md p-3">
           <p className="text-sm text-warm-gray-700">
             ✓ Appointment requested for <span className="font-semibold">{format(internalSelectedDate, 'MMMM d, yyyy')}</span> at{' '}
             <span className="font-semibold">{formatTimeSlot(selectedSlot)}</span>

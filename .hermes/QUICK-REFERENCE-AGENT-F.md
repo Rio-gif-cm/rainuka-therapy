@@ -83,7 +83,7 @@
 
 [ SVG Illustrations ]
   └─ Create 3 SVG files (perinatal, ADHD, career icons)
-  └─ Sage-600 stroke + sage-200 fill
+  └─ Sage-600 stroke + burgundy-200 fill
   └─ ~4-6 hours design work (or 2 hours if using Excalidraw)
   └─ Ready to commit + ship
 

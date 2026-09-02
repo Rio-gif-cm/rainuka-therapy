@@ -23,7 +23,7 @@ Applied SuperDesign framework to the therapy practice website. Audit revealed so
 #### Fixes Applied:
 ✅ **globals.css** — Added modern oklch() definitions:
 ```css
---sage-600: oklch(0.52 0.14 142);  /* Modern oklch sage primary */
+--burgundy-600: oklch(0.52 0.14 142);  /* Modern oklch sage primary */
 --deep-gray-600: oklch(0.38 0.08 20);
 --deep-gray-700: oklch(0.32 0.07 20);
 --sea-blue-400: oklch(0.63 0.15 200);
@@ -63,7 +63,7 @@ Applied SuperDesign framework to the therapy practice website. Audit revealed so
 
 #### Findings:
 - Form labels using `transition-colors` only, no weight emphasis
-- Label color on focus: `text-sage-600` (too subtle)
+- Label color on focus: `text-burgundy-600` (too subtle)
 - Error text: `text-alert-600` (insufficient contrast)
 
 #### Fixes Applied:
@@ -114,7 +114,7 @@ input:invalid { border-color: var(--alert-600); }
 ```css
 input[type="text"]:focus {
   outline: none;
-  border-color: var(--sage-600);
+  border-color: var(--burgundy-600);
   box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);  /* Soft ring */
 }
 ```
@@ -175,7 +175,7 @@ input[type="checkbox"] {
   width: 1.25rem;  /* 20px, works in 48px click zone */
   height: 1.25rem;
   cursor: pointer;
-  accent-color: var(--sage-600);
+  accent-color: var(--burgundy-600);
 }
 ```
 
@@ -195,7 +195,7 @@ input[type="checkbox"] {
 | Label (dark gray on cream) | 8.2:1 | 11.5:1 | ✅ AAA |
 | Error text (red on white) | 5.1:1 | 5.8:1 | ✅ AA (marginal) |
 | Error text (red on alert-50) | 4.8:1 | 7.1:1 | ✅ AAA |
-| CTA text (white on sage-600) | 8.9:1 | 8.9:1 | ✅ AAA |
+| CTA text (white on burgundy-600) | 8.9:1 | 8.9:1 | ✅ AAA |
 | Focus ring (sage on white) | N/A | 5.2:1 | ✅ AA |
 
 **Impact:** All text meets WCAG AA; most meets AAA. Error states now 7:1 on dedicated background.
@@ -213,11 +213,11 @@ input[type="checkbox"] {
 #### BookingForm.tsx
 - **Contact Field Group:** 
   - Hover effect: Added `hover:shadow-md transition-shadow duration-300`
-  - Label focus color: `text-sage-700` (darker, more visible)
+  - Label focus color: `text-burgundy-700` (darker, more visible)
   - Border on focus: Sage-600 with box-shadow (no harsh outline)
   
 - **Input States:**
-  - Focus: `border-sage-500 bg-sage-50` + `box-shadow: 0 0 0 3px rgba(...)`
+  - Focus: `border-burgundy-500 bg-burgundy-50` + `box-shadow: 0 0 0 3px rgba(...)`
   - Error: `border-alert-600 bg-alert-50` + `box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.1)`
   
 - **Field Validation:**

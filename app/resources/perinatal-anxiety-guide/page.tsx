@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 
 export default function PerinatalAnxietyGuide() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-sage-50 to-white">
+    <main className="min-h-screen bg-gradient-to-b from-burgundy-50 to-white">
       {/* Hero Section */}
-      <section className="px-4 py-16 md:py-24 bg-sage-100">
+      <section className="px-4 py-16 md:py-24 bg-burgundy-100">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-warm-gray-900 mb-6">
             Signs You Might Have Perinatal Anxiety
@@ -46,7 +46,7 @@ export default function PerinatalAnxietyGuide() {
       </section>
 
       {/* Quick Checklist CTA */}
-      <section className="px-4 py-12 bg-white border-t-2 border-sage-200">
+      <section className="px-4 py-12 bg-white border-t-2 border-burgundy-200">
         <div className="max-w-3xl mx-auto">
           <div className="bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded">
             <h2 className="text-lg font-semibold text-warm-gray-900 mb-4">
@@ -301,7 +301,7 @@ export default function PerinatalAnxietyGuide() {
       {/* CTA Section */}
       <section
         id="booking"
-        className="px-4 py-16 bg-sage-100 border-t-2 border-sage-300"
+        className="px-4 py-16 bg-burgundy-100 border-t-2 border-burgundy-300"
       >
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-warm-gray-900 mb-4">
@@ -343,7 +343,7 @@ export default function PerinatalAnxietyGuide() {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <div className="sm:w-1/4">
-              <div className="w-24 h-24 bg-sage-200 rounded-full mx-auto"></div>
+              <div className="w-24 h-24 bg-burgundy-200 rounded-full mx-auto"></div>
             </div>
             <div className="sm:w-3/4">
               <h3 className="text-lg font-semibold text-warm-gray-900">
@@ -423,7 +423,7 @@ export default function PerinatalAnxietyGuide() {
       </section>
 
       {/* Final CTA */}
-      <section className="px-4 py-12 bg-white border-t-2 border-sage-200">
+      <section className="px-4 py-12 bg-white border-t-2 border-burgundy-200">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-warm-gray-700 mb-6">
             <em>

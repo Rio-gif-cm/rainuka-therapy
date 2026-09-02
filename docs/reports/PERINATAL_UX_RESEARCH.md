@@ -205,7 +205,7 @@ Even with calming colors, the *tone of copy* matters enormously:
 - Rationale: "Start" feels less like signing up for an obligation; more like beginning a journey
 
 **Change 2: "What You'll Get" Section - New Reassurance Component**
-- Add a subtle visual callout box with background color `var(--sage-100)` (very soft, barely there)
+- Add a subtle visual callout box with background color `var(--burgundy-100)` (very soft, barely there)
 - Include micro-reassurance: "This space is judgment-free. Your timeline, your pace."
 - Emphasizes safety without being preachy
 
@@ -215,7 +215,7 @@ Even with calming colors, the *tone of copy* matters enormously:
 - More concrete, less abstract
 
 **Change 4: Emotional Support Emphasis**
-- Highlight the "Who I Help" section with a subtle background color shift to `var(--sage-50)`
+- Highlight the "Who I Help" section with a subtle background color shift to `var(--burgundy-50)`
 - This section lists perinatal-specific experiences (loss, anxiety, etc.)
 - Visual prominence signals: "Your specific experience is recognized here"
 

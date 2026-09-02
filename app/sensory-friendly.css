@@ -33,10 +33,10 @@ html.sensory-friendly-mode * {
 html.sensory-friendly-mode {
   /* Increase contrast */
   --warm-gray-900: #1a1614 !important; /* Darker text */
-  --sage-700: #334c27 !important;      /* Darker sage accents */
+  --burgundy-700: #334c27 !important;      /* Darker sage accents */
   
   /* High contrast mode: boost color saturation */
-  --sage-600: #6b944f !important;
+  --burgundy-600: #6b944f !important;
   --accent-warm: #c96547 !important;
 }
 
@@ -55,7 +55,7 @@ html.sensory-friendly-mode [role="button"]:hover {
 
 /* Ensure focus states remain visible and strong */
 html.sensory-friendly-mode :focus-visible {
-  outline: 4px solid var(--sage-600) !important;
+  outline: 4px solid var(--burgundy-600) !important;
   outline-offset: 3px !important;
 }
 
@@ -70,7 +70,7 @@ html.sensory-friendly-mode button:focus-visible,
 html.sensory-friendly-mode [role="button"]:focus-visible,
 html.sensory-friendly-mode a:focus-visible {
   box-shadow: 0 0 0 4px rgba(107, 148, 79, 0.3) !important;
-  outline: 3px solid var(--sage-700) !important;
+  outline: 3px solid var(--burgundy-700) !important;
   outline-offset: 2px !important;
 }
 
@@ -118,7 +118,7 @@ html.sensory-friendly-mode button {
 html.sensory-friendly-mode input:focus,
 html.sensory-friendly-mode textarea:focus,
 html.sensory-friendly-mode select:focus {
-  border-color: var(--sage-700) !important;
+  border-color: var(--burgundy-700) !important;
 }
 
 /* Increase line-height for better readability */
@@ -167,18 +167,18 @@ html.sensory-friendly-mode a:hover {
 
 /* Ensure buttons have clear visual states (not animated) */
 html.sensory-friendly-mode button {
-  border: 2px solid var(--sage-600);
-  background-color: var(--sage-50);
-  color: var(--sage-700);
+  border: 2px solid var(--burgundy-600);
+  background-color: var(--burgundy-50);
+  color: var(--burgundy-700);
 }
 
 html.sensory-friendly-mode button:hover {
-  background-color: var(--sage-100);
-  border-color: var(--sage-700);
+  background-color: var(--burgundy-100);
+  border-color: var(--burgundy-700);
 }
 
 html.sensory-friendly-mode button:active {
-  background-color: var(--sage-200);
+  background-color: var(--burgundy-200);
 }
 
 /* Remove all filters and visual effects */

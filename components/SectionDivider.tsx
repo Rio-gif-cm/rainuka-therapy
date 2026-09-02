@@ -11,7 +11,7 @@ import { colors } from '@/app/styles'
  */
 interface SectionDividerProps {
   margin?: string // Space around divider (default "2rem")
-  color?: string // Line color (default sage-200)
+  color?: string // Line color (default burgundy-200)
 }
 
 export default function SectionDivider({ 

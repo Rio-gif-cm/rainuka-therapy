@@ -40,7 +40,7 @@
 
 ### 1. Section Dividers (Calm States)
 **Component:** `SectionDivider.tsx`
-- Subtle 1px sage-200 horizontal lines
+- Subtle 1px burgundy-200 horizontal lines
 - Placed between major content sections
 - Creates visual "pause points" where users can reorient
 

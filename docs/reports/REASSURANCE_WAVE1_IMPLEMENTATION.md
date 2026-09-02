@@ -214,7 +214,7 @@ Implements Wave 1 anxiety-reduction element in hero section:
 - Addresses 80% pre-booking anxiety barrier in therapy seekers
 - Places 'What happens next' reassurance banner directly before CTA
 - Reduces friction with specific expectations: 'No forms beforehand. No judgment.'
-- Uses existing design tokens (sage-50, warmGray-700) for consistency
+- Uses existing design tokens (burgundy-50, warmGray-700) for consistency
 
 Research basis:
 - Therapy seekers report highest fear-of-unknown at booking moment

@@ -405,7 +405,7 @@ placeholder="e.g., Alex, Marcus, Jamie, or your preferred name"
 **Option A: Minimal change**:
 ```tsx
 <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
-  Rainuka Oberoi, LCSW <span className="text-lg text-sage-600 font-normal">(she/her)</span>
+  Rainuka Oberoi, LCSW <span className="text-lg text-burgundy-600 font-normal">(she/her)</span>
 </h2>
 ```
 
@@ -415,7 +415,7 @@ placeholder="e.g., Alex, Marcus, Jamie, or your preferred name"
   <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900">
     Rainuka Oberoi, LCSW
   </h2>
-  <span className="inline-block bg-sage-50 text-sage-700 text-sm font-medium px-3 py-1 rounded-full border border-sage-200">
+  <span className="inline-block bg-burgundy-50 text-burgundy-700 text-sm font-medium px-3 py-1 rounded-full border border-burgundy-200">
     she/her
   </span>
 </div>

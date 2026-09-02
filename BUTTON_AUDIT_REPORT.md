@@ -64,8 +64,8 @@ The button and interactive elements system is **well-structured** with modern ok
 - Duration: `var(--duration-base)` (250ms)
 
 ✅ **Outline variant:**
-- Background: transparent → sage-50
-- Border: sage-600 → sage-700
+- Background: transparent → burgundy-50
+- Border: burgundy-600 → burgundy-700
 - Box shadow: added
 - Transform: `scale(1.02)`
 
@@ -73,7 +73,7 @@ The button and interactive elements system is **well-structured** with modern ok
 
 **4. Add background color shift to primary hover**
 - Current: only shadow + transform
-- Proposed: sage-600 → sage-700 (darker green)
+- Proposed: burgundy-600 → burgundy-700 (darker green)
 - Makes state change more obvious
 - Aligns with global CSS `.btn-primary:hover` (which IS darker)
 
@@ -84,7 +84,7 @@ The button and interactive elements system is **well-structured** with modern ok
 
 **6. Add focus-visible ring styling**
 - Current: rely on default browser outline
-- Proposed: `outline: 2px solid sage-600; outline-offset: 2px;`
+- Proposed: `outline: 2px solid burgundy-600; outline-offset: 2px;`
 - Matches card system focus design
 - Visible from keyboard navigation
 
@@ -108,7 +108,7 @@ The button and interactive elements system is **well-structured** with modern ok
 **7. Implement focus-visible state pattern**
 ```css
 .btn:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
   box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
 }
@@ -141,7 +141,7 @@ The button and interactive elements system is **well-structured** with modern ok
 
 **9. Enhanced disabled state styling**
 - Opacity: 0.6 → 0.5 (more obvious)
-- Background: sage-600 → sage-300 (desaturated)
+- Background: burgundy-600 → burgundy-300 (desaturated)
 - Box shadow: removed or reduced
 - Border color: for outline buttons
 
@@ -195,13 +195,13 @@ The button and interactive elements system is **well-structured** with modern ok
 
 ### Variant Consistency
 **Current:** primary, secondary, outline  
-**Issue:** secondary looks identical to primary (both sage-600)
+**Issue:** secondary looks identical to primary (both burgundy-600)
 
 **14. Redesign secondary variant**
-- Background: sage-50 (light background)
-- Color: sage-700 (dark text)
-- Border: 1px sage-200
-- Hover: sage-100 background, sage-700 border
+- Background: burgundy-50 (light background)
+- Color: burgundy-700 (dark text)
+- Border: 1px burgundy-200
+- Hover: burgundy-100 background, burgundy-700 border
 - Use case: less urgent CTAs
 
 ### Form Button Consistency

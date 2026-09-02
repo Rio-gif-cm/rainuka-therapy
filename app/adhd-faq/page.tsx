@@ -104,7 +104,7 @@ const faqSchema = {
 
 export const metadata = {
   title: 'Adult ADHD FAQ - Late Diagnosis, Therapy & Daily Life | Wonderloud Therapy',
-  description: 'ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication vs therapy, time blindness, work accommodations. Rainuka Oberoi, LCSW.',
+  description: 'ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication vs therapy, time blindness, work accommodations. Licensed therapist.',
   openGraph: {
     title: 'Adult ADHD FAQ | Wonderloud Therapy',
     description: 'Late ADHD diagnosis, executive dysfunction, RSD, and what therapy adds to medication-answered plainly.',
@@ -121,7 +121,7 @@ function FAQSection({ title, items }: { title: string; items: FAQItem[] }) {
           <details key={index} className="card card-info cursor-pointer">
             <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
               {faq.q}
-              <span className="text-sage-400">▼</span>
+              <span className="text-burgundy-400">▼</span>
             </summary>
             <p className="text-warm-gray-600 mt-4">{faq.a}</p>
           </details>
@@ -197,25 +197,25 @@ export default function ADHDFAQPage() {
 
         <SectionDivider margin="3rem" />
 
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="🔗" level={2} color={colors.warmGray[900]}>
               Related Pages
             </IconHeading>
             <div className="flex gap-4 flex-wrap">
-              <Link href="/adhd" className="text-sage-600 underline">
+              <Link href="/adhd" className="text-burgundy-600 underline">
                 ADHD Therapy for Adults
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/parents" className="text-sage-600 underline">
+              <Link href="/parents" className="text-burgundy-600 underline">
                 Parents &amp; Caregivers
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/faq" className="text-sage-600 underline">
+              <Link href="/faq" className="text-burgundy-600 underline">
                 General FAQ
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/pricing" className="text-sage-600 underline">
+              <Link href="/pricing" className="text-burgundy-600 underline">
                 Pricing &amp; Insurance
               </Link>
             </div>

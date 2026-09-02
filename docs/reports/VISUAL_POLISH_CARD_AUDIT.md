@@ -50,7 +50,7 @@ Implemented **ONE targeted visual improvement** to enhance card visual definitio
 ### 2. **Testimonial Cards** (`TestimonialCard.tsx` + `.card-elevated`)
 | Aspect | Before | After |
 |--------|--------|-------|
-| Top Border | 2px sage-400 (too subtle) | **3px rose (#d97757) — warmer, more prominent** |
+| Top Border | 2px burgundy-400 (too subtle) | **3px rose (#d97757) — warmer, more prominent** |
 | Visual Weight | Light; could be confused with page background | **Warmer accent signals social proof + trust** |
 | Shadow Hierarchy | Standard card shadow | **Inherits enhanced card hover shadows** |
 | Persona Alignment | Neutral green | **Rose signals warmth, human connection, social proof** |
@@ -121,7 +121,7 @@ Implemented **ONE targeted visual improvement** to enhance card visual definitio
 #### 4. Card-Elevated (Testimonials)
 ```css
 .card-elevated {
-  border: 1px solid var(--sage-200);
+  border: 1px solid var(--burgundy-200);
   border-top: 3px solid #d97757;  /* Rose accent */
   background: linear-gradient(...);  /* Added subtle gradient */
 }

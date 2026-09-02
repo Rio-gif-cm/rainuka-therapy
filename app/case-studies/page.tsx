@@ -137,7 +137,7 @@ export default function CaseStudiesPage() {
                 ))}
               </div>
 
-              <div className="border-t border-sage-200 pt-6 mt-8">
+              <div className="border-t border-burgundy-200 pt-6 mt-8">
                 <h3 className="text-xl font-semibold text-warm-gray-900 mb-3">What Maya Would Tell You</h3>
                 <blockquote
                   className="text-lg italic text-warm-gray-700 pl-6 py-2"
@@ -160,7 +160,7 @@ export default function CaseStudiesPage() {
         <SectionDivider />
 
         {/* More Stories Coming */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base text-center max-w-3xl mx-auto">
             <IconHeading icon="✍️" level={2} color={colors.warmGray[900]}>
               More Stories Coming
@@ -210,7 +210,7 @@ export default function CaseStudiesPage() {
         </section>
 
         {/* Closing CTA */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base text-center max-w-3xl mx-auto">
             <IconHeading icon="🌿" level={2} color={colors.warmGray[900]}>
               Your Story Could Be Different Tomorrow

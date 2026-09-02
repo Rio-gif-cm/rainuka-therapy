@@ -89,7 +89,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
           style={{
             width: '100%',
             padding: '0.875rem 1rem',
-            border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--sage-600)' : '1.5px solid var(--warm-gray-200)',
+            border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--burgundy-600)' : '1.5px solid var(--warm-gray-200)',
             borderRadius: '0.5rem',
             fontSize: '1rem',
             fontFamily: 'inherit',
@@ -109,7 +109,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
               top: '50%',
               transform: 'translateY(-50%)',
               animation: 'successCheckmark var(--duration-base) var(--ease-standard) both',
-              color: 'var(--sage-600)',
+              color: 'var(--burgundy-600)',
               fontSize: '1.25rem',
               fontWeight: 'bold',
             }}
@@ -142,7 +142,7 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
           className="form-success-message"
           style={{
             animation: 'successMessageFadeIn var(--duration-base) var(--ease-standard) both',
-            color: 'var(--sage-600)',
+            color: 'var(--burgundy-600)',
             fontSize: '0.875rem',
             fontWeight: 500,
             marginTop: '0.375rem',
@@ -197,22 +197,22 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
 }) => {
   const variantStyles = {
     primary: {
-      backgroundColor: 'var(--sage-600)',
+      backgroundColor: 'var(--burgundy-600)',
       color: 'white',
       boxShadow: '0 4px 6px rgba(107, 148, 79, 0.15)',
       border: 'none',
     },
     secondary: {
       // Improvement #14: Redesigned secondary variant
-      backgroundColor: 'var(--sage-50)',
-      color: 'var(--sage-700)',
-      border: '1px solid var(--sage-200)',
+      backgroundColor: 'var(--burgundy-50)',
+      color: 'var(--burgundy-700)',
+      border: '1px solid var(--burgundy-200)',
       boxShadow: 'none',
     },
     outline: {
       backgroundColor: 'transparent',
-      color: 'var(--sage-600)',
-      border: '2px solid var(--sage-600)',
+      color: 'var(--burgundy-600)',
+      border: '2px solid var(--burgundy-600)',
       boxShadow: 'none',
     },
   }
@@ -284,7 +284,7 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
         `,
         // Improvement #9: Enhanced disabled state
         opacity: isDisabled ? 0.5 : 1,
-        backgroundColor: isDisabled && variant === 'primary' ? 'var(--sage-300)' : variantStyles[variant].backgroundColor,
+        backgroundColor: isDisabled && variant === 'primary' ? 'var(--burgundy-300)' : variantStyles[variant].backgroundColor,
         transform: 'translateY(0)',
       }}
       onMouseEnter={(e) => {
@@ -294,14 +294,14 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
           btn.style.transform = 'translateY(-2px)'
           // Improvement #4: Primary button hover background shift
           if (variant === 'primary') {
-            btn.style.backgroundColor = 'var(--sage-700)'
+            btn.style.backgroundColor = 'var(--burgundy-700)'
             btn.style.boxShadow = '0 10px 25px rgba(107, 148, 79, 0.25)'
           } else if (variant === 'secondary') {
-            btn.style.backgroundColor = 'var(--sage-100)'
-            btn.style.borderColor = 'var(--sage-300)'
+            btn.style.backgroundColor = 'var(--burgundy-100)'
+            btn.style.borderColor = 'var(--burgundy-300)'
             btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.1)'
           } else if (variant === 'outline') {
-            btn.style.backgroundColor = 'var(--sage-50)'
+            btn.style.backgroundColor = 'var(--burgundy-50)'
             btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.12)'
           }
         }
@@ -309,7 +309,7 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
       onMouseLeave={(e) => {
         const btn = e.currentTarget
         btn.style.transform = 'translateY(0)'
-        btn.style.backgroundColor = isDisabled && variant === 'primary' ? 'var(--sage-300)' : variantStyles[variant].backgroundColor
+        btn.style.backgroundColor = isDisabled && variant === 'primary' ? 'var(--burgundy-300)' : variantStyles[variant].backgroundColor
         btn.style.boxShadow = variantStyles[variant].boxShadow
         btn.style.borderColor = variantStyles[variant].border ? variantStyles[variant].border.split(' ')[2] : ''
       }}
@@ -484,7 +484,7 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
         style={{
           width: '100%',
           padding: '0.875rem 1rem',
-          border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--sage-600)' : '1.5px solid var(--warm-gray-200)',
+          border: error ? '1.5px solid var(--alert-500)' : success ? '1.5px solid var(--burgundy-600)' : '1.5px solid var(--warm-gray-200)',
           borderRadius: '0.5rem',
           fontSize: '1rem',
           fontFamily: 'inherit',
@@ -518,7 +518,7 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
           className="form-success-message"
           style={{
             animation: 'successMessageFadeIn var(--duration-base) var(--ease-standard) both',
-            color: 'var(--sage-600)',
+            color: 'var(--burgundy-600)',
             fontSize: '0.875rem',
             fontWeight: 500,
             marginTop: '0.375rem',

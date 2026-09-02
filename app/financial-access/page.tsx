@@ -165,7 +165,7 @@ export default function FinancialAccessPage() {
         <SectionDivider />
 
         {/* Sliding Scale */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base">
             <IconHeading icon="💰" level={2} color={colors.warmGray[900]}>
               Sliding Scale: Transparent Pricing
@@ -179,7 +179,7 @@ export default function FinancialAccessPage() {
 
               <div className="card card-static overflow-x-auto mb-8">
                 <table className="w-full text-left">
-                  <thead className="bg-sage-50">
+                  <thead className="bg-burgundy-50">
                     <tr>
                       <th className="px-6 py-3 font-semibold text-warm-gray-900">Household Income</th>
                       <th className="px-6 py-3 font-semibold text-warm-gray-900">Session Fee</th>
@@ -188,7 +188,7 @@ export default function FinancialAccessPage() {
                   </thead>
                   <tbody>
                     {slidingScale.map((row, index) => (
-                      <tr key={index} className="border-t border-sage-100">
+                      <tr key={index} className="border-t border-burgundy-100">
                         <td className="px-6 py-4 text-warm-gray-700">{row.income}</td>
                         <td className="px-6 py-4 font-semibold text-warm-gray-900">{row.fee}</td>
                         <td className="px-6 py-4 text-sm text-warm-gray-600">{row.why}</td>
@@ -277,7 +277,7 @@ export default function FinancialAccessPage() {
         <SectionDivider />
 
         {/* Pro-Bono */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base">
             <IconHeading icon="🤝" level={2} color={colors.warmGray[900]}>
               Pro-Bono &amp; Reduced-Fee Availability
@@ -425,7 +425,7 @@ export default function FinancialAccessPage() {
         </section>
 
         {/* Closing CTA */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base text-center max-w-3xl mx-auto">
             <IconHeading icon="🌱" level={2} color={colors.warmGray[900]}>
               Ready to Take the Next Step?

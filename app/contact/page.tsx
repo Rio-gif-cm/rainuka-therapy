@@ -8,7 +8,7 @@ export default function ContactPage() {
 
       <main className="flex-grow">
         {/* Hero */}
-        <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
+        <section className="py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Get in Touch
@@ -32,7 +32,7 @@ export default function ContactPage() {
                 <div className="space-y-8">
                   <div>
                     <h3 className="font-bold text-warm-gray-900 mb-2">Phone</h3>
-                    <a href="tel:+1-555-123-4567" className="text-sage-400 hover:text-sage-500 font-semibold">
+                    <a href="tel:+1-555-123-4567" className="text-burgundy-400 hover:text-burgundy-500 font-semibold">
                       (555) 123-4567
                     </a>
                     <p className="text-sm text-warm-gray-600 mt-1">
@@ -42,7 +42,7 @@ export default function ContactPage() {
 
                   <div>
                     <h3 className="font-bold text-warm-gray-900 mb-2">Email</h3>
-                    <a href="mailto:contact@rainukatherapy.com" className="text-sage-400 hover:text-sage-500 font-semibold">
+                    <a href="mailto:contact@rainukatherapy.com" className="text-burgundy-400 hover:text-burgundy-500 font-semibold">
                       contact@rainukatherapy.com
                     </a>
                     <p className="text-sm text-warm-gray-600 mt-1">
@@ -63,17 +63,17 @@ export default function ContactPage() {
                     <h3 className="font-bold text-warm-gray-900 mb-2">Quick Links</h3>
                     <ul className="space-y-2 text-sm">
                       <li>
-                        <a href="/booking" className="text-sage-400 hover:text-sage-500">
+                        <a href="/booking" className="text-burgundy-400 hover:text-burgundy-500">
                           Schedule Your Free Call →
                         </a>
                       </li>
                       <li>
-                        <a href="/faq" className="text-sage-400 hover:text-sage-500">
+                        <a href="/faq" className="text-burgundy-400 hover:text-burgundy-500">
                           View FAQ →
                         </a>
                       </li>
                       <li>
-                        <a href="/about" className="text-sage-400 hover:text-sage-500">
+                        <a href="/about" className="text-burgundy-400 hover:text-burgundy-500">
                           Learn About Me →
                         </a>
                       </li>
@@ -145,7 +145,7 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Methods */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
               How to Reach Me
@@ -158,7 +158,7 @@ export default function ContactPage() {
                 <p className="text-sm text-warm-gray-600 mb-4">
                   Pick a time that works for you.
                 </p>
-                <a href="/booking" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
+                <a href="/booking" className="text-burgundy-400 font-semibold text-sm hover:text-burgundy-500">
                   Book Now →
                 </a>
               </div>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                 <p className="text-sm text-warm-gray-600 mb-4">
                   Send me a message anytime.
                 </p>
-                <a href="mailto:contact@rainukatherapy.com" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
+                <a href="mailto:contact@rainukatherapy.com" className="text-burgundy-400 font-semibold text-sm hover:text-burgundy-500">
                   Send Email →
                 </a>
               </div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
                 <p className="text-sm text-warm-gray-600 mb-4">
                   Give me a call. I'm here Mon-Fri 9am-5pm EST.
                 </p>
-                <a href="tel:+1-555-123-4567" className="text-sage-400 font-semibold text-sm hover:text-sage-500">
+                <a href="tel:+1-555-123-4567" className="text-burgundy-400 font-semibold text-sm hover:text-burgundy-500">
                   Call Now →
                 </a>
               </div>

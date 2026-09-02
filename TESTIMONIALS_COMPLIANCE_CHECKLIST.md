@@ -34,7 +34,7 @@
 ```tsx
 export default function TestimonialConsentDisclaimer() {
   return (
-    <div className="mb-8 p-4 bg-sage-50 border-l-4 border-sage-600 rounded">
+    <div className="mb-8 p-4 bg-burgundy-50 border-l-4 border-burgundy-600 rounded">
       <p className="text-sm text-warm-gray-700">
         <strong>Privacy Notice:</strong> All testimonials shared here are from clients 
         who gave explicit written consent. Clients may request removal at any time.
@@ -50,7 +50,7 @@ Add this footer inside the component's div:
 
 ```tsx
 {/* Footer: Privacy Attribution */}
-<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-sage-100">
+<p className="text-xs text-warm-gray-400 mt-3 pt-3 border-t border-burgundy-100">
   Shared with consent
 </p>
 ```

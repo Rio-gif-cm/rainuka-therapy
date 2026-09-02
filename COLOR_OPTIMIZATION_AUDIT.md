@@ -45,9 +45,9 @@
 
 **Example Usages:**
 ```
-app/perinatal-faq/page.tsx:145  → text-sage-400
-app/perinatal-faq/page.tsx:222  → bg-sage-50
-app/accessibility/page.tsx      → bg-sage-50, text-sage-600
+app/perinatal-faq/page.tsx:145  → text-burgundy-400
+app/perinatal-faq/page.tsx:222  → bg-burgundy-50
+app/accessibility/page.tsx      → bg-burgundy-50, text-burgundy-600
 ```
 
 ---
@@ -123,7 +123,7 @@ app/accessibility/page.tsx      → bg-sage-50, text-sage-600
 
 **Example:**
 ```css
---sage-600: oklch(0.52 0.14 142);     /* Modern primary */
+--burgundy-600: oklch(0.52 0.14 142);     /* Modern primary */
 --deep-gray-700: oklch(0.32 0.07 20); /* Secondary */
 --sea-blue-600: oklch(0.42 0.18 200); /* Accent */
 ```
@@ -153,9 +153,9 @@ Replace: burgundy-
 - ... [147 more usages]
 
 **After Migration:**
-- `text-sage-400` → `text-burgundy-400`
-- `bg-sage-50` → `bg-burgundy-50`
-- `text-sage-600` → `text-burgundy-600`
+- `text-burgundy-400` → `text-burgundy-400`
+- `bg-burgundy-50` → `bg-burgundy-50`
+- `text-burgundy-600` → `text-burgundy-600`
 
 ---
 
@@ -238,7 +238,7 @@ After fixes applied:
 
 ```bash
 # 1. Verify no sage classes remain
-grep -r "sage-" app components --include="*.tsx" | wc -l
+grep -r "burgundy-" app components --include="*.tsx" | wc -l
 # Expected: 0
 
 # 2. Verify no raw Tailwind colors in production

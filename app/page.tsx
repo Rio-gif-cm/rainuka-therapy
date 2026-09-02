@@ -95,10 +95,10 @@ export default function Home() {
         <HeroSection />
 
         {/* ---------- 2. Hero Social Proof - white, immediate impact ---------- */}
-        <section className="section-padding bg-white border-b border-sage-100">
+        <section className="section-padding bg-white border-b border-burgundy-100">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                 What clients report
               </p>
             </div>
@@ -134,10 +134,10 @@ export default function Home() {
         <NicheGrid />
 
         {/* ---------- 4. Approach - warm tint ---------- */}
-        <section className="section-padding bg-warm-gray-50 border-t border-sage-100">
+        <section className="section-padding bg-warm-gray-50 border-t border-burgundy-100">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                 How I Work
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-6">
@@ -165,7 +165,7 @@ export default function Home() {
         <section className="section-padding bg-white">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                 What people tell me after sessions
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
@@ -222,7 +222,7 @@ export default function Home() {
         <section className="section-padding bg-warm-gray-50">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-widest text-burgundy-600 mb-4">
                 Before you reach out
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
@@ -235,7 +235,7 @@ export default function Home() {
                 <details key={faq.q} className="card card-elevated cursor-pointer">
                   <summary className="font-semibold text-warm-gray-900 flex justify-between items-center gap-4">
                     {faq.q}
-                    <span className="text-sage-600" aria-hidden="true">
+                    <span className="text-burgundy-600" aria-hidden="true">
                       ▼
                     </span>
                   </summary>
@@ -253,7 +253,7 @@ export default function Home() {
         </section>
 
         {/* ---------- 8. Footer CTA - white, soft landing ---------- */}
-        <section className="section-padding bg-white border-t border-sage-100">
+        <section className="section-padding bg-white border-t border-burgundy-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">
               Questions? Start here.

@@ -59,7 +59,7 @@ body {
   font-size: var(--text-base);
   line-height: var(--line-height-relaxed);
   letter-spacing: var(--tracking-normal);
-  color: #3c222a; /* sage-900 */
+  color: #3c222a; /* burgundy-900 */
   font-family: var(--font-sans);
 }
 
@@ -198,7 +198,7 @@ select {
 /* Primary text: strong contrast */
 .text-primary,
 .text-strong {
-  color: #3c222a; /* sage-900: 8.2:1 */
+  color: #3c222a; /* burgundy-900: 8.2:1 */
 }
 
 /* Link text: 4.5:1 minimum */
@@ -223,7 +223,7 @@ label,
   display: block;
   font-size: var(--text-base);
   font-weight: 600;
-  color: #3c222a; /* sage-900 */
+  color: #3c222a; /* burgundy-900 */
   margin-bottom: 0.5rem;
 }
 
@@ -424,15 +424,15 @@ button.hero-cta,
 
 /* Text on sage-tinted backgrounds */
 .bg-sage-tint .text-primary,
-.bg-sage-50 p,
-.bg-sage-100 p,
+.bg-burgundy-50 p,
+.bg-burgundy-100 p,
 .bg-sage-veil,
 .bg-sage-mist {
-  color: #3c222a; /* sage-900: 8.2:1 on sage tints */
+  color: #3c222a; /* burgundy-900: 8.2:1 on sage tints */
 }
 
-.bg-sage-50 a,
-.bg-sage-100 a {
+.bg-burgundy-50 a,
+.bg-burgundy-100 a {
   color: #1f5a73; /* sea-blue-700: 6.1:1 */
 }
 

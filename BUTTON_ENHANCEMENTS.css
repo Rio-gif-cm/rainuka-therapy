@@ -76,7 +76,7 @@
    ======================================== */
 
 .btn:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
   box-shadow: 
     0 0 0 3px rgba(107, 148, 79, 0.1),
@@ -87,12 +87,12 @@
   outline: 2px solid white;
   outline-offset: -4px;
   box-shadow: 
-    0 0 0 4px var(--sage-600),
+    0 0 0 4px var(--burgundy-600),
     0 10px 25px rgba(107, 148, 79, 0.25);
 }
 
 .btn-outline:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
 }
@@ -110,7 +110,7 @@
 }
 
 .btn-primary:disabled {
-  background-color: var(--sage-300);
+  background-color: var(--burgundy-300);
   color: var(--warm-gray-600);
   box-shadow: none;
   transform: none;
@@ -119,21 +119,21 @@
 .btn-primary:disabled:hover,
 .btn-primary:disabled:active {
   /* Override hover/active states for disabled buttons */
-  background-color: var(--sage-300);
+  background-color: var(--burgundy-300);
   box-shadow: none;
   transform: none;
 }
 
 .btn-secondary:disabled {
-  background-color: var(--sage-100);
-  color: var(--sage-400);
-  border-color: var(--sage-200);
+  background-color: var(--burgundy-100);
+  color: var(--burgundy-400);
+  border-color: var(--burgundy-200);
   box-shadow: none;
 }
 
 .btn-outline:disabled {
-  border-color: var(--sage-200);
-  color: var(--sage-300);
+  border-color: var(--burgundy-200);
+  color: var(--burgundy-300);
   background-color: var(--warm-gray-50);
 }
 
@@ -144,30 +144,30 @@
    ======================================== */
 
 .btn-secondary {
-  background-color: var(--sage-50);
-  color: var(--sage-700);
-  border: 1px solid var(--sage-200);
+  background-color: var(--burgundy-50);
+  color: var(--burgundy-700);
+  border: 1px solid var(--burgundy-200);
   box-shadow: none;
   transition: all 0.15s ease-out;
 }
 
 .btn-secondary:hover {
-  background-color: var(--sage-100);
-  border-color: var(--sage-300);
-  color: var(--sage-700);
+  background-color: var(--burgundy-100);
+  border-color: var(--burgundy-300);
+  color: var(--burgundy-700);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
   transform: scale(1.02);
 }
 
 .btn-secondary:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
 }
 
 .btn-secondary:active {
-  background-color: var(--sage-100);
-  border-color: var(--sage-300);
+  background-color: var(--burgundy-100);
+  border-color: var(--burgundy-300);
   transform: scale(0.98);
   box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
 }
@@ -192,9 +192,9 @@
    ======================================== */
 
 .form-input:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
-  border-color: var(--sage-600);
+  border-color: var(--burgundy-600);
   box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
 }
 
@@ -211,9 +211,9 @@
    ======================================== */
 
 .card:focus-visible {
-  outline: 2px solid var(--sage-600);
+  outline: 2px solid var(--burgundy-600);
   outline-offset: 2px;
-  border-color: var(--sage-600);
+  border-color: var(--burgundy-600);
 }
 
 /* ========================================
@@ -303,14 +303,14 @@
    ======================================== */
 
 .btn[aria-pressed="true"] {
-  background-color: var(--sage-700);
+  background-color: var(--burgundy-700);
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
 }
 
 .btn-outline[aria-pressed="true"] {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
+  background-color: var(--burgundy-50);
+  border-color: var(--burgundy-700);
+  color: var(--burgundy-700);
 }
 
 /* ========================================
@@ -327,12 +327,12 @@
 
 /* Ensure secondary button text is dark enough on light backgrounds */
 .btn-secondary {
-  color: var(--sage-700);
+  color: var(--burgundy-700);
   font-weight: 600;
 }
 
 /* Ensure outline button text is dark enough */
 .btn-outline {
-  color: var(--sage-600);
+  color: var(--burgundy-600);
   font-weight: 600;
 }

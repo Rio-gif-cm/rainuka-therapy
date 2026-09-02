@@ -140,7 +140,7 @@ export default function MenPage() {
         <SectionDivider margin="3rem" />
 
         {/* Redefining Masculinity */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
               Redefining Strength

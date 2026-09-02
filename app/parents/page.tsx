@@ -141,7 +141,7 @@ export default function ParentsPage() {
         <SectionDivider margin="3rem" />
 
         {/* Parenting anxiety normalization */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="🌙" level={2} color={colors.warmGray[900]}>
               Parenting Anxiety: What&rsquo;s Normal, What&rsquo;s Not
@@ -271,7 +271,7 @@ export default function ParentsPage() {
                 </div>
 
                 <div
-                  className="bg-gradient-to-r from-sage-50 to-white p-6 rounded-lg border-l-4"
+                  className="bg-gradient-to-r from-burgundy-50 to-white p-6 rounded-lg border-l-4"
                   style={{ borderLeftColor: '#82a86c' }}
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">4. Irritability &amp; a short fuse</p>
@@ -330,7 +330,7 @@ export default function ParentsPage() {
         <SectionDivider margin="3rem" />
 
         {/* Guilt reduction */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="🪶" level={2} color={colors.warmGray[900]}>
               Guilt: Putting It Down Without Giving Up
@@ -476,7 +476,7 @@ export default function ParentsPage() {
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-sage-50 to-sage-100 p-6 rounded-lg">
+                <div className="bg-gradient-to-br from-burgundy-50 to-burgundy-100 p-6 rounded-lg">
                   <p className="font-semibold text-warm-gray-900 mb-2">
                     With work, school, and everyone else
                   </p>
@@ -490,7 +490,7 @@ export default function ParentsPage() {
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-sage-50 to-white p-6 rounded-lg">
+                <div className="bg-gradient-to-br from-burgundy-50 to-white p-6 rounded-lg">
                   <p className="font-semibold text-warm-gray-900 mb-2">
                     With yourself (the hardest one)
                   </p>
@@ -523,7 +523,7 @@ export default function ParentsPage() {
         <SectionDivider margin="3rem" />
 
         {/* Caregiver FAQ */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-12 text-center">
               Caregiver Questions
@@ -534,7 +534,7 @@ export default function ParentsPage() {
                 <details key={index} className="card card-info cursor-pointer">
                   <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                     {faq.q}
-                    <span className="text-sage-400">▼</span>
+                    <span className="text-burgundy-400">▼</span>
                   </summary>
                   <p className="text-warm-gray-600 mt-4">{faq.a}</p>
                 </details>
@@ -573,7 +573,7 @@ export default function ParentsPage() {
         <SectionDivider margin="3rem" />
 
         {/* How I work */}
-        <section className="section-padding bg-sage-50">
+        <section className="section-padding bg-burgundy-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-8 text-center">
               How I Work With Parents &amp; Caregivers
@@ -673,19 +673,19 @@ export default function ParentsPage() {
             </div>
 
             <div className="flex gap-4 justify-center flex-wrap mb-8">
-              <Link href="/perinatal" className="text-sage-600 underline">
+              <Link href="/perinatal" className="text-burgundy-600 underline">
                 Perinatal Mental Health
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/adhd" className="text-sage-600 underline">
+              <Link href="/adhd" className="text-burgundy-600 underline">
                 Adult ADHD
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/couples" className="text-sage-600 underline">
+              <Link href="/couples" className="text-burgundy-600 underline">
                 Couples Therapy
               </Link>
               <span className="text-warm-gray-300">•</span>
-              <Link href="/back-to-school" className="text-sage-600 underline">
+              <Link href="/back-to-school" className="text-burgundy-600 underline">
                 Back-to-School Anxiety
               </Link>
             </div>

@@ -120,7 +120,7 @@ export default function DisabilityAccessPage() {
         <SectionDivider />
 
         {/* Accessibility Commitments */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base">
             <IconHeading icon="✅" level={2} color={colors.warmGray[900]}>
               Our Accessibility Commitments
@@ -375,7 +375,7 @@ export default function DisabilityAccessPage() {
         </section>
 
         {/* Closing CTA */}
-        <section className="section-padding bg-gradient-to-b from-white to-sage-50">
+        <section className="section-padding bg-gradient-to-b from-white to-burgundy-50">
           <div className="container-base text-center max-w-3xl mx-auto">
             <IconHeading icon="💜" level={2} color={colors.warmGray[900]}>
               Your Disability Doesn&apos;t Disqualify You From Care

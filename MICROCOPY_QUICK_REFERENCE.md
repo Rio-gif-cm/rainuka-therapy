@@ -77,7 +77,7 @@ import { MICROCOPY } from '@/lib/microcopy'
 
 // Use in BookingForm.tsx:
 <p className="text-alert-600">{MICROCOPY.errors.email.message}</p>
-<span className="text-sage-600">{MICROCOPY.loading.primary}</span>
+<span className="text-burgundy-600">{MICROCOPY.loading.primary}</span>
 <p>{MICROCOPY.success.headline}</p>
 ```
 

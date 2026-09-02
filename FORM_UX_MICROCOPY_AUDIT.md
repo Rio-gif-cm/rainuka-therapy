@@ -193,7 +193,7 @@
 - **Target:** Add compact privacy badge in step 1, before email field
 - **Add before email field:**
   ```tsx
-  <div className="flex items-center gap-2 text-xs text-sage-700 mb-4">
+  <div className="flex items-center gap-2 text-xs text-burgundy-700 mb-4">
     🔒 <span>Your privacy is protected. <a href="/privacy" className="underline">Learn more</a></span>
   </div>
   ```
@@ -212,7 +212,7 @@
 - **Change:**
   ```tsx
   <span 
-    className="text-sage-600 text-sm font-medium flex items-center gap-1"
+    className="text-burgundy-600 text-sm font-medium flex items-center gap-1"
     aria-live="polite"
     aria-label="Field validated successfully"
   >
@@ -249,7 +249,7 @@
 - **Target:** Single, consistent timeline
 - **Change:**
   ```tsx
-  <ul className="space-y-2 list-disc list-inside text-xs text-sage-800">
+  <ul className="space-y-2 list-disc list-inside text-xs text-burgundy-800">
     <li><strong>Within 1 hour:</strong> Confirmation email sent</li>
     <li><strong>Within 24 hours:</strong> I'll call to confirm and find a time</li>
     <li><strong>Within 1-2 weeks:</strong> We meet for your free consultation</li>
@@ -297,7 +297,7 @@
   
   // In className:
   className={`form-input transition-all ${
-    recentlyBlurred === 'name' ? 'ring-2 ring-sage-300' : ''
+    recentlyBlurred === 'name' ? 'ring-2 ring-burgundy-300' : ''
   }`}
   ```
 

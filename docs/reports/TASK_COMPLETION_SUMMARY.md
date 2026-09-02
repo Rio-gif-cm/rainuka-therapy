@@ -47,7 +47,7 @@ Deep investigation into the **psychology of late-diagnosis ADHD shame and identi
 
 **New Section**: "You Are Not Broken. Identity Reconstruction Starts Here."
 - **Position**: Between "How I Work With ADHD" and "ADHD in Women" sections
-- **Visual Design**: White background with sage-400 top border (creates visual distinction)
+- **Visual Design**: White background with burgundy-400 top border (creates visual distinction)
 - **Content Structure**:
   1. Opening validation: Acknowledges decades of internalized shame without pathologizing
   2. Three core research affirmations:

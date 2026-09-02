@@ -82,7 +82,7 @@ Rainuka's site has calm, premium typography and color (sage + warm gray). It's *
 
 **Implementation Notes**
 - Avatar tool: Use `initials-avatar` library or custom React component
-- Color: Fixed sage-600 circle + warmer text for initials
+- Color: Fixed burgundy-600 circle + warmer text for initials
 - Optional decorative accent: 16px icon positioned bottom-right of avatar
 - Scale: 48-64px avatar diameter
 - Action: Update TestimonialCard.tsx to accept `initials` + `niche` props
@@ -123,7 +123,7 @@ Rainuka's site has calm, premium typography and color (sage + warm gray). It's *
 
 **Implementation Notes**
 - Tool: Illustrator or Figlet → SVG, embed inline in components
-- Color: `stroke="#6b944f" fill="#d1dcc8"` (sage-600 outline + sage-200 fill)
+- Color: `stroke="#6b944f" fill="#d1dcc8"` (burgundy-600 outline + burgundy-200 fill)
 - Size: 120x120px inline, scale responsively
 - Hover state: `opacity: 0.85` + slight `transform: scale(1.05)`
 - Action: Commission custom illustration set or use design system (Excalidraw → SVG)

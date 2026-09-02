@@ -151,7 +151,7 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--sage-600);
+  border-color: var(--burgundy-600);
   box-shadow: 0 0 0 3px rgba(109, 58, 71, 0.1);
 }
 ```
@@ -175,11 +175,11 @@ a, [role="button"] {
 
 ### Finding: Insufficient Contrast in Several Areas
 **Current State:**
-- Primary text on white: ✓ Good (sage-700 on #fff = ~6.5:1)
+- Primary text on white: ✓ Good (burgundy-700 on #fff = ~6.5:1)
 - Secondary text (warm-gray-600): ⚠️ Marginal (~4.2:1)
 - Form placeholder text: ❌ Fail (~3.8:1)
 - Disabled button text: ❌ Fail (~2.9:1)
-- Link text (sage-500): ⚠️ Borderline (~4.3:1)
+- Link text (burgundy-500): ⚠️ Borderline (~4.3:1)
 
 ### WCAG 2.1 Requirements
 - **AA:** 4.5:1 for normal text, 3:1 for large text (18px+, 14px bold+)
@@ -191,7 +191,7 @@ a, [role="button"] {
 ```css
 /* Primary text - strong contrast */
 .text-primary, .text-strong {
-  color: #3c222a; /* sage-900: 8.2:1 on white */
+  color: #3c222a; /* burgundy-900: 8.2:1 on white */
 }
 
 /* Secondary text - strengthen contrast */
@@ -229,7 +229,7 @@ input:disabled {
 
 .btn-secondary {
   background-color: #f5f0eb; /* cream-100 */
-  color: #3c222a; /* sage-900: 8.2:1 */
+  color: #3c222a; /* burgundy-900: 8.2:1 */
   border: 2px solid #6d3a47;
   font-weight: 600;
 }
@@ -707,9 +707,9 @@ select {
 
 ### Finding: Insufficient Contrast on Colored Backgrounds
 **Current State:**
-- Text on sage-50 background: warm-gray-600 (~3.2:1) ❌
+- Text on burgundy-50 background: warm-gray-600 (~3.2:1) ❌
 - Text on cream-100 background: warm-gray-700 (~5.1:1) ✓
-- Text on sage-100 background: sage-600 (~2.1:1) ❌
+- Text on burgundy-100 background: burgundy-600 (~2.1:1) ❌
 - Links on sage-tinted sections: sea-blue-500 (~3.8:1) ⚠️
 
 ### Improvement #9: Fix Contrast on Colored Sections
@@ -718,15 +718,15 @@ select {
 ```css
 /* Text on sage-tinted backgrounds */
 .bg-sage-tint .text-primary,
-.bg-sage-50 p,
-.bg-sage-100 p {
-  color: #3c222a; /* sage-900: 8.2:1 on sage-50/100 */
+.bg-burgundy-50 p,
+.bg-burgundy-100 p {
+  color: #3c222a; /* burgundy-900: 8.2:1 on burgundy-50/100 */
 }
 
 /* Links on sage backgrounds */
 .bg-sage-tint a,
-.bg-sage-50 a {
-  color: #1f5a73; /* sea-blue-700: 6.1:1 on sage-50 */
+.bg-burgundy-50 a {
+  color: #1f5a73; /* sea-blue-700: 6.1:1 on burgundy-50 */
   font-weight: 600;
 }
 

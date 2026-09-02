@@ -233,8 +233,8 @@ Attributes: Direction, progress, hope
 ║   │   Perinatal         ADHD          Career            │    ║
 ║   │   (Grounding)   (Energy/Motion)  (Direction)        │    ║
 ║   │                                                     │    ║
-║   │   Stroke: #6b944f (sage-600)                        │    ║
-║   │   Fill: #d1dcc8 (sage-200)                          │    ║
+║   │   Stroke: #6b944f (burgundy-600)                        │    ║
+║   │   Fill: #d1dcc8 (burgundy-200)                          │    ║
 ║   │   Hover: scale(1.1) + opacity(0.85)                 │    ║
 ║   │                                                     │    ║
 ║   └─────────────────────────────────────────────────────┘    ║
