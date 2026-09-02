@@ -206,7 +206,7 @@ export default function Home() {
             </p>
             <Link
               href="/booking"
-              className={buttonPresets.heroCtaPrimary}
+              className={buttonPresets.ctaDarkBg}
             >
               Book your consultation
             </Link>

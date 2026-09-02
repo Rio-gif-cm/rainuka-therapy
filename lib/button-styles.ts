@@ -96,4 +96,13 @@ export const buttonPresets = {
 
   // Tertiary dismiss/cancel
   tertiary: buttonClass('tertiary', 'md'),
+
+  // CTA on dark burgundy/bronze background (high contrast light background)
+  ctaDarkBg:
+    'min-h-[56px] px-6 md:px-8 py-3 text-base md:text-lg font-semibold ' +
+    'bg-white text-primary-bronze-900 ' +
+    'hover:bg-neutral-sage-50 hover:shadow-md hover:-translate-y-0.5 ' +
+    'active:translate-y-0 active:shadow-sm ' +
+    'disabled:opacity-60 disabled:cursor-not-allowed disabled:shadow-none ' +
+    'transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-bronze-600',
 }

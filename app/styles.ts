@@ -3,16 +3,16 @@
 
 const baseColors = {
   primaryBronze: {
-    50: '#f9f6f3',
-    100: '#f1ebe5',
-    200: '#e8dfd6',
-    300: '#ddd0c5',
-    400: '#d6bfb1',
-    500: '#CB997E',     // ✅ Primary buttons, CTAs, main accents
-    600: '#c08470',     // ✅ Button hover, darker accents
-    700: '#b37062',     // ✅ Dark borders, strong accents
-    800: '#9e5c4a',
-    900: '#8a4937',
+    50: '#f9f3f2',
+    100: '#f1dcd9',
+    200: '#e8c5c0',
+    300: '#ddaea5',
+    400: '#d6968a',
+    500: '#BB9457',     // ✅ Bronze accent
+    600: '#a67d48',     // ✅ Bronze hover
+    700: '#99582A',     // ✅ Rust - dark accents
+    800: '#7a4620',
+    900: '#6F1D1B',     // ✅ Dark red - primary
   },
   accentPetal: {
     50: '#fefdfb',
@@ -56,23 +56,23 @@ const baseColors = {
     200: '#fffaf0',
     300: '#fff8ed',
     400: '#fff5e9',
-    500: '#FFF1E6',     // ✅ Light backgrounds, card interiors
-    600: '#ffecd0',     // ✅ Subtle highlights
-    700: '#ffe6b9',     // ✅ Secondary light backgrounds
-    800: '#ffdfa0',
-    900: '#ffd885',
+    500: '#FFE6A7',     // ✅ Cream - light backgrounds, card interiors
+    600: '#ffdb8a',     // ✅ Subtle highlights
+    700: '#ffd070',     // ✅ Secondary light backgrounds
+    800: '#ffc956',
+    900: '#ffc240',
   },
   neutralSage: {
-    50: '#f8f8f5',
-    100: '#f0eee8',     // ✅ Very light borders, subtle dividers
-    200: '#e8e5de',     // ✅ Light borders
-    300: '#dfdcd3',     // ✅ Medium borders
-    400: '#d7d3c8',     // ✅ Subtle text
-    500: '#A5A58D',     // ✅ Body text, secondary text
-    600: '#99997a',     // ✅ Muted text, decorative borders
-    700: '#8d8d67',     // ✅ Darker neutral text
-    800: '#808054',
-    900: '#737341',
+    50: '#f9f5f3',
+    100: '#f1e7e1',
+    200: '#e8d3c8',
+    300: '#ddbfaf',
+    400: '#d4ab96',
+    500: '#99582A',     // ✅ Body text - rust/dark brown
+    600: '#875a28',     // ✅ Muted text
+    700: '#752d1f',     // ✅ Darker neutral text
+    800: '#6F1D1B',     // ✅ Very dark brown - headings
+    900: '#432818',     // ✅ Darkest brown - strong text
   },
   neutralAsh: {
     50: '#faf9f7',

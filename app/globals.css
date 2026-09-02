@@ -11,29 +11,29 @@
    Never introduce a raw Tailwind palette hue (blue/emerald/rose/...).
    ======================================== */
 :root {
-  /* Brand — Primary Bronze #CB997E */
-  --primary-bronze-50: #f9f6f3;
-  --primary-bronze-100: #f1ebe5;
-  --primary-bronze-200: #e8dfd6;
-  --primary-bronze-300: #ddd0c5;
-  --primary-bronze-400: #d6bfb1;
-  --primary-bronze-500: #CB997E;
-  --primary-bronze-600: #c08470;
-  --primary-bronze-700: #b37062;
-  --primary-bronze-800: #9e5c4a;
-  --primary-bronze-900: #8a4937;
+  /* Brand — Primary Dark Red #6F1D1B */
+  --primary-bronze-50: #f9f3f2;
+  --primary-bronze-100: #f1dcd9;
+  --primary-bronze-200: #e8c5c0;
+  --primary-bronze-300: #ddaea5;
+  --primary-bronze-400: #d6968a;
+  --primary-bronze-500: #BB9457;
+  --primary-bronze-600: #a67d48;
+  --primary-bronze-700: #99582A;
+  --primary-bronze-800: #7a4620;
+  --primary-bronze-900: #6F1D1B;
 
-  /* Neutrals — DRY SAGE */
-  --neutral-sage-50: #f8f8f5;
-  --neutral-sage-100: #f0eee8;
-  --neutral-sage-200: #e8e5de;
-  --neutral-sage-300: #dfdcd3;
-  --neutral-sage-400: #d7d3c8;
-  --neutral-sage-500: #A5A58D;
-  --neutral-sage-600: #99997a;
-  --neutral-sage-700: #8d8d67;
-  --neutral-sage-800: #808054;
-  --neutral-sage-900: #737341;
+  /* Neutrals — DRY SAGE / WARM BROWN */
+  --neutral-sage-50: #f9f5f3;
+  --neutral-sage-100: #f1e7e1;
+  --neutral-sage-200: #e8d3c8;
+  --neutral-sage-300: #ddbfaf;
+  --neutral-sage-400: #d4ab96;
+  --neutral-sage-500: #99582A;
+  --neutral-sage-600: #875a28;
+  --neutral-sage-700: #752d1f;
+  --neutral-sage-800: #6F1D1B;
+  --neutral-sage-900: #432818;
 
   /* Neutrals — ASH GREY */
   --neutral-ash-50: #faf9f7;
@@ -71,17 +71,17 @@
   --secondary-sand-800: #b5805e;
   --secondary-sand-900: #a36b45;
 
-  /* Light LINEN #FFF1E6 */
+  /* Light LINEN / CREAM #FFE6A7 */
   --light-linen-50: #fffef9;
   --light-linen-100: #fffcf3;
   --light-linen-200: #fffaf0;
   --light-linen-300: #fff8ed;
   --light-linen-400: #fff5e9;
-  --light-linen-500: #FFF1E6;
-  --light-linen-600: #ffecd0;
-  --light-linen-700: #ffe6b9;
-  --light-linen-800: #ffdfa0;
-  --light-linen-900: #ffd885;
+  --light-linen-500: #FFE6A7;
+  --light-linen-600: #ffdb8a;
+  --light-linen-700: #ffd070;
+  --light-linen-800: #ffc956;
+  --light-linen-900: #ffc240;
 
   /* Background PARCHMENT #F0EFEB */
   --bg-parchment-50: #faf9f8;
@@ -305,10 +305,10 @@
 
   /* Border treatment: hairline frame + coloured top accent */
   --card-border-width: 1px;
-  --card-border-color: rgba(165, 165, 141, 0.4);
-  --card-border-color-hover: rgba(165, 165, 141, 0.7);
+  --card-border-color: rgba(111, 29, 27, 0.2);
+  --card-border-color-hover: rgba(111, 29, 27, 0.4);
   --card-accent-width: 3px;
-  --card-accent-color: #c08470;
+  --card-accent-color: #6F1D1B;
 
   /* Surface */
   --card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 239, 235, 0.3) 100%);
@@ -316,19 +316,19 @@
 
   /* Shadow depth ladder: rest -> hover -> pressed */
   --card-shadow-rest:
-    0 1px 2px rgba(138, 73, 55, 0.04),
-    0 4px 8px rgba(203, 153, 126, 0.05),
-    0 12px 24px rgba(138, 73, 55, 0.08),
+    0 1px 2px rgba(111, 29, 27, 0.05),
+    0 4px 8px rgba(187, 148, 87, 0.06),
+    0 12px 24px rgba(111, 29, 27, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   --card-shadow-hover:
-    0 2px 4px rgba(138, 73, 55, 0.08),
-    0 8px 16px rgba(203, 153, 126, 0.12),
-    0 24px 48px rgba(138, 73, 55, 0.15),
+    0 2px 4px rgba(111, 29, 27, 0.1),
+    0 8px 16px rgba(187, 148, 87, 0.15),
+    0 24px 48px rgba(111, 29, 27, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 1);
   --card-shadow-active:
-    0 1px 3px rgba(138, 73, 55, 0.1),
-    0 6px 12px rgba(203, 153, 126, 0.12),
-    0 14px 28px rgba(138, 73, 55, 0.12),
+    0 1px 3px rgba(111, 29, 27, 0.12),
+    0 6px 12px rgba(187, 148, 87, 0.15),
+    0 14px 28px rgba(111, 29, 27, 0.14),
     inset 0 1px 0 rgba(255, 255, 255, 1);
 
   /* Motion — see MOTION SYSTEM below for the tokens used here */
