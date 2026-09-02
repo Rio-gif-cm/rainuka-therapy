@@ -1,5 +1,11 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Pricing Therapy & Sliding Scale Fees | Transparent',
+  description: 'Transparent therapy pricing and sliding scale fees with no hidden costs. Financial resources and payment plans. Learn pricing today.',
+}
 
 export default function PricingPage() {
   return (
@@ -52,7 +58,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-burgundy-500 font-bold">✓</span>
-                    <span>HIPAA-compliant confidentiality and secure platform</span>
+                    <span>Privacy-protected confidentiality & secure platform (PIPEDA-Canada, HIPAA-US)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-burgundy-500 font-bold">✓</span>

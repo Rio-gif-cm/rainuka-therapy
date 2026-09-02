@@ -8,7 +8,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Client Success Stories | Real Therapy Transformations',
-  description: 'Read how clients overcame perinatal anxiety, ADHD struggles, and career burnout. De-identified case studies showing what lasting change looks like in therapy.',
+  description: 'Read de-identified case studies showing how clients overcame perinatal anxiety, ADHD struggles, and career burnout. Real transformation stories here.',
   keywords: 'therapy success stories, case studies, client testimonials, therapy transformations',
 }
 

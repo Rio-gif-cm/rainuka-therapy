@@ -27,8 +27,8 @@ const BookingFormWrapper = dynamic(
 )
 
 export const metadata: Metadata = {
-  title: 'Book Your Free Consultation | Wonderloud Therapy',
-  description: 'Schedule your free 15-minute therapy consultation today. Telehealth available. Licensed in Canada, California, and Florida. Get support for perinatal anxiety, ADHD, or career transitions.',
+  title: 'Book Free Therapy Consultation | Schedule Today',
+  description: 'Schedule your free 15-minute consultation today. Telehealth available, licensed in Canada, California, and Florida. Start your therapy journey now.',
   keywords: 'book therapy, schedule consultation, free therapy consultation, online therapy booking',
   openGraph: {
     title: 'Book Your Free Consultation | Wonderloud Therapy',

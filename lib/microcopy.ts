@@ -184,7 +184,7 @@ export const MICROCOPY = {
 
     // Reassurance
     timeConfirmation: "I'll confirm this time within 24 hours.",
-    privacyAssurance: "100% confidential & HIPAA-protected.",
+    privacyAssurance: "100% confidential & privacy-protected (PIPEDA-Canada, HIPAA-US).",
     privacyContext:
       "Your privacy matters. Everything you share stays between us.",
   },

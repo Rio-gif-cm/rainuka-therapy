@@ -7,9 +7,8 @@ import { colors } from '@/app/styles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Financial Access & Sliding Scale Fees | Wonderloud Therapy',
-  description:
-    'Transparent sliding scale therapy fees, payment plans, pro-bono availability, and community funding resources. Cost should not be the reason you go without support.',
+  title: 'Financial Access Sliding Scale Fees | Affordability',
+  description: 'Transparent sliding scale therapy fees and financial resources. Payment plans and pro-bono availability. Cost shouldn\'t prevent your care.',
 }
 
 const slidingScale = [

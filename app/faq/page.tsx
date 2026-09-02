@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { getFAQPageSchema } from '@/lib/faq-schema'
 
 export const metadata: Metadata = {
-  title: 'Therapy FAQs | Questions Answered',
-  description: 'Answers to common therapy questions: cost, what to expect, therapy length, and more. Learn how working with Rainuka can help you heal.',
+  title: 'Therapy FAQs | Your Questions Answered Here',
+  description: 'Common therapy questions answered: cost, what to expect, session length, confidentiality. Learn how therapy helps. Read more now.',
   keywords: 'therapy FAQ, therapy questions, therapy cost, what is therapy, how therapy works',
 }
 

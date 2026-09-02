@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
@@ -6,6 +7,11 @@ import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 import { CouplesIcon } from '@/components/SpecialtyIcons'
+
+export const metadata: Metadata = {
+  title: 'Couples Therapy | Rebuild Connection & Strengthen',
+  description: 'Therapy for couples: conflict, communication breakdown, disconnection. Strengthen your relationship. Schedule free consultation today.',
+}
 
 // Couples custom SVG color
 const couplesColor = '#e07856'

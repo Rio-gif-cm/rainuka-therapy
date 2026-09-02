@@ -6,9 +6,8 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata = {
-  title: 'BIPOC Therapy | Cultural Humility & Anti-Racism Care | Wonderloud Therapy',
-  description:
-    'Therapy for BIPOC clients: cultural humility, diaspora support, racial trauma, anti-oppression approach. Color-conscious, culturally affirming care. Telehealth, sliding scale.',
+  title: 'BIPOC Therapy | Anti-Racism & Cultural Healing',
+  description: 'Culturally affirming therapy for BIPOC clients navigating diaspora, racism trauma, and cultural identity issues. Anti-oppression approach. Schedule call.',
 }
 
 const ACCENT = '#c96547'

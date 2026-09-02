@@ -1,9 +1,21 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+export const metadata: Metadata = {
+  title: 'Holiday Stress Therapy | Family Anxiety Support',
+  description: 'Manage holiday stress, family dynamics, and seasonal anxiety. Therapy for boundaries, grief during holidays, family conflict. Get help.',
+  openGraph: {
+    title: 'Holiday Stress Support — Manage the Holiday Season',
+    description: 'Navigate holiday stress, family dynamics, and seasonal challenges. Practical therapy strategies for a peaceful and healthy season.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/holiday-stress',
+  },
+}
+
 
 export default function HolidayStressPage() {
   return (

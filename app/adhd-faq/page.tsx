@@ -97,11 +97,11 @@ const faqSchema = getADHDFAQSchema(
 )
 
 export const metadata = {
-  title: 'Adult ADHD FAQ - Late Diagnosis, Therapy & Daily Life | Wonderloud Therapy',
-  description: 'ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication vs therapy, time blindness, work accommodations. Licensed therapist.',
+  title: 'ADHD FAQ — Diagnosis, Symptoms, and Treatment Info',
+  description: 'Adult ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication, therapy, and daily living strategies.',
   openGraph: {
-    title: 'Adult ADHD FAQ | Wonderloud Therapy',
-    description: 'Late ADHD diagnosis, executive dysfunction, RSD, and what therapy adds to medication-answered plainly.',
+    title: 'ADHD FAQ — Diagnosis, Symptoms, and Treatment Info',
+    description: 'Adult ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication, therapy, and daily living strategies.',
     type: 'website',
   },
 }

@@ -26,8 +26,8 @@ const accent = specialtyAccents.career
 const careerColor = '#1565c0'
 
 export const metadata: Metadata = {
-  title: 'Career Therapy | Burnout & Transition Support',
-  description: 'Career counseling for burnout, job transitions, and meaningful work. Therapy for career satisfaction and life redesign. Book your free 15-minute consultation.',
+  title: 'Career Therapy | Burnout Support & Life Redesign',
+  description: 'Therapy for career burnout, job transitions, and meaningful work. Redesign your career path with professional support. Schedule free consultation today.',
   keywords: 'career therapy, career counseling, burnout, job transition, career change, meaningful work',
   openGraph: {
     title: 'Career Therapy | Burnout & Transition Support',
