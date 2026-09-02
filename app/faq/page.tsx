@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   title: 'Therapy FAQs | Questions Answered',
   description: 'Answers to common therapy questions: cost, what to expect, therapy length, and more. Learn how working with Rainuka can help you heal.',
   keywords: 'therapy FAQ, therapy questions, therapy cost, what is therapy, how therapy works',
-  canonical: 'https://wonderloud-therapy.com/faq',
 }
 
 const FAQData = [
@@ -149,16 +148,6 @@ const faqSchema = {
       text: faq.a,
     },
   })),
-}
-
-export const metadata = {
-  title: 'Therapy FAQs - Perinatal, ADHD & Career | Wonderloud Therapy',
-  description: 'Answers to therapy questions: confidentiality, pricing, ADHD diagnosis, perinatal anxiety, and what to expect. Licensed therapist in Canada, California, and Florida.',
-  openGraph: {
-    title: 'Frequently Asked Questions About Therapy | Wonderloud Therapy',
-    description: 'Common questions answered: confidentiality, pricing, specialties, and what to expect from therapy.',
-    type: 'website',
-  },
 }
 
 export default function FAQPage() {

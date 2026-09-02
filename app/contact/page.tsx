@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: 'Contact Rainuka | Get in Touch',
   description: 'Contact Wonderloud Therapy to schedule a free 15-minute consultation. Questions about therapy? Reach out—I respond within 24 hours.',
   keywords: 'contact therapy, schedule consultation, therapy contact, get in touch, book therapy',
-  canonical: 'https://wonderloud-therapy.com/contact',
   openGraph: {
     title: 'Contact Rainuka | Get in Touch',
     description: 'Contact Wonderloud Therapy to schedule a free 15-minute consultation. I respond within 24 hours.',

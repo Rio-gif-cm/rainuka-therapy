@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   title: 'Career Therapy | Burnout & Transition Support',
   description: 'Career counseling for burnout, job transitions, and meaningful work. Therapy for career satisfaction and life redesign. Book your free 15-minute consultation.',
   keywords: 'career therapy, career counseling, burnout, job transition, career change, meaningful work',
-  canonical: 'https://wonderloud-therapy.com/career',
   openGraph: {
     title: 'Career Therapy | Burnout & Transition Support',
     description: 'Career counseling for burnout, job transitions, and meaningful work. Therapy for career satisfaction and life redesign.',

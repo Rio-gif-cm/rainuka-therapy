@@ -30,7 +30,6 @@ export const metadata: Metadata = {
   title: 'Book Your Free Consultation | Wonderloud Therapy',
   description: 'Schedule your free 15-minute therapy consultation today. Telehealth available. Licensed in Canada, California, and Florida. Get support for perinatal anxiety, ADHD, or career transitions.',
   keywords: 'book therapy, schedule consultation, free therapy consultation, online therapy booking',
-  canonical: 'https://wonderloud-therapy.com/booking',
   openGraph: {
     title: 'Book Your Free Consultation | Wonderloud Therapy',
     description: 'Schedule your free 15-minute therapy consultation. Telehealth available, licensed therapist.',

@@ -160,7 +160,7 @@ export default function TermsPage() {
             <li>A court order requires disclosure</li>
           </ul>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
-            For full privacy policy details, see our <Link href="/privacy" style={{ color: colors.burgundy[600], textDecoration: 'underline' }}>Privacy Policy</Link>.
+            For full privacy policy details, see our <Link href="/privacy" style={{ color: colors.sage[600], textDecoration: 'underline' }}>Privacy Policy</Link>.
           </p>
 
           {/* 4. Telehealth Consent */}
@@ -238,7 +238,7 @@ export default function TermsPage() {
             6. Fees & Payment
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
-            Current session fees and sliding scale options are available on our <Link href="/pricing" style={{ color: colors.burgundy[600], textDecoration: 'underline' }}>Pricing page</Link>.
+            Current session fees and sliding scale options are available on our <Link href="/pricing" style={{ color: colors.sage[600], textDecoration: 'underline' }}>Pricing page</Link>.
           </p>
           <ul
             style={{
@@ -421,8 +421,8 @@ export default function TermsPage() {
           </p>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
             <strong>Rainuka Oberoi Therapy</strong><br />
-            Email: <a href="mailto:contact@rainukatherapy.com" style={{ color: colors.burgundy[600], textDecoration: 'none' }}>contact@rainukatherapy.com</a><br />
-            Phone: <a href="tel:+15551234567" style={{ color: colors.burgundy[600], textDecoration: 'none' }}>(555) 123-4567</a>
+            Email: <a href="mailto:contact@rainukatherapy.com" style={{ color: colors.sage[600], textDecoration: 'none' }}>contact@rainukatherapy.com</a><br />
+            Phone: <a href="tel:+15551234567" style={{ color: colors.sage[600], textDecoration: 'none' }}>(555) 123-4567</a>
           </p>
 
           {/* Acknowledgment */}
@@ -431,7 +431,7 @@ export default function TermsPage() {
               marginTop: '4rem',
               padding: '2rem',
               backgroundColor: 'rgba(155, 77, 60, 0.05)',
-              borderLeft: `4px solid ${colors.burgundy[600]}`,
+              borderLeft: `4px solid ${colors.sage[600]}`,
               borderRadius: '0.5rem',
             }}
           >

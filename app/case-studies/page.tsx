@@ -10,7 +10,6 @@ export const metadata: Metadata = {
   title: 'Client Success Stories | Real Therapy Transformations',
   description: 'Read how clients overcame perinatal anxiety, ADHD struggles, and career burnout. De-identified case studies showing what lasting change looks like in therapy.',
   keywords: 'therapy success stories, case studies, client testimonials, therapy transformations',
-  canonical: 'https://wonderloud-therapy.com/case-studies',
 }
 
 const mayaSections = [
