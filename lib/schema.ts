@@ -136,3 +136,70 @@ export const getAggregateRatingSchema = (testimonialCount: number) => ({
   ratingCount: String(testimonialCount),
   reviewCount: String(testimonialCount),
 })
+
+/**
+ * IMPL#14: Enhanced Schema.org for Rich Results
+ */
+export function getEnhancedLocalBusinessSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': 'https://rainukatherapy.com',
+    'name': 'Rainuka Therapy',
+    'description': 'Trauma-informed therapy for perinatal mental health, ADHD diagnosis, and career transitions',
+    'url': 'https://rainukatherapy.com',
+    'telephone': '+1-CONTACT-PENDING',
+    'email': 'hello@rainukatherapy.com',
+    'areaServed': [
+      {
+        '@type': 'Country',
+        'name': 'Canada'
+      },
+      {
+        '@type': 'State',
+        'name': 'California'
+      },
+      {
+        '@type': 'State',
+        'name': 'Florida'
+      }
+    ],
+    'serviceType': [
+      'Psychotherapy',
+      'Mental Health Counseling',
+      'Trauma-Informed Therapy'
+    ],
+    'speaksLanguage': 'en-US',
+    'priceRange': '$$',
+    'image': 'https://rainukatherapy.com/og-image.png',
+    'sameAs': [
+      'https://linkedin.com/company/rainuka-therapy'
+    ],
+    'potentialAction': {
+      '@type': 'ReserveAction',
+      'target': {
+        '@type': 'EntryPoint',
+        'urlTemplate': 'https://rainukatherapy.com/booking',
+        'actionPlatform': [
+          'DesktopWebPlatform',
+          'MobileWebPlatform'
+        ]
+      }
+    }
+  }
+}
+
+export function getFAQSchema(faqs: Array<{ q: string; a: string }>) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.q,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.a
+      }
+    }))
+  }
+}

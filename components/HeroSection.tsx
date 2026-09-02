@@ -156,6 +156,19 @@ export default function HeroSection() {
           zIndex: -1,
           pointerEvents: 'none',
           backgroundImage: GRAIN,
+          backgroundSize: '160px 160px',
+          backgroundPosition: '0 0',
+          opacity: 0.025,
+        }}
+      />
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          inset: 0,
+          zIndex: -1,
+          pointerEvents: 'none',
+          backgroundImage: GRAIN,
           backgroundRepeat: 'repeat',
           opacity: 0.055,
           mixBlendMode: 'multiply',
