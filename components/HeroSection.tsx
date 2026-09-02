@@ -277,7 +277,7 @@ export default function HeroSection() {
                   bottom: '0.06em',
                   height: '0.32em',
                   borderRadius: '999px',
-                  background: `linear-gradient(90deg, rgba(157,187,141,0.42), rgba(209,220,200,0.18))`,
+                  background: `linear-gradient(90deg, rgba(157,187,141,0.18), rgba(209,220,200,0.08))`,
                   zIndex: -1,
                 }}
               />
