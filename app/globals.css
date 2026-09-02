@@ -781,3 +781,34 @@ button:focus-visible {
   }
 }
 /* Force rebuild - Wed, Sep  2, 2026  3:43:19 PM */
+
+/* ========================================
+   COMPONENT: CARD & CARD-ELEVATED
+   ======================================== */
+
+.card {
+  background-color: white;
+  border: 1px solid var(--neutral-sage-200);
+  border-radius: 0.875rem;
+  padding: 1.5rem;
+  transition: all var(--duration-base) var(--ease-standard);
+}
+
+.card-elevated {
+  background-color: white;
+  border: 1px solid var(--neutral-sage-200);
+  border-radius: 0.875rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all var(--duration-base) var(--ease-standard);
+}
+
+.card-elevated:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-elevated:focus-visible {
+  outline: 2px solid var(--primary-bronze-500);
+  outline-offset: 2px;
+}
