@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     q: 'Are sessions confidential?',
-    a: 'Yes. Everything you share is protected by HIPAA and therapist-client privilege. The only exceptions are mandatory reporting situations.',
+    a: 'Yes. Everything you share is protected by privacy laws (PIPEDA in Canada, HIPAA in the US) and therapist-client privilege. The only exceptions are mandatory reporting situations.',
   },
 ]
 

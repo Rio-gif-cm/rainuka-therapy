@@ -57,7 +57,7 @@ const FAQData = [
   },
   {
     q: 'Is therapy confidential?',
-    a: 'Completely. HIPAA protects everything. I don\'t tell anyone. The only exceptions: if you tell me you\'re planning to hurt yourself or someone else, I have to act.',
+    a: 'Completely. Privacy laws protect everything (PIPEDA in Canada, HIPAA in the US). I don\'t tell anyone. The only exceptions: if you tell me you\'re planning to hurt yourself or someone else, I have to act.',
   },
   {
     q: 'What happens if you think I\'m a danger to myself or others?',
@@ -69,7 +69,7 @@ const FAQData = [
   },
   {
     q: 'What\'s your data security like?',
-    a: 'Our video platform is HIPAA-compliant and encrypted. Notes live in a secure system with full data protection. I take this seriously because you have to be able to trust me.',
+    a: 'Our video platform is privacy-compliant and encrypted (PIPEDA-Canada, HIPAA-US). Notes live in a secure system with full data protection. I take this seriously because you have to be able to trust me.',
   },
   {
     q: 'Do I need to have a diagnosis to work with you?',

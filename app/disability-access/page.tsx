@@ -132,7 +132,7 @@ export default function DisabilityAccessPage() {
                   title: 'Virtual Therapy (Telehealth)',
                   intro: 'No travel required. Session from home, your bed, or wherever feels safe and accessible.',
                   points: [
-                    'Secure, HIPAA-compliant video sessions',
+                    'Secure, privacy-compliant video sessions (PIPEDA-Canada, HIPAA-US)',
                     'Phone-only option available',
                     'Works around mobility limitations, pain flares, and fatigue',
                   ],

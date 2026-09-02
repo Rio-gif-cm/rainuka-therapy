@@ -75,6 +75,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
 
+  // Initialize GA tracking and track form_view on mount
+  useEffect(() => {
+    initializeGATracking()
+    trackFormView('booking_form')
+  }, [])
+
   // Load from localStorage on mount
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY)
@@ -198,6 +204,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       ...prev,
       [name]: true,
     }))
+    
+    // Track field interaction for GA4
+    trackFieldInteraction(name, 'booking_form')
   }
 
   const validateStep = (step: FormStep): boolean => {
@@ -249,6 +258,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       return
     }
 
+    // Track form submission attempt
+    trackFormSubmit('booking_form', currentStep)
+
     setIsSubmitting(true)
     setSubmitError(null)
 
@@ -267,6 +279,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       })
 
       if (response.ok) {
+        // Track successful form submission (conversion)
+        trackFormSuccess('booking_form', 'booking_request')
+        
         setSubmitSuccess(true)
         setFieldErrors({})
         // Clear localStorage on successful submission
@@ -381,7 +396,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 required
               />
               {fieldTouched.name && fieldErrors.name && (
-                <p id="name-error" className="text-alert-600 text-sm mt-2 font-medium">
+                <p id="name-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                   {fieldErrors.name}
                 </p>
               )}
@@ -422,7 +437,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 required
               />
               {fieldTouched.email && fieldErrors.email && (
-                <p id="email-error" className="text-alert-600 text-sm mt-2 font-medium">
+                <p id="email-error" role="alert" aria-live="polite" className="text-alert-600 text-sm mt-2 font-medium">
                   {fieldErrors.email}
                 </p>
               )}

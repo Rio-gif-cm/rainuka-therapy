@@ -245,7 +245,7 @@ export default function LGBTQPage() {
                   },
                   {
                     title: '🔒 Confidential & Secure',
-                    body: 'Your privacy is non-negotiable. Everything stays between us, within the limits defined by law. HIPAA-compliant.',
+                    body: 'Your privacy is non-negotiable. Everything stays between us, within the limits defined by law. Privacy-protected, PIPEDA-compliant.',
                   },
                 ].map((item, index) => (
                   <div key={index} className="card card-compact card-static text-center">

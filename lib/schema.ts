@@ -50,7 +50,7 @@ export const getLocalBusinessSchema = (config?: {
   image: config?.image || 'https://rainuka-therapy.com/logo.png',
   sameAs: [],
   // Therapist credential markup for YMYL credibility
-  // CRITICAL: Rainuka is NOT a U.S. LCSW. She is licensed in Canada, California, and Florida.
+  // CRITICAL: Rainuka is primarily licensed in Canada. She also holds credentials in California and Florida.
   hasCredential: [
     {
       '@type': 'Credential',

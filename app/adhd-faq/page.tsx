@@ -157,7 +157,7 @@ export default function ADHDFAQPage() {
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
               Straight answers, neurodivergent-affirming, no productivity lectures.
             </p>
-            <Link href="/booking" className="inline-block btn btn-primary">
+            <Link href="/booking" className={buttonPresets.heroCtaPrimary}>
               Book a Free Consultation
             </Link>
           </div>
@@ -178,10 +178,10 @@ export default function ADHDFAQPage() {
                 assessment, no pressure-just a conversation about whether this is a fit.
               </p>
               <div className="flex gap-4 justify-center flex-wrap">
-                <Link href="/adhd" className="inline-block btn btn-primary">
+                <Link href="/adhd" className={buttonPresets.formSubmit}>
                   ADHD Therapy
                 </Link>
-                <Link href="/booking" className="inline-block btn btn-primary">
+                <Link href="/booking" className={buttonPresets.heroCtaPrimary}>
                   Book a Call
                 </Link>
               </div>

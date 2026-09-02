@@ -141,7 +141,7 @@ export default function BookingPage() {
                   <strong>Insurance:</strong> In-network + superbills available.
                 </p>
                 <p>
-                  <strong>Confidentiality:</strong> HIPAA + therapist-client privilege.
+                  <strong>Confidentiality:</strong> Privacy-protected & therapist-client privilege (PIPEDA-compliant for Canadian clients, HIPAA for US).
                 </p>
               </div>
             </div>

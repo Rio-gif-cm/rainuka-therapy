@@ -288,7 +288,7 @@ export default function BIPOCPage() {
                   },
                   {
                     title: '🔒 Confidential & Secure',
-                    body: 'Your privacy is non-negotiable. Everything stays between us, within the limits defined by law. HIPAA-compliant.',
+                    body: 'Your privacy is non-negotiable. Everything stays between us, within the limits defined by law. Privacy-protected, PIPEDA-compliant.',
                   },
                 ].map((item, index) => (
                   <div key={index} className="bg-warm-gray-50 rounded-lg p-6 border border-warm-gray-200 text-center">
