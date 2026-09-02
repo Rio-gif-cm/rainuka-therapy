@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { EnhancedButton, EnhancedFormInput, EnhancedTextarea } from './EnhancedComponents.v2'
+import { EnhancedButton, EnhancedFormInput, EnhancedTextarea } from './EnhancedComponents'
 
 /**
  * BUTTON & INTERACTIVE ELEMENTS GALLERY

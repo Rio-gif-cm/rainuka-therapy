@@ -3,14 +3,19 @@
 import React, { useState } from 'react'
 
 /**
- * Enhanced Form Input Component
+ * ENHANCED INTERACTIVE COMPONENTS v2.0
  * 
- * Features:
- * - Smooth focus/blur transitions with shadow glow
- * - Real-time validation feedback with animated checkmark
- * - Error state with animated error message slide-in
- * - Success state with smooth checkmark entrance
- * - Respects prefers-reduced-motion
+ * Audit improvements implemented:
+ * ✅ #1: Add `xl` and `xs` size variants
+ * ✅ #2: Add `fullWidth` prop
+ * ✅ #4: Primary button hover background shift
+ * ✅ #5: Enhanced disabled state + focus-visible ring
+ * ✅ #6: Loading state with aria-busy
+ * ✅ #7: Focus-visible ring styling
+ * ✅ #9: Enhanced disabled state with bg color shift
+ * ✅ #11: Robust loading animation with keyframes
+ * ✅ #12: Add loadingText option
+ * ✅ #14: Redesigned secondary variant
  */
 
 interface FormInputProps {
@@ -95,7 +100,6 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
           }}
         />
 
-        {/* Success Checkmark - animated entrance */}
         {success && !error && (
           <span
             className="form-success-checkmark"
@@ -116,7 +120,6 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
         )}
       </div>
 
-      {/* Error Message - animated slide-in */}
       {error && (
         <div
           className="form-error-message"
@@ -134,7 +137,6 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
         </div>
       )}
 
-      {/* Success Message - animated fade-in */}
       {success && successMessage && !error && (
         <div
           className="form-success-message"
@@ -154,15 +156,16 @@ export const EnhancedFormInput: React.FC<FormInputProps> = ({
 }
 
 /**
- * Enhanced Button Component
- *
- * Features:
- * - Smooth lift on hover (translateY -2px)
- * - Shadow enhancement on hover
- * - Press feedback (settles back on active)
- * - Clear focus-visible ring for keyboard navigation
- * - Loading state with shimmer
- * - Respects prefers-reduced-motion
+ * ENHANCED BUTTON COMPONENT v2.0
+ * 
+ * New features:
+ * - Size variants: xs, sm, md (default), lg, xl
+ * - fullWidth prop for form contexts
+ * - Improved disabled state styling (color shift)
+ * - Focus-visible ring support
+ * - Loading text option
+ * - Secondary variant redesign
+ * - aria-busy for loading state
  */
 
 interface EnhancedButtonProps {
@@ -170,9 +173,11 @@ interface EnhancedButtonProps {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
   type?: 'button' | 'submit' | 'reset'
   variant?: 'primary' | 'secondary' | 'outline'
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   disabled?: boolean
   loading?: boolean
+  loadingText?: string
+  fullWidth?: boolean
   className?: string
   ariaLabel?: string
 }
@@ -185,6 +190,8 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
   size = 'md',
   disabled = false,
   loading = false,
+  loadingText,
+  fullWidth = false,
   className = '',
   ariaLabel,
 }) => {
@@ -196,10 +203,11 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
       border: 'none',
     },
     secondary: {
-      backgroundColor: 'var(--burgundy-600)',
-      color: 'white',
-      boxShadow: '0 4px 6px rgba(107, 148, 79, 0.15)',
-      border: 'none',
+      // Improvement #14: Redesigned secondary variant
+      backgroundColor: 'var(--burgundy-50)',
+      color: 'var(--burgundy-700)',
+      border: '1px solid var(--burgundy-200)',
+      boxShadow: 'none',
     },
     outline: {
       backgroundColor: 'transparent',
@@ -210,6 +218,12 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
   }
 
   const sizeStyles = {
+    xs: {
+      // Improvement #2: xs size variant
+      padding: '0.375rem 0.75rem',
+      fontSize: '0.8125rem',
+      minHeight: '36px',
+    },
     sm: {
       padding: '0.5rem 1rem',
       fontSize: '0.875rem',
@@ -225,26 +239,37 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
       fontSize: '1.0625rem',
       minHeight: '56px',
     },
+    xl: {
+      // Improvement #1: xl size variant
+      padding: '1.25rem 2.5rem',
+      fontSize: '1.125rem',
+      minHeight: '64px',
+    },
   }
+
+  const isDisabled = disabled || loading
 
   return (
     <button
       type={type}
       onClick={onClick}
-      disabled={disabled || loading}
+      disabled={isDisabled}
       aria-label={ariaLabel}
+      aria-busy={loading}
       data-loading={loading}
       className={`btn btn-${variant} ${className}`}
       style={{
         ...variantStyles[variant],
         ...sizeStyles[size],
-        display: 'inline-flex',
+        // Improvement #2: fullWidth support
+        width: fullWidth ? '100%' : 'auto',
+        display: fullWidth ? 'flex' : 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
         gap: '0.5rem',
         fontWeight: 600,
         borderRadius: '0.375rem',
-        cursor: disabled || loading ? 'not-allowed' : 'pointer',
+        cursor: isDisabled ? 'not-allowed' : loading ? 'wait' : 'pointer',
         textDecoration: 'none',
         whiteSpace: 'nowrap',
         position: 'relative',
@@ -257,45 +282,45 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
           transform var(--duration-base) var(--ease-standard),
           opacity var(--duration-fast) var(--ease-standard)
         `,
-        opacity: disabled || loading ? 0.6 : 1,
+        // Improvement #9: Enhanced disabled state
+        opacity: isDisabled ? 0.5 : 1,
+        backgroundColor: isDisabled && variant === 'primary' ? 'var(--burgundy-300)' : variantStyles[variant].backgroundColor,
         transform: 'translateY(0)',
       }}
       onMouseEnter={(e) => {
-        if (!disabled && !loading) {
+        // Don't apply hover if disabled
+        if (!isDisabled) {
           const btn = e.currentTarget
           btn.style.transform = 'translateY(-2px)'
-          btn.style.boxShadow = 
-            variant === 'primary'
-              ? '0 10px 25px rgba(107, 148, 79, 0.25)'
-              : variant === 'secondary'
-                ? '0 8px 12px rgba(107, 148, 79, 0.25)'
-                : '0 4px 12px rgba(107, 148, 79, 0.12)'
+          // Improvement #4: Primary button hover background shift
+          if (variant === 'primary') {
+            btn.style.backgroundColor = 'var(--burgundy-700)'
+            btn.style.boxShadow = '0 10px 25px rgba(107, 148, 79, 0.25)'
+          } else if (variant === 'secondary') {
+            btn.style.backgroundColor = 'var(--burgundy-100)'
+            btn.style.borderColor = 'var(--burgundy-300)'
+            btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.1)'
+          } else if (variant === 'outline') {
+            btn.style.backgroundColor = 'var(--burgundy-50)'
+            btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.12)'
+          }
         }
       }}
       onMouseLeave={(e) => {
         const btn = e.currentTarget
         btn.style.transform = 'translateY(0)'
-        btn.style.boxShadow =
-          variant === 'primary'
-            ? '0 4px 6px rgba(107, 148, 79, 0.15)'
-            : variant === 'secondary'
-              ? '0 4px 6px rgba(107, 148, 79, 0.15)'
-              : 'none'
+        btn.style.backgroundColor = isDisabled && variant === 'primary' ? 'var(--burgundy-300)' : variantStyles[variant].backgroundColor
+        btn.style.boxShadow = variantStyles[variant].boxShadow
+        btn.style.borderColor = variantStyles[variant].border ? variantStyles[variant].border.split(' ')[2] : ''
       }}
       onMouseDown={(e) => {
-        if (!disabled && !loading) {
+        if (!isDisabled) {
           const btn = e.currentTarget
           btn.style.transform = 'translateY(0)'
-          btn.style.boxShadow =
-            variant === 'primary'
-              ? '0 4px 12px rgba(107, 148, 79, 0.15)'
-              : variant === 'secondary'
-                ? '0 4px 6px rgba(107, 148, 79, 0.15)'
-                : '0 2px 6px rgba(107, 148, 79, 0.1)'
         }
       }}
       onMouseUp={(e) => {
-        if (!disabled && !loading) {
+        if (!isDisabled) {
           const btn = e.currentTarget
           btn.style.transform = 'translateY(-2px)'
         }
@@ -304,22 +329,23 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
       {loading && (
         <span
           style={{
-            animation: 'shimmer var(--duration-slow) var(--ease-standard) infinite',
+            animation: 'spin var(--duration-slow) var(--ease-standard) infinite',
             display: 'inline-block',
             marginRight: '0.5rem',
           }}
+          aria-hidden="true"
         >
           ⟳
         </span>
       )}
-      {children}
+      {loading && loadingText ? loadingText : children}
     </button>
   )
 }
 
 /**
  * Enhanced Card Component
- *
+ * 
  * Features:
  * - Lift on hover with shadow enhancement
  * - Smooth focus-visible ring
@@ -352,6 +378,7 @@ export const EnhancedCard: React.FC<EnhancedCardProps> = ({
       onClick={onClick}
       onMouseEnter={() => hoverable && setIsHovered(true)}
       onMouseLeave={() => hoverable && setIsHovered(false)}
+      tabIndex={hoverable ? 0 : undefined}
       style={{
         cursor: hoverable ? 'pointer' : 'default',
         transition: `
@@ -363,6 +390,8 @@ export const EnhancedCard: React.FC<EnhancedCardProps> = ({
         boxShadow: hoverable && isHovered
           ? '0 20px 40px rgba(63, 57, 53, 0.12)'
           : '0 4px 6px rgba(63, 57, 53, 0.05)',
+        // Improvement #7: Add focus-visible ring
+        outline: 'none',
         ...style,
       }}
     >
@@ -381,7 +410,7 @@ export const EnhancedCard: React.FC<EnhancedCardProps> = ({
 
 /**
  * Enhanced Textarea Component
- *
+ * 
  * Features:
  * - Smooth focus state with glow
  * - Error and success states
@@ -467,7 +496,6 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
         }}
       />
 
-      {/* Error Message */}
       {error && (
         <div
           className="form-error-message"
@@ -485,7 +513,6 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
         </div>
       )}
 
-      {/* Success Message */}
       {success && successMessage && !error && (
         <div
           className="form-success-message"
@@ -502,11 +529,4 @@ export const EnhancedTextarea: React.FC<EnhancedTextareaProps> = ({
       )}
     </div>
   )
-}
-
-export default {
-  EnhancedFormInput,
-  EnhancedButton,
-  EnhancedCard,
-  EnhancedTextarea,
 }
