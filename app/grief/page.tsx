@@ -11,12 +11,12 @@ import { GriefIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
 export const metadata: Metadata = {
-  title: 'Grief Therapy | Processing Loss & Life Transitions',
+  title: 'Grief Therapy | Processing Loss & Life Transitions | Wonderloud',
   description: 'Therapy for grief from any loss: death, infertility, identity shift, transitions. Trauma-informed support. Start your healing today.',
   keywords: 'grief therapy, bereavement counseling, loss support, grief counseling, memorial services',
   openGraph: {
-    title: 'Grief Therapy — Support For Loss and Bereavement',
-    description: 'Grief therapy for loss, bereavement, and major transitions. Compassionate support for processing death, change, and emotional pain.',
+    title: 'Grief Therapy | Processing Loss & Life Transitions',
+    description: 'Therapy for grief from any loss: death, infertility, identity shift, transitions. Trauma-informed support. Start your healing today.',
     type: 'website',
     url: 'https://wonderloud-therapy.com/grief',
   },

@@ -6,11 +6,11 @@ import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 export const metadata: Metadata = {
-  title: 'Therapy for Men | ADHD, Burnout & Emotional Growth',
+  title: 'Therapy for Men | ADHD, Burnout & Emotional Growth | Wonderloud',
   description: 'Therapy for men: ADHD, burnout, relationships, emotional growth. Evidence-based support without toxic masculinity. Book your call.',
   openGraph: {
-    title: 'Therapy for Men — Emotional Growth and Wellness',
-    description: 'Therapy for men exploring emotions, relationships, masculinity, and personal growth. A safe space for vulnerability and transformation.',
+    title: 'Therapy for Men | ADHD, Burnout & Emotional Growth',
+    description: 'Therapy for men: ADHD, burnout, relationships, emotional growth. Evidence-based support without toxic masculinity. Book your call.',
     type: 'website',
     url: 'https://wonderloud-therapy.com/men',
   },

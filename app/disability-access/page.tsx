@@ -7,8 +7,14 @@ import { colors } from '@/app/styles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Disability-Affirming Therapy | Accessible Care Access',
-  description: 'Disability-affirming therapy honoring your lived experience. Accessible telehealth, accommodations honored, sliding scale. Schedule consultation today.',
+  title: 'Disability-Affirming Therapy | Wonderloud Therapy',
+  description: 'Disability-affirming therapy honoring your lived experience. Accessible telehealth, accommodations honored, sliding scale. Schedule consultation.',
+  openGraph: {
+    title: 'Disability-Affirming Therapy | Wonderloud Therapy',
+    description: 'Disability-affirming therapy honoring your lived experience. Accessible telehealth, accommodations honored, sliding scale. Schedule consultation.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/disability-access',
+  },
 }
 
 const ACCENT = '#3f566d'

@@ -11,6 +11,12 @@ import { CouplesIcon } from '@/components/SpecialtyIcons'
 export const metadata: Metadata = {
   title: 'Couples Therapy | Rebuild Connection & Strengthen',
   description: 'Therapy for couples: conflict, communication breakdown, disconnection. Strengthen your relationship. Schedule free consultation today.',
+  openGraph: {
+    title: 'Couples Therapy | Rebuild Connection & Strengthen',
+    description: 'Therapy for couples: conflict, communication breakdown, disconnection. Strengthen your relationship. Schedule free consultation today.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/couples',
+  },
 }
 
 // Couples custom SVG color

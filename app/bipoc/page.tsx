@@ -4,10 +4,17 @@ import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+import type { Metadata } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'BIPOC Therapy | Anti-Racism & Cultural Healing',
-  description: 'Culturally affirming therapy for BIPOC clients navigating diaspora, racism trauma, and cultural identity issues. Anti-oppression approach. Schedule call.',
+  description: 'Culturally affirming therapy for BIPOC clients: diaspora, racism trauma, identity. Anti-oppression approach. Schedule consultation.',
+  openGraph: {
+    title: 'BIPOC Therapy | Anti-Racism & Cultural Healing',
+    description: 'Culturally affirming therapy for BIPOC clients: diaspora, racism trauma, identity. Anti-oppression approach. Schedule consultation.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/bipoc',
+  },
 }
 
 const ACCENT = '#c96547'

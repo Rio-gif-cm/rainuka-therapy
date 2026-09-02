@@ -7,8 +7,14 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata: Metadata = {
-  title: 'Back to School Anxiety Therapy | Manage Stress',
-  description: 'Navigate back-to-school anxiety with therapy. Address separation anxiety, sleepless nights, overwhelm. Book free consultation today.',
+  title: 'Back to School Anxiety Therapy | Wonderloud Therapy',
+  description: 'Manage back-to-school anxiety: separation anxiety, sleep issues, overwhelm. Evidence-based support. Book free consultation.',
+  openGraph: {
+    title: 'Back to School Anxiety Therapy | Wonderloud Therapy',
+    description: 'Manage back-to-school anxiety: separation anxiety, sleep issues, overwhelm. Evidence-based support. Book free consultation.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/back-to-school',
+  },
 }
 
 export default function BackToSchoolPage() {

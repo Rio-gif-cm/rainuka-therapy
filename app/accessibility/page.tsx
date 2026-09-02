@@ -2,8 +2,14 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Website Accessibility Statement | Rainuka',
-  description: 'WCAG 2.1 AA compliant therapy website. Screen reader friendly, keyboard navigation, captions, and inclusive design.',
+  title: 'Accessibility Statement | Wonderloud Therapy',
+  description: 'WCAG 2.1 AA compliant. Screen reader friendly, keyboard navigation, captions. Inclusive design for all.',
+  openGraph: {
+    title: 'Accessibility Statement | Wonderloud Therapy',
+    description: 'WCAG 2.1 AA compliant. Screen reader friendly, keyboard navigation, captions. Inclusive design for all.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/accessibility',
+  },
 }
 
 export default function AccessibilityPage() {
