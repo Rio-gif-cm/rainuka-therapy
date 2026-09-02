@@ -100,10 +100,10 @@ export default function AboutPage() {
         <section className="section-padding bg-cream-50">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
-              From Hiding to Healing: The Philosophy Behind My Work
+              What I've Learned Living It
             </h2>
             <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
-              What I learned living through infertility, ADHD, and burnout.
+              These lessons shaped how I show up for clients.
             </p>
 
             <div className="space-y-8">
@@ -112,47 +112,45 @@ export default function AboutPage() {
                   The Gap Between Outside and Inside
                 </h3>
                 <p className="text-warm-gray-600 mb-4">
-                  For years, I was what therapists call a "high-functioning" person navigating a crisis. 
-                  I showed up to work, maintained relationships, hit milestones—all while grieving infertility, 
-                  struggling with undiagnosed ADHD, and feeling like I'd chosen the wrong career. Nobody saw it. 
+                  I was high-functioning. Still am. I showed up to work, maintained friendships, hit milestones—while grieving 
+                  infertility, struggling with undiagnosed ADHD, and feeling like I'd made the wrong career choice. Nobody saw it. 
                   I didn't want them to.
                 </p>
                 <p className="text-warm-gray-600">
-                  That gap—between the person I appeared to be and who I actually was—is where so much suffering lives. 
-                  It's where my clients live too. And it's exactly what I now understand how to navigate.
+                  That gap is where so much suffering lives. It's where my clients live too. I know how to navigate it because 
+                  I've lived in it.
                 </p>
               </div>
 
               <div className="card bg-white">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-3">
-                  Why "Just Think Positive" Doesn't Work
+                  Why Willpower Doesn't Fix It
                 </h3>
                 <p className="text-warm-gray-600 mb-4">
-                  When I was going through infertility, I was told to be patient. When I burned out, I was told 
-                  to manage stress better. When I finally got my ADHD diagnosis at 32, everyone said, "But you've 
-                  always seemed fine!" None of that helped. What helped was understanding that my brain wasn't broken—
-                  it was different. My grief was legitimate. My burnout wasn't laziness—it was a signal.
+                  When I was going through infertility, I was told to be patient. When I burned out, I was told to manage 
+                  stress better. When I finally got my ADHD diagnosis at 32, everyone said, "But you've always seemed fine!" 
+                  None of that helped. What helped was understanding that my brain wasn't broken—it was different. My grief 
+                  was legitimate. My burnout wasn't laziness—it was my system saying no.
                 </p>
                 <p className="text-warm-gray-600">
-                  That's why I don't ask you to think differently or try harder. I ask you to understand yourself 
-                  more deeply—and then build a life that actually works for who you are.
+                  So I don't ask you to think differently or try harder. I ask you to understand yourself more deeply—and then 
+                  build a life that actually works for who you are.
                 </p>
               </div>
 
               <div className="card bg-white">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-3">
-                  The Power of Vulnerability as Expertise
+                  Why My Own Struggles Matter
                 </h3>
                 <p className="text-warm-gray-600 mb-4">
-                  Research shows that therapists who have navigated their own struggles create better outcomes. 
-                  Not because we have all the answers, but because we understand the weight of the questions. 
-                  When you tell me about your shame around ADHD, I'm not listening from a clinical distance. 
-                  I remember that shame. I know the work it takes to move through it.
+                  I did my own healing work first. I'm not bringing my unprocessed baggage into the room. But the fact that 
+                  I've been through what you're going through? That changes what I can offer. When you tell me about ADHD shame 
+                  or infertility grief or the panic of burning out, I'm not listening from a clinical distance. I remember it. 
+                  I know the work it takes to move through.
                 </p>
                 <p className="text-warm-gray-600">
-                  But here's what's crucial: I did my own healing work first. I'm not sharing my story to make 
-                  it about me. I'm sharing it so you know you're not alone, and so you trust that I genuinely 
-                  understand the terrain we're walking through together.
+                  That's not a substitute for credentials or training. It's a complement to them. It means I genuinely understand 
+                  the terrain we're walking through together.
                 </p>
               </div>
             </div>
@@ -163,49 +161,46 @@ export default function AboutPage() {
         <section className="section-padding bg-warm-accent-light">
           <div className="container-base max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6 text-center">
-              Why Perinatal + ADHD + Career
+              Why Perinatal + ADHD + Career?
             </h2>
             <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
-              It's not three separate specializations. It's one integrated lens that catches what generalists miss.
+              Because these three things are usually tangled. Treating them separately misses what's actually happening.
             </p>
 
             <div className="space-y-8">
               <div className="card bg-white">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-3">The Clinical Reality</h3>
-                <ul className="space-y-3 text-warm-gray-600">
-                  <li>
-                    <strong>Postpartum ADHD is underdiagnosed.</strong> Women with ADHD are 5x more likely to experience postpartum depression and anxiety—not because of mental illness alone, but because undiagnosed ADHD is a risk factor. Most therapists screen for depression; few screen for ADHD. The condition goes unnamed.
-                  </li>
-                  <li>
-                    <strong>Career transitions during perinatal shifts are high-risk.</strong> Matrescence—the identity transformation of becoming a parent—intersects with professional identity in ways that require clinical understanding, not just career coaching. Your executive function changes under hormonal and life transition stress.
-                  </li>
-                  <li>
-                    <strong>Generalists treat these separately; specialists see the connection.</strong> When perinatal mood, ADHD symptoms, and career indecision are addressed as one integrated story, not three separate problems, clarity emerges faster and shame decreases.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="card bg-white">
-                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">Why This Combination Matters for You</h3>
-                <p className="text-warm-gray-600 mb-4">
-                  Many of my clients come in saying: "I feel like I'm falling apart postpartum. Am I depressed? Is it burnout? Am I in the wrong career? Do I need to quit?"
+                <p className="text-warm-gray-600 mb-3">
+                  Postpartum ADHD is almost never diagnosed. Women with ADHD are five times more likely to experience 
+                  postpartum anxiety and depression. Most therapists screen for mood disorders but not ADHD. Result: 
+                  the condition stays hidden.
                 </p>
-                <p className="text-warm-gray-600 mb-4">
-                  The answer is often: "Yes, and also your ADHD. And that's making everything harder."
+                <p className="text-warm-gray-600 mb-3">
+                  Career decisions during perinatal transitions are high-risk. The identity shift of becoming a parent 
+                  collides with professional identity in ways that need clinical understanding—not just career coaching. 
+                  Your brain works differently under hormonal and life-transition stress.
                 </p>
                 <p className="text-warm-gray-600">
-                  When we address all three together—recognizing how undiagnosed ADHD amplifies postpartum vulnerability, how perinatal shifts change executive function, how career decisions need to account for your neurodivergent brain under stress—you don't have to bounce between specialists. You get one coherent understanding of what's actually happening.
+                  I see these three things as one story. When you address them together—recognizing how undiagnosed ADHD 
+                  amplifies postpartum vulnerability, how perinatal shifts change executive function, how career decisions 
+                  need to account for your neurodivergent brain under stress—you don't bounce between specialists. You get 
+                  one coherent understanding of what's happening.
                 </p>
               </div>
 
               <div className="card bg-white">
-                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">The Evidence</h3>
-                <ul className="space-y-2 text-warm-gray-600 text-sm">
-                  <li>✓ Specialist clinicians achieve significantly greater reductions in postpartum mood symptoms than generalists</li>
-                  <li>✓ Coordinated care addressing multiple domains results in higher treatment engagement and better outcomes</li>
-                  <li>✓ Women with ADHD show cyclical symptom patterns during reproductive transitions that require specialized understanding</li>
-                  <li>✓ Career identity transitions during perinatal periods benefit from integrated perinatal + neurodivergent-aware approaches</li>
-                </ul>
+                <h3 className="text-xl font-bold text-warm-gray-900 mb-3">What This Looks Like in Practice</h3>
+                <p className="text-warm-gray-600 mb-4">
+                  A client comes in saying: "I'm falling apart postpartum. Am I depressed? Is it burnout? Am I in the wrong 
+                  career? Do I need to quit?"
+                </p>
+                <p className="text-warm-gray-600 mb-4">
+                  Often the answer is: "All of that is real. And also your ADHD. And that's making everything harder."
+                </p>
+                <p className="text-warm-gray-600">
+                  Once we see the full picture, the path forward stops being confusing. You don't have to bounce between 
+                  specialists guessing at what's wrong. You get one person who understands how these pieces actually fit together.
+                </p>
               </div>
             </div>
           </div>
@@ -222,10 +217,9 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">License</h3>
                 <p className="text-warm-gray-600">
-                  Licensed Clinical Social Worker (LCSW). Full license number and
-                  issuing state are provided during your free consultation and on
-                  any intake paperwork, so you can verify them directly with the
-                  state licensing board.
+                  Licensed Clinical Social Worker (LCSW) in good standing. License details and verification are 
+                  available during your free consultation and on intake forms, so you can verify directly with 
+                  the state licensing board.
                 </p>
               </div>
 

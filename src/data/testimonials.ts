@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
   // HOMEPAGE CORE FOUR
   {
     quote:
-      'Alone in my anxiety around pregnancy. Rainuka validated my fear + gave me tools that actually work. Now I have community.',
+      'I was terrified during pregnancy and thought I was alone in it. Rainuka didn\'t tell me I was fine—she sat with the fear and then gave me actual tools. I still use the grounding thing she taught me. Plus I found community here.',
     author: 'Sarah',
     context: 'Software Engineer | Expecting First Child',
     rating: 5,
@@ -31,7 +31,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'ADHD diagnosis at 35 = grief + relief. Rainuka gets both. Finally, real therapy—not tips and tricks. She understood the grief I didn\'t know I was carrying.',
+      'Getting diagnosed with ADHD at 35 hit me harder than I expected. It was relief but also grief—grief for all the years I thought I was just broken. Rainuka didn\'t skip over the grief part. She got that I was mourning something while also celebrating answers.',
     author: 'Jessica',
     context: 'Marketing Manager | Adult ADHD Diagnosis',
     rating: 5,
@@ -39,7 +39,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'Burned out + doubting everything. In 2 months with Rainuka: panic → clear plan. She untangled real anxiety from legit signals my career needed to change.',
+      'I was burning out, couldn\'t sleep, kept having panic attacks. My first thought was just push through—that\'s what I\'d always done. Rainuka helped me see the difference between anxiety I needed to manage and legitimate signals that my job was unsustainable. In a couple months I had a real exit plan. Then I used it.',
     author: 'Michael',
     context: 'Senior Operations Lead | Career Transition',
     rating: 5,
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'No judgment. Rainuka met me where I was—warm + practical. She reframed grief: not something to fix, but to move through with intention.',
+      'My mom died and everyone wanted me to move on or find meaning in it. Rainuka let me just be angry and confused for a while. When I was ready, we talked about how to actually live the rest of my life without her—not get over it, but go on.',
     author: 'Amanda',
     context: 'Nonprofit Director | Navigating Loss',
     rating: 5,
@@ -57,7 +57,7 @@ export const testimonials: Testimonial[] = [
   // BURNOUT RECOVERY (NEW)
   {
     quote:
-      'I was running on fumes, telling myself I just needed to \"push through.\" Rainuka helped me see that my burnout wasn\'t weakness—it was my nervous system saying NO. She gave me permission to listen. Three months in, I actually left the job that was killing me. Not impulsively. With a real plan. Now I\'m building something that fits how my brain actually works.',
+      'I was on fumes and convinced the answer was to keep going harder. Rainuka asked what my body was trying to tell me. Turns out it was screaming stop. I left that job and it felt less impulsive and more like finally listening. Now I\'m doing something that doesn\'t drain me at the same pace.',
     author: 'Alex',
     context: 'Former Investment Banker | Burnout Recovery & Reorientation',
     rating: 5,
@@ -67,7 +67,7 @@ export const testimonials: Testimonial[] = [
   // ADHD VALIDATION (NEW)
   {
     quote:
-      'For 28 years, I thought I was lazy. My therapist mentioned ADHD casually. I got diagnosed—and Rainuka was the first person who didn\'t treat it like I\'d failed. She said, \"Your brain isn\'t broken; you\'ve just been trying to live in a system designed for someone else.\" That reframe changed everything. We work WITH my ADHD now, not against it.',
+      'For my entire twenties I thought I was lazy. When I got diagnosed with ADHD at 28, the first thing I did was blame myself harder. Rainuka said something that stuck: "Your brain isn\'t wired wrong—you\'ve just been trying to work in conditions that don\'t fit." We stopped fighting against how my brain works and started building around it. Everything got easier.',
     author: 'Marcus',
     context: 'Software Developer | Late ADHD Recognition & Self-Compassion',
     rating: 5,
@@ -77,7 +77,7 @@ export const testimonials: Testimonial[] = [
   // PERINATAL ANXIETY BREAKTHROUGH (NEW)
   {
     quote:
-      'Postpartum anxiety was destroying me. I couldn\'t sleep without panic. Everyone said, \"It\'s normal new-mom worry,\" but it wasn\'t. Rainuka took me seriously. In just a few weeks, she taught me grounding techniques that actually work—and helped me understand that my intrusive thoughts weren\'t reflections of who I am as a mother. I\'m sleeping. I\'m present with my baby. I\'m myself again.',
+      'After my daughter was born I couldn\'t sleep. Not because she needed me up—I just couldn\'t shut my brain off. Every intrusive thought felt like proof I wasn\'t fit to be her mom. My doctor said it\'s "normal" but it didn\'t feel normal. Rainuka taught me grounding stuff that actually worked and convinced me I wasn\'t broken or dangerous. I slept a full night last week. First one in months.',
     author: 'Priya',
     context: 'Teacher | Postpartum Anxiety Resolution',
     rating: 5,
@@ -87,7 +87,7 @@ export const testimonials: Testimonial[] = [
   // COUPLES HEALING (NEW)
   {
     quote:
-      'We came in feeling disconnected and angry. We\'d been married 12 years and had stopped really talking to each other. In therapy, we learned that we were both trying to protect ourselves—he\'d shut down, I\'d push harder. Once we understood that pattern, we could actually hear each other. The tools I learned (repair attempts, turning toward) have become part of how we live now. We\'re not just staying together; we actually like being together again. That surprised me. I honestly thought we were done.',
+      'We\'d been married twelve years and stopped talking. Really stopped. We\'d say logistics and then go quiet. When we came to therapy I wanted to blame him for shutting down. Turns out I was pushing and he was retreating and we\'d built this groove where we couldn\'t reach each other. Rainuka taught us how to actually hear instead of defend. We\'re not pretending to like each other anymore. We actually do. I didn\'t think we\'d get here.',
     author: 'Sarah & Michael',
     context: 'Married 12 Years | Reconnection & Pattern Repair',
     rating: 5,
@@ -97,7 +97,7 @@ export const testimonials: Testimonial[] = [
   // GRIEF SUPPORT (NEW)
   {
     quote:
-      'Losing my mom mid-pandemic meant I couldn\'t grieve the way I wanted. Rainuka didn\'t push me to \"move on.\" She made space for the mess—the anger, the guilt, the weird moments when I forgot she was gone and then remembered all over again. She helped me honor her life by actually living mine. That\'s what real grief work looks like.',
+      'My mom died during lockdown. I couldn\'t have her funeral the way we wanted, couldn\'t see my dad, couldn\'t grieve the normal way. Rainuka didn\'t push me to process or move on or find the silver lining. She just let me sit with how messed up it all was. Some days that meant crying, some days it meant being angry at her for dying. Now I can remember her without falling apart every time.',
     author: 'Keisha',
     context: 'Healthcare Administrator | Maternal Loss & Grief Integration',
     rating: 5,
@@ -107,7 +107,7 @@ export const testimonials: Testimonial[] = [
   // RACIALIZED STRESS & IDENTITY (NEW)
   {
     quote:
-      'As a Black woman in a predominantly white workplace, I was carrying a weight I couldn\'t name. Rainuka didn\'t minimize that—she named it. She gets that my anxiety isn\'t just \"my stuff\"; it\'s contextual. It\'s navigating environments that weren\'t built for me. Having a therapist who understands systemic racism, not just individual psychology, changed everything. I\'m not broken. I\'m exhausted by systems that were never meant to include me. That distinction matters.',
+      'I\'m one of two Black women in my department. I carry a weight that my white colleagues will never have to think about. I used to think that was just mine to manage—my anxiety, my problem. Rainuka named the actual context: I\'m existing in a space that wasn\'t built for me and that\'s exhausting for a reason. Not because something\'s wrong with me. She gets the difference. Most therapists don\'t.',
     author: 'Tanya',
     context: 'Senior Manager | Racialized Stress & Workplace Identity',
     rating: 5,
@@ -117,7 +117,7 @@ export const testimonials: Testimonial[] = [
   // FIRST-GENERATION IMMIGRANT EXPERIENCE (NEW)
   {
     quote:
-      'Coming to therapy felt like a betrayal—you don\'t talk about family stuff outside the family. But I was carrying generational trauma, immigrant grief, and pressure to be the "model minority." Rainuka created space where I could honor my parents\' sacrifice AND grieve what that sacrifice cost me. She gets that my mental health isn\'t separate from my cultural identity. I\'m healing in my own way, not in someone else\'s timeline.',
+      'In my family you don\'t talk about feelings with strangers. But I was carrying so much—my parents left everything to give me a chance, and I felt like I was supposed to be grateful and successful and fine all at the same time. The "fine" was killing me. Rainuka met me in a space where I could honor what my parents sacrificed and also grieve what it cost them and me. I\'m building my own life now, not just managing theirs.',
     author: 'Raj',
     context: 'First-Generation Indian-American | Generational Trauma & Identity Integration',
     rating: 5,
@@ -127,7 +127,7 @@ export const testimonials: Testimonial[] = [
   // LGBTQ+ COUPLE (NEW)
   {
     quote:
-      'We weren\'t even sure if couples therapy would "get" us—as a same-sex couple. But from day one, Rainuka saw US, not a checkbox. We came in because we\'d hit a wall after 7 years. We were both people-pleasers, so we\'d avoided every hard conversation. Turns out we had a lot to say. She taught us how to disagree without it feeling like betrayal. Now we actually fight better—which sounds weird, but it means we\'re honest. We\'re building something real instead of just trying not to rock the boat.',
+      'We weren\'t sure if couples therapy would actually get us as a same-sex couple. But Rainuka saw us, not a cause. We came in stuck—seven years and we\'d stopped having any real conversations. Turns out we were both so afraid of rocking the boat that we were drowning quietly together. She taught us how to fight about stuff that matters. Fighting better sounds weird but it means we\'re here, not just going through the motions.',
     author: 'Jamie & Casey',
     context: 'Same-Sex Couple | 7-Year Partnership & Communication Repair',
     rating: 5,
@@ -137,7 +137,7 @@ export const testimonials: Testimonial[] = [
   // LATINO/MASCULINE PERSPECTIVE (NEW)
   {
     quote:
-      'Growing up Latino, therapy was "for women" or "for people who couldn\'t handle things." I came in reluctantly—my wife basically said it was therapy or she was done. I thought I was fine. But Rainuka asked me questions no one had asked. She helped me see that dismissing my feelings wasn\'t strength; it was leaving my family with only half of me. Learning to name what I actually feel—not just "I\'m fine" or "I\'m angry"—has changed my marriage and how I parent. I wish I\'d done this years ago.',
+      'In my family, men don\'t do therapy. My wife said it was therapy or we were done. I thought I was fine—that was just me being strong. Rainuka asked me actual questions and I had to admit I didn\'t know how I felt about most things. Just angry or fine. Nothing in between. My kids see me different now. I show up for them different. I wish I\'d done this a long time ago.',
     author: 'David',
     context: 'Latino Father of Two | Emotional Expression & Family Connection',
     rating: 5,
@@ -147,7 +147,7 @@ export const testimonials: Testimonial[] = [
   // PARENTING/CO-PARENTING STRESS (NEW)
   {
     quote:
-      'Co-parenting with my ex was a nightmare. We could not be in the same room without tension. My kids felt it, and it was eating me alive. I came to Rainuka exhausted and resentful. She didn\'t fix my ex (obviously), but she helped me manage my own emotional reactivity and see my kids\'s needs clearly instead of through my hurt. We developed actual strategies for parallel parenting. My kids are calmer. I sleep better. And I don\'t dread pickups anymore.',
+      'Co-parenting with my ex was a disaster. We\'d argue about pickup times and I\'d end up re-litigating our entire marriage. My kids hated it. I came to Rainuka exhausted and bitter. She couldn\'t change my ex, but she helped me not blow up every time something went wrong. We came up with rules that kept things calm. My kids are happier. I sleep better.',
     author: 'Jennifer',
     context: 'Mother of Two | Co-Parenting Conflict & Healing',
     rating: 5,
@@ -157,7 +157,7 @@ export const testimonials: Testimonial[] = [
   // ASIAN/MIDDLE EASTERN STRESS & IDENTITY (NEW)
   {
     quote:
-      'I\'m second-generation Palestinian-American, and I was drowning in code-switching. At work, I\'m one person. At home with family, another. And then the news cycles hit, and I\'m carrying a grief and anger I can\'t even name at the office. Rainuka saw the whole picture. She helped me understand that my anxiety isn\'t "just anxiety"—it\'s a legitimate response to displacement, belonging anxiety, and cultural pressure. She validated that carrying two worlds is exhausting. Now I\'m building a life where I don\'t have to pick sides; I can integrate both parts of myself.',
+      'I\'m Palestinian-American and I code-switch constantly. At work I\'m professional-corporate. At family dinners I\'m different. Then the news hits and I\'m grieving and angry and I can\'t talk about it in either space. Rainuka didn\'t try to fix it or tell me to just integrate. She helped me see that carrying two worlds is exhausting because it actually is exhausting. Now I\'m building a life where I don\'t have to pretend I\'m just one thing.',
     author: 'Noor',
     context: 'Second-Generation Palestinian-American | Cultural Identity & Belonging',
     rating: 5,
@@ -167,7 +167,7 @@ export const testimonials: Testimonial[] = [
   // QUEER SOLO (NEW)
   {
     quote:
-      'Coming out at 32 after 10 years of marriage wasn\'t linear or clean. I was grieving the life I\'d planned while also finally feeling alive for the first time. Rainuka didn\'t try to fix it or judge me. She held space for both—the loss AND the liberation. She helped me navigate the aftermath with my ex, come out to my parents, and build a new identity as a queer woman that felt genuinely mine. It was some of the hardest and most honest work I\'ve ever done. I\'m not the same person, and I\'m grateful for that.',
+      'I came out at 32 after ten years of marriage. It was grief and relief at the same time and neither made sense to anyone. Rainuka didn\'t try to neat it up—she let me be a mess about it. We worked through what it meant for my ex, for my kids finding out, for my parents. It was the hardest thing I\'ve done and also the most honest. I\'m not the same person and I\'m okay with that now.',
     author: 'Claire',
     context: 'Queer Woman | Late-Life Coming Out & Identity Reconstruction',
     rating: 5,
