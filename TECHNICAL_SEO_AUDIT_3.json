@@ -1,0 +1,363 @@
+{
+  "audit_date": "2026-09-02T05:34:27.540Z",
+  "total_findings": 43,
+  "critical_count": 4,
+  "high_count": 8,
+  "medium_count": 20,
+  "low_count": 11,
+  "findings": [
+    {
+      "title": "No explicit font-display strategy in main fonts",
+      "category": "Speed",
+      "severity": "MEDIUM",
+      "description": "While next/font includes display: \"swap\", individual page fonts may override.",
+      "evidence": "Fraunces and Inter configured with display: \"swap\" but this should be enforced site-wide.",
+      "timestamp": "2026-09-02T05:34:27.537Z"
+    },
+    {
+      "title": "Service Worker cache strategy not optimized for SPA hydration",
+      "category": "Speed",
+      "severity": "MEDIUM",
+      "description": "SW.js exists but may not properly cache dynamic routes and API responses.",
+      "evidence": "Service Worker registered in layout.tsx but no stale-while-revalidate strategy visible in public/sw.js",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Missing HTTP/2 Server Push hints",
+      "category": "Speed",
+      "severity": "LOW",
+      "description": "No Link headers configured for preload/prefetch optimization.",
+      "evidence": "next.config.ts has prefetch but no Link: <...>; rel=preload headers in async headers() function",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Image optimization may not cover all routes",
+      "category": "Speed",
+      "severity": "MEDIUM",
+      "description": "Images configured for AVIF/WebP but no explicit srcset fallback chains.",
+      "evidence": "next.config.ts images.formats only specifies modern formats; no jpeg fallback strategy documented",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "API route caching set to must-revalidate",
+      "category": "Speed",
+      "severity": "MEDIUM",
+      "description": "API endpoints not cached, causes unnecessary revalidation overhead.",
+      "evidence": "Cache-Control header: public, max-age=0, must-revalidate for /api/* routes",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No manifest.json for offline PWA support",
+      "category": "Speed",
+      "severity": "LOW",
+      "description": "Service Worker exists but no Web App Manifest for installability.",
+      "evidence": "No manifest.json or web.manifest in public/ directory",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Global CSS not minified at build time",
+      "category": "Speed",
+      "severity": "MEDIUM",
+      "description": "globals.css is 34KB; minification would reduce FCP/LCP.",
+      "evidence": "app/globals.css is 34,988 bytes with visible whitespace and comments",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No Brotli compression strategy defined",
+      "category": "Speed",
+      "severity": "LOW",
+      "description": "Missing explicit compression preference; relies on default gzip.",
+      "evidence": "No compression headers in next.config.ts or vercel.json",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No explicit viewport meta tag in layout.tsx",
+      "category": "Mobile",
+      "severity": "HIGH",
+      "description": "Viewport tag missing; mobile scaling may be incorrect at 375px.",
+      "evidence": "layout.tsx does not include <meta name=\"viewport\" content=\"...\"/> in head",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Tailwind breakpoints may not cover small mobile (320px)",
+      "category": "Mobile",
+      "severity": "MEDIUM",
+      "description": "Min breakpoint likely sm: 640px; no 375px or 320px test coverage mentioned.",
+      "evidence": "No explicit 375px mobile audit in mobile-ux-optimization reports",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Touch target sizes not explicitly enforced",
+      "category": "Mobile",
+      "severity": "MEDIUM",
+      "description": "Buttons and interactive elements may fall below 48px × 48px mobile target.",
+      "evidence": "No documented touch-target-size audit or component constraint",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Micro-interactions CSS may cause jank on low-end mobile",
+      "category": "Mobile",
+      "severity": "MEDIUM",
+      "description": "micro-interactions.css (12KB+) with transitions; no reduced-motion media query.",
+      "evidence": "micro-interactions-enhanced.css includes animations without @media (prefers-reduced-motion)",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No explicit mobile typography scale",
+      "category": "Mobile",
+      "severity": "LOW",
+      "description": "Type scale from display/h1/h2 may be too large on 375px viewport.",
+      "evidence": "No separate typography scale for mobile in responsive design audit",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Form inputs may have autofill styling issues",
+      "category": "Mobile",
+      "severity": "LOW",
+      "description": "No explicit webkit-autofill styling; mobile browser autofill may override.",
+      "evidence": "No -webkit-autofill color overrides in globals.css or component styles",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No sitemap.xml or sitemap.ts generated",
+      "category": "Sitemap",
+      "severity": "CRITICAL",
+      "description": "Search engines cannot discover all pages without XML sitemap.",
+      "evidence": "No sitemap.xml, sitemap.ts, or sitemap route handler in app/ directory",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No robots.txt file exists",
+      "category": "Sitemap",
+      "severity": "CRITICAL",
+      "description": "robots.txt missing; crawlers guess rules and may block important pages.",
+      "evidence": "No robots.txt in public/ or app/ directory",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Dynamic routes not statically exported",
+      "category": "Sitemap",
+      "severity": "HIGH",
+      "description": "Specialty pages (adhd, perinatal, etc.) not registered for sitemap generation.",
+      "evidence": "33 page routes exist but no site map generation logic discovered",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No canonical URL metadata on pages",
+      "category": "Sitemap",
+      "severity": "HIGH",
+      "description": "Pages lack explicit canonical links; duplicates may be indexed.",
+      "evidence": "Metadata objects in page.tsx files do not include canonical URL",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Sitemap locale variants not declared",
+      "category": "Sitemap",
+      "severity": "MEDIUM",
+      "description": "If serving non-English, no hreflang tags or sitemap locale attributes.",
+      "evidence": "Only EN (English) content; no alternate language versions or hreflang tags",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Missing robots.txt allows all crawlers by default",
+      "category": "Robots.txt",
+      "severity": "HIGH",
+      "description": "No robots.txt means crawlers assume all content is crawlable; sensitive routes may be indexed.",
+      "evidence": "File not found: public/robots.txt or app/robots.ts",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No sitemap reference in robots.txt",
+      "category": "Robots.txt",
+      "severity": "CRITICAL",
+      "description": "Cannot declare sitemap location without robots.txt.",
+      "evidence": "robots.txt does not exist to include Sitemap: https://...",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "API routes not disallowed",
+      "category": "Robots.txt",
+      "severity": "MEDIUM",
+      "description": "No directive to block crawlers from /api/* routes.",
+      "evidence": "No robots.txt rule: Disallow: /api/",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Admin/internal routes not blocked",
+      "category": "Robots.txt",
+      "severity": "LOW",
+      "description": "No rules for internal routes (e.g., /.next, /admin, if they exist).",
+      "evidence": "No robots.txt Disallow rules for internal or development routes",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No explicit canonical URL in Metadata objects",
+      "category": "Canonicals",
+      "severity": "CRITICAL",
+      "description": "Pages lack canonical links; query params and trailing slashes create duplicates.",
+      "evidence": "Metadata in app/adhd/page.tsx, app/about/page.tsx lack canonical field",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Redirect from /resources to /guides not declared with rel-canonical",
+      "category": "Canonicals",
+      "severity": "MEDIUM",
+      "description": "Permanent redirect exists but canonical not set on target /guides.",
+      "evidence": "next.config.ts redirects: /resources → /guides (permanent: true) but /guides has no canonical",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Query string parameters not canonicalized",
+      "category": "Canonicals",
+      "severity": "MEDIUM",
+      "description": "Pages may be accessed with duplicate query params; no canonical handling.",
+      "evidence": "No logic to strip or normalize query strings (e.g., ?utm_source, ?ref)",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Trailing slash inconsistency not addressed",
+      "category": "Canonicals",
+      "severity": "LOW",
+      "description": "No explicit rule for /adhd vs /adhd/; Next.js 16 behavior may vary.",
+      "evidence": "No next.config.ts trailingSlash setting; defaults may create duplicates",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No HSTS header configured",
+      "category": "HTTPS",
+      "severity": "HIGH",
+      "description": "Strict-Transport-Security header missing; browsers may not enforce HTTPS.",
+      "evidence": "No HSTS header in next.config.ts headers() function",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No Content-Security-Policy (CSP) header",
+      "category": "HTTPS",
+      "severity": "HIGH",
+      "description": "CSP missing; XSS and injection attacks not mitigated.",
+      "evidence": "No CSP header in next.config.ts or vercel.json",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Missing X-Frame-Options header",
+      "category": "HTTPS",
+      "severity": "MEDIUM",
+      "description": "No protection against clickjacking; X-Frame-Options not set.",
+      "evidence": "No X-Frame-Options in headers configuration",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Missing X-Content-Type-Options header",
+      "category": "HTTPS",
+      "severity": "MEDIUM",
+      "description": "Browser MIME-sniffing not disabled; potential security risk.",
+      "evidence": "No X-Content-Type-Options: nosniff in headers",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Referrer-Policy not explicitly set",
+      "category": "HTTPS",
+      "severity": "LOW",
+      "description": "Default referrer policy may leak query params to external links.",
+      "evidence": "No Referrer-Policy header configured",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "/resources → /guides permanent redirect (single hop)",
+      "category": "Redirects",
+      "severity": "LOW",
+      "description": "One known redirect; chain is single hop (acceptable).",
+      "evidence": "next.config.ts: { source: \"/resources\", destination: \"/guides\", permanent: true }",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No redirect audit for moved/renamed specialty pages",
+      "category": "Redirects",
+      "severity": "MEDIUM",
+      "description": "If specialty pages were renamed, old URLs may 404 instead of redirecting.",
+      "evidence": "No documented redirect map for renamed pages (e.g., old specialty slugs)",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No redirect for www vs non-www normalization",
+      "category": "Redirects",
+      "severity": "MEDIUM",
+      "description": "If domain supports both www and non-www, no explicit 301 redirect.",
+      "evidence": "No www redirect rule in next.config.ts",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No redirect for HTTP to HTTPS (relying on hosting)",
+      "category": "Redirects",
+      "severity": "LOW",
+      "description": "Assuming hosting enforces HTTPS; no app-level redirect.",
+      "evidence": "No redirect logic in next.config.ts for HTTP → HTTPS",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "LocalBusinessSchema may lack required properties",
+      "category": "Structured Data",
+      "severity": "HIGH",
+      "description": "Schema missing areaServed, telephone, or address details.",
+      "evidence": "lib/schema.ts getLocalBusinessSchema() not verified for completeness",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No BreadcrumbList schema for navigation",
+      "category": "Structured Data",
+      "severity": "MEDIUM",
+      "description": "Breadcrumb trails not marked up for SERP rich snippets.",
+      "evidence": "No BreadcrumbList schema in page templates or layout",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No FAQSchema for FAQ pages",
+      "category": "Structured Data",
+      "severity": "MEDIUM",
+      "description": "FAQ pages (adhd-faq, perinatal-faq) lack FAQPage schema.",
+      "evidence": "FAQ page templates do not include schema FAQPage or Question markup",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Missing Article schema for blog/guide content",
+      "category": "Structured Data",
+      "severity": "MEDIUM",
+      "description": "If guides are articles, Article schema not applied.",
+      "evidence": "app/guides content lacks datePublished, author, schema context",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No AggregateRating schema for testimonials",
+      "category": "Structured Data",
+      "severity": "LOW",
+      "description": "Testimonial cards not marked up with AggregateRating.",
+      "evidence": "TestimonialCard component missing schema markup for ratingValue/reviewCount",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "Schema.org @context not declared on all JSON-LD blocks",
+      "category": "Structured Data",
+      "severity": "HIGH",
+      "description": "Missing @context: \"https://schema.org\" on some schema objects.",
+      "evidence": "lib/schema.ts may not include @context in all returned schemas",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    },
+    {
+      "title": "No TestimonialSchema or Review schema for testimonials",
+      "category": "Structured Data",
+      "severity": "MEDIUM",
+      "description": "Testimonials lack Review or Testimonial schema markup.",
+      "evidence": "Testimonials rendered as plain text; no schema structured data",
+      "timestamp": "2026-09-02T05:34:27.538Z"
+    }
+  ],
+  "summary": {
+    "sitemap": "NOT IMPLEMENTED",
+    "robots_txt": "NOT IMPLEMENTED",
+    "canonical_tags": "NOT IMPLEMENTED",
+    "structured_data": "PARTIAL",
+    "https_headers": "INCOMPLETE",
+    "mobile_responsive": "NEEDS TESTING",
+    "performance_optimized": "PARTIALLY CONFIGURED"
+  }
+}
