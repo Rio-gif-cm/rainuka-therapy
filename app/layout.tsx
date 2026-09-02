@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Fraunces, Inter } from 'next/font/google'
 import './globals.css'
+import './additional-styles.css'
 import './sensory-friendly.css'
 import './micro-interactions.css'
 import GoogleAnalyticsWrapper from '@/components/GoogleAnalyticsWrapper'

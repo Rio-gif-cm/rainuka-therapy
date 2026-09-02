@@ -1,0 +1,184 @@
+/* ========================================
+   IMPL#11-15: Additional Polish & Consistency
+   ======================================== */
+
+/* Enhanced Focus States for All Interactive Elements */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--burgundy-500);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Form input focus enhancement */
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--burgundy-500);
+  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+/* Mobile CTA sticky positioning */
+@media (max-width: 768px) {
+  .mobile-cta-sticky {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    z-index: 40;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Improve button touch targets for mobile (min 44px) */
+.hero-cta-primary,
+.hero-cta-secondary,
+.btn-primary,
+.btn-outline,
+button[type="submit"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Loading state animation */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+.form-loading {
+  animation: pulse-soft 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Enhanced Typography Responsiveness */
+h1 {
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: clamp(1.125rem, 3vw, 1.75rem);
+  line-height: 1.35;
+}
+
+/* Improve body text readability on all sizes */
+body {
+  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
+  line-height: 1.6;
+}
+
+p {
+  line-height: 1.7;
+}
+
+/* Performance - Image Lazy Loading */
+img {
+  loading: lazy;
+  decoding: async;
+}
+
+/* Prevent layout shift for images with known dimensions */
+img[width][height] {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+/* Button Styling Consistency & Color Token Application */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 44px;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: var(--burgundy-500);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: var(--burgundy-600);
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.15);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--burgundy-500);
+  border: 2px solid var(--burgundy-500);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--burgundy-50);
+  border-color: var(--burgundy-600);
+  color: var(--burgundy-600);
+}
+
+.btn-secondary {
+  background-color: var(--dusk-500);
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: var(--dusk-600);
+}
+
+/* Ghost/text button style */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--burgundy-600);
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background-color: var(--burgundy-50);
+  text-decoration: underline;
+}
+
+/* Ensure form buttons have consistent sizing */
+button[type="submit"],
+button[type="button"] {
+  min-height: 44px;
+  font-weight: 600;
+}
+
+/* Link styling consistency */
+a:not([class*="btn"]):not([class*="nav"]):not([class*="footer"]) {
+  color: var(--burgundy-600);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+a:not([class*="btn"]):not([class*="nav"]):not([class*="footer"]):hover {
+  color: var(--burgundy-700);
+}
+
+a:not([class*="btn"]):not([class*="nav"]):not([class*="footer"]):visited {
+  color: var(--dusk-700);
+}
