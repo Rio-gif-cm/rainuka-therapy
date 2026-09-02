@@ -4,6 +4,7 @@ import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+import { getADHDFAQSchema } from '@/lib/faq-schema'
 
 interface FAQItem {
   q: string
@@ -89,18 +90,10 @@ const dailyLifeFAQ: FAQItem[] = [
 
 const allFAQ = [...diagnosisFAQ, ...treatmentFAQ, ...dailyLifeFAQ]
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: allFAQ.map((faq) => ({
-    '@type': 'Question',
-    name: faq.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.a,
-    },
-  })),
-}
+const faqSchema = getADHDFAQSchema(
+  allFAQ,
+  'https://rainuka-therapy.com/adhd-faq'
+)
 
 export const metadata = {
   title: 'Adult ADHD FAQ - Late Diagnosis, Therapy & Daily Life | Wonderloud Therapy',

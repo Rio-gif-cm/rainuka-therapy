@@ -910,7 +910,7 @@ select {
     border-color var(--duration-fast) var(--ease-standard),
     background-color var(--duration-fast) var(--ease-standard),
     box-shadow var(--duration-base) var(--ease-standard);
-  min-height: 48px; /* Touch target */
+  min-height: 44px; /* Touch target: 44px+ for accessibility */
 }
 
 input[type="text"]:focus,
@@ -921,7 +921,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border-color: var(--burgundy-600);
-  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+  box-shadow: 0 0 0 2px var(--burgundy-600); /* 2px focus ring */
 }
 
 /* WCAG AA contrast — error states */

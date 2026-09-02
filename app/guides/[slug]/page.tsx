@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -64,6 +65,15 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
 
       <main className="flex-grow">
         <article className="max-w-3xl mx-auto px-6 py-12">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Guides', href: '/guides' },
+              { label: guide.frontmatter.title },
+            ]}
+            includeSchema
+          />
+
           {/* Header */}
           <header className="mb-12 border-b border-burgundy-200 pb-8">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">

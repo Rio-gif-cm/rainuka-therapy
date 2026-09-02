@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import TestimonialCard from '@/components/TestimonialCard'
 import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
+import RelatedPosts from '@/components/RelatedPosts'
 import {
   specialtyAccents,
   SpecialtyHero,
@@ -286,6 +287,23 @@ export default function ADHDPage() {
           title="Finally understanding yourself"
           body="ADHD diagnosis changes everything. Let's make sense of it together."
           ctaLabel="Book Your Free Call"
+        />
+
+        <RelatedPosts
+          accent={accent}
+          title="Explore Related Topics"
+          posts={[
+            {
+              path: '/adhd-faq',
+              label: 'ADHD FAQs',
+              description: 'Questions about ADHD diagnosis, treatment, and what therapy involves. Get clarity on late diagnosis, shame, and finding the right support.'
+            },
+            {
+              path: '/career',
+              label: 'Career & Burnout Support',
+              description: 'Many people with ADHD struggle with work identity and burnout. Explore support for career transitions and perfectionism patterns.'
+            }
+          ]}
         />
       </main>
 

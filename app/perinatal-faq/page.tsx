@@ -109,18 +109,10 @@ const treatmentFAQ: FAQItem[] = [
 
 const allFAQ = [...pregnancyFAQ, ...postpartumFAQ, ...lossFertilityFAQ, ...treatmentFAQ]
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: allFAQ.map((faq) => ({
-    '@type': 'Question',
-    name: faq.q,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.a,
-    },
-  })),
-}
+const faqSchema = getPerinatalFAQSchema(
+  allFAQ,
+  'https://rainuka-therapy.com/perinatal-faq'
+)
 
 export const metadata = {
   title: 'Perinatal Mental Health FAQ - Postpartum, Loss & Fertility | Wonderloud Therapy',

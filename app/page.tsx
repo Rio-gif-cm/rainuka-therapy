@@ -237,7 +237,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Link href="/faq" className="btn-link" style={{ fontSize: '1rem', fontWeight: 600 }}>
+              <Link href="/faq" className={buttonPresets.tertiary}>
                 See all FAQs →
               </Link>
             </div>
@@ -253,7 +253,7 @@ export default function Home() {
             <p className="text-lg text-warm-gray-600 mb-8">
               I respond within 24 hours. Let's talk about what's actually going on for you.
             </p>
-            <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
+            <Link href="/about" className={buttonPresets.tertiary}>
               Learn more about me →
             </Link>
             <p className="text-sm text-warm-gray-600 mt-8">

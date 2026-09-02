@@ -284,7 +284,7 @@ export default function HeroSection() {
             }}
             className="md:mx-0 mx-auto md:justify-start md:mb-8 md:gap-6"
           >
-            {/* Badge 1: Licensed LCSW (Green) */}
+            {/* Badge 1: Licensed Therapist (Green) */}
             <div
               style={{
                 display: 'inline-flex',
@@ -299,7 +299,7 @@ export default function HeroSection() {
                 flexShrink: 0,
               }}
               className="md:w-12 md:h-12"
-              title="Licensed LCSW (Canada, CA, FL)"
+              title="Licensed Therapist (Canada, CA, FL)"
             >
               <svg
                 width="24"
@@ -608,7 +608,7 @@ export default function HeroSection() {
               {/* Hero image with lazy loading and responsive sizing */}
               <Image
                 src="/images/hero-therapist-portrait.jpg"
-                alt="Rainuka Oberoi, LCSW - Therapist"
+                alt="Rainuka Oberoi, Licensed Therapist - Therapist"
                 fill
                 priority={false}
                 loading="lazy"
@@ -656,7 +656,7 @@ export default function HeroSection() {
                     marginBottom: '0.375rem',
                   }}
                 >
-                  Rainuka Oberoi, LCSW
+                  Rainuka Oberoi, Licensed Therapist
                 </p>
                 <p
                   style={{
@@ -932,8 +932,29 @@ export default function HeroSection() {
         .hero-pulse-dot { animation: heroDot 3.2s ease-in-out infinite; }
         .hero-leaf { animation: heroFloat 7s ease-in-out infinite; }
 
-        .hero-plate { transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.5s ease; }
-        .hero-plate:hover { transform: translateY(-4px); }
+        /* Hero plate wrapper with responsive aspect ratio */
+        .hero-plate-wrapper {
+          transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.5s ease;
+        }
+        .hero-plate-wrapper:hover {
+          transform: translateY(-4px);
+        }
+        /* Desktop: 4:5 aspect ratio */
+        @media (min-width: 768px) {
+          .hero-plate-wrapper {
+            aspect-ratio: 4 / 5 !important;
+          }
+        }
+
+        /* Hero image optimization for Core Web Vitals */
+        .hero-image {
+          transition: opacity 0.3s ease-in-out;
+          will-change: transform;
+        }
+        .hero-image-placeholder {
+          /* Show placeholder while image loads or if it fails */
+          background: rgba(255, 255, 255, 0.5);
+        }
 
         .hero-chip { transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
         .hero-chip:hover { border-color: ${colors.sage[400]}; background-color: ${colors.sage[50]}; transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(84,124,63,0.35); }
