@@ -122,11 +122,11 @@ const faqSchema = {
 }
 
 export const metadata = {
-  title: 'Perinatal Mental Health FAQ — Postpartum, Loss & Fertility | Rainuka Oberoi, LCSW',
+  title: 'Perinatal Mental Health FAQ — Postpartum, Loss & Fertility | Wonderloud Therapy',
   description:
     'Answers on postpartum depression and anxiety, intrusive thoughts, postpartum rage, pregnancy loss grief, infertility, birth trauma, and starting therapy with a newborn.',
   openGraph: {
-    title: 'Perinatal Mental Health FAQ | Rainuka Oberoi, LCSW',
+    title: 'Perinatal Mental Health FAQ | Wonderloud Therapy',
     description:
       'Postpartum anxiety and OCD, pregnancy loss, infertility, and birth trauma—answered honestly.',
     type: 'website',

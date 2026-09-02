@@ -7,7 +7,7 @@ import { colors } from '@/app/styles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Client Success Stories | Rainuka Oberoi, LCSW',
+  title: 'Client Success Stories | Wonderloud Therapy',
   description:
     'Read real transformation stories from clients who worked through perinatal anxiety, ADHD, career challenges, and grief. De-identified case studies showing what lasting change looks like.',
 }

@@ -37,17 +37,17 @@ const approach = [
   {
     title: 'Trauma-Informed',
     description:
-      'I understand how past experiences shape the present. We move at your pace, honoring your nervous system.',
+      'Your nervous system matters. We move at your pace.',
   },
   {
     title: 'Culturally Humble',
     description:
-      'Your values, your community, your lived experience matter. I\u2019m learning from you, not imposing my worldview.',
+      'Your values matter. I\u2019m learning from you.',
   },
   {
     title: 'Practical',
     description:
-      'You\u2019ll get real tools you can use today\u2014not just insight. Therapy that fits into your actual life.',
+      'Real tools today\u2014not just insight. Therapy that fits your life.',
   },
 ]
 
@@ -185,20 +185,19 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 6. CTA — sage accent (the peak) ---------- */}
-        <section className="section-padding text-white" style={{ backgroundColor: '#547c3f' }}>
+        {/* ---------- 6. CTA — burgundy accent (the peak) ---------- */}
+        <section className="section-padding text-white" style={{ backgroundColor: '#6d3a47' }}>
           <div className="container-base text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to Reclaim Your Peace?</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#e8ede5' }}>
-              Let&apos;s start with a free 15-minute conversation. I&apos;ll listen to what&apos;s
-              brought you here, and you&apos;ll get a real sense of how we&apos;d work together.
+            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#ede3e5' }}>
+              Free 15-minute call. We'll listen, connect, see if we fit.
             </p>
             <Link
               href="/booking"
               style={{
                 display: 'inline-block',
-                backgroundColor: 'white',
-                color: '#547c3f',
+                backgroundColor: '#3d8aa8',
+                color: 'white',
                 padding: '1rem 2rem',
                 fontWeight: 600,
                 borderRadius: '0.5rem',
@@ -209,7 +208,7 @@ export default function Home() {
             >
               Start Your Breakthrough Session
             </Link>
-            <p className="text-sm mt-6" style={{ color: '#d1dcc8' }}>
+            <p className="text-sm mt-6" style={{ color: '#c19b9f' }}>
               No forms beforehand. No obligation to continue.
             </p>
           </div>
@@ -256,8 +255,7 @@ export default function Home() {
               Ready for Clarity?
             </h2>
             <p className="text-lg text-warm-gray-600 mb-8">
-              That&apos;s a reasonable place to be. Reaching out isn&apos;t a commitment to
-              anything—it&apos;s just a conversation. Whenever you&apos;re ready, I&apos;m here.
+              Just a conversation. Whenever you\u2019re ready, I\u2019m here.
             </p>
             <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
               Learn more about me →

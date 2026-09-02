@@ -49,11 +49,11 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: 'Rainuka Oberoi, LCSW | Therapy for Perinatal, ADHD & Career',
+  title: 'Wonderloud Therapy | Therapy for Perinatal, ADHD & Career',
   description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions. Telehealth available. Sliding scale. Based in [location].',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, reproductive trauma',
   openGraph: {
-    title: 'Rainuka Oberoi, LCSW | Therapy for Perinatal, ADHD & Career',
+    title: 'Wonderloud Therapy | Therapy for Perinatal, ADHD & Career',
     description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
     type: 'website',
   },

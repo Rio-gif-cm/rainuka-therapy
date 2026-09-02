@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Rainuka Therapy — Design System (TEST PALETTE)
+ * Wonderloud Therapy — Design System (TEST PALETTE)
  *
  * TEST: Burgundy (primary), Deep Gray (secondary), Sea Blue (accents)
  * Warm-gray/cream carry neutrals.
@@ -64,6 +64,45 @@ const config: Config = {
           300: '#ded3c6',
         },
         // ---- Persona accents (muted, low chroma) ---------------------------
+        // deep-gray — secondary contrast, grounded
+        'deep-gray': {
+          50: '#f5f5f5',
+          100: '#e0e0e0',
+          200: '#c8c8c8',
+          300: '#b0b0b0',
+          400: '#909090',
+          500: '#6b6b6b',
+          600: '#555555',
+          700: '#424242',
+          800: '#333333',
+          900: '#1f1f1f',
+        },
+        // sea-blue — cool accent, calming
+        'sea-blue': {
+          50: '#f0f7fa',
+          100: '#dde9f0',
+          200: '#b8d8e3',
+          300: '#8ec0d3',
+          400: '#5fa5c0',
+          500: '#3d8aa8',
+          600: '#2d7390',
+          700: '#1f5a73',
+          800: '#14435b',
+          900: '#0c2d43',
+        },
+        // blue-herring (optional) — subtle teal-blue
+        'blue-herring': {
+          50: '#f2f9f8',
+          100: '#ddf1f0',
+          200: '#b3e0dd',
+          300: '#89ccc8',
+          400: '#56b3ad',
+          500: '#3d9a94',
+          600: '#2d827f',
+          700: '#1f6a68',
+          800: '#125250',
+          900: '#0a3a38',
+        },
         // clay — warmth, invitation, couples & CTAs
         'clay': {
           50: '#fdf7f4',

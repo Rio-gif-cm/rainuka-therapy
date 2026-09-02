@@ -25,11 +25,11 @@ const accent = specialtyAccents.adhd
 const adhdColor = '#e67e31'
 
 export const metadata: Metadata = {
-  title: 'Adult ADHD Therapy | Diagnosis, Executive Function | Rainuka Oberoi, LCSW',
+  title: 'Adult ADHD Therapy | Diagnosis, Executive Function | Wonderloud Therapy',
   description: 'Therapy for adult ADHD diagnosis, rejection sensitivity, executive dysfunction, and burnout. ADHD-informed, shame-aware, neurodivergent-affirming therapy for late diagnosis.',
   keywords: 'ADHD therapy, adult ADHD, ADHD diagnosis, executive dysfunction, ADHD coaching',
   openGraph: {
-    title: 'Adult ADHD Therapy | Rainuka Oberoi, LCSW',
+    title: 'Adult ADHD Therapy | Wonderloud Therapy',
     description: 'ADHD diagnosis, rejection sensitivity, executive dysfunction. Integrated ADHD-informed therapy.',
     type: 'website',
   },

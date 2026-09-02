@@ -6,7 +6,7 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata = {
-  title: 'LGBTQ+ Therapy That Affirms Your Wholeness | Identity-Centered Care | Rainuka Oberoi, LCSW',
+  title: 'LGBTQ+ Therapy That Affirms Your Wholeness | Identity-Centered Care | Wonderloud Therapy',
   description:
     'Affirming therapy for LGBTQ+ clients: coming out, identity, relationships, family, trauma. No gatekeeping. Your identity is valid. Telehealth, sliding scale.',
 }

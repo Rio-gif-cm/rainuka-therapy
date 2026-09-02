@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import ReferralCode from '@/components/ReferralCode';
 
 export const metadata: Metadata = {
-  title: 'Share Therapy Support | Rainuka Oberoi',
+  title: 'Share Therapy Support | Wonderloud Therapy',
   description: 'Help a friend find therapy support. No strings attached.',
 };
 

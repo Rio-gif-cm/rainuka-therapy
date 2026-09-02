@@ -23,10 +23,10 @@ const accent = specialtyAccents.perinatal
 const perinatalColor = '#c97660'
 
 export const metadata: Metadata = {
-  title: 'Perinatal Therapy | Pregnancy Loss, Postpartum Anxiety, Infertility | Rainuka Oberoi, LCSW',
+  title: 'Perinatal Therapy | Pregnancy Loss, Postpartum Anxiety, Infertility | Wonderloud Therapy',
   description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, and reproductive trauma. Rainuka specializes in trauma-informed perinatal mental health support.',
   openGraph: {
-    title: 'Perinatal Therapy | Rainuka Oberoi, LCSW',
+    title: 'Perinatal Therapy | Wonderloud Therapy',
     description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, reproductive trauma. Compassionate, trauma-informed support.',
     type: 'website',
   },
@@ -43,7 +43,7 @@ export default function PerinatalPage() {
           eyebrow="Perinatal Mental Health"
           title="Perinatal Therapy That Honors Your Body & Mind"
           lead="🤰 Pregnancy, loss, postpartum. What you're carrying isn't weakness."
-          description="Infertility shame. Pregnancy loss grief. Postpartum anxiety and OCD. Reproductive trauma. I specialize in what often goes unnamed—and help you feel less alone."
+          description="Infertility. Loss. Postpartum anxiety. Reproductive trauma. Specialized support for what often goes unspoken."
           ctaLabel="Get Support That Gets You"
         />
 
@@ -78,29 +78,25 @@ export default function PerinatalPage() {
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Trauma-Informed">
               <p>
-                Perinatal experiences—especially loss and reproductive trauma—are deeply held in
-                the body. I work slowly, respecting your nervous system and your timeline.
+                Loss and trauma live in the body. We move at your pace.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Validation, Not Platitudes">
               <p>
-                No &quot;you should just be grateful&quot; or &quot;at least you can try again.&quot;
-                Your grief is real. Your anxiety is real. And both can coexist with joy.
+                Your grief is real. Your anxiety is real. Both coexist with joy.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Practical Tools">
               <p>
-                You&apos;ll learn strategies to manage anxiety, process grief, and rebuild identity.
-                Therapy that fits into your actual life.
+                Strategies to manage anxiety, process grief, rebuild identity.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Culturally Humble">
               <p>
-                Reproductive choices vary by culture, community, and values. I meet you where you
-                are, not where I think you &quot;should&quot; be.
+                I meet you where you are—not where I think you should be.
               </p>
             </SpecialtyCard>
           </SpecialtyGrid>
@@ -116,8 +112,7 @@ export default function PerinatalPage() {
 
           <SpecialtyNote accent={accent} title="Safe Space for Your Experience">
             <p className="mb-0">
-              This is a judgment-free environment. Your timeline, your pace. Every emotion you
-              bring—grief, joy, rage, ambivalence—is welcomed here.
+              Judgment-free. Your pace. Every emotion welcomed.
             </p>
           </SpecialtyNote>
 
@@ -128,25 +123,22 @@ export default function PerinatalPage() {
               items={[
                 <>
                   <strong>A space where you&apos;re not &quot;too much.&quot;</strong> Your anxiety
-                  isn&apos;t annoying. Your grief isn&apos;t weakness. You won&apos;t be rushed.
+                  isn&apos;t annoying. Your grief isn&apos;t weakness.
                 </>,
                 <>
                   <strong>Real understanding of what&apos;s happening.</strong> Perinatal hormones
-                  affect your brain, your body, your emotions. We&apos;ll make sense of that
-                  together.
+                  affect your brain, body, emotions.
                 </>,
                 <>
                   <strong>Permission to feel all of it.</strong> Joy and grief. Relief and loss.
-                  Hope and fear. They can all be true at once.
+                  Hope and fear. All true at once.
                 </>,
                 <>
                   <strong>Practical strategies you can use today.</strong> Anxiety management.
-                  Grounding techniques. How to talk to your partner about what you&apos;re
-                  experiencing.
+                  Grounding techniques. How to talk to your partner.
                 </>,
                 <>
-                  <strong>Rebuilding your sense of self.</strong> Motherhood, pregnancy loss, and
-                  reproductive experiences change who you are. We&apos;ll help you integrate that.
+                  <strong>Rebuilding your sense of self.</strong> Motherhood and pregnancy loss change who you are. We integrate that.
                 </>,
               ]}
             />

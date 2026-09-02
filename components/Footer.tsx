@@ -13,15 +13,7 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
     links: [
       { href: '/perinatal', label: 'Perinatal & Reproductive' },
       { href: '/adhd', label: 'Adult ADHD' },
-      { href: '/couples', label: 'Couples' },
       { href: '/career', label: 'Career Transitions' },
-      { href: '/grief', label: 'Grief & Loss' },
-      { href: '/parents', label: 'Parents' },
-      { href: '/men', label: "Men's Mental Health" },
-      { href: '/lgbtq', label: 'LGBTQ+ Affirming' },
-      { href: '/bipoc', label: 'BIPOC Therapy' },
-      { href: '/neurodivergent', label: 'Neurodivergent' },
-      { href: '/disability-access', label: 'Disability-Affirming' },
     ],
   },
   {
@@ -31,7 +23,6 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
       { href: '/back-to-school', label: 'Back to School Anxiety' },
       { href: '/holiday-stress', label: 'Holiday Stress' },
       { href: '/providers', label: 'Directories & Insurance' },
-      { href: '/financial-access', label: 'Financial Access' },
       { href: '/referrals', label: 'Refer Someone' },
     ],
   },
@@ -39,7 +30,6 @@ const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[
     heading: 'Practice',
     links: [
       { href: '/about', label: 'About Rainuka' },
-      { href: '/case-studies', label: 'Client Stories' },
       { href: '/pricing', label: 'Fees & Sliding Scale' },
       { href: '/faq', label: 'Common Questions' },
       { href: '/booking', label: 'Book a Consult' },

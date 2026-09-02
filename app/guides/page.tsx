@@ -25,7 +25,7 @@ function getAllGuides() {
 }
 
 export const metadata = {
-  title: 'Therapy Guides & Resources | Rainuka Oberoi, LCSW',
+  title: 'Therapy Guides & Resources | Wonderloud Therapy',
   description: 'Read our curated guides on therapy, mental health, perinatal anxiety, ADHD, career transitions, and more. Practical insights to help you understand yourself better.',
   keywords: 'therapy guides, mental health resources, perinatal anxiety, ADHD, career counseling',
 }

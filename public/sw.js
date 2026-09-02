@@ -1,5 +1,5 @@
 /**
- * Service Worker for Rainuka Therapy Website
+ * Service Worker for Wonderloud Therapy Website
  * Provides offline support and intelligent asset caching
  * 
  * Caching Strategy:

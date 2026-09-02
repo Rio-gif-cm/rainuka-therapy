@@ -7,7 +7,7 @@ import { colors } from '@/app/styles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Financial Access & Sliding Scale Fees | Rainuka Oberoi, LCSW',
+  title: 'Financial Access & Sliding Scale Fees | Wonderloud Therapy',
   description:
     'Transparent sliding scale therapy fees, payment plans, pro-bono availability, and community funding resources. Cost should not be the reason you go without support.',
 }

@@ -332,7 +332,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 onChange={handleInputChange}
                 onBlur={handleFieldBlur}
                 onFocus={handleFieldFocus}
-                placeholder="e.g. Sarah or Sarah Chen"
+                placeholder="e.g., Alex, Marcus, Jamie, or your preferred name"
                 className={`form-input transition-all ${
                   fieldTouched.name
                     ? fieldErrors.name

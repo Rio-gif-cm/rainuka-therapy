@@ -87,11 +87,6 @@ const specialties = [
 ]
 
 export default function NicheGrid() {
-  // Get all specialty links for "Explore other specialties" feature
-  const getOtherSpecialties = (currentSlug: string) => {
-    return specialties.filter((s) => s.slug !== currentSlug)
-  }
-
   return (
     <section style={{ ...styles.section, backgroundColor: 'white' }}>
       <div style={styles.container}>
@@ -100,7 +95,7 @@ export default function NicheGrid() {
             Find Your Path Forward
           </h2>
           <p style={{ ...styles.p, maxWidth: '42rem', margin: '0 auto', fontSize: '1.0625rem', color: colors.warmGray[600] }}>
-            Three areas where I've developed deep expertise—and where you might find yourself. (Many clients discover they need support in more than one area.)
+            Three areas where I've developed deep expertise—and where you might find yourself.
           </p>
         </div>
 
@@ -149,28 +144,12 @@ export default function NicheGrid() {
                 >
                   Find Your Path →
                 </span>
-
-                {/* MULTI-PERSONA: Cross-reference other specialties */}
-                {getOtherSpecialties(specialty.slug).length > 0 && (
-                  <div style={{
-                    marginTop: '1rem',
-                    paddingTop: '1rem',
-                    borderTop: `1px solid ${colors.sage[100]}`,
-                    fontSize: '0.8rem',
-                    color: colors.sage[600],
-                    fontStyle: 'italic',
-                  }}>
-                    💡 See also: {getOtherSpecialties(specialty.slug)
-                      .map((s) => s.title)
-                      .join(', ')}
-                  </div>
-                )}
               </div>
             </Link>
           ))}
         </div>
 
-        {/* MULTI-PERSONA: Expanded context for overlapping needs */}
+        {/* Context note for overlapping needs */}
         <div className="card card-tinted card-static" style={{
           marginTop: '3rem',
           textAlign: 'center',

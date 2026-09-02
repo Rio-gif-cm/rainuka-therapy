@@ -53,7 +53,7 @@ export default function AboutPage() {
               {/* Bio Content */}
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
-                  Rainuka Oberoi, LCSW
+                  Rainuka Oberoi, LCSW <span className="text-lg text-sage-600 font-normal">(she/her)</span>
                 </h2>
 
                 <div className="space-y-6 text-warm-gray-600">

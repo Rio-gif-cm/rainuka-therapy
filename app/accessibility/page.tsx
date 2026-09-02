@@ -26,7 +26,7 @@ export default function AccessibilityPage() {
         <section>
           <h2 className="text-2xl font-bold mb-4 text-warm-gray-900">Our Accessibility Commitment</h2>
           <p className="text-warm-gray-700 mb-4 leading-relaxed">
-            At Rainuka Oberoi Therapy, we believe that a therapy website should be as welcoming and accessible as our practice. We're committed to making this site usable by everyone, including people with disabilities and neurodivergent individuals.
+            At Wonderloud Therapy, we believe that a therapy website should be as welcoming and accessible as our practice. We're committed to making this site usable by everyone, including people with disabilities and neurodivergent individuals.
           </p>
           <p className="text-warm-gray-700 leading-relaxed">
             We aim to meet <strong>WCAG 2.1 Level AA</strong> standards — the widely recognized baseline for web accessibility. More importantly, we go beyond compliance to honor the deeper accessibility needs of trauma survivors, disabled clients, neurodivergent people (ADHD, autism), and LGBTQ+ individuals who seek our care.
@@ -187,7 +187,7 @@ export default function AccessibilityPage() {
         <section>
           <h2 className="text-2xl font-bold mb-4 text-warm-gray-900">WCAG 2.1 Compliance</h2>
           <p className="text-warm-gray-700 mb-4 leading-relaxed">
-            Rainuka Oberoi Therapy is committed to ensuring digital accessibility. This website aims to conform to WCAG 2.1 Level AA standards. If you believe there is a failure to conform, please contact us using the information above.
+            Wonderloud Therapy is committed to ensuring digital accessibility. This website aims to conform to WCAG 2.1 Level AA standards. If you believe there is a failure to conform, please contact us using the information above.
           </p>
           <p className="text-sm text-warm-gray-600">
             Last updated: August 31, 2026

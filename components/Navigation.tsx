@@ -38,28 +38,10 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'About', href: '/about' },
   {
     label: 'Specialties',
-    groups: [
-      {
-        heading: 'By Focus',
-        items: [
-          { href: '/perinatal', label: 'Perinatal & Reproductive' },
-          { href: '/adhd', label: 'Adult ADHD' },
-          { href: '/couples', label: 'Couples' },
-          { href: '/parents', label: 'Parents & Caregivers' },
-          { href: '/career', label: 'Career Transitions' },
-          { href: '/grief', label: 'Grief & Loss' },
-        ],
-      },
-      {
-        heading: 'Affirming Care',
-        items: [
-          { href: '/men', label: "Men's Mental Health" },
-          { href: '/lgbtq', label: 'LGBTQ+ Affirming' },
-          { href: '/bipoc', label: 'BIPOC Therapy' },
-          { href: '/neurodivergent', label: 'Neurodivergent' },
-          { href: '/disability-access', label: 'Disability-Affirming' },
-        ],
-      },
+    children: [
+      { href: '/perinatal', label: 'Perinatal & Reproductive' },
+      { href: '/adhd', label: 'Adult ADHD' },
+      { href: '/career', label: 'Career Transitions' },
     ],
   },
   {
@@ -69,7 +51,6 @@ const NAV_ITEMS: NavItem[] = [
         heading: 'Read & Learn',
         items: [
           { href: '/guides', label: 'Guides & Articles' },
-          { href: '/case-studies', label: 'Case Studies' },
           { href: '/back-to-school', label: 'Back to School Anxiety' },
           { href: '/holiday-stress', label: 'Holiday Stress' },
         ],
@@ -78,7 +59,6 @@ const NAV_ITEMS: NavItem[] = [
         heading: 'Access & Referrals',
         items: [
           { href: '/providers', label: 'Directories & Insurance' },
-          { href: '/financial-access', label: 'Financial Access' },
           { href: '/referrals', label: 'Refer Someone' },
         ],
       },

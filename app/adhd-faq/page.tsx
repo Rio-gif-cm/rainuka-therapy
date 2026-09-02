@@ -103,10 +103,10 @@ const faqSchema = {
 }
 
 export const metadata = {
-  title: 'Adult ADHD FAQ — Late Diagnosis, Therapy & Daily Life | Rainuka Oberoi, LCSW',
+  title: 'Adult ADHD FAQ — Late Diagnosis, Therapy & Daily Life | Wonderloud Therapy',
   description: 'ADHD FAQ: late diagnosis, executive dysfunction, rejection sensitivity, medication vs therapy, time blindness, work accommodations. Rainuka Oberoi, LCSW.',
   openGraph: {
-    title: 'Adult ADHD FAQ | Rainuka Oberoi, LCSW',
+    title: 'Adult ADHD FAQ | Wonderloud Therapy',
     description: 'Late ADHD diagnosis, executive dysfunction, RSD, and what therapy adds to medication—answered plainly.',
     type: 'website',
   },

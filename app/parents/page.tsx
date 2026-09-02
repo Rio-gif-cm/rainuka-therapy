@@ -62,11 +62,11 @@ const faqSchema = {
 }
 
 export const metadata = {
-  title: 'Parenting Therapy: Managing the Weight | Rainuka Oberoi, LCSW',
+  title: 'Parenting Therapy: Managing the Weight | Wonderloud Therapy',
   description:
     'Therapy for parenting anxiety, caregiver burnout, parental guilt, and boundary-setting. For parents, single parents, and sandwich-generation caregivers who are running on empty.',
   openGraph: {
-    title: 'Parenting Therapy: Managing the Weight | Rainuka Oberoi, LCSW',
+    title: 'Parenting Therapy: Managing the Weight | Wonderloud Therapy',
     description:
       'Parenting anxiety, caregiver burnout, guilt, and boundaries. Support for the person doing the caring.',
     type: 'website',

@@ -87,7 +87,7 @@ export const getLocalBusinessSchema = (config?: {
 export const getAggregateRatingSchema = (testimonialCount: number) => ({
   '@context': 'https://schema.org',
   '@type': 'AggregateRating',
-  '@id': 'https://rainukatherapy.com#aggregate-rating',
+  '@id': 'https://wonderloudtherapy.com#aggregate-rating',
   ratingValue: '5',
   bestRating: '5',
   worstRating: '1',
