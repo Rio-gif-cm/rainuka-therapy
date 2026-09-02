@@ -46,7 +46,7 @@ export default function ADHDPage() {
           eyebrow="Adult ADHD"
           title="ADHD Therapy That Reframes Your Brain, Not Your Shame"
           lead="🧠 Diagnosed at 30? 40? 50? Finally it makes sense."
-          description="Late ADHD diagnosis comes with grief, relief, and confusion. Therapy to understand yourself—not fix yourself. Shame-aware. Neurodivergent-affirming."
+          description="Late ADHD diagnosis comes with grief, relief, and confusion. Therapy to understand yourself, not fix yourself. Shame-aware. Neurodivergent-affirming."
           ctaLabel="Get Support That Gets You"
         />
 
@@ -80,18 +80,18 @@ export default function ADHDPage() {
             intro="Executive function difference—your brain works differently."
           />
 
-          <SpecialtyNote accent={accent} title="This might show up as:">
+          <SpecialtyNote accent={accent} title="What this shows up as:">
             <ul>
-              <li>Time blindness (&quot;wait, how long was I doing that?&quot;)</li>
-              <li>Starting projects (paralyzed by choice or overwhelm)</li>
-              <li>Emotional regulation (feelings hit harder, faster)</li>
-              <li>Organization (systems feel impossible to keep)</li>
-              <li>Shame (feeling broken because you can&apos;t &quot;just do it&quot;)</li>
+              <li>Time blindness: "wait, how long was I doing that?"</li>
+              <li>Starting projects—paralyzed by choice or overwhelm</li>
+              <li>Emotional regulation: feelings hit harder and faster</li>
+              <li>Organization: systems feel impossible to maintain</li>
+              <li>Shame: the story that you're broken because you can't "just do it"</li>
             </ul>
           </SpecialtyNote>
 
           <p className="text-warm-gray-700 mt-6 mb-0">
-            <strong>The real talk:</strong> Grief for lost time. Relief: I&apos;m different, not broken.
+            You might feel relief (finally has a name) and grief (lost decades). Both are real. That's where therapy comes in.
           </p>
         </SpecialtySection>
 
@@ -123,7 +123,7 @@ export default function ADHDPage() {
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Grief + Excitement">
               <p>
-                Process grief. Explore what&apos;s possible. Identity integration.
+                You'll process the grief of lost time and explore what's possible now. That's identity integration.
               </p>
             </SpecialtyCard>
 
@@ -157,8 +157,7 @@ export default function ADHDPage() {
                 because your ADHD went unrecognized.
               </li>
               <li>
-                <strong>Self-compassion rewires how you treat yourself.</strong> Adults with ADHD
-                who develop self-compassion see marked improvement in mental health.
+                <strong>Self-compassion rewires how you treat yourself.</strong> Research shows that developing self-compassion leads to measurably lower anxiety and depression scores in adults with ADHD.
               </li>
               <li>
                 <strong>Identity reconstruction is the real work.</strong> Instead of &quot;I&apos;m
@@ -168,8 +167,7 @@ export default function ADHDPage() {
           </SpecialtyNote>
 
           <p className="text-lg font-semibold mt-8 mb-4" style={{ color: accent.accentText }}>
-            The shift you&apos;re making now is not from broken to fixed. It&apos;s from
-            self-attack to self-understanding.
+            You're moving from self-attack to self-understanding. That's the actual shift.
           </p>
 
           <p className="text-warm-gray-700 mb-0">
@@ -233,7 +231,7 @@ export default function ADHDPage() {
               },
               {
                 q: 'I was diagnosed decades late. Is it too late to do anything about it?',
-                a: 'No. Understanding your brain reframes your entire history and changes how you build the next chapter. Clients who start in their 40s and 50s often describe it as the most clarifying work they have ever done.',
+                a: 'No. Understanding your brain reframes everything. Clients who start therapy in their 40s and 50s report that it finally makes sense of decades of patterns they couldn\'t explain before.',
               },
             ]}
           />
