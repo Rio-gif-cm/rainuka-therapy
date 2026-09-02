@@ -1,0 +1,153 @@
+{
+  "audit": "CRITIC #6: Ruthless Accessibility & Legal Compliance Audit",
+  "date": "2026-09-01",
+  "version": "1.0",
+  "totalGaps": 30,
+  "bySeverity": {
+    "CRITICAL": 5,
+    "HIGH": 10,
+    "MEDIUM": 9,
+    "LOW": 6
+  },
+  "categories": {
+    "WCAG AA Keyboard Navigation": {
+      "gaps": 5,
+      "critical": 2,
+      "issues": [
+        "Missing skip-to-main-content link",
+        "No global :focus-visible CSS",
+        "Dropdown menu lacks Escape key handler",
+        "Calendar date picker missing keyboard navigation",
+        "Form error messages not announced to screen readers"
+      ]
+    },
+    "Color Contrast": {
+      "gaps": 4,
+      "critical": 0,
+      "issues": [
+        "Blush-400 (#c08e8d) fails contrast on white (~2.8:1)",
+        "Blush-300 (#d6adac) fails contrast on white (~2.5:1)",
+        "Gray-400/500 text may fail contrast",
+        "No automated contrast testing in CI/CD"
+      ]
+    },
+    "Screen Reader & Semantic HTML": {
+      "gaps": 4,
+      "critical": 1,
+      "issues": [
+        "Root layout missing <main> landmark",
+        "Missing HTML lang attribute",
+        "Excessive aria-hidden (43 instances, unclear purpose)",
+        "Very few aria-label attributes (only 27 found)"
+      ]
+    },
+    "Form Accessibility": {
+      "gaps": 4,
+      "critical": 0,
+      "issues": [
+        "Form inputs missing aria-required attribute",
+        "Form errors not associated with fields (missing aria-describedby)",
+        "Potential placeholder-only labels (verify labels exist)",
+        "Missing required field indicators"
+      ]
+    },
+    "Alternative Text & Images": {
+      "gaps": 2,
+      "critical": 0,
+      "issues": [
+        "Alt text descriptions are generic (\"photo\" instead of descriptive)",
+        "OpenGraph images missing alt text"
+      ]
+    },
+    "Legal & PIPEDA Compliance": {
+      "gaps": 5,
+      "critical": 3,
+      "issues": [
+        "Privacy policy only mentions HIPAA, not PIPEDA (Canadian law)",
+        "No contact information for Privacy Commissioner complaints",
+        "Missing Terms of Service page",
+        "Missing healthcare/therapy disclaimer",
+        "No business registration or tax information disclosed"
+      ]
+    },
+    "Mobile & Touch Accessibility": {
+      "gaps": 2,
+      "critical": 0,
+      "issues": [
+        "Interactive elements with minimal touch targets (<44x44px)",
+        "Viewport meta tag missing or incomplete"
+      ]
+    },
+    "Links & Navigation": {
+      "gaps": 1,
+      "critical": 0,
+      "issues": [
+        "Generic link text (\"Read more\", \"Learn more\") without context"
+      ]
+    },
+    "Testing & Best Practice": {
+      "gaps": 3,
+      "critical": 0,
+      "issues": [
+        "No automated accessibility testing in CI/CD pipeline",
+        "No accessibility statement or policy page",
+        "No cookie/tracking consent banner (GDPR/PIPEDA violation)"
+      ]
+    }
+  },
+  "wcagComplianceStatus": {
+    "level": "AA",
+    "passing": "37%",
+    "failing": "63%",
+    "criticalFailures": [
+      "2.4.1 Bypass Blocks (skip link missing)",
+      "2.4.7 Focus Visible (no CSS)",
+      "1.3.1 Info and Relationships (no <main>, excessive aria-hidden)"
+    ]
+  },
+  "canadianLegalStatus": {
+    "status": "NON-COMPLIANT",
+    "violations": [
+      "PIPEDA not mentioned in privacy policy",
+      "Missing privacy complaint process",
+      "Missing healthcare disclaimer (liability risk)",
+      "No Terms of Service",
+      "No business registration information"
+    ]
+  },
+  "remediationEstimate": {
+    "criticalFixes": "70 minutes",
+    "allHighPriority": "4-5 hours",
+    "complete": "8-12 hours"
+  },
+  "keyFindings": {
+    "keyboardAccessibility": "BROKEN - Users cannot skip navigation, see focus, or navigate menus/forms",
+    "screenReaderSupport": "PARTIAL - Missing landmarks, excessive hidden content",
+    "colorContrast": "FAILURES - 2 primary color combinations fail 4.5:1 ratio",
+    "forms": "POOR - Errors not announced, fields not marked required",
+    "legalCompliance": "CRITICAL - PIPEDA missing, no disclaimer, no terms"
+  },
+  "recommendations": {
+    "immediate": [
+      "Add <main> landmark to app/layout.tsx",
+      "Add skip-to-main-content link",
+      "Add global :focus-visible CSS",
+      "Add healthcare disclaimer to footer",
+      "Update privacy policy with PIPEDA compliance"
+    ],
+    "shortTerm": [
+      "Fix color contrast on testimonials (use blush-600/700)",
+      "Add Escape key handler to dropdowns",
+      "Add keyboard navigation to calendar picker",
+      "Add aria-live to form error messages",
+      "Create Terms of Service page"
+    ],
+    "longTerm": [
+      "Implement automated accessibility testing (axe, lighthouse)",
+      "Conduct full color contrast audit",
+      "Review all images for quality alt text",
+      "Create accessibility statement",
+      "Regular accessibility audits (quarterly)"
+    ]
+  }
+}
