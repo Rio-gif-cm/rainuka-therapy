@@ -17,14 +17,14 @@ const TestimonialCard = dynamic(() => import('@/components/TestimonialCard'), {
 })
 
 export const metadata: Metadata = {
-  title: 'Therapy for Perinatal, ADHD & Career | Rainuka',
+  title: 'Therapy for Perinatal, ADHD & Career | Rainuka Therapy',
   description: 'Trauma-informed therapy for perinatal grief, postpartum anxiety, ADHD diagnosis, and career burnout. Get your free 15-minute consultation today.',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, trauma-informed',
   openGraph: {
-    title: 'Therapy for Perinatal, ADHD & Career | Rainuka',
+    title: 'Therapy for Perinatal, ADHD & Career | Rainuka Therapy',
     description: 'Trauma-informed therapy for perinatal grief, postpartum anxiety, ADHD diagnosis, and career burnout. Get your free 15-minute consultation today.',
     type: 'website',
-    url: 'https://wonderloud-therapy.com',
+    url: 'https://rainukatherapy.com',
   },
 }
 

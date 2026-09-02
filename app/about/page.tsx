@@ -43,12 +43,13 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 max-w-5xl mx-auto">
               {/* Photo placeholder */}
               <div className="flex items-center justify-center">
-                <div className="aspect-square rounded-lg bg-gradient-to-br from-burgundy-200 to-warm-accent-light overflow-hidden shadow-lg flex items-center justify-center w-80 h-80">
+                <div className="aspect-square rounded-lg bg-gradient-to-br from-burgundy-200 to-warm-accent-light overflow-hidden shadow-lg flex items-center justify-center w-80 h-80 flex-col gap-4">
                   <div className="text-center">
                     <div className="text-6xl mb-4">👩‍⚕️</div>
                     <p className="text-warm-gray-600 font-medium">
                       Professional Photo
                     </p>
+                    <p className="text-xs text-warm-gray-500 mt-2">(Coming soon)</p>
                   </div>
                 </div>
               </div>
@@ -212,10 +213,10 @@ export default function AboutPage() {
                   I am a Licensed Clinical Therapist, regulated in Canada as my primary credential. I'm also licensed in California and Florida. For international clients: Canada is my primary jurisdiction for practice and regulations. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
                 </p>
                 <div className="space-y-2 text-sm text-warm-gray-600">
-                  <p>• <strong>Canada:</strong> Licensed and regulated under [Provincial Regulatory Body]</p>
+                  <p>• <strong>Canada:</strong> Licensed and regulated by the province of Ontario</p>
                   <p>• <strong>California:</strong> Licensed Clinical Therapist – License verification available on request</p>
                   <p>• <strong>Florida:</strong> Licensed Clinical Therapist – License verification available on request</p>
-                  <p className="text-xs text-burgundy-600 mt-3"><strong>Note:</strong> For complaints or regulatory inquiries in Canada, contact [Provincial College/Board]. For U.S. licensing issues, contact the respective state licensing board.</p>
+                  <p className="text-xs text-primary-600 mt-3"><strong>Note:</strong> For complaints or regulatory inquiries in Canada, contact the Ontario College of Social Workers. For U.S. licensing issues, contact the respective state licensing board.</p>
                 </div>
               </div>
 

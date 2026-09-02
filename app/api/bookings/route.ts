@@ -121,7 +121,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: 'Booking submission received. I\\'ll contact you within 24 hours.',
+        message: "Booking submission received. I'll contact you within 24 hours.",
       },
       { status: 200 }
     )
