@@ -99,7 +99,7 @@ export const MICROCOPY = {
    * Context: Peak trust moment. Celebrate, confirm, set expectations for next step.
    */
   success: {
-    primary: (phone) =>
+    primary: (phone: string) =>
       `Got it! I'll call ${phone} by tomorrow at this time to confirm your session.\nNo obligation—if we're not a fit, no worries. See you soon.`,
     headline: "You're all set!",
     secondaryHeadline: "What happens next:",
