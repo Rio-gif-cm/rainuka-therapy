@@ -647,7 +647,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <span className="text-lg flex-shrink-0">✓</span>
               <div>
                 <p className="text-sm font-semibold text-sage-800">100% confidential &amp; HIPAA-protected</p>
-                <p className="text-xs text-sage-700 mt-1">Your privacy and trust matter. Everything you share is secure and stays between us.</p>
+                <p className="text-xs text-sage-700 mt-1">Your privacy matters. Everything you share stays between us.</p>
               </div>
             </div>
           </div>
@@ -658,7 +658,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 <span className="text-xl">⏰</span>
                 <div>
                   <p className="text-sm font-semibold text-warm-gray-900">What happens next</p>
-                  <p className="text-xs text-warm-gray-600 mt-1">I&apos;ll review your information and respond within 24 hours with available times for our free 15-minute call. Most people meet with me within 1-2 weeks.</p>
+                  <p className="text-xs text-warm-gray-600 mt-1">I'll review your information and respond within 24 hours with available times for our free call. Most people meet with me within 1-2 weeks.</p>
                 </div>
               </div>
               <div className="flex gap-2">
@@ -688,7 +688,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               aria-describedby={fieldTouched.consent && fieldErrors.consent ? 'consent-error' : undefined}
             />
             <label htmlFor="consent" className="text-base text-warm-gray-600 cursor-pointer flex-1">
-              I'm ready to book. I understand I'll be contacted by phone and email, and I've reviewed the privacy policy.
+              I'm ready to book. I understand you'll contact me by phone and email, and I've read the privacy policy.
             </label>
           </div>
           {fieldTouched.consent && fieldErrors.consent && (
@@ -706,10 +706,10 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             <span className="text-3xl">🎉</span>
             <div className="flex-1">
               <p className="text-sage-800 font-semibold mb-2">
-                Great! Your session is booked.
+                Perfect. I've got your information.
               </p>
               <p className="text-sage-700 text-sm mb-4">
-                I've received your information and will contact you within 24 hours to confirm your free 15-minute call and find a time that works for you.
+                I'll reach out within 24 hours to confirm the time and make sure it works for you.
               </p>
               <div className="bg-white/60 rounded p-3 text-xs text-sage-800 border border-sage-200">
                 <p className="font-medium mb-2">What happens next:</p>
@@ -731,7 +731,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             <span className="text-2xl">⚠️</span>
             <div className="flex-1">
               <p className="text-alert-700 font-semibold mb-2">
-                Something went wrong
+                Something didn't go through
               </p>
               <p className="text-alert-600 text-sm mb-4">
                 {submitError}
@@ -743,14 +743,14 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                   }}
                   className="text-sm font-medium text-alert-600 hover:text-alert-700 hover:underline transition-colors"
                 >
-                  ↻ Try submitting again
+                  ↻ Try again
                 </button>
                 <span className="text-alert-600">•</span>
                 <a
                   href="mailto:hello@rainukatherapy.com"
                   className="text-sm font-medium text-alert-600 hover:text-alert-700 hover:underline transition-colors"
                 >
-                  📧 Email me directly
+                  📧 Email me
                 </a>
               </div>
             </div>
