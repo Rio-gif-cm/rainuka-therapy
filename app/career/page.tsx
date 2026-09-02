@@ -68,7 +68,7 @@ export default function CareerPage() {
 
           <SpecialtyNote accent={accent} title="I'm not a life coach.">
             <p className="mb-0">
-              I&apos;m not going to tell you what job to get or whether you should quit.
+              I&apos;m not here to tell you what to do. You know yourself best—I help you think clearly enough to trust that knowing.
             </p>
           </SpecialtyNote>
 

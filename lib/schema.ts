@@ -1,5 +1,5 @@
 /**
- * Consolidated schema.org structured data for Rainuka Therapy
+ * Consolidated schema.org structured data for Wonderloud Therapy
  * Single source of truth for LocalBusiness and AggregateRating schemas
  * Used in app/layout.tsx (global) to avoid duplication
  */
@@ -17,12 +17,12 @@ export const getLocalBusinessSchema = (config?: {
 }) => ({
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'ProfessionalService'],
-  '@id': 'https://rainukatherapy.com#organization',
-  name: 'Rainuka Oberoi, LCSW',
+  '@id': 'https://wonderloudtherapy.com#organization',
+  name: 'Wonderloud Therapy',
   description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
-  url: 'https://rainukatherapy.com',
+  url: 'https://wonderloudtherapy.com',
   telephone: config?.telephone || '+1-555-123-4567',
-  email: config?.email || 'contact@rainukatherapy.com',
+  email: config?.email || 'contact@wonderloudtherapy.com',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'US',
@@ -34,13 +34,13 @@ export const getLocalBusinessSchema = (config?: {
     name: 'California',
   },
   priceRange: config?.priceRange || '$$',
-  image: config?.image || 'https://rainukatherapy.com/logo.png',
+  image: config?.image || 'https://wonderloudtherapy.com/logo.png',
   sameAs: [],
   // Therapist credential markup for YMYL credibility
   hasCredential: [
     {
       '@type': 'Credential',
-      '@id': 'https://rainukatherapy.com#lcsw-credential',
+      '@id': 'https://wonderloudtherapy.com#lcsw-credential',
       name: 'Licensed Clinical Social Worker (LCSW)',
       credentialCategory: 'License',
       areaServed: {

@@ -9,11 +9,11 @@ import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
-  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Rainuka Oberoi, LCSW.',
+  title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
+  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Founded by Rainuka Oberoi, LCSW.',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, trauma-informed',
   openGraph: {
-    title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Rainuka Oberoi, LCSW',
+    title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
     description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach.',
     type: 'website',
   },

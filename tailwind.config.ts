@@ -1,12 +1,11 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Rainuka Therapy — Design System
+ * Rainuka Therapy — Design System (TEST PALETTE)
  *
- * ONE palette. Sage is the brand. Warm-gray/cream carry every neutral.
- * Four low-chroma persona accents (clay, dusk, honey, blush) provide
- * differentiation without shouting; `alert` is the only red and it is
- * a muted brick, never a fire-engine red.
+ * TEST: Burgundy (primary), Deep Gray (secondary), Sea Blue (accents)
+ * Warm-gray/cream carry neutrals.
+ * Four low-chroma persona accents provide differentiation.
  *
  * Rule of thumb: no raw Tailwind palette colors (blue/emerald/rose/amber/
  * purple/slate/gray/...) anywhere in app/ or components/.
@@ -19,18 +18,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ---- Brand primary -------------------------------------------------
+        // ---- Brand primary — BURGUNDY (TEST) -------------------------------------------------
+        'burgundy': {
+          50: '#f7f3f4',
+          100: '#ede3e5',
+          200: '#d9bfc5',
+          300: '#c19b9f',
+          400: '#a8707f',
+          500: '#8a4f61',
+          600: '#6d3a47',
+          700: '#58303a',
+          800: '#482a32',
+          900: '#3c222a',
+        },
+        // Legacy alias for sage (maps to burgundy for testing)
         'sage': {
-          50: '#f8faf7',
-          100: '#e8ede5',
-          200: '#d1dcc8',
-          300: '#b5c7aa',
-          400: '#9dbb8d',
-          500: '#82a86c',
-          600: '#6b944f',
-          700: '#547c3f',
-          800: '#426232',
-          900: '#334c27',
+          50: '#f7f3f4',
+          100: '#ede3e5',
+          200: '#d9bfc5',
+          300: '#c19b9f',
+          400: '#a8707f',
+          500: '#8a4f61',
+          600: '#6d3a47',
+          700: '#58303a',
+          800: '#482a32',
+          900: '#3c222a',
         },
         // ---- Neutrals ------------------------------------------------------
         'warm-gray': {

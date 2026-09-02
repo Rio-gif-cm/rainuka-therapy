@@ -62,6 +62,13 @@ export default function AboutPage() {
                     career transitions—with warmth, clarity, and practical support.
                   </p>
 
+                  {/* Age requirement notice */}
+                  <div className="bg-sage-50 border-l-4 border-sage-400 rounded p-4">
+                    <p className="font-medium text-sage-800 text-sm">
+                      <strong>Important:</strong> This practice is for adults 18 and older. I specialize in adult mental health and am not able to work with minors.
+                    </p>
+                  </div>
+
                   <p>
                     I specialize in what often goes unnamed: infertility grief, postpartum anxiety, ADHD shame, 
                     burnout, identity questions. And I do this work because I've been there myself.
