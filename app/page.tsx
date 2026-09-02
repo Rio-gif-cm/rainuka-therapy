@@ -4,13 +4,14 @@ import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import NicheGrid from '@/components/NicheGrid'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import Link from 'next/link'
 import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
-  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Founded by Rainuka Oberoi, LCSW.',
+  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Licensed in Canada, California, and Florida.',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, trauma-informed',
   openGraph: {
     title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
@@ -37,17 +38,17 @@ const approach = [
   {
     title: 'Trauma-Informed',
     description:
-      'Your nervous system matters. We move at your pace.',
+      'I track your nervous system. Healing happens at your pace, not mine.',
   },
   {
     title: 'Culturally Humble',
     description:
-      'Your values matter. I\'m learning from you.',
+      'Your values aren\'t something I accommodate—they\'re something I\'m learning from. I don\'t assume.',
   },
   {
     title: 'Practical',
     description:
-      'Real tools that work today, not just insight. Therapy that fits your actual life.',
+      'Tools you\'ll use this week. Not endless talking—strategies that shift how you function at home, work, with your kids.',
   },
 ]
 
@@ -98,8 +99,12 @@ export default function Home() {
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
-                What clients say
+                What clients report
               </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto mb-8">
+              <TestimonialConsentDisclaimer />
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -161,10 +166,10 @@ export default function Home() {
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-widest text-sage-600 mb-4">
-                Real feedback from real clients
+                What people tell me after sessions
               </p>
               <h2 className="text-4xl font-serif font-bold text-warm-gray-900">
-                What people say when the session ends
+                Client stories
               </h2>
             </div>
 

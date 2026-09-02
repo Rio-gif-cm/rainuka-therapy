@@ -5,6 +5,7 @@ import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import { GriefIcon } from '@/components/SpecialtyIcons'
 import { testimonialsByCategory } from '@/src/data/testimonials'
 
@@ -516,6 +517,9 @@ export default function GriefPage() {
                 <p className="text-lg text-warm-gray-600">
                   How others have found meaning and continuity after grief
                 </p>
+              </div>
+              <div className="max-w-4xl mx-auto mb-8">
+                <TestimonialConsentDisclaimer />
               </div>
               <div className="grid md:grid-cols-2 gap-8">
                 {testimonialsByCategory.grief.map((testimonial, index) => (

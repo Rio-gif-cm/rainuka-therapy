@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import {
   specialtyAccents,
   SpecialtyHero,
@@ -202,6 +203,9 @@ export default function CareerPage() {
               eyebrow="What Clients Say"
               title="From Burnout to Clarity"
             />
+            <div className="max-w-4xl mx-auto mb-8">
+              <TestimonialConsentDisclaimer />
+            </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonialsByCategory.career.map((testimonial, index) => (
                 <TestimonialCard

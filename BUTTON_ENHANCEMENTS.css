@@ -1,0 +1,338 @@
+/**
+ * BUTTON & INTERACTIVE ELEMENTS ENHANCEMENTS
+ * Add these to app/globals.css after the existing button styles
+ * 
+ * Audit improvements implemented:
+ * ✅ #5: Disabled state cursor behavior
+ * ✅ #7: Focus-visible ring styling (WCAG AA)
+ * ✅ #11: Robust loading animation keyframes
+ * ✅ #4: Primary button hover background shift (already in globals.css)
+ */
+
+/* ========================================
+   LOADING STATE ANIMATION KEYFRAMES
+   Improvement #11: Define shimmer/spin animation
+   Used by EnhancedButton loading state
+   ======================================== */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* ========================================
+   FORM FEEDBACK ANIMATIONS
+   Used by EnhancedFormInput and EnhancedTextarea
+   ======================================== */
+
+@keyframes successCheckmark {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes errorMessageSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes successMessageFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ========================================
+   FOCUS-VISIBLE RING STYLING
+   Improvement #7: WCAG AA compliant keyboard focus indicators
+   Applied to all button variants and interactive elements
+   ======================================== */
+
+.btn:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+  box-shadow: 
+    0 0 0 3px rgba(107, 148, 79, 0.1),
+    var(--current-shadow, 0 4px 6px rgba(107, 148, 79, 0.15));
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -4px;
+  box-shadow: 
+    0 0 0 4px var(--sage-600),
+    0 10px 25px rgba(107, 148, 79, 0.25);
+}
+
+.btn-outline:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+}
+
+/* ========================================
+   ENHANCED DISABLED STATE STYLING
+   Improvement #9: More obvious disabled visual feedback
+   Uses color shift + reduced opacity + no-pointer-events
+   ======================================== */
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-primary:disabled {
+  background-color: var(--sage-300);
+  color: var(--warm-gray-600);
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-primary:disabled:hover,
+.btn-primary:disabled:active {
+  /* Override hover/active states for disabled buttons */
+  background-color: var(--sage-300);
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-secondary:disabled {
+  background-color: var(--sage-100);
+  color: var(--sage-400);
+  border-color: var(--sage-200);
+  box-shadow: none;
+}
+
+.btn-outline:disabled {
+  border-color: var(--sage-200);
+  color: var(--sage-300);
+  background-color: var(--warm-gray-50);
+}
+
+/* ========================================
+   SECONDARY BUTTON VARIANT REDESIGN
+   Improvement #14: Clear visual hierarchy between primary & secondary
+   Secondary: lighter, less urgent, de-emphasized
+   ======================================== */
+
+.btn-secondary {
+  background-color: var(--sage-50);
+  color: var(--sage-700);
+  border: 1px solid var(--sage-200);
+  box-shadow: none;
+  transition: all 0.15s ease-out;
+}
+
+.btn-secondary:hover {
+  background-color: var(--sage-100);
+  border-color: var(--sage-300);
+  color: var(--sage-700);
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
+  transform: scale(1.02);
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
+}
+
+.btn-secondary:active {
+  background-color: var(--sage-100);
+  border-color: var(--sage-300);
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
+}
+
+/* ========================================
+   LOADING STATE CURSOR
+   Improvement #6: Visual feedback that action is in progress
+   Pair with aria-busy="true" on button element
+   ======================================== */
+
+.btn[data-loading="true"] {
+  cursor: wait;
+}
+
+.btn[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* ========================================
+   FORM INPUT FOCUS STATES
+   Matches button focus ring pattern for consistency
+   ======================================== */
+
+.form-input:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+  border-color: var(--sage-600);
+  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+}
+
+.form-input:disabled {
+  background-color: var(--warm-gray-50);
+  color: var(--warm-gray-400);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ========================================
+   CARD FOCUS STATE
+   Keyboard navigation support for hoverable cards
+   ======================================== */
+
+.card:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+  border-color: var(--sage-600);
+}
+
+/* ========================================
+   REDUCED MOTION SUPPORT
+   Respect user's prefers-reduced-motion setting
+   All animations disabled or slowed significantly
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .form-input,
+  .form-input:focus-visible,
+  .card {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  /* Disable transforms on reduced-motion devices */
+  .btn:hover {
+    transform: none;
+  }
+
+  .btn-primary:hover {
+    transform: none;
+  }
+
+  .btn-outline:hover {
+    transform: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
+
+/* ========================================
+   ICON BUTTON VARIANT (Future Enhancement #16)
+   Square aspect ratio for close/toggle buttons
+   Use: <button class="btn btn-icon btn-primary">...</button>
+   ======================================== */
+
+.btn-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon.size-sm {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.btn-icon.size-lg {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+}
+
+/* ========================================
+   FULL-WIDTH BUTTON SUPPORT (Enhancement #3)
+   Use: <button class="btn-full">...</button>
+   ======================================== */
+
+.btn-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ========================================
+   TOGGLE BUTTON STATE (Enhancement #8)
+   For buttons that can be toggled on/off
+   Pair with [aria-pressed="true/false"]
+   ======================================== */
+
+.btn[aria-pressed="true"] {
+  background-color: var(--sage-700);
+  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+}
+
+.btn-outline[aria-pressed="true"] {
+  background-color: var(--sage-50);
+  border-color: var(--sage-700);
+  color: var(--sage-700);
+}
+
+/* ========================================
+   ACCESSIBILITY: TEXT CONTRAST IN ALL STATES
+   Ensures WCAG AA compliance (4.5:1 minimum)
+   ======================================== */
+
+/* Verify button text remains readable when disabled */
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-outline:disabled {
+  color: var(--warm-gray-600);
+}
+
+/* Ensure secondary button text is dark enough on light backgrounds */
+.btn-secondary {
+  color: var(--sage-700);
+  font-weight: 600;
+}
+
+/* Ensure outline button text is dark enough */
+.btn-outline {
+  color: var(--sage-600);
+  font-weight: 600;
+}

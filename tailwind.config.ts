@@ -18,21 +18,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ---- Brand primary - BURGUNDY (TEST) -------------------------------------------------
+        // ---- Brand primary - BURGUNDY ✅ OFFICIAL -----------------------------------------------
         'burgundy': {
-          50: '#f7f3f4',
-          100: '#ede3e5',
-          200: '#d9bfc5',
-          300: '#c19b9f',
-          400: '#a8707f',
-          500: '#8a4f61',
-          600: '#6d3a47',
-          700: '#58303a',
-          800: '#482a32',
-          900: '#3c222a',
-        },
-        // Legacy alias for sage (maps to burgundy for testing)
-        'sage': {
           50: '#f7f3f4',
           100: '#ede3e5',
           200: '#d9bfc5',

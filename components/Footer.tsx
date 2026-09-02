@@ -78,7 +78,7 @@ export default function Footer() {
               className="block text-xs font-medium tracking-widest uppercase mt-1"
               style={{ color: colors.sage[300] }}
             >
-              Licensed Clinical Social Worker
+              Licensed Therapist (Canada, California, Florida)
             </span>
           </Link>
 

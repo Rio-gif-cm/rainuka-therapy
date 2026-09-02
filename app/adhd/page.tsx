@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import {
   specialtyAccents,
   SpecialtyHero,
@@ -245,6 +246,9 @@ export default function ADHDPage() {
               eyebrow="What Clients Say"
               title="Stories of Recognition"
             />
+            <div className="max-w-4xl mx-auto mb-8">
+              <TestimonialConsentDisclaimer />
+            </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonialsByCategory.adhd.map((testimonial, index) => (
                 <TestimonialCard

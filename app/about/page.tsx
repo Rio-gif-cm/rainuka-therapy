@@ -2,15 +2,16 @@ import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import Link from 'next/link'
 import { expandedTestimonials } from '@/src/data/testimonials'
 
 export const metadata: Metadata = {
-  title: 'About Rainuka Oberoi, LCSW | Perinatal, ADHD & Career Therapy',
-  description: 'Meet Rainuka Oberoi, LCSW. Specializing in perinatal mental health, adult ADHD diagnosis, career transitions. Trauma-informed, culturally humble therapist. Learn about my approach, training, credentials.',
-  keywords: 'about rainuka oberoi, LCSW, therapist, credentials, training, perinatal mental health',
+  title: 'About Rainuka Oberoi | Licensed Therapist (Canada, California, Florida)',
+  description: 'Meet Rainuka Oberoi, licensed therapist in Canada, California, and Florida. Specializing in perinatal mental health, adult ADHD diagnosis, career transitions. Trauma-informed, culturally humble therapist.',
+  keywords: 'about rainuka oberoi, therapist, licensed, credentials, training, perinatal mental health, Canada, California, Florida',
   openGraph: {
-    title: 'About Rainuka Oberoi, LCSW | Therapist, ADHD & Perinatal Specialist',
+    title: 'About Rainuka Oberoi | Licensed Therapist',
     description: 'Learn about Rainuka\'s approach, credentials, and why she specializes in perinatal mental health, ADHD diagnosis, and career counseling.',
     type: 'website',
   },
@@ -53,14 +54,12 @@ export default function AboutPage() {
               {/* Bio Content */}
               <div className="flex flex-col justify-center">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-warm-gray-900 mb-4 md:mb-6">
-                  Rainuka Oberoi, LCSW <span className="text-lg text-sage-600 font-normal">(she/her)</span>
+                  Rainuka Oberoi <span className="text-lg text-sage-600 font-normal">(she/her)</span>
                 </h2>
 
                 <div className="space-y-6 text-warm-gray-600">
                   <p>
-                    I work with adults navigating perinatal mental health, adult ADHD, and career transitions. 
-                    I do this because I've been there-the invisible struggles, the internal chaos, the gap between 
-                    how you look and how you actually feel.
+                    Adults often show up fine. The job's going well, relationships look stable, milestones are hit. Inside? That's where the real work lives. I work with perinatal grief, undiagnosed ADHD, burnout disguised as ambition—the gap between the version people see and who you actually are.
                   </p>
 
                   {/* Age requirement notice */}
@@ -71,24 +70,15 @@ export default function AboutPage() {
                   </div>
 
                   <p>
-                    For years, I looked fine. I had the job, the relationships, hit the milestones. Inside? I was 
-                    grieving infertility, didn't understand why I couldn't manage basic tasks at 30 (undiagnosed 
-                    ADHD), and burned out spectacularly in a career that looked perfect from the outside but felt 
-                    completely wrong for how my brain worked. I know that gap between outside and inside intimately.
+                    For years I looked fine. I had the job, the relationships, hit the milestones. Inside? I was grieving infertility, didn't understand why basic tasks felt impossible at 30 (undiagnosed ADHD), and burned out so completely that a career that looked perfect from outside felt completely wrong for how my brain actually works. I know that gap between outside and inside intimately.
                   </p>
 
                   <p>
-                    The turning point was telling a friend-actually telling her-about my infertility. The moment 
-                    I stopped curating my story, something shifted. She felt seen. Not by someone hiding behind 
-                    credentials, but by someone who genuinely knew that particular loneliness. I realized my 
-                    struggles weren't liabilities. They were my actual qualifications.
+                    The turning point was telling a friend—actually telling her—about my infertility. The moment I stopped curating my story, something shifted. She felt seen. Not by someone hiding behind credentials, but by someone who knew that loneliness. I realized my struggles weren't liabilities. They were my actual qualifications.
                   </p>
 
                   <p>
-                    I work trauma-informed, culturally humble, practical. Therapy isn't about fixing you-it's 
-                    about understanding yourself better so you can build a life that actually fits. I show up as 
-                    a real person, not a blank screen. You're not getting clinical distance; you're getting 
-                    someone who has sat in the hard places and knows the work it takes to move through them.
+                    I work trauma-informed and culturally humble. Therapy isn't about fixing you—it's about understanding yourself better so you can build a life that actually fits. I show up as a real person, not a blank screen. You're getting someone who has sat in the hard places and knows what it takes to move through them.
                   </p>
                 </div>
               </div>
@@ -216,11 +206,14 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">License</h3>
-                <p className="text-warm-gray-600">
-                  Licensed Clinical Social Worker (LCSW) in good standing. License details and verification are 
-                  available during your free consultation and on intake forms, so you can verify directly with 
-                  the state licensing board.
+                <p className="text-warm-gray-600 mb-4">
+                  Licensed therapist in Canada (primary jurisdiction), California, and Florida. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
                 </p>
+                <div className="space-y-2 text-sm text-warm-gray-600">
+                  <p>• <strong>Canada:</strong> Licensed under [Provincial Regulatory Body]</p>
+                  <p>• <strong>California:</strong> Licensed Clinical Social Worker (LCSW)</p>
+                  <p>• <strong>Florida:</strong> Licensed Clinical Social Worker (LCSW)</p>
+                </div>
               </div>
 
               <div className="card">
@@ -245,8 +238,9 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">Professional Memberships</h3>
                 <ul className="space-y-2 text-warm-gray-600">
+                  <li>• Canadian Association of Social Workers (CASW)</li>
                   <li>• National Association of Social Workers (NASW)</li>
-                  <li>• American Perinatal Society</li>
+                  <li>• Postpartum Support International</li>
                   <li>• ADHD Coaches Organization</li>
                 </ul>
               </div>

@@ -74,7 +74,7 @@ export default function ProviderDirectoriesPage() {
   ]
 
   const trustedBadges = [
-    { label: 'Licensed LCSW', verified: true, icon: '🎓' },
+    { label: 'Licensed (Canada, CA, FL)', verified: true, icon: '🎓' },
     { label: 'Psychology Today Verified', verified: true, icon: '✓' },
     { label: 'Trauma-Informed Care', verified: true, icon: '🛡️' },
   ]

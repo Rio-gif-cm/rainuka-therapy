@@ -121,7 +121,7 @@ export default function PrivacyPage() {
             <li>❌ Health information outside of session context</li>
           </ul>
 
-          {/* HIPAA Compliance */}
+          {/* Canadian Privacy Compliance */}
           <h2
             style={{
               fontSize: 'clamp(1.5rem, 4vw, 2rem)',
@@ -132,10 +132,26 @@ export default function PrivacyPage() {
               fontWeight: 700,
             }}
           >
-            HIPAA Compliance & Security
+            Canadian Privacy Compliance (PIPEDA & PHIPA)
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700] }}>
-            All session data is protected under HIPAA (Health Insurance Portability and Accountability Act):
+            All session data is protected under Canadian privacy legislation:
+          </p>
+          <ul
+            style={{
+              marginBottom: '1rem',
+              paddingLeft: '2rem',
+              color: colors.warmGray[700],
+              lineHeight: 1.8,
+            }}
+          >
+            <li><strong>PIPEDA</strong> (Personal Information Protection and Electronic Documents Act) – Federal privacy law governing personal information</li>
+            <li><strong>PHIPA</strong> (Personal Health Information Protection Act) – Ontario provincial law protecting health information</li>
+            <li><strong>Provincial Standards</strong> – We comply with the highest privacy standards across all provinces we serve</li>
+          </ul>
+          <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
+            <strong>Security protections:</strong>
+          </p>
           </p>
           <ul
             style={{
@@ -210,6 +226,41 @@ export default function PrivacyPage() {
             <li><strong>Delete:</strong> Request deletion of your data (with exceptions for legal requirements)</li>
             <li><strong>Opt-out:</strong> Unsubscribe from emails anytime (1-click unsubscribe)</li>
             <li><strong>Portability:</strong> Export your data in standard format</li>
+          </ul>
+
+          {/* Testimonials & Client Consent */}
+          <h2
+            style={{
+              fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+              color: colors.warmGray[900],
+              marginTop: '3rem',
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-merriweather)',
+              fontWeight: 700,
+            }}
+          >
+            Testimonials & Client Consent
+          </h2>
+          <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700] }}>
+            All client testimonials displayed on our website are shared with <strong>explicit written consent</strong>. 
+            Each client has given permission for us to use their first name, professional context, and story in our 
+            marketing materials.
+          </p>
+          <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700], marginBottom: '1rem' }}>
+            <strong>Your rights:</strong>
+          </p>
+          <ul
+            style={{
+              marginBottom: '2rem',
+              paddingLeft: '2rem',
+              color: colors.warmGray[700],
+              lineHeight: 1.8,
+            }}
+          >
+            <li>Clients are <strong>never compensated</strong> for testimonials</li>
+            <li>Clients may <strong>request removal</strong> of their testimonial at any time</li>
+            <li>All testimonials are <strong>authentic</strong> and not fabricated</li>
+            <li>Consent records are maintained according to PIPEDA retention requirements (minimum 7 years)</li>
           </ul>
 
           {/* Opt-Out Controls */}

@@ -17,7 +17,7 @@ const diagnosisFAQ: FAQItem[] = [
   },
   {
     q: 'Do you diagnose ADHD?',
-    a: 'As an LCSW I do not conduct formal psychological testing or prescribe medication. What I can do is help you recognize patterns, decide whether pursuing an evaluation makes sense for you, and connect you with a psychologist or psychiatrist who does assessments. Then I work with you on everything that comes after.',
+    a: 'As a licensed therapist I do not conduct formal psychological testing or prescribe medication. What I can do is help you recognize patterns, decide whether pursuing an evaluation makes sense for you, and connect you with a psychologist or psychiatrist who does assessments. Then I work with you on everything that comes after.',
   },
   {
     q: 'Do I need a formal diagnosis to work on this?',

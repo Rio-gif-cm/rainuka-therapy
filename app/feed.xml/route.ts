@@ -45,7 +45,7 @@ export async function GET() {
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Rainuka Oberoi, LCSW - Therapy Guides & Resources</title>
+    <title>Rainuka Therapy - Guides & Resources</title>
     <link>${baseUrl}</link>
     <description>Thoughtful, practical guides on therapy, mental health, perinatal anxiety, ADHD, career transitions, and more.</description>
     <language>en-us</language>
@@ -66,7 +66,7 @@ export async function GET() {
         <p>${escapeXml(guide.frontmatter.description)}</p>
         <p><a href="${baseUrl}/guides/${guide.slug}">Read the full article →</a></p>
       ]]></content:encoded>
-      <author>Rainuka Oberoi, LCSW</author>
+      <author>Rainuka Oberoi, Licensed Therapist</author>
       <category>Mental Health</category>
       ${guide.frontmatter.keywords ? `<category>${guide.frontmatter.keywords.split(',')[0]}</category>` : ''}
     </item>

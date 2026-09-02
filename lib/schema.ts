@@ -1,6 +1,7 @@
 /**
- * Consolidated schema.org structured data for Wonderloud Therapy
+ * Consolidated schema.org structured data for Rainuka Therapy
  * Single source of truth for LocalBusiness and AggregateRating schemas
+ * Licensed in: Canada (primary), California (US), Florida (US)
  * Used in app/layout.tsx (global) to avoid duplication
  */
 
@@ -8,6 +9,7 @@
  * LocalBusiness schema for organization credibility + SEO
  * @id is globally unique across the site (not page-specific)
  * Includes ProfessionalService type for therapy context
+ * areaServed: Canada, California (CA), Florida (FL)
  */
 export const getLocalBusinessSchema = (config?: {
   telephone?: string
@@ -17,35 +19,74 @@ export const getLocalBusinessSchema = (config?: {
 }) => ({
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'ProfessionalService'],
-  '@id': 'https://wonderloudtherapy.com#organization',
-  name: 'Wonderloud Therapy',
-  description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
-  url: 'https://wonderloudtherapy.com',
+  '@id': 'https://rainuka-therapy.com#organization',
+  name: 'Rainuka Therapy',
+  description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions. Licensed therapist in Canada, California, and Florida.',
+  url: 'https://rainuka-therapy.com',
   telephone: config?.telephone || '+1-555-123-4567',
-  email: config?.email || 'contact@wonderloudtherapy.com',
+  email: config?.email || 'contact@rainuka-therapy.com',
   address: {
     '@type': 'PostalAddress',
-    addressCountry: 'US',
-    addressRegion: 'CA',
-    addressLocality: 'San Francisco',
+    addressCountry: 'CA',
+    addressRegion: 'ON',
+    addressLocality: 'Toronto',
   },
-  areaServed: {
-    '@type': 'State',
-    name: 'California',
-  },
+  areaServed: [
+    {
+      '@type': 'Country',
+      name: 'Canada',
+    },
+    {
+      '@type': 'State',
+      name: 'California',
+    },
+    {
+      '@type': 'State',
+      name: 'Florida',
+    },
+  ],
   priceRange: config?.priceRange || '$$',
-  image: config?.image || 'https://wonderloudtherapy.com/logo.png',
+  image: config?.image || 'https://rainuka-therapy.com/logo.png',
   sameAs: [],
   // Therapist credential markup for YMYL credibility
+  // CRITICAL: Rainuka is NOT a U.S. LCSW. She is licensed in Canada, California, and Florida.
   hasCredential: [
     {
       '@type': 'Credential',
-      '@id': 'https://wonderloudtherapy.com#lcsw-credential',
-      name: 'Licensed Clinical Social Worker (LCSW)',
+      '@id': 'https://rainuka-therapy.com#credential-canada',
+      name: 'Licensed Therapist (Canada)',
+      credentialCategory: 'License',
+      areaServed: {
+        '@type': 'Country',
+        name: 'Canada',
+      },
+      credentialSubject: {
+        '@type': 'Person',
+        name: 'Rainuka Oberoi',
+      },
+    },
+    {
+      '@type': 'Credential',
+      '@id': 'https://rainuka-therapy.com#credential-california',
+      name: 'Licensed Clinical Social Worker (California)',
       credentialCategory: 'License',
       areaServed: {
         '@type': 'State',
         name: 'California',
+      },
+      credentialSubject: {
+        '@type': 'Person',
+        name: 'Rainuka Oberoi',
+      },
+    },
+    {
+      '@type': 'Credential',
+      '@id': 'https://rainuka-therapy.com#credential-florida',
+      name: 'Licensed Clinical Social Worker (Florida)',
+      credentialCategory: 'License',
+      areaServed: {
+        '@type': 'State',
+        name: 'Florida',
       },
       credentialSubject: {
         '@type': 'Person',

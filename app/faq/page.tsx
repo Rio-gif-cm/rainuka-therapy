@@ -145,7 +145,7 @@ const faqSchema = {
 
 export const metadata = {
   title: 'Therapy FAQs - Perinatal, ADHD & Career | Wonderloud Therapy',
-  description: 'Answers to therapy questions: confidentiality, pricing, ADHD diagnosis, perinatal anxiety, and what to expect. Get your questions answered by Rainuka Oberoi, LCSW.',
+  description: 'Answers to therapy questions: confidentiality, pricing, ADHD diagnosis, perinatal anxiety, and what to expect. Licensed therapist in Canada, California, and Florida.',
   openGraph: {
     title: 'Frequently Asked Questions About Therapy | Wonderloud Therapy',
     description: 'Common questions answered: confidentiality, pricing, specialties, and what to expect from therapy.',

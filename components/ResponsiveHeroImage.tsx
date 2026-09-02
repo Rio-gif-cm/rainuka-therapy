@@ -33,7 +33,7 @@ interface ResponsiveHeroImageProps {
  * @example
  * <ResponsiveHeroImage
  *   src="/images/hero-therapist.jpg"
- *   alt="Rainuka, LCSW therapist"
+ *   alt="Rainuka, Licensed Therapist"
  *   priority={true}
  *   width={1200}
  *   height={800}

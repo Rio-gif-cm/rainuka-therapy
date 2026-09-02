@@ -1,0 +1,1708 @@
+{
+  "timestamp": "2026-09-02T05:20:15.970Z",
+  "summary": {
+    "files_scanned": 65,
+    "files_with_accents": 35,
+    "total_usages": 546
+  },
+  "accent_distribution": {
+    "by_color": {
+      "sage": 391,
+      "dusk": 47,
+      "honey": 23,
+      "blush": 13,
+      "alert": 60,
+      "deep": 3,
+      "sea": 2,
+      "clay": 7
+    },
+    "by_context": {
+      "background": 159,
+      "text": 97,
+      "border-accent": 47,
+      "hover": 75,
+      "unknown": 161,
+      "CTA": 7
+    }
+  },
+  "readability_concerns": [
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 44,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 57,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 67,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 389,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 393,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 397,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 401,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 405,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 411,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 461,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 465,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 469,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 473,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 491,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "app\\about\\page.tsx",
+      "line": 496,
+      "issue": "Accent color used for body text: sage-50",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\adhd-faq\\page.tsx",
+      "line": 124,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\adhd-faq\\page.tsx",
+      "line": 206,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\adhd-faq\\page.tsx",
+      "line": 210,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\adhd-faq\\page.tsx",
+      "line": 214,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\adhd-faq\\page.tsx",
+      "line": 218,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 42,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 139,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 149,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 159,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 169,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\booking\\page.tsx",
+      "line": 179,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\faq\\page.tsx",
+      "line": 196,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\faq\\page.tsx",
+      "line": 215,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\faq\\page.tsx",
+      "line": 234,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\faq\\page.tsx",
+      "line": 253,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\grief\\page.tsx",
+      "line": 196,
+      "issue": "Accent color used for body text: dusk-300",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\grief\\page.tsx",
+      "line": 297,
+      "issue": "Accent color used for body text: dusk-300",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\grief\\page.tsx",
+      "line": 380,
+      "issue": "Accent color used for body text: dusk-300",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\grief\\page.tsx",
+      "line": 463,
+      "issue": "Accent color used for body text: dusk-700",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\grief\\page.tsx",
+      "line": 467,
+      "issue": "Accent color used for body text: dusk-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\guides\\archive\\page.tsx",
+      "line": 84,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\layout.tsx",
+      "line": 207,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "app\\page.tsx",
+      "line": 101,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\page.tsx",
+      "line": 140,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\page.tsx",
+      "line": 168,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\page.tsx",
+      "line": 225,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\page.tsx",
+      "line": 238,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\parents\\page.tsx",
+      "line": 537,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\parents\\page.tsx",
+      "line": 676,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\parents\\page.tsx",
+      "line": 680,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\parents\\page.tsx",
+      "line": 684,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\parents\\page.tsx",
+      "line": 688,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\perinatal-faq\\page.tsx",
+      "line": 145,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\perinatal-faq\\page.tsx",
+      "line": 250,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\perinatal-faq\\page.tsx",
+      "line": 254,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\perinatal-faq\\page.tsx",
+      "line": 258,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\perinatal-faq\\page.tsx",
+      "line": 262,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 25,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 34,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 46,
+      "issue": "Accent color used for body text: sage-500",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 50,
+      "issue": "Accent color used for body text: sage-500",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 54,
+      "issue": "Accent color used for body text: sage-500",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 58,
+      "issue": "Accent color used for body text: sage-500",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 98,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 98,
+      "issue": "Dark accent used as background: sage-700",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 108,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 108,
+      "issue": "Dark accent used as background: sage-700",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 118,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 118,
+      "issue": "Dark accent used as background: sage-700",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 128,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 128,
+      "issue": "Dark accent used as background: sage-700",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 173,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 185,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 189,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 193,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 197,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 282,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 292,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 302,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 312,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 322,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 332,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 342,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 352,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\pricing\\page.tsx",
+      "line": 362,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\resources\\perinatal-anxiety-guide\\page.tsx",
+      "line": 150,
+      "issue": "Accent color used for body text: dusk-600",
+      "severity": "medium"
+    },
+    {
+      "file": "app\\resources\\perinatal-anxiety-guide\\page.tsx",
+      "line": 346,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\welcome\\page.tsx",
+      "line": 17,
+      "issue": "Dark accent used as background: dusk-200",
+      "severity": "high"
+    },
+    {
+      "file": "app\\welcome\\page.tsx",
+      "line": 18,
+      "issue": "Accent color used for body text: dusk-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 275,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 286,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 297,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 300,
+      "issue": "Accent color used for body text: sage-900",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 301,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 313,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 317,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 322,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 348,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 357,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 362,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 388,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 397,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 402,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 428,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 451,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 461,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 472,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 477,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 501,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 514,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 516,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 526,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 531,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 591,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 632,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 649,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 650,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 655,
+      "issue": "Dark accent used as background: honey-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 676,
+      "issue": "Dark accent used as background: alert-300",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 695,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 704,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 708,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 711,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 714,
+      "issue": "Dark accent used as background: sage-800",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 714,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 729,
+      "issue": "Dark accent used as background: alert-300",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 733,
+      "issue": "Accent color used for body text: alert-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 736,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingForm.tsx",
+      "line": 748,
+      "issue": "Accent color used for body text: alert-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingFormWrapper.tsx",
+      "line": 32,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\BookingFormWrapper.tsx",
+      "line": 36,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\BookingFormWrapper.tsx",
+      "line": 37,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\CalendarPicker.tsx",
+      "line": 103,
+      "issue": "Dark accent used as background: sage-600",
+      "severity": "high"
+    },
+    {
+      "file": "components\\CalendarPicker.tsx",
+      "line": 103,
+      "issue": "Dark accent used as background: sage-600",
+      "severity": "high"
+    },
+    {
+      "file": "components\\CalendarPicker.tsx",
+      "line": 121,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 56,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 60,
+      "issue": "Accent color used for body text: sage-800",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 63,
+      "issue": "Accent color used for body text: sage-700",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 70,
+      "issue": "Dark accent used as background: sage-200",
+      "severity": "high"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 96,
+      "issue": "Dark accent used as background: honey-300",
+      "severity": "high"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 117,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "components\\PreCommitmentExploration.tsx",
+      "line": 129,
+      "issue": "Dark accent used as background: sage-400",
+      "severity": "high"
+    },
+    {
+      "file": "components\\ReferralCode.tsx",
+      "line": 44,
+      "issue": "Accent color used for body text: sage-600",
+      "severity": "medium"
+    },
+    {
+      "file": "components\\TestimonialCard.tsx",
+      "line": 68,
+      "issue": "Accent color used for body text: sage-400",
+      "severity": "medium"
+    }
+  ],
+  "hierarchy_analysis": [
+    {
+      "color": "sage",
+      "count": 391,
+      "expected": "Most used (primary)"
+    },
+    {
+      "color": "dusk",
+      "count": 47,
+      "expected": "Low use (specific persona)"
+    },
+    {
+      "color": "honey",
+      "count": 23,
+      "expected": "Low use (specific persona)"
+    },
+    {
+      "color": "blush",
+      "count": 13,
+      "expected": "Low use (specific persona)"
+    },
+    {
+      "color": "alert",
+      "count": 60,
+      "expected": "Verify usage"
+    },
+    {
+      "color": "deep",
+      "count": 3,
+      "expected": "Verify usage"
+    },
+    {
+      "color": "sea",
+      "count": 2,
+      "expected": "Verify usage"
+    },
+    {
+      "color": "clay",
+      "count": 7,
+      "expected": "Medium use (persona)"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "medium",
+      "title": "Sea-Blue Under-utilized",
+      "description": "Sea-blue should be the secondary CTA color, but is used sparingly.",
+      "action": "Add sea-blue to secondary CTAs, hover states on secondary actions",
+      "example": "Secondary \"Learn More\" links, checkbox focus states"
+    },
+    {
+      "priority": "low",
+      "title": "Deep-Gray Mostly Unused",
+      "description": "Deep-gray is defined but rarely used. Consider if it serves a purpose.",
+      "action": "Either use deep-gray for info/grounded states or remove from palette",
+      "example": "Info boxes, secondary borders, grounded text for men/ADHD personas"
+    },
+    {
+      "priority": "medium",
+      "title": "Sage Over-used",
+      "description": "Sage (burgundy) is dominant across many contexts, diluting impact.",
+      "action": "Reduce sage to primary CTAs and key highlights only. Move form inputs to warm-gray.",
+      "example": "Form labels, error text, info boxes can use warm-gray instead"
+    },
+    {
+      "priority": "high",
+      "title": "Readability Issues Found",
+      "description": "139 instances of accent colors in non-ideal contexts.",
+      "action": "Review and move to neutral alternatives",
+      "files": [
+        "app\\about\\page.tsx",
+        "app\\about\\page.tsx",
+        "app\\about\\page.tsx"
+      ]
+    },
+    {
+      "priority": "medium",
+      "title": "Establish Clear Accent Hierarchy",
+      "description": "Define when each accent is used to prevent confusion.",
+      "action": "Document: sage=primary CTA, clay=secondary CTA, sea-blue=tertiary CTA/hover",
+      "example": "Primary: \"Book Now\" | Secondary: \"Learn More\" | Tertiary: icon hover"
+    },
+    {
+      "priority": "medium",
+      "title": "Accent Color Consistency Audit",
+      "description": "35 files contain accent colors. Verify consistent application.",
+      "action": "Run visual QA on key pages (booking, about, specialty pages)",
+      "example": "Ensure all primary CTAs are the same color; all hover states consistent"
+    }
+  ],
+  "detailed_usages": [
+    {
+      "path": "app\\about\\page.tsx",
+      "usages": [
+        {
+          "line": 27,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"hero-section bg-gradient-to-br from-cream-50 to-sage-50 py-12 md:py-16 lg:py-20\""
+        },
+        {
+          "line": 44,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"aspect-square rounded-lg bg-gradient-to-br from-sage-200 to-warm-accent-light overfl"
+        },
+        {
+          "line": 57,
+          "match": "sage-600",
+          "context": "text",
+          "code": "Rainuka Oberoi <span className=\"text-lg text-sage-600 font-normal\">(she/her)</span>"
+        },
+        {
+          "line": 66,
+          "match": "sage-50",
+          "context": "border-accent",
+          "code": "<div className=\"bg-sage-50 border-l-4 border-sage-400 rounded p-4\">"
+        },
+        {
+          "line": 66,
+          "match": "sage-400",
+          "context": "border-accent",
+          "code": "<div className=\"bg-sage-50 border-l-4 border-sage-400 rounded p-4\">"
+        },
+        {
+          "line": 67,
+          "match": "sage-800",
+          "context": "text",
+          "code": "<p className=\"font-medium text-sage-800 text-sm\">"
+        },
+        {
+          "line": 200,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 252,
+          "match": "sage-200",
+          "context": "border-accent",
+          "code": "<section className=\"section-padding bg-white border-t border-sage-200\">"
+        },
+        {
+          "line": 263,
+          "match": "sage-400",
+          "context": "border-accent",
+          "code": "<div className=\"card bg-cream-50 border-l-4 border-sage-400\">"
+        },
+        {
+          "line": 375,
+          "match": "sage-200",
+          "context": "border-accent",
+          "code": "<section className=\"section-padding bg-white border-t border-sage-200\">"
+        },
+        {
+          "line": 385,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50\">"
+        },
+        {
+          "line": 389,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400 font-bold flex-shrink-0\">•</span>"
+        },
+        {
+          "line": 393,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400 font-bold flex-shrink-0\">•</span>"
+        },
+        {
+          "line": 397,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400 font-bold flex-shrink-0\">•</span>"
+        },
+        {
+          "line": 401,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400 font-bold flex-shrink-0\">•</span>"
+        },
+        {
+          "line": 405,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400 font-bold flex-shrink-0\">•</span>"
+        },
+        {
+          "line": 411,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card bg-white border border-sage-200\">"
+        },
+        {
+          "line": 451,
+          "match": "sage-200",
+          "context": "border-accent",
+          "code": "<section className=\"section-padding bg-white border-t border-sage-200\">"
+        },
+        {
+          "line": 461,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 461,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 465,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 465,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 469,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 469,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 473,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 473,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card bg-sage-50 border border-sage-200\">"
+        },
+        {
+          "line": 483,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<Link href=\"/providers\" className=\"inline-block text-sage-600 font-semibold hover:text-sage-700 unde"
+        },
+        {
+          "line": 483,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<Link href=\"/providers\" className=\"inline-block text-sage-600 font-semibold hover:text-sage-700 unde"
+        },
+        {
+          "line": 491,
+          "match": "sage-400",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-400 text-white\">"
+        },
+        {
+          "line": 496,
+          "match": "sage-50",
+          "context": "text",
+          "code": "<p className=\"text-lg mb-8 text-sage-50 max-w-2xl mx-auto\">"
+        },
+        {
+          "line": 499,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<Link href=\"/booking\" className=\"inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded"
+        },
+        {
+          "line": 499,
+          "match": "sage-50",
+          "context": "hover",
+          "code": "<Link href=\"/booking\" className=\"inline-block bg-white text-sage-400 px-8 py-4 font-semibold rounded"
+        }
+      ]
+    },
+    {
+      "path": "app\\accessibility\\page.tsx",
+      "usages": [
+        {
+          "line": 12,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "className=\"text-sage-600 hover:text-sage-700 mb-8 inline-flex items-center\""
+        },
+        {
+          "line": 12,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "className=\"text-sage-600 hover:text-sage-700 mb-8 inline-flex items-center\""
+        },
+        {
+          "line": 126,
+          "match": "sage-50",
+          "context": "border-accent",
+          "code": "<div className=\"card bg-sage-50 border-l-4 border-l-sage-600\">"
+        },
+        {
+          "line": 126,
+          "match": "sage-600",
+          "context": "border-accent",
+          "code": "<div className=\"card bg-sage-50 border-l-4 border-l-sage-600\">"
+        },
+        {
+          "line": 175,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<strong>Email:</strong> <a href=\"mailto:accessibility@rainukatherapy.com\" className=\"text-sage-600 u"
+        },
+        {
+          "line": 175,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<strong>Email:</strong> <a href=\"mailto:accessibility@rainukatherapy.com\" className=\"text-sage-600 u"
+        },
+        {
+          "line": 178,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<strong>Phone:</strong> <a href=\"tel:+1-555-123-4567\" className=\"text-sage-600 underline hover:text-"
+        },
+        {
+          "line": 178,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<strong>Phone:</strong> <a href=\"tel:+1-555-123-4567\" className=\"text-sage-600 underline hover:text-"
+        },
+        {
+          "line": 205,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<a href=\"https://www.w3.org/WAI/WCAG21/quickref/\" className=\"text-sage-600 underline hover:text-sage"
+        },
+        {
+          "line": 205,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<a href=\"https://www.w3.org/WAI/WCAG21/quickref/\" className=\"text-sage-600 underline hover:text-sage"
+        },
+        {
+          "line": 210,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<a href=\"https://www.a11yproject.com/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        },
+        {
+          "line": 210,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<a href=\"https://www.a11yproject.com/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        },
+        {
+          "line": 215,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<a href=\"https://www.section508.gov/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        },
+        {
+          "line": 215,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<a href=\"https://www.section508.gov/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        },
+        {
+          "line": 220,
+          "match": "sage-600",
+          "context": "hover",
+          "code": "<a href=\"https://webaim.org/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        },
+        {
+          "line": 220,
+          "match": "sage-700",
+          "context": "hover",
+          "code": "<a href=\"https://webaim.org/\" className=\"text-sage-600 underline hover:text-sage-700\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\adhd-faq\\page.tsx",
+      "usages": [
+        {
+          "line": 124,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 200,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 206,
+          "match": "sage-600",
+          "context": "text",
+          "code": "<Link href=\"/adhd\" className=\"text-sage-600 underline\">"
+        },
+        {
+          "line": 210,
+          "match": "sage-600",
+          "context": "text",
+          "code": "<Link href=\"/parents\" className=\"text-sage-600 underline\">"
+        },
+        {
+          "line": 214,
+          "match": "sage-600",
+          "context": "text",
+          "code": "<Link href=\"/faq\" className=\"text-sage-600 underline\">"
+        },
+        {
+          "line": 218,
+          "match": "sage-600",
+          "context": "text",
+          "code": "<Link href=\"/pricing\" className=\"text-sage-600 underline\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\booking\\page.tsx",
+      "usages": [
+        {
+          "line": 25,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"py-16 bg-gradient-to-br from-cream-50 to-sage-50\">"
+        },
+        {
+          "line": 42,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border"
+        },
+        {
+          "line": 42,
+          "match": "sage-100",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border"
+        },
+        {
+          "line": 42,
+          "match": "sage-200",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-static bg-gradient-to-r from-sage-50 to-sage-100 mb-12 border"
+        },
+        {
+          "line": 139,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 149,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 159,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 169,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 179,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        }
+      ]
+    },
+    {
+      "path": "app\\case-studies\\page.tsx",
+      "usages": [
+        {
+          "line": 140,
+          "match": "sage-200",
+          "context": "border-accent",
+          "code": "<div className=\"border-t border-sage-200 pt-6 mt-8\">"
+        },
+        {
+          "line": 163,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        },
+        {
+          "line": 213,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\contact\\page.tsx",
+      "usages": [
+        {
+          "line": 11,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"py-16 bg-gradient-to-br from-cream-50 to-sage-50\">"
+        },
+        {
+          "line": 35,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"tel:+1-555-123-4567\" className=\"text-sage-400 hover:text-sage-500 font-semibold\">"
+        },
+        {
+          "line": 35,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"tel:+1-555-123-4567\" className=\"text-sage-400 hover:text-sage-500 font-semibold\">"
+        },
+        {
+          "line": 45,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"mailto:contact@rainukatherapy.com\" className=\"text-sage-400 hover:text-sage-500 font-semibo"
+        },
+        {
+          "line": 45,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"mailto:contact@rainukatherapy.com\" className=\"text-sage-400 hover:text-sage-500 font-semibo"
+        },
+        {
+          "line": 66,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"/booking\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 66,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"/booking\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 71,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"/faq\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 71,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"/faq\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 76,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"/about\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 76,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"/about\" className=\"text-sage-400 hover:text-sage-500\">"
+        },
+        {
+          "line": 148,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 161,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"/booking\" className=\"text-sage-400 font-semibold text-sm hover:text-sage-500\">"
+        },
+        {
+          "line": 161,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"/booking\" className=\"text-sage-400 font-semibold text-sm hover:text-sage-500\">"
+        },
+        {
+          "line": 172,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"mailto:contact@rainukatherapy.com\" className=\"text-sage-400 font-semibold text-sm hover:tex"
+        },
+        {
+          "line": 172,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"mailto:contact@rainukatherapy.com\" className=\"text-sage-400 font-semibold text-sm hover:tex"
+        },
+        {
+          "line": 183,
+          "match": "sage-400",
+          "context": "hover",
+          "code": "<a href=\"tel:+1-555-123-4567\" className=\"text-sage-400 font-semibold text-sm hover:text-sage-500\">"
+        },
+        {
+          "line": 183,
+          "match": "sage-500",
+          "context": "hover",
+          "code": "<a href=\"tel:+1-555-123-4567\" className=\"text-sage-400 font-semibold text-sm hover:text-sage-500\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\couples\\page.tsx",
+      "usages": [
+        {
+          "line": 64,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 125,
+          "match": "dusk-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static mt-8 bg-dusk-50\" style={{borderLeftColor:"
+        },
+        {
+          "line": 153,
+          "match": "honey-50",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-honey-50 to-honey-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 153,
+          "match": "honey-100",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-honey-50 to-honey-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 158,
+          "match": "dusk-50",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-dusk-50 to-dusk-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 158,
+          "match": "dusk-100",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-dusk-50 to-dusk-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 163,
+          "match": "blush-50",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-blush-50 to-blush-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 163,
+          "match": "blush-100",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-blush-50 to-blush-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 168,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-sage-50 to-sage-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 168,
+          "match": "sage-100",
+          "context": "background",
+          "code": "<div className=\"bg-gradient-to-br from-sage-50 to-sage-100 p-6 rounded-lg\">"
+        },
+        {
+          "line": 193,
+          "match": "alert-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-alert-50\">"
+        },
+        {
+          "line": 287,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static bg-gradient-to-r from-sage-50 to-white\" s"
+        },
+        {
+          "line": 295,
+          "match": "dusk-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static bg-gradient-to-r from-dusk-50 to-white\" s"
+        },
+        {
+          "line": 304,
+          "match": "blush-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static bg-gradient-to-r from-blush-50 to-white\" "
+        },
+        {
+          "line": 313,
+          "match": "honey-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static bg-gradient-to-r from-honey-50 to-white\" "
+        },
+        {
+          "line": 322,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-compact card-static bg-gradient-to-r from-sage-50 to-white\" s"
+        },
+        {
+          "line": 350,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 452,
+          "match": "blush-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-static bg-gradient-to-br from-blush-50 to-alert-50\" style={{b"
+        },
+        {
+          "line": 452,
+          "match": "alert-50",
+          "context": "background",
+          "code": "<div className=\"card card-callout card-static bg-gradient-to-br from-blush-50 to-alert-50\" style={{b"
+        },
+        {
+          "line": 470,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-sage-50\">"
+        },
+        {
+          "line": 544,
+          "match": "dusk-50",
+          "context": "background",
+          "code": "<div className=\"bg-dusk-50 p-8 rounded-lg mb-8\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\disability-access\\page.tsx",
+      "usages": [
+        {
+          "line": 123,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        },
+        {
+          "line": 378,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        }
+      ]
+    },
+    {
+      "path": "app\\faq\\page.tsx",
+      "usages": [
+        {
+          "line": 171,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"py-16 bg-gradient-to-br from-cream-50 to-sage-50\">"
+        },
+        {
+          "line": 196,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 215,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 234,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        },
+        {
+          "line": 253,
+          "match": "sage-400",
+          "context": "text",
+          "code": "<span className=\"text-sage-400\">▼</span>"
+        }
+      ]
+    },
+    {
+      "path": "app\\financial-access\\page.tsx",
+      "usages": [
+        {
+          "line": 168,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        },
+        {
+          "line": 182,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<thead className=\"bg-sage-50\">"
+        },
+        {
+          "line": 191,
+          "match": "sage-100",
+          "context": "border-accent",
+          "code": "<tr key={index} className=\"border-t border-sage-100\">"
+        },
+        {
+          "line": 280,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        },
+        {
+          "line": 428,
+          "match": "sage-50",
+          "context": "background",
+          "code": "<section className=\"section-padding bg-gradient-to-b from-white to-sage-50\">"
+        }
+      ]
+    }
+  ]
+}

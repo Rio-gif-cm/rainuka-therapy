@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import {
   specialtyAccents,
   SpecialtyHero,
@@ -42,7 +43,7 @@ export default function PerinatalPage() {
           accent={accent}
           eyebrow="Perinatal Mental Health"
           title="Perinatal Therapy That Honors Your Body & Mind"
-          lead="🤰 Pregnancy, loss, postpartum. What you're carrying isn't weakness."
+          lead="Pregnancy, loss, postpartum. What you're carrying—the grief, the fear, the exhaustion—isn't weakness."
           description="Infertility. Loss. Postpartum anxiety. Reproductive trauma. Specialized support for what often goes unspoken."
           ctaLabel="Get Support That Gets You"
         />
@@ -52,7 +53,7 @@ export default function PerinatalPage() {
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
-            title="If You're Navigating…"
+            title="If You're Carrying…"
             intro="You don't need a diagnosis to start. If any of this sounds like your life right now, this is the right place."
           />
           <SpecialtyChecklist
@@ -219,6 +220,9 @@ export default function PerinatalPage() {
               eyebrow="What Clients Say"
               title="You're Not Alone"
             />
+            <div className="max-w-4xl mx-auto mb-8">
+              <TestimonialConsentDisclaimer />
+            </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {testimonialsByCategory.perinatal.map((testimonial, index) => (
                 <TestimonialCard

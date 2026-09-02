@@ -194,10 +194,10 @@ export default function PerinatalFAQPage() {
         <section className="pt-8 bg-white">
           <div className="container-base max-w-3xl mx-auto">
             <div
-              className="p-6 bg-red-50 rounded-lg border-l-4"
-              style={{ borderLeftColor: '#dc2626' }}
+              className="p-6 bg-alert-50 rounded-lg border-l-4"
+              style={{ borderLeftColor: 'var(--alert-600)' }}
             >
-              <p className="font-semibold text-warm-gray-900 mb-2" style={{ color: '#b91c1c' }}>
+              <p className="font-semibold text-alert-700 mb-2">
                 If you need help right now
               </p>
               <p className="text-sm text-warm-gray-700">

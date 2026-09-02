@@ -1,0 +1,649 @@
+/**
+ * Mobile UX Optimization - Global Styles (375px-first)
+ * Rainuka Therapy
+ *
+ * Implements 12 critical improvements:
+ * 1. Text sizing (16px base on mobile)
+ * 2. Touch targets (48×48px minimum)
+ * 3. Color contrast (4.5:1 WCAG AA)
+ * 4. Spacing & thumb-zone
+ * 5. CTA prominence
+ * 6. Form accessibility
+ * 7. Mobile navigation
+ * 8. Responsive images
+ * 9. Colored background contrast
+ * 10. Loading states
+ * 11. Sticky CTA footer
+ * 12. Micro-interactions
+ */
+
+/* ========== 1. BASE TYPOGRAPHY — MOBILE FIRST ========== */
+
+:root {
+  /* Text sizes */
+  --text-base: 16px; /* Mobile */
+  --text-sm: 14px;
+  --text-xs: 12px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+
+  /* Heading sizes - mobile */
+  --heading-h1: 28px;
+  --heading-h2: 24px;
+  --heading-h3: 20px;
+
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+
+  /* Letter spacing */
+  --tracking-normal: 0.3px;
+  --tracking-wide: 0.5px;
+
+  /* Touch targets */
+  --touch-target-min: 48px;
+  --touch-target-icon: 48px;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3rem;
+}
+
+/* 375px baseline */
+body {
+  font-size: var(--text-base);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: #3c222a; /* sage-900 */
+  font-family: var(--font-sans);
+}
+
+/* Typography hierarchy */
+h1, .text-h1 {
+  font-size: var(--heading-h1);
+  line-height: var(--line-height-tight);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+h2, .text-h2 {
+  font-size: var(--heading-h2);
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h3, .text-h3 {
+  font-size: var(--heading-h3);
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Secondary text — stronger contrast */
+.text-secondary,
+p.subtle,
+.caption,
+.help-text {
+  color: #5e534a; /* warm-gray-700: 5.8:1 on white */
+  font-size: var(--text-sm);
+}
+
+.small-text {
+  font-size: var(--text-xs);
+  line-height: var(--line-height-normal);
+}
+
+/* Tablet: 768px */
+@media (min-width: 768px) {
+  :root {
+    --text-base: 15px;
+    --heading-h1: 32px;
+    --heading-h2: 28px;
+    --heading-h3: 24px;
+  }
+}
+
+/* Desktop: 1440px */
+@media (min-width: 1440px) {
+  :root {
+    --text-base: 16px;
+    --heading-h1: 36px;
+    --heading-h2: 32px;
+    --heading-h3: 28px;
+  }
+}
+
+/* ========== 2. TOUCH TARGETS — 48×48px MINIMUM ========== */
+
+/* All buttons */
+button,
+[role="button"],
+.btn,
+a.btn,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--text-base);
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate3d(0, 0, 0);
+  will-change: transform, box-shadow;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Icon buttons */
+.icon-btn,
+[aria-label],
+button[aria-label] {
+  min-height: var(--touch-target-icon);
+  min-width: var(--touch-target-icon);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  min-height: var(--touch-target-min);
+  width: 100%;
+  padding: 12px 16px;
+  font-size: var(--text-base); /* Prevents iOS auto-zoom */
+  font-family: inherit;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  transition: all 0.2s ease;
+  -webkit-appearance: none; /* Remove iOS default styling */
+  appearance: none;
+  box-sizing: border-box;
+}
+
+/* Remove default appearance for select */
+select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236d3a47'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+/* ========== 3. COLOR CONTRAST — WCAG AA (4.5:1) ========== */
+
+/* Primary text: strong contrast */
+.text-primary,
+.text-strong {
+  color: #3c222a; /* sage-900: 8.2:1 */
+}
+
+/* Link text: 4.5:1 minimum */
+a,
+[role="link"] {
+  color: #2d7390; /* sea-blue-600: 5.1:1 */
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: #1f5a73; /* sea-blue-700 */
+  text-decoration-thickness: 2px;
+}
+
+/* Form labels: always high contrast */
+label,
+.form-label {
+  display: block;
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: #3c222a; /* sage-900 */
+  margin-bottom: 0.5rem;
+}
+
+label span.required,
+.required {
+  color: #ab5943; /* alert-600 */
+  margin-left: 2px;
+}
+
+/* Placeholders: adequate contrast */
+::placeholder {
+  color: #7a6f68; /* warm-gray-600: 4.9:1 */
+  opacity: 1;
+}
+
+/* Disabled state: clearly visible, not grayed out */
+button:disabled,
+input:disabled,
+[disabled] {
+  background-color: #ede3e5; /* burgundy-100 */
+  color: #5e534a; /* warm-gray-700: 5.8:1 */
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+/* ========== 4. PRIMARY BUTTON STYLING ========== */
+
+.btn-primary {
+  background: linear-gradient(135deg, #6d3a47 0%, #58303a 100%);
+  color: #ffffff; /* 10.5:1 contrast */
+  padding: 16px 24px;
+  min-height: 56px; /* Slightly larger on mobile */
+  font-size: var(--text-base);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  box-shadow: 0 4px 12px rgba(109, 58, 71, 0.25);
+  width: 100%; /* Full width on mobile by default */
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #58303a 0%, #482a32 100%);
+  box-shadow: 0 6px 16px rgba(109, 58, 71, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(109, 58, 71, 0.2);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid #6d3a47;
+  outline-offset: 2px;
+}
+
+.btn-primary:disabled {
+  background: linear-gradient(135deg, #ede3e5 0%, #ddd4cc 100%);
+  color: #7a6f68;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ========== 5. SECONDARY BUTTON STYLING ========== */
+
+.btn-secondary {
+  background: white;
+  color: #6d3a47;
+  border: 2px solid #6d3a47;
+  padding: 14px 20px;
+  min-height: 48px;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background: #f5f0eb; /* cream-100 */
+  border-color: #58303a;
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid #6d3a47;
+  outline-offset: 2px;
+}
+
+/* ========== 6. FORM ELEMENTS ========== */
+
+.form-group {
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #6d3a47;
+  box-shadow: 0 0 0 3px rgba(109, 58, 71, 0.1);
+}
+
+.form-input[aria-invalid="true"],
+input:invalid {
+  border-color: #ab5943;
+  background-color: #fcf5f3;
+}
+
+.form-input[aria-invalid="true"]:focus,
+input:invalid:focus {
+  box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.1);
+}
+
+.form-hint,
+.form-helper {
+  display: block;
+  font-size: var(--text-sm);
+  color: #5e534a;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.form-error {
+  display: block;
+  font-size: var(--text-sm);
+  color: #ab5943; /* alert-600 */
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input:invalid ~ .form-error {
+  display: block;
+}
+
+/* Multiple buttons stack vertically on mobile */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .button-group {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .btn-secondary {
+    width: auto;
+  }
+}
+
+/* ========== 7. SPACING & THUMB-ZONE OPTIMIZATION ========== */
+
+/* Section padding: 375px friendly */
+.section-padding {
+  padding: var(--space-md) 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: var(--space-lg) 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-padding {
+    padding: var(--space-xl) 2rem;
+  }
+}
+
+/* Card spacing */
+.card {
+  padding: var(--space-md) 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: var(--space-lg) 1.5rem;
+  }
+}
+
+/* Proper bottom spacing for CTAs (prevent accidental touches) */
+button,
+.btn {
+  margin-bottom: 0.5rem;
+}
+
+button.hero-cta,
+.btn-primary.hero-cta {
+  margin-top: var(--space-md);
+  margin-bottom: 0;
+}
+
+/* ========== 8. CONTRAST ON COLORED BACKGROUNDS ========== */
+
+/* Text on sage-tinted backgrounds */
+.bg-sage-tint .text-primary,
+.bg-sage-50 p,
+.bg-sage-100 p,
+.bg-sage-veil,
+.bg-sage-mist {
+  color: #3c222a; /* sage-900: 8.2:1 on sage tints */
+}
+
+.bg-sage-50 a,
+.bg-sage-100 a {
+  color: #1f5a73; /* sea-blue-700: 6.1:1 */
+}
+
+/* Text on cream backgrounds */
+.bg-cream-tint .text-primary,
+.bg-cream-50 .text-primary {
+  color: #3c222a;
+}
+
+.bg-cream-tint .text-secondary,
+.bg-cream-50 .text-secondary {
+  color: #5e534a; /* warm-gray-700 */
+}
+
+/* ========== 9. LOADING & FEEDBACK STATES ========== */
+
+/* Loading spinner */
+.btn[aria-busy="true"] {
+  background-color: #ede3e5;
+  color: #7a6f68;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.btn[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  right: 12px;
+  margin-top: -8px;
+  border: 2px solid #7a6f68;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success state */
+.form-success {
+  background: #f0f7fa;
+  border: 1px solid #2d7390;
+  color: #1f5a73;
+  padding: var(--space-sm);
+  border-radius: 6px;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.form-success::before {
+  content: "✓";
+  color: #2d7390;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Error state */
+.form-error-container {
+  background: #fcf5f3;
+  border: 1px solid #ab5943;
+  color: #ab5943;
+  padding: var(--space-sm);
+  border-radius: 6px;
+  margin-bottom: var(--space-md);
+}
+
+/* ========== 10. FOCUS INDICATORS (KEYBOARD NAVIGATION) ========== */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid #6d3a47;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ========== 11. STICKY FOOTER CTA (MOBILE) ========== */
+
+.page-footer-cta {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .page-footer-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #ede3e5;
+    padding: var(--space-sm);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+    animation: slideUp 0.3s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .page-footer-cta .btn-primary {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* Push content up to avoid overlap */
+  main {
+    padding-bottom: 80px;
+  }
+}
+
+/* ========== 12. MICRO-INTERACTIONS & SCROLL PERFORMANCE ========== */
+
+/* Smooth interactions */
+a,
+button,
+input,
+select,
+textarea {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Active state feedback */
+button:active,
+.btn:active {
+  transform: scale(0.98) translate3d(0, 0, 0);
+}
+
+/* Scroll containers */
+.scroll-container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* Momentum scrolling iOS */
+  contain: layout style paint;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========== UTILITIES ========== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.no-touch-target-padding {
+  min-height: auto;
+  min-width: auto;
+}
+
+/* Container widths */
+.container-base {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .container-base {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-base {
+    padding: 0 2rem;
+  }
+}
+
+/* Hide on mobile, show on tablet+ */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}

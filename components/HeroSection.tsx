@@ -282,7 +282,7 @@ export default function HeroSection() {
             }}
             className="md:mx-0 mx-auto md:justify-start md:mb-8"
           >
-            {/* Badge 1: Licensed LCSW */}
+            {/* Badge 1: Licensed Therapist */}
             <div
               style={{
                 display: 'inline-flex',
@@ -312,7 +312,7 @@ export default function HeroSection() {
                 <path d="M12 3l7 3v5.5c0 4.3-2.9 8.2-7 9.5-4.1-1.3-7-5.2-7-9.5V6l7-3z" />
                 <path d="M9.2 12.2l2 2 3.6-3.9" />
               </svg>
-              <span>Licensed LCSW</span>
+              <span>Licensed (Canada, CA, FL)</span>
             </div>
 
             {/* Badge 2: Accepting New Clients */}

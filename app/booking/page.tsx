@@ -7,7 +7,7 @@ import ObjectionHandler from '@/components/ObjectionHandler'
 
 export const metadata: Metadata = {
   title: 'Book Your Free Therapy Consultation | Wonderloud Therapy',
-  description: 'Book your free 15-minute therapy consultation with Rainuka Oberoi, LCSW. Explore your needs, discuss your goals. No pressure, no obligation. Telehealth available.',
+  description: 'Book your free 15-minute therapy consultation. Explore your needs, discuss your goals. No pressure, no obligation. Telehealth available. Licensed therapist in Canada, California, and Florida.',
   openGraph: {
     title: 'Book Your Free Therapy Consultation | Wonderloud Therapy',
     description: 'Schedule your free therapy consultation. No obligation, no forms. Telehealth available.',

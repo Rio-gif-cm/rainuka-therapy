@@ -234,7 +234,7 @@ export default function HolidayStressPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
                 <p className="text-4xl font-bold" style={{color: '#547c3f'}}>57%</p>
-                <p className="text-warm-gray-600 text-sm mt-2">of Americans report the holiday season as stressful</p>
+                <p className="text-warm-gray-600 text-sm mt-2">of people report the holiday season as stressful</p>
               </div>
               <div>
                 <p className="text-4xl font-bold" style={{color: '#547c3f'}}>32%</p>

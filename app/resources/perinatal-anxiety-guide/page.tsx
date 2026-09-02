@@ -347,15 +347,15 @@ export default function PerinatalAnxietyGuide() {
             </div>
             <div className="sm:w-3/4">
               <h3 className="text-lg font-semibold text-warm-gray-900">
-                Rainuka Oberoi, LCSW
+                Rainuka Oberoi, Licensed Therapist
               </h3>
               <p className="text-warm-gray-700 mb-4">
-                Licensed Clinical Social Worker specializing in perinatal mental
+                Licensed therapist specializing in perinatal mental
                 health, ADHD in adults, and career transitions. 12+ years helping
                 clients navigate anxiety, identity, and life changes.
               </p>
               <ul className="text-sm text-warm-gray-600 space-y-1">
-                <li>✓ Licensed in California (LCSW #123456)</li>
+                <li>✓ Licensed in Canada, California, and Florida</li>
                 <li>✓ Specialized training in perinatal anxiety</li>
                 <li>✓ CBT, somatic, and attachment-focused therapy</li>
                 <li>✓ In-person (Oakland) & telehealth (CA-licensed only)</li>
