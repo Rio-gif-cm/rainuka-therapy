@@ -2,6 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import CalendarPicker from './CalendarPicker'
+import { 
+  trackFormView, 
+  trackFieldInteraction, 
+  trackFormSubmit, 
+  trackFormSuccess,
+  initializeGATracking
+} from '@/lib/ga'
 
 type FormStep = 'contact' | 'confirmation'
 

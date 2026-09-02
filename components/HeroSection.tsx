@@ -1036,12 +1036,12 @@ export default function HeroSection() {
           .hero-reveal,
           .hero-pulse-dot,
           .hero-leaf { animation: none; }
-          .hero-plate,
+          .hero-plate-wrapper,
           .hero-chip,
           .hero-cta-primary,
           .hero-cta-ghost,
           .hero-cta-arrow { transition: none; }
-          .hero-plate:hover,
+          .hero-plate-wrapper:hover,
           .hero-chip:hover,
           .hero-cta-primary:hover,
           .hero-cta-ghost:hover { transform: none; }

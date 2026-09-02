@@ -5,6 +5,7 @@ import TestimonialCard from '@/components/TestimonialCard'
 import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import Link from 'next/link'
 import { expandedTestimonials } from '@/src/data/testimonials'
+import { buttonPresets } from '@/lib/button-styles'
 
 export const metadata: Metadata = {
   title: 'About Rainuka — Licensed Therapist (Canada, CA, FL)',
@@ -502,7 +503,7 @@ export default function AboutPage() {
             <p className="text-lg mb-8 text-burgundy-50 max-w-2xl mx-auto">
               Let's talk about what you're navigating.
             </p>
-            <Link href="/booking" className="inline-block bg-white text-burgundy-400 px-8 py-4 font-semibold rounded-lg hover:bg-burgundy-50">
+            <Link href="/booking" className={buttonPresets.formSubmit}>
               Book Your Free Call
             </Link>
           </div>

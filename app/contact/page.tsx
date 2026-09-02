@@ -103,44 +103,47 @@ export default function ContactPage() {
 
                 <form className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="form-label">
-                      What should I call you?
+                    <label htmlFor="name" className="form-label block font-semibold text-warm-gray-900 mb-2">
+                      What should I call you? *
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       placeholder="Jane"
-                      className="form-input"
+                      className="form-input w-full"
                       required
+                      aria-required="true"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="form-label">
-                      Email Address
+                    <label htmlFor="email" className="form-label block font-semibold text-warm-gray-900 mb-2">
+                      Email Address *
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       placeholder="jane@example.com"
-                      className="form-input"
+                      className="form-input w-full"
                       required
+                      aria-required="true"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="form-label">
-                      How can I help?
+                    <label htmlFor="message" className="form-label block font-semibold text-warm-gray-900 mb-2">
+                      How can I help? *
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       placeholder="Tell me what's on your mind..."
                       rows={5}
-                      className="form-input resize-none"
+                      className="form-input resize-none w-full"
                       required
+                      aria-required="true"
                     />
                   </div>
 

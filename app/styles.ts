@@ -1,16 +1,16 @@
 // Design system colors and styles as JavaScript objects
 const baseColors = {
-  sage: {
-    50: '#f8faf7',
-    100: '#e8ede5',
-    200: '#d1dcc8',
-    300: '#b5c7aa',
-    400: '#9dbb8d',
-    500: '#82a86c',
-    600: '#6b944f',
-    700: '#547c3f',
-    800: '#426232',
-    900: '#334c27',
+  burgundy: {
+    50: '#f7f3f4',
+    100: '#ede3e5',
+    200: '#d9bfc5',
+    300: '#c19b9f',
+    400: '#a8707f',
+    500: '#8a4f61',
+    600: '#6d3a47',
+    700: '#58303a',
+    800: '#482a32',
+    900: '#3c222a',
   },
   warmGray: {
     50: '#faf9f7',
@@ -28,13 +28,17 @@ const baseColors = {
 }
 
 /**
- * Public token object. `sageGreen` is a legacy alias for the sage ramp - older
+ * Public token object. `sageGreen` is a legacy alias for the burgundy ramp - older
  * surfaces (providers directory, verification badge) address it by that name,
  * so both keys resolve to the exact same values.
+ * 
+ * IMPROVEMENT #2: Color hierarchy standardized to burgundy (primary brand color)
+ * All interactive elements use burgundy-600 (base), burgundy-700 (hover/active)
  */
 export const colors = {
   ...baseColors,
-  sageGreen: baseColors.sage,
+  sage: baseColors.burgundy,  // Backward compatibility alias
+  sageGreen: baseColors.burgundy,  // Backward compatibility alias
 }
 
 // ---------------------------------------------------------------
@@ -129,22 +133,22 @@ export const styles = {
     transition: 'all 0.3s ease',
   },
   btnPrimary: {
-    backgroundColor: colors.sage[600],
+    backgroundColor: colors.burgundy[600],
     color: 'white',
   },
   btnPrimaryHover: {
-    backgroundColor: colors.sage[700],
+    backgroundColor: colors.burgundy[700],
     boxShadow: `0 10px 25px rgba(107, 148, 79, 0.15)`,
   },
   btnOutline: {
     backgroundColor: 'transparent',
-    color: colors.sage[600],
-    border: `2px solid ${colors.sage[600]}`,
+    color: colors.burgundy[600],
+    border: `2px solid ${colors.burgundy[600]}`,
   },
   btnOutlineHover: {
-    backgroundColor: colors.sage[50],
-    borderColor: colors.sage[700],
-    color: colors.sage[700],
+    backgroundColor: colors.burgundy[50],
+    borderColor: colors.burgundy[700],
+    color: colors.burgundy[700],
   },
   /**
    * Standard section band. Matches `.section-padding` in globals.css
@@ -353,7 +357,7 @@ export const heroStyles = {
     alignItems: 'center' as const,
     justifyContent: 'center' as const,
     position: 'relative' as const,
-    border: `1px solid ${colors.sage[100]}`,
+    border: `1px solid ${colors.burgundy[100]}`,
   },
   heroImageGradient: {
     position: 'absolute' as const,
@@ -436,7 +440,7 @@ export const globalStyles = `
 /* PRIMARY BUTTON: Hover (scale up + shadow lift) + Focus (ring) + Active (press down) */
 .btn-primary {
   transition: all 0.15s ease-out;
-  background-color: ${colors.sage[600]};
+  background-color: ${colors.burgundy[600]};
   color: white;
   border: none;
   cursor: pointer;
@@ -445,13 +449,13 @@ export const globalStyles = `
 }
 
 .btn-primary:hover {
-  background-color: ${colors.sage[700]};
+  background-color: ${colors.burgundy[700]};
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
   transform: scale(1.03);
 }
 
 .btn-primary:focus {
-  outline: 2px solid ${colors.sage[600]};
+  outline: 2px solid ${colors.burgundy[600]};
   outline-offset: 3px;
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
 }
@@ -459,38 +463,38 @@ export const globalStyles = `
 .btn-primary:active {
   transform: scale(0.98);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
-  background-color: ${colors.sage[700]};
+  background-color: ${colors.burgundy[700]};
 }
 
 /* OUTLINE BUTTON: Enhanced states with better feedback */
 .btn-outline {
   transition: all 0.15s ease-out;
   background-color: transparent;
-  color: ${colors.sage[600]};
-  border: 2px solid ${colors.sage[600]};
+  color: ${colors.burgundy[600]};
+  border: 2px solid ${colors.burgundy[600]};
   cursor: pointer;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
 .btn-outline:hover {
-  background-color: ${colors.sage[50]};
-  border-color: ${colors.sage[700]};
-  color: ${colors.sage[700]};
+  background-color: ${colors.burgundy[50]};
+  border-color: ${colors.burgundy[700]};
+  color: ${colors.burgundy[700]};
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
   transform: scale(1.02);
 }
 
 .btn-outline:focus {
-  outline: 2px solid ${colors.sage[600]};
+  outline: 2px solid ${colors.burgundy[600]};
   outline-offset: 3px;
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
 }
 
 .btn-outline:active {
-  background-color: ${colors.sage[50]};
-  border-color: ${colors.sage[700]};
-  color: ${colors.sage[700]};
+  background-color: ${colors.burgundy[50]};
+  border-color: ${colors.burgundy[700]};
+  color: ${colors.burgundy[700]};
   transform: scale(0.98);
   box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
 }
@@ -498,21 +502,21 @@ export const globalStyles = `
 /* LINK BUTTONS: Subtle hover with underline enhancement */
 .btn-link {
   transition: all 0.15s ease-out;
-  color: ${colors.sage[600]};
+  color: ${colors.burgundy[600]};
   text-decoration: none;
-  border-bottom: 2px solid ${colors.sage[600]};
+  border-bottom: 2px solid ${colors.burgundy[600]};
   outline: 2px solid transparent;
   outline-offset: 2px;
   cursor: pointer;
 }
 
 .btn-link:hover {
-  color: ${colors.sage[700]};
-  border-bottom-color: ${colors.sage[700]};
+  color: ${colors.burgundy[700]};
+  border-bottom-color: ${colors.burgundy[700]};
 }
 
 .btn-link:focus {
-  outline: 2px solid ${colors.sage[600]};
+  outline: 2px solid ${colors.burgundy[600]};
   outline-offset: 3px;
 }
 
@@ -525,7 +529,7 @@ export const globalStyles = `
      card system in app/globals.css (.card / .niche-card). Only focus affordance
      lives here so it can't drift from the shared surface. */
 .niche-card:focus-within {
-  outline: 2px solid ${colors.sage[600]};
+  outline: 2px solid ${colors.burgundy[600]};
   outline-offset: 2px;
 }
 
@@ -533,12 +537,12 @@ export const globalStyles = `
 .explore-arrow {
   display: inline-block;
   transition: all 0.3s ease;
-  color: ${colors.sage[600]};
+  color: ${colors.burgundy[600]};
 }
 
 .niche-card:hover .explore-arrow,
 .niche-card:active .explore-arrow {
-  color: ${colors.sage[700]};
+  color: ${colors.burgundy[700]};
   animation: arrowBounce 0.6s ease;
 }
 

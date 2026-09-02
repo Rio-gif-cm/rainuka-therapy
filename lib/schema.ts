@@ -2,6 +2,7 @@
  * Consolidated schema.org structured data for Rainuka Therapy
  * Single source of truth for LocalBusiness and AggregateRating schemas
  * Licensed in: Canada (primary), California (US), Florida (US)
+ * Privacy: PIPEDA-compliant (Canada primary), HIPAA-compliant (US)
  * Used in app/layout.tsx (global) to avoid duplication
  */
 
@@ -9,7 +10,7 @@
  * LocalBusiness schema for organization credibility + SEO
  * @id is globally unique across the site (not page-specific)
  * Includes ProfessionalService type for therapy context
- * areaServed: Canada, California (CA), Florida (FL)
+ * areaServed: Canada (primary), California (CA), Florida (FL)
  */
 export const getLocalBusinessSchema = (config?: {
   telephone?: string

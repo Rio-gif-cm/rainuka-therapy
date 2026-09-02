@@ -934,7 +934,7 @@ input:invalid,
 input:invalid:focus,
 .form-input[aria-invalid="true"]:focus {
   border-color: var(--alert-700);
-  box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.1);
+  box-shadow: 0 0 0 2px var(--alert-700); /* 2px error focus ring */
 }
 
 .form-label {
