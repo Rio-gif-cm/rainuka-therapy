@@ -621,7 +621,7 @@ export default function HeroSection() {
                   marginBottom: '0.375rem',
                 }}
               >
-                Space for Your Photo
+                Rainuka Oberoi, LCSW
               </p>
               <p
                 style={{
@@ -630,7 +630,7 @@ export default function HeroSection() {
                   margin: 0,
                 }}
               >
-                Professional headshot will appear here
+                Therapist • 12+ years experience
               </p>
             </div>
           </div>
