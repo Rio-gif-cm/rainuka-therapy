@@ -95,7 +95,7 @@ export default function CareerPage() {
             accent={accent}
             eyebrow="Why this works"
             title="Why Therapy for Career Stuff"
-            intro="Career decisions are identity decisions. &ldquo;What should I do?&rdquo; is really &ldquo;Who am I?&rdquo;"
+            intro="Career decisions are identity decisions. Who you are at work, what you'll tolerate, what's worth the cost."
           />
 
           <SpecialtyChecklist
@@ -103,16 +103,16 @@ export default function CareerPage() {
             cols={1}
             items={[
               <>
-                <strong>Burnout isn&apos;t laziness.</strong> Your system is telling you something has to change.
+                <strong>Burnout is real.</strong> Your system has hit a limit. That's not laziness—that's data.
               </>,
               <>
-                <strong>Doubt doesn&apos;t mean you&apos;re failing.</strong> It means you&apos;re paying attention to something real.
+                <strong>Doubt is honest.</strong> If something feels wrong, you're picking up on something true.
               </>,
               <>
-                <strong>Clarity beats certainty.</strong> Move without waiting to feel sure.
+                <strong>Clarity is enough.</strong> You don't need certainty to move. You need to know why you're moving.
               </>,
               <>
-                <strong>Your values, not the borrowed ones.</strong> Clarify what actually matters to you.
+                <strong>Your values, not borrowed ones.</strong> Separate what you want from what you've been told to want.
               </>,
             ]}
           />
@@ -128,37 +128,37 @@ export default function CareerPage() {
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Burnout Recovery">
               <p>
-                Understand burnout. Rest without guilt. Rebuild sustainable habits.
+                What happens when rest becomes guilt? When can you stop running? We map the exhaustion and rebuild without shame.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Values Clarification">
               <p>
-                What actually matters to you. Aligned work.
+                Your real wants, not the ones you inherited. Does the job align with them?
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Decision-Making Paralysis">
               <p>
-                Work through analysis paralysis. Move from &quot;I don&apos;t know&quot; to &quot;I&apos;ll try.&quot;
+                Every option feels wrong because you're judging them without clarity. We narrow it. Then you move.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Imposter Syndrome">
               <p>
-                Replace the doubt voice with evidence-based confidence.
+                The voice that says you'll be found out. It's loud. Let's look at the evidence instead.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Perfectionism & Overwork">
               <p>
-                Perfectionism was survival. Now it&apos;s exhausting. Separate worth from performance.
+                It kept you safe once. Now it's the trap. Separate who you are from what you produce.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Grief for Paths Not Taken">
               <p>
-                Mourn the path not taken. Build excitement for what&apos;s ahead.
+                Every choice closes doors. Acknowledge what you're leaving behind. Then look at what's ahead.
               </p>
             </SpecialtyCard>
           </SpecialtyGrid>
@@ -176,19 +176,19 @@ export default function CareerPage() {
             items={[
               {
                 q: 'How often do we meet, and for how long?',
-                a: 'Typically weekly, 50-minute sessions. Some people need 6 sessions; some need 20. It depends on what you\u2019re navigating and what feels right—we reassess as we go.',
+                a: 'Weekly, 50-minute sessions. Most people need 6 to 20 sessions. It depends on what you\'re working with and what feels right. We check in and adjust.',
               },
               {
                 q: 'Does telehealth actually work for career work?',
-                a: 'Very well. No interruptions, no commute eating your energy, and continuity of thinking between sessions. You\u2019re in your own space, which usually makes the honest conversations easier.',
+                a: 'Yes. No commute draining your energy, no interruptions, and you\'re in a space where honesty comes easier. Continuity between sessions is real too.',
               },
               {
                 q: 'What happens in the first few sessions?',
-                a: 'We map what led to the burnout or the doubt, name the pressures you\u2019re actually under, and start clarifying your values. You leave with a clearer picture of the problem, not just a vaguer feeling about it.',
+                a: 'We map what led to the burnout or the doubt. We name the actual pressures you\'re under. We test your values. You leave with a clear picture of the problem instead of just a feeling that something\'s wrong.',
               },
               {
                 q: 'Will you tell me whether to quit my job?',
-                a: 'No. That decision is yours, and it should be. My job is to clear enough fog that you can make it deliberately rather than reactively—and to be there for the fallout either way.',
+                a: 'No. That decision stays yours. My job is to clear the fog so you make it deliberately instead of reactively. And I\'ll be here for what comes after.',
               },
             ]}
           />
@@ -218,13 +218,13 @@ export default function CareerPage() {
         )}
 
         <SpecialtyWhyRainuka accent={accent}>
-          Trauma-informed career support. Burnout recovery and practical strategy.
+          Real career work. Burnout doesn't fix itself, and neither do decisions made in panic.
         </SpecialtyWhyRainuka>
 
         <SpecialtyCTA
           accent={accent}
-          title="You don't have to figure this out alone"
-          body="Let's talk about what's holding you back—and what's possible."
+          title="Career confusion isn't something you figure out alone"
+          body="Let's talk about what's stopping you. And what moves you forward."
           ctaLabel="Book Your Free Call"
         />
       </main>
