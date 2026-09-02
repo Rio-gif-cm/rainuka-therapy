@@ -439,12 +439,12 @@ export default function HeroSection() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: '0.875rem', // sm: 0.875rem, md: 1.25rem
-              marginBottom: '1.25rem',
+              gap: '1rem', // Improved spacing consistency: 16px
+              marginBottom: '1.5rem',
             }}
-            className="md:flex-row md:justify-start md:gap-5"
+            className="md:flex-row md:justify-start md:gap-6"
           >
-            <Link href="/booking" className="hero-cta-primary w-full md:w-auto">
+            <Link href="/booking" className="hero-cta-primary w-full md:w-auto focus-glow">
               <span>Start Your Free Breakthrough Call</span>
               <svg
                 width="16"
@@ -456,13 +456,13 @@ export default function HeroSection() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
-                className="hero-cta-arrow"
+                className="hero-cta-arrow transition-transform"
               >
                 <path d="M5 12h13M13 6l6 6-6 6" />
               </svg>
             </Link>
 
-            <Link href="/about" className="hero-cta-ghost w-full md:w-auto">
+            <Link href="/about" className="hero-cta-ghost w-full md:w-auto focus-glow">
               Learn My Approach
             </Link>
           </div>

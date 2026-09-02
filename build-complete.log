@@ -1,0 +1,30 @@
+
+> rainuka-therapy@0.1.0 build
+> next build
+
+▲ Next.js 16.3.4 (Turbopack)
+- Environments: .env.local
+✓ Running next.config.ts took 23ms
+
+  Creating an optimized production build ...
+(node:22368) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Roanm/rainuka-therapy/tailwind.config.ts?id=1788324208196 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Roanm\rainuka-therapy\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+> Build error occurred
+Error: Turbopack build failed with 1 error:
+./app/page.tsx:60:29
+Error: Expected ',', got 'ident'
+  [90m58 |[0m   {
+  [90m59 |[0m     q: [32m'How long is the free consultation?'[0m,
+[31m[1m>[0m [90m60 |[0m     a: [32m'Fifteen minutes. We'[0mll chat about what[32m's bringing you in, I'[0mll share a bit about h...
+  [90m   |[0m                             [31m[1m^^[0m
+  [90m61 |[0m   },
+  [90m62 |[0m   {
+  [90m63 |[0m     q: [32m'How much does therapy cost?'[0m,
+
+Parsing ecmascript source code failed
+
+
+    at <unknown> (./app/page.tsx:60:29)

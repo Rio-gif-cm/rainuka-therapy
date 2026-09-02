@@ -23,14 +23,14 @@ export const metadata: Metadata = {
  * Homepage narrative arc (background rhythm alternates tint / white,
  * with a single sage accent band as the emotional peak):
  *
- *   1. Hero              — warm tint  (bg set inside HeroSection)
- *   2. Hero Social Proof — white      ← NEW: 2 testimonials for early impact
- *   3. Specializations   — white      (bg set inside NicheGrid)
- *   4. Approach          — warm tint
- *   5. Social proof      — white
- *   6. CTA               — sage accent  ← peak
- *   7. FAQ teaser        — warm tint
- *   8. Footer CTA        — white        ← soft landing into the footer
+ *   1. Hero              - warm tint  (bg set inside HeroSection)
+ *   2. Hero Social Proof - white      ← NEW: 2 testimonials for early impact
+ *   3. Specializations   - white      (bg set inside NicheGrid)
+ *   4. Approach          - warm tint
+ *   5. Social proof      - white
+ *   6. CTA               - sage accent  ← peak
+ *   7. FAQ teaser        - warm tint
+ *   8. Footer CTA        - white        ← soft landing into the footer
  */
 
 const approach = [
@@ -42,7 +42,7 @@ const approach = [
   {
     title: 'Culturally Humble',
     description:
-      'Your values matter. I'm learning from you.',
+      'Your values matter. I\'m learning from you.',
   },
   {
     title: 'Practical',
@@ -57,15 +57,15 @@ const approach = [
 const faqs = [
   {
     q: 'How long is the free consultation?',
-    a: 'Fifteen minutes. We'll chat about what's bringing you in, I'll share a bit about how I work, and we'll see if it feels like a fit.',
+    a: "Fifteen minutes. We'll chat about what's bringing you in, I'll share a bit about how I work, and we'll see if it feels like a fit.",
   },
   {
     q: 'How much does therapy cost?',
-    a: 'I offer sliding scale sessions from $80–$150 per 50-minute session. Let's figure out what works for your budget.',
+    a: "I offer sliding scale sessions from $80-$150 per 50-minute session. Let's figure out what works for your budget.",
   },
   {
     q: 'Do you take insurance?',
-    a: 'I'm happy to provide a superbill for out-of-network reimbursement, and I can walk you through how to use it on our first call.',
+    a: "I'm happy to provide a superbill for out-of-network reimbursement, and I can walk you through how to use it on our first call.",
   },
   {
     q: 'Are sessions confidential?',
@@ -90,10 +90,10 @@ export default function Home() {
           }}
         />
 
-        {/* ---------- 1. Hero — warm tint ---------- */}
+        {/* ---------- 1. Hero - warm tint ---------- */}
         <HeroSection />
 
-        {/* ---------- 2. Hero Social Proof — white, immediate impact ---------- */}
+        {/* ---------- 2. Hero Social Proof - white, immediate impact ---------- */}
         <section className="section-padding bg-white border-b border-sage-100">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -125,10 +125,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 3. Specializations — white ---------- */}
+        {/* ---------- 3. Specializations - white ---------- */}
         <NicheGrid />
 
-        {/* ---------- 4. Approach — warm tint ---------- */}
+        {/* ---------- 4. Approach - warm tint ---------- */}
         <section className="section-padding bg-warm-gray-50 border-t border-sage-100">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center">
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 5. Social proof — white ---------- */}
+        {/* ---------- 5. Social proof - white ---------- */}
         <section className="section-padding bg-white">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 6. CTA — burgundy accent (the peak) ---------- */}
+        {/* ---------- 6. CTA - burgundy accent (the peak) ---------- */}
         <section className="section-padding text-white" style={{ backgroundColor: '#6d3a47' }}>
           <div className="container-base text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to start?</h2>
@@ -213,7 +213,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 7. FAQ teaser — warm tint ---------- */}
+        {/* ---------- 7. FAQ teaser - warm tint ---------- */}
         <section className="section-padding bg-warm-gray-50">
           <div className="container-base">
             <div className="max-w-3xl mx-auto text-center mb-12">
@@ -247,7 +247,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- 8. Footer CTA — white, soft landing ---------- */}
+        {/* ---------- 8. Footer CTA - white, soft landing ---------- */}
         <section className="section-padding bg-white border-t border-sage-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">

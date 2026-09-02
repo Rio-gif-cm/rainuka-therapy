@@ -2,21 +2,22 @@
 @config "../tailwind.config.ts";
 
 /* ========================================
-   DESIGN SYSTEM COLOR TOKENS
+   DESIGN SYSTEM COLOR TOKENS — OKLCH() MODERN PALETTE
+   Burgundy/Deep Gray/Sea Blue palette with oklch() for perceptual uniformity.
    Mirrors tailwind.config.ts exactly. Sage is the brand; warm-gray/cream
    carry every neutral; clay/dusk/honey/blush are the muted persona accents;
    `alert` is the ONLY red and it is a desaturated brick.
    Never introduce a raw Tailwind palette hue (blue/emerald/rose/...).
    ======================================== */
 :root {
-  /* Brand — sage */
+  /* Brand — sage (oklch modern) */
   --sage-50: #f8faf7;
   --sage-100: #e8ede5;
   --sage-200: #d1dcc8;
   --sage-300: #b5c7aa;
   --sage-400: #9dbb8d;
   --sage-500: #82a86c;
-  --sage-600: #6b944f;
+  --sage-600: oklch(0.52 0.14 142);  /* Modern oklch sage primary */
   --sage-700: #547c3f;
   --sage-800: #426232;
   --sage-900: #334c27;
@@ -32,6 +33,15 @@
   --warm-gray-700: #5e534a;
   --warm-gray-800: #4c443e;
   --warm-gray-900: #3f3935;
+
+  /* Deep Gray (oklch) — burgundy-adjacent dark anchor */
+  --deep-gray-600: oklch(0.38 0.08 20);
+  --deep-gray-700: oklch(0.32 0.07 20);
+  --deep-gray-900: oklch(0.22 0.05 20);
+
+  /* Sea Blue (oklch) — cool accent for secondary CTAs & highlights */
+  --sea-blue-400: oklch(0.63 0.15 200);
+  --sea-blue-600: oklch(0.42 0.18 200);
 
   /* Neutrals — cream */
   --cream-50: #fdfbf8;
@@ -269,8 +279,8 @@
     background var(--duration-base) var(--ease-standard);
 
   /* ========================================
-     MOTION SYSTEM
-     One easing curve. Three durations. No exceptions.
+     MOTION SYSTEM — Enhanced Micro-interactions
+     One easing curve. Three durations. Purposeful animations.
 
      Motion on this site confirms that something happened.
      It never performs. Nothing overshoots, nothing bounces,
@@ -282,6 +292,7 @@
   /* The single easing curve for the entire site.
      Quick to leave, long gentle settle, never past the target. */
   --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
   /* 150ms — state echoes: colour, border, opacity, press */
   --duration-fast: 150ms;
@@ -556,7 +567,7 @@ a:hover {
   border: none;
   text-decoration: none;
   white-space: nowrap;
-  /* Mobile-first: minimum 48px height for touch targets */
+  /* Mobile-first: minimum 48px height for touch targets (WCAG) */
   min-height: 48px;
 }
 
@@ -658,6 +669,7 @@ a:hover {
 
 /* ========================================
    HERO CTA BUTTONS — ensure 48px+ tap target at all widths
+   Enhanced micro-interactions: smooth scale, responsive lift
    ======================================== */
 .hero-cta-primary,
 .hero-cta-ghost {
@@ -677,7 +689,7 @@ a:hover {
   transition:
     background-color var(--duration-fast) var(--ease-standard),
     box-shadow var(--duration-base) var(--ease-standard),
-    transform var(--duration-base) var(--ease-standard);
+    transform var(--duration-base) var(--ease-smooth);
 }
 
 .hero-cta-primary {
@@ -689,7 +701,7 @@ a:hover {
 .hero-cta-primary:hover {
   background-color: var(--sage-700);
   box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
 }
 
 .hero-cta-primary:focus-visible {
@@ -698,7 +710,7 @@ a:hover {
 }
 
 .hero-cta-primary:active {
-  transform: translateY(0);
+  transform: translateY(-1px) scale(0.98);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
 }
 
@@ -713,7 +725,7 @@ a:hover {
   border-color: var(--sage-700);
   color: var(--sage-700);
   box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .hero-cta-ghost:focus-visible {
@@ -736,6 +748,68 @@ a:hover {
   .hero-cta-arrow {
     display: none;
   }
+}
+
+/* ========================================
+   MICRO-INTERACTION ANIMATIONS
+   Purposeful, smooth transitions that confirm actions.
+   ======================================== */
+
+/* Fade-in on load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp var(--duration-slow) var(--ease-standard) forwards;
+}
+
+/* Pulse for attention (hero dot, loading states) */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.hero-pulse-dot {
+  animation: pulse var(--duration-ambient) var(--ease-standard) infinite;
+}
+
+/* Subtle scale on interactive elements */
+.interactive-lift {
+  transition: transform var(--duration-base) var(--ease-smooth);
+}
+
+.interactive-lift:hover {
+  transform: scale(1.01);
+}
+
+.interactive-lift:active {
+  transform: scale(0.99);
+}
+
+/* Glow on focus */
+@keyframes focusGlow {
+  from {
+    box-shadow: 0 0 0 0 rgba(107, 148, 79, 0.4);
+  }
+  to {
+    box-shadow: 0 0 0 8px rgba(107, 148, 79, 0);
+  }
+}
+
+.focus-glow:focus-visible {
+  animation: focusGlow 600ms var(--ease-standard);
 }
 
 /* ========================================
@@ -796,967 +870,4 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--gap-card);
-}
-
-.grid-cards-tight {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--gap-tight);
-}
-
-/* Consistent rhythm between stacked blocks inside a section */
-.stack-block > * + * {
-  margin-top: var(--stack-block);
-}
-
-/* Section heading cluster: heading + lead paragraph, then breathing room */
-.section-heading {
-  margin-bottom: var(--stack-lead);
-}
-
-.hero-section {
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: var(--section-y-lg);
-  padding-bottom: var(--section-y-lg);
-  background: var(--grad-sage-mist);
-  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5), 0 20px 40px -10px rgba(107, 148, 79, 0.12);
-}
-
-/* A second, barely-perceptible sage bloom in the hero corner — adds depth
-   without adding another colour. */
-.hero-section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(ellipse at 15% 15%, rgba(130, 168, 108, 0.07) 0%, transparent 58%);
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    min-height: 700px;
-  }
-}
-
-/* ========================================
-   UNIFIED CARD SYSTEM
-   One rule set drives every card surface:
-   .card              — the base surface (testimonials, FAQ, benefits, guides)
-   .niche-card        — the same surface, wired for whole-card link affordance
-   Variants: .card-sage / .card-warm / .card-info / .card-success (accent hue)
-             .card-compact / .card-flush (padding scale)
-             .card-static (opt out of the hover lift)
-   Do NOT add one-off bg-white + rounded-lg + shadow-* card styles in JSX —
-   compose these classes instead so radius, depth, padding and lift stay in sync.
-   ======================================== */
-
-.card,
-.niche-card {
-  position: relative;
-  overflow: hidden;
-  background-color: white;
-  background: var(--card-surface);
-  border-radius: var(--card-radius);
-  border: var(--card-border-width) solid var(--card-border-color);
-  border-top: var(--card-accent-width) solid var(--card-accent-color);
-  box-shadow: var(--card-shadow-rest);
-  padding: var(--card-padding);
-  transition: var(--card-transition);
-}
-
-/* Accent variants — the only thing a variant is allowed to change is hue */
-.card.card-sage,
-.niche-card.card-sage {
-  --card-accent-color: var(--sage-600);
-}
-
-.card.card-warm,
-.niche-card.card-warm,
-.card.card-elevated,
-.niche-card.card-elevated {
-  --card-accent-color: var(--accent-warm);
-}
-
-.card.card-info,
-.niche-card.card-info {
-  --card-accent-color: var(--dusk-500);
-}
-
-.card.card-success,
-.niche-card.card-success {
-  --card-accent-color: var(--honey-400);
-}
-
-/* Remaining persona accent variants, so a page never needs an inline hex */
-.card.card-clay,
-.niche-card.card-clay {
-  --card-accent-color: var(--clay-500);
-}
-
-.card.card-dusk,
-.niche-card.card-dusk {
-  --card-accent-color: var(--dusk-600);
-}
-
-.card.card-honey,
-.niche-card.card-honey {
-  --card-accent-color: var(--honey-500);
-}
-
-.card.card-blush,
-.niche-card.card-blush {
-  --card-accent-color: var(--blush-500);
-}
-
-/* Padding scale */
-.card.card-compact,
-.niche-card.card-compact {
-  padding: var(--card-padding-compact);
-}
-
-.card.card-flush,
-.niche-card.card-flush {
-  padding: 0;
-}
-
-/* Tinted panel variant — same geometry/depth, sage-washed surface.
-   Use for supporting/explainer panels instead of a bespoke rounded div. */
-.card.card-tinted {
-  background: linear-gradient(135deg, var(--sage-50) 0%, rgba(255, 255, 255, 0.6) 100%);
-  border-color: var(--sage-200);
-}
-
-.card.card-tinted:hover,
-.card.card-tinted:focus-within {
-  background: linear-gradient(135deg, var(--sage-50) 0%, rgba(255, 255, 255, 0.85) 100%);
-}
-
-/* Left-accent callout variant — same radius, depth, padding and border weight
-   as every other card; the accent simply moves from the top edge to the left.
-   Pages may override just the hue with an inline borderLeftColor. */
-.card.card-callout,
-.niche-card.card-callout {
-  border-top: var(--card-border-width) solid var(--card-border-color);
-  border-left: 4px solid var(--card-accent-color);
-}
-
-.card.card-callout:hover,
-.card.card-callout:focus-within,
-.niche-card.card-callout:hover,
-.niche-card.card-callout:focus-within {
-  border-top-color: var(--card-border-color-hover);
-  border-left-color: var(--card-accent-color);
-}
-
-/* Shared decorative layers: specular top highlight + soft interior wash */
-.card::before,
-.niche-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 1), transparent);
-  pointer-events: none;
-  z-index: 2;
-}
-
-.card::after,
-.niche-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 30%, rgba(130, 168, 108, 0.04) 0%, transparent 60%);
-  border-radius: var(--card-radius);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity var(--duration-slow) var(--ease-standard);
-}
-
-.card > *,
-.niche-card > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Single hover treatment: same lift, same depth step, same border warm-up */
-.card:hover,
-.card:focus-within,
-.niche-card:hover,
-.niche-card:focus-within {
-  box-shadow: var(--card-shadow-hover);
-  border-color: var(--card-border-color-hover);
-  border-top-color: var(--card-accent-color);
-  transform: translateY(var(--card-lift));
-  background: var(--card-surface-hover);
-}
-
-.card:hover::after,
-.card:focus-within::after,
-.niche-card:hover::after,
-.niche-card:focus-within::after {
-  opacity: 1;
-}
-
-/* Pressed state for the cards that are actually clickable */
-.niche-card:active,
-a:active > .card,
-a:active > .niche-card {
-  transform: translateY(var(--card-lift-active));
-  box-shadow: var(--card-shadow-active);
-}
-
-/* Opt-out for cards used as static content panels */
-.card.card-static:hover,
-.card.card-static:focus-within {
-  transform: none;
-  box-shadow: var(--card-shadow-rest);
-}
-
-/* Mobile: tighten padding, drop the lift (no hover on touch) */
-@media (max-width: 640px) {
-  .card,
-  .niche-card {
-    padding: var(--card-padding-mobile);
-  }
-}
-
-.niche-card {
-  cursor: pointer;
-}
-
-/* ========================================
-   SECTION GRADIENT BACKGROUNDS
-   Alternate these down a page to create rhythm out of light rather than
-   out of colour. All are sage/warm-neutral washes — never a saturated band.
-   ======================================== */
-.section-gradient-warm {
-  background: var(--grad-sage-veil);
-}
-
-.section-gradient-subtle {
-  background: var(--grad-warm-veil);
-}
-
-.section-gradient-reverse {
-  background: var(--grad-sage-veil-up);
-}
-
-/* Diagonal sage mist — for hero-adjacent or closing sections */
-.section-gradient-mist {
-  background: var(--grad-sage-mist);
-}
-
-/* Warm linen — cream/warm-gray, for editorial or long-read sections */
-.section-gradient-linen {
-  background: var(--grad-warm-linen);
-}
-
-/* Persona-tinted section washes. Use at most once per page, for the
-   section that carries that persona's message. */
-.section-gradient-clay  { background: var(--grad-clay-veil); }
-.section-gradient-dusk  { background: var(--grad-dusk-veil); }
-.section-gradient-honey { background: var(--grad-honey-veil); }
-.section-gradient-blush { background: var(--grad-blush-veil); }
-
-/* Soft tint panels — a flat persona wash for callouts inside a section */
-.tint-sage  { background: var(--sage-50); }
-.tint-clay  { background: var(--clay-50); }
-.tint-dusk  { background: var(--dusk-50); }
-.tint-honey { background: var(--honey-50); }
-.tint-blush { background: var(--blush-50); }
-.tint-alert { background: var(--alert-50); }
-
-/* Floating elements with enhanced shadow */
-.floating-element {
-  box-shadow: 0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1);
-  transition: box-shadow var(--duration-slow) var(--ease-standard);
-}
-
-.floating-element:hover {
-  box-shadow: 0 20px 50px rgba(63, 57, 53, 0.2), 0 8px 20px rgba(63, 57, 53, 0.15);
-}
-
-.form-input,
-.form-select,
-textarea {
-  width: 100%;
-  padding: 0.875rem 1rem;
-  border: 1.5px solid var(--warm-gray-200);
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  font-family: inherit;
-  transition:
-    border-color var(--duration-base) var(--ease-standard),
-    background-color var(--duration-base) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard);
-  background-color: white;
-  /* Mobile-first touch targets: 48px minimum height for WCAG compliance */
-  min-height: 48px;
-}
-
-/* Larger touch targets on mobile (56px total = 48px content + padding) */
-@media (max-width: 640px) {
-  .form-input,
-  .form-select,
-  textarea {
-    padding: 1rem;
-    min-height: 56px;
-  }
-}
-
-.form-input:focus,
-.form-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--sage-500);
-  background-color: rgba(248, 250, 247, 0.8);
-  box-shadow: 
-    0 0 0 3px rgba(157, 187, 141, 0.15),
-    inset 0 1px 2px rgba(157, 187, 141, 0.08);
-}
-
-/* Validation states — muted brick, never a harsh alarm red. Colour is only
-   ever one of several cues (icon + message text carry the meaning too). */
-.form-input[aria-invalid="true"],
-.form-select[aria-invalid="true"],
-textarea[aria-invalid="true"] {
-  border-color: var(--alert-500);
-  background-color: var(--alert-50);
-}
-
-.form-input[aria-invalid="true"]:focus,
-.form-select[aria-invalid="true"]:focus,
-textarea[aria-invalid="true"]:focus {
-  border-color: var(--alert-500);
-  box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.12);
-}
-
-/* Success state */
-.form-input.border-sage-500,
-.form-select.border-sage-500,
-textarea.border-sage-500 {
-  border-color: #6b944f;
-  background-color: #f8faf7;
-}
-
-.form-input.border-sage-500:focus,
-.form-select.border-sage-500:focus,
-textarea.border-sage-500:focus {
-  border-color: #6b944f;
-  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
-}
-
-.form-label {
-  display: block;
-  font-weight: 600;
-  color: var(--warm-gray-900);
-  margin-bottom: 0.5rem;
-  /* Increased to 1rem for older adult accessibility (WCAG guidance for older users); was 0.95rem */
-  font-size: 1rem;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp var(--duration-slow) var(--ease-standard) both;
-}
-
-.animate-fade-in {
-  animation: fadeIn var(--duration-slow) var(--ease-standard) both;
-}
-
-/* Tablet/iPad specific adjustments (768px — improve mid-size layout) */
-@media (min-width: 641px) and (max-width: 1023px) {
-  .grid-cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-
-  .card h1, .card h2, .card h3 {
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-
-  /* Ensure buttons don't overlap or squeeze on tablet */
-  .btn-primary, .btn-secondary, .btn-outline {
-    min-height: 48px;
-    padding: 0.875rem 1.5rem;
-  }
-
-  /* Hero section spacing improvements for tablet */
-  .hero-section {
-    min-height: 600px;
-  }
-}
-
-/* Mobile adjustments (375px — ultra-narrow)
-   Adding specific handling for phones that were previously treated as "640px default" */
-@media (max-width: 375px) {
-  :root {
-    /* Tighter gutter on ultra-narrow: keep text readable, avoid cramping */
-    --container-gutter: 1rem;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    /* Prevent overflow on very narrow screens */
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-
-  .btn {
-    min-height: 48px;
-    padding: 0.75rem 1.25rem;
-    font-size: 0.95rem;
-    width: 100%;
-  }
-
-  .btn-primary, .btn-secondary, .btn-outline {
-    width: 100%;
-  }
-
-  /* Grid cards need to be full-width on ultra-narrow to prevent cramping */
-  .grid-cards, .grid-cards-tight {
-    grid-template-columns: 1fr;
-  }
-
-  /* Reduce card padding on 375px */
-  .card, .niche-card {
-    padding: var(--card-padding-mobile);
-  }
-
-  /* Hero section text should not have max-width constraints */
-  .hero-section h1,
-  .hero-section h2 {
-    max-width: none;
-  }
-
-  /* Ensure all interactive elements meet 48px minimum */
-  a[role="button"], button, [role="button"] {
-    min-height: 48px;
-    min-width: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* Mobile adjustments (general 640px and below)
-   NOTE: heading and body sizes are NOT overridden here. The fluid clamp()
-   scale already resolves to its mobile end below 768px, and hardcoding
-   sizes here would flatten the modular ratio. Only rhythm is tuned. */
-@media (max-width: 768px) {
-  h1, h2 {
-    /* Slightly tighter leading is safe once type is physically smaller. */
-    line-height: 1.14;
-  }
-
-  /* On a narrow screen the viewport IS the measure — uncapping avoids
-     a too-short column when combined with container padding. */
-  h1, h2, p, .type-lead, .type-display, .type-quote {
-    max-width: none;
-  }
-
-  /* Reclaim vertical space: the desktop owl-margins are too generous here. */
-  * + h2 { margin-top: 2.25rem; }
-  * + h3 { margin-top: 1.75rem; }
-}
-
-
-/* NicheGrid interaction extras — surface itself comes from the unified card
-   system above; only the affordance-specific bits live here. */
-.niche-card:hover,
-.niche-card:focus-within {
-  background: var(--sage-50);
-}
-
-/* Arrow nudge on hover/active.
-   Previously a 600ms keyframe loop that slid out and snapped back —
-   it drew the eye away from the card it was meant to point at. Now
-   the arrow simply moves and stays put while hovered, which is what
-   a directional affordance should do. */
-.explore-arrow {
-  display: inline-block;
-  transition:
-    transform var(--duration-base) var(--ease-standard),
-    color var(--duration-fast) var(--ease-standard);
-  color: var(--sage-600);
-}
-
-.niche-card:hover .explore-arrow,
-.niche-card:active .explore-arrow {
-  color: var(--sage-700);
-  transform: translateX(4px);
-}
-
-/* Outline button hover/active colours — works on mouse and touch.
-   Transition intentionally omitted here: the canonical one is declared
-   on .btn-outline above, and redeclaring `all 0.3s ease` at this point
-   in the cascade was quietly overriding it. */
-.btn-outline:hover {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
-}
-
-.btn-outline:active {
-  background-color: var(--sage-50);
-  border-color: var(--sage-700);
-  color: var(--sage-700);
-}
-
-/* Enhanced Section Dividers - Professional Polish Layer */
-.section-divider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 1px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    var(--sage-300) 15%, 
-    var(--sage-300) 85%, 
-    transparent 100%);
-  margin: 0;
-}
-
-.section-divider::before {
-  content: '';
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background-color: var(--sage-400);
-  border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -3.5px;
-}
-
-/* Visual accent bar at top of sections */
-.section-accent-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, 
-    var(--sage-400) 0%, 
-    var(--sage-500) 50%, 
-    var(--sage-400) 100%);
-  opacity: 0.6;
-}
-
-/* .card-elevated is retained as a legacy alias only; it maps to the warm accent
-   variant in the unified card system above and carries no geometry of its own. */
-
-/* Section spacing enhancement */
-section {
-  position: relative;
-}
-
-section:not(:first-of-type)::before {
-  content: '';
-  display: block;
-  height: 1px;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    rgba(157, 187, 141, 0.4) 25%,
-    rgba(157, 187, 141, 0.4) 75%,
-    transparent 100%);
-  margin-bottom: 2rem;
-}
-
-/* ========================================
-   DEEP ACCESSIBILITY LAYER
-   Supports users with vestibular disorders, migraines, 
-   ADHD, autism, trauma, and motion sensitivity.
-   Respects OS-level "Reduce Motion" accessibility setting.
-   ======================================== */
-
-@media (prefers-reduced-motion: reduce) {
-  /* Disable all animations and transitions globally */
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-
-  /* Remove parallax and position-based animations */
-  .hero-section {
-    animation: none !important;
-  }
-
-  /* Cards keep the border/background feedback but never move or re-elevate */
-  .card:hover,
-  .card:focus-within,
-  .niche-card:hover,
-  .niche-card:focus-within {
-    transform: none !important;
-    box-shadow: var(--card-shadow-rest) !important;
-  }
-
-  /* Remove button transform on hover/active (keep color/shadow for feedback) */
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-secondary:hover,
-  .btn-secondary:active {
-    transform: none !important;
-  }
-
-  .card:active,
-  .niche-card:active,
-  a:active > .card,
-  a:active > .niche-card {
-    transform: none !important;
-  }
-
-  /* Disable arrow animation */
-  .niche-card:hover .explore-arrow,
-  .niche-card:active .explore-arrow {
-    animation: none !important;
-  }
-
-  /* Remove floating element shadow enhancement */
-  .floating-element:hover {
-    box-shadow: 0 10px 30px rgba(63, 57, 53, 0.15), 0 4px 12px rgba(63, 57, 53, 0.1) !important;
-  }
-
-  /* Remove form focus animations */
-  .form-input:focus,
-  .form-select:focus,
-  textarea:focus {
-    box-shadow: 0 0 0 2px rgba(157, 187, 141, 0.2) !important;
-  }
-
-  /* Preserve functional transitions: focus indicators, color changes, opacity */
-  a {
-    text-decoration-color: inherit;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* Keep opacity changes for visual state feedback but instant */
-  [aria-disabled="true"],
-  [disabled] {
-    opacity: 0.5;
-  }
-}
-
-/* ========================================
-   NEURODIVERGENT-AFFIRMING DESIGN
-   Ensure predictability, clarity, and sensory safety
-   for users with ADHD, autism, and cognitive disabilities.
-   ======================================== */
-
-/* Consistent, predictable focus states (required for WCAG 2.1 Focus Visible) */
-:focus-visible {
-  outline: 3px solid var(--sage-500);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* Semantic button states: visible, clear, persistent */
-button:active,
-[role="button"]:active {
-  /* Active state is visible; no hover-only states */
-  opacity: 0.85;
-}
-
-/* Skip to main content link for keyboard users */
-.sr-only:focus,
-[class*="sr-only"]:focus,
-.skip-to-main:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  padding: 0.75rem 1rem;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-  white-space: normal;
-}
-
-/* Ensure all interactive elements are keyboard accessible and have sufficient click target size */
-button,
-[role="button"],
-a,
-input[type="checkbox"],
-input[type="radio"],
-select {
-  min-height: 44px; /* Slightly larger for touch; 48px is standard */
-  min-width: 44px;
-}
-
-/* Mobile: ensure 48px+ touch targets for accessibility */
-@media (max-width: 768px) {
-  button,
-  [role="button"],
-  .btn {
-    min-height: 48px;
-    min-width: 48px;
-  }
-}
-
-/* Link underlines: always visible (especially for color-blind users) */
-a {
-  text-decoration: underline;
-  text-decoration-color: currentColor;
-  text-underline-offset: 0.25em;
-}
-
-a[aria-current="page"] {
-  font-weight: 600;
-  color: var(--sage-700);
-}
-
-/* High contrast for form inputs in focus state */
-.form-input:focus,
-.form-select:focus,
-textarea:focus {
-  outline: 2px solid var(--sage-500);
-  outline-offset: 2px;
-}
-
-/* Error states: use color AND icon/text, not color alone */
-.form-input[aria-invalid="true"]::after,
-.form-select[aria-invalid="true"]::after,
-textarea[aria-invalid="true"]::after {
-  content: " ⚠"; /* Visual icon in addition to color */
-}
-
-/* Loading states: a slow opacity breath instead of a spinner.
-   Spinners imply speed and create rotational motion that can trigger
-   vestibular symptoms; a soft fade reads as "still working" without
-   demanding attention. Uses --duration-ambient, the one sanctioned
-   exception to the 150/250/400 scale. */
-@keyframes subtle-pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-
-.loader {
-  animation: subtle-pulse var(--duration-ambient) var(--ease-standard) infinite;
-}
-
-/* Ensure text is left-aligned, never justified (improves readability for dyslexia) */
-body,
-p,
-li,
-td {
-  text-align: left;
-}
-
-/* Improved line-height for readability (especially for neurodivergent users).
-   These inherit from the type scale tokens so there is exactly one place
-   to retune leading. Previously these hardcoded values silently overrode
-   the heading/body rules defined above. */
-body {
-  line-height: var(--leading-body);
-}
-
-p, li {
-  line-height: var(--leading-body);
-}
-
-li {
-  font-size: var(--step-0);
-  letter-spacing: var(--tracking-body);
-  margin-bottom: 0.5rem;
-  max-width: var(--measure);
-}
-
-/* Headings: clear hierarchy, high contrast.
-   Weight is intentionally NOT set here — each level owns its own weight
-   in the type scale above (400 for display sizes, up to 600 for small
-   ones) so optical heft stays even across the ramp. A blanket 700 here
-   would flatten that hierarchy. */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--warm-gray-900);
-}
-
-
-/* Success indication: use color + text, not color alone */
-.success-message::before {
-  content: "✓ ";
-  font-weight: 700;
-}
-
-/* Ensure table headers are marked semantically */
-table thead th {
-  font-weight: 700;
-  background-color: var(--sage-50);
-  border-bottom: 2px solid var(--sage-300);
-}
-
-/* LINK BUTTONS: Subtle hover with underline enhancement */
-.btn-link {
-  transition:
-    color var(--duration-fast) var(--ease-standard),
-    border-bottom-color var(--duration-fast) var(--ease-standard),
-    opacity var(--duration-fast) var(--ease-standard);
-  color: var(--sage-600);
-  text-decoration: none;
-  border-bottom: 2px solid var(--sage-600);
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-}
-
-.btn-link:hover {
-  color: var(--sage-700);
-  border-bottom-color: var(--sage-700);
-}
-
-.btn-link:focus {
-  outline: 2px solid var(--sage-600);
-  outline-offset: 3px;
-}
-
-.btn-link:active {
-  opacity: 0.85;
-}
-
-/* ------------------------------------------------------------------ */
-/* Specialty page template (components/SpecialtyPage.tsx)              */
-/* Shared rhythm so every persona page reads identically.              */
-/* ------------------------------------------------------------------ */
-
-/* Body copy inside cards / callouts / FAQ answers: consistent spacing,
-   no trailing margin so card padding stays even. */
-.specialty-card-body > *:last-child {
-  margin-bottom: 0;
-}
-
-.specialty-card-body p {
-  margin-bottom: 1rem;
-}
-
-.specialty-card-body ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1rem;
-}
-
-.specialty-card-body ul > li {
-  position: relative;
-  padding-left: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.specialty-card-body ul > li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--warm-gray-300);
-}
-
-.specialty-card-body ul > li:last-child {
-  margin-bottom: 0;
-}
-
-/* FAQ accordion: hide the native disclosure marker on all browsers. */
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-/* ========================================
-   REDUCED MOTION — FINAL SAFETY NET
-   Last in the cascade on purpose: whatever any rule above
-   declared, these win. The rules earlier in this file cover
-   specific components; this block guarantees that anything
-   added later is caught by default rather than by memory.
-   ======================================== */
-@media (prefers-reduced-motion: reduce) {
-  /* Nothing animates, nothing transitions, nothing auto-scrolls.
-     Durations collapse to ~0 rather than `none` so that
-     transitionend / animationend listeners still fire and no
-     JS that waits on them can hang. */
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-delay: 0ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    transition-delay: 0ms !important;
-    scroll-behavior: auto !important;
-  }
-
-  html {
-    scroll-behavior: auto !important;
-  }
-
-  /* Neutralise every displacement in the system. State is still
-     communicated — colour, border, shadow and outline all remain —
-     but nothing changes position or size. */
-  .btn-primary:hover,
-  .btn-primary:active,
-  .btn-secondary:hover,
-  .btn-secondary:active,
-  .btn-outline:hover,
-  .btn-outline:active,
-  .btn-link:active,
-  .card:hover,
-  .card:focus-within,
-  .card:active,
-  .niche-card:hover,
-  .niche-card:focus-within,
-  .niche-card:active,
-  a:active > .card,
-  a:active > .niche-card,
-  .niche-card:hover .explore-arrow,
-  .niche-card:active .explore-arrow {
-    transform: none !important;
-  }
-
-  /* The loading pulse is the one looping animation on the site.
-     Hold it at full opacity rather than leaving it mid-fade. */
-  .loader {
-    animation: none !important;
-    opacity: 1 !important;
-  }
-
-  /* Entrance animations must not leave content stranded at
-     opacity 0 if the animation is effectively skipped. */
-  .animate-fade-in,
-  .animate-fade-in-up {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
 }
