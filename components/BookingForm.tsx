@@ -85,17 +85,17 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     switch (name) {
       case 'name':
         if (!value || (typeof value === 'string' && !validateName(value as string))) {
-          return "Your name helps me know how to greet you. First name or full name-whatever feels right."
+          return "Please share your name so I know how to greet you."
         }
         break
       case 'email':
         if (!value || (typeof value === 'string' && !validateEmail(value as string))) {
-          return "I'll send your confirmation and availability to this email. Double-check it's correct."
+          return "I'll send your confirmation email here. Make sure it's correct."
         }
         break
       case 'phone':
         if (!value || (typeof value === 'string' && !validatePhone(value as string))) {
-          return "Please enter a complete phone number (at least 10 digits) so I can call to confirm."
+          return "I need a complete phone number so I can call to confirm. At least 10 digits."
         }
         break
       case 'concern':
@@ -104,22 +104,22 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         // encourages brief answers, reducing cognitive load on sensitive topic.
         // Also: concerns field is now optional (only required if user expands it)
         if (value && (typeof value === 'string' && (value as string).trim().length < 10)) {
-          return "Share a bit about what's on your mind-even one sentence helps me prepare. We can dive deeper during our call."
+          return "Share what's on your mind—even one sentence helps. We'll dig deeper when we talk."
         }
         break
       case 'firstTimeTherapy':
         if (value === null) {
-          return "Please let me know if this is your first time exploring therapy - it helps me understand where you're coming from."
+          return "I need to know if this is your first time in therapy. It helps me understand your starting point."
         }
         break
       case 'preferredTime':
         if (!value && !formData.selectedDate) {
-          return "Choose a date and time that works best for your free call. I'll confirm within 24 hours."
+          return "Pick a time that works for you. I'll confirm within 24 hours."
         }
         break
       case 'consent':
         if (!value) {
-          return "I need you to confirm you're ready to move forward and that you've read the privacy policy."
+          return "I need you to agree that you're ready and that you've read the privacy policy."
         }
         break
     }
@@ -297,9 +297,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         <div className="mb-6 bg-gradient-to-r from-sage-50 to-sage-50 border border-sage-200 rounded-lg p-4 flex gap-3 items-start">
           <span className="text-lg flex-shrink-0">✓</span>
           <div className="text-sm">
-            <p className="text-sage-900 font-semibold mb-1">Three simple questions. Then I'll reach out within 24 hours.</p>
+            <p className="text-sage-900 font-semibold mb-1">Just three questions. I'll reach out within 24 hours.</p>
             <p className="text-sage-800 text-xs">
-              No obligation. If we're not a fit, that's okay. You decide after we talk.
+              No pressure. You decide after we talk.
             </p>
           </div>
         </div>
@@ -332,7 +332,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 onChange={handleInputChange}
                 onBlur={handleFieldBlur}
                 onFocus={handleFieldFocus}
-                placeholder="e.g., Alex, Marcus, Jamie, or your preferred name"
+                placeholder="e.g., Alex or Marcus"
                 className={`form-input transition-all ${
                   fieldTouched.name
                     ? fieldErrors.name
@@ -456,7 +456,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             >
               <span className="font-semibold text-warm-gray-900 flex items-center gap-2">
                 <span className={`text-lg transition-transform ${showConcernField ? 'rotate-90' : ''}`}>▶</span>
-                Tell me about your concerns (optional but helpful)
+                Tell me what brings you here (optional but helpful)
               </span>
               <span className={`text-sm font-medium text-sage-600 transition-all ${showConcernField ? 'opacity-100' : 'opacity-0'}`}>
                 ✓ Expanded
@@ -486,7 +486,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                     onChange={handleInputChange}
                     onBlur={handleFieldBlur}
                     onFocus={handleFieldFocus}
-                    placeholder="e.g. 'I've been dealing with work stress and anxiety' or 'I'm struggling with depression.' We'll dig deeper during our call."
+                    placeholder="e.g. 'Work stress and anxiety' or 'I'm struggling with depression.' We'll dig deeper when we talk."
                     className={`form-input h-32 resize-none transition-all ${
                       fieldTouched.concern
                         ? fieldErrors.concern
@@ -503,7 +503,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                     </p>
                   ) : (
                     <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                      This helps me understand what brought you in and what you're hoping to change-a sentence or two is plenty, and we can explore more during our call.
+                      Just a sentence or two. It helps me understand what brought you in, and we'll explore more together.
                     </p>
                   )}
                 </div>
@@ -513,7 +513,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
                   <div className="bg-sage-50 border border-sage-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
                     <span className="text-sm flex-shrink-0">✓</span>
-                    <p className="text-xs text-sage-700">Thanks for sharing that. Just two more quick questions and we're done.</p>
+                    <p className="text-xs text-sage-700">Thanks for sharing. Two more questions and we're through.</p>
                   </div>
                 )}
               </div>
@@ -615,7 +615,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             />
             {formData.selectedDate && formData.selectedTime && (
               <p className="text-xs text-warm-gray-500 mt-3 italic">
-                💡 We'll confirm this time within 24 hours of your request.
+                I'll confirm this time within 24 hours.
               </p>
             )}
           </div>
@@ -635,9 +635,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
               <p><span className="font-medium">Name:</span> {formData.name}</p>
               <p><span className="font-medium">Email:</span> {formData.email}</p>
               <p><span className="font-medium">Phone:</span> {formData.phone}</p>
-              <p><span className="font-medium">Primary Concern:</span> {formData.concern}</p>
-              <p><span className="font-medium">First time seeking therapy?:</span> {formData.firstTimeTherapy ? 'Yes' : 'I\'ve sought therapy before'}</p>
-              <p><span className="font-medium">Preferred Time:</span> {formData.preferredTime}</p>
+              {formData.concern && <p><span className="font-medium">What brings you here:</span> {formData.concern}</p>}
+              <p><span className="font-medium">First time in therapy?:</span> {formData.firstTimeTherapy ? 'Yes' : 'I've sought therapy before'}</p>
+              <p><span className="font-medium">Preferred time:</span> {formData.preferredTime}</p>
             </div>
           </div>
 

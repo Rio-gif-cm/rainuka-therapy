@@ -1,0 +1,1107 @@
+{
+  "summary": {
+    "total_pages_scanned": 32,
+    "total_ctas_found": 106,
+    "ctas_by_page": {
+      "page.tsx": [
+        {
+          "page": "page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book your consultation",
+          "color": "#6d3a47",
+          "line": 194,
+          "category": "Booking"
+        },
+        {
+          "page": "page.tsx",
+          "type": "Link",
+          "href": "/faq",
+          "text": "See all FAQs \u2192",
+          "color": "inherit",
+          "line": 243,
+          "category": "Information"
+        },
+        {
+          "page": "page.tsx",
+          "type": "Link",
+          "href": "/about",
+          "text": "Learn more about me \u2192",
+          "color": "inherit",
+          "line": 259,
+          "category": "Information"
+        },
+        {
+          "page": "page.tsx",
+          "type": "Link Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 243
+        },
+        {
+          "page": "page.tsx",
+          "type": "Link Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 259
+        }
+      ],
+      "about\\page.tsx": [
+        {
+          "page": "about\\page.tsx",
+          "type": "Link",
+          "href": "/providers",
+          "text": "View All Directories & Insurance Networks \u2192",
+          "color": "inherit",
+          "line": 489,
+          "category": "Navigation"
+        },
+        {
+          "page": "about\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book Your Free Call",
+          "color": "inherit",
+          "line": 505,
+          "category": "Booking"
+        }
+      ],
+      "accessibility\\page.tsx": [
+        {
+          "page": "accessibility\\page.tsx",
+          "type": "Link",
+          "href": "/",
+          "text": "\u2190 Back to home",
+          "color": "inherit",
+          "line": 10,
+          "category": "Navigation"
+        }
+      ],
+      "adhd-faq\\page.tsx": [
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Free Consultation",
+          "color": "inherit",
+          "line": 166,
+          "category": "Booking"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/adhd",
+          "text": "ADHD Therapy",
+          "color": "inherit",
+          "line": 187,
+          "category": "Navigation"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Call",
+          "color": "inherit",
+          "line": 190,
+          "category": "Booking"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/adhd",
+          "text": "ADHD Therapy for Adults",
+          "color": "inherit",
+          "line": 206,
+          "category": "Navigation"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/parents",
+          "text": "Parents &amp; Caregivers",
+          "color": "inherit",
+          "line": 210,
+          "category": "Navigation"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/faq",
+          "text": "General FAQ",
+          "color": "inherit",
+          "line": 214,
+          "category": "Information"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "Pricing &amp; Insurance",
+          "color": "inherit",
+          "line": 218,
+          "category": "Pricing"
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 166
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 187
+        },
+        {
+          "page": "adhd-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 190
+        }
+      ],
+      "back-to-school\\page.tsx": [
+        {
+          "page": "back-to-school\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a 15-Minute Call",
+          "color": "inherit",
+          "line": 26,
+          "category": "Booking"
+        },
+        {
+          "page": "back-to-school\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your 15-Minute Call Today",
+          "color": "#d4a574",
+          "line": 364,
+          "category": "Booking"
+        },
+        {
+          "page": "back-to-school\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 26
+        }
+      ],
+      "bipoc\\page.tsx": [
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 39,
+          "category": "Booking"
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Link",
+          "href": "/lgbtq",
+          "text": "LGBTQ+ affirming therapy",
+          "color": "#fdf7f4",
+          "line": 214,
+          "category": "Navigation"
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Link",
+          "href": "/neurodivergent",
+          "text": "neurodivergent-affirming therapy",
+          "color": "#fdf7f4",
+          "line": 215,
+          "category": "Navigation"
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "pricing",
+          "color": "#fdf7f4",
+          "line": 306,
+          "category": "Pricing"
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book Your Free Consultation",
+          "color": "inherit",
+          "line": 333,
+          "category": "Booking"
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 39
+        },
+        {
+          "page": "bipoc\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 333
+        }
+      ],
+      "case-studies\\page.tsx": [
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 98,
+          "category": "Booking"
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Link",
+          "href": "/contact",
+          "text": "Get Story Updates",
+          "color": "inherit",
+          "line": 179,
+          "category": "Contact"
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a Consultation",
+          "color": "inherit",
+          "line": 225,
+          "category": "Booking"
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Link",
+          "href": "/faq",
+          "text": "Learn More",
+          "color": "inherit",
+          "line": 228,
+          "category": "Information"
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 98
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 179
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 225
+        },
+        {
+          "page": "case-studies\\page.tsx",
+          "type": "Outline Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "border: #6b944f",
+          "category": "Styled Button",
+          "line": 228
+        }
+      ],
+      "contact\\page.tsx": [
+        {
+          "page": "contact\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 134
+        }
+      ],
+      "couples\\page.tsx": [
+        {
+          "page": "couples\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Couples Consultation",
+          "color": "inherit",
+          "line": 31,
+          "category": "Booking"
+        },
+        {
+          "page": "couples\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 31
+        }
+      ],
+      "disability-access\\page.tsx": [
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 45,
+          "category": "Booking"
+        },
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Get Started Today",
+          "color": "inherit",
+          "line": 391,
+          "category": "Booking"
+        },
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Link",
+          "href": "/faq",
+          "text": "Questions? See FAQ",
+          "color": "inherit",
+          "line": 394,
+          "category": "Information"
+        },
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 45
+        },
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 391
+        },
+        {
+          "page": "disability-access\\page.tsx",
+          "type": "Outline Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "border: #6b944f",
+          "category": "Styled Button",
+          "line": 394
+        }
+      ],
+      "faq\\page.tsx": [
+        {
+          "page": "faq\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "View Pricing",
+          "color": "inherit",
+          "line": 270,
+          "category": "Pricing"
+        },
+        {
+          "page": "faq\\page.tsx",
+          "type": "Link",
+          "href": "/contact",
+          "text": "Get In Touch",
+          "color": "inherit",
+          "line": 273,
+          "category": "Contact"
+        },
+        {
+          "page": "faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 270
+        },
+        {
+          "page": "faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 273
+        }
+      ],
+      "financial-access\\page.tsx": [
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 137,
+          "category": "Booking"
+        },
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Free Consultation",
+          "color": "inherit",
+          "line": 440,
+          "category": "Booking"
+        },
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "See Full Pricing",
+          "color": "inherit",
+          "line": 443,
+          "category": "Pricing"
+        },
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 137
+        },
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 440
+        },
+        {
+          "page": "financial-access\\page.tsx",
+          "type": "Outline Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "border: #6b944f",
+          "category": "Styled Button",
+          "line": 443
+        }
+      ],
+      "grief\\page.tsx": [
+        {
+          "page": "grief\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Get Support That Gets You",
+          "color": "inherit",
+          "line": 33,
+          "category": "Booking"
+        },
+        {
+          "page": "grief\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Let&apos;s Talk About Your Loss",
+          "color": "inherit",
+          "line": 498,
+          "category": "Booking"
+        },
+        {
+          "page": "grief\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 33
+        },
+        {
+          "page": "grief\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 498
+        }
+      ],
+      "guides\\page.tsx": [
+        {
+          "page": "guides\\page.tsx",
+          "type": "Link",
+          "href": "/guides/archive",
+          "text": "\ud83d\udcda View Archive",
+          "color": "inherit",
+          "line": 59,
+          "category": "Resources"
+        },
+        {
+          "page": "guides\\page.tsx",
+          "type": "Link",
+          "href": "/feed.xml",
+          "text": "\ud83d\udce1 Subscribe (RSS)",
+          "color": "inherit",
+          "line": 65,
+          "category": "Navigation"
+        },
+        {
+          "page": "guides\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a consultation",
+          "color": "inherit",
+          "line": 124,
+          "category": "Booking"
+        }
+      ],
+      "holiday-stress\\page.tsx": [
+        {
+          "page": "holiday-stress\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a 15-Minute Call",
+          "color": "inherit",
+          "line": 27,
+          "category": "Booking"
+        },
+        {
+          "page": "holiday-stress\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a 15-Minute Call",
+          "color": "inherit",
+          "line": 316,
+          "category": "Booking"
+        },
+        {
+          "page": "holiday-stress\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 27
+        },
+        {
+          "page": "holiday-stress\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 316
+        }
+      ],
+      "lgbtq\\page.tsx": [
+        {
+          "page": "lgbtq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 39,
+          "category": "Booking"
+        },
+        {
+          "page": "lgbtq\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "pricing",
+          "color": "#fcf6f6",
+          "line": 264,
+          "category": "Pricing"
+        },
+        {
+          "page": "lgbtq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book Your Free Consultation",
+          "color": "inherit",
+          "line": 291,
+          "category": "Booking"
+        },
+        {
+          "page": "lgbtq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 39
+        },
+        {
+          "page": "lgbtq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 291
+        }
+      ],
+      "men\\page.tsx": [
+        {
+          "page": "men\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Get Support That Gets You",
+          "color": "inherit",
+          "line": 27,
+          "category": "Booking"
+        },
+        {
+          "page": "men\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free Call",
+          "color": "#4d6a86",
+          "line": 287,
+          "category": "Booking"
+        },
+        {
+          "page": "men\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 27
+        }
+      ],
+      "neurodivergent\\page.tsx": [
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 39,
+          "category": "Booking"
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Link",
+          "href": "/adhd",
+          "text": "ADHD therapy page",
+          "color": "#f0f6f8",
+          "line": 167,
+          "category": "Navigation"
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Link",
+          "href": "/pricing",
+          "text": "pricing",
+          "color": "#f0f6f8",
+          "line": 271,
+          "category": "Pricing"
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Link",
+          "href": "/accessibility",
+          "text": "accessibility details",
+          "color": "#f0f6f8",
+          "line": 272,
+          "category": "Navigation"
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book Your Free Consultation",
+          "color": "inherit",
+          "line": 364,
+          "category": "Booking"
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 39
+        },
+        {
+          "page": "neurodivergent\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 364
+        }
+      ],
+      "parents\\page.tsx": [
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Free Consultation",
+          "color": "inherit",
+          "line": 109,
+          "category": "Booking"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/perinatal",
+          "text": "Perinatal Mental Health",
+          "color": "inherit",
+          "line": 676,
+          "category": "Navigation"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/adhd",
+          "text": "Adult ADHD",
+          "color": "inherit",
+          "line": 680,
+          "category": "Navigation"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/couples",
+          "text": "Couples Therapy",
+          "color": "inherit",
+          "line": 684,
+          "category": "Navigation"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/back-to-school",
+          "text": "Back-to-School Anxiety",
+          "color": "inherit",
+          "line": 688,
+          "category": "Navigation"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free Consultation",
+          "color": "inherit",
+          "line": 693,
+          "category": "Booking"
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 109
+        },
+        {
+          "page": "parents\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 693
+        }
+      ],
+      "perinatal-faq\\page.tsx": [
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule Your Free 30-Min Call",
+          "color": "inherit",
+          "line": 187,
+          "category": "Booking"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/perinatal",
+          "text": "Perinatal Therapy",
+          "color": "inherit",
+          "line": 231,
+          "category": "Navigation"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book a Call",
+          "color": "inherit",
+          "line": 234,
+          "category": "Booking"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/perinatal",
+          "text": "Perinatal Mental Health Therapy",
+          "color": "inherit",
+          "line": 250,
+          "category": "Navigation"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/parents",
+          "text": "Parents &amp; Caregivers",
+          "color": "inherit",
+          "line": 254,
+          "category": "Navigation"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/grief",
+          "text": "Grief Support",
+          "color": "inherit",
+          "line": 258,
+          "category": "Navigation"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Link",
+          "href": "/faq",
+          "text": "General FAQ",
+          "color": "inherit",
+          "line": 262,
+          "category": "Information"
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 187
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 231
+        },
+        {
+          "page": "perinatal-faq\\page.tsx",
+          "type": "Primary Button",
+          "href": "check-context",
+          "text": "check-context",
+          "color": "#6b944f",
+          "category": "Styled Button",
+          "line": 234
+        }
+      ],
+      "privacy\\page.tsx": [
+        {
+          "page": "privacy\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "{\n              const target = e.currentTarget as HTMLElement\n              target.style.backgroundColor = colors.sage[600]\n              target.style.transform = 'translateY(-2px)'\n            }}\n            onMouseLeave={(e) => {\n              const target = e.currentTarget as HTMLElement\n              target.style.backgroundColor = colors.warmGray[900]\n              target.style.transform = 'translateY(0)'\n            }}\n          >\n            Book a Session",
+          "color": "colors",
+          "line": 325,
+          "category": "Booking"
+        }
+      ],
+      "providers\\page.tsx": [
+        {
+          "page": "providers\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "{\n              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[700]\n            }}\n            onMouseLeave={(e) => {\n              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[600]\n            }}\n          >\n            Book Appointment",
+          "color": "colors",
+          "line": 468,
+          "category": "Booking"
+        },
+        {
+          "page": "providers\\page.tsx",
+          "type": "Link",
+          "href": "/contact",
+          "text": "{\n              ;(e.currentTarget as HTMLElement).style.backgroundColor = colors.sage[50]\n            }}\n            onMouseLeave={(e) => {\n              ;(e.currentTarget as HTMLElement).style.backgroundColor = 'transparent'\n            }}\n          >\n            Get in Touch",
+          "color": "transparent",
+          "line": 491,
+          "category": "Contact"
+        }
+      ],
+      "welcome\\page.tsx": [
+        {
+          "page": "welcome\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Book Now",
+          "color": "inherit",
+          "line": 41,
+          "category": "Booking"
+        },
+        {
+          "page": "welcome\\page.tsx",
+          "type": "Link",
+          "href": "/about",
+          "text": "Learn More",
+          "color": "inherit",
+          "line": 44,
+          "category": "Information"
+        }
+      ],
+      "guides\\archive\\page.tsx": [
+        {
+          "page": "guides\\archive\\page.tsx",
+          "type": "Link",
+          "href": "/guides",
+          "text": "\u2190 Back to Guides",
+          "color": "inherit",
+          "line": 44,
+          "category": "Resources"
+        },
+        {
+          "page": "guides\\archive\\page.tsx",
+          "type": "Link",
+          "href": "/booking",
+          "text": "Schedule a consultation",
+          "color": "inherit",
+          "line": 132,
+          "category": "Booking"
+        }
+      ]
+    },
+    "ctas_per_page_avg": 3.31
+  },
+  "distribution": {
+    "by_color": {
+      "#6d3a47": 1,
+      "inherit": 57,
+      "#6b944f": 33,
+      "#d4a574": 1,
+      "#fdf7f4": 3,
+      "border: #6b944f": 3,
+      "#fcf6f6": 1,
+      "#4d6a86": 1,
+      "#f0f6f8": 3,
+      "colors": 2,
+      "transparent": 1
+    },
+    "by_type": {
+      "Link": 70,
+      "Link Button": 2,
+      "Primary Button": 31,
+      "Outline Button": 3
+    },
+    "by_category": {
+      "Booking": 34,
+      "Information": 7,
+      "Styled Button": 36,
+      "Navigation": 18,
+      "Pricing": 6,
+      "Contact": 3,
+      "Resources": 2
+    }
+  },
+  "improvements": [
+    {
+      "priority": "HIGH",
+      "title": "Standardize CTA Button Colors",
+      "current": "11 different colors detected: ['#6d3a47', 'inherit', '#6b944f', '#d4a574', '#fdf7f4', 'border: #6b944f', '#fcf6f6', '#4d6a86', '#f0f6f8', 'colors', 'transparent']",
+      "recommended": "Use only 2-3 colors: Primary (Sage #6b944f), Accent (#3d8aa8), Secondary (#d97757)",
+      "impact": "Better visual hierarchy and brand consistency",
+      "effort": "Medium"
+    },
+    {
+      "priority": "HIGH",
+      "title": "Verify Mobile CTA Visibility",
+      "current": "CTAs must be tested for mobile readability and touch-target size (min 44x44px)",
+      "recommended": "Audit all CTAs on mobile devices; ensure minimum 44x44px touch targets",
+      "impact": "Better mobile conversion rates (40% of traffic typically mobile)",
+      "effort": "Medium"
+    },
+    {
+      "priority": "HIGH",
+      "title": "Verify WCAG Color Contrast",
+      "current": "CTAs need WCAG AA compliance (4.5:1 ratio minimum for text)",
+      "recommended": "Test contrast: Sage #6b944f on white (pass), #3d8aa8 on burgundy (check)",
+      "impact": "Accessibility + legal compliance",
+      "effort": "Low"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Standardize CTA Labels by Page Type",
+      "current": "Specialty pages use mixed labels: \"Book\", \"Schedule\", \"Start\", \"Get Started\"",
+      "recommended": "Specialty & niche pages: \"Book with Rainuka\" | Guides: \"Schedule Consultation\" | Pricing: \"Book Now\"",
+      "impact": "Stronger brand voice + lower cognitive load",
+      "effort": "Low"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Optimize CTA Positioning and Hierarchy",
+      "current": "Some pages lack clear primary CTA above fold; multiple competing CTAs",
+      "recommended": "Primary CTA always above fold; secondary CTAs in footer. Max 2-3 CTAs per viewport.",
+      "impact": "Improved conversion funnel clarity",
+      "effort": "Medium"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Add Hover State Indicators",
+      "current": "Some styled CTAs may lack hover/active state feedback",
+      "recommended": "Ensure all CTAs have: hover (scale 1.03, shadow), active (scale 0.98), focus (outline)",
+      "impact": "Better UX feedback and perceived interactivity",
+      "effort": "Low"
+    },
+    {
+      "priority": "MEDIUM",
+      "title": "Validate CTA Destinations",
+      "current": "Some CTAs may link to pages that don't lead to actual bookings",
+      "recommended": "Audit: /booking page should complete flows; /about should have secondary CTA; /pricing must have primary CTA",
+      "impact": "Reduced friction in conversion path",
+      "effort": "Medium"
+    },
+    {
+      "priority": "LOW",
+      "title": "Personalize CTA Copy by Audience",
+      "current": "All CTAs use generic copy (e.g., \"Book your consultation\")",
+      "recommended": "Specialty pages: \"Start ADHD Assessment\" | Perinatal: \"Schedule Perinatal Consultation\" | Career: \"Plan Your Transition\"",
+      "impact": "Higher perceived relevance + improved CTR",
+      "effort": "Low"
+    }
+  ]
+}
