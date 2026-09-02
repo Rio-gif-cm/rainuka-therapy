@@ -110,9 +110,9 @@ export default function PerinatalPage() {
             title="What Changes in Therapy"
           />
 
-          <SpecialtyNote accent={accent} title="Safe Space for Your Experience">
+          <SpecialtyNote accent={accent} title="A Room That Gets It">
             <p className="mb-0">
-              Judgment-free. Your pace. Every emotion welcomed.
+              Judgment-free. Your pace. Anger, despair, hope—all belong here.
             </p>
           </SpecialtyNote>
 
@@ -122,23 +122,19 @@ export default function PerinatalPage() {
               cols={1}
               items={[
                 <>
-                  <strong>A space where you&apos;re not &quot;too much.&quot;</strong> Your anxiety
-                  isn&apos;t annoying. Your grief isn&apos;t weakness.
+                  <strong>A space where you&apos;re not &quot;too much.&quot;</strong> Anxiety that keeps you up isn&apos;t annoying. Grief that crashes into joy isn&apos;t weakness.
                 </>,
                 <>
-                  <strong>Real understanding of what&apos;s happening.</strong> Perinatal hormones
-                  affect your brain, body, emotions.
+                  <strong>The biology behind what you&apos;re feeling.</strong> Perinatal hormones rewire your brain. Your emotions aren&apos;t random—they&apos;re a response.
                 </>,
                 <>
-                  <strong>Permission to feel all of it.</strong> Joy and grief. Relief and loss.
-                  Hope and fear. All true at once.
+                  <strong>Permission to hold contradictions.</strong> Love your baby and resent the loss of freedom. Feel relief after loss. Want connection but need solitude. All real, all true.
                 </>,
                 <>
-                  <strong>Practical strategies you can use today.</strong> Anxiety management.
-                  Grounding techniques. How to talk to your partner.
+                  <strong>Tools that work off the couch.</strong> How to ground yourself when anxiety spikes. What to say to your partner. When to ask for help.
                 </>,
                 <>
-                  <strong>Rebuilding your sense of self.</strong> Motherhood and pregnancy loss change who you are. We integrate that.
+                  <strong>Reclaiming who you are now.</strong> Motherhood shifts your identity—sometimes loss does too. We don&apos;t bypass that; we integrate it.
                 </>,
               ]}
             />
@@ -245,7 +241,7 @@ export default function PerinatalPage() {
         <SpecialtyCTA
           accent={accent}
           title="You're not alone in this"
-          body="Let's talk about what you're carrying. No judgment, no pressure—just compassionate support tailored to your experience."
+          body="Let's talk about what you're carrying. No judgment, no pressure—just someone who understands perinatal grief, anxiety, and the identity shifts that come with it."
           ctaLabel="Schedule Your Free Call"
         />
       </main>
