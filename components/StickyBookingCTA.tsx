@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 /**
  * StickyBookingCTA
  * 
  * Global floating CTA button that appears after user scrolls past hero section.
  * Positioned fixed top-right, always accessible.
+ * Uses CSS transitions instead of framer-motion for better performance.
  * 
  * Usage: Add to app/layout.tsx (appears on all pages)
  */
@@ -23,15 +23,13 @@ export function StickyBookingCTA() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (!isVisible) return null;
-
   return (
-    <motion.div
-      className="fixed top-6 right-6 z-40"
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -20 }}
-      transition={{ duration: 0.3 }}
+    <div
+      className={`
+        fixed top-6 right-6 z-40
+        transition-all duration-300 ease-out
+        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}
+      `}
     >
       <Link href="/booking">
         <button
@@ -52,6 +50,6 @@ export function StickyBookingCTA() {
           <span className="sm:hidden">Book Now</span>
         </button>
       </Link>
-    </motion.div>
+    </div>
   );
 }
