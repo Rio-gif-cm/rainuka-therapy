@@ -682,7 +682,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             </label>
           </div>
           {fieldTouched.consent && fieldErrors.consent && (
-            <p id="consent-error" className="text-alert-600 text-sm font-medium">
+            <p id="consent-error" role="alert" aria-live="polite" className="text-alert-600 text-sm font-medium">
               {fieldErrors.consent}
             </p>
           )}
