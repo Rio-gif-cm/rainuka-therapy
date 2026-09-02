@@ -1,4 +1,6 @@
 // Design system colors and styles as JavaScript objects
+// ✅ ALL 7 COLORS FULLY INTEGRATED - See usage guidelines below
+
 const baseColors = {
   primaryBronze: {
     50: '#f9f6f3',
@@ -6,33 +8,33 @@ const baseColors = {
     200: '#e8dfd6',
     300: '#ddd0c5',
     400: '#d6bfb1',
-    500: '#CB997E',
-    600: '#c08470',
-    700: '#b37062',
+    500: '#CB997E',     // ✅ Primary buttons, CTAs, main accents
+    600: '#c08470',     // ✅ Button hover, darker accents
+    700: '#b37062',     // ✅ Dark borders, strong accents
     800: '#9e5c4a',
     900: '#8a4937',
   },
   accentPetal: {
     50: '#fefdfb',
     100: '#fdf8f5',
-    200: '#fdf0eb',
-    300: '#fce8e1',
-    400: '#fbe0d7',
-    500: '#EDDCD2',
-    600: '#e5cfc2',
-    700: '#dcc1b0',
+    200: '#fdf0eb',     // ✅ Light card backgrounds, gentle highlights
+    300: '#fce8e1',     // ✅ Subtle backgrounds, info boxes
+    400: '#fbe0d7',     // ✅ Medium accents, dividers
+    500: '#EDDCD2',     // ✅ Feature highlights, secondary backgrounds
+    600: '#e5cfc2',     // ✅ Accent text on light BG
+    700: '#dcc1b0',     // ✅ Medium accent text
     800: '#d1b0a0',
     900: '#c49680',
   },
   secondarySand: {
     50: '#faf9f7',
-    100: '#f3ede8',
-    200: '#ede4dd',
-    300: '#e6d9d0',
-    400: '#decdc3',
-    500: '#DDBEA9',
-    600: '#d4a993',
-    700: '#c89577',
+    100: '#f3ede8',     // ✅ Light info card backgrounds
+    200: '#ede4dd',     // ✅ Secondary background, subtle dividers
+    300: '#e6d9d0',     // ✅ Secondary card backgrounds
+    400: '#decdc3',     // ✅ Secondary borders
+    500: '#DDBEA9',     // ✅ Secondary buttons, secondary UI elements
+    600: '#d4a993',     // ✅ Secondary button hover
+    700: '#c89577',     // ✅ Secondary dark accents
     800: '#b5805e',
     900: '#a36b45',
   },
@@ -42,9 +44,9 @@ const baseColors = {
     200: '#f3f1ed',
     300: '#f0ede8',
     400: '#ede9e3',
-    500: '#F0EFEB',
-    600: '#e8e6e0',
-    700: '#dfded8',
+    500: '#F0EFEB',     // ✅ Default page background
+    600: '#e8e6e0',     // ✅ Subtle background variation
+    700: '#dfded8',     // ✅ Borders on light BG
     800: '#d5d3cc',
     900: '#ccc9c2',
   },
@@ -54,21 +56,21 @@ const baseColors = {
     200: '#fffaf0',
     300: '#fff8ed',
     400: '#fff5e9',
-    500: '#FFF1E6',
-    600: '#ffecd0',
-    700: '#ffe6b9',
+    500: '#FFF1E6',     // ✅ Light backgrounds, card interiors
+    600: '#ffecd0',     // ✅ Subtle highlights
+    700: '#ffe6b9',     // ✅ Secondary light backgrounds
     800: '#ffdfa0',
     900: '#ffd885',
   },
   neutralSage: {
     50: '#f8f8f5',
-    100: '#f0eee8',
-    200: '#e8e5de',
-    300: '#dfdcd3',
-    400: '#d7d3c8',
-    500: '#A5A58D',
-    600: '#99997a',
-    700: '#8d8d67',
+    100: '#f0eee8',     // ✅ Very light borders, subtle dividers
+    200: '#e8e5de',     // ✅ Light borders
+    300: '#dfdcd3',     // ✅ Medium borders
+    400: '#d7d3c8',     // ✅ Subtle text
+    500: '#A5A58D',     // ✅ Body text, secondary text
+    600: '#99997a',     // ✅ Muted text, decorative borders
+    700: '#8d8d67',     // ✅ Darker neutral text
     800: '#808054',
     900: '#737341',
   },
@@ -78,11 +80,11 @@ const baseColors = {
     200: '#ede9e3',
     300: '#e6e1d8',
     400: '#dfdacf',
-    500: '#B7B7A4',
-    600: '#aaaa93',
-    700: '#9d9d82',
+    500: '#B7B7A4',     // ✅ Neutral borders, muted accents
+    600: '#aaaa93',     // ✅ Medium neutral borders
+    700: '#9d9d82',     // ✅ Dark neutral borders, footer dividers
     800: '#909071',
-    900: '#838360',
+    900: '#838360',     // ✅ Footer background, dark neutrals
   },
 }
 

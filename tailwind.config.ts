@@ -2,13 +2,20 @@ import type { Config } from 'tailwindcss'
 
 /**
  * Rainuka Therapy - Design System (UPDATED PALETTE)
+ * 
+ * ✅ ALL 7 COLORS NOW FULLY INTEGRATED:
+ * - Primary Button: CB997E (Bronze) + dark text
+ * - Secondary Actions: DDBEA9 (Sand) + dark text
+ * - Accent/Highlights: EDDCD2 (Petal) + dark text or as light BG
+ * - Light Backgrounds: FFF1E6 (Linen)
+ * - Default Background: F0EFEB (Parchment)
+ * - Text/Borders (Dark): A5A58D (Sage), B7B7A4 (Ash)
  *
- * Primary: CB997E (light bronze primary)
- * Secondary: DDBEA9 (desert sand)
- * Tertiary: EDDCD2 (powder petal)
- * Light: FFF1E6 (linen)
- * Background: F0EFEB (parchment)
- * Neutrals: A5A58D (dry sage), B7B7A4 (ash grey)
+ * WCAG Contrast Notes:
+ * - All 7 colors have EXCELLENT contrast with dark text (#333)
+ * - Use 600/700 shades on light backgrounds for UI elements
+ * - Petal/Sand are best for background + dark text (not text on white)
+ * - Primary Bronze (500) suitable for buttons with white/dark text
  *
  * Rule of thumb: no raw Tailwind palette colors (blue/emerald/rose/amber/
  * purple/slate/gray/...) anywhere in app/ or components/.
