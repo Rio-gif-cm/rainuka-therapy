@@ -128,47 +128,37 @@ export default function CareerPage() {
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Burnout Recovery">
               <p>
-                Understanding what led to burnout. Rest without guilt. Rebuilding sustainable work
-                habits that survive contact with a real job.
+                Understand burnout. Rest without guilt. Rebuild sustainable habits.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Values Clarification">
               <p>
-                What actually matters to YOU—not your parents, not your peers. What work feels
-                aligned with your values and your life.
+                What actually matters to you. Aligned work.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Decision-Making Paralysis">
               <p>
-                Working through analysis paralysis. Building tolerance for uncertainty. Moving from
-                &quot;I don&apos;t know&quot; to &quot;here&apos;s what I&apos;ll try.&quot;
+                Work through analysis paralysis. Move from &quot;I don&apos;t know&quot; to &quot;I&apos;ll try.&quot;
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Imposter Syndrome">
               <p>
-                The voice that says &quot;they&apos;ll figure out you don&apos;t belong.&quot;
-                Building evidence-based confidence instead of louder reassurance.
+                Replace the doubt voice with evidence-based confidence.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Perfectionism & Overwork">
               <p>
-                Perfectionism usually isn&apos;t a character flaw; it&apos;s a learned survival
-                strategy. Maybe perfect grades meant love. Maybe mistakes meant shame.
-              </p>
-              <p>
-                That strategy kept you safe then. It&apos;s exhausting you now. We separate your
-                standards (worth keeping) from the fear underneath them (worth releasing).
+                Perfectionism was survival. Now it&apos;s exhausting. Separate worth from performance.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<CareerIcon size={28} color={careerColor} />} title="Grief for Paths Not Taken">
               <p>
-                Mourning the career you thought you&apos;d have. Building genuine excitement for
-                what&apos;s actually possible from here.
+                Mourn the path not taken. Build excitement for what&apos;s ahead.
               </p>
             </SpecialtyCard>
           </SpecialtyGrid>
@@ -228,7 +218,7 @@ export default function CareerPage() {
         )}
 
         <SpecialtyWhyRainuka accent={accent}>
-          Career transitions expose identity questions. I help you move through burnout, perfectionism, and paralysis—with trauma-informed understanding of how work shapes your nervous system and practical strategy for what comes next.
+          Trauma-informed career support. Burnout recovery and practical strategy.
         </SpecialtyWhyRainuka>
 
         <SpecialtyCTA
