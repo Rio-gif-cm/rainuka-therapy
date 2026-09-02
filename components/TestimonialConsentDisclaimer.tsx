@@ -21,9 +21,9 @@ export default function TestimonialConsentDisclaimer() {
           lineHeight: 1.6,
         }}
       >
-        <strong>Privacy Notice:</strong> All testimonials shared here are from clients
-        who gave explicit written consent. Clients may request removal of their
-        testimonial at any time by contacting us.
+        <strong>Privacy Notice (PIPEDA):</strong> All testimonials shared here are from clients who gave explicit written consent for their use. 
+        In compliance with PIPEDA (Personal Information Protection and Electronic Documents Act), clients retain full control of their personal information and may request modification or removal of their testimonial at any time by contacting us at [contact email/phone]. 
+        We do not share client information for marketing purposes without prior written consent.
       </p>
     </div>
   )
