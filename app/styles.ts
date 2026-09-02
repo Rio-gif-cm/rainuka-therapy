@@ -1,88 +1,112 @@
 // Design system colors and styles as JavaScript objects
 const baseColors = {
-  primaryRed: {
-    50: '#fce8e8',
-    100: '#f7c4c7',
-    200: '#f0a0a5',
-    300: '#e97b83',
-    400: '#e65761',
-    500: '#E63946',
-    600: '#d4313d',
-    700: '#c22934',
-    800: '#b0212b',
-    900: '#8a1922',
+  primaryBronze: {
+    50: '#f9f6f3',
+    100: '#f1ebe5',
+    200: '#e8dfd6',
+    300: '#ddd0c5',
+    400: '#d6bfb1',
+    500: '#CB997E',
+    600: '#c08470',
+    700: '#b37062',
+    800: '#9e5c4a',
+    900: '#8a4937',
   },
-  accentTeal: {
-    50: '#e0eff2',
-    100: '#b8dfe8',
-    200: '#8fcfde',
-    300: '#66bfd4',
-    400: '#3dafca',
-    500: '#A8DADC',
-    600: '#7dc4cb',
-    700: '#5dadb9',
-    800: '#3d96a7',
-    900: '#1f7f95',
+  accentPetal: {
+    50: '#fefdfb',
+    100: '#fdf8f5',
+    200: '#fdf0eb',
+    300: '#fce8e1',
+    400: '#fbe0d7',
+    500: '#EDDCD2',
+    600: '#e5cfc2',
+    700: '#dcc1b0',
+    800: '#d1b0a0',
+    900: '#c49680',
   },
-  secondaryBlue: {
-    50: '#e8f0f8',
-    100: '#c8dff0',
-    200: '#a0cee8',
-    300: '#78bee0',
-    400: '#50add8',
-    500: '#457B9D',
-    600: '#3d6d8f',
-    700: '#355f81',
-    800: '#2d5173',
-    900: '#1f3a55',
-  },
-  darkBg: {
-    50: '#f5f5f5',
-    100: '#e0e0e0',
-    200: '#c8c8c8',
-    300: '#b0b0b0',
-    400: '#909090',
-    500: '#6b6b6b',
-    600: '#555555',
-    700: '#424242',
-    800: '#333333',
-    900: '#1D3557',
-  },
-  lightCream: {
-    50: '#f9fdfb',
-    100: '#F1FAEE',
-    200: '#e8f3e6',
-    300: '#dfeedd',
-    400: '#d6e9d4',
-  },
-  warmGray: {
+  secondarySand: {
     50: '#faf9f7',
-    100: '#ede8e3',
-    200: '#ddd4cc',
-    300: '#c9b8ac',
-    400: '#ab9c91',
-    500: '#8f8279',
-    600: '#7a6f68',
-    700: '#5e534a',
-    800: '#4c443e',
-    900: '#3f3935',
+    100: '#f3ede8',
+    200: '#ede4dd',
+    300: '#e6d9d0',
+    400: '#decdc3',
+    500: '#DDBEA9',
+    600: '#d4a993',
+    700: '#c89577',
+    800: '#b5805e',
+    900: '#a36b45',
+  },
+  bgParchment: {
+    50: '#faf9f8',
+    100: '#f6f5f2',
+    200: '#f3f1ed',
+    300: '#f0ede8',
+    400: '#ede9e3',
+    500: '#F0EFEB',
+    600: '#e8e6e0',
+    700: '#dfded8',
+    800: '#d5d3cc',
+    900: '#ccc9c2',
+  },
+  lightLinen: {
+    50: '#fffef9',
+    100: '#fffcf3',
+    200: '#fffaf0',
+    300: '#fff8ed',
+    400: '#fff5e9',
+    500: '#FFF1E6',
+    600: '#ffecd0',
+    700: '#ffe6b9',
+    800: '#ffdfa0',
+    900: '#ffd885',
+  },
+  neutralSage: {
+    50: '#f8f8f5',
+    100: '#f0eee8',
+    200: '#e8e5de',
+    300: '#dfdcd3',
+    400: '#d7d3c8',
+    500: '#A5A58D',
+    600: '#99997a',
+    700: '#8d8d67',
+    800: '#808054',
+    900: '#737341',
+  },
+  neutralAsh: {
+    50: '#faf9f7',
+    100: '#f3f2ee',
+    200: '#ede9e3',
+    300: '#e6e1d8',
+    400: '#dfdacf',
+    500: '#B7B7A4',
+    600: '#aaaa93',
+    700: '#9d9d82',
+    800: '#909071',
+    900: '#838360',
   },
 }
 
 /**
  * Public token object. Uses the new color palette:
- * - Primary red (#E63946) for main CTAs and primary actions
- * - Accent teal (#A8DADC) for secondary accents and highlights
- * - Secondary blue (#457B9D) for informational elements
- * - Dark (#1D3557) for text and dark backgrounds
- * - Light cream (#F1FAEE) for light backgrounds
+ * - Primary bronze (#CB997E) for main CTAs and primary actions
+ * - Accent petal (#EDDCD2) for secondary accents and highlights
+ * - Secondary sand (#DDBEA9) for informational elements
+ * - Parchment (#F0EFEB) for backgrounds
+ * - Linen (#FFF1E6) for light backgrounds
+ * - Neutral sage/ash for neutrals and text
  */
 export const colors = {
   ...baseColors,
   // Backward compatibility aliases
-  burgundy: baseColors.primaryRed,
-  sage: baseColors.primaryRed,
-  sageGreen: baseColors.primaryRed,
+  burgundy: baseColors.primaryBronze,
+  primaryRed: baseColors.primaryBronze,
+  accentTeal: baseColors.accentPetal,
+  secondaryBlue: baseColors.secondarySand,
+  darkBg: baseColors.neutralAsh,
+  lightCream: baseColors.lightLinen,
+  warmGray: baseColors.neutralSage,
+  sage: baseColors.neutralSage,
+  sageGreen: baseColors.neutralSage,
 }
 
 // ---------------------------------------------------------------
@@ -126,15 +150,15 @@ export const layout = {
 export const styles = {
   body: {
     fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-    backgroundColor: colors.lightCream[100],
-    color: colors.darkBg[900],
+    backgroundColor: colors.lightLinen[100],
+    color: colors.neutralAsh[900],
     lineHeight: '1.6',
   },
   h1: {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
     fontWeight: 700,
-    color: colors.darkBg[900],
+    color: colors.neutralAsh[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1.5rem',
@@ -143,7 +167,7 @@ export const styles = {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
     fontWeight: 700,
-    color: colors.darkBg[900],
+    color: colors.neutralAsh[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1.5rem',
@@ -152,7 +176,7 @@ export const styles = {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
     fontWeight: 700,
-    color: colors.darkBg[900],
+    color: colors.neutralAsh[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1rem',
@@ -161,7 +185,7 @@ export const styles = {
     fontSize: '1rem',
     lineHeight: '1.75',
     marginBottom: '1rem',
-    color: colors.darkBg[900],
+    color: colors.neutralAsh[900],
   },
   button: {
     display: 'inline-flex',
@@ -177,22 +201,22 @@ export const styles = {
     transition: 'all 0.3s ease',
   },
   btnPrimary: {
-    backgroundColor: colors.primaryRed[500],
+    backgroundColor: colors.primaryBronze[500],
     color: 'white',
   },
   btnPrimaryHover: {
-    backgroundColor: colors.primaryRed[600],
-    boxShadow: `0 10px 25px rgba(230, 57, 70, 0.25)`,
+    backgroundColor: colors.primaryBronze[600],
+    boxShadow: `0 10px 25px rgba(203, 153, 126, 0.25)`,
   },
   btnOutline: {
     backgroundColor: 'transparent',
-    color: colors.primaryRed[500],
-    border: `2px solid ${colors.primaryRed[500]}`,
+    color: colors.primaryBronze[500],
+    border: `2px solid ${colors.primaryBronze[500]}`,
   },
   btnOutlineHover: {
-    backgroundColor: colors.primaryRed[50],
-    borderColor: colors.primaryRed[600],
-    color: colors.primaryRed[600],
+    backgroundColor: colors.primaryBronze[50],
+    borderColor: colors.primaryBronze[600],
+    color: colors.primaryBronze[600],
   },
   /**
    * Standard section band. Matches `.section-padding` in globals.css
@@ -276,7 +300,7 @@ export const layoutStyles = {
 
 export const footerStyles = {
   footer: {
-    backgroundColor: colors.darkBg[900],
+    backgroundColor: colors.neutralAsh[900],
     color: 'white',
     paddingTop: spacing[8],    // 64px
     paddingBottom: spacing[4], // 32px
@@ -312,7 +336,7 @@ export const footerStyles = {
     textDecoration: 'none',
   },
   footerMeta: {
-    borderTop: `1px solid ${colors.darkBg[700]}`,
+    borderTop: `1px solid ${colors.neutralAsh[700]}`,
     maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -396,12 +420,12 @@ export const heroStyles = {
     aspectRatio: '1' as const,
     borderRadius: '1.5rem',
     overflow: 'hidden' as const,
-    boxShadow: '0 25px 50px -12px rgba(69, 123, 157, 0.25)',
+    boxShadow: '0 25px 50px -12px rgba(203, 153, 126, 0.25)',
     display: 'flex' as const,
     alignItems: 'center' as const,
     justifyContent: 'center' as const,
     position: 'relative' as const,
-    border: `1px solid ${colors.accentTeal[100]}`,
+    border: `1px solid ${colors.accentPetal[100]}`,
   },
   heroImageGradient: {
     position: 'absolute' as const,
@@ -418,7 +442,7 @@ export const navigationStyles = {
     top: 0,
     zIndex: 50,
     backgroundColor: 'white',
-    borderBottom: `1px solid ${colors.lightCream[200]}`,
+    borderBottom: `1px solid ${colors.lightLinen[200]}`,
   },
   /* Aligned to layout.containerMax + gutter so the brand and nav links
      sit on the exact same left/right edge as page content below. */
@@ -484,7 +508,7 @@ export const globalStyles = `
 /* PRIMARY BUTTON: Hover (scale up + shadow lift) + Focus (ring) + Active (press down) */
 .btn-primary {
   transition: all 0.15s ease-out;
-  background-color: #E63946;
+  background-color: #CB997E;
   color: white;
   border: none;
   cursor: pointer;
@@ -493,125 +517,282 @@ export const globalStyles = `
 }
 
 .btn-primary:hover {
-  background-color: #d4313d;
-  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
+  background-color: #c08470;
+  box-shadow: 0 10px 25px rgba(203, 153, 126, 0.25);
   transform: scale(1.03);
 }
 
 .btn-primary:focus {
-  outline: 2px solid #E63946;
-  outline-offset: 3px;
-  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
+  outline: 2px solid #CB997E;
 }
 
 .btn-primary:active {
   transform: scale(0.98);
-  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.15);
-  background-color: #d4313d;
 }
 
-/* OUTLINE BUTTON: Enhanced states with better feedback */
-.btn-outline {
+/* SECONDARY BUTTON: Outline style with bronze border */
+.btn-secondary {
   transition: all 0.15s ease-out;
   background-color: transparent;
-  color: #E63946;
-  border: 2px solid #E63946;
+  color: #CB997E;
+  border: 2px solid #CB997E;
   cursor: pointer;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.btn-outline:hover {
-  background-color: #fce8e8;
-  border-color: #d4313d;
-  color: #d4313d;
-  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.12);
-  transform: scale(1.02);
+.btn-secondary:hover {
+  background-color: #f9f6f3;
+  border-color: #c08470;
+  color: #c08470;
 }
 
-.btn-outline:focus {
-  outline: 2px solid #E63946;
-  outline-offset: 3px;
-  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.12);
+.btn-secondary:focus {
+  outline: 2px solid #CB997E;
 }
 
-.btn-outline:active {
-  background-color: #fce8e8;
-  border-color: #d4313d;
-  color: #d4313d;
+.btn-secondary:active {
   transform: scale(0.98);
-  box-shadow: 0 2px 6px rgba(230, 57, 70, 0.1);
 }
 
-/* LINK BUTTONS: Subtle hover with underline enhancement */
-.btn-link {
+/* TERTIARY BUTTON: Text-only link style */
+.btn-tertiary {
   transition: all 0.15s ease-out;
-  color: #E63946;
-  text-decoration: none;
-  border-bottom: 2px solid #E63946;
+  background-color: transparent;
+  color: #CB997E;
+  border: none;
+  cursor: pointer;
   outline: 2px solid transparent;
   outline-offset: 2px;
-  cursor: pointer;
+  text-decoration: underline;
 }
 
-.btn-link:hover {
-  color: #d4313d;
-  border-bottom-color: #d4313d;
+.btn-tertiary:hover {
+  color: #c08470;
 }
 
-.btn-link:focus {
-  outline: 2px solid #E63946;
-  outline-offset: 3px;
+.btn-tertiary:focus {
+  outline: 2px solid #CB997E;
 }
 
-.btn-link:active {
-  opacity: 0.85;
-  transform: scale(0.98);
+/* DISABLED BUTTON STATE */
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-tertiary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-  /* NicheGrid card geometry, depth, padding and lift are owned by the unified
-     card system in app/globals.css (.card / .niche-card). Only focus affordance
-     lives here so it can't drift from the shared surface. */
-.niche-card:focus-within {
-  outline: 2px solid #E63946;
+/* ========================================
+   LINK STYLES
+   ======================================== */
+a {
+  color: #CB997E;
+  text-decoration: underline;
+  transition: color 0.15s ease-out;
+}
+
+a:hover {
+  color: #c08470;
+}
+
+a:active {
+  color: #b37062;
+}
+
+/* ========================================
+   INPUT FIELD FOCUS STATES
+   ======================================== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+  border: 1px solid #e8e5de;
+  transition: all 0.2s ease-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid transparent;
+  border-color: #CB997E;
+  box-shadow: 0 0 0 3px rgba(203, 153, 126, 0.1);
+}
+
+/* ========================================
+   FORM LABEL STYLING
+   ======================================== */
+label {
+  font-weight: 500;
+  color: #838360;
+}
+
+label:required::after {
+  content: ' *';
+  color: #ab5943;
+}
+
+/* ========================================
+   CARD HOVER LIFT
+   ======================================== */
+.card {
+  transition: var(--card-transition);
+}
+
+.card:hover {
+  transform: translateY(var(--card-lift));
+}
+
+.card:active {
+  transform: translateY(var(--card-lift-active));
+}
+
+/* ========================================
+   UTILITY: ACCESSIBILITY
+   ======================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.skip-to-main {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #CB997E;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-main:focus {
+  top: 0;
+}
+
+/* ========================================
+   FOCUS VISIBLE STATE (Keyboard Navigation)
+   ======================================== */
+*:focus-visible {
+  outline: 2px solid #CB997E;
   outline-offset: 2px;
 }
 
-/* Arrow animation on hover/active */
-.explore-arrow {
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #CB997E;
+  outline-offset: 0;
+}
+
+/* ========================================
+   ALERT / NOTICE STYLES
+   ======================================== */
+.alert {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid #ab5943;
+  background-color: #fcf5f3;
+  color: #838360;
+}
+
+.alert.success {
+  border-left-color: #8d8d67;
+  background-color: #f8f8f5;
+}
+
+.alert.warning {
+  border-left-color: #c08f5c;
+  background-color: #fdf9f1;
+}
+
+.alert.error {
+  border-left-color: #ab5943;
+  background-color: #fcf5f3;
+}
+
+/* ========================================
+   LOADING STATE ANIMATIONS
+   ======================================== */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spinner {
+  border: 2px solid #e8e5de;
+  border-top: 2px solid #CB997E;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ========================================
+   TOOLTIP STYLING
+   ======================================== */
+.tooltip {
+  position: relative;
   display: inline-block;
-  transition: all 0.3s ease;
-  color: #E63946;
+  border-bottom: 1px dotted #CB997E;
+  cursor: help;
 }
 
-.niche-card:hover .explore-arrow,
-.niche-card:active .explore-arrow {
-  color: #d4313d;
-  animation: arrowBounce 0.6s ease;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #CB997E;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
 }
 
-@keyframes arrowBounce {
-  0%, 100% { transform: translateX(0); }
-  50% { transform: translateX(4px); }
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* Reduced motion support - respect user preferences */
-@media (prefers-reduced-motion: reduce) {
-  .btn-primary,
-  .btn-outline,
-  .btn-link,
-  .niche-card {
-    transition: none;
+/* ========================================
+   RESPONSIVE VISIBILITY
+   ======================================== */
+.hide-mobile {
+  @media (max-width: 640px) {
+    display: none;
   }
-  
-  .btn-primary:hover,
-  .btn-outline:hover {
-    transform: none;
-  }
-  
-  .btn-primary:active,
-  .btn-outline:active {
-    transform: none;
+}
+
+.hide-desktop {
+  @media (min-width: 1024px) {
+    display: none;
   }
 }
 `

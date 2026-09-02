@@ -32,17 +32,17 @@ html.sensory-friendly-mode * {
 
 html.sensory-friendly-mode {
   /* Increase contrast */
-  --warm-gray-900: #1a1614 !important; /* Darker text */
-  --burgundy-700: #334c27 !important;      /* Darker sage accents */
+  --neutral-ash-900: #5a5644 !important; /* Darker text */
+  --primary-bronze-700: #8a5c47 !important;      /* Darker bronze accents */
   
   /* High contrast mode: boost color saturation */
-  --burgundy-600: #6b944f !important;
-  --accent-warm: #c96547 !important;
+  --primary-bronze-600: #b37062 !important;
+  --accent-warm: #b37062 !important;
 }
 
 html.sensory-friendly-mode body {
-  background-color: #faf9f7 !important;
-  color: #1a1614 !important;
+  background-color: #f9f6f3 !important;
+  color: #5a5644 !important;
 }
 
 /* Disable all hover effects (replace with focus-visible) */
@@ -55,7 +55,7 @@ html.sensory-friendly-mode [role="button"]:hover {
 
 /* Ensure focus states remain visible and strong */
 html.sensory-friendly-mode :focus-visible {
-  outline: 4px solid var(--burgundy-600) !important;
+  outline: 4px solid var(--primary-bronze-600) !important;
   outline-offset: 3px !important;
 }
 
@@ -69,8 +69,8 @@ html.sensory-friendly-mode audio[autoplay] {
 html.sensory-friendly-mode button:focus-visible,
 html.sensory-friendly-mode [role="button"]:focus-visible,
 html.sensory-friendly-mode a:focus-visible {
-  box-shadow: 0 0 0 4px rgba(107, 148, 79, 0.3) !important;
-  outline: 3px solid var(--burgundy-700) !important;
+  box-shadow: 0 0 0 4px rgba(203, 153, 126, 0.3) !important;
+  outline: 3px solid var(--primary-bronze-700) !important;
   outline-offset: 2px !important;
 }
 
@@ -89,7 +89,7 @@ html.sensory-friendly-mode * {
 html.sensory-friendly-mode [style*="background: linear-gradient"],
 html.sensory-friendly-mode [style*="background-image"] {
   background-image: none !important;
-  background: var(--warm-gray-50) !important;
+  background: var(--bg-parchment-50) !important;
 }
 
 /* Ensure smooth (not sudden) scroll behavior */
@@ -112,13 +112,13 @@ html.sensory-friendly-mode input,
 html.sensory-friendly-mode textarea,
 html.sensory-friendly-mode select,
 html.sensory-friendly-mode button {
-  border: 2px solid var(--warm-gray-900) !important;
+  border: 2px solid var(--neutral-ash-900) !important;
 }
 
 html.sensory-friendly-mode input:focus,
 html.sensory-friendly-mode textarea:focus,
 html.sensory-friendly-mode select:focus {
-  border-color: var(--burgundy-700) !important;
+  border-color: var(--primary-bronze-700) !important;
 }
 
 /* Increase line-height for better readability */
@@ -144,7 +144,7 @@ html.sensory-friendly-mode h2 {
 /* Simplify cards: remove decorative shadows */
 html.sensory-friendly-mode .card,
 html.sensory-friendly-mode [class*="card"] {
-  border: 1px solid var(--warm-gray-300) !important;
+  border: 1px solid var(--neutral-sage-300) !important;
   box-shadow: none !important;
 }
 
@@ -167,18 +167,18 @@ html.sensory-friendly-mode a:hover {
 
 /* Ensure buttons have clear visual states (not animated) */
 html.sensory-friendly-mode button {
-  border: 2px solid var(--burgundy-600);
-  background-color: var(--burgundy-50);
-  color: var(--burgundy-700);
+  border: 2px solid var(--primary-bronze-600);
+  background-color: var(--primary-bronze-50);
+  color: var(--primary-bronze-700);
 }
 
 html.sensory-friendly-mode button:hover {
-  background-color: var(--burgundy-100);
-  border-color: var(--burgundy-700);
+  background-color: var(--primary-bronze-100);
+  border-color: var(--primary-bronze-700);
 }
 
 html.sensory-friendly-mode button:active {
-  background-color: var(--burgundy-200);
+  background-color: var(--primary-bronze-200);
 }
 
 /* Remove all filters and visual effects */
