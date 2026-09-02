@@ -219,7 +219,7 @@
   --weight-h1: 400;
   --weight-h2: 500;
   --weight-h3: 600;
-  --weight-h4: 600;
+  --weight-h4: 500;  /* Reduced from 600 to create hierarchy when h4 & h5 coexist */
   --weight-body: 400;
   --weight-emphasis: 600;
 
@@ -370,6 +370,7 @@ h3 {
   line-height: var(--leading-h3);
   letter-spacing: var(--tracking-h3);
   margin-bottom: 1rem;
+  max-width: 38ch;  /* Prevent odd wrapping on mobile; mirrors h2 constraint */
 }
 
 h4 {
@@ -378,6 +379,7 @@ h4 {
   line-height: var(--leading-h4);
   letter-spacing: var(--tracking-h4);
   margin-bottom: 0.75rem;
+  max-width: 40ch;  /* Prevent h4 labels from wrapping awkwardly on mobile */
 }
 
 h5 {
@@ -388,7 +390,8 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
-/* h6 is the one heading that reads as a sans eyebrow, not a serif title. */
+/* h6 is deliberately sans serif (eyebrow/label convention), not serif like h1–h5.
+   This is intentional: h6 marks section labels and metadata above headings. */
 h6 {
   font-family: var(--font-sans);
   font-size: var(--step--1);
@@ -569,6 +572,20 @@ a:hover {
   white-space: nowrap;
   /* Mobile-first: minimum 48px height for touch targets (WCAG) */
   min-height: 48px;
+}
+
+/* ========================================
+   MOBILE TYPOGRAPHY ADJUSTMENTS — Increase heading leading on narrow screens
+   Wrapped headings need more breathing room on mobile.
+   ======================================== */
+@media (max-width: 640px) {
+  h2 {
+    line-height: 1.24;  /* Increase from 1.16 for wrapped headlines */
+  }
+
+  h3 {
+    line-height: 1.32;  /* Increase from 1.24 */
+  }
 }
 
 /* Larger buttons on mobile (56×56px) for anxiety-prone users */
