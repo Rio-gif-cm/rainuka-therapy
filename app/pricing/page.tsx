@@ -14,7 +14,7 @@ export default function PricingPage() {
               Transparent Pricing
             </h1>
             <p className="text-lg md:text-xl text-warm-gray-600 max-w-2xl mx-auto">
-              Clear pricing from the start. No surprises, no hidden fees. Therapy should be accessible—here's how we make it work.
+              Clear pricing from the start. No surprises, no hidden fees. Therapy should be accessible-here's how we make it work.
             </p>
           </div>
         </section>
@@ -99,7 +99,7 @@ export default function PricingPage() {
                     Income-Based Rate Range
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
-                    Reduced-fee slots are $80–$120 per session, depending on your household income and financial circumstances. We'll discuss what feels sustainable for you.
+                    Reduced-fee slots are $80-$120 per session, depending on your household income and financial circumstances. We'll discuss what feels sustainable for you.
                   </p>
                 </div>
 
@@ -119,7 +119,7 @@ export default function PricingPage() {
                     No Financial Verification Stress
                   </h4>
                   <p className="text-warm-gray-600 ml-10">
-                    During our free consultation, we'll have an honest conversation about what you can afford. You share what feels true for your situation—no tax returns or invasive documentation required.
+                    During our free consultation, we'll have an honest conversation about what you can afford. You share what feels true for your situation-no tax returns or invasive documentation required.
                   </p>
                 </div>
 
@@ -160,7 +160,7 @@ export default function PricingPage() {
                   I'm in-network with most major insurance providers. You can:
                 </p>
                 <ul className="space-y-2 text-warm-gray-600 ml-6">
-                  <li>• Pay only your copay at each session (typically $20–$50)</li>
+                  <li>• Pay only your copay at each session (typically $20-$50)</li>
                   <li>• I bill your insurance directly</li>
                   <li>• No additional paperwork on your end</li>
                 </ul>
@@ -195,13 +195,13 @@ export default function PricingPage() {
                     </div>
                     <div className="flex gap-4">
                       <span className="text-sage-600 font-bold flex-shrink-0">Step 4:</span>
-                      <span>Insurance reimburses you directly (typically 50–80% of the session cost)</span>
+                      <span>Insurance reimburses you directly (typically 50-80% of the session cost)</span>
                     </div>
                   </div>
                 </div>
 
                 <p className="text-warm-gray-600 mb-4">
-                  <strong>Real example:</strong> A client pays $150/session upfront but gets reimbursed $100 by insurance. Their effective cost is only $50/session—without me ever discounting or dealing with insurance directly.
+                  <strong>Real example:</strong> A client pays $150/session upfront but gets reimbursed $100 by insurance. Their effective cost is only $50/session-without me ever discounting or dealing with insurance directly.
                 </p>
 
                 <div className="bg-white p-4 rounded border-l-4 border-sage-400">
@@ -292,13 +292,13 @@ export default function PricingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  I genuinely maintain a few sliding-scale slots. They're limited because I need to keep my practice sustainable, but they're real—not a marketing gimmick. If you have financial constraints, we discuss it honestly during our consultation. No shame, no judgment.
+                  I genuinely maintain a few sliding-scale slots. They're limited because I need to keep my practice sustainable, but they're real-not a marketing gimmick. If you have financial constraints, we discuss it honestly during our consultation. No shame, no judgment.
                 </p>
               </details>
 
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
-                  What if I can't afford $80–$150 per session?
+                  What if I can't afford $80-$150 per session?
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
@@ -312,7 +312,7 @@ export default function PricingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Call the number on the back of your insurance card and ask about out-of-network (OON) mental health benefits. Ask specifically: "What's my reimbursement percentage for out-of-network therapy?" Typically it's 50–80%. During your free consultation, we can discuss your specific plan.
+                  Call the number on the back of your insurance card and ask about out-of-network (OON) mental health benefits. Ask specifically: "What's my reimbursement percentage for out-of-network therapy?" Typically it's 50-80%. During your free consultation, we can discuss your specific plan.
                 </p>
               </details>
 
@@ -322,7 +322,7 @@ export default function PricingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Yes. We can discuss payment arrangements based on your financial situation. Life happens—job changes, unexpected expenses, hard times. If you're in ongoing treatment with me, we can find a way to make it work, within reason.
+                  Yes. We can discuss payment arrangements based on your financial situation. Life happens-job changes, unexpected expenses, hard times. If you're in ongoing treatment with me, we can find a way to make it work, within reason.
                 </p>
               </details>
 
@@ -362,7 +362,7 @@ export default function PricingPage() {
                   <span className="text-sage-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Yes. Telehealth is my primary modality. Whether you're in your home, office, or anywhere comfortable, the rate and level of care are the same. Video therapy can be just as effective as in-person—and it's often more convenient.
+                  Yes. Telehealth is my primary modality. Whether you're in your home, office, or anywhere comfortable, the rate and level of care are the same. Video therapy can be just as effective as in-person-and it's often more convenient.
                 </p>
               </details>
             </div>
@@ -398,7 +398,7 @@ export default function PricingPage() {
                   <div>
                     <h3 className="font-bold text-warm-gray-900 mb-2">Real Sliding Scale</h3>
                     <p className="text-warm-gray-600">
-                      I actually maintain reduced-fee slots. Not a marketing tool—actual financial flexibility based on real need.
+                      I actually maintain reduced-fee slots. Not a marketing tool-actual financial flexibility based on real need.
                     </p>
                   </div>
                 </div>
@@ -408,7 +408,7 @@ export default function PricingPage() {
                   <div>
                     <h3 className="font-bold text-warm-gray-900 mb-2">Honest Conversation</h3>
                     <p className="text-warm-gray-600">
-                      If money is a barrier to your care, we talk about it. No judgment. We'll explore options together—sliding scale, insurance, payment plans, or resources elsewhere.
+                      If money is a barrier to your care, we talk about it. No judgment. We'll explore options together-sliding scale, insurance, payment plans, or resources elsewhere.
                     </p>
                   </div>
                 </div>

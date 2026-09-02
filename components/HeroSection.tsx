@@ -5,7 +5,7 @@ import { colors, layout } from '@/app/styles'
 import { useState } from 'react'
 
 /**
- * HeroSection — premium, calm, layered.
+ * HeroSection - premium, calm, layered.
  *
  * Visual system:
  *  - Layer 0: warm paper base (#faf9f7)
@@ -20,7 +20,7 @@ import { useState } from 'react'
  * Removed JS state for responsive logic; uses @media queries instead.
  */
 
-/* Fine film grain — keeps flat gradients from banding and adds tactile warmth. */
+/* Fine film grain - keeps flat gradients from banding and adds tactile warmth. */
 const GRAIN =
   "url(\\\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\\\")"
 
@@ -44,7 +44,7 @@ const personas: Persona[] = [
     label: 'Perinatal Mental Health',
     emoji: '🤰',
     description:
-      "Pregnancy loss, infertility, postpartum anxiety—what you're carrying isn't weakness.",
+      "Pregnancy loss, infertility, postpartum anxiety-what you're carrying isn't weakness.",
     link: '/perinatal',
   },
   {
@@ -59,7 +59,7 @@ const personas: Persona[] = [
     label: 'Career Transitions',
     emoji: '🚀',
     description:
-      "Career doubt, burnout, identity questions—transitions are hard. You don't have to figure it out alone.",
+      "Career doubt, burnout, identity questions-transitions are hard. You don't have to figure it out alone.",
     link: '/career',
   },
 ]
@@ -67,7 +67,7 @@ const personas: Persona[] = [
 const trustSignals = [
   { icon: 'video', label: 'Telehealth', sub: 'Sliding scale available' },
   { icon: 'shield', label: 'HIPAA secure', sub: 'Private, always' },
-  { icon: 'clock', label: 'Reply within 24h', sub: 'Booking 1–2 weeks out' },
+  { icon: 'clock', label: 'Reply within 24h', sub: 'Booking 1-2 weeks out' },
 ]
 
 function TrustIcon({ name }: { name: string }) {
@@ -161,7 +161,7 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Bottom fade — lets the hero dissolve into the next section */}
+      {/* Bottom fade - lets the hero dissolve into the next section */}
       <div
         aria-hidden="true"
         style={{
@@ -187,7 +187,7 @@ export default function HeroSection() {
         }}
         className="md:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] md:gap-16" /* md: 4rem (64px) */
       >
-        {/* ══ Column A — the message ══════════════════════════════════════ */}
+        {/* ══ Column A - the message ══════════════════════════════════════ */}
         <div className="text-center md:text-left">
           {/* Eyebrow */}
           <div
@@ -382,7 +382,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Subheadline — warm, benefit-focused, concrete specifics */}
+          {/* Subheadline - warm, benefit-focused, concrete specifics */}
           <p
             style={{
               fontSize: 'clamp(1.0625rem, 1.5vw, 1.1875rem)',
@@ -546,7 +546,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* ══ Column B — the portrait plate ═══════════════════════════════ */}
+        {/* ══ Column B - the portrait plate ═══════════════════════════════ */}
         <div style={{ width: '100%', position: 'relative' }}>
           <div
             className="hero-plate md:aspect-[4/5]"
@@ -635,7 +635,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Floating glass chip — depth cue over the plate edge */}
+          {/* Floating glass chip - depth cue over the plate edge */}
           <div
             style={{
               position: 'absolute',
@@ -673,7 +673,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ══ Persona discovery — full width beneath the fold line ══════════ */}
+      {/* ══ Persona discovery - full width beneath the fold line ══════════ */}
       <div
         style={{
           maxWidth: '48rem',
@@ -836,7 +836,7 @@ export default function HeroSection() {
           fit. You lead the pace.
         </p>
 
-        {/* What happens next — quiet, hairline-ruled */}
+        {/* What happens next - quiet, hairline-ruled */}
         <div
           style={{
             margin: '2.5rem auto 0',

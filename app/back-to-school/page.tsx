@@ -21,7 +21,7 @@ export default function BackToSchoolPage() {
               The knot in your stomach. The sleepless nights. The dread that won't fade.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
-              Whether it's your first day at a new school, separation from your child, or the overwhelm of a new routine—anxiety about back to school is one of the most common things I help people navigate. And it's so treatable.
+              Whether it's your first day at a new school, separation from your child, or the overwhelm of a new routine-anxiety about back to school is one of the most common things I help people navigate. And it's so treatable.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
               Schedule a 15-Minute Call
@@ -65,7 +65,7 @@ export default function BackToSchoolPage() {
             <div className="space-y-6 text-warm-gray-600">
               <p>
                 Back to school represents a major transition: new routines, new people, less predictability, less control. 
-                Your nervous system—or your child's—picks up on this change and sounds the alarm.
+                Your nervous system-or your child's-picks up on this change and sounds the alarm.
               </p>
 
               <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#d4a574'}}>
@@ -83,7 +83,7 @@ export default function BackToSchoolPage() {
               </div>
 
               <p>
-                <strong>Here's what matters:</strong> Anxiety isn't weakness. It's your nervous system doing its job—maybe a little too well. 
+                <strong>Here's what matters:</strong> Anxiety isn't weakness. It's your nervous system doing its job-maybe a little too well. 
                 And that's exactly what therapy helps with: teaching your nervous system that you're safe, that you can handle uncertainty, and that you have tools to navigate transitions.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function BackToSchoolPage() {
                   We Don't Ignore the Anxiety
                 </h3>
                 <p className="text-warm-gray-600">
-                  We validate it. Anxiety is your body's way of saying "I care about this." That's not broken—that's human. 
+                  We validate it. Anxiety is your body's way of saying "I care about this." That's not broken-that's human. 
                   We work with it, not against it.
                 </p>
               </div>
@@ -116,7 +116,7 @@ export default function BackToSchoolPage() {
                 </h3>
                 <p className="text-warm-gray-600">
                   Grounding techniques, cognitive tools to challenge catastrophizing, breathing exercises that actually work. 
-                  Not generic advice—strategies tailored to how YOUR anxiety shows up.
+                  Not generic advice-strategies tailored to how YOUR anxiety shows up.
                 </p>
               </div>
 
@@ -126,7 +126,7 @@ export default function BackToSchoolPage() {
                 </h3>
                 <p className="text-warm-gray-600">
                   As your nervous system settles and you practice managing anxiety, confidence grows. 
-                  You move from "I can't handle this" to "I can handle this—and I have support."
+                  You move from "I can't handle this" to "I can handle this-and I have support."
                 </p>
               </div>
 
@@ -135,7 +135,7 @@ export default function BackToSchoolPage() {
                   Work With Your Timeline
                 </h3>
                 <p className="text-warm-gray-600">
-                  If school starts September 5th, we have 5 days to build skills. If you're looking ahead to next year—great, 
+                  If school starts September 5th, we have 5 days to build skills. If you're looking ahead to next year-great, 
                   we have time to do deeper work. Either way, we meet you where you are.
                 </p>
               </div>
@@ -164,7 +164,7 @@ export default function BackToSchoolPage() {
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
-                Your job isn't to make the anxiety disappear. (You can't—and trying to makes it worse.) 
+                Your job isn't to make the anxiety disappear. (You can't-and trying to makes it worse.) 
                 Your job is to support your child in learning to manage it.
               </p>
 
@@ -204,7 +204,7 @@ export default function BackToSchoolPage() {
                   <span style={{color: '#d4a574'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Severe anxiety is actually more responsive to therapy than mild anxiety—there's more room for change. 
+                  Severe anxiety is actually more responsive to therapy than mild anxiety-there's more room for change. 
                   And if you need medication support alongside therapy, I can refer you to a psychiatrist. We work as a team.
                 </p>
               </details>
@@ -226,7 +226,7 @@ export default function BackToSchoolPage() {
                   <span style={{color: '#d4a574'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  No. I meet kids where they are. We might use play, art, games, or conversation—whatever helps them feel safe. 
+                  No. I meet kids where they are. We might use play, art, games, or conversation-whatever helps them feel safe. 
                   We don't force feelings. We create space for them to emerge.
                 </p>
               </details>
@@ -237,7 +237,7 @@ export default function BackToSchoolPage() {
                   <span style={{color: '#d4a574'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Yes. A little nervousness is normal. But if anxiety is interfering with sleep, eating, relationships, or quality of life—
+                  Yes. A little nervousness is normal. But if anxiety is interfering with sleep, eating, relationships, or quality of life-
                   that's the sign therapy can help. We work with what's actually happening, not what "should" be normal.
                 </p>
               </details>
@@ -282,14 +282,14 @@ export default function BackToSchoolPage() {
             </div>
 
             <p className="text-center text-warm-gray-600 mb-6">
-              September and October are the busiest months for therapists—not because therapy is rare, but because so many people reach out right now. 
+              September and October are the busiest months for therapists-not because therapy is rare, but because so many people reach out right now. 
               Anxiety about back to school is one of the most treatable challenges I work with.
             </p>
 
             <div className="bg-cream-50 border-l-4 p-6 rounded" style={{borderLeftColor: '#d4a574'}}>
               <p className="text-warm-gray-600 italic">
                 "I scheduled therapy on August 28th because I couldn't sleep thinking about school. By mid-September, I had actual tools. 
-                I'm still nervous, but now I know I can handle it. That's everything." — Parent of 2nd grader
+                I'm still nervous, but now I know I can handle it. That's everything." - Parent of 2nd grader
               </p>
             </div>
           </div>
@@ -344,7 +344,7 @@ export default function BackToSchoolPage() {
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   It's normal for kids to be shy at first. I'm trained in building trust quickly. And the first session is often 
-                  just getting to know each other—no deep conversations required. Most kids warm up quickly when they realize 
+                  just getting to know each other-no deep conversations required. Most kids warm up quickly when they realize 
                   this is a safe, no-judgment space.
                 </p>
               </details>

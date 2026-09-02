@@ -40,7 +40,7 @@ export default function ReferralPage() {
         <div className="bg-warm-gray-50 border border-warm-gray-200 rounded-lg p-8">
           <h2 className="text-xl font-semibold text-warm-gray-900 mb-4">Why This Matters</h2>
           <p className="text-warm-gray-600">
-            Seeking therapy for the first time is scary. A friend's recommendation removes shame and builds trust. No incentives—just genuine help.
+            Seeking therapy for the first time is scary. A friend's recommendation removes shame and builds trust. No incentives-just genuine help.
           </p>
         </div>
       </div>

@@ -865,9 +865,142 @@ a:hover {
   padding-bottom: var(--section-y-lg);
 }
 
+/* ========================================
+   FORM ELEMENTS & INPUTS
+   Enhanced with modern focus states and WCAG AA contrast.
+   ======================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--sage-200);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-base) var(--ease-standard);
+  min-height: 48px; /* Touch target */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--sage-600);
+  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+}
+
+/* WCAG AA contrast — error states */
+input:invalid,
+.form-input[aria-invalid="true"] {
+  border-color: var(--alert-600);
+  background-color: var(--alert-50);
+}
+
+input:invalid:focus,
+.form-input[aria-invalid="true"]:focus {
+  border-color: var(--alert-700);
+  box-shadow: 0 0 0 3px rgba(171, 89, 67, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: var(--warm-gray-900);
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+/* Radio & checkbox sizing (48px+ target) */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  accent-color: var(--sage-600);
+  transition: all var(--duration-fast) var(--ease-standard);
+}
+
+input[type="radio"]:focus-visible,
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--sage-600);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   CARD & SURFACE ELEMENTS
+   ======================================== */
+
+.card {
+  background: var(--card-surface);
+  border: var(--card-border-width) solid var(--card-border-color);
+  border-radius: var(--card-radius);
+  padding: var(--card-padding);
+  box-shadow: var(--card-shadow-rest);
+  transition: var(--card-transition);
+}
+
+.card:hover {
+  border-color: var(--card-border-color-hover);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(var(--card-lift));
+}
+
+.card:focus-within {
+  box-shadow: var(--card-shadow-hover);
+}
+
+.card:active {
+  box-shadow: var(--card-shadow-active);
+  transform: translateY(var(--card-lift-active));
+}
+
+/* Compact card variant */
+.card-compact {
+  padding: var(--card-padding-compact);
+}
+
+.card-tinted {
+  background: rgba(157, 187, 141, 0.08);
+}
+
+.card-static {
+  box-shadow: none;
+  border-color: var(--sage-200);
+}
+
+/* Success/Error card tinting */
+.card-success {
+  background: rgba(107, 148, 79, 0.06);
+  border-color: rgba(107, 148, 79, 0.3);
+}
+
+.card-error {
+  background: var(--alert-50);
+  border-color: var(--alert-300);
+}
+
 /* Responsive card grid — replaces hand-rolled grid md:grid-cols-N gap-N */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--gap-card);
 }
+
+.stack-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-block);
+}
+
+
+

@@ -59,7 +59,7 @@ export default function AboutPage() {
                 <div className="space-y-6 text-warm-gray-600">
                   <p>
                     I work with adults navigating perinatal mental health, adult ADHD, and career transitions. 
-                    I do this because I've been there—the invisible struggles, the internal chaos, the gap between 
+                    I do this because I've been there-the invisible struggles, the internal chaos, the gap between 
                     how you look and how you actually feel.
                   </p>
 
@@ -78,14 +78,14 @@ export default function AboutPage() {
                   </p>
 
                   <p>
-                    The turning point was telling a friend—actually telling her—about my infertility. The moment 
+                    The turning point was telling a friend-actually telling her-about my infertility. The moment 
                     I stopped curating my story, something shifted. She felt seen. Not by someone hiding behind 
                     credentials, but by someone who genuinely knew that particular loneliness. I realized my 
                     struggles weren't liabilities. They were my actual qualifications.
                   </p>
 
                   <p>
-                    I work trauma-informed, culturally humble, practical. Therapy isn't about fixing you—it's 
+                    I work trauma-informed, culturally humble, practical. Therapy isn't about fixing you-it's 
                     about understanding yourself better so you can build a life that actually fits. I show up as 
                     a real person, not a blank screen. You're not getting clinical distance; you're getting 
                     someone who has sat in the hard places and knows the work it takes to move through them.
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   The Gap Between Outside and Inside
                 </h3>
                 <p className="text-warm-gray-600 mb-4">
-                  I was high-functioning. Still am. I showed up to work, maintained friendships, hit milestones—while grieving 
+                  I was high-functioning. Still am. I showed up to work, maintained friendships, hit milestones-while grieving 
                   infertility, struggling with undiagnosed ADHD, and feeling like I'd made the wrong career choice. Nobody saw it. 
                   I didn't want them to.
                 </p>
@@ -129,11 +129,11 @@ export default function AboutPage() {
                 <p className="text-warm-gray-600 mb-4">
                   When I was going through infertility, I was told to be patient. When I burned out, I was told to manage 
                   stress better. When I finally got my ADHD diagnosis at 32, everyone said, "But you've always seemed fine!" 
-                  None of that helped. What helped was understanding that my brain wasn't broken—it was different. My grief 
-                  was legitimate. My burnout wasn't laziness—it was my system saying no.
+                  None of that helped. What helped was understanding that my brain wasn't broken-it was different. My grief 
+                  was legitimate. My burnout wasn't laziness-it was my system saying no.
                 </p>
                 <p className="text-warm-gray-600">
-                  So I don't ask you to think differently or try harder. I ask you to understand yourself more deeply—and then 
+                  So I don't ask you to think differently or try harder. I ask you to understand yourself more deeply-and then 
                   build a life that actually works for who you are.
                 </p>
               </div>
@@ -177,13 +177,13 @@ export default function AboutPage() {
                 </p>
                 <p className="text-warm-gray-600 mb-3">
                   Career decisions during perinatal transitions are high-risk. The identity shift of becoming a parent 
-                  collides with professional identity in ways that need clinical understanding—not just career coaching. 
+                  collides with professional identity in ways that need clinical understanding-not just career coaching. 
                   Your brain works differently under hormonal and life-transition stress.
                 </p>
                 <p className="text-warm-gray-600">
-                  I see these three things as one story. When you address them together—recognizing how undiagnosed ADHD 
+                  I see these three things as one story. When you address them together-recognizing how undiagnosed ADHD 
                   amplifies postpartum vulnerability, how perinatal shifts change executive function, how career decisions 
-                  need to account for your neurodivergent brain under stress—you don't bounce between specialists. You get 
+                  need to account for your neurodivergent brain under stress-you don't bounce between specialists. You get 
                   one coherent understanding of what's happening.
                 </p>
               </div>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <strong className="text-warm-gray-900">Clinical discovery:</strong>
-                    <p>Diagnosis was reframed—not as incompetence, but as data about their brain. Current role misaligned with ADHD strengths (hyperfocus vs. sustained attention, collaboration vs. solo work).</p>
+                    <p>Diagnosis was reframed-not as incompetence, but as data about their brain. Current role misaligned with ADHD strengths (hyperfocus vs. sustained attention, collaboration vs. solo work).</p>
                   </div>
                   <div>
                     <strong className="text-warm-gray-900">Integrated approach:</strong>
@@ -361,7 +361,7 @@ export default function AboutPage() {
                 },
                 {
                   title: 'Neurodivergent-Affirming',
-                  description: 'Your brain works differently. That\'s not a deficit—it\'s a difference. We work WITH it, not against it.',
+                  description: 'Your brain works differently. That\'s not a deficit-it\'s a difference. We work WITH it, not against it.',
                 },
                 {
                   title: 'Practical',
@@ -384,7 +384,7 @@ export default function AboutPage() {
               My Commitment to Accessibility & Inclusion
             </h2>
             <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
-              I don't just work with all people—I actively affirm the full humanity of clients from marginalized communities.
+              I don't just work with all people-I actively affirm the full humanity of clients from marginalized communities.
             </p>
 
             <div className="space-y-8">
@@ -397,19 +397,19 @@ export default function AboutPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-sage-400 font-bold flex-shrink-0">•</span>
-                    <span><strong className="text-warm-gray-900">LGBTQ+ clients</strong> (including trans and non-binary folks)—your identity is celebrated, not pathologized, and I provide affirming care grounded in your values</span>
+                    <span><strong className="text-warm-gray-900">LGBTQ+ clients</strong> (including trans and non-binary folks)-your identity is celebrated, not pathologized, and I provide affirming care grounded in your values</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-sage-400 font-bold flex-shrink-0">•</span>
-                    <span><strong className="text-warm-gray-900">Neurodivergent clients</strong> (ADHD, autism, and other neurotypes)—your brain isn't broken, it's different, and we leverage your strengths</span>
+                    <span><strong className="text-warm-gray-900">Neurodivergent clients</strong> (ADHD, autism, and other neurotypes)-your brain isn't broken, it's different, and we leverage your strengths</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-sage-400 font-bold flex-shrink-0">•</span>
-                    <span><strong className="text-warm-gray-900">Disabled clients</strong>—I'm committed to genuine accessibility, accommodation, and affirming your whole self without cure narrative</span>
+                    <span><strong className="text-warm-gray-900">Disabled clients</strong>-I'm committed to genuine accessibility, accommodation, and affirming your whole self without cure narrative</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-sage-400 font-bold flex-shrink-0">•</span>
-                    <span><strong className="text-warm-gray-900">Low-income and first-generation clients</strong>—cost won't be a barrier to your care. Therapy should be accessible.</span>
+                    <span><strong className="text-warm-gray-900">Low-income and first-generation clients</strong>-cost won't be a barrier to your care. Therapy should be accessible.</span>
                   </li>
                 </ul>
               </div>
@@ -419,7 +419,7 @@ export default function AboutPage() {
                 <ul className="space-y-3 text-warm-gray-600">
                   <li className="flex gap-3">
                     <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
-                    <span>I've done my own work around bias, privilege, and blind spots—and I continue doing it. This isn't one-time work; it's ongoing.</span>
+                    <span>I've done my own work around bias, privilege, and blind spots-and I continue doing it. This isn't one-time work; it's ongoing.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
@@ -427,11 +427,11 @@ export default function AboutPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
-                    <span>I understand how systemic oppression shapes mental health. Your struggles aren't just "in your head"—context matters.</span>
+                    <span>I understand how systemic oppression shapes mental health. Your struggles aren't just "in your head"-context matters.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-warm-accent font-bold flex-shrink-0">✓</span>
-                    <span>I center your values, culture, community, and lived experience—not my clinical assumptions or worldview.</span>
+                    <span>I center your values, culture, community, and lived experience-not my clinical assumptions or worldview.</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-warm-accent font-bold flex-shrink-0">✓</span>

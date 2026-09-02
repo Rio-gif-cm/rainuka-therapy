@@ -2,14 +2,14 @@ import type { ReactNode } from 'react'
 import Link from 'next/link'
 
 /**
- * SpecialtyPage — the single shared visual template for every specialty page
+ * SpecialtyPage - the single shared visual template for every specialty page
  * (/perinatal, /adhd, /career, /grief, /couples, /men).
  *
  * Every specialty page is composed from these primitives so that hero treatment,
  * section rhythm, card style, callouts, FAQ and closing CTA are identical across
  * personas. The ONLY thing that varies per page is the accent token below.
  *
- * All components are server components (no client JS) — the pages stay static.
+ * All components are server components (no client JS) - the pages stay static.
  */
 
 /* ------------------------------------------------------------------ */
@@ -32,7 +32,7 @@ export interface SpecialtyAccent {
 }
 
 export const specialtyAccents = {
-  // perinatal — soft pink/rose. Nurturing, maternal, compassionate
+  // perinatal - soft pink/rose. Nurturing, maternal, compassionate
   perinatal: {
     accent: '#e8a8a0',        // soft rose-500
     accentText: '#c97660',    // rose-700  (AA on white)
@@ -41,7 +41,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(201, 118, 96, 0.14)',
     heroTint: 'rgba(232, 168, 160, 0.12)',
   },
-  // adhd — energetic orange. Dynamic, bright, forward
+  // adhd - energetic orange. Dynamic, bright, forward
   adhd: {
     accent: '#ff8c42',        // energetic orange-500
     accentText: '#e67e31',    // orange-700  (AA on white)
@@ -50,7 +50,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(230, 126, 49, 0.15)',
     heroTint: 'rgba(255, 140, 66, 0.10)',
   },
-  // career — professional blue. Confident, clear, upward
+  // career - professional blue. Confident, clear, upward
   career: {
     accent: '#1e88e5',        // professional blue-500
     accentText: '#1565c0',    // blue-700 (AA on white)
@@ -59,7 +59,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(21, 101, 192, 0.14)',
     heroTint: 'rgba(30, 136, 229, 0.10)',
   },
-  // grief — calm blue. Deep, holding, composed
+  // grief - calm blue. Deep, holding, composed
   grief: {
     accent: '#4d6a86',        // calm dusk-600
     accentText: '#334458',    // dusk-800 (AA on white)
@@ -68,7 +68,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(51, 68, 88, 0.15)',
     heroTint: 'rgba(77, 106, 134, 0.12)',
   },
-  // couples — warm peach. Intimate, connected, warm
+  // couples - warm peach. Intimate, connected, warm
   couples: {
     accent: '#f4a59d',        // warm peach-500
     accentText: '#e07856',    // peach-700 (AA on white)
@@ -77,7 +77,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(224, 120, 86, 0.15)',
     heroTint: 'rgba(244, 165, 157, 0.11)',
   },
-  // men — steel blue. Strong, steady, trustworthy
+  // men - steel blue. Strong, steady, trustworthy
   men: {
     accent: '#2c5aa0',        // steel blue-600
     accentText: '#1e3a8a',    // blue-900 (AA on white)
@@ -86,7 +86,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(30, 58, 138, 0.14)',
     heroTint: 'rgba(44, 90, 160, 0.10)',
   },
-  // parents — warm sage. Grounded, nurturing, supportive
+  // parents - warm sage. Grounded, nurturing, supportive
   parents: {
     accent: '#7a9b6f',        // sage green-600
     accentText: '#5a7754',    // sage-700 (AA on white)
@@ -95,7 +95,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(90, 119, 84, 0.14)',
     heroTint: 'rgba(122, 155, 111, 0.10)',
   },
-  // lgbtq — spectrum rainbow. Affirming, vibrant, inclusive
+  // lgbtq - spectrum rainbow. Affirming, vibrant, inclusive
   lgbtq: {
     accent: '#c85a9f',        // spectrum magenta-500
     accentText: '#a0396f',    // magenta-700 (AA on white)
@@ -104,7 +104,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(160, 57, 111, 0.14)',
     heroTint: 'rgba(200, 90, 159, 0.10)',
   },
-  // bipoc — earth tone. Grounded, healing, powerful
+  // bipoc - earth tone. Grounded, healing, powerful
   bipoc: {
     accent: '#b8714f',        // terra cotta-500
     accentText: '#8b4d2e',    // terra-700 (AA on white)
@@ -113,7 +113,7 @@ export const specialtyAccents = {
     tintStrong: 'rgba(139, 77, 46, 0.14)',
     heroTint: 'rgba(184, 113, 79, 0.10)',
   },
-  // neurodivergent — vibrant violet. Celebrating unique minds
+  // neurodivergent - vibrant violet. Celebrating unique minds
   neurodivergent: {
     accent: '#8366d0',        // violet-500
     accentText: '#5e4d94',    // violet-700 (AA on white)
@@ -127,7 +127,7 @@ export const specialtyAccents = {
 export type SpecialtyKey = keyof typeof specialtyAccents
 
 /* ------------------------------------------------------------------ */
-/* Hero — identical structure on every specialty page                  */
+/* Hero - identical structure on every specialty page                  */
 /* ------------------------------------------------------------------ */
 
 interface SpecialtyHeroProps {
@@ -186,7 +186,7 @@ export function SpecialtyHero({
 
           <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">{description}</p>
 
-          {/* First gate CTA: "See if this applies to you" — scrolls to content */}
+          {/* First gate CTA: "See if this applies to you" - scrolls to content */}
           <Link href={`#suitability`} className="inline-block btn btn-primary">
             See if this applies to you
           </Link>
@@ -210,7 +210,7 @@ export function SpecialtyHero({
 }
 
 /* ------------------------------------------------------------------ */
-/* Section rhythm — alternating tones, one shared width                */
+/* Section rhythm - alternating tones, one shared width                */
 /* ------------------------------------------------------------------ */
 
 export type SectionTone = 'white' | 'sage' | 'cream' | 'tint'
@@ -292,7 +292,7 @@ export function SpecialtySectionHeader({
 }
 
 /* ------------------------------------------------------------------ */
-/* Cards — one card style, everywhere                                  */
+/* Cards - one card style, everywhere                                  */
 /* ------------------------------------------------------------------ */
 
 interface SpecialtyGridProps {
@@ -348,7 +348,7 @@ export function SpecialtyCard({ accent, title, icon, eyebrow, children }: Specia
 }
 
 /* ------------------------------------------------------------------ */
-/* Callout note — the one shared "highlight box"                       */
+/* Callout note - the one shared "highlight box"                       */
 /* ------------------------------------------------------------------ */
 
 interface SpecialtyNoteProps {
@@ -449,7 +449,7 @@ export function SpecialtyStat({ accent, value, label }: SpecialtyStatProps) {
 }
 
 /* ------------------------------------------------------------------ */
-/* FAQ — one accordion style for every page                            */
+/* FAQ - one accordion style for every page                            */
 /* ------------------------------------------------------------------ */
 
 export interface SpecialtyFAQItem {
@@ -494,7 +494,7 @@ export function SpecialtyFAQ({ accent, items }: SpecialtyFAQProps) {
 }
 
 /* ------------------------------------------------------------------ */
-/* Why Rainuka — specialty-specific unique approach explanation        */
+/* Why Rainuka - specialty-specific unique approach explanation        */
 /* ------------------------------------------------------------------ */
 
 interface SpecialtyWhyRainukaProps {
@@ -516,7 +516,7 @@ export function SpecialtyWhyRainuka({ accent, children }: SpecialtyWhyRainukaPro
 }
 
 /* ------------------------------------------------------------------ */
-/* Closing CTA band — identical on every page                          */
+/* Closing CTA band - identical on every page                          */
 /* ------------------------------------------------------------------ */
 
 interface SpecialtyCTAProps {

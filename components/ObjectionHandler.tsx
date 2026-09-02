@@ -22,15 +22,15 @@ export default function ObjectionHandler() {
       objection: 'Cost concerns?',
       emoji: '💰',
       response: 'Sliding scale available',
-      fullAnswer: 'I believe cost shouldn\'t be the barrier between you and the support you need. That\'s why I offer sliding scale pricing: $80–$150 per 50-minute session based on your actual situation. We\'ll discuss what works for your budget during our free call—no judgment, no assumptions. Many of my clients also use superbills for out-of-network insurance reimbursement, which can offset costs significantly.',
-      highlight: 'Sliding scale: $80–$150/session',
+      fullAnswer: 'I believe cost shouldn\'t be the barrier between you and the support you need. That\'s why I offer sliding scale pricing: $80-$150 per 50-minute session based on your actual situation. We\'ll discuss what works for your budget during our free call-no judgment, no assumptions. Many of my clients also use superbills for out-of-network insurance reimbursement, which can offset costs significantly.',
+      highlight: 'Sliding scale: $80-$150/session',
     },
     {
       id: 'time',
       objection: 'Worried about time commitment?',
       emoji: '⏰',
       response: 'Sessions can be 30 or 50 min',
-      fullAnswer: 'Therapy doesn\'t require rigid commitment to work. You can start with 30-minute sessions if that\'s what fits your life right now, or go with the traditional 50-minute format. Many clients prefer 30-min check-ins for ongoing support—especially during busy seasons or when you\'re building momentum. We\'ll figure out what rhythm actually works for you, and you can adjust anytime.',
+      fullAnswer: 'Therapy doesn\'t require rigid commitment to work. You can start with 30-minute sessions if that\'s what fits your life right now, or go with the traditional 50-minute format. Many clients prefer 30-min check-ins for ongoing support-especially during busy seasons or when you\'re building momentum. We\'ll figure out what rhythm actually works for you, and you can adjust anytime.',
       highlight: '30 or 50-minute sessions',
     },
     {
@@ -38,7 +38,7 @@ export default function ObjectionHandler() {
       objection: 'Not sure if I\'m "ready" for therapy?',
       emoji: '🤔',
       response: 'That free call is exactly for this',
-      fullAnswer: 'Most people aren\'t sure if they\'re ready—and that uncertainty is completely normal. The free 15-minute call isn\'t a commitment; it\'s a conversation. We\'ll talk about what you\'re navigating, I\'ll share how I work, and you\'ll get a real sense of whether this feels right. You\'re not deciding to change your life in 15 minutes. You\'re just deciding to have one honest conversation.',
+      fullAnswer: 'Most people aren\'t sure if they\'re ready-and that uncertainty is completely normal. The free 15-minute call isn\'t a commitment; it\'s a conversation. We\'ll talk about what you\'re navigating, I\'ll share how I work, and you\'ll get a real sense of whether this feels right. You\'re not deciding to change your life in 15 minutes. You\'re just deciding to have one honest conversation.',
       highlight: 'Free 15-minute clarity call',
     },
   ]

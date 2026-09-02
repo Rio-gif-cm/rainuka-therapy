@@ -50,7 +50,7 @@ export default function ADHDPage() {
           ctaLabel="Get Support That Gets You"
         />
 
-        {/* 1 — Who this is for */}
+        {/* 1 - Who this is for */}
         <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -71,19 +71,19 @@ export default function ADHDPage() {
           />
         </SpecialtySection>
 
-        {/* 2 — What ADHD actually is */}
+        {/* 2 - What ADHD actually is */}
         <SpecialtySection tone="sage">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="The basics"
             title="What ADHD Actually Is"
-            intro="Executive function difference—your brain works differently."
+            intro="Executive function difference-your brain works differently."
           />
 
           <SpecialtyNote accent={accent} title="What this shows up as:">
             <ul>
               <li>Time blindness: "wait, how long was I doing that?"</li>
-              <li>Starting projects—paralyzed by choice or overwhelm</li>
+              <li>Starting projects-paralyzed by choice or overwhelm</li>
               <li>Emotional regulation: feelings hit harder and faster</li>
               <li>Organization: systems feel impossible to maintain</li>
               <li>Shame: the story that you're broken because you can't "just do it"</li>
@@ -95,7 +95,7 @@ export default function ADHDPage() {
           </p>
         </SpecialtySection>
 
-        {/* 3 — How I work */}
+        {/* 3 - How I work */}
         <SpecialtySection tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -141,7 +141,7 @@ export default function ADHDPage() {
           </SpecialtyGrid>
         </SpecialtySection>
 
-        {/* 4 — Identity reconstruction */}
+        {/* 4 - Identity reconstruction */}
         <SpecialtySection tone="cream">
           <SpecialtySectionHeader
             accent={accent}
@@ -175,20 +175,20 @@ export default function ADHDPage() {
           </p>
         </SpecialtySection>
 
-        {/* 5 — Social proof */}
+        {/* 5 - Social proof */}
         <SpecialtySection tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="You're in good company"
             title="Late Diagnosis Isn't a Flaw"
-            intro="It's actually common—and it changes everything when you finally understand yourself."
+            intro="It's actually common-and it changes everything when you finally understand yourself."
           />
 
           <SpecialtyGrid>
             <SpecialtyStat
               accent={accent}
               value="60%+"
-              label="of ADHD diagnoses happen in adulthood, many in the 30s–50s"
+              label="of ADHD diagnoses happen in adulthood, many in the 30s-50s"
             />
             <SpecialtyStat
               accent={accent}
@@ -200,14 +200,14 @@ export default function ADHDPage() {
           <div className="mt-8">
             <SpecialtyNote accent={accent}>
               <p className="italic mb-0">
-                &quot;What feels broken about you has a name. And understanding it—with support—is
+                &quot;What feels broken about you has a name. And understanding it-with support-is
                 where real change starts.&quot;
               </p>
             </SpecialtyNote>
           </div>
         </SpecialtySection>
 
-        {/* 6 — FAQ */}
+        {/* 6 - FAQ */}
         <SpecialtySection tone="sage">
           <SpecialtySectionHeader
             accent={accent}
@@ -223,7 +223,7 @@ export default function ADHDPage() {
               },
               {
                 q: 'Will therapy help me be "more productive"?',
-                a: "Not in the hustle-culture sense. But yes—you'll learn strategies that work WITH your brain, making tasks feel less impossible.",
+                a: "Not in the hustle-culture sense. But yes-you'll learn strategies that work WITH your brain, making tasks feel less impossible.",
               },
               {
                 q: 'What if I have ADHD + anxiety or depression?',

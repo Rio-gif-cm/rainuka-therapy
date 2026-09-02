@@ -38,7 +38,7 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  // /resources has no page of its own — the guides index IS the
+  // /resources has no page of its own - the guides index IS the
   // "Guides & Resources" hub. Redirect instead of serving a 404.
   redirects: async () => {
     return [

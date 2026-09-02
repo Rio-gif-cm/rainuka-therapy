@@ -1,0 +1,28 @@
+{
+  "console_logs": [
+    ".\\BOOKING_FORM_EXAMPLE.tsx:195 - onClick={() => console.log('Cancel')}",
+    ".\\BOOKING_FORM_EXAMPLE.tsx:291 - onClick={() => console.log('Submitted:', formData)}",
+    ".\\mobile-audit.js:207 - console.log(`\\n\ud83d\udcc4 Auditing page: ${pageName}`);",
+    ".\\mobile-audit.js:211 - console.log(`  \ud83d\udcf1 Viewport: ${viewport.name} (${viewport.width}px)`);",
+    ".\\mobile-audit.js:271 - console.error(`  \u274c Error auditing ${pageName} at ${viewport.name}: ${error.messa",
+    ".\\mobile-audit.js:283 - console.log(`\\n\u2705 Audit complete! Report saved to: ${reportPath}`);",
+    ".\\mobile-audit.js:284 - console.log(`\ud83d\udcca Screenshots saved to: mobile-audit-screenshots/`);",
+    ".\\app\\layout.tsx:83 - console.log('[App] Service Worker registered:', registration);",
+    ".\\app\\layout.tsx:90 - console.log('[App] Service Worker updated, refresh recommended');",
+    ".\\app\\layout.tsx:96 - console.warn('[App] Service Worker registration failed:', error);",
+    ".\\app\\layout.tsx:121 - console.warn('[Perf] LCP monitoring failed:', error);",
+    ".\\app\\layout.tsx:139 - console.warn('[Perf] CLS monitoring failed:', error);",
+    ".\\app\\api\\bookings\\route.ts:54 - //   console.error('Email notification failed:', emailError);",
+    ".\\app\\api\\bookings\\route.ts:65 - console.error('Booking API error:', error)",
+    ".\\app\\api\\referrals\\route.ts:24 - console.error('Referral tracking error:', error);",
+    ".\\components\\BookingForm.tsx:258 - console.error('Submission error:', error)",
+    ".\\components\\GoogleAnalytics.tsx:26 - console.warn('[Analytics] GA_ID not configured. Set NEXT_PUBLIC_GA_MEASUREMENT_I",
+    ".\\components\\GoogleAnalytics.tsx:102 - console.error('[Analytics] GA4 script failed to load:', e);",
+    ".\\components\\ResponsiveHeroImage.tsx:54 - console.warn('[Image] Missing width/height for:', alt)",
+    ".\\lib\\analytics.ts:36 - console.debug('[Analytics] Event tracking error:', error);"
+  ],
+  "unused_imports": [],
+  "dead_code_indicators": [],
+  "large_files": [],
+  "tsc_errors": []
+}

@@ -199,10 +199,10 @@ export default function MenPage() {
               <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
                 <p className="text-warm-gray-700 italic mb-4">
                   "I thought something was broken in me. Turns out I had patterns from childhood playing out in my marriage. 
-                  Understanding that—having someone help me through it—changed everything. My wife and I are closer than ever."
+                  Understanding that-having someone help me through it-changed everything. My wife and I are closer than ever."
                 </p>
                 <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
-                  — Marcus, 38 (Relationships & Communication)
+                  - Marcus, 38 (Relationships & Communication)
                 </p>
               </div>
 
@@ -212,17 +212,17 @@ export default function MenPage() {
                   Now I'm in a role aligned with my values and actually at peace."
                 </p>
                 <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
-                  — David, 45 (Career & Identity)
+                  - David, 45 (Career & Identity)
                 </p>
               </div>
 
               <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
                 <p className="text-warm-gray-700 italic mb-4">
-                  "I didn't think I was depressed. I was just tired and didn't care anymore. Getting that named and learning strategies—
+                  "I didn't think I was depressed. I was just tired and didn't care anymore. Getting that named and learning strategies-
                   it was like someone turned the lights back on."
                 </p>
                 <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
-                  — James, 51 (Depression & Burnout)
+                  - James, 51 (Depression & Burnout)
                 </p>
               </div>
 
@@ -232,7 +232,7 @@ export default function MenPage() {
                   I'm teaching them it's okay to feel."
                 </p>
                 <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
-                  — Robert, 52 (Grief & Family)
+                  - Robert, 52 (Grief & Family)
                 </p>
               </div>
             </div>
@@ -251,10 +251,10 @@ export default function MenPage() {
             <div className="space-y-4 text-warm-gray-600">
               <p className="font-semibold text-warm-gray-900">Modalities I use:</p>
               <ul className="space-y-2 ml-6">
-                <li>• Cognitive Behavioral Therapy (CBT) – understanding thought patterns</li>
-                <li>• Psychodynamic therapy – exploring deeper patterns and root causes</li>
-                <li>• Practical problem-solving – real strategies for real challenges</li>
-                <li>• Communication skills coaching – improving relationships</li>
+                <li>• Cognitive Behavioral Therapy (CBT) - understanding thought patterns</li>
+                <li>• Psychodynamic therapy - exploring deeper patterns and root causes</li>
+                <li>• Practical problem-solving - real strategies for real challenges</li>
+                <li>• Communication skills coaching - improving relationships</li>
               </ul>
 
               <div className="mt-8 p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>

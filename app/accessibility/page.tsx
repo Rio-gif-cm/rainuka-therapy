@@ -29,7 +29,7 @@ export default function AccessibilityPage() {
             At Wonderloud Therapy, we believe that a therapy website should be as welcoming and accessible as our practice. We're committed to making this site usable by everyone, including people with disabilities and neurodivergent individuals.
           </p>
           <p className="text-warm-gray-700 leading-relaxed">
-            We aim to meet <strong>WCAG 2.1 Level AA</strong> standards — the widely recognized baseline for web accessibility. More importantly, we go beyond compliance to honor the deeper accessibility needs of trauma survivors, disabled clients, neurodivergent people (ADHD, autism), and LGBTQ+ individuals who seek our care.
+            We aim to meet <strong>WCAG 2.1 Level AA</strong> standards - the widely recognized baseline for web accessibility. More importantly, we go beyond compliance to honor the deeper accessibility needs of trauma survivors, disabled clients, neurodivergent people (ADHD, autism), and LGBTQ+ individuals who seek our care.
           </p>
         </section>
 
@@ -125,7 +125,7 @@ export default function AccessibilityPage() {
           <h2 className="text-2xl font-bold mb-4 text-warm-gray-900">LGBTQ+ Affirming Practice</h2>
           <div className="card bg-sage-50 border-l-4 border-l-sage-600">
             <p className="text-warm-gray-700 mb-4 leading-relaxed">
-              <strong>I work with LGBTQ+, trans, nonbinary, and gender-nonconforming clients. Your identity is not the problem—it's a source of strength.</strong>
+              <strong>I work with LGBTQ+, trans, nonbinary, and gender-nonconforming clients. Your identity is not the problem-it's a source of strength.</strong>
             </p>
             <ul className="list-disc list-inside text-warm-gray-700 space-y-2">
               <li>Respectful, inclusive language throughout our website</li>
@@ -204,22 +204,22 @@ export default function AccessibilityPage() {
             <li>
               <a href="https://www.w3.org/WAI/WCAG21/quickref/" className="text-sage-600 underline hover:text-sage-700">
                 WCAG 2.1 Quick Reference
-              </a> — Web Accessibility Guidelines
+              </a> - Web Accessibility Guidelines
             </li>
             <li>
               <a href="https://www.a11yproject.com/" className="text-sage-600 underline hover:text-sage-700">
                 A11y Project
-              </a> — Community for web accessibility
+              </a> - Community for web accessibility
             </li>
             <li>
               <a href="https://www.section508.gov/" className="text-sage-600 underline hover:text-sage-700">
                 Section 508
-              </a> — U.S. Federal accessibility standards
+              </a> - U.S. Federal accessibility standards
             </li>
             <li>
               <a href="https://webaim.org/" className="text-sage-600 underline hover:text-sage-700">
                 WebAIM
-              </a> — Web accessibility information and resources
+              </a> - Web accessibility information and resources
             </li>
           </ul>
         </section>

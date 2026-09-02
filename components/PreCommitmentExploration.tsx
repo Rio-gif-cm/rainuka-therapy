@@ -73,7 +73,7 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
             Before We Book: Let Me Understand
           </h3>
           <p className="text-warm-gray-600">
-            I want to make sure we're a good fit. Share what brings you here and what you're hoping to change—no judgment, just so I can meet you where you're at.
+            I want to make sure we're a good fit. Share what brings you here and what you're hoping to change-no judgment, just so I can meet you where you're at.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function PreCommitmentExploration({ onComplete }: PreCommitmentEx
               </button>
             </div>
             <p className="text-sm text-warm-gray-500 mt-2">
-              {data.firstTimeTherapy === null ? 'No judgment either way' : data.firstTimeTherapy ? "That's great—we'll make it feel safe and clear." : "I'm curious what your experience was like."}
+              {data.firstTimeTherapy === null ? 'No judgment either way' : data.firstTimeTherapy ? "That's great-we'll make it feel safe and clear." : "I'm curious what your experience was like."}
             </p>
           </div>
 

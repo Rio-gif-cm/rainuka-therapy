@@ -5,7 +5,7 @@ import Link from 'next/link'
 const FAQData = [
   {
     q: 'Is this first-time therapy?',
-    a: 'Doesn\'t matter—whether you\'ve done this before or you\'re walking in cold, I meet you where you are. No shame. No assumptions.',
+    a: 'Doesn\'t matter-whether you\'ve done this before or you\'re walking in cold, I meet you where you are. No shame. No assumptions.',
   },
   {
     q: 'Will you judge me?',
@@ -13,7 +13,7 @@ const FAQData = [
   },
   {
     q: 'How is therapy different from talking to friends?',
-    a: 'Friends are amazing, but they can\'t step outside the relationship to help you see patterns. I can. Plus, there\'s no fallout—you don\'t have to manage my feelings or worry I\'ll judge you at parties.',
+    a: 'Friends are amazing, but they can\'t step outside the relationship to help you see patterns. I can. Plus, there\'s no fallout-you don\'t have to manage my feelings or worry I\'ll judge you at parties.',
   },
   {
     q: 'Will you tell me what to do?',
@@ -21,15 +21,15 @@ const FAQData = [
   },
   {
     q: 'How long does therapy typically take?',
-    a: 'It varies wildly. Some people feel relief in 6–8 sessions. Others work with me for months or years. We figure it out together as you go.',
+    a: 'It varies wildly. Some people feel relief in 6-8 sessions. Others work with me for months or years. We figure it out together as you go.',
   },
   {
     q: 'How much does therapy cost?',
-    a: '$150/session for 50 minutes. If that\'s tight, I have sliding scale ($80–$120) for a few slots. Insurance options exist too—more on the pricing page. Real talk: cost shouldn\'t be the reason you don\'t start.',
+    a: '$150/session for 50 minutes. If that\'s tight, I have sliding scale ($80-$120) for a few slots. Insurance options exist too-more on the pricing page. Real talk: cost shouldn\'t be the reason you don\'t start.',
   },
   {
     q: 'Do you take insurance?',
-    a: 'I\'m in-network with several providers. If I\'m out-of-network for you, I give you a superbill and many clients end up paying $50–$75 out-of-pocket instead of $150. Ask during our free call—we\'ll figure out your best option.',
+    a: 'I\'m in-network with several providers. If I\'m out-of-network for you, I give you a superbill and many clients end up paying $50-$75 out-of-pocket instead of $150. Ask during our free call-we\'ll figure out your best option.',
   },
   {
     q: 'What if I can\'t afford $150/session?',
@@ -37,7 +37,7 @@ const FAQData = [
   },
   {
     q: 'Can I get reimbursed by insurance if you\'re out-of-network?',
-    a: 'Yes, if your plan covers out-of-network mental health. I give you a detailed receipt (superbill), you send it to insurance, they cut you a check. Lots of people go from paying full price to paying $50–$75.',
+    a: 'Yes, if your plan covers out-of-network mental health. I give you a detailed receipt (superbill), you send it to insurance, they cut you a check. Lots of people go from paying full price to paying $50-$75.',
   },
   {
     q: 'How often do people typically meet?',
@@ -53,7 +53,7 @@ const FAQData = [
   },
   {
     q: 'What happens if you think I\'m a danger to myself or others?',
-    a: 'I\'m legally required to step in—I call emergency services, your family, or local authorities. Sounds scary, but it\'s about keeping you safe. We talk about this upfront in your first session.',
+    a: 'I\'m legally required to step in-I call emergency services, your family, or local authorities. Sounds scary, but it\'s about keeping you safe. We talk about this upfront in your first session.',
   },
   {
     q: 'Do you use my information for anything else?',
@@ -73,7 +73,7 @@ const FAQData = [
   },
   {
     q: 'Can I do therapy while pregnant?',
-    a: 'Absolutely. Pregnancy is a big transition. Therapy helps with the anxiety, fears about birth, questions about motherhood—all of it. We can work together before the baby comes.',
+    a: 'Absolutely. Pregnancy is a big transition. Therapy helps with the anxiety, fears about birth, questions about motherhood-all of it. We can work together before the baby comes.',
   },
   {
     q: 'Will therapy help with ADHD symptoms?',
@@ -81,7 +81,7 @@ const FAQData = [
   },
   {
     q: 'Should I quit my job before starting therapy?',
-    a: 'Hold on—let\'s talk first about what\'s really going on. Job burnout and misalignment look similar but they\'re different. Therapy helps you untangle it so you don\'t make a move you\'ll regret.',
+    a: 'Hold on-let\'s talk first about what\'s really going on. Job burnout and misalignment look similar but they\'re different. Therapy helps you untangle it so you don\'t make a move you\'ll regret.',
   },
   {
     q: 'Will therapy help my postpartum anxiety?',
@@ -89,7 +89,7 @@ const FAQData = [
   },
   {
     q: 'How long after birth should I wait to start therapy?',
-    a: 'You don\'t have to wait. Start anytime during pregnancy or postpartum. Early support stops things from piling up. And I adjust to your energy and recovery—no pressure to be ready for anything.',
+    a: 'You don\'t have to wait. Start anytime during pregnancy or postpartum. Early support stops things from piling up. And I adjust to your energy and recovery-no pressure to be ready for anything.',
   },
   {
     q: 'When should I seek an ADHD diagnosis?',
@@ -105,7 +105,7 @@ const FAQData = [
   },
   {
     q: 'Can therapy help me fix a stalling career?',
-    a: 'Yes. Self-doubt, imposter feelings, networking fear—we work through it. Clients often clarify what they actually want, find the confidence to go after it, or pivot to something that fits.',
+    a: 'Yes. Self-doubt, imposter feelings, networking fear-we work through it. Clients often clarify what they actually want, find the confidence to go after it, or pivot to something that fits.',
   },
   {
     q: 'What if I cry or get upset during a session?',
@@ -121,7 +121,7 @@ const FAQData = [
   },
   {
     q: 'Do you offer evening or weekend appointments?',
-    a: 'Yes—I have some evening and weekend slots. Let\'s find a time that doesn\'t destroy your week during your free call.',
+    a: 'Yes-I have some evening and weekend slots. Let\'s find a time that doesn\'t destroy your week during your free call.',
   },
   {
     q: 'What if I can\'t commit to a regular weekly schedule?',

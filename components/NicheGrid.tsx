@@ -8,7 +8,7 @@ const specialties = [
     slug: 'perinatal',
     title: 'Perinatal Mental Health',
     icon: '🤰',
-    description: 'Pregnancy loss, infertility, postpartum anxiety—what you\'re carrying isn\'t weakness.',
+    description: 'Pregnancy loss, infertility, postpartum anxiety-what you\'re carrying isn\'t weakness.',
     link: '/perinatal',
     color: colors.sage[600],
   },
@@ -24,7 +24,7 @@ const specialties = [
     slug: 'career',
     title: 'Career Transitions',
     icon: '🚀',
-    description: 'Career doubt, burnout, identity questions—transitions are hard. You don\'t have to figure it out alone.',
+    description: 'Career doubt, burnout, identity questions-transitions are hard. You don\'t have to figure it out alone.',
     link: '/career',
     color: colors.sage[600],
   },
@@ -39,7 +39,7 @@ export default function NicheGrid() {
             Find Your Path Forward
           </h2>
           <p style={{ ...styles.p, maxWidth: '42rem', margin: '0 auto', fontSize: '1.0625rem', color: colors.warmGray[600] }}>
-            Three areas where I've developed deep expertise—and where you might find yourself.
+            Three areas where I've developed deep expertise-and where you might find yourself.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function NicheGrid() {
             color: colors.warmGray[700],
             marginBottom: '1rem',
           }}>
-            <strong>Finding yourself in multiple areas?</strong> That's common and expected. Many of my clients come in thinking they need support in one area, only to discover another piece of the puzzle—and that's where real progress happens.
+            <strong>Finding yourself in multiple areas?</strong> That's common and expected. Many of my clients come in thinking they need support in one area, only to discover another piece of the puzzle-and that's where real progress happens.
           </p>
           <p style={{
             ...styles.p,

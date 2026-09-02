@@ -1,0 +1,488 @@
+[
+  {
+    "severity": "LOW",
+    "file": ".\\BOOKING_FORM_EXAMPLE.tsx:23",
+    "issue": "Large function (107 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\BOOKING_FORM_EXAMPLE.tsx:99",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\page.tsx:79",
+    "issue": "Large function (104 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\about\\page.tsx:115",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\about\\page.tsx:185",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\about\\page.tsx:278",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd\\page.tsx:29",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd\\page.tsx:30",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd\\page.tsx:80",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:47",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:50",
+    "issue": "Large function (104 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:51",
+    "issue": "Large function (103 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:78",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:107",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\adhd-faq\\page.tsx:115",
+    "issue": "Large function (115 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\api\\bookings\\route.ts",
+    "issue": "Commented-out code (13 lines)",
+    "type": "dead_code"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\case-studies\\page.tsx:20",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\case-studies\\page.tsx:46",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\faq\\page.tsx:156",
+    "issue": "Large function (130 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\grief\\page.tsx:155",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\grief\\page.tsx:211",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\page.tsx:9",
+    "issue": "Large function (129 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\page.tsx:33",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\page.tsx:34",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\archive\\page.tsx:9",
+    "issue": "Large function (137 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\archive\\page.tsx:17",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\archive\\page.tsx:33",
+    "issue": "Large function (113 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\archive\\page.tsx:34",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\guides\\[slug]\\page.tsx:9",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\neurodivergent\\page.tsx:94",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\perinatal-faq\\page.tsx:35",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\perinatal-faq\\page.tsx:136",
+    "issue": "Large function (138 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\perinatal-faq\\page.tsx:155",
+    "issue": "Large function (119 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\app\\resources\\perinatal-anxiety-guide\\page.tsx:162",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:50",
+    "issue": "Large function (118 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:51",
+    "issue": "Large function (117 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:65",
+    "issue": "Large function (103 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:66",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:69",
+    "issue": "Large function (107 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:140",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:162",
+    "issue": "Large function (109 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\BookingForm.tsx:554",
+    "issue": "Large function (121 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\CalendarPicker.tsx:21",
+    "issue": "Large function (113 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\EnhancedComponents.tsx:347",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Footer.tsx:58",
+    "issue": "Large function (139 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Footer.tsx:66",
+    "issue": "Large function (131 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\GoogleAnalytics.tsx:19",
+    "issue": "Large function (111 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\GoogleAnalytics.tsx:20",
+    "issue": "Large function (106 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\GoogleAnalytics.tsx:21",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:72",
+    "issue": "Large function (119 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:83",
+    "issue": "Large function (108 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:84",
+    "issue": "Large function (104 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:205",
+    "issue": "Large function (140 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:206",
+    "issue": "Large function (135 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:350",
+    "issue": "Large function (134 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:359",
+    "issue": "Large function (122 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:360",
+    "issue": "Large function (121 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:490",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:491",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:493",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:540",
+    "issue": "Large function (108 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\Navigation.tsx:545",
+    "issue": "Large function (103 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\PreCommitmentExploration.tsx:24",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\ResponsiveHeroImage.tsx:43",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyIcons.tsx",
+    "issue": "Commented-out code (6 lines)",
+    "type": "dead_code"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyIcons.tsx:15",
+    "issue": "Large function (110 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyIcons.tsx:44",
+    "issue": "Large function (113 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyIcons.tsx:78",
+    "issue": "Large function (104 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyIcons.tsx:101",
+    "issue": "Large function (109 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:148",
+    "issue": "Large function (107 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:233",
+    "issue": "Large function (116 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:263",
+    "issue": "Large function (123 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:303",
+    "issue": "Large function (119 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:317",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:362",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:399",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:433",
+    "issue": "Large function (134 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\components\\SpecialtyPage.tsx:465",
+    "issue": "Large function (102 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\lib\\schema-utils.ts:10",
+    "issue": "Large function (103 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\lib\\schema-utils.ts:28",
+    "issue": "Large function (105 lines)",
+    "type": "complexity"
+  },
+  {
+    "severity": "LOW",
+    "file": ".\\src\\data\\testimonials.ts",
+    "issue": "Commented-out code (12 lines)",
+    "type": "dead_code"
+  }
+]

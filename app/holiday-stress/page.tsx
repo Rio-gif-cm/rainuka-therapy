@@ -22,7 +22,7 @@ export default function HolidayStressPage() {
               The family tension. The financial pressure. The grief that resurfaces. The seasonal low mood that won't lift.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
-              Whether it's difficult family dynamics, seasonal mood changes, or the overwhelm of juggling too much at once—holiday stress is one of the most common things I help people navigate. And with the right tools, you can get through this season with less white-knuckling and more actual presence.
+              Whether it's difficult family dynamics, seasonal mood changes, or the overwhelm of juggling too much at once-holiday stress is one of the most common things I help people navigate. And with the right tools, you can get through this season with less white-knuckling and more actual presence.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
               Schedule a 15-Minute Call
@@ -43,7 +43,7 @@ export default function HolidayStressPage() {
                 'Grief for someone who\'s gone hits harder around the holidays',
                 'Financial pressure from gifts, travel, and spending',
                 'Pressure to be happy and grateful when you don\'t feel it',
-                'Seasonal low mood—dark mornings, gray afternoons drain your energy',
+                'Seasonal low mood-dark mornings, gray afternoons drain your energy',
                 'Loneliness despite being surrounded by people',
               ].map((item, index) => (
                 <IconListItem key={index} icon="✓" color={colors.sage[600]}>
@@ -76,14 +76,14 @@ export default function HolidayStressPage() {
                   <li>• <strong>Reduced sunlight (Oct-Feb):</strong> Disrupts melatonin/serotonin balance → low mood, fatigue, carb cravings</li>
                   <li>• <strong>Family dynamics:</strong> Old conflicts resurface; boundaries get blurry; grief intensifies in group settings</li>
                   <li>• <strong>Financial strain:</strong> Holiday spending collides with your nervous system's "scarcity alarm"</li>
-                  <li>• <strong>Expectation pressure:</strong> "Perfect holiday" messaging vs. reality—breeding ground for shame</li>
+                  <li>• <strong>Expectation pressure:</strong> "Perfect holiday" messaging vs. reality-breeding ground for shame</li>
                   <li>• <strong>Work + personal collision:</strong> End-of-year projects + holiday obligations = burnout on steroids</li>
                   <li>• <strong>Loneliness paradox:</strong> Constant socializing can feel isolating when you're not being seen</li>
                 </ul>
               </div>
 
               <p>
-                <strong>Here's what matters:</strong> This isn't weakness or failure. Your nervous system is responding logically to real stressors that happen to all pile up at the same time. Therapy helps you navigate that load—not by making it disappear, but by giving you tools to stay grounded when things feel overwhelming.
+                <strong>Here's what matters:</strong> This isn't weakness or failure. Your nervous system is responding logically to real stressors that happen to all pile up at the same time. Therapy helps you navigate that load-not by making it disappear, but by giving you tools to stay grounded when things feel overwhelming.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function HolidayStressPage() {
                 {
                   icon: '🫂',
                   title: 'Emotion-Focused Therapy',
-                  desc: 'Create space for grief, anger, disappointment—the feelings the holidays are supposed to suppress. When you can feel them without drowning in them, you have more freedom.'
+                  desc: 'Create space for grief, anger, disappointment-the feelings the holidays are supposed to suppress. When you can feel them without drowning in them, you have more freedom.'
                 },
                 {
                   icon: '🛡️',
@@ -194,7 +194,7 @@ export default function HolidayStressPage() {
                 },
                 {
                   q: '"Won\'t therapy make me sadder by bringing up all my feelings?"',
-                  a: 'The opposite. Right now you\'re either stuffing feelings or drowning in them—both hurt. Therapy helps you feel what\'s there without being overwhelmed by it. That\'s freedom.'
+                  a: 'The opposite. Right now you\'re either stuffing feelings or drowning in them-both hurt. Therapy helps you feel what\'s there without being overwhelmed by it. That\'s freedom.'
                 },
                 {
                   q: '"It\'s just the holidays. Everyone\'s stressed. Am I overreacting?"',
@@ -248,9 +248,9 @@ export default function HolidayStressPage() {
 
             <div className="card card-static">
               <p className="text-lg italic text-warm-gray-700 mb-4">
-                "By the time we got to November, I realized I was just white-knuckling through life. Work was intense, my mom was visiting, and I couldn't even see my own anxiety until we talked about it. Having tools—actual ways to handle the stress—made December feel completely different. I could still be stressed, but I wasn't drowning in it."
+                "By the time we got to November, I realized I was just white-knuckling through life. Work was intense, my mom was visiting, and I couldn't even see my own anxiety until we talked about it. Having tools-actual ways to handle the stress-made December feel completely different. I could still be stressed, but I wasn't drowning in it."
               </p>
-              <p className="font-semibold text-warm-gray-900">— Client, after 6 sessions</p>
+              <p className="font-semibold text-warm-gray-900">- Client, after 6 sessions</p>
             </div>
           </div>
         </section>
@@ -272,7 +272,7 @@ export default function HolidayStressPage() {
                 },
                 {
                   q: 'Do you offer video sessions?',
-                  a: 'Yes. Virtual sessions work especially well during the holidays—no travel time, you can do it from anywhere. Same quality as in-person.'
+                  a: 'Yes. Virtual sessions work especially well during the holidays-no travel time, you can do it from anywhere. Same quality as in-person.'
                 },
                 {
                   q: 'What if I\'ve never been to therapy before?',
@@ -310,7 +310,7 @@ export default function HolidayStressPage() {
             </h2>
 
             <p className="text-lg text-warm-gray-600 mb-8 max-w-2xl mx-auto">
-              Holiday stress, seasonal mood changes, family tension—these are all things therapy is designed to help with. You deserve support this season.
+              Holiday stress, seasonal mood changes, family tension-these are all things therapy is designed to help with. You deserve support this season.
             </p>
 
             <Link href="/booking" className="inline-block btn btn-primary">

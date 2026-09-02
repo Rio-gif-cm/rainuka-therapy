@@ -11,7 +11,7 @@ import { getLocalBusinessSchema, getAggregateRatingSchema } from '@/lib/schema'
  *
  * Fraunces (display serif) + Inter (text sans).
  *
- * Why Fraunces over Merriweather: Merriweather is a sturdy screen slab —
+ * Why Fraunces over Merriweather: Merriweather is a sturdy screen slab -
  * it reads institutional, and it only ships 400/700, which forces every
  * heading to be either plain or heavy. Fraunces is a VARIABLE font with a
  * true optical-size axis, so headings get refined high-contrast letterforms
@@ -23,7 +23,7 @@ import { getLocalBusinessSchema, getAggregateRatingSchema } from '@/lib/schema'
  * 400, display at 400) and heavier at small sizes (h3/h4 at 600) so optical
  * heft stays constant down the ramp.
  *
- * `display: 'swap'` + preloaded subsets keeps LCP intact — text paints
+ * `display: 'swap'` + preloaded subsets keeps LCP intact - text paints
  * immediately in the fallback and reflows once.
  */
 const fraunces = Fraunces({
@@ -31,7 +31,7 @@ const fraunces = Fraunces({
   subsets: ['latin'],
   // Variable font: omit `weight` so the full 300-700 range is available.
   // next/font rejects `axes` when an explicit weight list is supplied.
-  // `opsz` is the axis that powers `font-optical-sizing: auto` in globals.css —
+  // `opsz` is the axis that powers `font-optical-sizing: auto` in globals.css -
   // without it declared here the browser has no optical-size axis to animate.
   axes: ['opsz', 'SOFT', 'WONK'],
   style: ['normal', 'italic'],
@@ -173,7 +173,7 @@ export default function RootLayout({
         <link rel="prefetch" href="/perinatal" as="document" fetchPriority="low" />
         <link rel="prefetch" href="/adhd" as="document" fetchPriority="low" />
         {/* Fonts are self-hosted and preloaded by next/font (see Fraunces/Inter
-            above) — a manual Google Fonts <link> would add a redundant
+            above) - a manual Google Fonts <link> would add a redundant
             third-party round trip and re-introduce the very render-block
             next/font exists to remove. */}
         {/* Schema.org structured data for LocalBusiness + ProfessionalService */}

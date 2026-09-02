@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
   // HOMEPAGE CORE FOUR
   {
     quote:
-      'I was terrified during pregnancy and thought I was alone in it. Rainuka didn\'t tell me I was fine—she sat with the fear and then gave me actual tools. I still use the grounding thing she taught me. Plus I found community here.',
+      'I was terrified during pregnancy and thought I was alone in it. Rainuka didn\'t tell me I was fine-she sat with the fear and then gave me actual tools. I still use the grounding thing she taught me. Plus I found community here.',
     author: 'Sarah',
     context: 'Software Engineer | Expecting First Child',
     rating: 5,
@@ -31,7 +31,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'Getting diagnosed with ADHD at 35 hit me harder than I expected. It was relief but also grief—grief for all the years I thought I was just broken. Rainuka didn\'t skip over the grief part. She got that I was mourning something while also celebrating answers.',
+      'Getting diagnosed with ADHD at 35 hit me harder than I expected. It was relief but also grief-grief for all the years I thought I was just broken. Rainuka didn\'t skip over the grief part. She got that I was mourning something while also celebrating answers.',
     author: 'Jessica',
     context: 'Marketing Manager | Adult ADHD Diagnosis',
     rating: 5,
@@ -39,7 +39,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'I was burning out, couldn\'t sleep, kept having panic attacks. My first thought was just push through—that\'s what I\'d always done. Rainuka helped me see the difference between anxiety I needed to manage and legitimate signals that my job was unsustainable. In a couple months I had a real exit plan. Then I used it.',
+      'I was burning out, couldn\'t sleep, kept having panic attacks. My first thought was just push through-that\'s what I\'d always done. Rainuka helped me see the difference between anxiety I needed to manage and legitimate signals that my job was unsustainable. In a couple months I had a real exit plan. Then I used it.',
     author: 'Michael',
     context: 'Senior Operations Lead | Career Transition',
     rating: 5,
@@ -47,7 +47,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'My mom died and everyone wanted me to move on or find meaning in it. Rainuka let me just be angry and confused for a while. When I was ready, we talked about how to actually live the rest of my life without her—not get over it, but go on.',
+      'My mom died and everyone wanted me to move on or find meaning in it. Rainuka let me just be angry and confused for a while. When I was ready, we talked about how to actually live the rest of my life without her-not get over it, but go on.',
     author: 'Amanda',
     context: 'Nonprofit Director | Navigating Loss',
     rating: 5,
@@ -67,7 +67,7 @@ export const testimonials: Testimonial[] = [
   // ADHD VALIDATION (NEW)
   {
     quote:
-      'For my entire twenties I thought I was lazy. When I got diagnosed with ADHD at 28, the first thing I did was blame myself harder. Rainuka said something that stuck: "Your brain isn\'t wired wrong—you\'ve just been trying to work in conditions that don\'t fit." We stopped fighting against how my brain works and started building around it. Everything got easier.',
+      'For my entire twenties I thought I was lazy. When I got diagnosed with ADHD at 28, the first thing I did was blame myself harder. Rainuka said something that stuck: "Your brain isn\'t wired wrong-you\'ve just been trying to work in conditions that don\'t fit." We stopped fighting against how my brain works and started building around it. Everything got easier.',
     author: 'Marcus',
     context: 'Software Developer | Late ADHD Recognition & Self-Compassion',
     rating: 5,
@@ -77,7 +77,7 @@ export const testimonials: Testimonial[] = [
   // PERINATAL ANXIETY BREAKTHROUGH (NEW)
   {
     quote:
-      'After my daughter was born I couldn\'t sleep. Not because she needed me up—I just couldn\'t shut my brain off. Every intrusive thought felt like proof I wasn\'t fit to be her mom. My doctor said it\'s "normal" but it didn\'t feel normal. Rainuka taught me grounding stuff that actually worked and convinced me I wasn\'t broken or dangerous. I slept a full night last week. First one in months.',
+      'After my daughter was born I couldn\'t sleep. Not because she needed me up-I just couldn\'t shut my brain off. Every intrusive thought felt like proof I wasn\'t fit to be her mom. My doctor said it\'s "normal" but it didn\'t feel normal. Rainuka taught me grounding stuff that actually worked and convinced me I wasn\'t broken or dangerous. I slept a full night last week. First one in months.',
     author: 'Priya',
     context: 'Teacher | Postpartum Anxiety Resolution',
     rating: 5,
@@ -107,7 +107,7 @@ export const testimonials: Testimonial[] = [
   // RACIALIZED STRESS & IDENTITY (NEW)
   {
     quote:
-      'I\'m one of two Black women in my department. I carry a weight that my white colleagues will never have to think about. I used to think that was just mine to manage—my anxiety, my problem. Rainuka named the actual context: I\'m existing in a space that wasn\'t built for me and that\'s exhausting for a reason. Not because something\'s wrong with me. She gets the difference. Most therapists don\'t.',
+      'I\'m one of two Black women in my department. I carry a weight that my white colleagues will never have to think about. I used to think that was just mine to manage-my anxiety, my problem. Rainuka named the actual context: I\'m existing in a space that wasn\'t built for me and that\'s exhausting for a reason. Not because something\'s wrong with me. She gets the difference. Most therapists don\'t.',
     author: 'Tanya',
     context: 'Senior Manager | Racialized Stress & Workplace Identity',
     rating: 5,
@@ -117,7 +117,7 @@ export const testimonials: Testimonial[] = [
   // FIRST-GENERATION IMMIGRANT EXPERIENCE (NEW)
   {
     quote:
-      'In my family you don\'t talk about feelings with strangers. But I was carrying so much—my parents left everything to give me a chance, and I felt like I was supposed to be grateful and successful and fine all at the same time. The "fine" was killing me. Rainuka met me in a space where I could honor what my parents sacrificed and also grieve what it cost them and me. I\'m building my own life now, not just managing theirs.',
+      'In my family you don\'t talk about feelings with strangers. But I was carrying so much-my parents left everything to give me a chance, and I felt like I was supposed to be grateful and successful and fine all at the same time. The "fine" was killing me. Rainuka met me in a space where I could honor what my parents sacrificed and also grieve what it cost them and me. I\'m building my own life now, not just managing theirs.',
     author: 'Raj',
     context: 'First-Generation Indian-American | Generational Trauma & Identity Integration',
     rating: 5,
@@ -127,7 +127,7 @@ export const testimonials: Testimonial[] = [
   // LGBTQ+ COUPLE (NEW)
   {
     quote:
-      'We weren\'t sure if couples therapy would actually get us as a same-sex couple. But Rainuka saw us, not a cause. We came in stuck—seven years and we\'d stopped having any real conversations. Turns out we were both so afraid of rocking the boat that we were drowning quietly together. She taught us how to fight about stuff that matters. Fighting better sounds weird but it means we\'re here, not just going through the motions.',
+      'We weren\'t sure if couples therapy would actually get us as a same-sex couple. But Rainuka saw us, not a cause. We came in stuck-seven years and we\'d stopped having any real conversations. Turns out we were both so afraid of rocking the boat that we were drowning quietly together. She taught us how to fight about stuff that matters. Fighting better sounds weird but it means we\'re here, not just going through the motions.',
     author: 'Jamie & Casey',
     context: 'Same-Sex Couple | 7-Year Partnership & Communication Repair',
     rating: 5,
@@ -137,7 +137,7 @@ export const testimonials: Testimonial[] = [
   // LATINO/MASCULINE PERSPECTIVE (NEW)
   {
     quote:
-      'In my family, men don\'t do therapy. My wife said it was therapy or we were done. I thought I was fine—that was just me being strong. Rainuka asked me actual questions and I had to admit I didn\'t know how I felt about most things. Just angry or fine. Nothing in between. My kids see me different now. I show up for them different. I wish I\'d done this a long time ago.',
+      'In my family, men don\'t do therapy. My wife said it was therapy or we were done. I thought I was fine-that was just me being strong. Rainuka asked me actual questions and I had to admit I didn\'t know how I felt about most things. Just angry or fine. Nothing in between. My kids see me different now. I show up for them different. I wish I\'d done this a long time ago.',
     author: 'David',
     context: 'Latino Father of Two | Emotional Expression & Family Connection',
     rating: 5,
@@ -167,7 +167,7 @@ export const testimonials: Testimonial[] = [
   // QUEER SOLO (NEW)
   {
     quote:
-      'I came out at 32 after ten years of marriage. It was grief and relief at the same time and neither made sense to anyone. Rainuka didn\'t try to neat it up—she let me be a mess about it. We worked through what it meant for my ex, for my kids finding out, for my parents. It was the hardest thing I\'ve done and also the most honest. I\'m not the same person and I\'m okay with that now.',
+      'I came out at 32 after ten years of marriage. It was grief and relief at the same time and neither made sense to anyone. Rainuka didn\'t try to neat it up-she let me be a mess about it. We worked through what it meant for my ex, for my kids finding out, for my parents. It was the hardest thing I\'ve done and also the most honest. I\'m not the same person and I\'m okay with that now.',
     author: 'Claire',
     context: 'Queer Woman | Late-Life Coming Out & Identity Reconstruction',
     rating: 5,

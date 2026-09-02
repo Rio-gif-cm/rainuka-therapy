@@ -63,7 +63,7 @@ export function BookingFormExample() {
         break
       case 'concern':
         if (value && value.trim().length < 10) {
-          return "Share a bit about what's on your mind—even one sentence helps."
+          return "Share a bit about what's on your mind-even one sentence helps."
         }
         break
     }
@@ -81,7 +81,7 @@ export function BookingFormExample() {
       const error = validateField(name, value)
       setFieldErrors(prev => ({
         ...prev,
-        [name]: error || undefined,
+        [name]: error || '',
       }))
       setValidFields(prev => ({
         ...prev,
@@ -99,7 +99,7 @@ export function BookingFormExample() {
     const error = validateField(name, value)
     setFieldErrors(prev => ({
       ...prev,
-      [name]: error || undefined,
+      [name]: error || '',
     }))
     setValidFields(prev => ({
       ...prev,
@@ -143,7 +143,7 @@ export function BookingFormExample() {
           label="Your Name"
           name="name"
           type="text"
-          placeholder="First or full name—whatever feels right"
+          placeholder="First or full name-whatever feels right"
           value={formData.name}
           onChange={handleChange}
           onBlur={handleBlur}
@@ -221,7 +221,7 @@ export function BookingFormExample() {
           onBlur={handleBlur}
           error={fieldErrors.concern}
           success={validFields.concern}
-          successMessage="Got it—let's talk about this"
+          successMessage="Got it-let's talk about this"
           rows={5}
         />
 

@@ -47,7 +47,7 @@ export default function PerinatalPage() {
           ctaLabel="Get Support That Gets You"
         />
 
-        {/* 1 — Who this is for */}
+        {/* 1 - Who this is for */}
         <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -68,7 +68,7 @@ export default function PerinatalPage() {
           />
         </SpecialtySection>
 
-        {/* 2 — Approach */}
+        {/* 2 - Approach */}
         <SpecialtySection tone="sage" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -96,13 +96,13 @@ export default function PerinatalPage() {
 
             <SpecialtyCard accent={accent} icon={<PerinatalIcon size={28} color={perinatalColor} />} title="Culturally Humble">
               <p>
-                I meet you where you are—not where I think you should be.
+                I meet you where you are-not where I think you should be.
               </p>
             </SpecialtyCard>
           </SpecialtyGrid>
         </SpecialtySection>
 
-        {/* 3 — What you get */}
+        {/* 3 - What you get */}
         <SpecialtySection tone="white">
           <SpecialtySectionHeader
             accent={accent}
@@ -112,7 +112,7 @@ export default function PerinatalPage() {
 
           <SpecialtyNote accent={accent} title="A Room That Gets It">
             <p className="mb-0">
-              Judgment-free. Your pace. Anger, despair, hope—all belong here.
+              Judgment-free. Your pace. Anger, despair, hope-all belong here.
             </p>
           </SpecialtyNote>
 
@@ -125,7 +125,7 @@ export default function PerinatalPage() {
                   <strong>A space where you&apos;re not &quot;too much.&quot;</strong> Anxiety that keeps you up isn&apos;t annoying. Grief that crashes into joy isn&apos;t weakness.
                 </>,
                 <>
-                  <strong>The biology behind what you&apos;re feeling.</strong> Perinatal hormones rewire your brain. Your emotions aren&apos;t random—they&apos;re a response.
+                  <strong>The biology behind what you&apos;re feeling.</strong> Perinatal hormones rewire your brain. Your emotions aren&apos;t random-they&apos;re a response.
                 </>,
                 <>
                   <strong>Permission to hold contradictions.</strong> Love your baby and resent the loss of freedom. Feel relief after loss. Want connection but need solitude. All real, all true.
@@ -134,19 +134,19 @@ export default function PerinatalPage() {
                   <strong>Tools that work off the couch.</strong> How to ground yourself when anxiety spikes. What to say to your partner. When to ask for help.
                 </>,
                 <>
-                  <strong>Reclaiming who you are now.</strong> Motherhood shifts your identity—sometimes loss does too. We don&apos;t bypass that; we integrate it.
+                  <strong>Reclaiming who you are now.</strong> Motherhood shifts your identity-sometimes loss does too. We don&apos;t bypass that; we integrate it.
                 </>,
               ]}
             />
           </div>
         </SpecialtySection>
 
-        {/* 4 — Hope & recovery */}
+        {/* 4 - Hope & recovery */}
         <SpecialtySection tone="cream" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="What the research says"
-            title="You're Not Broken—Your Brain Is Adapting"
+            title="You're Not Broken-Your Brain Is Adapting"
           />
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} title="Your Anxiety Has a Name">
@@ -175,7 +175,7 @@ export default function PerinatalPage() {
           </SpecialtyGrid>
         </SpecialtySection>
 
-        {/* 5 — Logistics */}
+        {/* 5 - Logistics */}
         <SpecialtySection tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -241,7 +241,7 @@ export default function PerinatalPage() {
         <SpecialtyCTA
           accent={accent}
           title="You're not alone in this"
-          body="Let's talk about what you're carrying. No judgment, no pressure—just someone who understands perinatal grief, anxiety, and the identity shifts that come with it."
+          body="Let's talk about what you're carrying. No judgment, no pressure-just someone who understands perinatal grief, anxiety, and the identity shifts that come with it."
           ctaLabel="Schedule Your Free Call"
         />
       </main>

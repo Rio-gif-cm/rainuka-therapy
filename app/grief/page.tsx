@@ -21,14 +21,14 @@ export default function GriefPage() {
         <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(77, 106, 134, 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Grief That Honors Every Loss—Big or Small
+              Grief That Honors Every Loss-Big or Small
             </h1>
             <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: griefColor}}>
               Loss is real. Your grief is normal.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
               Death. Miscarriage. Pet loss. Estrangement. Identity shifts. Anticipatory grief. 
-              Every loss deserves space to be felt, understood, and integrated—not &quot;moved past.&quot;
+              Every loss deserves space to be felt, understood, and integrated-not &quot;moved past.&quot;
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
               Get Support That Gets You
@@ -45,7 +45,7 @@ export default function GriefPage() {
 
             <div className="max-w-3xl mx-auto text-warm-gray-700 space-y-6">
               <p>
-                Grief is love with nowhere to go. It&apos;s not depression, anxiety, or weakness—it&apos;s the price of attachment, 
+                Grief is love with nowhere to go. It&apos;s not depression, anxiety, or weakness-it&apos;s the price of attachment, 
                 the weight of meaning. When someone or something mattered, losing them matters too.
               </p>
 
@@ -53,7 +53,7 @@ export default function GriefPage() {
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Truth:</p>
                 <p>
                   Grief is the normal, healthy response to loss. There&apos;s no timeline for &quot;getting over it.&quot; 
-                  Instead, grief transforms—you learn to carry it differently, to find meaning in what was, 
+                  Instead, grief transforms-you learn to carry it differently, to find meaning in what was, 
                   and to rebuild your sense of self and the world.
                 </p>
               </div>
@@ -90,7 +90,7 @@ export default function GriefPage() {
                 },
                 {
                   title: 'Pet Loss',
-                  description: 'The death of a companion animal. Often disenfranchised—dismissed as "just a pet"—but the bond was real, and so is your grief.',
+                  description: 'The death of a companion animal. Often disenfranchised-dismissed as "just a pet"-but the bond was real, and so is your grief.',
                   icon: '🐾'
                 },
                 {
@@ -100,12 +100,12 @@ export default function GriefPage() {
                 },
                 {
                   title: 'Anticipatory Grief',
-                  description: 'Grief that begins before a loss—when someone has a terminal illness, when dementia takes a loved one\'s memory, or before a major life transition. Real grief, even though they\'re still alive.',
+                  description: 'Grief that begins before a loss-when someone has a terminal illness, when dementia takes a loved one\'s memory, or before a major life transition. Real grief, even though they\'re still alive.',
                   icon: '⏰'
                 },
                 {
                   title: 'Ambiguous Loss',
-                  description: 'Loss without closure: estrangement, missing persons, dementia (losing the person while they\'re still here), chronic illness. Grief without finality—one of the hardest kinds.',
+                  description: 'Loss without closure: estrangement, missing persons, dementia (losing the person while they\'re still here), chronic illness. Grief without finality-one of the hardest kinds.',
                   icon: '🌫️'
                 },
               ].map((type, index) => (
@@ -120,7 +120,7 @@ export default function GriefPage() {
             <div className="mt-12 max-w-3xl mx-auto bg-dusk-50 border-l-4 border-dusk-300 p-6 rounded">
               <p className="font-semibold text-warm-gray-900 mb-2">Important:</p>
               <p className="text-warm-gray-700">
-                If your loss isn&apos;t listed here, it still matters. Grief meets us in places others might not understand—
+                If your loss isn&apos;t listed here, it still matters. Grief meets us in places others might not understand-
                 that doesn&apos;t make it less real. In therapy, we honor the uniqueness of your loss and your attachment.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function GriefPage() {
                 The myth: grief has five stages (denial, anger, bargaining, depression, acceptance) and follows a predictable path. 
                 <br /><br />
                 The reality: grief is non-linear, unpredictable, and deeply personal. You might feel all five in one day, 
-                or skip some entirely. There&apos;s no &quot;moving through&quot; it—you&apos;re learning to live with it.
+                or skip some entirely. There&apos;s no &quot;moving through&quot; it-you&apos;re learning to live with it.
               </p>
 
               <div className="space-y-6">
@@ -159,7 +159,7 @@ export default function GriefPage() {
                   {
                     period: 'Months 2-6: "Waves" & Reality Setting In',
                     details: [
-                      'Grief hits in waves—some hours are bearable, some are crushing',
+                      'Grief hits in waves-some hours are bearable, some are crushing',
                       'Grief triggers: seeing their favorite food, their birthday, a song, a place',
                       'Anger, why questions, guilt ("why didn\'t I...", "if only...")',
                       'Brain fog, memory issues, inability to concentrate',
@@ -169,7 +169,7 @@ export default function GriefPage() {
                   {
                     period: 'Months 6-12+: Integration & Continued Adaptation',
                     details: [
-                      'The acute pain becomes chronic—duller but still present',
+                      'The acute pain becomes chronic-duller but still present',
                       'You have more "normal" days, but grief can return without warning',
                       'Rebuilding identity without them in your daily life',
                       'Learning to hold their memory + continue living',
@@ -179,10 +179,10 @@ export default function GriefPage() {
                   {
                     period: 'Year 2+: Permanent Change, Not "Moving On"',
                     details: [
-                      'You don\'t "get over it"—you reorganize your life around it',
+                      'You don\'t "get over it"-you reorganize your life around it',
                       'Their absence becomes a permanent part of your story, not the whole story',
-                      'Trigger days (birthday, anniversary, holidays) remain hard—that\'s normal',
-                      'You carry them differently—in how you love, parent, show up, think',
+                      'Trigger days (birthday, anniversary, holidays) remain hard-that\'s normal',
+                      'You carry them differently-in how you love, parent, show up, think',
                       'Grief and happiness can coexist: you can grieve and live fully'
                     ]
                   }
@@ -204,7 +204,7 @@ export default function GriefPage() {
               <div className="mt-8 bg-honey-50 border-l-4 border-honey-300 p-6 rounded">
                 <p className="font-semibold text-warm-gray-900 mb-2">⚠️ When Grief Becomes &quot;Complicated&quot;:</p>
                 <p className="text-warm-gray-700 mb-3">
-                  Most people experience &quot;uncomplicated grief&quot;—intense, painful, but manageable. 
+                  Most people experience &quot;uncomplicated grief&quot;-intense, painful, but manageable. 
                   If after 12+ months you experience the following, therapy is especially helpful:
                 </p>
                 <ul className="space-y-2 text-warm-gray-700">
@@ -215,7 +215,7 @@ export default function GriefPage() {
                   <li>• Unresolved ambivalence (complicated relationship with the person)</li>
                 </ul>
                 <p className="text-warm-gray-700 mt-3">
-                  These aren&apos;t signs of weakness—they&apos;re signs that grief needs professional support.
+                  These aren&apos;t signs of weakness-they&apos;re signs that grief needs professional support.
                 </p>
               </div>
             </div>
@@ -237,11 +237,11 @@ export default function GriefPage() {
                   approach: 'Narrative Therapy: Restoring Your Story',
                   description: 'How it works:',
                   details: [
-                    'You tell your story of the loss—not once, but many times, adding new details and meaning each time',
+                    'You tell your story of the loss-not once, but many times, adding new details and meaning each time',
                     'We separate the grief from your identity: "Grief is happening TO you, it\'s not WHO you are"',
-                    'You find "unique outcomes"—moments when grief didn\'t define you, when you still experienced joy or connection',
+                    'You find "unique outcomes"-moments when grief didn\'t define you, when you still experienced joy or connection',
                     'We reauthor your narrative: from "I lost everything and can\'t move on" to "I lost something sacred, and I\'m learning to carry it in a new way"',
-                    'Your loss becomes integrated into your larger life story—part of you, not all of you'
+                    'Your loss becomes integrated into your larger life story-part of you, not all of you'
                   ],
                   icon: '📖'
                 },
@@ -253,7 +253,7 @@ export default function GriefPage() {
                     'Exploring: What did they mean to me? What values did they embody? How do I carry them forward?',
                     'Finding purpose: "How does my grief speak to my deepest values? How can I honor them through how I live?"',
                     'Connection to legacy: writing letters, creating rituals, supporting others who grieve, donating, volunteering',
-                    'Transforming pain into meaning—not erasing the loss, but making it count'
+                    'Transforming pain into meaning-not erasing the loss, but making it count'
                   ],
                   icon: '✨'
                 },
@@ -261,10 +261,10 @@ export default function GriefPage() {
                   approach: 'Dual Process Model: Oscillating Between Loss & Life',
                   description: 'How it works:',
                   details: [
-                    'You don\'t need to "move on"—instead, you balance two types of coping:',
+                    'You don\'t need to "move on"-instead, you balance two types of coping:',
                     'Loss-oriented: grieving, crying, honoring them, feeling the absence',
                     'Restoration-oriented: rebuilding daily life, finding new routines, rediscovering joy, establishing identity without them',
-                    'Healthy grief oscillates between these—some days you\'re in grief, some days you\'re rebuilding, most days you\'re doing both',
+                    'Healthy grief oscillates between these-some days you\'re in grief, some days you\'re rebuilding, most days you\'re doing both',
                     'We help you find rhythm, not forcing you to choose "healing" over "honoring"'
                   ],
                   icon: '⚖️'
@@ -273,10 +273,10 @@ export default function GriefPage() {
                   approach: 'Continuing Bonds: They\'re Still Part of Your Life',
                   description: 'How it works:',
                   details: [
-                    'Traditional therapy used to say "let them go"—modern grief work says they\'re always part of you',
+                    'Traditional therapy used to say "let them go"-modern grief work says they\'re always part of you',
                     'How do you want them present in your life going forward? As a memory? A value? A guide?',
                     'Building rituals: birthday acknowledgments, telling stories, making choices by their values',
-                    'They\'re not coming back, but you\'re not forgetting them either—you\'re finding a new relationship with them',
+                    'They\'re not coming back, but you\'re not forgetting them either-you\'re finding a new relationship with them',
                     'Grief doesn\'t end, it transforms into love + memory + meaning'
                   ],
                   icon: '🤝'
@@ -411,19 +411,19 @@ export default function GriefPage() {
               {[
                 {
                   q: 'How long will this take? Will I ever feel normal again?',
-                  a: `There's no timeline. "Normal grief" (not complicated grief requiring treatment) typically feels intense for 6-12 months, with waves continuing for years. You won't go back to who you were—you'll become someone new, someone who's integrated this loss. That's not weakness; that's growth. The pain changes texture, not necessarily intensity. You learn to live with it.`
+                  a: `There's no timeline. "Normal grief" (not complicated grief requiring treatment) typically feels intense for 6-12 months, with waves continuing for years. You won't go back to who you were-you'll become someone new, someone who's integrated this loss. That's not weakness; that's growth. The pain changes texture, not necessarily intensity. You learn to live with it.`
                 },
                 {
                   q: `I'm angry all the time. Is that normal?`,
                   a: `Yes. Anger is one of the five stages, and it's often underestimated. You might be angry at the person who died ("how could you leave me"), angry at God, angry at the unfairness of it all, angry at others who seem to move on easily, or angry at yourself. All of this is normal grief. In therapy, we can explore what the anger is protecting (often it's actually pain) and find ways to express it safely.`
                 },
                 {
-                  q: `I'm laughing and having fun—does that mean I didn't love them?`,
-                  a: `No. Grief and joy aren't opposites; they're both part of honoring a full life. You can miss someone deeply and still laugh at a memory, enjoy a meal, or have fun with friends. That's not betrayal—that's living. Your loved one likely wouldn't want you to suffer forever. Finding moments of lightness doesn't diminish your grief.`
+                  q: `I'm laughing and having fun-does that mean I didn't love them?`,
+                  a: `No. Grief and joy aren't opposites; they're both part of honoring a full life. You can miss someone deeply and still laugh at a memory, enjoy a meal, or have fun with friends. That's not betrayal-that's living. Your loved one likely wouldn't want you to suffer forever. Finding moments of lightness doesn't diminish your grief.`
                 },
                 {
                   q: `I feel like I'm "supposed" to be better by now. Everyone else seems to expect it.`,
-                  a: `This is grief shame—the added pain of feeling like your grief is "too much" or "taking too long." Your timeline is yours. Compare yourself to no one. Some people move through intense grief faster; others need more time. Both are normal. Anyone who's judging your grief doesn't understand grief. In therapy, we work on honoring your pace and managing others' expectations.`
+                  a: `This is grief shame-the added pain of feeling like your grief is "too much" or "taking too long." Your timeline is yours. Compare yourself to no one. Some people move through intense grief faster; others need more time. Both are normal. Anyone who's judging your grief doesn't understand grief. In therapy, we work on honoring your pace and managing others' expectations.`
                 },
                 {
                   q: 'What if I\'m grieving someone I had a complicated relationship with?',
@@ -431,7 +431,7 @@ export default function GriefPage() {
                 },
                 {
                   q: `I don't feel anything. Am I broken?`,
-                  a: `No—you might be in shock or emotional numbness, which is your brain's protective mechanism. It's common in the early weeks/months. Your nervous system is protecting you from overwhelming pain. Don't force yourself to "feel more." In time, as you process the loss, feelings will emerge. If numbness persists beyond 6+ months, therapy can help.`
+                  a: `No-you might be in shock or emotional numbness, which is your brain's protective mechanism. It's common in the early weeks/months. Your nervous system is protecting you from overwhelming pain. Don't force yourself to "feel more." In time, as you process the loss, feelings will emerge. If numbness persists beyond 6+ months, therapy can help.`
                 },
                 {
                   q: 'Should I remove their photos/belongings/keep their room the same?',
@@ -455,7 +455,7 @@ export default function GriefPage() {
                 },
                 {
                   q: `My pet died and people say "it was just a pet." But I'm devastated.`,
-                  a: `Pet loss is real grief. Your pet was there when you woke up, greeted you when you came home, and provided unconditional love. That bond mattered. Society often calls this "disenfranchised grief"—grief that's not socially acknowledged, which makes it lonelier. Your grief is valid. A good therapist honors the depth of your bond with your animal.`
+                  a: `Pet loss is real grief. Your pet was there when you woke up, greeted you when you came home, and provided unconditional love. That bond mattered. Society often calls this "disenfranchised grief"-grief that's not socially acknowledged, which makes it lonelier. Your grief is valid. A good therapist honors the depth of your bond with your animal.`
                 }
               ].map((item, index) => (
                 <div key={index} className="card card-compact card-static">
@@ -482,7 +482,7 @@ export default function GriefPage() {
 
             <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
               Grief is one of the most isolating human experiences. The world keeps moving, but you feel stuck. 
-              People want you to be &quot;fine&quot; by now. You might feel like no one understands—the specific weight of YOUR loss, YOUR love, YOUR devastation.
+              People want you to be &quot;fine&quot; by now. You might feel like no one understands-the specific weight of YOUR loss, YOUR love, YOUR devastation.
             </p>
 
             <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
@@ -540,7 +540,7 @@ export default function GriefPage() {
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">
-              Grief is love with nowhere to go. I create space for all types of loss—death, miscarriage, estrangement, identity shifts. Your grief integrates; it doesn't disappear.
+              Grief is love with nowhere to go. I create space for all types of loss-death, miscarriage, estrangement, identity shifts. Your grief integrates; it doesn't disappear.
             </p>
           </div>
         </section>

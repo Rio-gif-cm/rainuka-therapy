@@ -61,7 +61,7 @@ export default function BIPOCPage() {
               <div className="p-6 rounded" style={{ backgroundColor: '#fdf7f4', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
-                  Your anger at injustice is not a pathology to manage—it&apos;s a rational response to real harm. Your caution in unsafe spaces is wisdom,
+                  Your anger at injustice is not a pathology to manage-it&apos;s a rational response to real harm. Your caution in unsafe spaces is wisdom,
                   not paranoia or defensiveness. We name oppression directly and clearly, not as background noise in your own story. 
                   You won&apos;t have to explain racism to me. We can focus on how to survive it and thrive anyway.
                 </p>
@@ -73,13 +73,13 @@ export default function BIPOCPage() {
                 {
                   title: 'Cultural Humility, Not Expertise',
                   description:
-                    'I do not claim to know your culture or your family better than you do. I won&apos;t pretend I understand what it means to be you. Cultural humility means I stay genuinely curious about your lived experience, acknowledge openly what I do not know, and adapt to what you actually need—not the other way around. You are the expert on your own life.',
+                    'I do not claim to know your culture or your family better than you do. I won&apos;t pretend I understand what it means to be you. Cultural humility means I stay genuinely curious about your lived experience, acknowledge openly what I do not know, and adapt to what you actually need-not the other way around. You are the expert on your own life.',
                   icon: '🙏',
                 },
                 {
                   title: 'Anti-Oppression Approach',
                   description:
-                    'Racism, discrimination, and systemic inequality are not just external stressors—they are woven into your mental health. We name them directly rather than reframing them as personal deficits.',
+                    'Racism, discrimination, and systemic inequality are not just external stressors-they are woven into your mental health. We name them directly rather than reframing them as personal deficits.',
                   icon: '⚖️',
                 },
                 {
@@ -91,7 +91,7 @@ export default function BIPOCPage() {
                 {
                   title: 'Color-Conscious, Not Colorblind',
                   description:
-                    'I actively see your racial and ethnic identity. I will not erase it in the name of treating everyone the same. Your background shapes how you see, love, and survive—and it is a source of strength.',
+                    'I actively see your racial and ethnic identity. I will not erase it in the name of treating everyone the same. Your background shapes how you see, love, and survive-and it is a source of strength.',
                   icon: '🎨',
                 },
               ].map((item, index) => (
@@ -135,11 +135,11 @@ export default function BIPOCPage() {
                   {
                     title: 'Code-Switching & Identity Exhaustion',
                     body: 'Constantly translating yourself across home, work, school, and mainstream spaces. The quiet exhaustion of being the different one in every room.',
-                    note: 'Code-switching is a survival skill—and it is also depleting. We work with both: honoring your adaptability and addressing the toll it takes.',
+                    note: 'Code-switching is a survival skill-and it is also depleting. We work with both: honoring your adaptability and addressing the toll it takes.',
                   },
                   {
                     title: 'Cultural Preservation & Belonging',
-                    body: 'Keeping heritage alive. Deciding what to pass on to the next generation. Feeling in-between—not fully belonging to your culture of origin or the mainstream.',
+                    body: 'Keeping heritage alive. Deciding what to pass on to the next generation. Feeling in-between-not fully belonging to your culture of origin or the mainstream.',
                     note: 'Your cultural identity is not something to move past. It is something to integrate and claim on your own terms.',
                   },
                   {
@@ -237,7 +237,7 @@ export default function BIPOCPage() {
                 {[
                   {
                     title: 'Cultural Humility Over Competence',
-                    body: 'Cultural humility—a lifelong practice of self-reflection and curiosity—is associated with better therapy outcomes than cultural competence alone. Therapists have to examine their own cultural story first.',
+                    body: 'Cultural humility-a lifelong practice of self-reflection and curiosity-is associated with better therapy outcomes than cultural competence alone. Therapists have to examine their own cultural story first.',
                   },
                   {
                     title: 'Racial Trauma Is Documented',
@@ -284,7 +284,7 @@ export default function BIPOCPage() {
                   },
                   {
                     title: '💳 Sliding Scale',
-                    body: 'What you pay depends on what you can afford right now—not documentation or proof of hardship.',
+                    body: 'What you pay depends on what you can afford right now-not documentation or proof of hardship.',
                   },
                   {
                     title: '🔒 Confidential & Secure',
@@ -322,7 +322,7 @@ export default function BIPOCPage() {
 
             <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
               A free 30-minute call is just a conversation. We&apos;ll talk about what&apos;s happening
-              in your life right now, and whether we&apos;re a good fit for the work ahead—without you
+              in your life right now, and whether we&apos;re a good fit for the work ahead-without you
               having to teach me the basics of your own experience first.
             </p>
 
@@ -347,7 +347,7 @@ export default function BIPOCPage() {
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">
-              Race and identity shape trauma. I integrate understanding of racism, cultural identity, and systemic stress into my approach. Your experience is valid—your therapist gets it.
+              Race and identity shape trauma. I integrate understanding of racism, cultural identity, and systemic stress into my approach. Your experience is valid-your therapist gets it.
             </p>
           </div>
         </section>

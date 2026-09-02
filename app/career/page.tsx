@@ -37,20 +37,20 @@ export default function CareerPage() {
           ctaLabel="Get Support That Gets You"
         />
 
-        {/* 1 — Who this is for */}
+        {/* 1 - Who this is for */}
         <SpecialtySection id="suitability" tone="white" width="wide">
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
             title="You might be here if…"
-            intro="Career confusion usually means something real needs to change. Not weakness—just a signal worth listening to."
+            intro="Career confusion usually means something real needs to change. Not weakness-just a signal worth listening to."
           />
           <SpecialtyChecklist
             accent={accent}
             items={[
               "Burnout so deep you can't imagine it lifting",
               'The question "Is this what I actually want?" won\'t go away',
-              'Imposter syndrome—convinced you\'re about to be found out',
+              'Imposter syndrome-convinced you\'re about to be found out',
               "Scared of making the wrong move, so you move nowhere",
               "Your values and the job's values don't align",
               "Perfectionism and overwork became how you stay safe",
@@ -58,7 +58,7 @@ export default function CareerPage() {
           />
         </SpecialtySection>
 
-        {/* 2 — What I'm not */}
+        {/* 2 - What I'm not */}
         <SpecialtySection tone="sage">
           <SpecialtySectionHeader
             accent={accent}
@@ -89,7 +89,7 @@ export default function CareerPage() {
           </div>
         </SpecialtySection>
 
-        {/* 3 — Why therapy */}
+        {/* 3 - Why therapy */}
         <SpecialtySection tone="white">
           <SpecialtySectionHeader
             accent={accent}
@@ -103,7 +103,7 @@ export default function CareerPage() {
             cols={1}
             items={[
               <>
-                <strong>Burnout is real.</strong> Your system has hit a limit. That's not laziness—that's data.
+                <strong>Burnout is real.</strong> Your system has hit a limit. That's not laziness-that's data.
               </>,
               <>
                 <strong>Doubt is honest.</strong> If something feels wrong, you're picking up on something true.
@@ -118,7 +118,7 @@ export default function CareerPage() {
           />
         </SpecialtySection>
 
-        {/* 4 — What we work on */}
+        {/* 4 - What we work on */}
         <SpecialtySection tone="cream" width="wide">
           <SpecialtySectionHeader
             accent={accent}
@@ -164,7 +164,7 @@ export default function CareerPage() {
           </SpecialtyGrid>
         </SpecialtySection>
 
-        {/* 5 — FAQ */}
+        {/* 5 - FAQ */}
         <SpecialtySection tone="white">
           <SpecialtySectionHeader
             accent={accent}

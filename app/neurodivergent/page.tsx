@@ -63,7 +63,7 @@ export default function NeurodivergentPage() {
                 <p>
                   We work from the neurodiversity paradigm: ADHD and autism are natural variations in
                   how brains work, not defects to be cured or &quot;corrected&quot; so you fit the mold. The goal is a life that fits
-                  you—not a you that fits someone else&apos;s expectations. You&apos;ve been trying to be normal for long enough. Let&apos;s build something that actually works.
+                  you-not a you that fits someone else&apos;s expectations. You&apos;ve been trying to be normal for long enough. Let&apos;s build something that actually works.
                 </p>
               </div>
             </div>
@@ -73,25 +73,25 @@ export default function NeurodivergentPage() {
                 {
                   title: 'No "Fix" Language',
                   description:
-                    'Your neurodivergence is not a disorder to overcome. It is a core part of who you are—a different neurotype, not a deficit. We are not here to make you less autistic or less ADHD.',
+                    'Your neurodivergence is not a disorder to overcome. It is a core part of who you are-a different neurotype, not a deficit. We are not here to make you less autistic or less ADHD.',
                   icon: '🚫',
                 },
                 {
                   title: 'Strengths-Based, Not Deficit-Focused',
                   description:
-                    'ADHD hyperfocus, autistic pattern recognition, deep integrity, fierce loyalty, creative problem-solving—your neurodivergence comes with real gifts that aren&apos;t just &quot;managing compensations.&quot; We explore what you are genuinely good at and build on it, not just manage or minimize symptoms. You don&apos;t need to be less of who you are.',
+                    'ADHD hyperfocus, autistic pattern recognition, deep integrity, fierce loyalty, creative problem-solving-your neurodivergence comes with real gifts that aren&apos;t just &quot;managing compensations.&quot; We explore what you are genuinely good at and build on it, not just manage or minimize symptoms. You don&apos;t need to be less of who you are.',
                   icon: '💪',
                 },
                 {
                   title: 'Identity-First Language',
                   description:
-                    'I use &quot;autistic person&quot; and &quot;ADHD adult,&quot; not &quot;person with autism&quot; or &quot;individual with ADHD.&quot; Your neurodivergence is integral to your identity—it shapes how you think, relate, and move through the world. It&apos;s not something separate to discuss at arm&apos;s length. If you prefer person-first language or something else entirely, we use your language.',
+                    'I use &quot;autistic person&quot; and &quot;ADHD adult,&quot; not &quot;person with autism&quot; or &quot;individual with ADHD.&quot; Your neurodivergence is integral to your identity-it shapes how you think, relate, and move through the world. It&apos;s not something separate to discuss at arm&apos;s length. If you prefer person-first language or something else entirely, we use your language.',
                   icon: '💬',
                 },
                 {
                   title: 'Sensory-Informed Care',
                   description:
-                    'Sensory processing affects everything—how you regulate emotions, how executive function works, how you move through the world and relate to your own body. We talk about your sensory needs openly and build regulation into your actual coping strategies. Not as an accommodation, but as central to understanding you.',
+                    'Sensory processing affects everything-how you regulate emotions, how executive function works, how you move through the world and relate to your own body. We talk about your sensory needs openly and build regulation into your actual coping strategies. Not as an accommodation, but as central to understanding you.',
                   icon: '🌊',
                 },
               ].map((item, index) => (
@@ -116,7 +116,7 @@ export default function NeurodivergentPage() {
 
             <div className="max-w-3xl mx-auto">
               <p className="text-warm-gray-700 mb-8">
-                These are the journeys I work with regularly. You might recognize yourself here—or in
+                These are the journeys I work with regularly. You might recognize yourself here-or in
                 the overlap of several.
               </p>
 
@@ -129,18 +129,18 @@ export default function NeurodivergentPage() {
                   },
                   {
                     title: 'Masking & Burnout Recovery',
-                    body: 'Years of performing neurotypicality take a toll. Autistic burnout. ADHD depletion. Exhaustion that sleep does not fix, because it is not tiredness—it is the cost of pretending to be someone else.',
+                    body: 'Years of performing neurotypicality take a toll. Autistic burnout. ADHD depletion. Exhaustion that sleep does not fix, because it is not tiredness-it is the cost of pretending to be someone else.',
                     note: 'We talk about unmasking safely, recognizing burnout patterns early, and building a life that does not require constant adaptation.',
                   },
                   {
                     title: 'Executive Function & ADHD Strategies',
-                    body: 'Time blindness, task initiation, working memory. ADHD is not about willpower—it is about how your brain prioritizes and processes. We work with your actual neurobiology, not against it.',
+                    body: 'Time blindness, task initiation, working memory. ADHD is not about willpower-it is about how your brain prioritizes and processes. We work with your actual neurobiology, not against it.',
                     note: 'We develop strategies that fit your brain: systems, accountability structures, and self-compassion for how your mind actually works.',
                   },
                   {
                     title: 'Social Navigation & Autistic Relationships',
                     body: 'Finding authentic connection that does not require masking. Communicating directly without being labeled rude. Building relationships that honor how you actually relate.',
-                    note: 'Your communication style is valid. Your need for direct language, your boundaries, your differences—not flaws to fix.',
+                    note: 'Your communication style is valid. Your need for direct language, your boundaries, your differences-not flaws to fix.',
                   },
                   {
                     title: 'AuDHD: ADHD and Autism Together',
@@ -182,7 +182,7 @@ export default function NeurodivergentPage() {
 
             <div className="max-w-4xl mx-auto">
               <p className="text-warm-gray-700 mb-8 text-center">
-                You are not just neurodivergent. You are also everything else you are—and that
+                You are not just neurodivergent. You are also everything else you are-and that
                 intersection matters.
               </p>
 
@@ -353,7 +353,7 @@ export default function NeurodivergentPage() {
 
             <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
               A free 30-minute call is just a conversation. We&apos;ll talk about what&apos;s actually
-              happening in your life right now—no diagnosis required, no judgment, and no expectation
+              happening in your life right now-no diagnosis required, no judgment, and no expectation
               that you mask your way through the intake.
             </p>
 
@@ -378,7 +378,7 @@ export default function NeurodivergentPage() {
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">
-              Autism, ADHD, dyslexia, dyspraxia—neurodivergence often masks trauma and identity questions. I provide affirming, neurotype-aware therapy that celebrates how you think.
+              Autism, ADHD, dyslexia, dyspraxia-neurodivergence often masks trauma and identity questions. I provide affirming, neurotype-aware therapy that celebrates how you think.
             </p>
           </div>
         </section>

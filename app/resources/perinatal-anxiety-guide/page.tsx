@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Signs You Might Have Perinatal Anxiety: Symptoms & Treatment",
     description:
-      "Understand perinatal anxiety signs and get evidence-based treatment. 1 in 5 mothers experience this—you're not alone.",
+      "Understand perinatal anxiety signs and get evidence-based treatment. 1 in 5 mothers experience this-you're not alone.",
     type: "article",
   },
 };
@@ -153,7 +153,7 @@ export default function PerinatalAnxietyGuide() {
             Perinatal anxiety refers to anxiety that develops during pregnancy
             (prenatal) or in the year after birth (postpartum). It's distinct
             from postpartum depression, though they often occur together. Anxiety
-            creates a persistent sense of threat—your nervous system stays in
+            creates a persistent sense of threat-your nervous system stays in
             "high alert" mode, flooding your body with stress hormones even when
             the baby is safe and asleep.
           </p>
@@ -182,12 +182,12 @@ export default function PerinatalAnxietyGuide() {
             elevated heart rate.
           </p>
 
-          <h3>Insomnia—Even When the Baby Sleeps</h3>
+          <h3>Insomnia-Even When the Baby Sleeps</h3>
           <ul>
             <li>You're exhausted but can't fall asleep (or wake after 2-3 hours)</li>
             <li>Your mind races with "what if" scenarios</li>
             <li>You wake in a panic even on nights when baby doesn't wake</li>
-            <li>Sleep feels dangerous—fear of "missing something"</li>
+            <li>Sleep feels dangerous-fear of "missing something"</li>
           </ul>
 
           <h3>Constant Physical Tension</h3>
@@ -213,7 +213,7 @@ export default function PerinatalAnxietyGuide() {
               hundreds of times)
             </li>
             <li>
-              Seeking reassurance—checking if baby is breathing, asking partner
+              Seeking reassurance-checking if baby is breathing, asking partner
               repeatedly
             </li>
           </ul>

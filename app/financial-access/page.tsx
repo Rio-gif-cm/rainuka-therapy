@@ -15,17 +15,17 @@ export const metadata: Metadata = {
 const slidingScale = [
   {
     income: 'Under $30,000/year',
-    fee: '$80–$90',
+    fee: '$80-$90',
     why: 'Covers overhead and keeps the practice sustainable without cutting corners on your care.',
   },
   {
-    income: '$30,000–$50,000/year',
-    fee: '$100–$120',
+    income: '$30,000-$50,000/year',
+    fee: '$100-$120',
     why: 'Balanced: affordable for mid-range income, sustainable for consistent quality care.',
   },
   {
-    income: '$50,000–$75,000/year',
-    fee: '$130–$140',
+    income: '$50,000-$75,000/year',
+    fee: '$130-$140',
     why: 'Fair market rate that reflects both your financial capacity and clinical expertise.',
   },
   {
@@ -40,7 +40,7 @@ const communityResources = [
     icon: '🏥',
     title: 'Community Health Centers (HRSA-Funded)',
     body: [
-      'Federally Qualified Health Centers (FQHCs) provide therapy on a sliding scale based on income, often for $0–$40 per session. They were founded to serve low-income and uninsured people.',
+      'Federally Qualified Health Centers (FQHCs) provide therapy on a sliding scale based on income, often for $0-$40 per session. They were founded to serve low-income and uninsured people.',
       'In 2023, over 31 million people relied on HRSA-funded health centers. They accept everyone, insured or not.',
     ],
     link: { href: 'https://findahealthcenter.hrsa.gov/', label: 'findahealthcenter.hrsa.gov' },

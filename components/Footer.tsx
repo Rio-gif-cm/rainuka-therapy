@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { colors } from '@/app/styles'
 
 /* ------------------------------------------------------------------ */
-/*  Footer link model — grouped into balanced, scannable columns       */
+/*  Footer link model - grouped into balanced, scannable columns       */
 /* ------------------------------------------------------------------ */
 
 const FOOTER_COLUMNS: { heading: string; links: { href: string; label: string }[] }[] = [

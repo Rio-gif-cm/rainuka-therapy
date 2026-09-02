@@ -85,7 +85,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
     switch (name) {
       case 'name':
         if (!value || (typeof value === 'string' && !validateName(value as string))) {
-          return "Your name helps me know how to greet you. First name or full name—whatever feels right."
+          return "Your name helps me know how to greet you. First name or full name-whatever feels right."
         }
         break
       case 'email':
@@ -104,7 +104,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
         // encourages brief answers, reducing cognitive load on sensitive topic.
         // Also: concerns field is now optional (only required if user expands it)
         if (value && (typeof value === 'string' && (value as string).trim().length < 10)) {
-          return "Share a bit about what's on your mind—even one sentence helps me prepare. We can dive deeper during our call."
+          return "Share a bit about what's on your mind-even one sentence helps me prepare. We can dive deeper during our call."
         }
         break
       case 'firstTimeTherapy':
@@ -503,7 +503,7 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                     </p>
                   ) : (
                     <p id="concern-help" className="text-sm text-warm-gray-500 mt-2">
-                      This helps me understand what brought you in and what you're hoping to change—a sentence or two is plenty, and we can explore more during our call.
+                      This helps me understand what brought you in and what you're hoping to change-a sentence or two is plenty, and we can explore more during our call.
                     </p>
                   )}
                 </div>

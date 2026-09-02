@@ -8,15 +8,15 @@ import { colors } from '@/app/styles'
 const parentsFAQ = [
   {
     q: 'Is it normal to feel anxious about my kids all the time?',
-    a: 'Some worry is built into caregiving—your nervous system is doing its job. It becomes a problem when the worry runs constantly, disrupts sleep, drives checking behaviors, or makes it hard to let your child take normal age-appropriate risks. That version is treatable, and it responds well to therapy.',
+    a: 'Some worry is built into caregiving-your nervous system is doing its job. It becomes a problem when the worry runs constantly, disrupts sleep, drives checking behaviors, or makes it hard to let your child take normal age-appropriate risks. That version is treatable, and it responds well to therapy.',
   },
   {
     q: 'I love my kids but I resent my life right now. Does that make me a bad parent?',
-    a: 'No. Resentment is usually a signal of unmet needs and depleted capacity—not a verdict on your love. Parents who can name resentment out loud tend to act on it less. In therapy we look at what is actually draining you rather than treating the feeling itself as the failure.',
+    a: 'No. Resentment is usually a signal of unmet needs and depleted capacity-not a verdict on your love. Parents who can name resentment out loud tend to act on it less. In therapy we look at what is actually draining you rather than treating the feeling itself as the failure.',
   },
   {
     q: 'What is caregiver burnout, exactly?',
-    a: 'Burnout is chronic depletion from sustained caregiving demand: emotional exhaustion, detachment or numbness toward people you love, irritability with a short fuse, and a sense that nothing you do is enough. It is not a character flaw and it does not resolve through willpower—it resolves through restored capacity, boundaries, and support.',
+    a: 'Burnout is chronic depletion from sustained caregiving demand: emotional exhaustion, detachment or numbness toward people you love, irritability with a short fuse, and a sense that nothing you do is enough. It is not a character flaw and it does not resolve through willpower-it resolves through restored capacity, boundaries, and support.',
   },
   {
     q: "I'm caring for my kids and my aging parents. Is there help for that?",
@@ -28,11 +28,11 @@ const parentsFAQ = [
   },
   {
     q: 'I yelled at my kid and I feel awful. Can therapy help with that?',
-    a: 'Yes—and rupture is not the end of the story. Research on parent-child attachment is clear that repair matters more than perfection. We work on lowering the reactivity that leads to the blow-up and on repairing well afterward, without collapsing into shame.',
+    a: 'Yes-and rupture is not the end of the story. Research on parent-child attachment is clear that repair matters more than perfection. We work on lowering the reactivity that leads to the blow-up and on repairing well afterward, without collapsing into shame.',
   },
   {
     q: 'How do I set boundaries without feeling selfish?',
-    a: 'Most caregivers are taught that boundaries and love are opposites. They are not. A boundary is a statement about what you will do, not a demand that someone else change. We practice concrete scripts—for kids, partners, in-laws, and the relative who keeps commenting on your parenting.',
+    a: 'Most caregivers are taught that boundaries and love are opposites. They are not. A boundary is a statement about what you will do, not a demand that someone else change. We practice concrete scripts-for kids, partners, in-laws, and the relative who keeps commenting on your parenting.',
   },
   {
     q: 'Is guilt ever useful?',
@@ -40,11 +40,11 @@ const parentsFAQ = [
   },
   {
     q: 'I am a single parent with no backup. Will therapy just tell me to rest more?',
-    a: 'No. Advice that assumes a partner, money, or free time is useless. We work with the actual constraints you have—including the ones you cannot change—and find the leverage that exists inside them.',
+    a: 'No. Advice that assumes a partner, money, or free time is useless. We work with the actual constraints you have-including the ones you cannot change-and find the leverage that exists inside them.',
   },
   {
     q: 'How long does this take?',
-    a: 'Many parents feel meaningful relief within 8\u201312 sessions, particularly around anxiety and boundary-setting. Deeper work—burnout recovery, or unlearning how you were parented—often runs longer. We reassess together as we go.',
+    a: 'Many parents feel meaningful relief within 8\u201312 sessions, particularly around anxiety and boundary-setting. Deeper work-burnout recovery, or unlearning how you were parented-often runs longer. We reassess together as we go.',
   },
 ]
 
@@ -103,7 +103,7 @@ export default function ParentsPage() {
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
               Parenting anxiety that never switches off. Burnout you cannot admit to. Guilt for
-              needing anything at all. This is therapy for the caregiver—not the person being cared
+              needing anything at all. This is therapy for the caregiver-not the person being cared
               for.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
@@ -150,7 +150,7 @@ export default function ParentsPage() {
             <div className="space-y-6 text-warm-gray-600">
               <p>
                 Anxiety is not evidence that you are failing at this. Caregiving recruits the exact
-                brain systems built to scan for threat—which is why worry intensifies the moment
+                brain systems built to scan for threat-which is why worry intensifies the moment
                 someone becomes your responsibility. The question is never{' '}
                 <em>&ldquo;do I worry?&rdquo;</em> It is{' '}
                 <em>&ldquo;is the worry still working for me?&rdquo;</em>
@@ -167,7 +167,7 @@ export default function ParentsPage() {
                   <ul className="space-y-2 text-sm">
                     <li>• Spikes around real events (illness, a new school, a hard milestone)</li>
                     <li>• Settles once the situation resolves</li>
-                    <li>• Leads to useful action—a call, a plan, a conversation</li>
+                    <li>• Leads to useful action-a call, a plan, a conversation</li>
                     <li>• Still leaves room for enjoying your child</li>
                     <li>• Lets them take age-appropriate risks</li>
                   </ul>
@@ -184,7 +184,7 @@ export default function ParentsPage() {
                     <li>• Runs constantly, with or without a trigger</li>
                     <li>• Wakes you or keeps you from sleeping</li>
                     <li>• Drives checking, googling, or repeated reassurance-seeking</li>
-                    <li>• Shows up physically—chest tightness, nausea, jaw clenching</li>
+                    <li>• Shows up physically-chest tightness, nausea, jaw clenching</li>
                     <li>• Makes you restrict their world to manage your own fear</li>
                   </ul>
                 </div>
@@ -198,7 +198,7 @@ export default function ParentsPage() {
                   The intrusive thoughts nobody warns you about
                 </p>
                 <p className="text-warm-gray-700 mb-3">
-                  Sudden, graphic, unwanted images of something terrible happening to your child—or
+                  Sudden, graphic, unwanted images of something terrible happening to your child-or
                   of you somehow causing harm. Parents almost never say these out loud, which is
                   precisely why they feel so damning.
                 </p>
@@ -206,7 +206,7 @@ export default function ParentsPage() {
                   They are extremely common, they are a recognized feature of perinatal and
                   parenting anxiety, and they are <strong>not</strong> desires or predictions. The
                   distress they cause is itself the evidence they run against your values. They
-                  respond well to treatment—and they lose most of their power the moment they are
+                  respond well to treatment-and they lose most of their power the moment they are
                   spoken to someone who is not shocked by them.
                 </p>
               </div>
@@ -225,7 +225,7 @@ export default function ParentsPage() {
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
-                Burnout rarely announces itself. It accumulates—through years of being the person
+                Burnout rarely announces itself. It accumulates-through years of being the person
                 who remembers everything, absorbs everyone&rsquo;s feelings, and is never fully off
                 duty. Then one day you notice you feel nothing much at all.
               </p>
@@ -251,7 +251,7 @@ export default function ParentsPage() {
                   </p>
                   <p className="text-sm text-warm-gray-700">
                     Going through the motions. Watching yourself parent from behind glass. This
-                    numbness is protective—it is your system rationing what is left—but it costs you
+                    numbness is protective-it is your system rationing what is left-but it costs you
                     the good moments along with the hard ones.
                   </p>
                 </div>
@@ -276,7 +276,7 @@ export default function ParentsPage() {
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">4. Irritability &amp; a short fuse</p>
                   <p className="text-sm text-warm-gray-700">
-                    Snapping at the people you most want to be gentle with. Not a character defect—a
+                    Snapping at the people you most want to be gentle with. Not a character defect-a
                     depleted nervous system with no buffer left between stimulus and response.
                   </p>
                 </div>
@@ -298,7 +298,7 @@ export default function ParentsPage() {
                     is often the first time a partner sees it exists.
                   </li>
                   <li>
-                    • <strong>Rebuild an identity outside caregiving.</strong> Not a luxury—a
+                    • <strong>Rebuild an identity outside caregiving.</strong> Not a luxury-a
                     protective factor with good evidence behind it.
                   </li>
                   <li>
@@ -318,8 +318,8 @@ export default function ParentsPage() {
                 <p className="text-sm text-warm-gray-700">
                   You are having thoughts of harming yourself or your child, you feel unable to keep
                   everyone safe, you are using alcohol or substances to get through the day, or the
-                  numbness has become total. These are signs of load exceeding capacity—not of being
-                  a bad parent—and they need support quickly, not eventually. In the US you can call
+                  numbness has become total. These are signs of load exceeding capacity-not of being
+                  a bad parent-and they need support quickly, not eventually. In the US you can call
                   or text <strong>988</strong> at any hour.
                 </p>
               </div>
@@ -345,7 +345,7 @@ export default function ParentsPage() {
 
               <div className="card card-callout card-compact card-static" style={{ borderLeftColor: '#61809f' }}>
                 <p className="font-semibold text-warm-gray-900 mb-4" style={{ color: '#4d6a86' }}>
-                  Guilt vs. shame — the distinction that changes everything
+                  Guilt vs. shame - the distinction that changes everything
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -376,7 +376,7 @@ export default function ParentsPage() {
                     develop resilience through <em>manageable</em> disappointment followed by repair.
                     A parent who never misattunes gives a child no practice at recovering. Attachment
                     research consistently finds that secure attachment does not require constant
-                    attunement—it requires reliable repair.
+                    attunement-it requires reliable repair.
                   </p>
                 </div>
 
@@ -398,7 +398,7 @@ export default function ParentsPage() {
                   <p className="text-sm">
                     Working because you have to. A birth that went differently than planned. A
                     divorce. Limited money, limited time, limited help. Guilt attaches itself to
-                    constraint as readily as to choice—and that version deserves grieving, not
+                    constraint as readily as to choice-and that version deserves grieving, not
                     penance.
                   </p>
                 </div>
@@ -410,7 +410,7 @@ export default function ParentsPage() {
                   <p className="text-sm">
                     If you are parenting differently than you were parented, you are doing two jobs
                     at once: raising your child and re-deciding, in real time, every reflex you
-                    inherited. That is genuinely harder. The exhaustion is not weakness—it is the
+                    inherited. That is genuinely harder. The exhaustion is not weakness-it is the
                     cost of the work.
                   </p>
                 </div>
@@ -430,7 +430,7 @@ export default function ParentsPage() {
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
-                A boundary is a statement about what <strong>you</strong> will do—not a demand that
+                A boundary is a statement about what <strong>you</strong> will do-not a demand that
                 someone else change, and not a punishment. Caregivers often learn boundaries as
                 rejection. They are closer to maintenance: they make continued care possible.
               </p>
@@ -446,14 +446,14 @@ export default function ParentsPage() {
                   </p>
                   <p className="text-sm text-warm-gray-700">
                     Children can tolerate a clear no far better than an anxious, resentful yes. What
-                    destabilizes them is unpredictability—not limits.
+                    destabilizes them is unpredictability-not limits.
                   </p>
                 </div>
 
                 <div className="bg-gradient-to-br from-blush-50 to-blush-100 p-6 rounded-lg">
                   <p className="font-semibold text-warm-gray-900 mb-2">With a partner</p>
                   <p className="text-sm text-warm-gray-700 mb-3">
-                    <em>&ldquo;I need you to own bedtime three nights a week—not help with it, own
+                    <em>&ldquo;I need you to own bedtime three nights a week-not help with it, own
                     it. That includes remembering it is yours.&rdquo;</em>
                   </p>
                   <p className="text-sm text-warm-gray-700">
@@ -508,7 +508,7 @@ export default function ParentsPage() {
                 </p>
                 <p className="text-warm-gray-700 mb-3">
                   Pushback is not proof you got it wrong. People accustomed to unlimited access will
-                  test a new limit—that is a predictable phase, not a verdict. Hold it kindly and
+                  test a new limit-that is a predictable phase, not a verdict. Hold it kindly and
                   consistently and it usually settles within a few weeks.
                 </p>
                 <p className="text-warm-gray-700">
@@ -556,12 +556,12 @@ export default function ParentsPage() {
                 &ldquo;I came in convinced I needed better time management. What I actually needed
                 was permission to admit I was empty. I had two kids under six and my mother two
                 towns over, and I had not had an hour to myself in about four years. We did not fix
-                my schedule—we changed what I was willing to carry. I still get overwhelmed. But I
+                my schedule-we changed what I was willing to carry. I still get overwhelmed. But I
                 do not hate myself for it anymore, and I say no now without writing a paragraph
                 about why.&rdquo;
               </p>
               <p className="font-semibold text-warm-gray-900" style={{ color: '#84603c' }}>
-                — Priya, parent of two, sandwich-generation caregiver
+                - Priya, parent of two, sandwich-generation caregiver
               </p>
               <p className="text-sm text-warm-gray-600 mt-2">
                 After 14 sessions focused on burnout recovery and boundary-setting
@@ -588,7 +588,7 @@ export default function ParentsPage() {
                   </h3>
                   <p className="text-warm-gray-600">
                     You are drowning in parenting advice already. This is not another source of it.
-                    We work on your capacity, your regulation, and your boundaries—your parenting
+                    We work on your capacity, your regulation, and your boundaries-your parenting
                     decisions stay yours.
                   </p>
                 </div>
@@ -616,7 +616,7 @@ export default function ParentsPage() {
                   </h3>
                   <p className="text-warm-gray-600">
                     The resentment, the intrusive thoughts, the fantasy of driving past the exit and
-                    not coming back—you can say all of it here. Naming it is what drains it.
+                    not coming back-you can say all of it here. Naming it is what drains it.
                   </p>
                 </div>
               </div>
@@ -643,7 +643,7 @@ export default function ParentsPage() {
                   </h3>
                   <p className="text-warm-gray-600">
                     Parenting reliably surfaces how you were parented. If your child&rsquo;s age is
-                    activating something old, that is worth attending to—gently, at your pace, and
+                    activating something old, that is worth attending to-gently, at your pace, and
                     only when you want to.
                   </p>
                 </div>
@@ -703,7 +703,7 @@ export default function ParentsPage() {
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">
-              Parenting resurrects your own attachment wounds. I help you break cycles, manage overwhelm, and build secure attachment with your kids—while tending to your nervous system.
+              Parenting resurrects your own attachment wounds. I help you break cycles, manage overwhelm, and build secure attachment with your kids-while tending to your nervous system.
             </p>
           </div>
         </section>

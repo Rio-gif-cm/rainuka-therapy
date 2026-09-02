@@ -28,7 +28,7 @@ const baseColors = {
 }
 
 /**
- * Public token object. `sageGreen` is a legacy alias for the sage ramp — older
+ * Public token object. `sageGreen` is a legacy alias for the sage ramp - older
  * surfaces (providers directory, verification badge) address it by that name,
  * so both keys resolve to the exact same values.
  */
@@ -38,7 +38,7 @@ export const colors = {
 }
 
 // ---------------------------------------------------------------
-// SPACING SCALE — 8px base unit.
+// SPACING SCALE - 8px base unit.
 // Mirrors the --space-* / --section-y / --container-* custom properties
 // in app/globals.css. Inline-styled components must pull from here so
 // they share the same vertical rhythm as class-based ones.
@@ -58,7 +58,7 @@ export const spacing = {
 } as const
 
 export const layout = {
-  // Section vertical rhythm — resolved from the CSS custom properties so
+  // Section vertical rhythm - resolved from the CSS custom properties so
   // inline sections step up at the same breakpoints as .section-padding.
   sectionY: 'var(--section-y)',
   sectionYSm: 'var(--section-y-sm)',
@@ -190,7 +190,7 @@ export const styles = {
     border: `var(--card-border-width) solid var(--card-border-color)`,
     transition: 'var(--card-transition)',
   },
-  /** @deprecated See `card` above — use the `.card` class hover state. */
+  /** @deprecated See `card` above - use the `.card` class hover state. */
   cardHover: {
     boxShadow: 'var(--card-shadow-hover)',
   },
@@ -217,7 +217,7 @@ export const layoutStyles = {
   gridAutoFit: {
     display: 'grid' as const,
     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: layout.gapCard, // 32px — matches .grid-cards in globals.css
+    gap: layout.gapCard, // 32px - matches .grid-cards in globals.css
   },
   gridAutoFitTight: {
     display: 'grid' as const,

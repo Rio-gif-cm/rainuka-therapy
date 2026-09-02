@@ -55,7 +55,7 @@ export default function LGBTQPage() {
             <div className="max-w-3xl mx-auto text-warm-gray-700 space-y-6">
               <p>
                 Not tolerance. Not &quot;I&apos;m fine with it.&quot; Not a therapist who tolerates you like you&apos;re
-                doing them a favor. Real affirmation of your identity, your relationships, and your lived experience—held as 
+                doing them a favor. Real affirmation of your identity, your relationships, and your lived experience-held as 
                 simple fact, not as a topic up for debate or therapy to resolve.
               </p>
 
@@ -63,7 +63,7 @@ export default function LGBTQPage() {
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   You are not here to be evaluated, diagnosed as confused, or talked out of yourself.
-                  There is no &quot;but let&apos;s work on&quot; hiding underneath my affirmation. You are here to do the work you came to do—with 
+                  There is no &quot;but let&apos;s work on&quot; hiding underneath my affirmation. You are here to do the work you came to do-with 
                   a therapist who has already accepted the premise of your life and who celebrates who you are.
                 </p>
               </div>
@@ -80,19 +80,19 @@ export default function LGBTQPage() {
                 {
                   title: 'Gender-Affirming Care',
                   description:
-                    'If you are pursuing HRT, surgery, or social transition, I support that fully—not as therapy to change you, but as care for your wellbeing and your autonomy. No gatekeeping. No &quot;are you sure?&quot; or &quot;let&apos;s talk about this more&quot; disguised as clinical responsibility. My job is to support your decisions about your own body and your own life.',
+                    'If you are pursuing HRT, surgery, or social transition, I support that fully-not as therapy to change you, but as care for your wellbeing and your autonomy. No gatekeeping. No &quot;are you sure?&quot; or &quot;let&apos;s talk about this more&quot; disguised as clinical responsibility. My job is to support your decisions about your own body and your own life.',
                   icon: '🌱',
                 },
                 {
                   title: 'Trauma-Informed Foundation',
                   description:
-                    'Many LGBTQ+ clients carry trauma: religious rejection, conversion efforts, violence, family loss. We address that trauma directly, knowing these are not personal failures—they are the weight of living in an unsafe world.',
+                    'Many LGBTQ+ clients carry trauma: religious rejection, conversion efforts, violence, family loss. We address that trauma directly, knowing these are not personal failures-they are the weight of living in an unsafe world.',
                   icon: '🛡️',
                 },
                 {
                   title: 'Intersectionality Matters',
                   description:
-                    'You are not just LGBTQ+. You are also LGBTQ+ and neurodivergent, LGBTQ+ and BIPOC, LGBTQ+ and disabled, and everything else you carry. Each identity matters. Each identity affects how you move through the world. I work with the whole of who you are—not checking boxes or treating identities separately.',
+                    'You are not just LGBTQ+. You are also LGBTQ+ and neurodivergent, LGBTQ+ and BIPOC, LGBTQ+ and disabled, and everything else you carry. Each identity matters. Each identity affects how you move through the world. I work with the whole of who you are-not checking boxes or treating identities separately.',
                   icon: '🔗',
                 },
               ].map((item, index) => (
@@ -117,7 +117,7 @@ export default function LGBTQPage() {
 
             <div className="max-w-3xl mx-auto">
               <p className="text-warm-gray-700 mb-8">
-                These are the journeys I work with regularly. You might recognize yourself in one—or in
+                These are the journeys I work with regularly. You might recognize yourself in one-or in
                 the space between several.
               </p>
 
@@ -237,11 +237,11 @@ export default function LGBTQPage() {
                 {[
                   {
                     title: '📱 Telehealth',
-                    body: 'Sessions from home, where you are comfortable. You control your environment. Camera on or off—negotiable.',
+                    body: 'Sessions from home, where you are comfortable. You control your environment. Camera on or off-negotiable.',
                   },
                   {
                     title: '💳 Sliding Scale',
-                    body: 'What you pay depends on what you can afford right now—not documentation or proof of hardship.',
+                    body: 'What you pay depends on what you can afford right now-not documentation or proof of hardship.',
                   },
                   {
                     title: '🔒 Confidential & Secure',
@@ -280,7 +280,7 @@ export default function LGBTQPage() {
 
             <p className="text-warm-gray-700 mb-8 text-lg leading-relaxed">
               A free 30-minute call is just a conversation. We&apos;ll talk about what&apos;s actually
-              happening in your life right now—no diagnosis required, no justifying yourself, no
+              happening in your life right now-no diagnosis required, no justifying yourself, no
               explaining the basics of who you are before we can begin.
             </p>
 
@@ -305,7 +305,7 @@ export default function LGBTQPage() {
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">
-              Coming out, transition, chosen family, discrimination—these are real experiences that shape your nervous system. I provide affirmative, trauma-informed care grounded in queer psychology.
+              Coming out, transition, chosen family, discrimination-these are real experiences that shape your nervous system. I provide affirmative, trauma-informed care grounded in queer psychology.
             </p>
           </div>
         </section>

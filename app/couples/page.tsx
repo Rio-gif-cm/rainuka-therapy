@@ -26,7 +26,7 @@ export default function CouplesPage() {
               Reconnect with clarity. Navigate conflict with compassion. Rebuild trust after betrayal.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
-              Relationships go through seasons. Sometimes you're disconnected, communicating past each other, or working through a crisis. Couples therapy isn't about saving the relationship at all costs—it's about helping you both make a clear, informed choice about your future together.
+              Relationships go through seasons. Sometimes you're disconnected, communicating past each other, or working through a crisis. Couples therapy isn't about saving the relationship at all costs-it's about helping you both make a clear, informed choice about your future together.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
               Book a Couples Consultation
@@ -146,7 +146,7 @@ export default function CouplesPage() {
 
             <div className="space-y-6 text-warm-gray-600">
               <p>
-                Every couple has conflict. The question isn't whether you argue—it's how you argue. Do you understand each other's conflict style? Can you adapt to it?
+                Every couple has conflict. The question isn't whether you argue-it's how you argue. Do you understand each other's conflict style? Can you adapt to it?
               </p>
 
               <div className="grid gap-4">
@@ -199,7 +199,7 @@ export default function CouplesPage() {
             <div className="space-y-6 text-warm-gray-600">
               <p>
                 <strong>The research is clear:</strong> Yes. With skilled therapeutic support and genuine commitment from both partners, 
-                couples can rebuild after infidelity—and often build relationships that are more honest and intentional than before.
+                couples can rebuild after infidelity-and often build relationships that are more honest and intentional than before.
               </p>
 
               <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#6b944f'}}>
@@ -220,7 +220,7 @@ export default function CouplesPage() {
                   <div>
                     <p className="font-medium text-warm-gray-800 mb-1">Phase 2: Attunement (3-12 months)</p>
                     <p className="text-sm">
-                      The couple examines what led to the affair—not to excuse it, but to understand unmet needs and vulnerabilities. 
+                      The couple examines what led to the affair-not to excuse it, but to understand unmet needs and vulnerabilities. 
                       Both partners rebuild emotional connection, practice the ATTUNE model (Awareness, Turning toward, Tolerance, Understanding, Non-defensiveness, Empathy).
                     </p>
                   </div>
@@ -241,7 +241,7 @@ export default function CouplesPage() {
                 </p>
                 <ul className="space-y-2 text-sm">
                   <li>• The unfaithful partner refuses to end the affair or won't be transparent</li>
-                  <li>• No genuine remorse—only regret at being caught</li>
+                  <li>• No genuine remorse-only regret at being caught</li>
                   <li>• Pattern of repeated betrayals with no sustained effort to change</li>
                   <li>• Active safety concerns (domestic violence, abuse)</li>
                   <li>• One partner is unwilling to engage in therapy</li>
@@ -287,7 +287,7 @@ export default function CouplesPage() {
                 <div className="card card-callout card-compact card-static bg-gradient-to-r from-sage-50 to-white" style={{borderLeftColor: '#6b944f'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Love Maps (Gottman)</p>
                   <p className="text-sm text-warm-gray-700">
-                    Deep knowledge of your partner's inner world—dreams, fears, values, daily stresses. 
+                    Deep knowledge of your partner's inner world-dreams, fears, values, daily stresses. 
                     Most couples lose these details over time. Therapy helps you rebuild them.
                   </p>
                 </div>
@@ -336,7 +336,7 @@ export default function CouplesPage() {
                   <li>• <strong>Create psychological safety:</strong> Both partners feel heard and respected (no judgment, no shame)</li>
                   <li>• <strong>Teach emotional attunement:</strong> Can you sense what your partner is feeling? Respond to that?</li>
                   <li>• <strong>Break defensive patterns:</strong> Move out of blame/defend/withdraw cycles</li>
-                  <li>• <strong>Rebuild trust through action:</strong> Consistency, transparency, follow-through—not just words</li>
+                  <li>• <strong>Rebuild trust through action:</strong> Consistency, transparency, follow-through-not just words</li>
                   <li>• <strong>Reclaim physical and sexual intimacy:</strong> Gently reestablish touch and closeness at a pace that feels safe</li>
                 </ul>
               </div>
@@ -415,7 +415,7 @@ export default function CouplesPage() {
                 <p className="text-warm-gray-600">
                   Secrets are often what create distance in relationships. I create a safe environment to disclose hidden information. 
                   That said, the timeline and method matter. If secrets are present, we may need to address them carefully with skilled facilitation. 
-                  My role is to help you both become more honest with each other—not to police what's said, but to support healthier patterns.
+                  My role is to help you both become more honest with each other-not to police what's said, but to support healthier patterns.
                 </p>
               </div>
 
@@ -435,7 +435,7 @@ export default function CouplesPage() {
                   Is it a sign of failure to go to couples therapy?
                 </h3>
                 <p className="text-warm-gray-600">
-                  No. Couples therapy is a sign of commitment—to the relationship, to honesty, to growth. Many strong relationships use therapy 
+                  No. Couples therapy is a sign of commitment-to the relationship, to honesty, to growth. Many strong relationships use therapy 
                   as a tool to deepen connection or work through specific challenges. It's like a professional coach for your relationship.
                 </p>
               </div>
@@ -454,7 +454,7 @@ export default function CouplesPage() {
                   "{testimonialsByCategory.couples[0].quote}"
                 </p>
                 <p className="font-semibold text-warm-gray-900" style={{color: '#a5503a'}}>
-                  — {testimonialsByCategory.couples[0].author}
+                  - {testimonialsByCategory.couples[0].author}
                 </p>
                 <p className="text-sm text-warm-gray-600 mt-2">
                   {testimonialsByCategory.couples[0].context}
@@ -480,7 +480,7 @@ export default function CouplesPage() {
                   <h3 className="text-xl font-semibold text-warm-gray-900 mb-2">Research-Backed Methods</h3>
                   <p className="text-warm-gray-600">
                     I'm trained in Emotionally Focused Therapy (EFT), the Gottman Method, and Attachment-Based approaches. 
-                    These aren't guesses—they're backed by decades of outcome research showing measurable improvement in relationship satisfaction.
+                    These aren't guesses-they're backed by decades of outcome research showing measurable improvement in relationship satisfaction.
                   </p>
                 </div>
               </div>
@@ -491,7 +491,7 @@ export default function CouplesPage() {
                   <h3 className="text-xl font-semibold text-warm-gray-900 mb-2">Psychological Safety First</h3>
                   <p className="text-warm-gray-600">
                     Couples can only be vulnerable if they feel safe. I structure sessions so both partners are heard and respected. 
-                    No interrupting, no contempt, no blame—just honest conversation with skilled facilitation.
+                    No interrupting, no contempt, no blame-just honest conversation with skilled facilitation.
                   </p>
                 </div>
               </div>
@@ -524,7 +524,7 @@ export default function CouplesPage() {
                   <h3 className="text-xl font-semibold text-warm-gray-900 mb-2">No Judgment About the Outcome</h3>
                   <p className="text-warm-gray-600">
                     Sometimes couples therapy leads to deeper connection and staying together. Sometimes it helps you both make 
-                    the clear, conscious choice to separate. Either way, the goal is clarity and honesty—not forcing you to stay.
+                    the clear, conscious choice to separate. Either way, the goal is clarity and honesty-not forcing you to stay.
                   </p>
                 </div>
               </div>
@@ -543,7 +543,7 @@ export default function CouplesPage() {
 
             <div className="bg-dusk-50 p-8 rounded-lg mb-8">
               <p className="text-lg text-warm-gray-700 mb-4">
-                <strong>The best time to get help is now</strong>—before resentment becomes entrenched, 
+                <strong>The best time to get help is now</strong>-before resentment becomes entrenched, 
                 before you've decided the relationship is over, before communication has completely broken down.
               </p>
               <p className="text-warm-gray-700">

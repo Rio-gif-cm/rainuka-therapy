@@ -21,11 +21,11 @@ const pregnancyFAQ: FAQItem[] = [
   },
   {
     q: 'I am pregnant after a loss and I cannot let myself be happy about it.',
-    a: 'Pregnancy after loss is its own experience, not a resolution of the previous one. Guarded attachment, dread around scan appointments, and refusing to plan or celebrate are protective responses—your system is bracing. Therapy focuses on tolerating the uncertainty rather than forcing optimism you do not feel.',
+    a: 'Pregnancy after loss is its own experience, not a resolution of the previous one. Guarded attachment, dread around scan appointments, and refusing to plan or celebrate are protective responses-your system is bracing. Therapy focuses on tolerating the uncertainty rather than forcing optimism you do not feel.',
   },
   {
     q: 'I am terrified of birth. Is that something therapy addresses?',
-    a: 'Yes. Fear of childbirth ranges from ordinary nervousness to tokophobia, an intense fear that can affect decisions about pregnancy itself. If a previous birth was traumatic, that fear is a trauma response and responds to trauma-focused treatment—not to reassurance.',
+    a: 'Yes. Fear of childbirth ranges from ordinary nervousness to tokophobia, an intense fear that can affect decisions about pregnancy itself. If a previous birth was traumatic, that fear is a trauma response and responds to trauma-focused treatment-not to reassurance.',
   },
 ]
 
@@ -40,11 +40,11 @@ const postpartumFAQ: FAQItem[] = [
   },
   {
     q: 'I have horrifying intrusive thoughts about my baby being hurt. Am I dangerous?',
-    a: 'Intrusive thoughts in the postpartum period are very common—experienced by most new parents—and are a hallmark of postpartum anxiety and OCD, not of psychosis. They are unwanted, they horrify you, and your distress about them is precisely the evidence that they run against your values. Postpartum psychosis is a different, rare, and medically urgent condition involving confusion, losing touch with reality, or thoughts that feel reasonable rather than horrifying. If you are ever unsure which you are experiencing, treat it as urgent and get seen the same day.',
+    a: 'Intrusive thoughts in the postpartum period are very common-experienced by most new parents-and are a hallmark of postpartum anxiety and OCD, not of psychosis. They are unwanted, they horrify you, and your distress about them is precisely the evidence that they run against your values. Postpartum psychosis is a different, rare, and medically urgent condition involving confusion, losing touch with reality, or thoughts that feel reasonable rather than horrifying. If you are ever unsure which you are experiencing, treat it as urgent and get seen the same day.',
   },
   {
     q: 'What is postpartum rage? Nobody mentioned that.',
-    a: 'Sudden, disproportionate anger—often at a partner, sometimes at the baby, followed by intense guilt. It is a genuine and underdiscussed presentation of postpartum mood disorders, frequently masking depression or anxiety underneath. It is treatable and it is not who you are.',
+    a: 'Sudden, disproportionate anger-often at a partner, sometimes at the baby, followed by intense guilt. It is a genuine and underdiscussed presentation of postpartum mood disorders, frequently masking depression or anxiety underneath. It is treatable and it is not who you are.',
   },
   {
     q: 'Do partners and non-birthing parents get postpartum depression?',
@@ -59,7 +59,7 @@ const postpartumFAQ: FAQItem[] = [
 const lossFertilityFAQ: FAQItem[] = [
   {
     q: 'I had an early miscarriage. Am I allowed to grieve this much?',
-    a: 'Yes. Grief does not scale to gestational age. You are grieving a future, an identity, and a relationship that was real to you regardless of how many weeks it lasted. Early loss is also socially unrecognized—often unknown to the people around you—which makes it disenfranchised grief and genuinely harder to carry.',
+    a: 'Yes. Grief does not scale to gestational age. You are grieving a future, an identity, and a relationship that was real to you regardless of how many weeks it lasted. Early loss is also socially unrecognized-often unknown to the people around you-which makes it disenfranchised grief and genuinely harder to carry.',
   },
   {
     q: 'How long should grief after pregnancy loss last?',
@@ -67,7 +67,7 @@ const lossFertilityFAQ: FAQItem[] = [
   },
   {
     q: 'Infertility treatment is consuming my life. Is therapy going to tell me to relax?',
-    a: 'No—and "just relax" is both unkind and unsupported by evidence. Fertility treatment involves repeated hope-and-loss cycles, hormonal disruption, financial strain, invasive procedures, and a scheduling burden that eats everything else. Therapy addresses the actual weight of that, including decisions about when to continue and when to stop.',
+    a: 'No-and "just relax" is both unkind and unsupported by evidence. Fertility treatment involves repeated hope-and-loss cycles, hormonal disruption, financial strain, invasive procedures, and a scheduling burden that eats everything else. Therapy addresses the actual weight of that, including decisions about when to continue and when to stop.',
   },
   {
     q: 'Everyone around me is pregnant and I cannot cope with it.',
@@ -75,7 +75,7 @@ const lossFertilityFAQ: FAQItem[] = [
   },
   {
     q: 'My partner and I are grieving completely differently and it is straining us.',
-    a: 'Incongruent grief is one of the most common sources of conflict after loss. Different tempos and expressions of grief get misread as not caring. Understanding the difference usually reduces the conflict substantially—and couples sessions can help when it does not.',
+    a: 'Incongruent grief is one of the most common sources of conflict after loss. Different tempos and expressions of grief get misread as not caring. Understanding the difference usually reduces the conflict substantially-and couples sessions can help when it does not.',
   },
   {
     q: 'Is there support for termination for medical reasons, or ending a wanted pregnancy?',
@@ -86,7 +86,7 @@ const lossFertilityFAQ: FAQItem[] = [
 const treatmentFAQ: FAQItem[] = [
   {
     q: 'Can I do therapy with a baby in the room?',
-    a: 'Yes. Telehealth sessions with a nursing, sleeping, or fussing baby are completely normal here. Sessions can be interrupted, resumed, or rescheduled. The alternative—waiting until childcare exists—means most parents never get support at all.',
+    a: 'Yes. Telehealth sessions with a nursing, sleeping, or fussing baby are completely normal here. Sessions can be interrupted, resumed, or rescheduled. The alternative-waiting until childcare exists-means most parents never get support at all.',
   },
   {
     q: 'Will you report me if I say something alarming?',
@@ -98,11 +98,11 @@ const treatmentFAQ: FAQItem[] = [
   },
   {
     q: 'How long does treatment for perinatal mental health issues take?',
-    a: 'Postpartum anxiety and depression often improve meaningfully within 12 to 20 sessions. Birth trauma and grief work vary widely. Perinatal conditions generally respond well to treatment—the biggest predictor of a hard course is going untreated, not the severity at the start.',
+    a: 'Postpartum anxiety and depression often improve meaningfully within 12 to 20 sessions. Birth trauma and grief work vary widely. Perinatal conditions generally respond well to treatment-the biggest predictor of a hard course is going untreated, not the severity at the start.',
   },
   {
     q: 'How do I know when it is time to reach out?',
-    a: 'You do not need to hit a threshold. If it has been more than two weeks, if it is affecting sleep beyond what the baby causes, if you feel disconnected from yourself or your baby, if the anxiety is constant, or if you are simply not okay—that is enough. Sooner is better, but there is no point at which it becomes too late.',
+    a: 'You do not need to hit a threshold. If it has been more than two weeks, if it is affecting sleep beyond what the baby causes, if you feel disconnected from yourself or your baby, if the anxiety is constant, or if you are simply not okay-that is enough. Sooner is better, but there is no point at which it becomes too late.',
   },
 ]
 
@@ -122,13 +122,13 @@ const faqSchema = {
 }
 
 export const metadata = {
-  title: 'Perinatal Mental Health FAQ — Postpartum, Loss & Fertility | Wonderloud Therapy',
+  title: 'Perinatal Mental Health FAQ - Postpartum, Loss & Fertility | Wonderloud Therapy',
   description:
     'Answers on postpartum depression and anxiety, intrusive thoughts, postpartum rage, pregnancy loss grief, infertility, birth trauma, and starting therapy with a newborn.',
   openGraph: {
     title: 'Perinatal Mental Health FAQ | Wonderloud Therapy',
     description:
-      'Postpartum anxiety and OCD, pregnancy loss, infertility, and birth trauma—answered honestly.',
+      'Postpartum anxiety and OCD, pregnancy loss, infertility, and birth trauma-answered honestly.',
     type: 'website',
   },
 }
@@ -182,7 +182,7 @@ export default function PerinatalFAQPage() {
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
               Postpartum anxiety and OCD, intrusive thoughts, rage, pregnancy loss, infertility, and
-              birth trauma—answered plainly, without judgment.
+              birth trauma-answered plainly, without judgment.
             </p>
             <Link href="/booking" className="inline-block btn btn-primary">
               Schedule Your Free 30-Min Call
@@ -205,7 +205,7 @@ export default function PerinatalFAQPage() {
                 <strong>National Maternal Mental Health Hotline at 1-833-TLC-MAMA
                 (1-833-852-6262)</strong>, available 24/7. If you are experiencing confusion,
                 hallucinations, or thoughts that feel reasonable rather than frightening, seek
-                emergency care the same day—postpartum psychosis is a medical emergency and is highly
+                emergency care the same day-postpartum psychosis is a medical emergency and is highly
                 treatable when caught quickly.
               </p>
             </div>

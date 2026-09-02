@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Wonderloud Therapy — Design System (TEST PALETTE)
+ * Wonderloud Therapy - Design System (TEST PALETTE)
  *
  * TEST: Burgundy (primary), Deep Gray (secondary), Sea Blue (accents)
  * Warm-gray/cream carry neutrals.
@@ -18,7 +18,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ---- Brand primary — BURGUNDY (TEST) -------------------------------------------------
+        // ---- Brand primary - BURGUNDY (TEST) -------------------------------------------------
         'burgundy': {
           50: '#f7f3f4',
           100: '#ede3e5',
@@ -64,7 +64,7 @@ const config: Config = {
           300: '#ded3c6',
         },
         // ---- Persona accents (muted, low chroma) ---------------------------
-        // deep-gray — secondary contrast, grounded
+        // deep-gray - secondary contrast, grounded
         'deep-gray': {
           50: '#f5f5f5',
           100: '#e0e0e0',
@@ -77,7 +77,7 @@ const config: Config = {
           800: '#333333',
           900: '#1f1f1f',
         },
-        // sea-blue — cool accent, calming
+        // sea-blue - cool accent, calming
         'sea-blue': {
           50: '#f0f7fa',
           100: '#dde9f0',
@@ -90,7 +90,7 @@ const config: Config = {
           800: '#14435b',
           900: '#0c2d43',
         },
-        // blue-herring (optional) — subtle teal-blue
+        // blue-herring (optional) - subtle teal-blue
         'blue-herring': {
           50: '#f2f9f8',
           100: '#ddf1f0',
@@ -103,7 +103,7 @@ const config: Config = {
           800: '#125250',
           900: '#0a3a38',
         },
-        // clay — warmth, invitation, couples & CTAs
+        // clay - warmth, invitation, couples & CTAs
         'clay': {
           50: '#fdf7f4',
           100: '#f7e9e1',
@@ -115,7 +115,7 @@ const config: Config = {
           700: '#a5503a',
           800: '#83402f',
         },
-        // dusk — steady, grounded; men, ADHD, grief, informational notes
+        // dusk - steady, grounded; men, ADHD, grief, informational notes
         'dusk': {
           50: '#f5f7fa',
           100: '#e6ecf3',
@@ -127,7 +127,7 @@ const config: Config = {
           700: '#3f566d',
           800: '#334458',
         },
-        // honey — ochre warmth; career, seasonal, caution
+        // honey - ochre warmth; career, seasonal, caution
         'honey': {
           50: '#fdf9f1',
           100: '#f7eedc',
@@ -139,7 +139,7 @@ const config: Config = {
           700: '#84603c',
           800: '#684b30',
         },
-        // blush — tender mauve; perinatal, testimonials
+        // blush - tender mauve; perinatal, testimonials
         'blush': {
           50: '#fcf6f6',
           100: '#f4e6e6',
@@ -151,7 +151,7 @@ const config: Config = {
           700: '#714a49',
         },
         // ---- Semantic ------------------------------------------------------
-        // alert — muted brick. The only "red" in the system.
+        // alert - muted brick. The only "red" in the system.
         'alert': {
           50: '#fcf5f3',
           100: '#f5e3dd',
