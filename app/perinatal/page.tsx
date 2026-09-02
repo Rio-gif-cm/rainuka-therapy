@@ -1,8 +1,10 @@
 import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import TestimonialCard from '@/components/TestimonialCard'
 import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
+import RelatedPosts from '@/components/RelatedPosts'
 import {
   specialtyAccents,
   SpecialtyHero,
@@ -41,6 +43,17 @@ export default function PerinatalPage() {
       <Navigation />
 
       <main className="flex-grow">
+        <div className="max-w-4xl mx-auto px-6 pt-8">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Specialties', href: '/#specialties' },
+              { label: 'Perinatal Therapy' },
+            ]}
+            includeSchema
+          />
+        </div>
+
         <SpecialtyHero
           accent={accent}
           eyebrow="Perinatal Mental Health"
@@ -249,6 +262,23 @@ export default function PerinatalPage() {
           title="You're not alone in this"
           body="Let's talk about what you're carrying. No judgment, no pressure-just someone who understands perinatal grief, anxiety, and the identity shifts that come with it."
           ctaLabel="Schedule Your Free Call"
+        />
+
+        <RelatedPosts
+          accent={accent}
+          title="Explore Related Topics"
+          posts={[
+            {
+              path: '/perinatal-faq',
+              label: 'Perinatal FAQs',
+              description: 'Common questions about pregnancy anxiety, postpartum depression, and reproductive grief. Get answers to what you\'re wondering about.'
+            },
+            {
+              path: '/parents',
+              label: 'Support for Parents',
+              description: 'Therapy for the identity shifts, exhaustion, and ambivalence that parenthood brings. You\'re not alone in this.'
+            }
+          ]}
         />
       </main>
 

@@ -180,25 +180,33 @@
   /* --- Scale steps ------------------------------------------------- */
   /* Negative steps are deliberately held ABOVE the pure 1.25 ratio
      (which would give 12.8px / 10.2px). Nothing on a mental-health
-     site should render below 13px. Accessibility beats arithmetic. */
-  --step--2: 0.8125rem;  /* 13px — xs (Tailwind) — legal, micro-meta. Floor. */
-  --step--1: 0.875rem;   /* 14px — sm (Tailwind) — captions, labels, eyebrows */
-  --step-0:  1rem;       /* 16px — base (Tailwind) — body text */
-  --step-1:  1.125rem;   /* 18px — lg (Tailwind) — lead / intro */
-  --step-2:  1.5rem;     /* 24px — xl (Tailwind) — h4 */
-  --step-3:  1.875rem;   /* 30px — 2xl (Tailwind) — h3 */
-  --step-4:  2.25rem;    /* 36px — 3xl (Tailwind) — h2 */
-  --step-5:  3rem;       /* 48px — 4xl (Tailwind) — h1 */
-  --step-6:  3.75rem;    /* 60px — 5xl (Tailwind) — display */
+     site should render below 13px. Accessibility beats arithmetic.
+     
+     FLUID RESPONSIVE: clamp(mobile_min, mobile + slope*vw, desktop_max)
+     Viewport range: 375px (mobile) → 1280px (desktop)
+     Slope calculation: (desktop - mobile) / (1280 - 375) = step / 905
+     Mobile baseline: 16px minimum maintained. Line-height 1.6-1.8.
+  */
+  --step--2: clamp(0.8125rem, 0.75rem + 0.1vw, 0.875rem);  /* 13px floor — micro-meta */
+  --step--1: clamp(0.875rem, 0.8rem + 0.15vw, 0.95rem);   /* 14px floor — captions, labels, eyebrows */
+  --step-0:  clamp(1rem, 1rem + 0.2vw, 1.125rem);         /* 16px base mobile → 18px desktop */
+  --step-1:  clamp(1.125rem, 1.05rem + 0.25vw, 1.375rem); /* 18px mobile → 22px desktop — lead/intro */
+  --step-2:  clamp(1.5rem, 1.4rem + 0.35vw, 1.875rem);    /* 24px mobile → 30px desktop — h4 */
+  --step-3:  clamp(1.875rem, 1.75rem + 0.45vw, 2.375rem); /* 30px mobile → 38px desktop — h3 */
+  --step-4:  clamp(2.25rem, 2.1rem + 0.5vw, 2.875rem);    /* 36px mobile → 46px desktop — h2 */
+  --step-5:  clamp(3rem, 2.75rem + 0.7vw, 3.875rem);      /* 48px mobile → 62px desktop — h1 */
+  --step-6:  clamp(3.75rem, 3.4rem + 0.85vw, 4.875rem);   /* 60px mobile → 78px desktop — display */
 
   /* --- Leading: tightens as type grows ----------------------------- */
+  /* Fluid line-height: mobile 1.6-1.8 baseline, tighter for display.
+     Inverse ratio ensures readability: body text generous, headings tight. */
   --leading-display: 1.05;
   --leading-h1: 1.08;
   --leading-h2: 1.16;
   --leading-h3: 1.24;
   --leading-h4: 1.32;
   --leading-lead: 1.5;
-  --leading-body: 1.7;
+  --leading-body: clamp(1.6, 1.5 + 0.2vw, 1.8);  /* 1.6 mobile (accessibility) → 1.8 desktop (breathing) */
   --leading-meta: 1.55;
 
   /* --- Tracking: negative for display, positive for small ---------- */
@@ -1143,6 +1151,181 @@ input[type="checkbox"]:focus-visible {
 /* Utility: Form input desktop variant */
 .form-input-desktop {
   @apply py-4 px-5 text-lg;
+}
+
+/* ========================================
+   IMPROVEMENT #2: DESKTOP BUTTON SIZING (56px)
+   Standardize button heights across all variants:
+   - Mobile: 48px minimum (current)
+   - Desktop (1024px+): 56px for primary, 48px secondary, auto for tertiary
+   Ensures consistent touch target and visual hierarchy
+   ======================================== */
+@media (min-width: 1024px) {
+  /* Primary CTA buttons: Larger, more prominent on desktop */
+  button[type="submit"],
+  .btn-primary,
+  .hero-cta-primary,
+  .cta-button {
+    padding: 1.125rem 2rem;  /* 18px / 32px vertical/horizontal */
+    min-height: 56px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* Secondary buttons: Still prominent, but smaller than primary */
+  .btn-secondary,
+  button[type="reset"] {
+    padding: 0.875rem 1.5rem;  /* 14px / 24px */
+    min-height: 48px;
+  }
+
+  /* Tertiary/outline buttons: Minimal padding, text-only */
+  .btn-outline,
+  .btn-tertiary,
+  a.btn-text,
+  .hero-cta-ghost {
+    min-height: auto;
+  }
+
+  /* Touch target guarantee — all interactive elements 48px+ */
+  button,
+  a.btn,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* ========================================
+   IMPROVEMENT #7: ENHANCED FOCUS RING STATES
+   WCAG AA compliant focus-visible indicators
+   Applied to all interactive elements
+   ======================================== */
+
+/* Base button focus ring: 2px outline + soft halo */
+.btn:focus-visible {
+  outline: 2px solid var(--burgundy-600);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+}
+
+/* Primary button: White outline ring with inner shadow */
+.btn-primary:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -4px;
+  box-shadow: 
+    0 0 0 4px var(--burgundy-600),
+    0 10px 25px rgba(107, 148, 79, 0.25);
+}
+
+/* Outline button: Burgundy ring matching border */
+.btn-outline:focus-visible {
+  outline: 2px solid var(--burgundy-600);
+  outline-offset: 2px;
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+}
+
+/* Secondary button: Burgundy ring with subtle shadow */
+.btn-secondary:focus-visible {
+  outline: 2px solid var(--burgundy-600);
+  outline-offset: 2px;
+  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
+}
+
+/* Hero CTA buttons: Bold focus ring */
+.hero-cta-primary:focus-visible {
+  outline: 3px solid var(--burgundy-600);
+  outline-offset: 3px;
+}
+
+.hero-cta-ghost:focus-visible {
+  outline: 3px solid var(--burgundy-600);
+  outline-offset: 3px;
+}
+
+/* Form inputs: Match button focus ring pattern */
+input[type="text"]:focus-visible,
+input[type="email"]:focus-visible,
+input[type="tel"]:focus-visible,
+input[type="date"]:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--burgundy-600);
+  outline-offset: 2px;
+  border-color: var(--burgundy-600);
+  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+}
+
+/* ========================================
+   IMPROVEMENT #9: ENHANCED DISABLED STATE STYLING
+   More obvious visual feedback with color shift + reduced opacity
+   ======================================== */
+
+.btn:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.btn-primary:disabled {
+  background-color: var(--burgundy-300);
+  color: var(--warm-gray-600);
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-primary:disabled:hover,
+.btn-primary:disabled:active {
+  background-color: var(--burgundy-300);
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-secondary:disabled {
+  background-color: var(--burgundy-100);
+  color: var(--burgundy-400);
+  border-color: var(--burgundy-200);
+  box-shadow: none;
+}
+
+.btn-outline:disabled {
+  border-color: var(--burgundy-200);
+  color: var(--burgundy-300);
+  background-color: var(--warm-gray-50);
+}
+
+/* ========================================
+   LOADING STATE CURSOR & ANIMATION
+   ======================================== */
+
+.btn[data-loading="true"],
+button[aria-busy="true"] {
+  cursor: wait;
+}
+
+.btn[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* Loading animation keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 

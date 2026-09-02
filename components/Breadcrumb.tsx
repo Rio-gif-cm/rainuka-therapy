@@ -1,28 +1,60 @@
-import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+'use client'
+
+import Link from 'next/link'
+import { ChevronRight } from 'lucide-react'
+import { useEffect } from 'react'
 
 interface BreadcrumbItem {
-  label: string;
-  href?: string;
+  label: string
+  href?: string
 }
 
 interface BreadcrumbProps {
-  items: BreadcrumbItem[];
-  className?: string;
+  items: BreadcrumbItem[]
+  className?: string
+  includeSchema?: boolean
 }
 
 /**
  * Breadcrumb Navigation Component
  * Improves SEO, UX clarity, and navigation between specialty pages
+ * Includes BreadcrumbList schema.org markup for rich snippets
  * 
  * Usage:
  * <Breadcrumb items={[
  *   { label: 'Home', href: '/' },
  *   { label: 'Services', href: '/#services' },
  *   { label: 'ADHD Therapy' }
- * ]} />
+ * ]} includeSchema />
  */
-export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
+export function Breadcrumb({ items, className = '', includeSchema = true }: BreadcrumbProps) {
+  // Add BreadcrumbList schema to head
+  useEffect(() => {
+    if (includeSchema && items.length > 0) {
+      const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://rainukatherapy.com'
+      
+      const schemaData = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: items.map((item, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: item.label,
+          item: item.href ? `${baseUrl}${item.href}` : undefined,
+        })).filter(item => item.item), // Only include items with URLs
+      }
+
+      const script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.innerHTML = JSON.stringify(schemaData)
+      document.head.appendChild(script)
+
+      return () => {
+        document.head.removeChild(script)
+      }
+    }
+  }, [items, includeSchema])
+
   return (
     <nav
       className={`flex items-center gap-2 text-sm text-sage-600 mb-8 ${className}`}
@@ -46,7 +78,7 @@ export function Breadcrumb({ items, className = '' }: BreadcrumbProps) {
         </div>
       ))}
     </nav>
-  );
+  )
 }
 
-export default Breadcrumb;
+export default Breadcrumb

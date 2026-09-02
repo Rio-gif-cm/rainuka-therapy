@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import TestimonialCard from '@/components/TestimonialCard'
 import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import {
@@ -43,6 +44,17 @@ export default function ADHDPage() {
       <Navigation />
 
       <main className="flex-grow">
+        <div className="max-w-4xl mx-auto px-6 pt-8">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Specialties', href: '/#specialties' },
+              { label: 'ADHD Therapy' },
+            ]}
+            includeSchema
+          />
+        </div>
+
         <SpecialtyHero
           accent={accent}
           eyebrow="Adult ADHD"

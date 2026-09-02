@@ -39,17 +39,17 @@ const approach = [
   {
     title: 'Trauma-Informed',
     description:
-      'I track your nervous system. Healing happens at your pace, not mine.',
+      'I track your nervous system. Your healing happens at your pace, not mine.',
   },
   {
     title: 'Culturally Humble',
     description:
-      'Your values aren\'t something I accommodate—they\'re something I\'m learning from. I don\'t assume.',
+      "Your values and background guide our work. I'm learning from you, not guessing about what matters.",
   },
   {
     title: 'Practical',
     description:
-      'Tools you\'ll use this week. Not endless talking—strategies that shift how you function at home, work, with your kids.',
+      'Real tools. Things you\'ll actually use this week. Not endless talking—actual strategies that shift how you function at home, work, with your kids.',
   },
 ]
 
@@ -84,7 +84,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Navigation />
 
-      <main id="main-content" className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -193,9 +193,9 @@ export default function Home() {
         {/* ---------- 6. CTA - burgundy accent (the peak) ---------- */}
         <section className="section-padding text-white" style={{ backgroundColor: '#6d3a47' }}>
           <div className="container-base text-center">
-            <h2 className="text-4xl font-serif font-bold mb-6">Ready to start?</h2>
+            <h2 className="text-4xl font-serif font-bold mb-6">Ready to talk?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#ede3e5' }}>
-              Free 15-minute call. We talk, listen, see if this fits.
+              Fifteen free minutes. No pressure, no forms ahead of time.
             </p>
             <Link
               href="/booking"
@@ -257,10 +257,10 @@ export default function Home() {
         <section className="section-padding bg-white border-t border-burgundy-100">
           <div className="container-base max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-bold text-warm-gray-900 mb-5">
-              Questions? Start here.
+              Got questions?
             </h2>
             <p className="text-lg text-warm-gray-600 mb-8">
-              I respond within 24 hours. Let's talk about what you need.
+              I respond within 24 hours. Let's talk about what's actually going on for you.
             </p>
             <Link href="/about" className="btn-link" style={{ fontWeight: 600 }}>
               Learn more about me →

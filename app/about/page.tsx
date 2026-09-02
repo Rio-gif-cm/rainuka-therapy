@@ -31,7 +31,7 @@ export default function AboutPage() {
               Meet Your Therapist
             </h1>
             <p className="text-lg md:text-xl text-warm-gray-600 max-w-2xl mx-auto">
-              Therapist Who Gets It. Someone Who's Been There.
+              Someone who actually gets it. Not from a textbook.
             </p>
           </div>
         </section>
@@ -208,12 +208,12 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">License</h3>
                 <p className="text-warm-gray-600 mb-4">
-                  I am a Licensed Clinical Social Worker (LCSW) with credentials in Canada and the United States. For Canadian clients, note that LCSW is a U.S. credential. I am regulated in Canada by [Provincial Regulatory Body]. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
+                  I am a Licensed Clinical Therapist, regulated in Canada as my primary credential. I'm also licensed in California and Florida. For international clients: Canada is my primary jurisdiction for practice and regulations. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
                 </p>
                 <div className="space-y-2 text-sm text-warm-gray-600">
                   <p>• <strong>Canada:</strong> Licensed and regulated under [Provincial Regulatory Body]</p>
-                  <p>• <strong>California:</strong> Licensed Clinical Social Worker (LCSW) – License verification available on request</p>
-                  <p>• <strong>Florida:</strong> Licensed Clinical Social Worker (LCSW) – License verification available on request</p>
+                  <p>• <strong>California:</strong> Licensed Clinical Therapist – License verification available on request</p>
+                  <p>• <strong>Florida:</strong> Licensed Clinical Therapist – License verification available on request</p>
                   <p className="text-xs text-burgundy-600 mt-3"><strong>Note:</strong> For complaints or regulatory inquiries in Canada, contact [Provincial College/Board]. For U.S. licensing issues, contact the respective state licensing board.</p>
                 </div>
               </div>
@@ -353,19 +353,19 @@ export default function AboutPage() {
               {[
                 {
                   title: 'Trauma-Informed',
-                  description: 'Understanding how past experiences shape the present. Moving at your pace, honoring your nervous system.',
+                  description: 'Your nervous system has a story. I listen to it.',
                 },
                 {
                   title: 'Culturally Humble',
-                  description: 'Your values, community, lived experience matter. I\'m learning from you, not imposing my worldview.',
+                  description: 'I\'m learning from you, not leading. Your values shape this work.',
                 },
                 {
                   title: 'Neurodivergent-Affirming',
-                  description: 'Your brain works differently. That\'s not a deficit-it\'s a difference. We work WITH it, not against it.',
+                  description: 'Your brain works differently. That\'s not wrong—it\'s real. We work with it.',
                 },
                 {
                   title: 'Practical',
-                  description: 'Insight matters. Real tools matter more. You\'ll leave with things you can use today.',
+                  description: 'You leave with something you can use. Not theories. Actual tools.',
                 },
               ].map((value, index) => (
                 <div key={index}>

@@ -1,7 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import CalendarPicker from './CalendarPicker'
+import { 
+  trackFormView, 
+  trackFieldInteraction, 
+  trackFormSubmit, 
+  trackFormSuccess,
+  initializeGATracking
+} from '@/lib/ga'
 
 type FormStep = 'contact' | 'concern' | 'confirmation'
 
@@ -65,6 +72,12 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
+
+  // Initialize GA tracking and track form_view on mount
+  useEffect(() => {
+    initializeGATracking()
+    trackFormView('booking_form')
+  }, [])
 
   // Validation functions
   const validateEmail = (email: string): boolean => {
@@ -172,6 +185,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       ...prev,
       [name]: true,
     }))
+    
+    // Track field interaction for GA4
+    trackFieldInteraction(name, 'booking_form')
   }
 
   const validateStep = (step: FormStep): boolean => {

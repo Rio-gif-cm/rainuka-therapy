@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import { getFAQPageSchema } from '@/lib/faq-schema'
 
 export const metadata: Metadata = {
   title: 'Therapy FAQs | Questions Answered',

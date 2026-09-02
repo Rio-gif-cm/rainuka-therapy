@@ -52,7 +52,7 @@ export async function GET() {
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <image>
       <url>${baseUrl}/og-image.png</url>
-      <title>Rainuka Oberoi, LCSW</title>
+      <title>Rainuka Oberoi, Licensed Therapist</title>
       <link>${baseUrl}</link>
     </image>
     ${guides.map(guide => `

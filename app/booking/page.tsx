@@ -48,10 +48,10 @@ export default function BookingPage() {
         <section className="py-16 bg-gradient-to-br from-cream-50 to-burgundy-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Let's Talk
+              Let's talk.
             </h1>
             <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto mb-4">
-              Free 15-minute consultation. I'll reach out within 24 hours to find a time that works.
+              Fifteen free minutes. I'll reach out within 24 hours.
             </p>
           </div>
         </section>
@@ -68,7 +68,7 @@ export default function BookingPage() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       <p className="font-semibold text-warm-gray-900 text-lg">
-                        95% move forward. Connection builds quickly. Change follows.
+                        Most people feel heard in that first 15 minutes. The work builds from there.
                       </p>
                     </div>
                   </div>
@@ -77,10 +77,10 @@ export default function BookingPage() {
 
               <div className="mb-12">
                 <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-4">
-                  Tell Me Your Story
+                  Tell me what's going on
                 </h2>
                 <p className="text-warm-gray-600">
-                  I'll reach out within 24 hours.
+                  I'll get back to you within 24 hours.
                 </p>
               </div>
 
@@ -158,31 +158,31 @@ export default function BookingPage() {
             <div className="space-y-4">
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
-                  What if I'm not sure if I'm "ready" for therapy?
+                  What if I'm not sure if I'm ready?
                   <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  That's what the free call is for. No pressure to decide before we talk.
+                  That's literally what the free call is for. No pressure. We just talk.
                 </p>
               </details>
 
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
-                  What happens in the free 15-minute call?
+                  What happens in that 15 minutes?
                   <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  We'll chat, see if we fit. You ask questions too.
+                  You tell me what's happening. I listen and ask questions. We figure out if we fit. You can ask me anything too.
                 </p>
               </details>
 
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
-                  How quickly can I get an appointment?
+                  How quickly can I get in?
                   <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  I'll respond within 24 hours. Most people meet with me within 1-2 weeks.
+                  I respond within 24 hours and we usually find a slot within 1-2 weeks.
                 </p>
               </details>
 
@@ -192,17 +192,17 @@ export default function BookingPage() {
                   <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Give 24 hours notice if you can. Life happens—we'll figure it out.
+                  Give me 24 hours notice if you can. Life happens. We'll work it out.
                 </p>
               </details>
 
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
-                  Do you work with insurance?
+                  Does insurance work?
                   <span className="text-burgundy-400">▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
-                  Yes. I'm in-network with some insurances, and I can provide superbills for out-of-network plans.
+                  Yes. I'm in-network with some plans and can do superbills for others.
                 </p>
               </details>
             </div>

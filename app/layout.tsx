@@ -4,6 +4,7 @@ import './globals.css'
 import './sensory-friendly.css'
 import './micro-interactions.css'
 import GoogleAnalyticsWrapper from '@/components/GoogleAnalyticsWrapper'
+import MobileStickyCTA from '@/components/MobileStickyCTA'
 import { getLocalBusinessSchema, getAggregateRatingSchema } from '@/lib/schema'
 
 /**
@@ -203,21 +204,19 @@ export default function RootLayout({
         {/* Service Worker Registration & Performance Monitoring */}
         <ServiceWorkerRegister />
         
-        {/* Skip to main content link - visually hidden but keyboard accessible */}
+        {/* Skip to main content link - WCAG 2.4.1 Bypass Blocks (Level A) */}
+        {/* Visually hidden by default, visible and high contrast on keyboard focus */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-burgundy-400 focus:text-white focus:px-4 focus:py-2 focus:rounded"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:bg-burgundy-700 focus:text-white focus:px-4 focus:py-3 focus:rounded focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white"
+          tabIndex={0}
         >
           Skip to main content
         </a>
         {children}
         
-        {/* Mobile Sticky Booking CTA - appears on scroll, mobile-only */}
-        <div className="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t border-gray-200 shadow-lg p-4 z-40">
-          <a href="/booking" className="block w-full bg-sage-600 hover:bg-sage-700 text-white font-semibold py-3 px-4 rounded-lg text-center transition-colors">
-            Book Free Consultation
-          </a>
-        </div>
+        {/* Mobile Sticky Booking CTA - dismissible, 44px+ touch target */}
+        <MobileStickyCTA />
       </body>
     </html>
   )
