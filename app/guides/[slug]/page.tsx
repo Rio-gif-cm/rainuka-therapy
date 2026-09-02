@@ -63,7 +63,7 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         <article className="max-w-3xl mx-auto px-6 py-12">
           <Breadcrumb
             items={[

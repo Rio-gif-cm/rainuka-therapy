@@ -36,7 +36,7 @@ export default function BlogArchivePage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Navigation />
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow" role="main">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-6 py-16">
           <div className="mb-8">
