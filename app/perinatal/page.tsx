@@ -155,40 +155,26 @@ export default function PerinatalPage() {
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} title="Your Anxiety Has a Name">
               <p>
-                Postpartum anxiety affects 1 in 5 mothers. It&apos;s not weakness—it&apos;s a
-                biological response to hormonal shifts and identity changes.
-              </p>
-              <p>
-                Your brain is working overtime to protect your baby. That&apos;s real. That&apos;s
-                treatable.
+                1 in 5 mothers. Biological response. Treatable.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} title="Mixed Feelings Don't Mean You Love Less">
               <p>
-                You can feel profound love for your baby AND want space. You can grieve a pregnancy
-                loss AND feel relief. You can be grateful AND exhausted.
+                Love and space coexist. Grief and relief coexist. Complexity is human.
               </p>
-              <p>Therapy helps you stop being ashamed of your complexity.</p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} title="Recovery Is Real">
               <p>
-                Perinatal mental health conditions respond to treatment. With the right
-                support—therapy, possibly medication, and practical strategies—most clients see
-                significant improvement.
-              </p>
-              <p>
-                You won&apos;t feel this way forever. This is a moment in time, not your identity.
+                Treatable. Responsive to therapy, medication, and strategies. You won&apos;t feel this way forever.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} title="Naming It Changes It">
               <p>
-                So much perinatal distress goes unspoken because it feels shameful to say out loud.
-                Putting language to what you&apos;re experiencing is the first shift.
+                Naming what you experience is the first shift. Then we work with it.
               </p>
-              <p>Once it has a name, we can work with it instead of around it.</p>
             </SpecialtyCard>
           </SpecialtyGrid>
         </SpecialtySection>
@@ -253,7 +239,7 @@ export default function PerinatalPage() {
         )}
 
         <SpecialtyWhyRainuka accent={accent}>
-          I specialize in perinatal mental health—pregnancy loss, postpartum anxiety, infertility grief. These experiences reshape your body and identity. I meet the complex emotions with trauma-informed care, validation instead of platitudes, and cultural humility about reproductive choices.
+          Perinatal specialist. Trauma-informed. Validation instead of platitudes.
         </SpecialtyWhyRainuka>
 
         <SpecialtyCTA

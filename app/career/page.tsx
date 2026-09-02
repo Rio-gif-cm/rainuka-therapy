@@ -68,7 +68,7 @@ export default function CareerPage() {
 
           <SpecialtyNote accent={accent} title="I'm not a life coach.">
             <p className="mb-0">
-              I&apos;m not here to tell you what to do. You know yourself best—I help you think clearly enough to trust that knowing.
+              I won&apos;t tell you what to do.
             </p>
           </SpecialtyNote>
 
@@ -76,16 +76,13 @@ export default function CareerPage() {
             <SpecialtyGrid>
               <SpecialtyCard accent={accent} title="What I AM">
                 <p>
-                  A therapist who helps you work through the mental and emotional pieces of career
-                  decisions. Process fear. Untangle real anxiety from decision avoidance. Clarify
-                  your values. Build confidence.
+                  Help you think clearly so you can decide—without fog or panic.
                 </p>
               </SpecialtyCard>
 
               <SpecialtyCard accent={accent} title="The difference">
                 <p>
-                  You make the decision. I help you think clearly so <strong>you</strong> can
-                  decide—without the fog, the panic, or the borrowed &quot;shoulds.&quot;
+                  You decide. I clear the fog.
                 </p>
               </SpecialtyCard>
             </SpecialtyGrid>
@@ -106,20 +103,16 @@ export default function CareerPage() {
             cols={1}
             items={[
               <>
-                <strong>Burnout isn&apos;t laziness.</strong> It&apos;s your system telling you
-                something has to change.
+                <strong>Burnout isn&apos;t laziness.</strong> Your system is telling you something has to change.
               </>,
               <>
-                <strong>Doubt doesn&apos;t mean you&apos;re failing.</strong> It means you&apos;re
-                paying attention to something real.
+                <strong>Doubt doesn&apos;t mean you&apos;re failing.</strong> It means you&apos;re paying attention to something real.
               </>,
               <>
-                <strong>Clarity beats certainty.</strong> Therapy helps you untangle genuine anxiety
-                from fear of change, so you can move without waiting to feel sure.
+                <strong>Clarity beats certainty.</strong> Move without waiting to feel sure.
               </>,
               <>
-                <strong>Your values, not the borrowed ones.</strong> We clarify what actually
-                matters to you—not what you think you &quot;should&quot; want.
+                <strong>Your values, not the borrowed ones.</strong> Clarify what actually matters to you.
               </>,
             ]}
           />

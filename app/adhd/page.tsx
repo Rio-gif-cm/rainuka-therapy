@@ -77,7 +77,7 @@ export default function ADHDPage() {
             accent={accent}
             eyebrow="The basics"
             title="What ADHD Actually Is"
-            intro="ADHD isn't laziness. It's not a character flaw. It's an executive function difference—your brain prioritizes and organizes differently than neurotypical brains."
+            intro="Executive function difference—your brain works differently."
           />
 
           <SpecialtyNote accent={accent} title="This might show up as:">
@@ -91,9 +91,7 @@ export default function ADHDPage() {
           </SpecialtyNote>
 
           <p className="text-warm-gray-700 mt-6 mb-0">
-            <strong>The real talk:</strong> Late ADHD diagnosis—especially in women—comes with
-            grief. Grief for lost time. Grief for the ways you blamed yourself. And also relief:
-            &quot;So I&apos;m not broken. I&apos;m just different.&quot;
+            <strong>The real talk:</strong> Grief for lost time. Relief: I&apos;m different, not broken.
           </p>
         </SpecialtySection>
 
@@ -107,45 +105,38 @@ export default function ADHDPage() {
           <SpecialtyGrid>
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Strengths-Based">
               <p>
-                ADHD ≠ deficit. Your brain is different, not broken. We&apos;ll understand your
-                specific presentation and build on your actual strengths.
+                Different, not broken. We&apos;ll build on your strengths.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="No Shame">
               <p>
-                You&apos;re not lazy. You&apos;re not broken. You&apos;re not &quot;not trying hard
-                enough.&quot; Therapy helps you replace shame with self-understanding.
+                Replace shame with self-understanding.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Practical Systems">
               <p>
-                Not shame-based productivity tips. Real strategies that work WITH your ADHD brain—
-                time management, task initiation, emotional regulation tools.
+                Real strategies that work WITH your brain.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Grief + Excitement">
               <p>
-                We process grief for lost time while exploring what&apos;s possible now. ADHD
-                identity integration, not just diagnosis acceptance.
+                Process grief. Explore what&apos;s possible. Identity integration.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="Neurodivergent-Affirming Language">
               <p>
-                You&apos;ll never hear &quot;fix your brain&quot; or &quot;overcome your ADHD.&quot;
-                We work with your neurodiversity, not against it.
+                Work with your neurodiversity, not against it.
               </p>
             </SpecialtyCard>
 
             <SpecialtyCard accent={accent} icon={<ADHDIcon size={28} color={adhdColor} />} title="ADHD in Women">
               <p>
-                High masking, perfectionism, and anxiety that hides the hyperactivity. You learned
-                early how to appear &quot;normal&quot; while burning out internally.
+                High masking hides hyperactivity. Diagnosis reveals what&apos;s always been there.
               </p>
-              <p>Late diagnosis for women carries its own specific grief. We make room for it.</p>
             </SpecialtyCard>
           </SpecialtyGrid>
         </SpecialtySection>
@@ -156,7 +147,7 @@ export default function ADHDPage() {
             accent={accent}
             eyebrow="The real work"
             title="You Are Not Broken. Identity Reconstruction Starts Here."
-            intro="For decades, you may have believed something was fundamentally wrong with you. That belief didn't come from nowhere—it's the result of missed deadlines, forgotten promises, and criticism internalized until struggling felt like evidence of who you are."
+            intro="Decades of internalized criticism. Now you know why. That changes everything."
           />
 
           <SpecialtyNote accent={accent} title="Research on late ADHD diagnosis shows us:">
@@ -182,9 +173,7 @@ export default function ADHDPage() {
           </p>
 
           <p className="text-warm-gray-700 mb-0">
-            That doesn&apos;t happen overnight. But it begins with a single truth: your ADHD brain
-            isn&apos;t proof that you&apos;re not good enough. It&apos;s proof that you&apos;ve been
-            surviving without the tools you needed. Now that you know, everything changes.
+            You&apos;ve been surviving without the tools. Now you know. Everything changes.
           </p>
         </SpecialtySection>
 
@@ -274,7 +263,7 @@ export default function ADHDPage() {
         )}
 
         <SpecialtyWhyRainuka accent={accent}>
-          Late diagnosis is reorienting. I help you untangle ADHD from perfectionism, shame, and identity loss. Your neurodivergence isn't broken—it's real, and it deserves affirming, shame-aware support grounded in neurodiversity psychology.
+          Untangle ADHD from shame. Affirming, neurodiversity-grounded support.
         </SpecialtyWhyRainuka>
 
         <SpecialtyCTA

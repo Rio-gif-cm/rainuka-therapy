@@ -588,20 +588,7 @@ export default function Navigation() {
               letterSpacing: '-0.01em',
             }}
           >
-            Rainuka Oberoi
-          </span>
-          <span
-            style={{
-              display: 'block',
-              fontSize: '0.68rem',
-              fontWeight: 500,
-              letterSpacing: '0.14em',
-              textTransform: 'uppercase',
-              color: colors.warmGray[600],
-              marginTop: '0.1rem',
-            }}
-          >
-            LCSW
+            Wonderloud Therapy
           </span>
         </Link>
 

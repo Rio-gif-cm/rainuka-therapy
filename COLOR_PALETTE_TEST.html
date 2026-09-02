@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Test: Burgundy/Deep Gray/Sea Blue</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Test Palette */
+            --burgundy-50: #f7f3f4;
+            --burgundy-100: #ede3e5;
+            --burgundy-200: #d9bfc5;
+            --burgundy-300: #c19b9f;
+            --burgundy-400: #a8707f;
+            --burgundy-500: #8a4f61;
+            --burgundy-600: #6d3a47;
+            --burgundy-700: #58303a;
+            --burgundy-800: #482a32;
+            --burgundy-900: #3c222a;
+
+            --deep-gray-50: #f5f5f5;
+            --deep-gray-100: #e0e0e0;
+            --deep-gray-200: #c8c8c8;
+            --deep-gray-300: #b0b0b0;
+            --deep-gray-400: #909090;
+            --deep-gray-500: #6b6b6b;
+            --deep-gray-600: #555555;
+            --deep-gray-700: #424242;
+            --deep-gray-800: #333333;
+            --deep-gray-900: #1f1f1f;
+
+            --sea-blue-50: #f0f7fa;
+            --sea-blue-100: #dde9f0;
+            --sea-blue-200: #b8d8e3;
+            --sea-blue-300: #8ec0d3;
+            --sea-blue-400: #5fa5c0;
+            --sea-blue-500: #3d8aa8;
+            --sea-blue-600: #2d7390;
+            --sea-blue-700: #1f5a73;
+            --sea-blue-800: #14435b;
+            --sea-blue-900: #0c2d43;
+
+            /* Original Palette */
+            --sage-50: #f8faf7;
+            --sage-100: #e8ede5;
+            --sage-200: #d1dcc8;
+            --sage-300: #b5c7aa;
+            --sage-400: #9dbb8d;
+            --sage-500: #82a86c;
+            --sage-600: #6b944f;
+            --sage-700: #547c3f;
+            --sage-800: #426232;
+            --sage-900: #334c27;
+
+            --warm-gray-50: #faf9f7;
+            --warm-gray-100: #ede8e3;
+            --warm-gray-200: #ddd4cc;
+            --warm-gray-300: #c9b8ac;
+            --warm-gray-400: #ab9c91;
+            --warm-gray-500: #8f8279;
+            --warm-gray-600: #7a6f68;
+            --warm-gray-700: #5e534a;
+            --warm-gray-800: #4c443e;
+            --warm-gray-900: #3f3935;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #faf9f7;
+            color: #3f3935;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem;
+            font-weight: 600;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .color-swatch {
+            margin: 1rem 0;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            color: white;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .color-card {
+            background: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-sample {
+            height: 120px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 1rem;
+            color: white;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .color-info {
+            padding: 1rem;
+            background: #f9f9f9;
+            font-size: 0.875rem;
+        }
+
+        .color-hex {
+            font-family: monospace;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Test Sections */
+        .hero-test {
+            background: linear-gradient(135deg, #f7f3f4 0%, #faf9f7 45%, #ede3e5 100%);
+            padding: 4rem 2rem;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .hero-test h2 {
+            color: #3c222a;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-test p {
+            color: #482a32;
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn-primary {
+            background: #3d8aa8;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .btn-primary:hover {
+            background: #2d7390;
+            box-shadow: 0 4px 12px rgba(61, 138, 168, 0.3);
+        }
+
+        .btn-secondary {
+            background: #6d3a47;
+            color: white;
+            padding: 0.875rem 1.75rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #58303a;
+            box-shadow: 0 4px 12px rgba(109, 58, 71, 0.3);
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd4cc;
+            border-left: 3px solid #6d3a47;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin: 1.5rem 0;
+        }
+
+        .card h3 {
+            color: #3c222a;
+            margin-top: 0;
+        }
+
+        .specialty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .specialty-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .specialty-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            border-color: #3d8aa8;
+        }
+
+        .specialty-card h3 {
+            color: #3c222a;
+            margin-bottom: 1rem;
+        }
+
+        .specialty-card p {
+            color: #5e534a;
+            font-size: 0.95rem;
+        }
+
+        .cta-section {
+            background: #6d3a47;
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .cta-section p {
+            color: #ede3e5;
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 1.5rem auto;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .comparison-item h3 {
+            margin-top: 0;
+        }
+
+        .comparison-item .label {
+            font-weight: 700;
+            color: #3c222a;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .palette-showcase {
+            background: white;
+            padding: 3rem;
+            border-radius: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero-test {
+                padding: 2rem;
+            }
+
+            .hero-test h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Color Palette Test</h1>
+        <p style="font-size: 1.1rem; color: #6b6b6b; margin-bottom: 3rem;">
+            Evaluating: <strong>Burgundy (Primary)</strong> + <strong>Deep Gray (Secondary)</strong> + <strong>Sea Blue (Accents)</strong>
+        </p>
+
+        <!-- HERO SECTION -->
+        <section class="section">
+            <h2>Hero Section (Burgundy Background)</h2>
+            <div class="hero-test">
+                <h2>Ready to Reclaim Your Peace?</h2>
+                <p>Let's start with a free 15-minute conversation. I'll listen to what's brought you here, and you'll get a real sense of how we'd work together.</p>
+                <button class="btn-primary">Start Your Breakthrough Session</button>
+                <p style="font-size: 0.875rem; color: #c19b9f; margin-top: 1.5rem;">No forms beforehand. No obligation to continue.</p>
+            </div>
+        </section>
+
+        <!-- BUTTON TEST -->
+        <section class="section">
+            <h2>Button States</h2>
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                <button class="btn-primary">Primary (Sea Blue)</button>
+                <button class="btn-secondary">Secondary (Burgundy)</button>
+                <button style="background: #555555; color: white; padding: 0.875rem 1.75rem; border: none; border-radius: 0.5rem; font-weight: 600; cursor: pointer;">Tertiary (Deep Gray)</button>
+            </div>
+        </section>
+
+        <!-- SPECIALTY CARDS -->
+        <section class="section">
+            <h2>Specialty Cards</h2>
+            <div class="specialty-grid">
+                <div class="specialty-card">
+                    <h3>🤰 Perinatal Mental Health</h3>
+                    <p>Pregnancy loss, infertility, postpartum anxiety—what you're carrying isn't weakness.</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>🧠 ADHD Therapy</h3>
+                    <p>Late ADHD diagnosis? That shame + relief = what we work with.</p>
+                </div>
+                <div class="specialty-card">
+                    <h3>🚀 Career Transitions</h3>
+                    <p>Career doubt, burnout, identity questions—transitions are hard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPROACH CARDS -->
+        <section class="section">
+            <h2>Approach Cards (with Burgundy Accent)</h2>
+            <div class="specialty-grid">
+                <div class="card">
+                    <h3>Trauma-Informed</h3>
+                    <p>I understand how past experiences shape the present. We move at your pace, honoring your nervous system.</p>
+                </div>
+                <div class="card">
+                    <h3>Culturally Humble</h3>
+                    <p>Your values, your community, your lived experience matter. I'm learning from you, not imposing my worldview.</p>
+                </div>
+                <div class="card">
+                    <h3>Practical</h3>
+                    <p>You'll get real tools you can use today—not just insight. Therapy that fits into your actual life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLOR PALETTE -->
+        <section class="section">
+            <h2>Complete Color Palette</h2>
+
+            <h3>Burgundy (Primary Brand Color)</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #f7f3f4;">50</div>
+                    <div class="color-info">#f7f3f4</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #ede3e5;">100</div>
+                    <div class="color-info">#ede3e5</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #d9bfc5;">200</div>
+                    <div class="color-info">#d9bfc5</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #c19b9f;">300</div>
+                    <div class="color-info">#c19b9f</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #a8707f; color: white;">400</div>
+                    <div class="color-info">#a8707f</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #8a4f61; color: white;">500</div>
+                    <div class="color-info">#8a4f61</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #6d3a47; color: white;">600</div>
+                    <div class="color-info">#6d3a47</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #58303a; color: white;">700</div>
+                    <div class="color-info">#58303a</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #482a32; color: white;">800</div>
+                    <div class="color-info">#482a32</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #3c222a; color: white;">900</div>
+                    <div class="color-info">#3c222a</div>
+                </div>
+            </div>
+
+            <h3>Sea Blue (Accent - CTAs & Highlights)</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #f0f7fa;">50</div>
+                    <div class="color-info">#f0f7fa</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #dde9f0;">100</div>
+                    <div class="color-info">#dde9f0</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #b8d8e3;">200</div>
+                    <div class="color-info">#b8d8e3</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #8ec0d3;">300</div>
+                    <div class="color-info">#8ec0d3</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #5fa5c0; color: white;">400</div>
+                    <div class="color-info">#5fa5c0</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #3d8aa8; color: white;">500</div>
+                    <div class="color-info">#3d8aa8</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #2d7390; color: white;">600</div>
+                    <div class="color-info">#2d7390</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #1f5a73; color: white;">700</div>
+                    <div class="color-info">#1f5a73</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #14435b; color: white;">800</div>
+                    <div class="color-info">#14435b</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #0c2d43; color: white;">900</div>
+                    <div class="color-info">#0c2d43</div>
+                </div>
+            </div>
+
+            <h3>Deep Gray (Secondary Contrast)</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-sample" style="background: #f5f5f5;">50</div>
+                    <div class="color-info">#f5f5f5</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #e0e0e0;">100</div>
+                    <div class="color-info">#e0e0e0</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #c8c8c8;">200</div>
+                    <div class="color-info">#c8c8c8</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #b0b0b0;">300</div>
+                    <div class="color-info">#b0b0b0</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #909090; color: white;">400</div>
+                    <div class="color-info">#909090</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #6b6b6b; color: white;">500</div>
+                    <div class="color-info">#6b6b6b</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #555555; color: white;">600</div>
+                    <div class="color-info">#555555</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #424242; color: white;">700</div>
+                    <div class="color-info">#424242</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #333333; color: white;">800</div>
+                    <div class="color-info">#333333</div>
+                </div>
+                <div class="color-card">
+                    <div class="color-sample" style="background: #1f1f1f; color: white;">900</div>
+                    <div class="color-info">#1f1f1f</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON -->
+        <section class="section">
+            <h2>Palette Comparison</h2>
+            <div class="comparison">
+                <div class="comparison-item">
+                    <h3 style="color: #6d3a47;">✨ New Palette (Burgundy/Deep Gray/Sea Blue)</h3>
+                    <div class="label">Primary</div>
+                    <div class="color-swatch" style="background: #6d3a47;">Burgundy - Warm, welcoming, sophisticated</div>
+
+                    <div class="label">Secondary</div>
+                    <div class="color-swatch" style="background: #555555; color: white;">Deep Gray - Professional, grounded</div>
+
+                    <div class="label">Accent</div>
+                    <div class="color-swatch" style="background: #3d8aa8;">Sea Blue - Calming, trustworthy</div>
+
+                    <p style="margin-top: 2rem; color: #555;">
+                        <strong>Impression:</strong> Warm burgundy feels inviting and intimate (works for all genders). Deep gray adds serious professional weight. Sea blue provides a calming, trustworthy accent that doesn't feel jarring.
+                    </p>
+                </div>
+
+                <div class="comparison-item">
+                    <h3 style="color: #6b944f;">🌿 Original Palette (Sage/Warm Gray)</h3>
+                    <div class="label">Primary</div>
+                    <div class="color-swatch" style="background: #6b944f;">Sage - Natural, calming</div>
+
+                    <div class="label">Secondary</div>
+                    <div class="color-swatch" style="background: #7a6f68; color: white;">Warm Gray - Neutral, warm</div>
+
+                    <div class="label">Accent</div>
+                    <div class="color-swatch" style="background: #d97757;">Clay - Warm, invitation</div>
+
+                    <p style="margin-top: 2rem; color: #555;">
+                        <strong>Impression:</strong> Sage green is calming but may read as "wellness/eco" to some. Warm gray is very neutral. Clay adds warmth but is distinctly warm-toned (may feel more "feminine").
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASSESSMENT -->
+        <section class="section">
+            <h2>Professional Assessment</h2>
+            <div class="palette-showcase">
+                <h3 style="color: #3c222a;">Does it look professional?</h3>
+                <p><strong>✅ YES</strong> – Burgundy (#6d3a47) is a sophisticated, premium color used in luxury and healthcare brands. Deep gray adds executive weight. Sea blue provides a professional, calming contrast.</p>
+
+                <h3 style="color: #3c222a; margin-top: 2rem;">Does it work for BOTH men AND women?</h3>
+                <p>
+                    <strong>✅ STRONGER YES</strong> – The burgundy + deep gray + sea blue combination is more gender-neutral than sage + warm gray:<br><br>
+                    • <strong>Burgundy</strong> is deep and sophisticated without leaning heavily feminine (unlike lighter pinks or pastels)<br>
+                    • <strong>Deep Gray</strong> adds masculine/professional weight<br>
+                    • <strong>Sea Blue</strong> is universally calming without gender associations<br><br>
+                    The sage palette, while beautiful, can read slightly "feminine" or "wellness-oriented" to some viewers, especially for male clients seeking serious therapy. This palette feels more inclusive and professional across genders.
+                </p>
+
+                <h3 style="color: #3c222a; margin-top: 2rem;">Concerns?</h3>
+                <p>
+                    <strong>Minor:</strong> The burgundy is darker and bolder than sage—ensure it maintains enough contrast for accessibility in text scenarios. Test on smaller text to ensure legibility. The sea blue button contrasts well with the burgundy background.
+                </p>
+            </div>
+        </section>
+
+        <!-- FINAL RECOMMENDATION -->
+        <section class="section">
+            <div class="cta-section">
+                <h2>🎯 RECOMMENDATION</h2>
+                <p><strong>KEEP THE NEW COLORS</strong></p>
+                <p style="font-size: 1rem; margin-top: 1.5rem;">
+                    The burgundy/deep gray/sea blue palette is more professional, more gender-inclusive, and creates better visual hierarchy than sage/warm gray. It maintains sophistication while feeling warmer and more inviting than a pure gray system. The sea blue accent provides necessary visual relief and signals trust/calm without competing with the brand color.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" style="background: #f9f9f9; padding: 2rem; border-radius: 0.75rem; margin-bottom: 2rem;">
+            <h3>Technical Details</h3>
+            <p><strong>Branch:</strong> <code>test/burgundy-deep-gray-sea-blue</code></p>
+            <p><strong>Files Modified:</strong></p>
+            <ul style="margin-left: 2rem; margin-top: 1rem;">
+                <li>tailwind.config.ts (added burgundy, deep-gray, sea-blue color tokens)</li>
+                <li>app/page.tsx (updated CTA section colors)</li>
+            </ul>
+            <p style="margin-top: 1.5rem;"><strong>Next Steps:</strong> Apply color palette to all buttons, cards, and accent elements across the site. Verify text contrast ratios meet WCAG AA standards.</p>
+        </section>
+    </div>
+</body>
+</html>
