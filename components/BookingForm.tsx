@@ -721,14 +721,14 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 Perfect. I've got your information.
               </p>
               <p className="text-burgundy-700 text-sm mb-4">
-                I'll reach out within 24 hours to confirm the time and make sure it works for you.
+                I'll reach out within 24 hours to confirm the time and make sure it works for you. Look for an email from hello@rainukatherapy.com.
               </p>
               <div className="bg-white/60 rounded p-3 text-xs text-burgundy-800 border border-burgundy-200">
                 <p className="font-medium mb-2">What happens next:</p>
                 <ul className="space-y-1 list-disc list-inside">
                   <li>📧 Confirmation email within 1 hour</li>
                   <li>📞 I'll call within 24 hours to confirm</li>
-                  <li>📅 We'll schedule your free call for the next 1-2 weeks</li>
+                  <li>📅 We'll schedule your free 15-minute call for the next 1-2 weeks</li>
                 </ul>
               </div>
             </div>

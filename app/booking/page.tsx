@@ -27,14 +27,14 @@ const BookingFormWrapper = dynamic(
 )
 
 export const metadata: Metadata = {
-  title: 'Book Free Therapy Consultation | Schedule Today',
+  title: 'Book Free Therapy Consultation | Rainuka Therapy',
   description: 'Schedule your free 15-minute consultation today. Telehealth available, licensed in Canada, California, and Florida. Start your therapy journey now.',
   keywords: 'book therapy, schedule consultation, free therapy consultation, online therapy booking',
   openGraph: {
     title: 'Book Your Free Consultation | Rainuka Therapy',
     description: 'Schedule your free 15-minute therapy consultation. Telehealth available, licensed therapist.',
     type: 'website',
-    url: 'https://wonderloud-therapy.com/booking',
+    url: 'https://rainukatherapy.com/booking',
   },
 }
 
