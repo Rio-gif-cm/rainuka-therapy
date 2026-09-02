@@ -177,7 +177,7 @@ export default function Footer() {
         className="max-w-3xl mx-auto mt-10 px-6 py-6 border-t border-[rgba(255,255,255,0.12)] flex flex-wrap items-center justify-between gap-4"
       >
         <p className="my-0 text-xs text-[rgba(255,255,255,0.45)]">
-          © {new Date().getFullYear()} Rainuka Oberoi, LCSW. All rights reserved.
+          © {new Date().getFullYear()} Wonderloud Therapy. All rights reserved.
         </p>
 
         <div className="flex items-center flex-wrap gap-3 text-xs">

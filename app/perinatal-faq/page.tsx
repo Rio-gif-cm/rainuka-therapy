@@ -118,7 +118,7 @@ export const metadata = {
   title: 'Perinatal Mental Health FAQ | Postpartum Questions',
   description: 'Postpartum depression, anxiety, intrusive thoughts answered. Pregnancy loss grief, birth trauma, therapy with newborns. Get answers.',
   openGraph: {
-    title: 'Perinatal Mental Health FAQ | Rainuka Therapy',
+    title: 'Perinatal Mental Health FAQ | Wonderloud Therapy',
     description:
       'Postpartum anxiety and OCD, pregnancy loss, infertility, and birth trauma-answered honestly.',
     type: 'website',

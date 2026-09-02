@@ -45,7 +45,7 @@ export async function GET() {
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Rainuka Therapy - Guides & Resources</title>
+    <title>Wonderloud Therapy - Guides & Resources</title>
     <link>${baseUrl}</link>
     <description>Thoughtful, practical guides on therapy, mental health, perinatal anxiety, ADHD, career transitions, and more.</description>
     <language>en-us</language>

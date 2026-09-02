@@ -4,11 +4,11 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'Contact Rainuka | Reach Out for Therapy Support',
-  description: 'Contact Rainuka Therapy to schedule your free consultation. Questions? I respond within 24 hours. Reach out to start support today.',
+  description: 'Contact Wonderloud Therapy to schedule your free consultation. Questions? I respond within 24 hours. Reach out to start support today.',
   keywords: 'contact therapy, schedule consultation, therapy contact, get in touch, book therapy',
   openGraph: {
     title: 'Contact Rainuka | Get in Touch',
-    description: 'Contact Rainuka Therapy to schedule a free 15-minute consultation. I respond within 24 hours.',
+    description: 'Contact Wonderloud Therapy to schedule a free 15-minute consultation. I respond within 24 hours.',
     type: 'website',
     url: 'https://wonderloud-therapy.com/contact',
   },

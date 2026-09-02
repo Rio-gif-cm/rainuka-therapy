@@ -588,7 +588,7 @@ export default function Navigation() {
               letterSpacing: '-0.01em',
             }}
           >
-            Rainuka Therapy
+            Wonderloud Therapy
           </span>
         </Link>
 
