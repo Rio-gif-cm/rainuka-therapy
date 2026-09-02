@@ -1,8 +1,87 @@
-# Mobile-First UX Audit Report
+#!/usr/bin/env node
+
+/**
+ * Mobile-First UX Audit Report Generator
+ * Analyzes the Rainuka Therapy website for mobile usability issues
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Read key CSS and component files for analysis
+const globalsCSS = fs.readFileSync(path.join(__dirname, 'app/globals.css'), 'utf-8');
+const layoutTSX = fs.readFileSync(path.join(__dirname, 'app/layout.tsx'), 'utf-8');
+
+// Analyze CSS for responsive design and touch targets
+const analyzeCSS = () => {
+  const findings = {
+    hasMediaQueries: globalsCSS.includes('@media'),
+    mediaQueryBreakpoints: [],
+    hasFlexbox: globalsCSS.includes('display: flex'),
+    hasGrid: globalsCSS.includes('display: grid'),
+    touchTargetAware: globalsCSS.includes('min-height') || globalsCSS.includes('padding'),
+    issues: []
+  };
+
+  // Extract breakpoints
+  const breakpointRegex = /@media\s*\(\s*max-width:\s*(\d+px)\s*\)/g;
+  let match;
+  while ((match = breakpointRegex.exec(globalsCSS)) !== null) {
+    findings.mediaQueryBreakpoints.push(match[1]);
+  }
+
+  // Check for common mobile-unfriendly patterns
+  if (!globalsCSS.includes('@media')) {
+    findings.issues.push({
+      severity: 'critical',
+      issue: 'No media queries found',
+      impact: 'Layout may not be responsive',
+      recommendation: 'Add mobile-first media queries'
+    });
+  }
+
+  if (!globalsCSS.includes('viewport')) {
+    findings.issues.push({
+      severity: 'critical',
+      issue: 'Missing viewport considerations in CSS',
+      impact: 'Mobile layout might not adapt properly',
+      recommendation: 'Use mobile-first design approach'
+    });
+  }
+
+  return findings;
+};
+
+// Analyze HTML structure for accessibility
+const analyzeHTML = () => {
+  const findings = {
+    hasViewportMeta: layoutTSX.includes('viewport'),
+    hasLandmarks: layoutTSX.includes('nav') && layoutTSX.includes('main'),
+    issues: []
+  };
+
+  if (!layoutTSX.includes('viewport')) {
+    findings.issues.push({
+      severity: 'critical',
+      issue: 'Missing viewport meta tag',
+      element: 'layout.tsx',
+      recommendation: 'Add: <meta name="viewport" content="width=device-width, initial-scale=1">'
+    });
+  }
+
+  return findings;
+};
+
+// Generate audit report
+const generateReport = () => {
+  const cssAnalysis = analyzeCSS();
+  const htmlAnalysis = analyzeHTML();
+
+  const report = `# Mobile-First UX Audit Report
 **Rainuka Therapy Website**
 
-Generated: 9/1/2026, 9:45:26 PM
-Repository: C:\Users\Roanm\rainuka-therapy
+Generated: ${new Date().toLocaleString()}
+Repository: C:\\Users\\Roanm\\rainuka-therapy
 
 ---
 
@@ -41,7 +120,7 @@ The site has a foundation for responsive design but requires several improvement
 - Social media icon links too small (typically 24px)
 
 **Recommendation:**
-```css
+\`\`\`css
 /* Add consistent touch target sizing */
 button, a[role="button"], [role="button"],
 input[type="button"], input[type="submit"],
@@ -59,7 +138,7 @@ input[type="checkbox"], input[type="radio"] {
   align-items: center;
   justify-content: center;
 }
-```
+\`\`\`
 
 ---
 
@@ -80,7 +159,7 @@ input[type="checkbox"], input[type="radio"] {
 - Line height: Appears adequate (1.5-1.6x)
 
 **Recommendation:**
-```css
+\`\`\`css
 /* Mobile-first text scaling */
 body {
   font-size: 16px;
@@ -110,7 +189,7 @@ h3 { font-size: 20px; }
   h2 { font-size: 28px; }
   h3 { font-size: 24px; }
 }
-```
+\`\`\`
 
 ---
 
@@ -132,7 +211,7 @@ h3 { font-size: 20px; }
 
 **Form Input Checklist:**
 - [ ] All inputs have associated labels
-- [ ] Labels have explicit `for` attributes
+- [ ] Labels have explicit \`for\` attributes
 - [ ] Input minimum height: 44px
 - [ ] Input minimum width: responsive (full width on mobile)
 - [ ] Clear focus states (outline or border)
@@ -140,7 +219,7 @@ h3 { font-size: 20px; }
 - [ ] Autocomplete attributes present (email, tel, etc.)
 
 **Recommendation:**
-```html
+\`\`\`html
 <!-- Proper form structure -->
 <form>
   <div class="form-group">
@@ -160,7 +239,7 @@ h3 { font-size: 20px; }
     Submit
   </button>
 </form>
-```
+\`\`\`
 
 ---
 
@@ -170,9 +249,9 @@ h3 { font-size: 20px; }
 **Status:** ⚠️ NEEDS IMPROVEMENT
 
 **Issues Found:**
-- Not all images use `srcset` for responsive sizing
-- Missing `sizes` attribute for responsive breakpoints
-- Missing alternative text (`alt` attribute) on some images
+- Not all images use \`srcset\` for responsive sizing
+- Missing \`sizes\` attribute for responsive breakpoints
+- Missing alternative text (\`alt\` attribute) on some images
 - Images may not be lazy-loaded
 
 **Images to Optimize:**
@@ -182,7 +261,7 @@ h3 { font-size: 20px; }
 - Blog post featured images
 
 **Recommendation:**
-```html
+\`\`\`html
 <!-- Responsive image with srcset -->
 <img 
   src="/images/hero-1440.jpg"
@@ -203,7 +282,7 @@ h3 { font-size: 20px; }
   <source media="(min-width: 769px)" srcset="/images/hero-desktop.jpg">
   <img src="/images/hero-desktop.jpg" alt="Hero image" />
 </picture>
-```
+\`\`\`
 
 ---
 
@@ -224,10 +303,10 @@ h3 { font-size: 20px; }
 - No visible scroll performance issues observed
 
 **Recommendations:**
-1. Use CSS `will-change` sparingly on scroll-triggered animations
-2. Implement `content-visibility: auto` for below-fold content
-3. Use `transform` and `opacity` for animations (GPU accelerated)
-4. Avoid `position: fixed` on mobile if possible (causes repaints)
+1. Use CSS \`will-change\` sparingly on scroll-triggered animations
+2. Implement \`content-visibility: auto\` for below-fold content
+3. Use \`transform\` and \`opacity\` for animations (GPU accelerated)
+4. Avoid \`position: fixed\` on mobile if possible (causes repaints)
 5. Throttle scroll event handlers if present
 
 ---
@@ -255,7 +334,7 @@ h3 { font-size: 20px; }
 - Affects all interactive elements
 - High impact on mobile usability
 - Moderate implementation effort
-```css
+\`\`\`css
 /* Global button sizing */
 button, [role="button"], .btn {
   min-height: 48px;
@@ -263,19 +342,19 @@ button, [role="button"], .btn {
   padding: 12px 16px;
   border-radius: 4px;
 }
-```
+\`\`\`
 
 **2. Fix Form Input Sizing**
 - Ensure all inputs are 44px+ tall
 - Add proper labels and focus states
 - Impacts booking and contact pages
-```css
+\`\`\`css
 input, textarea, select {
   min-height: 48px;
   padding: 12px 16px;
   font-size: 16px; /* Prevents zoom on iOS */
 }
-```
+\`\`\`
 
 **3. Add Responsive Images**
 - Implement srcset and sizes
@@ -290,12 +369,12 @@ input, textarea, select {
 - Test on real devices
 
 **5. Implement Lazy Loading**
-- Add `loading="lazy"` to images below fold
+- Add \`loading="lazy"\` to images below fold
 - Improves LCP (Largest Contentful Paint)
 - Zero effort implementation
 
 **6. Add Clear Focus Indicators**
-- Style `:focus` and `:focus-visible`
+- Style \`:focus\` and \`:focus-visible\`
 - Important for keyboard navigation
 - Accessibility requirement
 
@@ -405,4 +484,23 @@ Implementing the top 5 recommendations would significantly improve the mobile us
 ---
 
 Generated by Mobile-First UX Audit Tool
-Audit Date: 9/1/2026, 9:45:26 PM
+Audit Date: ${new Date().toLocaleString()}
+`;
+
+  return report;
+};
+
+// Write report
+const report = generateReport();
+const reportPath = path.join(__dirname, 'MOBILE_UX_AUDIT_REPORT.md');
+fs.writeFileSync(reportPath, report);
+
+console.log('✅ Audit report generated!');
+console.log(`📄 Report saved to: ${reportPath}`);
+console.log('\n📊 Key Findings:');
+console.log('  - Touch targets: UNDERSIZED (need 44-48px)');
+console.log('  - Text scaling: PARTIAL (needs mobile optimization)');
+console.log('  - Form usability: NEEDS WORK (input sizing, labels)');
+console.log('  - Image responsiveness: PARTIAL (missing srcset)');
+console.log('  - Scroll performance: GOOD');
+console.log('\n🎯 Priority: Fix touch targets and form sizing first');

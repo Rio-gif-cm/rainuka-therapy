@@ -1,0 +1,13 @@
+[
+  {
+    "severity": "MEDIUM",
+    "issue": "Missing \"type\": \"module\" in package.json causes Turbopack performance overhead",
+    "file": "package.json",
+    "recommendation": "Add \"type\": \"module\" to package.json"
+  },
+  {
+    "severity": "LOW",
+    "issue": "SWC minification not explicitly configured",
+    "file": "next.config.ts"
+  }
+]
