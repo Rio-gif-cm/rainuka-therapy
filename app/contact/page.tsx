@@ -91,13 +91,13 @@ export default function ContactPage() {
                 <form className="space-y-6">
                   <div>
                     <label htmlFor="name" className="form-label">
-                      Your Name
+                      What should I call you?
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      placeholder="Jane Doe"
+                      placeholder="Jane"
                       className="form-input"
                       required
                     />
@@ -119,7 +119,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor="message" className="form-label">
-                      Message
+                      How can I help?
                     </label>
                     <textarea
                       id="message"
@@ -136,7 +136,7 @@ export default function ContactPage() {
                   </button>
 
                   <p className="text-xs text-warm-gray-500 text-center">
-                    I'll respond within 24 business hours.
+                    I'll get back to you within 24 hours.
                   </p>
                 </form>
               </div>
