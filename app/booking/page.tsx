@@ -25,10 +25,10 @@ export default function BookingPage() {
         <section className="py-16 bg-gradient-to-br from-cream-50 to-sage-50">
           <div className="container-base text-center">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
-              Schedule Your Breakthrough (Free)
+              Let's Talk
             </h1>
             <p className="text-xl text-warm-gray-600 max-w-2xl mx-auto mb-4">
-              15 minutes to clarity. 24-hour response time.
+              Free 15-minute consultation. I'll reach out within 24 hours to find a time that works.
             </p>
           </div>
         </section>

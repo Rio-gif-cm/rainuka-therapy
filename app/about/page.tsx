@@ -58,44 +58,37 @@ export default function AboutPage() {
 
                 <div className="space-y-6 text-warm-gray-600">
                   <p>
-                    I help people navigating invisible struggles—perinatal mental health, adult ADHD diagnosis, 
-                    career transitions—with warmth, clarity, and practical support.
+                    I work with adults navigating perinatal mental health, adult ADHD, and career transitions. 
+                    I do this because I've been there—the invisible struggles, the internal chaos, the gap between 
+                    how you look and how you actually feel.
                   </p>
 
                   {/* Age requirement notice */}
                   <div className="bg-sage-50 border-l-4 border-sage-400 rounded p-4">
                     <p className="font-medium text-sage-800 text-sm">
-                      <strong>Important:</strong> This practice is for adults 18 and older. I specialize in adult mental health and am not able to work with minors.
+                      <strong>Important:</strong> This practice is for adults 18 and older. I work with adult mental health and do not work with minors.
                     </p>
                   </div>
 
                   <p>
-                    I specialize in what often goes unnamed: infertility grief, postpartum anxiety, ADHD shame, 
-                    burnout, identity questions. And I do this work because I've been there myself.
+                    For years, I looked fine. I had the job, the relationships, hit the milestones. Inside? I was 
+                    grieving infertility, didn't understand why I couldn't manage basic tasks at 30 (undiagnosed 
+                    ADHD), and burned out spectacularly in a career that looked perfect from the outside but felt 
+                    completely wrong for how my brain worked. I know that gap between outside and inside intimately.
                   </p>
 
                   <p>
-                    <strong>Why I chose this path:</strong> For years, I held everything together on the outside 
-                    while navigating profound loss on the inside. I faced infertility without language for my grief. 
-                    I reached my 30s before understanding my ADHD, realizing how it had shaped every career decision 
-                    and relationship. I burned out in a role that looked good from the outside but felt completely 
-                    wrong for my brain. Those experiences weren't setbacks to overcome—they became my compass.
+                    The turning point was telling a friend—actually telling her—about my infertility. The moment 
+                    I stopped curating my story, something shifted. She felt seen. Not by someone hiding behind 
+                    credentials, but by someone who genuinely knew that particular loneliness. I realized my 
+                    struggles weren't liabilities. They were my actual qualifications.
                   </p>
 
                   <p>
-                    <strong>The turning point:</strong> The moment I stopped hiding my story was when everything 
-                    changed. A friend struggling with postpartum anxiety asked if I understood. When I told her about 
-                    my own infertility journey, something shifted in the room. She felt seen. Not by a therapist 
-                    behind a wall of credentials, but by someone who genuinely knew that particular loneliness. 
-                    That's when I realized: my lived experience wasn't a liability to manage—it was my greatest asset.
-                  </p>
-
-                  <p>
-                    <strong>My approach:</strong> Trauma-informed, culturally humble, practical. I believe therapy 
-                    is about understanding yourself better and building the life that actually fits you. Not 
-                    diagnosing or fixing—collaborating. I show up as a whole person, not a blank screen. When you 
-                    sit with me, you're working with someone who has sat in the hard places too. That shared knowing 
-                    creates safety you can actually feel.
+                    I work trauma-informed, culturally humble, practical. Therapy isn't about fixing you—it's 
+                    about understanding yourself better so you can build a life that actually fits. I show up as 
+                    a real person, not a blank screen. You're not getting clinical distance; you're getting 
+                    someone who has sat in the hard places and knows the work it takes to move through them.
                   </p>
                 </div>
               </div>

@@ -293,13 +293,13 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
       {/* Step 1: Contact Information */}
       {currentStep === 'contact' && (
       <div className="space-y-4 animate-fade-in-up">
-        {/* URGENCY BADGE + MICROCOPY: Time-sensitive messaging at form start */}
-        <div className="mb-6 bg-gradient-to-r from-honey-50 to-honey-50 border border-honey-200 rounded-lg p-4 flex gap-3 items-start">
-          <span className="text-lg flex-shrink-0">⏱️</span>
+        {/* REASSURANCE + TIMELINE: Honest expectations at form start */}
+        <div className="mb-6 bg-gradient-to-r from-sage-50 to-sage-50 border border-sage-200 rounded-lg p-4 flex gap-3 items-start">
+          <span className="text-lg flex-shrink-0">✓</span>
           <div className="text-sm">
-            <p className="text-honey-900 font-semibold mb-1">Fill in 3 quick details—5 min, no commitment.</p>
-            <p className="text-honey-800 text-xs">
-              💡 Spots fill within 1-2 weeks. Respond within 24 hours.
+            <p className="text-sage-900 font-semibold mb-1">Three simple questions. Then I'll reach out within 24 hours.</p>
+            <p className="text-sage-800 text-xs">
+              No obligation. If we're not a fit, that's okay. You decide after we talk.
             </p>
           </div>
         </div>
@@ -511,9 +511,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
                 {/* WAVE 1 OPTIMIZATION: Micro-reassurance inserted after heavy field */}
                 {/* Research: Adding reassurance copy between fields reduces anxiety-driven abandonment by ~7-12% */}
                 {formData.concern && !fieldErrors.concern && fieldTouched.concern && (
-                  <div className="bg-dusk-50 border border-dusk-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
-                    <span className="text-sm flex-shrink-0">👍</span>
-                    <p className="text-xs text-dusk-700">Great—I've got a good sense of your situation. Just a couple more quick details and you'll be done.</p>
+                  <div className="bg-sage-50 border border-sage-200 rounded-lg p-3 flex gap-2 items-start animate-fade-in-up">
+                    <span className="text-sm flex-shrink-0">✓</span>
+                    <p className="text-xs text-sage-700">Thanks for sharing that. Just two more quick questions and we're done.</p>
                   </div>
                 )}
               </div>
@@ -790,12 +790,9 @@ export default function BookingForm({ preCommitmentData }: BookingFormProps) {
             className="btn btn-primary ml-auto transition-all hover:shadow-md active:shadow-sm disabled:opacity-60 disabled:cursor-not-allowed relative overflow-hidden py-4 px-8 text-lg font-semibold bg-sage-700 hover:bg-sage-800 text-white"
           >
             {isSubmitting ? (
-              <>🔒 Securing your spot...</>
+              <>📤 Sending your information...</>
             ) : (
-              <>
-                ✓ Secure my 15-min call
-                <span className="absolute top-1 right-2 inline-block w-2 h-2 bg-honey-300 rounded-full animate-pulse"></span>
-              </>
+              <>✓ Send my information</>
             )}
           </button>
         )}

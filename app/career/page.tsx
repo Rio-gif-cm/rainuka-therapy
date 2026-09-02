@@ -31,9 +31,9 @@ export default function CareerPage() {
         <SpecialtyHero
           accent={accent}
           eyebrow="Career & Burnout"
-          title="Career Clarity That Honors Your Whole Self"
-          lead="🎯 Career transitions don't have to feel impossible."
-          description="Burnout, doubt, identity questions, career anxiety—you don't have to figure it out alone. Practical. Warm. Secular."
+          title="When Your Job Stops Working"
+          lead="Career transitions feel impossible when you're alone with the doubt."
+          description="Burnout. Identity questions. The panic when you can't tell if you're failing or if the job itself is wrong. You don't have to untangle this alone. We work through it together."
           ctaLabel="Get Support That Gets You"
         />
 
@@ -42,18 +42,18 @@ export default function CareerPage() {
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Who I help"
-            title="Are You…"
-            intro="Career questions are rarely just about the job. If any of these are yours right now, we have somewhere to start."
+            title="You might be here if…"
+            intro="Career confusion usually means something real needs to change. Not weakness—just a signal worth listening to."
           />
           <SpecialtyChecklist
             accent={accent}
             items={[
-              "Burned out so deep you can't see a way out",
-              '"Is this really what I want?" (identity questions)',
-              "Dealing with imposter syndrome (they'll figure it out)",
-              'Worried about career-change FOMO (what if I choose wrong?)',
-              'Misaligned with the values your job asks of you',
-              'Trapped in a perfectionism and overwork spiral',
+              "Burnout so deep you can't imagine it lifting",
+              'The question "Is this what I actually want?" won\'t go away',
+              'Imposter syndrome—convinced you\'re about to be found out',
+              "Scared of making the wrong move, so you move nowhere",
+              "Your values and the job's values don't align",
+              "Perfectionism and overwork became how you stay safe",
             ]}
           />
         </SpecialtySection>
@@ -63,26 +63,26 @@ export default function CareerPage() {
           <SpecialtySectionHeader
             accent={accent}
             eyebrow="Setting expectations"
-            title="Important: What I'm NOT"
+            title="What This Is Not"
           />
 
-          <SpecialtyNote accent={accent} title="I'm not a life coach.">
+          <SpecialtyNote accent={accent} title="I won't tell you what to do.">
             <p className="mb-0">
-              I won&apos;t tell you what to do.
+              You know yourself better than anyone. My job is to slow things down so you can hear what you actually need, not what you think you should want.
             </p>
           </SpecialtyNote>
 
           <div className="mt-6">
             <SpecialtyGrid>
-              <SpecialtyCard accent={accent} title="What I AM">
+              <SpecialtyCard accent={accent} title="What we do instead">
                 <p>
-                  Help you think clearly so you can decide—without fog or panic.
+                  Map your burnout. Name the real pressures you're under. Test your values against what you're doing. Move from "I don't know" to "I know, and here's why."
                 </p>
               </SpecialtyCard>
 
-              <SpecialtyCard accent={accent} title="The difference">
+              <SpecialtyCard accent={accent} title="The actual difference">
                 <p>
-                  You decide. I clear the fog.
+                  A coach tells you what to do. I help you think clearly enough to decide it yourself.
                 </p>
               </SpecialtyCard>
             </SpecialtyGrid>
