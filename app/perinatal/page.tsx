@@ -23,7 +23,7 @@ import { testimonialsByCategory } from '@/src/data/testimonials'
 const accent = specialtyAccents.perinatal
 
 // Perinatal custom SVG color
-const perinatalColor = '#c97660'
+const perinatalColor = 'var(--secondary-sand-700)'
 
 export const metadata: Metadata = {
   title: 'Perinatal Therapy | Pregnancy Loss & Postpartum',

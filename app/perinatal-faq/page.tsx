@@ -169,7 +169,7 @@ export default function PerinatalFAQPage() {
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Perinatal Mental Health: Questions &amp; Answers
             </h1>
-            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: '#d97757' }}>
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: 'var(--secondary-sand-600)' }}>
               The questions people are afraid to ask out loud.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">

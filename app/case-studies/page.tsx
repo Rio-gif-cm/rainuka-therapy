@@ -30,7 +30,7 @@ const mayaSections = [
       'She paused. "I thought that was just... motherhood." Her eyes filled with tears. We talked about what anxiety actually does to the body, especially when you\u2019re already depleted. And we talked about how invisible anxiety can be.',
     ],
     accent: colors.sage[500],
-    background: '#f5f0eb',
+    background: 'var(--primary-bronze-50)',
   },
   {
     heading: 'The Approach',

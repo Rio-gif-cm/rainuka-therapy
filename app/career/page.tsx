@@ -23,7 +23,7 @@ import { testimonialsByCategory } from '@/src/data/testimonials'
 const accent = specialtyAccents.career
 
 // Career custom SVG color
-const careerColor = '#1565c0'
+const careerColor = 'var(--neutral-sage-900)'
 
 export const metadata: Metadata = {
   title: 'Career Therapy | Burnout Support & Life Redesign',

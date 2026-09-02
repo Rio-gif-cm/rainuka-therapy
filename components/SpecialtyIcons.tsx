@@ -12,7 +12,7 @@ interface IconProps {
 }
 
 // Perinatal - Maternal & Birth (soft, nurturing)
-export function PerinatalIcon({ size = 24, color = '#d97757', className = '' }: IconProps) {
+export function PerinatalIcon({ size = 24, color = 'var(--secondary-sand-600)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -41,7 +41,7 @@ export function PerinatalIcon({ size = 24, color = '#d97757', className = '' }: 
 }
 
 // ADHD - Brain & Energy (bright, dynamic)
-export function ADHDIcon({ size = 24, color = '#ff8c42', className = '' }: IconProps) {
+export function ADHDIcon({ size = 24, color = 'var(--light-linen-900)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -75,7 +75,7 @@ export function ADHDIcon({ size = 24, color = '#ff8c42', className = '' }: IconP
 }
 
 // Career - Upward Path (professional, growth)
-export function CareerIcon({ size = 24, color = '#1e88e5', className = '' }: IconProps) {
+export function CareerIcon({ size = 24, color = 'var(--neutral-sage-900)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -98,7 +98,7 @@ export function CareerIcon({ size = 24, color = '#1e88e5', className = '' }: Ico
 }
 
 // Grief - Heart & Compass (holding space, direction)
-export function GriefIcon({ size = 24, color = '#4d6a86', className = '' }: IconProps) {
+export function GriefIcon({ size = 24, color = 'var(--neutral-sage-900)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -124,7 +124,7 @@ export function GriefIcon({ size = 24, color = '#4d6a86', className = '' }: Icon
 }
 
 // Couples - Connected Hearts (intimacy, partnership)
-export function CouplesIcon({ size = 24, color = '#d4756d', className = '' }: IconProps) {
+export function CouplesIcon({ size = 24, color = 'var(--primary-bronze-500)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -156,7 +156,7 @@ export function CouplesIcon({ size = 24, color = '#d4756d', className = '' }: Ic
 }
 
 // Men - Strong & Vulnerable (balance)
-export function MenIcon({ size = 24, color = '#2c5aa0', className = '' }: IconProps) {
+export function MenIcon({ size = 24, color = 'var(--neutral-sage-900)', className = '' }: IconProps) {
   return (
     <svg
       width={size}
@@ -181,7 +181,7 @@ export function MenIcon({ size = 24, color = '#2c5aa0', className = '' }: IconPr
 }
 
 // Generic therapeutic icon for other specialty pages
-export function TherapyIcon({ size = 24, color = '#6b944f', className = '' }: IconProps) {
+export function TherapyIcon({ size = 24, color = 'var(--neutral-sage-700)', className = '' }: IconProps) {
   return (
     <svg
       width={size}

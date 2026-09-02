@@ -25,7 +25,7 @@ import { testimonialsByCategory } from '@/src/data/testimonials'
 const accent = specialtyAccents.adhd
 
 // ADHD custom SVG color
-const adhdColor = '#e67e31'
+const adhdColor = 'var(--light-linen-900)'
 
 export const metadata: Metadata = {
   title: 'Adult ADHD Therapy | Diagnosis & Executive Function',

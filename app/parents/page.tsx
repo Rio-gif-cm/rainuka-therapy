@@ -92,7 +92,7 @@ export default function ParentsPage() {
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Therapy for Parents &amp; Caregivers
             </h1>
-            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: '#84603c' }}>
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{ color: 'var(--primary-bronze-900)' }}>
               You are the person everyone leans on. Who do you lean on?
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
@@ -153,9 +153,9 @@ export default function ParentsPage() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div
                   className="card card-callout card-compact card-static"
-                  style={{ borderLeftColor: '#6b944f' }}
+                  style={{ borderLeftColor: 'var(--neutral-sage-700)' }}
                 >
-                  <p className="font-semibold text-warm-gray-900 mb-3" style={{ color: '#15803d' }}>
+                  <p className="font-semibold text-warm-gray-900 mb-3" style={{ color: 'var(--neutral-sage-900)' }}>
                     Expected caregiver worry
                   </p>
                   <ul className="space-y-2 text-sm">
@@ -169,9 +169,9 @@ export default function ParentsPage() {
 
                 <div
                   className="card card-callout card-compact card-static"
-                  style={{ borderLeftColor: '#ab5943' }}
+                  style={{ borderLeftColor: 'var(--secondary-sand-900)' }}
                 >
-                  <p className="font-semibold text-warm-gray-900 mb-3" style={{ color: '#934833' }}>
+                  <p className="font-semibold text-warm-gray-900 mb-3" style={{ color: 'var(--primary-bronze-900)' }}>
                     Anxiety worth treating
                   </p>
                   <ul className="space-y-2 text-sm">
@@ -186,9 +186,9 @@ export default function ParentsPage() {
 
               <div
                 className="card card-callout card-compact card-static mt-8"
-                style={{ borderLeftColor: '#d97757' }}
+                style={{ borderLeftColor: 'var(--secondary-sand-600)' }}
               >
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{ color: '#84603c' }}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{ color: 'var(--primary-bronze-900)' }}>
                   The intrusive thoughts nobody warns you about
                 </p>
                 <p className="text-warm-gray-700 mb-3">
@@ -227,7 +227,7 @@ export default function ParentsPage() {
               <div className="space-y-4">
                 <div
                   className="bg-gradient-to-r from-honey-50 to-white p-6 rounded-lg border-l-4"
-                  style={{ borderLeftColor: '#c08f5c' }}
+                  style={{ borderLeftColor: 'var(--secondary-sand-700)' }}
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">1. Emotional exhaustion</p>
                   <p className="text-sm text-warm-gray-700">
@@ -238,7 +238,7 @@ export default function ParentsPage() {
 
                 <div
                   className="bg-gradient-to-r from-dusk-50 to-white p-6 rounded-lg border-l-4"
-                  style={{ borderLeftColor: '#61809f' }}
+                  style={{ borderLeftColor: 'var(--neutral-sage-700)' }}
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">
                     2. Detachment &amp; depersonalization
@@ -252,7 +252,7 @@ export default function ParentsPage() {
 
                 <div
                   className="bg-gradient-to-r from-blush-50 to-white p-6 rounded-lg border-l-4"
-                  style={{ borderLeftColor: '#c96547' }}
+                  style={{ borderLeftColor: 'var(--secondary-sand-700)' }}
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">
                     3. Reduced sense of accomplishment
@@ -266,7 +266,7 @@ export default function ParentsPage() {
 
                 <div
                   className="bg-gradient-to-r from-burgundy-50 to-white p-6 rounded-lg border-l-4"
-                  style={{ borderLeftColor: '#82a86c' }}
+                  style={{ borderLeftColor: 'var(--neutral-sage-700)' }}
                 >
                   <p className="font-semibold text-warm-gray-900 mb-2">4. Irritability &amp; a short fuse</p>
                   <p className="text-sm text-warm-gray-700">
@@ -304,9 +304,9 @@ export default function ParentsPage() {
 
               <div
                 className="mt-6 p-6 bg-alert-50 rounded-lg border-l-4"
-                style={{ borderLeftColor: '#ab5943' }}
+                style={{ borderLeftColor: 'var(--secondary-sand-900)' }}
               >
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{ color: '#934833' }}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{ color: 'var(--primary-bronze-900)' }}>
                   Please reach out sooner if
                 </p>
                 <p className="text-sm text-warm-gray-700">
@@ -337,8 +337,8 @@ export default function ParentsPage() {
                 makes you a worse-regulated version of the parent you already are.
               </p>
 
-              <div className="card card-callout card-compact card-static" style={{ borderLeftColor: '#61809f' }}>
-                <p className="font-semibold text-warm-gray-900 mb-4" style={{ color: '#4d6a86' }}>
+              <div className="card card-callout card-compact card-static" style={{ borderLeftColor: 'var(--neutral-sage-700)' }}>
+                <p className="font-semibold text-warm-gray-900 mb-4" style={{ color: 'var(--neutral-sage-900)' }}>
                   Guilt vs. shame - the distinction that changes everything
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -544,7 +544,7 @@ export default function ParentsPage() {
           <div className="container-base max-w-3xl mx-auto">
             <div
               className="bg-gradient-to-br from-honey-50 to-honey-50 p-8 rounded-lg border-l-4"
-              style={{ borderLeftColor: '#c08f5c' }}
+              style={{ borderLeftColor: 'var(--secondary-sand-700)' }}
             >
               <p className="text-lg text-warm-gray-700 italic mb-6 leading-relaxed">
                 &ldquo;I came in convinced I needed better time management. What I actually needed
@@ -554,7 +554,7 @@ export default function ParentsPage() {
                 do not hate myself for it anymore, and I say no now without writing a paragraph
                 about why.&rdquo;
               </p>
-              <p className="font-semibold text-warm-gray-900" style={{ color: '#84603c' }}>
+              <p className="font-semibold text-warm-gray-900" style={{ color: 'var(--primary-bronze-900)' }}>
                 - Priya, parent of two, sandwich-generation caregiver
               </p>
               <p className="text-sm text-warm-gray-600 mt-2">
@@ -691,9 +691,9 @@ export default function ParentsPage() {
         </section>
 
         {/* Why Rainuka */}
-        <section className="section-padding bg-white border-t-4" style={{borderColor: '#7a9b6f'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderColor: 'var(--neutral-sage-700)'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#7a9b6f'}}>
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: 'var(--neutral-sage-700)'}}>
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">

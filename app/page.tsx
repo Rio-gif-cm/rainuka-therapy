@@ -198,10 +198,10 @@ export default function Home() {
         </section>
 
         {/* ---------- 6. CTA - burgundy accent (the peak) ---------- */}
-        <section className="section-padding text-white" style={{ backgroundColor: '#6d3a47' }}>
+        <section className="section-padding text-white" style={{ backgroundColor: 'var(--primary-bronze-900)' }}>
           <div className="container-base text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to talk?</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: '#ede3e5' }}>
+            <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: 'var(--neutral-sage-50)' }}>
               Fifteen free minutes. No pressure, no forms ahead of time.
             </p>
             <Link
@@ -210,7 +210,7 @@ export default function Home() {
             >
               Book your consultation
             </Link>
-            <p className="text-sm mt-6" style={{ color: '#c19b9f' }}>
+            <p className="text-sm mt-6" style={{ color: 'var(--neutral-ash-500)' }}>
               No forms beforehand. No commitment to continue.
             </p>
           </div>

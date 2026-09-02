@@ -192,8 +192,8 @@ export default function RootLayout({
       <body 
         className="font-sans bg-warm-gray-50 text-warm-gray-700"
         style={{
-          backgroundColor: '#faf9f7',
-          color: '#5e534a',
+          backgroundColor: 'var(--neutral-ash-50)',
+          color: 'var(--neutral-ash-900)',
           /* Font family, size and leading intentionally come from the type
              scale in globals.css. An inline fontFamily/lineHeight here would
              win the cascade and silently defeat the token system. */

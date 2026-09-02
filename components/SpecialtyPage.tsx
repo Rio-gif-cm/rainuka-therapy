@@ -34,90 +34,90 @@ export interface SpecialtyAccent {
 export const specialtyAccents = {
   // perinatal - soft pink/rose. Nurturing, maternal, compassionate
   perinatal: {
-    accent: '#e8a8a0',        // soft rose-500
-    accentText: '#c97660',    // rose-700  (AA on white)
-    accentDeep: '#b85a47',    // rose-800
+    accent: 'var(--secondary-sand-500)',        // soft rose-500
+    accentText: 'var(--secondary-sand-700)',    // rose-700  (AA on white)
+    accentDeep: 'var(--secondary-sand-900)',    // rose-800
     tint: 'rgba(232, 168, 160, 0.08)',
     tintStrong: 'rgba(201, 118, 96, 0.14)',
     heroTint: 'rgba(232, 168, 160, 0.12)',
   },
   // adhd - energetic orange. Dynamic, bright, forward
   adhd: {
-    accent: '#ff8c42',        // energetic orange-500
-    accentText: '#e67e31',    // orange-700  (AA on white)
-    accentDeep: '#d47120',    // orange-800
+    accent: 'var(--light-linen-900)',        // energetic orange-500
+    accentText: 'var(--light-linen-900)',    // orange-700  (AA on white)
+    accentDeep: 'var(--primary-bronze-900)',    // orange-800
     tint: 'rgba(255, 140, 66, 0.09)',
     tintStrong: 'rgba(230, 126, 49, 0.15)',
     heroTint: 'rgba(255, 140, 66, 0.10)',
   },
   // career - professional blue. Confident, clear, upward
   career: {
-    accent: '#1e88e5',        // professional blue-500
-    accentText: '#1565c0',    // blue-700 (AA on white)
-    accentDeep: '#0d47a1',    // blue-900
+    accent: 'var(--neutral-sage-900)',        // professional blue-500
+    accentText: 'var(--neutral-sage-900)',    // blue-700 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // blue-900
     tint: 'rgba(30, 136, 229, 0.08)',
     tintStrong: 'rgba(21, 101, 192, 0.14)',
     heroTint: 'rgba(30, 136, 229, 0.10)',
   },
   // grief - calm blue. Deep, holding, composed
   grief: {
-    accent: '#4d6a86',        // calm dusk-600
-    accentText: '#334458',    // dusk-800 (AA on white)
-    accentDeep: '#25364a',    // dusk-900
-    tint: 'rgba(77, 106, 134, 0.09)',
+    accent: 'var(--neutral-sage-900)',        // calm dusk-600
+    accentText: 'var(--neutral-sage-900)',    // dusk-800 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // dusk-900
+    tint: 'rgba(var(--neutral-sage-900), 0.09)',
     tintStrong: 'rgba(51, 68, 88, 0.15)',
-    heroTint: 'rgba(77, 106, 134, 0.12)',
+    heroTint: 'rgba(var(--neutral-sage-900), 0.12)',
   },
   // couples - warm peach. Intimate, connected, warm
   couples: {
-    accent: '#f4a59d',        // warm peach-500
-    accentText: '#e07856',    // peach-700 (AA on white)
-    accentDeep: '#c85a3a',    // peach-800
+    accent: 'var(--accent-petal-400)',        // warm peach-500
+    accentText: 'var(--secondary-sand-700)',    // peach-700 (AA on white)
+    accentDeep: 'var(--secondary-sand-900)',    // peach-800
     tint: 'rgba(244, 165, 157, 0.09)',
     tintStrong: 'rgba(224, 120, 86, 0.15)',
     heroTint: 'rgba(244, 165, 157, 0.11)',
   },
   // men - steel blue. Strong, steady, trustworthy
   men: {
-    accent: '#2c5aa0',        // steel blue-600
-    accentText: '#1e3a8a',    // blue-900 (AA on white)
-    accentDeep: '#15237e',    // dark blue
+    accent: 'var(--neutral-sage-900)',        // steel blue-600
+    accentText: 'var(--neutral-sage-900)',    // blue-900 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // dark blue
     tint: 'rgba(44, 90, 160, 0.08)',
     tintStrong: 'rgba(30, 58, 138, 0.14)',
     heroTint: 'rgba(44, 90, 160, 0.10)',
   },
   // parents - warm sage. Grounded, nurturing, supportive
   parents: {
-    accent: '#7a9b6f',        // sage green-600
-    accentText: '#5a7754',    // burgundy-700 (AA on white)
-    accentDeep: '#3d5236',    // burgundy-900
+    accent: 'var(--neutral-sage-700)',        // sage green-600
+    accentText: 'var(--neutral-sage-800)',    // burgundy-700 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // burgundy-900
     tint: 'rgba(122, 155, 111, 0.08)',
     tintStrong: 'rgba(90, 119, 84, 0.14)',
     heroTint: 'rgba(122, 155, 111, 0.10)',
   },
   // lgbtq - spectrum rainbow. Affirming, vibrant, inclusive
   lgbtq: {
-    accent: '#c85a9f',        // spectrum magenta-500
-    accentText: '#a0396f',    // magenta-700 (AA on white)
-    accentDeep: '#7d2557',    // magenta-900
+    accent: 'var(--neutral-sage-900)',        // spectrum magenta-500
+    accentText: 'var(--neutral-sage-900)',    // magenta-700 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // magenta-900
     tint: 'rgba(200, 90, 159, 0.08)',
     tintStrong: 'rgba(160, 57, 111, 0.14)',
     heroTint: 'rgba(200, 90, 159, 0.10)',
   },
   // bipoc - earth tone. Grounded, healing, powerful
   bipoc: {
-    accent: '#b8714f',        // terra cotta-500
-    accentText: '#8b4d2e',    // terra-700 (AA on white)
-    accentDeep: '#613220',    // terra-900
+    accent: 'var(--secondary-sand-800)',        // terra cotta-500
+    accentText: 'var(--primary-bronze-900)',    // terra-700 (AA on white)
+    accentDeep: 'var(--primary-bronze-900)',    // terra-900
     tint: 'rgba(184, 113, 79, 0.08)',
     tintStrong: 'rgba(139, 77, 46, 0.14)',
     heroTint: 'rgba(184, 113, 79, 0.10)',
   },
   // neurodivergent - vibrant violet. Celebrating unique minds
   neurodivergent: {
-    accent: '#8366d0',        // violet-500
-    accentText: '#5e4d94',    // violet-700 (AA on white)
-    accentDeep: '#3d2c5f',    // violet-900
+    accent: 'var(--neutral-sage-900)',        // violet-500
+    accentText: 'var(--neutral-sage-900)',    // violet-700 (AA on white)
+    accentDeep: 'var(--neutral-sage-900)',    // violet-900
     tint: 'rgba(131, 102, 208, 0.08)',
     tintStrong: 'rgba(94, 77, 148, 0.14)',
     heroTint: 'rgba(131, 102, 208, 0.10)',
@@ -159,7 +159,7 @@ export function SpecialtyHero({
     <section
       className="hero-section py-20"
       style={{
-        background: `linear-gradient(135deg, ${accent.heroTint} 0%, #faf9f7 55%, #f8faf7 100%)`,
+        background: `linear-gradient(135deg, ${accent.heroTint} 0%, var(--neutral-ash-50) 55%, var(--neutral-sage-50) 100%)`,
       }}
     >
       <div className="container-base text-center animate-fade-in-up">
@@ -365,9 +365,9 @@ export function SpecialtyNote({
   children,
   variant = 'accent',
 }: SpecialtyNoteProps) {
-  const barColor = variant === 'caution' ? '#84603c' : accent.accent
+  const barColor = variant === 'caution' ? 'var(--primary-bronze-900)' : accent.accent
   const bg = variant === 'caution' ? 'rgba(132, 96, 60, 0.07)' : accent.tint
-  const titleColor = variant === 'caution' ? '#84603c' : accent.accentText
+  const titleColor = variant === 'caution' ? 'var(--primary-bronze-900)' : accent.accentText
 
   return (
     <div

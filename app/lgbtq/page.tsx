@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Affirming therapy for LGBTQ+ clients: identity, coming out, relationships, family, trauma. No gatekeeping. Schedule consultation.',
 }
 
-const ACCENT = '#8c5c5b'
+const ACCENT = 'var(--primary-bronze-800)'
 
 export default function LGBTQPage() {
   return (
@@ -58,7 +58,7 @@ export default function LGBTQPage() {
                 simple fact, not as a topic up for debate or therapy to resolve.
               </p>
 
-              <div className="p-6 rounded" style={{ backgroundColor: '#fcf6f6', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="p-6 rounded" style={{ backgroundColor: 'var(--accent-petal-500)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   You are not here to be evaluated, diagnosed as confused, or talked out of yourself.
@@ -254,7 +254,7 @@ export default function LGBTQPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#fcf6f6', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--accent-petal-500)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">
                   Cost should never be the barrier to care.
                 </p>
@@ -298,9 +298,9 @@ export default function LGBTQPage() {
         </section>
 
         {/* Why Rainuka */}
-        <section className="section-padding bg-white border-t-4" style={{borderColor: '#c85a9f'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderColor: 'var(--neutral-sage-900)'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#c85a9f'}}>
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: 'var(--neutral-sage-900)'}}>
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">

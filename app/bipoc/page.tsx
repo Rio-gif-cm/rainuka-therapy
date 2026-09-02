@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-const ACCENT = '#c96547'
+const ACCENT = 'var(--secondary-sand-700)'
 
 export default function BIPOCPage() {
   return (
@@ -64,7 +64,7 @@ export default function BIPOCPage() {
                 Real, active recognition of who you are, what you have survived, and the systemic forces shaping your daily life.
               </p>
 
-              <div className="p-6 rounded" style={{ backgroundColor: '#fdf7f4', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="p-6 rounded" style={{ backgroundColor: 'var(--accent-petal-100)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   Your anger at injustice is not a pathology to manage-it&apos;s a rational response to real harm. Your caution in unsafe spaces is wisdom,
@@ -213,7 +213,7 @@ export default function BIPOCPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#fdf7f4', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--accent-petal-100)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">Intersecting identities:</p>
                 <p className="text-warm-gray-700">
                   Many clients hold more than one of these at once. See also{' '}
@@ -304,7 +304,7 @@ export default function BIPOCPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#fdf7f4', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--accent-petal-100)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">
                   If we&apos;re a good fit and cost is a concern, let&apos;s find a way.
                 </p>
@@ -347,9 +347,9 @@ export default function BIPOCPage() {
         </section>
 
         {/* Why Rainuka */}
-        <section className="section-padding bg-white border-t-4" style={{borderColor: '#b8714f'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderColor: 'var(--secondary-sand-800)'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#b8714f'}}>
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: 'var(--secondary-sand-800)'}}>
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">

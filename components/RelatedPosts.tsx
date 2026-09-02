@@ -26,7 +26,7 @@ interface RelatedPostsProps {
 
 export default function RelatedPosts({
   posts,
-  accent = '#9CAF88',
+  accent = 'var(--neutral-ash-600)',
   title = 'Explore Related Pages'
 }: RelatedPostsProps) {
   if (!posts || posts.length === 0) return null

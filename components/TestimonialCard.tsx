@@ -51,7 +51,7 @@ export default function TestimonialCard({
               key={i}
               className="text-burgundy-600 text-2xl drop-shadow-md transition-transform hover:scale-110"
               style={{ 
-                textShadow: '0 2px 4px rgba(107, 148, 79, 0.15)',
+                textShadow: '0 2px 4px rgba(var(--neutral-sage-700), 0.15)',
                 letterSpacing: '0.05em'
               }}
               aria-label={`${i + 1} of ${rating} stars`}

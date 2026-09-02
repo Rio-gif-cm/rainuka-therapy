@@ -9,7 +9,7 @@ import { useState } from 'react'
  * HeroSection - premium, calm, layered.
  *
  * Visual system:
- *  - Layer 0: warm paper base (#faf9f7)
+ *  - Layer 0: warm paper base (var(--neutral-ash-50))
  *  - Layer 1: soft gradient mesh (three low-opacity radial blooms, sage + warm accent)
  *  - Layer 2: fine grain texture (inline SVG fractal noise, ~3% opacity)
  *  - Layer 3: content on a generous typographic scale with a strict vertical rhythm
@@ -306,7 +306,7 @@ export default function HeroSection() {
                 width: '44px',
                 height: '44px',
                 borderRadius: '0.5rem',
-                backgroundColor: '#10b981',
+                backgroundColor: 'var(--neutral-sage-700)',
                 border: 'none',
                 boxShadow: '0 2px 6px rgba(16, 185, 129, 0.25)',
                 flexShrink: 0,
@@ -339,7 +339,7 @@ export default function HeroSection() {
                 width: '44px',
                 height: '44px',
                 borderRadius: '0.5rem',
-                backgroundColor: '#06b6d4',
+                backgroundColor: 'var(--light-linen-900)',
                 border: 'none',
                 boxShadow: '0 2px 6px rgba(6, 182, 212, 0.25)',
                 flexShrink: 0,
@@ -374,7 +374,7 @@ export default function HeroSection() {
                 borderRadius: '0.5rem',
                 backgroundColor: colors.sage[600],
                 border: 'none',
-                boxShadow: `0 2px 6px rgba(107, 148, 79, 0.25)`,
+                boxShadow: `0 2px 6px rgba(var(--neutral-sage-700), 0.25)`,
                 flexShrink: 0,
               }}
               className="md:w-12 md:h-12"
@@ -578,7 +578,7 @@ export default function HeroSection() {
               border: '1px solid rgba(255, 255, 255, 0.85)',
               boxShadow: [
                 '0 1px 2px rgba(63, 57, 53, 0.04)',
-                '0 12px 28px -12px rgba(84, 124, 63, 0.18)',
+                '0 12px 28px -12px rgba(var(--neutral-sage-900), 0.18)',
                 '0 40px 72px -32px rgba(63, 57, 53, 0.22)',
               ].join(','),
               display: 'flex',
@@ -740,7 +740,7 @@ export default function HeroSection() {
             WebkitBackdropFilter: 'blur(16px)',
             border: `1px solid ${colors.sage[100]}`,
             boxShadow:
-              '0 1px 2px rgba(63,57,53,0.03), 0 24px 48px -28px rgba(84, 124, 63, 0.20)',
+              '0 1px 2px rgba(63,57,53,0.03), 0 24px 48px -28px rgba(var(--neutral-sage-900), 0.20)',
           }}
           className="md:p-10"
         >
@@ -798,7 +798,7 @@ export default function HeroSection() {
                     textAlign: 'center',
                     cursor: 'pointer',
                     boxShadow: isActive
-                      ? `0 0 0 3px rgba(130, 168, 108, 0.16), 0 6px 16px -8px rgba(84,124,63,0.35)`
+                      ? `0 0 0 3px rgba(130, 168, 108, 0.16), 0 6px 16px -8px rgba(var(--neutral-sage-900),0.35)`
                       : '0 1px 2px rgba(63,57,53,0.04)',
                   }}
                 >
@@ -970,7 +970,7 @@ export default function HeroSection() {
         }
 
         .hero-chip { transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
-        .hero-chip:hover { border-color: ${colors.sage[400]}; background-color: ${colors.sage[50]}; transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(84,124,63,0.35); }
+        .hero-chip:hover { border-color: ${colors.sage[400]}; background-color: ${colors.sage[50]}; transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(var(--neutral-sage-900),0.35); }
         .hero-chip:active { transform: translateY(0); }
         .hero-chip:focus-visible { outline: 2px solid ${colors.sage[600]}; outline-offset: 3px; }
 
@@ -992,7 +992,7 @@ export default function HeroSection() {
           box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.28),
             0 1px 2px rgba(63,57,53,0.10),
-            0 10px 22px -10px rgba(84, 124, 63, 0.55);
+            0 10px 22px -10px rgba(var(--neutral-sage-900), 0.55);
           transition: transform 0.2s cubic-bezier(0.2,0.7,0.3,1), box-shadow 0.2s ease, filter 0.2s ease;
           white-space: nowrap;
         }
@@ -1002,9 +1002,9 @@ export default function HeroSection() {
           box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.32),
             0 2px 4px rgba(63,57,53,0.10),
-            0 18px 32px -12px rgba(84, 124, 63, 0.62);
+            0 18px 32px -12px rgba(var(--neutral-sage-900), 0.62);
         }
-        .hero-cta-primary:active { transform: translateY(0); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 4px 10px -4px rgba(84,124,63,0.5); }
+        .hero-cta-primary:active { transform: translateY(0); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 4px 10px -4px rgba(var(--neutral-sage-900),0.5); }
         .hero-cta-primary:focus-visible { outline: 2px solid ${colors.sage[700]}; outline-offset: 3px; }
         .hero-cta-arrow { transition: transform 0.2s ease; }
         .hero-cta-primary:hover .hero-cta-arrow { transform: translateX(3px); }

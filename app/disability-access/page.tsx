@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-const ACCENT = '#3f566d'
+const ACCENT = 'var(--neutral-sage-900)'
 
 export default function DisabilityAccessPage() {
   return (
@@ -33,7 +33,7 @@ export default function DisabilityAccessPage() {
           <div className="container-base text-center animate-fade-in-up">
             <p
               className="inline-block mb-4 px-4 py-2 rounded-full text-sm font-semibold"
-              style={{ backgroundColor: '#e6ecf3', color: ACCENT }}
+              style={{ backgroundColor: 'var(--neutral-sage-50)', color: ACCENT }}
             >
               Disability-Affirming Approach
             </p>
@@ -70,7 +70,7 @@ export default function DisabilityAccessPage() {
 
               <div
                 className="p-6 rounded"
-                style={{ backgroundColor: '#f5f7fa', borderLeft: `4px solid ${ACCENT}` }}
+                style={{ backgroundColor: 'var(--neutral-sage-50)', borderLeft: `4px solid ${ACCENT}` }}
               >
                 <p className="font-semibold text-warm-gray-900 mb-2">Core Principle:</p>
                 <p>

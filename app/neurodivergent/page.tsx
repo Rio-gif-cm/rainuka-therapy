@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Affirming therapy for neurodivergent adults: ADHD, autism, diagnosis, masking, burnout recovery. Strengths-based. Schedule today.',
 }
 
-const ACCENT = '#5B7B8B'
+const ACCENT = 'var(--neutral-sage-800)'
 
 export default function NeurodivergentPage() {
   return (
@@ -57,7 +57,7 @@ export default function NeurodivergentPage() {
                 Real affirmation of your neurodivergent identity, your actual strengths, and what your brain actually needs to thrive.
               </p>
 
-              <div className="p-6 rounded" style={{ backgroundColor: '#f0f6f8', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="p-6 rounded" style={{ backgroundColor: 'var(--neutral-sage-50)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">The Core Commitment:</p>
                 <p>
                   We work from the neurodiversity paradigm: ADHD and autism are natural variations in
@@ -160,7 +160,7 @@ export default function NeurodivergentPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#f0f6f8', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--neutral-sage-50)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="text-warm-gray-700">
                   Looking specifically for adult ADHD support? See the dedicated{' '}
                   <Link href="/adhd" className="underline">ADHD therapy page</Link>.
@@ -261,7 +261,7 @@ export default function NeurodivergentPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#f0f6f8', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--neutral-sage-50)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="font-semibold text-warm-gray-900 mb-2">
                   Cost, logistics, or sensory access shouldn&apos;t block you from care.
                 </p>
@@ -330,7 +330,7 @@ export default function NeurodivergentPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-6 rounded" style={{ backgroundColor: '#f0f6f8', borderLeft: `4px solid ${ACCENT}` }}>
+              <div className="mt-8 p-6 rounded" style={{ backgroundColor: 'var(--neutral-sage-50)', borderLeft: `4px solid ${ACCENT}` }}>
                 <p className="text-warm-gray-700">
                   <strong>These are neurodiversity-affirming spaces</strong> run by neurodivergent
                   people. Use them to learn about yourself, connect with community, and know you are
@@ -371,9 +371,9 @@ export default function NeurodivergentPage() {
         </section>
 
         {/* Why Rainuka */}
-        <section className="section-padding bg-white border-t-4" style={{borderColor: '#8366d0'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderColor: 'var(--neutral-sage-900)'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#8366d0'}}>
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: 'var(--neutral-sage-900)'}}>
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">

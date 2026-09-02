@@ -61,7 +61,7 @@ export default function SensoryFriendlyToggle({ isMobile = false }: SensoryFrien
         padding: isMobile ? '0.75rem 1rem' : '0.5rem 0.75rem',
         minHeight: isMobile ? '56px' : '44px',
         minWidth: isMobile ? '56px' : 'auto',
-        backgroundColor: isEnabled ? '#e8ede5' : 'transparent',
+        backgroundColor: isEnabled ? 'var(--neutral-sage-50)' : 'transparent',
         border: `1px solid ${isEnabled ? colors.sage[400] : colors.warmGray[300]}`,
         borderRadius: '0.375rem',
         cursor: 'pointer',

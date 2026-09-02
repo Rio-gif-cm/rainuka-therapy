@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 // Couples custom SVG color
-const couplesColor = '#e07856'
+const couplesColor = 'var(--secondary-sand-700)'
 
 export default function CouplesPage() {
   return (
@@ -85,8 +85,8 @@ export default function CouplesPage() {
               </p>
 
               <div className="space-y-4">
-                <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#c96547'}}>
-                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#a5503a'}}>
+                <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--secondary-sand-700)'}}>
+                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--primary-bronze-900)'}}>
                     1. Criticism (attacking the person, not the behavior)
                   </p>
                   <p className="text-sm text-warm-gray-600 mb-3">
@@ -97,8 +97,8 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#ab5943'}}>
-                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#934833'}}>
+                <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--secondary-sand-900)'}}>
+                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--primary-bronze-900)'}}>
                     2. Contempt (mockery, sarcasm, eye-rolling, name-calling)
                   </p>
                   <p className="text-sm text-warm-gray-600 mb-3">
@@ -109,8 +109,8 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#c08f5c'}}>
-                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#a3764a'}}>
+                <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--secondary-sand-700)'}}>
+                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--secondary-sand-900)'}}>
                     3. Defensiveness (meeting their pain with excuses or counter-attacks)
                   </p>
                   <p className="text-sm text-warm-gray-600 mb-3">
@@ -121,8 +121,8 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#61809f'}}>
-                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+                <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
+                  <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                     4. Stonewalling (shutting down, withdrawing, refusing to engage)
                   </p>
                   <p className="text-sm text-warm-gray-600 mb-3">
@@ -134,8 +134,8 @@ export default function CouplesPage() {
                 </div>
               </div>
 
-              <div className="card card-callout card-compact card-static mt-8 bg-dusk-50" style={{borderLeftColor: '#61809f'}}>
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static mt-8 bg-dusk-50" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   The Pattern That Works: Balanced Communication
                 </p>
                 <p className="text-warm-gray-700">
@@ -214,8 +214,8 @@ export default function CouplesPage() {
                 couples can rebuild after infidelity-and often build relationships that are more honest and intentional than before.
               </p>
 
-              <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#6b944f'}}>
-                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: '#547c3f'}}>
+              <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: 'var(--neutral-sage-900)'}}>
                   The Three Phases of Infidelity Recovery (Gottman Method)
                 </p>
 
@@ -247,8 +247,8 @@ export default function CouplesPage() {
                 </div>
               </div>
 
-              <div className="card card-callout card-compact card-static mt-6" style={{borderLeftColor: '#ab5943'}}>
-                <p className="font-semibold text-warm-gray-900 mb-3" style={{color: '#934833'}}>
+              <div className="card card-callout card-compact card-static mt-6" style={{borderLeftColor: 'var(--secondary-sand-900)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--primary-bronze-900)'}}>
                   Red Flags: When Recovery Isn't Possible
                 </p>
                 <ul className="space-y-2 text-sm">
@@ -296,7 +296,7 @@ export default function CouplesPage() {
               </p>
 
               <div className="space-y-4">
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: '#6b944f'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Love Maps (Gottman)</p>
                   <p className="text-sm text-warm-gray-700">
                     Deep knowledge of your partner's inner world-dreams, fears, values, daily stresses. 
@@ -304,7 +304,7 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-dusk-50 to-white" style={{borderLeftColor: '#61809f'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-dusk-50 to-white" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Turning Toward Bids (Gottman)</p>
                   <p className="text-sm text-warm-gray-700">
                     A "bid" is any attempt to connect ("Look at that sunset," "How was your day?"). 
@@ -313,7 +313,7 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-blush-50 to-white" style={{borderLeftColor: '#c96547'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-blush-50 to-white" style={{borderLeftColor: 'var(--secondary-sand-700)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Emotionally Focused Therapy (EFT)</p>
                   <p className="text-sm text-warm-gray-700">
                     Focuses on emotional connection and attachment. Helps couples move out of defensive patterns 
@@ -322,7 +322,7 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-honey-50 to-white" style={{borderLeftColor: '#c08f5c'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-honey-50 to-white" style={{borderLeftColor: 'var(--secondary-sand-700)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Repair Attempts</p>
                   <p className="text-sm text-warm-gray-700">
                     Any effort to de-escalate, reconnect, or acknowledge the other's pain during a difficult moment. 
@@ -331,7 +331,7 @@ export default function CouplesPage() {
                   </p>
                 </div>
 
-                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: '#82a86c'}}>
+                <div className="card card-callout card-compact card-static bg-gradient-to-r from-burgundy-50 to-white" style={{borderLeftColor: 'var(--neutral-sage-700)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">Shared Meaning</p>
                   <p className="text-sm text-warm-gray-700">
                     What do you want your relationship to <em>be</em>? Beyond daily logistics, what shared values or vision 
@@ -367,7 +367,7 @@ export default function CouplesPage() {
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   What does couples therapy actually look like?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -378,7 +378,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   How long does couples therapy take?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -389,7 +389,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   What if only one of us wants therapy?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -400,7 +400,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   How much does couples therapy cost?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -410,7 +410,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   Is everything said in couples therapy confidential?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -421,7 +421,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   What if one partner is keeping secrets (infidelity, financial issues, etc.)?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -432,7 +432,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   What if one partner is abusive or controlling?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -443,7 +443,7 @@ export default function CouplesPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: '#547c3f'}}>
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3" style={{color: 'var(--neutral-sage-900)'}}>
                   Is it a sign of failure to go to couples therapy?
                 </h3>
                 <p className="text-warm-gray-600">
@@ -461,11 +461,11 @@ export default function CouplesPage() {
         <section className="section-padding bg-white">
           <div className="container-base max-w-3xl mx-auto">
             {testimonialsByCategory.couples.length > 0 && (
-              <div className="card card-callout card-static bg-gradient-to-br from-blush-50 to-alert-50" style={{borderLeftColor: '#c96547'}}>
+              <div className="card card-callout card-static bg-gradient-to-br from-blush-50 to-alert-50" style={{borderLeftColor: 'var(--secondary-sand-700)'}}>
                 <p className="text-lg text-warm-gray-700 italic mb-6 leading-relaxed">
                   "{testimonialsByCategory.couples[0].quote}"
                 </p>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#a5503a'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--primary-bronze-900)'}}>
                   - {testimonialsByCategory.couples[0].author}
                 </p>
                 <p className="text-sm text-warm-gray-600 mt-2">

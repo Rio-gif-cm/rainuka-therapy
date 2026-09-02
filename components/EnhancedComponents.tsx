@@ -199,7 +199,7 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
     primary: {
       backgroundColor: 'var(--burgundy-600)',
       color: 'white',
-      boxShadow: '0 4px 6px rgba(107, 148, 79, 0.15)',
+      boxShadow: '0 4px 6px rgba(var(--neutral-sage-700), 0.15)',
       border: 'none',
     },
     secondary: {
@@ -295,14 +295,14 @@ export const EnhancedButton: React.FC<EnhancedButtonProps> = ({
           // Improvement #4: Primary button hover background shift
           if (variant === 'primary') {
             btn.style.backgroundColor = 'var(--burgundy-700)'
-            btn.style.boxShadow = '0 10px 25px rgba(107, 148, 79, 0.25)'
+            btn.style.boxShadow = '0 10px 25px rgba(var(--neutral-sage-700), 0.25)'
           } else if (variant === 'secondary') {
             btn.style.backgroundColor = 'var(--burgundy-100)'
             btn.style.borderColor = 'var(--burgundy-300)'
-            btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.1)'
+            btn.style.boxShadow = '0 4px 12px rgba(var(--neutral-sage-700), 0.1)'
           } else if (variant === 'outline') {
             btn.style.backgroundColor = 'var(--burgundy-50)'
-            btn.style.boxShadow = '0 4px 12px rgba(107, 148, 79, 0.12)'
+            btn.style.boxShadow = '0 4px 12px rgba(var(--neutral-sage-700), 0.12)'
           }
         }
       }}

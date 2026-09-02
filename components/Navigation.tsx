@@ -643,7 +643,7 @@ export default function Navigation() {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: '0 6px 16px -8px rgba(107, 148, 79, 0.7)',
+              boxShadow: '0 6px 16px -8px rgba(var(--neutral-sage-700), 0.7)',
             }}
           >
             Book a Consult

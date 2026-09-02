@@ -80,8 +80,8 @@ export default function HolidayStressPage() {
                 The holidays stack multiple stressors at once: less daylight (circadian rhythm disruption), heightened family expectations, financial pressure, grief for who's missing, and the pressure to perform happiness. Your nervous system picks up on all of it.
               </p>
 
-              <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#547c3f'}}>
-                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: '#547c3f'}}>
+              <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: 'var(--neutral-sage-900)'}}>
                   What's actually happening:
                 </p>
                 <ul className="space-y-2 text-sm">
@@ -169,7 +169,7 @@ export default function HolidayStressPage() {
                 You cannot make the holidays perfect for everyone. You cannot manage your own stress, your child's emotions, your family's expectations, and your work deadlines all at once. 
               </p>
 
-              <div className="card card-compact card-static" style={{backgroundColor: '#f5f7fa'}}>
+              <div className="card card-compact card-static" style={{backgroundColor: 'var(--neutral-sage-50)'}}>
                 <p className="text-warm-gray-900 font-semibold mb-4">
                   What therapy helps you do:
                 </p>
@@ -225,7 +225,7 @@ export default function HolidayStressPage() {
                   a: 'We offer sliding scale rates. Many insurance plans cover therapy. We can talk about what works for your budget before you commit to anything.'
                 },
               ].map((item, index) => (
-                <div key={index} className="border-l-4 pl-6" style={{borderLeftColor: '#547c3f'}}>
+                <div key={index} className="border-l-4 pl-6" style={{borderLeftColor: 'var(--neutral-sage-900)'}}>
                   <p className="font-semibold text-warm-gray-900 mb-2">{item.q}</p>
                   <p className="text-warm-gray-600 text-sm">{item.a}</p>
                 </div>
@@ -245,15 +245,15 @@ export default function HolidayStressPage() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div>
-                <p className="text-4xl font-bold" style={{color: '#547c3f'}}>57%</p>
+                <p className="text-4xl font-bold" style={{color: 'var(--neutral-sage-900)'}}>57%</p>
                 <p className="text-warm-gray-600 text-sm mt-2">of people report the holiday season as stressful</p>
               </div>
               <div>
-                <p className="text-4xl font-bold" style={{color: '#547c3f'}}>32%</p>
+                <p className="text-4xl font-bold" style={{color: 'var(--neutral-sage-900)'}}>32%</p>
                 <p className="text-warm-gray-600 text-sm mt-2">report worsening mental health in Nov-Dec specifically</p>
               </div>
               <div>
-                <p className="text-4xl font-bold" style={{color: '#547c3f'}}>36%</p>
+                <p className="text-4xl font-bold" style={{color: 'var(--neutral-sage-900)'}}>36%</p>
                 <p className="text-warm-gray-600 text-sm mt-2">of people skip therapy end-of-year due to stress overload</p>
               </div>
             </div>

@@ -29,7 +29,7 @@ export default function MenPage() {
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Therapy for Men: Depth Without the Shame
             </h1>
-            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: '#4d6a86'}}>
+            <p className="text-xl font-semibold mb-4 max-w-2xl mx-auto" style={{color: 'var(--neutral-sage-900)'}}>
               Seeking help isn't weakness. It's wisdom.
             </p>
             <p className="text-warm-gray-600 max-w-2xl mx-auto mb-8">
@@ -49,7 +49,7 @@ export default function MenPage() {
               Real Strength Looks Like This
             </IconHeading>
 
-            <div className="card card-callout card-compact card-static mb-8" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
+            <div className="card card-callout card-compact card-static mb-8" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
               <p className="text-warm-gray-700 leading-relaxed">
                 You've heard "man up" your whole life. Suppress feelings. Handle it alone. Stay in control.
               </p>
@@ -78,8 +78,8 @@ export default function MenPage() {
                 {title: 'Life Transitions', desc: 'Aging, divorce, becoming a father, career changes'},
                 {title: 'Loneliness', desc: 'Isolation, not knowing who to talk to'},
               ].map((item, index) => (
-                <div key={index} className="p-5 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                  <h3 className="font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+                <div key={index} className="p-5 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                  <h3 className="font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                     {item.title}
                   </h3>
                   <p className="text-sm text-warm-gray-600">
@@ -101,8 +101,8 @@ export default function MenPage() {
             </h2>
 
             <div className="space-y-6">
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   You're in Control
                 </h3>
                 <p className="text-warm-gray-600">
@@ -110,8 +110,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   No Judgment. Period.
                 </h3>
                 <p className="text-warm-gray-600">
@@ -119,8 +119,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Practical Tools You Can Use
                 </h3>
                 <p className="text-warm-gray-600">
@@ -128,8 +128,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Understanding Your Patterns
                 </h3>
                 <p className="text-warm-gray-600">
@@ -137,8 +137,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)', borderLeftColor: '#4d6a86'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)', borderLeftColor: 'var(--neutral-sage-900)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Confidentiality You Can Trust
                 </h3>
                 <p className="text-warm-gray-600">
@@ -159,8 +159,8 @@ export default function MenPage() {
             </h2>
 
             <div className="space-y-6 text-warm-gray-600">
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Vulnerability Is Not Weakness
                 </h3>
                 <p>
@@ -168,8 +168,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Asking for Help Is Strategic
                 </h3>
                 <p>
@@ -177,8 +177,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Healthy Relationships Require Emotional Intelligence
                 </h3>
                 <p>
@@ -186,8 +186,8 @@ export default function MenPage() {
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <h3 className="text-xl font-serif font-bold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>
                   Self-Care Is Self-Respect
                 </h3>
                 <p>
@@ -208,42 +208,42 @@ export default function MenPage() {
             </h2>
 
             <div className="space-y-8">
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: 'var(--neutral-sage-900)'}}>
                 <p className="text-warm-gray-700 italic mb-4">
                   "I thought something was broken in me. Turns out I had patterns from childhood playing out in my marriage. 
                   Understanding that-having someone help me through it-changed everything. My wife and I are closer than ever."
                 </p>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--neutral-sage-900)'}}>
                   - Marcus, 38 (Relationships & Communication)
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: 'var(--neutral-sage-900)'}}>
                 <p className="text-warm-gray-700 italic mb-4">
                   "I was successful at work but miserable. Therapy helped me realize I was chasing someone else's success. 
                   Now I'm in a role aligned with my values and actually at peace."
                 </p>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--neutral-sage-900)'}}>
                   - David, 45 (Career & Identity)
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: 'var(--neutral-sage-900)'}}>
                 <p className="text-warm-gray-700 italic mb-4">
                   "I didn't think I was depressed. I was just tired and didn't care anymore. Getting that named and learning strategies-
                   it was like someone turned the lights back on."
                 </p>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--neutral-sage-900)'}}>
                   - James, 51 (Depression & Burnout)
                 </p>
               </div>
 
-              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: '#4d6a86'}}>
+              <div className="card card-callout card-compact card-static" style={{backgroundColor: 'rgba(242, 245, 250, 1)', borderLeftColor: 'var(--neutral-sage-900)'}}>
                 <p className="text-warm-gray-700 italic mb-4">
                   "I didn't know how to process my dad's death. Therapy gave me space to grieve and brought me closer to my kids. 
                   I'm teaching them it's okay to feel."
                 </p>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#4d6a86'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--neutral-sage-900)'}}>
                   - Robert, 52 (Grief & Family)
                 </p>
               </div>
@@ -269,18 +269,18 @@ export default function MenPage() {
                 <li>• Communication skills coaching - improving relationships</li>
               </ul>
 
-              <div className="mt-8 p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>Telehealth Available</p>
+              <div className="mt-8 p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>Telehealth Available</p>
                 <p>Sessions from home or your office. 28 states served.</p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>Flexible Scheduling</p>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>Flexible Scheduling</p>
                 <p>Evening and weekend appointments available.</p>
               </div>
 
-              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(77, 106, 134, 0.08)'}}>
-                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: '#4d6a86'}}>Sliding Scale</p>
+              <div className="p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--neutral-sage-900), 0.08)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-2" style={{color: 'var(--neutral-sage-900)'}}>Sliding Scale</p>
                 <p>We'll figure out rates that work for you.</p>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function MenPage() {
         </section>
 
         {/* CTA */}
-        <section className="section-padding text-white" style={{backgroundColor: '#4d6a86'}}>
+        <section className="section-padding text-white" style={{backgroundColor: 'var(--neutral-sage-900)'}}>
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               Ready to Show Up Differently?
@@ -296,16 +296,16 @@ export default function MenPage() {
             <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
               Therapy is about understanding yourself better so you can build the relationships and life you actually want.
             </p>
-            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#4d6a86'}}>
+            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: 'var(--neutral-sage-900)'}}>
               Schedule Your Free Call
             </Link>
           </div>
         </section>
 
         {/* Why Rainuka */}
-        <section className="section-padding bg-white border-t-4" style={{borderColor: '#4d6a86'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderColor: 'var(--neutral-sage-900)'}}>
           <div className="container-base max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: '#4d6a86'}}>
+            <h2 className="text-2xl font-serif font-bold mb-4" style={{color: 'var(--neutral-sage-900)'}}>
               Why Rainuka for Your Journey
             </h2>
             <p className="text-lg text-warm-gray-700 leading-relaxed">

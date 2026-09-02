@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 }
 
 // Grief custom SVG color
-const griefColor = '#334458'
+const griefColor = 'var(--neutral-sage-900)'
 
 export default function GriefPage() {
   return (
@@ -31,8 +31,8 @@ export default function GriefPage() {
       <Navigation />
 
       <main id="main-content" className="flex-grow" role="main">
-        {/* Hero - Grief: Deep indigo accents (#3f566d) for depth, compassion, and holding space */}
-        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(77, 106, 134, 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
+        {/* Hero - Grief: Deep indigo accents (var(--neutral-sage-900)) for depth, compassion, and holding space */}
+        <section className="hero-section py-20" style={{background: 'linear-gradient(135deg, rgba(var(--neutral-sage-900), 0.12) 0%, rgba(248, 250, 247, 1) 100%)'}}>
           <div className="container-base text-center animate-fade-in-up">
             <h1 className="text-5xl font-serif font-bold text-warm-gray-900 mb-4">
               Grief That Honors Every Loss-Big or Small
@@ -505,7 +505,7 @@ export default function GriefPage() {
               carrying them with you in a way that lets you also live.
             </p>
 
-            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: '#3f566d'}}>
+            <p className="text-warm-gray-700 mb-12 text-lg leading-relaxed font-semibold" style={{color: 'var(--neutral-sage-900)'}}>
               Your grief is not a problem to be solved. It&apos;s evidence of love. And you deserve support in honoring it.
             </p>
 
@@ -521,7 +521,7 @@ export default function GriefPage() {
 
         {/* Testimonials */}
         {testimonialsByCategory.grief.length > 0 && (
-          <section className="section-padding bg-warm-gray-50" style={{borderTop: `1px solid #e5dcd4`}}>
+          <section className="section-padding bg-warm-gray-50" style={{borderTop: `1px solid var(--primary-bronze-200)`}}>
             <div className="container-base max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl font-serif font-bold text-warm-gray-900 mb-4">

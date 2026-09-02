@@ -53,7 +53,7 @@ export default function PrivacyAssuranceSection() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '2.5rem',
-                boxShadow: `0 4px 12px rgba(107, 148, 79, 0.15)`,
+                boxShadow: `0 4px 12px rgba(var(--neutral-sage-700), 0.15)`,
               }}
               aria-label="Privacy Secure badge"
             >
@@ -123,17 +123,17 @@ export default function PrivacyAssuranceSection() {
                   padding: '1.5rem',
                   textAlign: 'center',
                   transition: 'all 0.3s ease',
-                  boxShadow: `0 1px 3px rgba(107, 148, 79, 0.08)`,
+                  boxShadow: `0 1px 3px rgba(var(--neutral-sage-700), 0.08)`,
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement
                   el.style.transform = 'translateY(-2px)'
-                  el.style.boxShadow = `0 4px 12px rgba(107, 148, 79, 0.15)`
+                  el.style.boxShadow = `0 4px 12px rgba(var(--neutral-sage-700), 0.15)`
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement
                   el.style.transform = 'translateY(0)'
-                  el.style.boxShadow = `0 1px 3px rgba(107, 148, 79, 0.08)`
+                  el.style.boxShadow = `0 1px 3px rgba(var(--neutral-sage-700), 0.08)`
                 }}
               >
                 <div

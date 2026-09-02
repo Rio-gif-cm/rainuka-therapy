@@ -92,7 +92,7 @@ export default function ObjectionHandler() {
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 boxShadow: expandedObjection === obj.id
-                  ? `0 4px 16px rgba(107, 148, 79, 0.15)`
+                  ? `0 4px 16px rgba(var(--neutral-sage-700), 0.15)`
                   : 'none',
               }}
               onMouseEnter={(e) => {

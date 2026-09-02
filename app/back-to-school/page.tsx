@@ -80,8 +80,8 @@ export default function BackToSchoolPage() {
                 Your nervous system-or your child's-picks up on this change and sounds the alarm.
               </p>
 
-              <div className="card card-callout card-compact card-static" style={{borderLeftColor: '#d4a574'}}>
-                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: '#d4a574'}}>
+              <div className="card card-callout card-compact card-static" style={{borderLeftColor: 'var(--primary-bronze-500)'}}>
+                <p className="font-semibold text-warm-gray-900 mb-4" style={{color: 'var(--primary-bronze-500)'}}>
                   Common triggers:
                 </p>
                 <ul className="space-y-2">
@@ -168,7 +168,7 @@ export default function BackToSchoolPage() {
         <SectionDivider margin="3rem" />
 
         {/* For Parents */}
-        <section className="section-padding bg-white border-t-4" style={{borderTopColor: '#d4a574'}}>
+        <section className="section-padding bg-white border-t-4" style={{borderTopColor: 'var(--primary-bronze-500)'}}>
           <div className="container-base max-w-3xl mx-auto">
             <IconHeading icon="👨‍👩‍👧" level={2} color={colors.warmGray[900]}>
               If Your Child Has Back to School Anxiety
@@ -180,8 +180,8 @@ export default function BackToSchoolPage() {
                 Your job is to support your child in learning to manage it.
               </p>
 
-              <div className="card card-callout card-static" style={{backgroundColor: 'rgba(212, 165, 116, 0.08)', borderLeftColor: '#d4a574'}}>
-                <p className="font-semibold text-warm-gray-900" style={{color: '#d4a574'}}>
+              <div className="card card-callout card-static" style={{backgroundColor: 'rgba(var(--primary-bronze-500), 0.08)', borderLeftColor: 'var(--primary-bronze-500)'}}>
+                <p className="font-semibold text-warm-gray-900" style={{color: 'var(--primary-bronze-500)'}}>
                   What research shows us:
                 </p>
                 <ul className="space-y-3 mt-4">
@@ -213,7 +213,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if therapy doesn't help? My anxiety is too bad.
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Severe anxiety is actually more responsive to therapy than mild anxiety-there's more room for change. 
@@ -224,7 +224,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   I don't have time for therapy during back to school prep.
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   That's exactly when you need it most. A 15-minute consultation or one focused session can give you tools 
@@ -235,7 +235,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Will therapy make my child talk about feelings they're not ready for?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   No. I meet kids where they are. We might use play, art, games, or conversation-whatever helps them feel safe. 
@@ -246,7 +246,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Isn't some back to school anxiety normal?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. A little nervousness is normal. But if anxiety is interfering with sleep, eating, relationships, or quality of life-
@@ -257,7 +257,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What if my child's anxiety is caused by real trauma or past bullying?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Then we address that directly. Trauma-informed therapy means we help your child process what happened, 
@@ -278,15 +278,15 @@ export default function BackToSchoolPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-8">
-              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(212, 165, 116, 0.1)'}}>
-                <p className="text-4xl font-bold mb-2" style={{color: '#d4a574'}}>32%</p>
+              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--primary-bronze-500), 0.1)'}}>
+                <p className="text-4xl font-bold mb-2" style={{color: 'var(--primary-bronze-500)'}}>32%</p>
                 <p className="text-warm-gray-600">
                   Spike in therapy demand during back-to-school season
                 </p>
               </div>
 
-              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(212, 165, 116, 0.1)'}}>
-                <p className="text-4xl font-bold mb-2" style={{color: '#d4a574'}}>4-8</p>
+              <div className="text-center p-6 rounded-lg" style={{backgroundColor: 'rgba(var(--primary-bronze-500), 0.1)'}}>
+                <p className="text-4xl font-bold mb-2" style={{color: 'var(--primary-bronze-500)'}}>4-8</p>
                 <p className="text-warm-gray-600">
                   Sessions typically needed for noticeable improvement
                 </p>
@@ -298,7 +298,7 @@ export default function BackToSchoolPage() {
               Anxiety about back to school is one of the most treatable challenges I work with.
             </p>
 
-            <div className="bg-cream-50 border-l-4 p-6 rounded" style={{borderLeftColor: '#d4a574'}}>
+            <div className="bg-cream-50 border-l-4 p-6 rounded" style={{borderLeftColor: 'var(--primary-bronze-500)'}}>
               <p className="text-warm-gray-600 italic">
                 "I scheduled therapy on August 28th because I couldn't sleep thinking about school. By mid-September, I had actual tools. 
                 I'm still nervous, but now I know I can handle it. That's everything." - Parent of 2nd grader
@@ -320,7 +320,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   How many sessions do we need?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   That depends on your situation. Sometimes one focused session gives you the tools you need. 
@@ -331,7 +331,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   Can we do telehealth? I'm traveling.
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   Yes. I offer flexible telehealth sessions. We can work around your schedule and your location.
@@ -341,7 +341,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   What's the cost?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   I offer a sliding scale based on income, and I work with most insurance plans. 
@@ -352,7 +352,7 @@ export default function BackToSchoolPage() {
               <details className="card cursor-pointer">
                 <summary className="font-semibold text-warm-gray-900 flex justify-between items-center">
                   My child won't open up to a stranger. Will this work?
-                  <span style={{color: '#d4a574'}}>▼</span>
+                  <span style={{color: 'var(--primary-bronze-500)'}}>▼</span>
                 </summary>
                 <p className="text-warm-gray-600 mt-4">
                   It's normal for kids to be shy at first. I'm trained in building trust quickly. And the first session is often 
@@ -365,7 +365,7 @@ export default function BackToSchoolPage() {
         </section>
 
         {/* CTA - Warm peachy tone */}
-        <section className="section-padding text-white" style={{backgroundColor: '#d4a574'}}>
+        <section className="section-padding text-white" style={{backgroundColor: 'var(--primary-bronze-500)'}}>
           <div className="container-base text-center">
             <h2 className="text-3xl font-serif font-bold mb-4">
               You Don't Have to White-Knuckle Through This
@@ -373,7 +373,7 @@ export default function BackToSchoolPage() {
             <p className="text-lg mb-8 text-white text-opacity-90 max-w-2xl mx-auto">
               Back to school anxiety is treatable. Tools exist. Support is available. Let's talk about what you need.
             </p>
-            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: '#d4a574'}}>
+            <Link href="/booking" className="inline-block bg-white px-8 py-4 font-semibold rounded-lg hover:bg-opacity-90" style={{color: 'var(--primary-bronze-500)'}}>
               Schedule Your 15-Minute Call Today
             </Link>
           </div>
