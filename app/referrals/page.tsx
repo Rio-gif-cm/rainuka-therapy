@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ReferralPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-warm-gray-50 via-white to-warm-gray-50">
-      <div className="max-w-2xl mx-auto px-4 py-16">
+      <main id="main-content" role="main" className="max-w-2xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-warm-gray-900 mb-4">Help a Friend Find Support</h1>
           <p className="text-lg text-warm-gray-600">
@@ -45,7 +45,7 @@ export default function ReferralPage() {
             Seeking therapy for the first time is scary. A friend's recommendation removes shame and builds trust. No incentives-just genuine help.
           </p>
         </div>
-      </div>
+      </main>
     </div>
   );
 }
