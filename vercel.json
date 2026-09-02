@@ -4,6 +4,5 @@
   "framework": "nextjs",
   "env": {
     "SKIP_BUILD_SOURCEMAP": "true"
-  },
-  "buildCache": false
+  }
 }
