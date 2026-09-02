@@ -172,6 +172,22 @@ const config: Config = {
         'serif': ['var(--font-merriweather)', 'Georgia', 'serif'],
         'sans': ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
       },
+      // Desktop UX Audit: Button and form sizing variants
+      spacing: {
+        'btn-py-sm': '0.625rem',   // 10px (mobile secondary)
+        'btn-py-md': '0.875rem',   // 14px (mobile primary)
+        'btn-py-lg': '1.125rem',   // 18px (desktop primary)
+        'btn-px-sm': '1rem',       // 16px (mobile secondary)
+        'btn-px-md': '1.5rem',     // 24px (mobile primary)
+        'btn-px-lg': '2rem',       // 32px (desktop primary)
+      },
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',   // ADD: Desktop wide
+      '2xl': '1536px',  // ADD: Cinema mode
     },
   },
   plugins: [],
