@@ -181,7 +181,7 @@ export default function PrivacyPage() {
             Third-Party Services
           </h2>
           <p style={{ fontSize: '1rem', lineHeight: 1.8, color: colors.warmGray[700] }}>
-            We use minimal third-party services, all HIPAA-compliant:
+            We use minimal third-party services, all compliant with <strong>PIPEDA</strong> (Canadian privacy law) and international security standards:
           </p>
           <ul
             style={{

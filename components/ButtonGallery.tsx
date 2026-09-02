@@ -114,7 +114,7 @@ export default function ButtonGallery() {
             <p style={{ fontSize: '0.875rem', color: 'var(--warm-gray-600)', marginBottom: '0.5rem' }}>
               ↓ White outline ring (WCAG AA)
             </p>
-            <EnhancedButton variant="primary" autoFocus>
+            <EnhancedButton variant="primary">
               Focus Ring Visible
             </EnhancedButton>
           </div>

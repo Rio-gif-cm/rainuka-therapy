@@ -1,0 +1,194 @@
+{
+  "timestamp": "2026-09-02T05:28:28.769Z",
+  "totalGaps": 18,
+  "bySeverity": {
+    "CRITICAL": 1,
+    "HIGH": 8,
+    "MEDIUM": 8,
+    "LOW": 1
+  },
+  "gaps": [
+    {
+      "id": "S1",
+      "title": "Root Layout Missing <main> Element (Critical)",
+      "severity": "CRITICAL",
+      "criterion": "WCAG 1.3.1",
+      "details": "Main landmark required for screen reader navigation. Breaking accessibility for all pages.",
+      "locations": [
+        "app/layout.tsx"
+      ]
+    },
+    {
+      "id": "K4",
+      "title": "Form Error Messages Not Announced (Missing aria-live)",
+      "severity": "HIGH",
+      "criterion": "WCAG 3.3.1",
+      "details": "Validation errors appear visually but screen readers dont announce them.",
+      "locations": [
+        "components/BookingForm.tsx"
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Blush-400 on White (~2.8:1 Contrast Ratio - FAILS)",
+      "severity": "HIGH",
+      "criterion": "WCAG 1.4.3",
+      "details": "blush-400 (#c08e8d) on white fails AA contrast. Affects testimonials, secondary text.",
+      "locations": [
+        "tailwind.config.ts",
+        "components/TestimonialCard.tsx"
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Blush-300 on White (~2.5:1 - FAILS)",
+      "severity": "HIGH",
+      "criterion": "WCAG 1.4.3",
+      "details": "blush-300 (#d6adac) also fails contrast. Multiple light text options are inaccessible.",
+      "locations": [
+        "tailwind.config.ts"
+      ]
+    },
+    {
+      "id": "F3",
+      "title": "Date Picker Calendar Missing Keyboard Navigation",
+      "severity": "HIGH",
+      "criterion": "WCAG 2.1.1",
+      "details": "Calendar component doesnt support arrow keys. Users cannot navigate dates with keyboard alone.",
+      "locations": [
+        "components/CalendarPicker.tsx"
+      ]
+    },
+    {
+      "id": "L2",
+      "title": "No Privacy Complaint Process (PIPEDA Requirement)",
+      "severity": "HIGH",
+      "criterion": "PIPEDA",
+      "details": "Users cannot find how to lodge complaints with Office of Privacy Commissioner of Canada.",
+      "locations": [
+        "app/privacy/page.tsx"
+      ]
+    },
+    {
+      "id": "L3",
+      "title": "Terms of Service Page Missing",
+      "severity": "HIGH",
+      "criterion": "Canadian Contract Law",
+      "details": "No legal terms page. Required for cancellation policy, liability limits, client confidentiality.",
+      "locations": [
+        "app/terms/page.tsx (MISSING)"
+      ]
+    },
+    {
+      "id": "MOBILE2",
+      "title": "Viewport Meta Tag Missing or Incomplete",
+      "severity": "HIGH",
+      "criterion": "WCAG 1.4.4",
+      "details": "Mobile users cannot zoom or resize content properly without proper viewport settings.",
+      "locations": [
+        "app/layout.tsx"
+      ]
+    },
+    {
+      "id": "CONSENT1",
+      "title": "No Telehealth Informed Consent Disclosure",
+      "severity": "HIGH",
+      "criterion": "Canadian Telehealth Best Practice",
+      "details": "Booking page missing consent form about virtual therapy risks, privacy, technical limitations.",
+      "locations": [
+        "app/booking/page.tsx"
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "No Color Contrast Audit Tool in CI/Build Pipeline",
+      "severity": "MEDIUM",
+      "criterion": "WCAG 1.4.3",
+      "details": "No automated contrast checker (lighthouse, axe) in build. Regressions undetected.",
+      "locations": [
+        "CI/CD pipeline"
+      ]
+    },
+    {
+      "id": "F1",
+      "title": "Form Inputs Missing aria-required Attribute",
+      "severity": "MEDIUM",
+      "criterion": "WCAG 1.3.1",
+      "details": "Required fields use HTML required attribute but not aria-required. Screen readers may miss requirement.",
+      "locations": [
+        "components/BookingForm.tsx"
+      ]
+    },
+    {
+      "id": "L5",
+      "title": "No Business Registration / Tax Information Disclosed",
+      "severity": "MEDIUM",
+      "criterion": "CRA Standard",
+      "details": "Canadian clients need to see Business Number, HST registration, corporate structure. None disclosed.",
+      "locations": [
+        "components/Footer.tsx",
+        "app/contact/page.tsx"
+      ]
+    },
+    {
+      "id": "SR1",
+      "title": "Excessive aria-hidden Use (May Hide Content from Screen Readers)",
+      "severity": "MEDIUM",
+      "criterion": "WCAG 1.3.1",
+      "details": "Multiple aria-hidden attributes found. If misused, this hides content from assistive tech.",
+      "locations": [
+        "Multiple components"
+      ]
+    },
+    {
+      "id": "SR2",
+      "title": "Very Few aria-label Attributes (Screen Reader Compatibility Low)",
+      "severity": "MEDIUM",
+      "criterion": "WCAG 1.3.1",
+      "details": "Custom components may lack aria-label for screen reader identification.",
+      "locations": [
+        "Multiple components"
+      ]
+    },
+    {
+      "id": "LINK1",
+      "title": "4 Links with Generic Text (\"Read more\", \"Learn more\")",
+      "severity": "MEDIUM",
+      "criterion": "WCAG 2.4.9",
+      "details": "Screen readers cannot determine link purpose. Links must have descriptive text.",
+      "locations": [
+        "Multiple pages"
+      ]
+    },
+    {
+      "id": "TEST1",
+      "title": "No Automated Accessibility Testing in Build Pipeline",
+      "severity": "MEDIUM",
+      "criterion": "Best Practice",
+      "details": "No axe, lighthouse, pa11y, or similar in CI/CD. Regressions undetected. Should run on every PR.",
+      "locations": [
+        "CI/CD pipeline"
+      ]
+    },
+    {
+      "id": "CONSENT2",
+      "title": "Cookie Banner / Tracking Consent Missing",
+      "severity": "MEDIUM",
+      "criterion": "GDPR/PIPEDA",
+      "details": "No cookie consent banner. Website may be tracking without explicit user consent.",
+      "locations": [
+        "app/layout.tsx"
+      ]
+    },
+    {
+      "id": "TEST2",
+      "title": "No WCAG AA Conformance Statement or A11y Policy Page",
+      "severity": "LOW",
+      "criterion": "Best Practice",
+      "details": "Accessibility statement missing from site. Users don't know about commitment or how to report issues.",
+      "locations": [
+        "app/accessibility/page.tsx"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "timestamp": "2026-09-02T05:27:39.517Z",
+  "totalGaps": 14,
+  "byoSeverity": {
+    "CRITICAL": 2,
+    "HIGH": 6,
+    "MEDIUM": 6,
+    "LOW": 0
+  },
+  "gaps": [
+    {
+      "id": "A1",
+      "title": "Missing <main> Landmark in Root Layout",
+      "severity": "CRITICAL",
+      "wcagCriterion": "WCAG 1.3.1 (Info and Relationships)",
+      "details": "Root layout.tsx does not wrap page content in a <main> element. This breaks screen reader landmark navigation.",
+      "locations": [
+        "app/layout.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "LC3",
+      "title": "Missing Healthcare/Therapy Disclaimer",
+      "severity": "CRITICAL",
+      "wcagCriterion": "Canadian Professional Liability (Risk Management)",
+      "details": "No clear disclaimer stating therapy is not medical treatment. This is a liability risk and required by insurance standards.",
+      "locations": [
+        "app/about/page.tsx",
+        "app/contact/page.tsx",
+        "Footer component"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "C2",
+      "title": "Color Contrast Below 4.5:1 for Text on Light Backgrounds",
+      "severity": "HIGH",
+      "wcagCriterion": "WCAG 1.4.3 (Contrast Minimum)",
+      "details": "2 text color combinations fail WCAG AA contrast requirements. Users with low vision cannot read affected text.",
+      "locations": [
+        "tailwind.config.ts",
+        "components/TestimonialCard.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "F1",
+      "title": "Form Errors Not Announced via Live Regions",
+      "severity": "HIGH",
+      "wcagCriterion": "WCAG 3.3.1 (Error Identification)",
+      "details": "Form validation errors appear visually but lack aria-live or role=\"alert\". Screen readers will not announce errors immediately.",
+      "locations": [
+        "components/BookingForm.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "L3",
+      "title": "Links Without href Attribute",
+      "severity": "HIGH",
+      "wcagCriterion": "WCAG 2.4.1 (Link Purpose)",
+      "details": "21 <Link> elements found without href. These are not keyboard accessible.",
+      "locations": [
+        "Multiple components"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "LC2",
+      "title": "No Contact Info for Privacy Complaints (PIPEDA Requirement)",
+      "severity": "HIGH",
+      "wcagCriterion": "PIPEDA Requirement",
+      "details": "Privacy policy lacks information on how to lodge complaints with the Office of the Privacy Commissioner of Canada.",
+      "locations": [
+        "app/privacy/page.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "LC4",
+      "title": "Missing Terms of Service Page",
+      "severity": "HIGH",
+      "wcagCriterion": "Canadian Contract Law (Standard Practice)",
+      "details": "No Terms of Service page exists. This is required to establish legal boundaries, cancellation policies, and liability limits.",
+      "locations": [
+        "app/terms/page.tsx (MISSING)"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "MOB2",
+      "title": "Missing or Incomplete Viewport Meta Tag",
+      "severity": "HIGH",
+      "wcagCriterion": "WCAG 1.4.4 (Resize Text)",
+      "details": "Viewport meta tag missing or incomplete. Mobile users cannot zoom or resize content properly.",
+      "locations": [
+        "app/layout.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "F2",
+      "title": "Required Fields Not Explicitly Marked (Missing aria-required)",
+      "severity": "MEDIUM",
+      "wcagCriterion": "WCAG 1.3.1 (Info and Relationships)",
+      "details": "Form uses HTML required attribute but not aria-required. Some screen readers may miss the requirement.",
+      "locations": [
+        "components/BookingForm.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "L2",
+      "title": "Generic Link Text (\"Read more\", \"Learn more\", etc.)",
+      "severity": "MEDIUM",
+      "wcagCriterion": "WCAG 2.4.9 (Link Purpose)",
+      "details": "Found ~4 links with generic text. Screen readers cannot determine link purpose from text alone.",
+      "locations": [
+        "Multiple pages",
+        "Guides",
+        "Service pages"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "LC5",
+      "title": "No Telehealth Informed Consent Disclosure",
+      "severity": "MEDIUM",
+      "wcagCriterion": "Canadian Telehealth Best Practice",
+      "details": "Booking page lacks consent statement about telehealth privacy, technical limitations, and virtual therapy risks.",
+      "locations": [
+        "app/booking/page.tsx"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "LC6",
+      "title": "No Business Registration or Tax Information (CRA Requirement)",
+      "severity": "MEDIUM",
+      "wcagCriterion": "Canadian Revenue Agency (CRA) Standard",
+      "details": "No Business Number, HST registration, or corporate structure disclosed. Required for transparency with Canadian clients.",
+      "locations": [
+        "components/Footer.tsx",
+        "Contact page"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "H2",
+      "title": "Skipped Heading Levels (e.g., H1 → H3)",
+      "severity": "MEDIUM",
+      "wcagCriterion": "WCAG 1.3.1 (Info and Relationships)",
+      "details": "2 pages skip heading levels. This confuses screen reader users about content structure.",
+      "locations": [
+        "Multiple pages"
+      ],
+      "evidence": []
+    },
+    {
+      "id": "MOB1",
+      "title": "Interactive Elements with Small Touch Targets (< 44x44px)",
+      "severity": "MEDIUM",
+      "wcagCriterion": "WCAG 2.5.5 (Touch Target Size)",
+      "details": "20 interactive elements use minimal padding. Mobile/touch users cannot reliably activate small buttons (WCAG recommends 44x44px minimum).",
+      "locations": [
+        "Multiple components"
+      ],
+      "evidence": []
+    }
+  ],
+  "positiveFindings": [
+    {
+      "title": "Layout uses semantic HTML (nav, footer detected)",
+      "evidence": "Navigation and footer found in 0+ pages"
+    },
+    {
+      "title": "Navigation detects tabIndex attempts",
+      "evidence": "0 potential focus order violations logged"
+    },
+    {
+      "title": "Tailwind config includes semantic color names",
+      "evidence": "burgundy, clay, dusk palette found"
+    },
+    {
+      "title": "Form uses HTML label elements",
+      "evidence": "8 labels found for accessibility"
+    },
+    {
+      "title": "Link elements used consistently",
+      "evidence": "Found Next.js Link component usage throughout"
+    },
+    {
+      "title": "0 images have alt attributes",
+      "evidence": "Accessibility practices in place for image content"
+    },
+    {
+      "title": "Privacy policy exists and mentions data protection",
+      "evidence": "Privacy page found at /privacy"
+    },
+    {
+      "title": "Heading structure detected in pages",
+      "evidence": "21 H1 headings found"
+    },
+    {
+      "title": "Meta tags present in layout",
+      "evidence": "SEO/social sharing metadata found"
+    },
+    {
+      "title": "Mobile-responsive design detected",
+      "evidence": "Responsive components found"
+    }
+  ]
+}

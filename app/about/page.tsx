@@ -59,7 +59,7 @@ export default function AboutPage() {
 
                 <div className="space-y-6 text-warm-gray-600">
                   <p>
-                    Adults often show up fine. The job's going well, relationships look stable, milestones are hit. Inside? That's where the real work lives. I work with perinatal grief, undiagnosed ADHD, burnout disguised as ambition—the gap between the version people see and who you actually are.
+                    Adults often show up fine. The job's going well, relationships look stable, milestones are hit. Inside? That's where the hard work happens. I work with perinatal grief, undiagnosed ADHD, burnout disguised as ambition—the gap between who you present and who you are inside.
                   </p>
 
                   {/* Age requirement notice */}
@@ -78,7 +78,7 @@ export default function AboutPage() {
                   </p>
 
                   <p>
-                    I work trauma-informed and culturally humble. Therapy isn't about fixing you—it's about understanding yourself better so you can build a life that actually fits. I show up as a real person, not a blank screen. You're getting someone who has sat in the hard places and knows what it takes to move through them.
+                    I work trauma-informed and culturally humble. Therapy isn't about fixing you—it's about understanding yourself better so you can build a life that fits. I show up as myself, not a blank screen. You're getting someone who has sat in the hard places and knows what it takes to move through them.
                   </p>
                 </div>
               </div>
@@ -185,11 +185,11 @@ export default function AboutPage() {
                   career? Do I need to quit?"
                 </p>
                 <p className="text-warm-gray-600 mb-4">
-                  Often the answer is: "All of that is real. And also your ADHD. And that's making everything harder."
+                  Often the answer is: "All of that is happening. And also your ADHD. That's making everything harder."
                 </p>
                 <p className="text-warm-gray-600">
                   Once we see the full picture, the path forward stops being confusing. You don't have to bounce between 
-                  specialists guessing at what's wrong. You get one person who understands how these pieces actually fit together.
+                  specialists guessing at what's wrong. You get one person who understands how these pieces fit together.
                 </p>
               </div>
             </div>
@@ -207,12 +207,13 @@ export default function AboutPage() {
               <div className="card">
                 <h3 className="text-xl font-bold text-warm-gray-900 mb-2">License</h3>
                 <p className="text-warm-gray-600 mb-4">
-                  Licensed therapist in Canada (primary jurisdiction), California, and Florida. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
+                  I am a Licensed Clinical Social Worker (LCSW) with credentials in Canada and the United States. For Canadian clients, note that LCSW is a U.S. credential. I am regulated in Canada by [Provincial Regulatory Body]. License details and verification are available during your free consultation and on intake forms, so you can verify directly with the respective licensing boards.
                 </p>
                 <div className="space-y-2 text-sm text-warm-gray-600">
-                  <p>• <strong>Canada:</strong> Licensed under [Provincial Regulatory Body]</p>
-                  <p>• <strong>California:</strong> Licensed Clinical Social Worker (LCSW)</p>
-                  <p>• <strong>Florida:</strong> Licensed Clinical Social Worker (LCSW)</p>
+                  <p>• <strong>Canada:</strong> Licensed and regulated under [Provincial Regulatory Body]</p>
+                  <p>• <strong>California:</strong> Licensed Clinical Social Worker (LCSW) – License verification available on request</p>
+                  <p>• <strong>Florida:</strong> Licensed Clinical Social Worker (LCSW) – License verification available on request</p>
+                  <p className="text-xs text-burgundy-600 mt-3"><strong>Note:</strong> For complaints or regulatory inquiries in Canada, contact [Provincial College/Board]. For U.S. licensing issues, contact the respective state licensing board.</p>
                 </div>
               </div>
 
@@ -382,7 +383,7 @@ export default function AboutPage() {
               My Commitment to Accessibility & Inclusion
             </h2>
             <p className="text-center text-warm-gray-600 text-base md:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
-              I don't just work with all people-I actively affirm the full humanity of clients from marginalized communities.
+              I don't work with clients from marginalized backgrounds as a side project. This is core. Your identity matters. Your experience matters.
             </p>
 
             <div className="space-y-8">

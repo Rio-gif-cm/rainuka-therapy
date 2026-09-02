@@ -92,7 +92,7 @@ export default function ADHDPage() {
           </SpecialtyNote>
 
           <p className="text-warm-gray-700 mt-6 mb-0">
-            You might feel relief (finally has a name) and grief (lost decades). Both are real. That's where therapy comes in.
+            You might feel relief (finally has a name) and grief (lost decades). Both are normal. That's where therapy comes in.
           </p>
         </SpecialtySection>
 
@@ -146,7 +146,7 @@ export default function ADHDPage() {
         <SpecialtySection tone="cream">
           <SpecialtySectionHeader
             accent={accent}
-            eyebrow="The real work"
+            eyebrow="The hard part"
             title="You Are Not Broken. Identity Reconstruction Starts Here."
             intro="Decades of internalized criticism. Now you know why. That changes everything."
           />
@@ -161,7 +161,7 @@ export default function ADHDPage() {
                 <strong>Self-compassion rewires how you treat yourself.</strong> Research shows that developing self-compassion leads to measurably lower anxiety and depression scores in adults with ADHD.
               </li>
               <li>
-                <strong>Identity reconstruction is the real work.</strong> Instead of &quot;I&apos;m
+                <strong>Identity reconstruction is what actually changes things.</strong> Instead of &quot;I&apos;m
                 lazy,&quot; it becomes &quot;I was working with challenges no one recognized.&quot;
               </li>
             </ul>

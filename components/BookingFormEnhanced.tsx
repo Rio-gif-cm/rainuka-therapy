@@ -163,7 +163,7 @@ export default function BookingFormEnhanced({ preCommitmentData }: BookingFormPr
     const { name, value, type } = e.target
     const newValue = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
 
-    setFormData(prev => {
+    setFormData((prev: typeof formData) => {
       const updated = { ...prev, [name]: newValue }
       // IMPROVEMENT #5: Persist to localStorage
       if (typeof window !== 'undefined') {
@@ -637,7 +637,7 @@ export default function BookingFormEnhanced({ preCommitmentData }: BookingFormPr
                   checked={formData.firstTimeTherapy === true}
                   onChange={(e) => {
                     const val = e.target.value === 'true'
-                    setFormData(prev => {
+                    setFormData((prev: typeof formData) => {
                       const updated = { ...prev, firstTimeTherapy: val }
                       if (typeof window !== 'undefined') {
                         localStorage.setItem('therapyFormDraft', JSON.stringify(updated))
@@ -670,7 +670,7 @@ export default function BookingFormEnhanced({ preCommitmentData }: BookingFormPr
                   checked={formData.firstTimeTherapy === false}
                   onChange={(e) => {
                     const val = e.target.value === 'true'
-                    setFormData(prev => {
+                    setFormData((prev: typeof formData) => {
                       const updated = { ...prev, firstTimeTherapy: val }
                       if (typeof window !== 'undefined') {
                         localStorage.setItem('therapyFormDraft', JSON.stringify(updated))
