@@ -27,12 +27,15 @@ const BookingFormWrapper = dynamic(
 )
 
 export const metadata: Metadata = {
-  title: 'Book Your Free Therapy Consultation | Wonderloud Therapy',
-  description: 'Book your free 15-minute therapy consultation. Explore your needs, discuss your goals. No pressure, no obligation. Telehealth available. Licensed therapist in Canada, California, and Florida.',
+  title: 'Book Your Free Consultation | Wonderloud Therapy',
+  description: 'Schedule your free 15-minute therapy consultation today. Telehealth available. Licensed in Canada, California, and Florida. Get support for perinatal anxiety, ADHD, or career transitions.',
+  keywords: 'book therapy, schedule consultation, free therapy consultation, online therapy booking',
+  canonical: 'https://wonderloud-therapy.com/booking',
   openGraph: {
-    title: 'Book Your Free Therapy Consultation | Wonderloud Therapy',
-    description: 'Schedule your free therapy consultation. No obligation, no forms. Telehealth available.',
+    title: 'Book Your Free Consultation | Wonderloud Therapy',
+    description: 'Schedule your free 15-minute therapy consultation. Telehealth available, licensed therapist.',
     type: 'website',
+    url: 'https://wonderloud-therapy.com/booking',
   },
 }
 

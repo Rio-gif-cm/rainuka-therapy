@@ -1,0 +1,14 @@
+# robots.txt for Wonderloud Therapy
+# Allows all crawlers, declares sitemap location
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.next
+Disallow: /api/internal
+
+# Crawl delay for respectful crawling (5 seconds between requests)
+Crawl-delay: 5
+
+# Sitemap declaration
+Sitemap: https://wonderloud-therapy.com/sitemap.xml

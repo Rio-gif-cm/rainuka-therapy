@@ -7,9 +7,10 @@ import { colors } from '@/app/styles'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Client Success Stories | Wonderloud Therapy',
-  description:
-    'Read real transformation stories from clients who worked through perinatal anxiety, ADHD, career challenges, and grief. De-identified case studies showing what lasting change looks like.',
+  title: 'Client Success Stories | Real Therapy Transformations',
+  description: 'Read how clients overcame perinatal anxiety, ADHD struggles, and career burnout. De-identified case studies showing what lasting change looks like in therapy.',
+  keywords: 'therapy success stories, case studies, client testimonials, therapy transformations',
+  canonical: 'https://wonderloud-therapy.com/case-studies',
 }
 
 const mayaSections = [

@@ -7,13 +7,15 @@ import Link from 'next/link'
 import { expandedTestimonials } from '@/src/data/testimonials'
 
 export const metadata: Metadata = {
-  title: 'About Rainuka Oberoi | Licensed Therapist (Canada, California, Florida)',
-  description: 'Meet Rainuka Oberoi, licensed therapist in Canada, California, and Florida. Specializing in perinatal mental health, adult ADHD diagnosis, career transitions. Trauma-informed, culturally humble therapist.',
+  title: 'About Rainuka — Licensed Therapist (Canada, CA, FL)',
+  description: 'Meet Rainuka Oberoi, trauma-informed therapist licensed in Canada, California, and Florida. Specializing in perinatal mental health, ADHD diagnosis, career transitions. Book a free 15-minute consultation.',
   keywords: 'about rainuka oberoi, therapist, licensed, credentials, training, perinatal mental health, Canada, California, Florida',
+  canonical: 'https://wonderloud-therapy.com/about',
   openGraph: {
-    title: 'About Rainuka Oberoi | Licensed Therapist',
-    description: 'Learn about Rainuka\'s approach, credentials, and why she specializes in perinatal mental health, ADHD diagnosis, and career counseling.',
+    title: 'About Rainuka — Licensed Therapist',
+    description: 'Meet Rainuka Oberoi, trauma-informed therapist licensed in Canada, California, and Florida. Specializing in perinatal mental health, ADHD diagnosis, career transitions.',
     type: 'website',
+    url: 'https://wonderloud-therapy.com/about',
   },
 }
 

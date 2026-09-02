@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import TestimonialCard from '@/components/TestimonialCard'
@@ -22,6 +23,19 @@ const accent = specialtyAccents.career
 
 // Career custom SVG color
 const careerColor = '#1565c0'
+
+export const metadata: Metadata = {
+  title: 'Career Therapy | Burnout & Transition Support',
+  description: 'Career counseling for burnout, job transitions, and meaningful work. Therapy for career satisfaction and life redesign. Book your free 15-minute consultation.',
+  keywords: 'career therapy, career counseling, burnout, job transition, career change, meaningful work',
+  canonical: 'https://wonderloud-therapy.com/career',
+  openGraph: {
+    title: 'Career Therapy | Burnout & Transition Support',
+    description: 'Career counseling for burnout, job transitions, and meaningful work. Therapy for career satisfaction and life redesign.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/career',
+  },
+}
 
 export default function CareerPage() {
   return (

@@ -26,8 +26,17 @@ const accent = specialtyAccents.adhd
 const adhdColor = '#e67e31'
 
 export const metadata: Metadata = {
-  title: 'Adult ADHD Therapy | Diagnosis, Executive Function | Wonderloud Therapy',
-  description: 'Therapy for adult ADHD diagnosis, rejection sensitivity, executive dysfunction, and burnout. ADHD-informed, shame-aware, neurodivergent-affirming therapy for late diagnosis.',
+  title: 'Adult ADHD Therapy | Diagnosis & Executive Function',
+  description: 'ADHD therapy for late diagnosis, rejection sensitivity, and executive dysfunction. Get help with burnout and shame. Book your free 15-minute ADHD consultation.',
+  keywords: 'adult ADHD, ADHD therapy, ADHD diagnosis, executive function, adult ADHD therapy',
+  canonical: 'https://wonderloud-therapy.com/adhd',
+  openGraph: {
+    title: 'Adult ADHD Therapy | Diagnosis & Executive Function',
+    description: 'ADHD therapy for late diagnosis, rejection sensitivity, and executive dysfunction. Get help with burnout and shame. Book your free 15-minute ADHD consultation.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/adhd',
+  },
+}
   keywords: 'ADHD therapy, adult ADHD, ADHD diagnosis, executive dysfunction, ADHD coaching',
   openGraph: {
     title: 'Adult ADHD Therapy | Wonderloud Therapy',

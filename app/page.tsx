@@ -10,13 +10,15 @@ import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
-  description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach. Licensed in Canada, California, and Florida.',
+  title: 'Therapy for Perinatal, ADHD & Career | Wonderloud',
+  description: 'Trauma-informed therapy for perinatal grief, postpartum anxiety, ADHD diagnosis, and career burnout. Get your free 15-minute consultation today.',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, trauma-informed',
+  canonical: 'https://wonderloud-therapy.com',
   openGraph: {
-    title: 'Trauma-Informed Therapy for Perinatal, ADHD & Career | Wonderloud Therapy',
-    description: 'Therapy for perinatal mental health, adult ADHD diagnosis, and career transitions. Telehealth, sliding scale. Trauma-informed, culturally humble approach.',
+    title: 'Therapy for Perinatal, ADHD & Career | Wonderloud',
+    description: 'Trauma-informed therapy for perinatal grief, postpartum anxiety, ADHD diagnosis, and career burnout. Get your free 15-minute consultation today.',
     type: 'website',
+    url: 'https://wonderloud-therapy.com',
   },
 }
 

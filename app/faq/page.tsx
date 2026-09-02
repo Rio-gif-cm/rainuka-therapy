@@ -1,6 +1,14 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Therapy FAQs | Questions Answered',
+  description: 'Answers to common therapy questions: cost, what to expect, therapy length, and more. Learn how working with Rainuka can help you heal.',
+  keywords: 'therapy FAQ, therapy questions, therapy cost, what is therapy, how therapy works',
+  canonical: 'https://wonderloud-therapy.com/faq',
+}
 
 const FAQData = [
   {

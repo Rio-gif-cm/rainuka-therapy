@@ -24,10 +24,16 @@ const accent = specialtyAccents.perinatal
 const perinatalColor = '#c97660'
 
 export const metadata: Metadata = {
-  title: 'Perinatal Therapy | Pregnancy Loss, Postpartum Anxiety, Infertility | Wonderloud Therapy',
-  description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, and reproductive trauma. Rainuka specializes in trauma-informed perinatal mental health support.',
+  title: 'Perinatal Therapy | Pregnancy Loss & Postpartum Anxiety',
+  description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, and infertility. Trauma-informed support for reproductive grief. Schedule your free 15-minute consultation today.',
+  keywords: 'perinatal therapy, postpartum anxiety, pregnancy loss, infertility, reproductive trauma',
+  canonical: 'https://wonderloud-therapy.com/perinatal',
   openGraph: {
-    title: 'Perinatal Therapy | Wonderloud Therapy',
+    title: 'Perinatal Therapy | Pregnancy Loss & Postpartum Anxiety',
+    description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, and infertility. Trauma-informed support for reproductive grief. Schedule your free 15-minute consultation.',
+    type: 'website',
+    url: 'https://wonderloud-therapy.com/perinatal',
+  },
     description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility, reproductive trauma. Compassionate, trauma-informed support.',
     type: 'website',
   },
