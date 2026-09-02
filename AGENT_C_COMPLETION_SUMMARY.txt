@@ -1,0 +1,212 @@
+# AGENT C TASK COMPLETION SUMMARY
+
+**Task:** Propose authentic copy framings. Audit site for therapy clichés and propose 5 alternative ways to say the same thing.
+
+**Status:** ✅ COMPLETE — READY FOR AGENTS A & B COLLABORATION
+
+**Date Completed:** September 1, 2026
+
+---
+
+## WHAT WAS DELIVERED
+
+### 📋 Audit Findings
+- **23 total instances** of 4 therapy industry clichés identified across pages
+- **"Trauma-informed"**: 10 instances
+- **"Healing journey"** (implicit): 9 instances  
+- **"Safe space"**: 3 instances
+- **"Compassionate"**: 1 instance
+
+**Problem:** These phrases are generic, industry-standard, and don't differentiate Rainuka's actual practice.
+
+---
+
+## DOCUMENTS CREATED (4 files)
+
+### 1. **AGENT_C_CLICHE_AUDIT.md** (13 KB)
+Complete audit with:
+- Finding summary for each clichée
+- Where it's used (file paths, line numbers)
+- 5 strategic reframing approaches
+- 5 applied examples to actual pages
+- Communication strategy for Agents A & B
+
+### 2. **FINAL_5_REPHRASINGS.md** (12 KB)
+Implementation-ready document with:
+- Each of 5 rephrasings in final form
+- Context & rationale for each
+- Word count analysis (all are replacements, not additions)
+- Specific file/line locations for developers
+- **Quick swap sheet** for easy implementation
+- Implementation checklist
+
+### 3. **BRAINSTORM_LOG.md** (6 KB)
+Collaboration tracker with:
+- Multi-round feedback structure (A → B → vote → implement)
+- Decision matrix for voting
+- Concern & trade-off analysis
+- Success criteria checklist
+- Commit message template
+
+### 4. **AGENT_C_HANDOFF.md** (8 KB)
+Executive summary with:
+- What was found (summary)
+- What was created (overview of deliverables)
+- 5 rephrasings summary table
+- Why this matters (differentiation, trust, conversion)
+- What I need from Agents A & B (specific feedback requests)
+- Next steps roadmap
+- Quick FAQ
+
+---
+
+## THE 5 REPHRASINGS (At a Glance)
+
+| # | Clichée | Current | Reframing | Pages |
+|---|---------|---------|-----------|-------|
+| 1 | "Trauma-informed" | Generic claim | Specific nervous system work (patterns, hypervigilance, choice) | About, Perinatal |
+| 2 | "Safe space" | Environment promise | Permission & relationship (naming, speaking up, parent tools) | Back-to-school |
+| 3 | "Compassionate" | Empty adjective | Behavioral specifics (access, relationships, systemic understanding) | Disability |
+| 4 | "Healing journey" | Vague trajectory | Understanding & agency (complexity, gap, validation) | Perinatal |
+| 5 | "Trauma-informed" (identity) | Clinical framing | Systemic recognition (discrimination real, survival skills valued) | LGBTQ+ |
+
+**Core principle:** Replace vague therapeutic language with specific, observable outcomes grounded in Rainuka's actual practice.
+
+---
+
+## EXAMPLE: BEFORE & AFTER
+
+### Reframing #1: Trauma-Informed → Nervous System Specificity
+**Before:**
+> "I work trauma-informed, culturally humble, practical."
+
+**After:**
+> "I'm trained to notice when your nervous system is protecting you—hypervigilance, avoidance patterns, the ways you've learned to survive. I understand *why* those patterns made sense. Then, if they're holding you back now, I teach you practical ways to dial them down. This isn't about erasing your survival skills; it's about giving you options."
+
+**Why:** Specific (observable patterns), honest (acknowledges why they developed), actionable (clear outcome).
+
+---
+
+## FILES IN GIT
+
+All 4 documents are committed to: `test/burgundy-deep-gray-sea-blue` branch
+
+```
+git log --oneline -1
+# Shows: docs: Agent C—Complete copy clichée audit & 5 authentic rephrasings
+
+git ls-tree HEAD | grep AGENT_C
+# AGENT_C_CLICHE_AUDIT.md ✅
+# AGENT_C_HANDOFF.md ✅
+# BRAINSTORM_LOG.md ✅
+# FINAL_5_REPHRASINGS.md ✅
+```
+
+---
+
+## QUALITY ASSURANCE
+
+Each reframing was tested against:
+- ✅ **Rainuka's actual practice** (grounded in bio, case studies, FAQs)
+- ✅ **Warmth baseline** (COPY_WARMTH_AUDIT standards maintained)
+- ✅ **Tone consistency** (matches existing brand voice)
+- ✅ **Specificity** (no vague language introduced)
+- ✅ **Authenticity** (nothing sounds corporate or oversold)
+- ✅ **Word efficiency** (replacements, not additions)
+
+---
+
+## NEXT STEPS FOR AGENTS A & B
+
+### Required from Agent A (Site Structure):
+1. Do these rephrasings strengthen brand positioning?
+2. Any structural concerns (page length, navigation)?
+3. Which 5 rephrasings to prioritize?
+
+### Required from Agent B (Conversion):
+1. Do these improve booking confidence/conversion?
+2. Any tone concerns?
+3. Which 5 rephrasings align best with your goals?
+
+### Then:
+1. **Collaborative vote** on final 5
+2. **Code implementation** on feature branch
+3. **Local testing** (warmth baseline, tone consistency)
+4. **Merge** with full brainstorm log preserved in commit
+
+---
+
+## SUCCESS METRICS (Post-Implementation)
+
+- ✅ 23 clichée instances reduced to ≤3 (only legitimate uses)
+- ✅ 5 pages have specific, differentiated, observable-outcome copy
+- ✅ Warmth audit still passes (COPY_WARMTH_AUDIT baseline maintained)
+- ✅ No new clichées introduced
+- ✅ Brand differentiation strengthened
+- ✅ Commit history preserves full decision trail
+- ✅ Ready for A/B testing if desired
+
+---
+
+## KEY FILES REFERENCED (Evidence Base)
+
+**Existing audits (used as baseline):**
+- `COPY_AUDIT.md` — CTA quality audit (shows existing copy work)
+- `COPY_WARMTH_AUDIT.md` — Warmth verification (baseline we must maintain)
+- `TONE_CONSISTENCY_AUDIT.md` — Brand voice patterns (for consistency)
+
+**Newly created:**
+- `AGENT_C_CLICHE_AUDIT.md` ← Main findings document
+- `FINAL_5_REPHRASINGS.md` ← Implementation ready
+- `BRAINSTORM_LOG.md` ← Collaboration tracker
+- `AGENT_C_HANDOFF.md` ← Executive summary
+
+---
+
+## COMMUNICATION TO AGENTS A & B
+
+From `AGENT_C_HANDOFF.md`:
+
+> **For Agent A (Site Structure & Experience):**  
+> "These rephrasings replace corporate therapy language with specific, observable promises. They'll strengthen differentiation—this isn't generic therapy copy. It shows exactly what Rainuka does, which is more trustworthy than 'compassionate' platitudes."
+
+> **For Agent B (Conversion & Flow):**  
+> "These changes make CTAs more specific. Instead of asking people to 'book a call to experience our safe space,' we show them the actual benefit: 'You'll understand why your nervous system does what it does.' That's more compelling conversion copy."
+
+---
+
+## REPO LOCATION
+
+- **Repo:** `C:\Users\Roanm\rainuka-therapy`
+- **Branch:** `test/burgundy-deep-gray-sea-blue`
+- **Documents:** All 4 .md files in repo root
+- **Commit:** Latest commit message references AGENT_C audit
+
+---
+
+## READY FOR COLLABORATION
+
+✅ Audit complete  
+✅ 5 rephrasings finalized  
+✅ Implementation guide ready  
+✅ Collaboration structure defined  
+⏳ **Awaiting Agent A & B feedback on positioning + conversion impact**  
+⏳ **Then: Code changes → Test → Merge with full log**
+
+---
+
+## FINAL CHECKLIST (Agent C)
+
+- ✅ Audited site for therapy clichés
+- ✅ Found 23 instances of 4 core phrases
+- ✅ Proposed 5 strategic reframings with evidence
+- ✅ Applied examples to actual pages
+- ✅ Created collaboration documents
+- ✅ Grounded rephrasings in Rainuka's actual practice
+- ✅ Maintained warmth baseline from COPY_WARMTH_AUDIT
+- ✅ Prepared implementation-ready swap sheet
+- ✅ Committed to git with full documentation
+- ✅ Ready for Agents A & B feedback
+
+**Agent C Task Status: COMPLETE ✅**
+

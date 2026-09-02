@@ -1,0 +1,107 @@
+{
+  "report_generated": "2026-09-01T21:46:09.325369",
+  "project": "rainuka-therapy",
+  "build_status": "SUCCESS",
+  "summary": {
+    "critical_issues": 0,
+    "high_issues": 1,
+    "medium_issues": 1,
+    "low_issues": 81
+  },
+  "issues": [
+    {
+      "rank": 1,
+      "severity": "CRITICAL",
+      "category": "Syntax Error",
+      "title": "Smart quotes in TypeScript/TSX files breaking parser",
+      "description": "34 TypeScript/JSX files contained curly/smart quotes (', ', \", \u2014, \u2013) instead of straight quotes, causing Turbopack parser failures.",
+      "impact": "Build failure - prevents deployment",
+      "files_affected": 34,
+      "status": "FIXED",
+      "fix": "Replaced all smart quotes with straight quotes globally"
+    },
+    {
+      "rank": 2,
+      "severity": "MEDIUM",
+      "category": "Performance",
+      "title": "Missing type module in package.json causes Turbopack overhead",
+      "description": "tailwind.config.ts is reparsed as ES module on every build due to ambiguous module type, incurring performance penalty.",
+      "impact": "Slower build times (25-36ms overhead per build)",
+      "recommendation": "Add type module to package.json",
+      "estimated_fix_time": "1 min"
+    },
+    {
+      "rank": 3,
+      "severity": "LOW",
+      "category": "Code Complexity",
+      "title": "Large JSX page components (100-120 lines)",
+      "description": "81 functions exceed 100 lines, mostly in page.tsx files",
+      "impact": "Harder to test, reuse, and maintain",
+      "recommendation": "Extract data arrays and complex JSX sections into separate components"
+    },
+    {
+      "rank": 4,
+      "severity": "LOW",
+      "category": "Code Quality",
+      "title": "Console.log statements left in source",
+      "description": "31 console statements found in app code",
+      "recommendation": "Wrap in process.env.NODE_ENV checks"
+    },
+    {
+      "rank": 5,
+      "severity": "LOW",
+      "category": "Bundle Optimization",
+      "title": "Moderate bundle sizes - largest chunk 222 KB",
+      "description": "Total JS bundle: 817.7 KB, CSS: 85.8 KB",
+      "recommendation": "Consider lazy loading and code-splitting"
+    },
+    {
+      "rank": 6,
+      "severity": "HIGH",
+      "category": "Testing",
+      "title": "No automated tests found",
+      "description": "No jest.config.js or test files detected",
+      "impact": "No regression detection, higher risk",
+      "recommendation": "Add Jest + React Testing Library tests"
+    },
+    {
+      "rank": 7,
+      "severity": "MEDIUM",
+      "category": "Error Handling",
+      "title": "Minimal error recovery in API routes",
+      "description": "API routes have try-catch but limited error context",
+      "recommendation": "Add structured error codes and logging"
+    },
+    {
+      "rank": 8,
+      "severity": "INFO",
+      "category": "Type Safety",
+      "title": "TypeScript strict mode is enabled",
+      "status": "COMPLIANT"
+    },
+    {
+      "rank": 9,
+      "severity": "INFO",
+      "category": "Build Strategy",
+      "title": "41 static routes pre-rendered successfully",
+      "status": "HEALTHY"
+    },
+    {
+      "rank": 10,
+      "severity": "LOW",
+      "category": "Configuration",
+      "title": "Using Turbopack (experimental)",
+      "description": "Next.js 16 with Turbopack",
+      "recommendation": "Monitor release notes; fallback to webpack if issues arise"
+    }
+  ],
+  "build_metrics": {
+    "build_status": "SUCCESS",
+    "build_time_seconds": 9.4,
+    "typescript_errors": 0,
+    "total_routes": 41,
+    "total_js_kb": 817.7,
+    "total_css_kb": 85.8,
+    "largest_chunk_kb": 222.6
+  }
+}
