@@ -1,11 +1,13 @@
 import type { Config } from 'tailwindcss'
 
 /**
- * Wonderloud Therapy - Design System (TEST PALETTE)
+ * Rainuka Therapy - Design System (NEW PALETTE)
  *
- * TEST: Burgundy (primary), Deep Gray (secondary), Sea Blue (accents)
- * Warm-gray/cream carry neutrals.
- * Four low-chroma persona accents provide differentiation.
+ * Primary: Red #E63946
+ * Accent: Teal #A8DADC
+ * Secondary: Blue #457B9D
+ * Dark: #1D3557
+ * Light: Cream #F1FAEE
  *
  * Rule of thumb: no raw Tailwind palette colors (blue/emerald/rose/amber/
  * purple/slate/gray/...) anywhere in app/ or components/.
@@ -18,20 +20,67 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // ---- Brand primary - BURGUNDY ✅ OFFICIAL -----------------------------------------------
-        'burgundy': {
-          50: '#f7f3f4',
-          100: '#ede3e5',
-          200: '#d9bfc5',
-          300: '#c19b9f',
-          400: '#a8707f',
-          500: '#8a4f61',
-          600: '#6d3a47',
-          700: '#58303a',
-          800: '#482a32',
-          900: '#3c222a',
+        // ---- Brand primary - RED #E63946 ✅ OFFICIAL -----------------------------------------------
+        'primary-red': {
+          50: '#fce8e8',
+          100: '#f7c4c7',
+          200: '#f0a0a5',
+          300: '#e97b83',
+          400: '#e65761',
+          500: '#E63946',
+          600: '#d4313d',
+          700: '#c22934',
+          800: '#b0212b',
+          900: '#8a1922',
         },
-        // ---- Neutrals ------------------------------------------------------
+        // ---- Accent TEAL #A8DADC -----------------------------------------------
+        'accent-teal': {
+          50: '#e0eff2',
+          100: '#b8dfe8',
+          200: '#8fcfde',
+          300: '#66bfd4',
+          400: '#3dafca',
+          500: '#A8DADC',
+          600: '#7dc4cb',
+          700: '#5dadb9',
+          800: '#3d96a7',
+          900: '#1f7f95',
+        },
+        // ---- Secondary BLUE #457B9D -----------------------------------------------
+        'secondary-blue': {
+          50: '#e8f0f8',
+          100: '#c8dff0',
+          200: '#a0cee8',
+          300: '#78bee0',
+          400: '#50add8',
+          500: '#457B9D',
+          600: '#3d6d8f',
+          700: '#355f81',
+          800: '#2d5173',
+          900: '#1f3a55',
+        },
+        // ---- Dark #1D3557 -----------------------------------------------
+        'dark-bg': {
+          50: '#f5f5f5',
+          100: '#e0e0e0',
+          200: '#c8c8c8',
+          300: '#b0b0b0',
+          400: '#909090',
+          500: '#6b6b6b',
+          600: '#555555',
+          700: '#424242',
+          800: '#333333',
+          900: '#1D3557',
+        },
+        // ---- Light Cream #F1FAEE -----------------------------------------------
+        'light-cream': {
+          50: '#f9fdfb',
+          100: '#F1FAEE',
+          200: '#e8f3e6',
+          300: '#dfeedd',
+          400: '#d6e9d4',
+        },
+        // ---- Neutrals - WARM GRAY -----------------------------------------------
         'warm-gray': {
           50: '#faf9f7',
           100: '#ede8e3',
@@ -50,8 +99,21 @@ const config: Config = {
           200: '#ebe3da',
           300: '#ded3c6',
         },
-        // ---- Persona accents (muted, low chroma) ---------------------------
-        // deep-gray - secondary contrast, grounded
+        // ---- LEGACY ALIASES (for backward compatibility) -----------------------------------------------
+        // burgundy -> primary-red
+        'burgundy': {
+          50: '#fce8e8',
+          100: '#f7c4c7',
+          200: '#f0a0a5',
+          300: '#e97b83',
+          400: '#e65761',
+          500: '#E63946',
+          600: '#d4313d',
+          700: '#c22934',
+          800: '#b0212b',
+          900: '#8a1922',
+        },
+        // Persona accents (muted, low chroma) - KEPT FOR REFERENCE
         'deep-gray': {
           50: '#f5f5f5',
           100: '#e0e0e0',
@@ -64,7 +126,6 @@ const config: Config = {
           800: '#333333',
           900: '#1f1f1f',
         },
-        // sea-blue - cool accent, calming
         'sea-blue': {
           50: '#f0f7fa',
           100: '#dde9f0',
@@ -77,7 +138,6 @@ const config: Config = {
           800: '#14435b',
           900: '#0c2d43',
         },
-        // blue-herring (optional) - subtle teal-blue
         'blue-herring': {
           50: '#f2f9f8',
           100: '#ddf1f0',
@@ -90,7 +150,6 @@ const config: Config = {
           800: '#125250',
           900: '#0a3a38',
         },
-        // clay - warmth, invitation, couples & CTAs
         'clay': {
           50: '#fdf7f4',
           100: '#f7e9e1',
@@ -102,7 +161,6 @@ const config: Config = {
           700: '#a5503a',
           800: '#83402f',
         },
-        // dusk - steady, grounded; men, ADHD, grief, informational notes
         'dusk': {
           50: '#f5f7fa',
           100: '#e6ecf3',
@@ -114,7 +172,6 @@ const config: Config = {
           700: '#3f566d',
           800: '#334458',
         },
-        // honey - ochre warmth; career, seasonal, caution
         'honey': {
           50: '#fdf9f1',
           100: '#f7eedc',
@@ -126,7 +183,6 @@ const config: Config = {
           700: '#84603c',
           800: '#684b30',
         },
-        // blush - tender mauve; perinatal, testimonials
         'blush': {
           50: '#fcf6f6',
           100: '#f4e6e6',
@@ -137,8 +193,6 @@ const config: Config = {
           600: '#8c5c5b',
           700: '#714a49',
         },
-        // ---- Semantic ------------------------------------------------------
-        // alert - muted brick. The only "red" in the system.
         'alert': {
           50: '#fcf5f3',
           100: '#f5e3dd',
@@ -149,7 +203,6 @@ const config: Config = {
           600: '#934833',
           700: '#763a2a',
         },
-        // Legacy alias kept so existing `warm-accent` usages keep resolving.
         'warm-accent': {
           light: '#f7e9e1',
           DEFAULT: '#d97757',

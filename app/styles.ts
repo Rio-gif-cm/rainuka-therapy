@@ -1,16 +1,59 @@
 // Design system colors and styles as JavaScript objects
 const baseColors = {
-  burgundy: {
-    50: '#f7f3f4',
-    100: '#ede3e5',
-    200: '#d9bfc5',
-    300: '#c19b9f',
-    400: '#a8707f',
-    500: '#8a4f61',
-    600: '#6d3a47',
-    700: '#58303a',
-    800: '#482a32',
-    900: '#3c222a',
+  primaryRed: {
+    50: '#fce8e8',
+    100: '#f7c4c7',
+    200: '#f0a0a5',
+    300: '#e97b83',
+    400: '#e65761',
+    500: '#E63946',
+    600: '#d4313d',
+    700: '#c22934',
+    800: '#b0212b',
+    900: '#8a1922',
+  },
+  accentTeal: {
+    50: '#e0eff2',
+    100: '#b8dfe8',
+    200: '#8fcfde',
+    300: '#66bfd4',
+    400: '#3dafca',
+    500: '#A8DADC',
+    600: '#7dc4cb',
+    700: '#5dadb9',
+    800: '#3d96a7',
+    900: '#1f7f95',
+  },
+  secondaryBlue: {
+    50: '#e8f0f8',
+    100: '#c8dff0',
+    200: '#a0cee8',
+    300: '#78bee0',
+    400: '#50add8',
+    500: '#457B9D',
+    600: '#3d6d8f',
+    700: '#355f81',
+    800: '#2d5173',
+    900: '#1f3a55',
+  },
+  darkBg: {
+    50: '#f5f5f5',
+    100: '#e0e0e0',
+    200: '#c8c8c8',
+    300: '#b0b0b0',
+    400: '#909090',
+    500: '#6b6b6b',
+    600: '#555555',
+    700: '#424242',
+    800: '#333333',
+    900: '#1D3557',
+  },
+  lightCream: {
+    50: '#f9fdfb',
+    100: '#F1FAEE',
+    200: '#e8f3e6',
+    300: '#dfeedd',
+    400: '#d6e9d4',
   },
   warmGray: {
     50: '#faf9f7',
@@ -24,21 +67,22 @@ const baseColors = {
     800: '#4c443e',
     900: '#3f3935',
   },
-  accent: '#d97757',
 }
 
 /**
- * Public token object. `sageGreen` is a legacy alias for the burgundy ramp - older
- * surfaces (providers directory, verification badge) address it by that name,
- * so both keys resolve to the exact same values.
- * 
- * IMPROVEMENT #2: Color hierarchy standardized to burgundy (primary brand color)
- * All interactive elements use burgundy-600 (base), burgundy-700 (hover/active)
+ * Public token object. Uses the new color palette:
+ * - Primary red (#E63946) for main CTAs and primary actions
+ * - Accent teal (#A8DADC) for secondary accents and highlights
+ * - Secondary blue (#457B9D) for informational elements
+ * - Dark (#1D3557) for text and dark backgrounds
+ * - Light cream (#F1FAEE) for light backgrounds
  */
 export const colors = {
   ...baseColors,
-  sage: baseColors.burgundy,  // Backward compatibility alias
-  sageGreen: baseColors.burgundy,  // Backward compatibility alias
+  // Backward compatibility aliases
+  burgundy: baseColors.primaryRed,
+  sage: baseColors.primaryRed,
+  sageGreen: baseColors.primaryRed,
 }
 
 // ---------------------------------------------------------------
@@ -82,15 +126,15 @@ export const layout = {
 export const styles = {
   body: {
     fontFamily: 'var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-    backgroundColor: colors.warmGray[50],
-    color: colors.warmGray[700],
+    backgroundColor: colors.lightCream[100],
+    color: colors.darkBg[900],
     lineHeight: '1.6',
   },
   h1: {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(2rem, 5vw, 3.5rem)',
     fontWeight: 700,
-    color: colors.warmGray[900],
+    color: colors.darkBg[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1.5rem',
@@ -99,7 +143,7 @@ export const styles = {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
     fontWeight: 700,
-    color: colors.warmGray[900],
+    color: colors.darkBg[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1.5rem',
@@ -108,7 +152,7 @@ export const styles = {
     fontFamily: 'var(--font-merriweather), serif',
     fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',
     fontWeight: 700,
-    color: colors.warmGray[900],
+    color: colors.darkBg[900],
     lineHeight: '1.3',
     letterSpacing: '-0.5px',
     marginBottom: '1rem',
@@ -117,7 +161,7 @@ export const styles = {
     fontSize: '1rem',
     lineHeight: '1.75',
     marginBottom: '1rem',
-    color: colors.warmGray[700],
+    color: colors.darkBg[900],
   },
   button: {
     display: 'inline-flex',
@@ -133,22 +177,22 @@ export const styles = {
     transition: 'all 0.3s ease',
   },
   btnPrimary: {
-    backgroundColor: colors.burgundy[600],
+    backgroundColor: colors.primaryRed[500],
     color: 'white',
   },
   btnPrimaryHover: {
-    backgroundColor: colors.burgundy[700],
-    boxShadow: `0 10px 25px rgba(107, 148, 79, 0.15)`,
+    backgroundColor: colors.primaryRed[600],
+    boxShadow: `0 10px 25px rgba(230, 57, 70, 0.25)`,
   },
   btnOutline: {
     backgroundColor: 'transparent',
-    color: colors.burgundy[600],
-    border: `2px solid ${colors.burgundy[600]}`,
+    color: colors.primaryRed[500],
+    border: `2px solid ${colors.primaryRed[500]}`,
   },
   btnOutlineHover: {
-    backgroundColor: colors.burgundy[50],
-    borderColor: colors.burgundy[700],
-    color: colors.burgundy[700],
+    backgroundColor: colors.primaryRed[50],
+    borderColor: colors.primaryRed[600],
+    color: colors.primaryRed[600],
   },
   /**
    * Standard section band. Matches `.section-padding` in globals.css
@@ -232,7 +276,7 @@ export const layoutStyles = {
 
 export const footerStyles = {
   footer: {
-    backgroundColor: colors.warmGray[900],
+    backgroundColor: colors.darkBg[900],
     color: 'white',
     paddingTop: spacing[8],    // 64px
     paddingBottom: spacing[4], // 32px
@@ -268,7 +312,7 @@ export const footerStyles = {
     textDecoration: 'none',
   },
   footerMeta: {
-    borderTop: `1px solid ${colors.warmGray[700]}`,
+    borderTop: `1px solid ${colors.darkBg[700]}`,
     maxWidth: layout.containerMax,
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -352,12 +396,12 @@ export const heroStyles = {
     aspectRatio: '1' as const,
     borderRadius: '1.5rem',
     overflow: 'hidden' as const,
-    boxShadow: '0 25px 50px -12px rgba(107, 148, 79, 0.25)',
+    boxShadow: '0 25px 50px -12px rgba(69, 123, 157, 0.25)',
     display: 'flex' as const,
     alignItems: 'center' as const,
     justifyContent: 'center' as const,
     position: 'relative' as const,
-    border: `1px solid ${colors.burgundy[100]}`,
+    border: `1px solid ${colors.accentTeal[100]}`,
   },
   heroImageGradient: {
     position: 'absolute' as const,
@@ -374,7 +418,7 @@ export const navigationStyles = {
     top: 0,
     zIndex: 50,
     backgroundColor: 'white',
-    borderBottom: `1px solid ${colors.warmGray[200]}`,
+    borderBottom: `1px solid ${colors.lightCream[200]}`,
   },
   /* Aligned to layout.containerMax + gutter so the brand and nav links
      sit on the exact same left/right edge as page content below. */
@@ -440,7 +484,7 @@ export const globalStyles = `
 /* PRIMARY BUTTON: Hover (scale up + shadow lift) + Focus (ring) + Active (press down) */
 .btn-primary {
   transition: all 0.15s ease-out;
-  background-color: ${colors.burgundy[600]};
+  background-color: #E63946;
   color: white;
   border: none;
   cursor: pointer;
@@ -449,74 +493,74 @@ export const globalStyles = `
 }
 
 .btn-primary:hover {
-  background-color: ${colors.burgundy[700]};
-  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+  background-color: #d4313d;
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
   transform: scale(1.03);
 }
 
 .btn-primary:focus {
-  outline: 2px solid ${colors.burgundy[600]};
+  outline: 2px solid #E63946;
   outline-offset: 3px;
-  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
 }
 
 .btn-primary:active {
   transform: scale(0.98);
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
-  background-color: ${colors.burgundy[700]};
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.15);
+  background-color: #d4313d;
 }
 
 /* OUTLINE BUTTON: Enhanced states with better feedback */
 .btn-outline {
   transition: all 0.15s ease-out;
   background-color: transparent;
-  color: ${colors.burgundy[600]};
-  border: 2px solid ${colors.burgundy[600]};
+  color: #E63946;
+  border: 2px solid #E63946;
   cursor: pointer;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
 .btn-outline:hover {
-  background-color: ${colors.burgundy[50]};
-  border-color: ${colors.burgundy[700]};
-  color: ${colors.burgundy[700]};
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+  background-color: #fce8e8;
+  border-color: #d4313d;
+  color: #d4313d;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.12);
   transform: scale(1.02);
 }
 
 .btn-outline:focus {
-  outline: 2px solid ${colors.burgundy[600]};
+  outline: 2px solid #E63946;
   outline-offset: 3px;
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.12);
 }
 
 .btn-outline:active {
-  background-color: ${colors.burgundy[50]};
-  border-color: ${colors.burgundy[700]};
-  color: ${colors.burgundy[700]};
+  background-color: #fce8e8;
+  border-color: #d4313d;
+  color: #d4313d;
   transform: scale(0.98);
-  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
+  box-shadow: 0 2px 6px rgba(230, 57, 70, 0.1);
 }
 
 /* LINK BUTTONS: Subtle hover with underline enhancement */
 .btn-link {
   transition: all 0.15s ease-out;
-  color: ${colors.burgundy[600]};
+  color: #E63946;
   text-decoration: none;
-  border-bottom: 2px solid ${colors.burgundy[600]};
+  border-bottom: 2px solid #E63946;
   outline: 2px solid transparent;
   outline-offset: 2px;
   cursor: pointer;
 }
 
 .btn-link:hover {
-  color: ${colors.burgundy[700]};
-  border-bottom-color: ${colors.burgundy[700]};
+  color: #d4313d;
+  border-bottom-color: #d4313d;
 }
 
 .btn-link:focus {
-  outline: 2px solid ${colors.burgundy[600]};
+  outline: 2px solid #E63946;
   outline-offset: 3px;
 }
 
@@ -529,7 +573,7 @@ export const globalStyles = `
      card system in app/globals.css (.card / .niche-card). Only focus affordance
      lives here so it can't drift from the shared surface. */
 .niche-card:focus-within {
-  outline: 2px solid ${colors.burgundy[600]};
+  outline: 2px solid #E63946;
   outline-offset: 2px;
 }
 
@@ -537,12 +581,12 @@ export const globalStyles = `
 .explore-arrow {
   display: inline-block;
   transition: all 0.3s ease;
-  color: ${colors.burgundy[600]};
+  color: #E63946;
 }
 
 .niche-card:hover .explore-arrow,
 .niche-card:active .explore-arrow {
-  color: ${colors.burgundy[700]};
+  color: #d4313d;
   animation: arrowBounce 0.6s ease;
 }
 

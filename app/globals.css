@@ -2,25 +2,25 @@
 @config "../tailwind.config.ts";
 
 /* ========================================
-   DESIGN SYSTEM COLOR TOKENS — OKLCH() MODERN PALETTE
-   Burgundy/Deep Gray/Sea Blue palette with oklch() for perceptual uniformity.
-   Mirrors tailwind.config.ts exactly. Sage is the brand; warm-gray/cream
-   carry every neutral; clay/dusk/honey/blush are the muted persona accents;
-   `alert` is the ONLY red and it is a desaturated brick.
+   DESIGN SYSTEM COLOR TOKENS — NEW PALETTE
+   Red #E63946 / Teal #A8DADC / Blue #457B9D / Dark #1D3557 / Cream #F1FAEE
+   Mirrors tailwind.config.ts exactly. Primary Red is the brand; secondary Blue
+   and accent Teal provide accent hierarchy; warm-gray/cream carry neutrals;
+   clay/dusk/honey/blush are the muted persona accents.
    Never introduce a raw Tailwind palette hue (blue/emerald/rose/...).
    ======================================== */
 :root {
-  /* Brand — sage (oklch modern) */
-  --burgundy-50: #f8faf7;
-  --burgundy-100: #e8ede5;
-  --burgundy-200: #d1dcc8;
-  --burgundy-300: #b5c7aa;
-  --burgundy-400: #9dbb8d;
-  --burgundy-500: #82a86c;
-  --burgundy-600: oklch(0.52 0.14 142);  /* Modern oklch sage primary */
-  --burgundy-700: #547c3f;
-  --burgundy-800: #426232;
-  --burgundy-900: #334c27;
+  /* Brand — Primary Red #E63946 */
+  --burgundy-50: #fce8e8;
+  --burgundy-100: #f7c4c7;
+  --burgundy-200: #f0a0a5;
+  --burgundy-300: #e97b83;
+  --burgundy-400: #e65761;
+  --burgundy-500: #E63946;
+  --burgundy-600: #d4313d;
+  --burgundy-700: #c22934;
+  --burgundy-800: #b0212b;
+  --burgundy-900: #8a1922;
 
   /* Neutrals — warm-gray */
   --warm-gray-50: #faf9f7;
@@ -33,6 +33,49 @@
   --warm-gray-700: #5e534a;
   --warm-gray-800: #4c443e;
   --warm-gray-900: #3f3935;
+
+  /* Accent Teal #A8DADC */
+  --accent-teal-50: #e0eff2;
+  --accent-teal-100: #b8dfe8;
+  --accent-teal-200: #8fcfde;
+  --accent-teal-300: #66bfd4;
+  --accent-teal-400: #3dafca;
+  --accent-teal-500: #A8DADC;
+  --accent-teal-600: #7dc4cb;
+  --accent-teal-700: #5dadb9;
+  --accent-teal-800: #3d96a7;
+  --accent-teal-900: #1f7f95;
+
+  /* Secondary Blue #457B9D */
+  --secondary-blue-50: #e8f0f8;
+  --secondary-blue-100: #c8dff0;
+  --secondary-blue-200: #a0cee8;
+  --secondary-blue-300: #78bee0;
+  --secondary-blue-400: #50add8;
+  --secondary-blue-500: #457B9D;
+  --secondary-blue-600: #3d6d8f;
+  --secondary-blue-700: #355f81;
+  --secondary-blue-800: #2d5173;
+  --secondary-blue-900: #1f3a55;
+
+  /* Dark Background #1D3557 */
+  --dark-bg-50: #f5f5f5;
+  --dark-bg-100: #e0e0e0;
+  --dark-bg-200: #c8c8c8;
+  --dark-bg-300: #b0b0b0;
+  --dark-bg-400: #909090;
+  --dark-bg-500: #6b6b6b;
+  --dark-bg-600: #555555;
+  --dark-bg-700: #424242;
+  --dark-bg-800: #333333;
+  --dark-bg-900: #1D3557;
+
+  /* Light Cream #F1FAEE */
+  --light-cream-50: #f9fdfb;
+  --light-cream-100: #F1FAEE;
+  --light-cream-200: #e8f3e6;
+  --light-cream-300: #dfeedd;
+  --light-cream-400: #d6e9d4;
 
   /* Deep Gray (oklch) — burgundy-adjacent dark anchor */
   --deep-gray-600: oklch(0.38 0.08 20);
@@ -89,9 +132,9 @@
   --alert-600: #934833;
   --alert-700: #763a2a;
 
-  /* Legacy aliases */
-  --accent-warm: #d97757;
-  --accent-warm-dark: #c96547;
+  /* Legacy aliases — map old names to new palette */
+  --accent-warm: #E63946;
+  --accent-warm-dark: #d4313d;
 
   /* ----------------------------------------
      GRADIENT TOKENS — sophisticated + subtle.

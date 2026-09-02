@@ -143,7 +143,7 @@ export default function FinancialAccessPage() {
         <section className="section-padding bg-white">
           <div className="container-base">
             <div className="max-w-3xl mx-auto">
-              <div className="p-6 rounded bg-cream-100" style={{ borderLeft: `4px solid ${colors.accent}` }}>
+              <div className="p-6 rounded bg-cream-100" style={{ borderLeft: `4px solid ${colors.accentTeal[500]}` }}>
                 <h2 className="text-2xl font-serif font-bold text-warm-gray-900 mb-3">
                   The Reality: Cost Is the #1 Barrier
                 </h2>
