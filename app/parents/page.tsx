@@ -4,6 +4,12 @@ import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
 import { IconHeading, IconListItem } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Therapy for Parents | Overwhelm, Anxiety, Kids Stress',
+  description: 'Parenting feels impossible. Therapy helps you find your footing when kids anxiety, your own anxiety, or the chaos feels overwhelming. Support for new parents, adoptive parents, parents of neurodivergent kids.',
+}
 
 const parentsFAQ = [
   {
@@ -59,17 +65,6 @@ const faqSchema = {
       text: faq.a,
     },
   })),
-}
-
-export const metadata: Metadata = {
-  title: 'Parenting Therapy | Caregiver Burnout & Support',
-  description: 'Therapy for parenting anxiety, caregiver burnout, parental guilt, boundaries. Support for parents running on empty. Get help.',
-  openGraph: {
-    title: 'Parenting Therapy: Managing the Weight | Wonderloud Therapy',
-    description:
-      'Parenting anxiety, caregiver burnout, guilt, and boundaries. Support for the person doing the caring.',
-    type: 'website',
-  },
 }
 
 export default function ParentsPage() {

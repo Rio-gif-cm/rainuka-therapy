@@ -53,16 +53,10 @@ const nextConfig: NextConfig = {
   // Optimize images for mobile (better LCP)
   images: {
     formats: ['image/avif', 'image/webp'],
-    // Enable experimental optimization
-    optimizePackageImports: ['lucide-react'],
   },
 
-  // Bundle analysis and optimization
-  webpack: (config, { isServer }) => {
-    // Tree-shake unused exports
-    config.optimization.usedExports = true
-    return config
-  },
+  // Use Turbopack (default in Next.js 16)
+  turbopack: {},
 
   // Service Worker: 2026-08-31-18:45
 }

@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import ReferralCode from '@/components/ReferralCode';
 
-import { Metadata } from 'next'
-
 export const metadata: Metadata = {
   title: 'Share Therapy Support | Refer a Friend | Help',
   description: 'Help a friend find therapy support. No cost. Share Wonderloud Therapy with your network. Support mental health accessibility.',

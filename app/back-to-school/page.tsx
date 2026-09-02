@@ -51,9 +51,9 @@ export default function BackToSchoolPage() {
                 'Catastrophizing ("What if I don\'t fit in?" / "What if my child gets hurt?")',
                 'Physical symptoms: stomach issues, headaches, racing heart',
               ].map((item, index) => (
-                <IconListItem key={index} icon="✓" color={colors.sage[600]}>
-                  {item}
-                </IconListItem>
+                <li key={index} style={{ color: colors.sage[600], marginBottom: '0.5rem' }}>
+                  ✓ {item}
+                </li>
               ))}
             </div>
           </div>
