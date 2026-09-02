@@ -3,81 +3,99 @@
 
 /* ========================================
    DESIGN SYSTEM COLOR TOKENS — NEW PALETTE
-   Red #E63946 / Teal #A8DADC / Blue #457B9D / Dark #1D3557 / Cream #F1FAEE
-   Mirrors tailwind.config.ts exactly. Primary Red is the brand; secondary Blue
-   and accent Teal provide accent hierarchy; warm-gray/cream carry neutrals;
+   CB997E (light bronze) / EDDCD2 (powder petal) / FFF1E6 (linen) / F0EFEB (parchment)
+   DDBEA9 (desert sand) / A5A58D (dry sage) / B7B7A4 (ash grey)
+   Mirrors tailwind.config.ts exactly. Primary Bronze is the brand; secondary Sand
+   and accent Petal provide accent hierarchy; neutral-sage/neutral-ash carry neutrals;
    clay/dusk/honey/blush are the muted persona accents.
    Never introduce a raw Tailwind palette hue (blue/emerald/rose/...).
    ======================================== */
 :root {
-  /* Brand — Primary Red #E63946 */
-  --burgundy-50: #fce8e8;
-  --burgundy-100: #f7c4c7;
-  --burgundy-200: #f0a0a5;
-  --burgundy-300: #e97b83;
-  --burgundy-400: #e65761;
-  --burgundy-500: #E63946;
-  --burgundy-600: #d4313d;
-  --burgundy-700: #c22934;
-  --burgundy-800: #b0212b;
-  --burgundy-900: #8a1922;
+  /* Brand — Primary Bronze #CB997E */
+  --primary-bronze-50: #f9f6f3;
+  --primary-bronze-100: #f1ebe5;
+  --primary-bronze-200: #e8dfd6;
+  --primary-bronze-300: #ddd0c5;
+  --primary-bronze-400: #d6bfb1;
+  --primary-bronze-500: #CB997E;
+  --primary-bronze-600: #c08470;
+  --primary-bronze-700: #b37062;
+  --primary-bronze-800: #9e5c4a;
+  --primary-bronze-900: #8a4937;
 
-  /* Neutrals — warm-gray */
-  --warm-gray-50: #faf9f7;
-  --warm-gray-100: #ede8e3;
-  --warm-gray-200: #ddd4cc;
-  --warm-gray-300: #c9b8ac;
-  --warm-gray-400: #ab9c91;
-  --warm-gray-500: #8f8279;
-  --warm-gray-600: #7a6f68;
-  --warm-gray-700: #5e534a;
-  --warm-gray-800: #4c443e;
-  --warm-gray-900: #3f3935;
+  /* Neutrals — DRY SAGE */
+  --neutral-sage-50: #f8f8f5;
+  --neutral-sage-100: #f0eee8;
+  --neutral-sage-200: #e8e5de;
+  --neutral-sage-300: #dfdcd3;
+  --neutral-sage-400: #d7d3c8;
+  --neutral-sage-500: #A5A58D;
+  --neutral-sage-600: #99997a;
+  --neutral-sage-700: #8d8d67;
+  --neutral-sage-800: #808054;
+  --neutral-sage-900: #737341;
 
-  /* Accent Teal #A8DADC */
-  --accent-teal-50: #e0eff2;
-  --accent-teal-100: #b8dfe8;
-  --accent-teal-200: #8fcfde;
-  --accent-teal-300: #66bfd4;
-  --accent-teal-400: #3dafca;
-  --accent-teal-500: #A8DADC;
-  --accent-teal-600: #7dc4cb;
-  --accent-teal-700: #5dadb9;
-  --accent-teal-800: #3d96a7;
-  --accent-teal-900: #1f7f95;
+  /* Neutrals — ASH GREY */
+  --neutral-ash-50: #faf9f7;
+  --neutral-ash-100: #f3f2ee;
+  --neutral-ash-200: #ede9e3;
+  --neutral-ash-300: #e6e1d8;
+  --neutral-ash-400: #dfdacf;
+  --neutral-ash-500: #B7B7A4;
+  --neutral-ash-600: #aaaa93;
+  --neutral-ash-700: #9d9d82;
+  --neutral-ash-800: #909071;
+  --neutral-ash-900: #838360;
 
-  /* Secondary Blue #457B9D */
-  --secondary-blue-50: #e8f0f8;
-  --secondary-blue-100: #c8dff0;
-  --secondary-blue-200: #a0cee8;
-  --secondary-blue-300: #78bee0;
-  --secondary-blue-400: #50add8;
-  --secondary-blue-500: #457B9D;
-  --secondary-blue-600: #3d6d8f;
-  --secondary-blue-700: #355f81;
-  --secondary-blue-800: #2d5173;
-  --secondary-blue-900: #1f3a55;
+  /* Accent POWDER PETAL #EDDCD2 */
+  --accent-petal-50: #fefdfb;
+  --accent-petal-100: #fdf8f5;
+  --accent-petal-200: #fdf0eb;
+  --accent-petal-300: #fce8e1;
+  --accent-petal-400: #fbe0d7;
+  --accent-petal-500: #EDDCD2;
+  --accent-petal-600: #e5cfc2;
+  --accent-petal-700: #dcc1b0;
+  --accent-petal-800: #d1b0a0;
+  --accent-petal-900: #c49680;
 
-  /* Dark Background #1D3557 */
-  --dark-bg-50: #f5f5f5;
-  --dark-bg-100: #e0e0e0;
-  --dark-bg-200: #c8c8c8;
-  --dark-bg-300: #b0b0b0;
-  --dark-bg-400: #909090;
-  --dark-bg-500: #6b6b6b;
-  --dark-bg-600: #555555;
-  --dark-bg-700: #424242;
-  --dark-bg-800: #333333;
-  --dark-bg-900: #1D3557;
+  /* Secondary DESERT SAND #DDBEA9 */
+  --secondary-sand-50: #faf9f7;
+  --secondary-sand-100: #f3ede8;
+  --secondary-sand-200: #ede4dd;
+  --secondary-sand-300: #e6d9d0;
+  --secondary-sand-400: #decdc3;
+  --secondary-sand-500: #DDBEA9;
+  --secondary-sand-600: #d4a993;
+  --secondary-sand-700: #c89577;
+  --secondary-sand-800: #b5805e;
+  --secondary-sand-900: #a36b45;
 
-  /* Light Cream #F1FAEE */
-  --light-cream-50: #f9fdfb;
-  --light-cream-100: #F1FAEE;
-  --light-cream-200: #e8f3e6;
-  --light-cream-300: #dfeedd;
-  --light-cream-400: #d6e9d4;
+  /* Light LINEN #FFF1E6 */
+  --light-linen-50: #fffef9;
+  --light-linen-100: #fffcf3;
+  --light-linen-200: #fffaf0;
+  --light-linen-300: #fff8ed;
+  --light-linen-400: #fff5e9;
+  --light-linen-500: #FFF1E6;
+  --light-linen-600: #ffecd0;
+  --light-linen-700: #ffe6b9;
+  --light-linen-800: #ffdfa0;
+  --light-linen-900: #ffd885;
 
-  /* Deep Gray (oklch) — burgundy-adjacent dark anchor */
+  /* Background PARCHMENT #F0EFEB */
+  --bg-parchment-50: #faf9f8;
+  --bg-parchment-100: #f6f5f2;
+  --bg-parchment-200: #f3f1ed;
+  --bg-parchment-300: #f0ede8;
+  --bg-parchment-400: #ede9e3;
+  --bg-parchment-500: #F0EFEB;
+  --bg-parchment-600: #e8e6e0;
+  --bg-parchment-700: #dfded8;
+  --bg-parchment-800: #d5d3cc;
+  --bg-parchment-900: #ccc9c2;
+
+  /* Deep Gray (oklch) — bronze-adjacent dark anchor */
   --deep-gray-600: oklch(0.38 0.08 20);
   --deep-gray-700: oklch(0.32 0.07 20);
   --deep-gray-900: oklch(0.22 0.05 20);
@@ -85,12 +103,6 @@
   /* Sea Blue (oklch) — cool accent for secondary CTAs & highlights */
   --sea-blue-400: oklch(0.63 0.15 200);
   --sea-blue-600: oklch(0.42 0.18 200);
-
-  /* Neutrals — cream */
-  --cream-50: #fdfbf8;
-  --cream-100: #f5f0eb;
-  --cream-200: #ebe3da;
-  --cream-300: #ded3c6;
 
   /* Persona accent — clay (warmth, invitation, CTAs, perinatal) */
   --clay-50: #fdf7f4;
@@ -133,8 +145,8 @@
   --alert-700: #763a2a;
 
   /* Legacy aliases — map old names to new palette */
-  --accent-warm: #E63946;
-  --accent-warm-dark: #d4313d;
+  --accent-warm: #CB997E;
+  --accent-warm-dark: #c08470;
 
   /* ----------------------------------------
      GRADIENT TOKENS — sophisticated + subtle.
@@ -142,16 +154,15 @@
      than roughly one neutral step, so they read as light falling across a
      surface rather than as a colour band.
      ---------------------------------------- */
-  --grad-sage-mist: linear-gradient(135deg, var(--warm-gray-50) 0%, var(--burgundy-50) 45%, var(--burgundy-100) 100%);
-  --grad-sage-veil: linear-gradient(180deg, var(--burgundy-50) 0%, #ffffff 100%);
-  --grad-sage-veil-up: linear-gradient(180deg, #ffffff 0%, var(--burgundy-50) 100%);
-  --grad-warm-linen: linear-gradient(135deg, var(--cream-50) 0%, var(--warm-gray-50) 50%, var(--cream-100) 100%);
-  --grad-warm-veil: linear-gradient(180deg, var(--warm-gray-50) 0%, #ffffff 100%);
-  --grad-card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.35) 100%);
-  --grad-clay-veil: linear-gradient(135deg, var(--clay-50) 0%, #ffffff 100%);
-  --grad-dusk-veil: linear-gradient(135deg, var(--dusk-50) 0%, #ffffff 100%);
-  --grad-honey-veil: linear-gradient(135deg, var(--honey-50) 0%, #ffffff 100%);
-  --grad-blush-veil: linear-gradient(135deg, var(--blush-50) 0%, #ffffff 100%);
+  --grad-bronze-mist: linear-gradient(135deg, #f9f6f3 0%, #faf9f7 45%, #f1ebe5 100%);
+  --grad-bronze-veil: linear-gradient(180deg, #f9f6f3 0%, #ffffff 100%);
+  --grad-bronze-veil-up: linear-gradient(180deg, #ffffff 0%, #f9f6f3 100%);
+  --grad-warm-linen: linear-gradient(135deg, #FFF1E6 0%, #F0EFEB 50%, #EDDCD2 100%);
+  --grad-warm-veil: linear-gradient(180deg, #F0EFEB 0%, #ffffff 100%);
+  --grad-card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 239, 235, 0.35) 100%);
+  --grad-sand-veil: linear-gradient(135deg, #DDBEA9 0%, #ffffff 100%);
+  --grad-petal-veil: linear-gradient(135deg, #EDDCD2 0%, #ffffff 100%);
+  --grad-linen-veil: linear-gradient(135deg, #FFF1E6 0%, #ffffff 100%);
 
   /* ========================================
      SPACING & LAYOUT RHYTHM TOKENS — 8px base unit
@@ -294,30 +305,30 @@
 
   /* Border treatment: hairline frame + coloured top accent */
   --card-border-width: 1px;
-  --card-border-color: rgba(209, 220, 200, 0.6);
-  --card-border-color-hover: rgba(130, 168, 108, 0.7);
+  --card-border-color: rgba(165, 165, 141, 0.4);
+  --card-border-color-hover: rgba(165, 165, 141, 0.7);
   --card-accent-width: 3px;
-  --card-accent-color: var(--burgundy-600);
+  --card-accent-color: #c08470;
 
   /* Surface */
-  --card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 250, 247, 0.3) 100%);
-  --card-surface-hover: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 247, 0.5) 100%);
+  --card-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(240, 239, 235, 0.3) 100%);
+  --card-surface-hover: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(240, 239, 235, 0.5) 100%);
 
   /* Shadow depth ladder: rest -> hover -> pressed */
   --card-shadow-rest:
-    0 1px 2px rgba(63, 57, 53, 0.04),
-    0 4px 8px rgba(107, 148, 79, 0.05),
-    0 12px 24px rgba(63, 57, 53, 0.08),
+    0 1px 2px rgba(138, 73, 55, 0.04),
+    0 4px 8px rgba(203, 153, 126, 0.05),
+    0 12px 24px rgba(138, 73, 55, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   --card-shadow-hover:
-    0 2px 4px rgba(63, 57, 53, 0.08),
-    0 8px 16px rgba(107, 148, 79, 0.12),
-    0 24px 48px rgba(63, 57, 53, 0.15),
+    0 2px 4px rgba(138, 73, 55, 0.08),
+    0 8px 16px rgba(203, 153, 126, 0.12),
+    0 24px 48px rgba(138, 73, 55, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 1);
   --card-shadow-active:
-    0 1px 3px rgba(63, 57, 53, 0.1),
-    0 6px 12px rgba(107, 148, 79, 0.12),
-    0 14px 28px rgba(63, 57, 53, 0.12),
+    0 1px 3px rgba(138, 73, 55, 0.1),
+    0 6px 12px rgba(203, 153, 126, 0.12),
+    0 14px 28px rgba(138, 73, 55, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 1);
 
   /* Motion — see MOTION SYSTEM below for the tokens used here */
@@ -366,8 +377,8 @@ body {
   font-family: var(--font-sans);
   font-size: var(--step-0);
   font-weight: var(--weight-body);
-  background-color: var(--warm-gray-50);
-  color: var(--warm-gray-700);
+  background-color: var(--bg-parchment-50);
+  color: var(--neutral-ash-700);
   line-height: var(--leading-body);
   letter-spacing: var(--tracking-body);
   /* Editorial refinements: proportional-but-lining figures, real kerning,
@@ -383,7 +394,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  color: var(--warm-gray-900);
+  color: var(--neutral-ash-900);
   /* Balanced ragging: keeps multi-line headlines from orphaning a word.
      Progressive enhancement — ignored by browsers that lack it. */
   text-wrap: balance;
@@ -450,7 +461,7 @@ h6 {
   line-height: var(--leading-meta);
   letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
-  color: var(--warm-gray-600);
+  color: var(--neutral-sage-600);
   margin-bottom: 0.5rem;
 }
 
@@ -466,7 +477,7 @@ p {
   margin-bottom: 1.25rem;
   /* Slight positive tracking prevents letter crowding — an ADHD/dyslexia aid. */
   letter-spacing: var(--tracking-body);
-  color: var(--warm-gray-700);
+  color: var(--neutral-ash-700);
   /* Cap the measure. Long lines are the #1 reason body copy reads cheap. */
   max-width: var(--measure);
   /* Avoid single-word last lines. */
@@ -486,7 +497,7 @@ p {
   font-weight: var(--weight-display);
   line-height: var(--leading-display);
   letter-spacing: var(--tracking-display);
-  color: var(--warm-gray-900);
+  color: var(--neutral-ash-900);
   font-optical-sizing: auto;
   text-wrap: balance;
   max-width: var(--measure-narrow);
@@ -499,974 +510,273 @@ p {
   font-weight: 400;
   line-height: var(--leading-lead);
   letter-spacing: var(--tracking-lead);
-  color: var(--warm-gray-600);
-  max-width: 54ch;
+  color: var(--neutral-ash-700);
+  max-width: var(--measure);
   text-wrap: pretty;
+  margin-bottom: 1.5rem;
 }
 
-/* Small print: captions, disclaimers, timestamps. */
+/* Meta / caption / eyebrow. Upper-case, small, colored accent. */
 .type-meta {
   font-family: var(--font-sans);
   font-size: var(--step--1);
-  font-weight: 500;
-  line-height: var(--leading-meta);
-  letter-spacing: var(--tracking-meta);
-  color: var(--warm-gray-600);
-}
-
-.type-micro {
-  font-family: var(--font-sans);
-  font-size: var(--step--2);
-  font-weight: 500;
-  line-height: var(--leading-meta);
-  letter-spacing: var(--tracking-meta);
-  color: var(--warm-gray-600);
-}
-
-/* Uppercase section label above a heading. */
-.type-eyebrow {
-  font-family: var(--font-sans);
-  font-size: var(--step--1);
   font-weight: 600;
-  line-height: 1.4;
+  line-height: var(--leading-meta);
   letter-spacing: var(--tracking-eyebrow);
   text-transform: uppercase;
-  color: var(--burgundy-700);
-  margin-bottom: 0.75rem;
-  display: block;
+  color: var(--neutral-sage-600);
 }
 
-/* Serif pull quote / testimonial voice. */
-.type-quote {
-  font-family: var(--font-serif);
-  font-size: var(--step-2);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.45;
-  letter-spacing: var(--tracking-h4);
-  color: var(--warm-gray-900);
-  font-optical-sizing: auto;
-  max-width: var(--measure-narrow);
+/* Body text, locked down. Good for dense content. */
+.type-body {
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  font-weight: var(--weight-body);
+  line-height: var(--leading-body);
+  letter-spacing: var(--tracking-body);
+  color: var(--neutral-ash-700);
+  max-width: var(--measure);
   text-wrap: pretty;
 }
 
-/* Tabular figures for prices, times and any aligned numeric column. */
-.type-numeric {
-  font-variant-numeric: tabular-nums lining-nums;
-  font-feature-settings: 'tnum' 1, 'lnum' 1;
-}
-
-/* Constrain any block to a comfortable reading measure. */
-.measure { max-width: var(--measure); }
-.measure-narrow { max-width: var(--measure-narrow); }
-.measure-wide { max-width: var(--measure-wide); }
-
-/* Headings inside cards and other tight containers should not be
-   measure-capped — the container is already doing that job. */
-.card h1, .card h2, .card h3, .card h4,
-.card p,
-.niche-card h1, .niche-card h2, .niche-card h3, .niche-card h4,
-.niche-card p {
-  max-width: none;
-}
-
-/* Centred blocks need auto margins for the measure cap to look intentional. */
-.text-center > p,
-.text-center > h1,
-.text-center > h2,
-.text-center > .type-lead,
-.text-center > .type-display {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a {
-  color: var(--burgundy-600);
-  text-decoration: none;
-
-  transition:
-    color var(--duration-fast) var(--ease-standard),
-    text-decoration-color var(--duration-fast) var(--ease-standard);
-}
-
-a:hover {
-  color: var(--burgundy-700);
-  text-decoration: underline;
-}
-
-:focus-visible {
-  outline: 3px solid var(--burgundy-500);
-  outline-offset: 2px;
-}
-
-/* Button styles */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.875rem 1.75rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 0.375rem;
-  /* Named properties, not `all`: transitioning `all` animates layout
-     properties too, which is what produces jitter on hover. */
-  transition:
-    background-color var(--duration-fast) var(--ease-standard),
-    border-color var(--duration-fast) var(--ease-standard),
-    color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard),
-    transform var(--duration-base) var(--ease-standard);
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  white-space: nowrap;
-  /* Mobile-first: minimum 48px height for touch targets (WCAG) */
-  min-height: 48px;
-}
-
 /* ========================================
-   MOBILE TYPOGRAPHY ADJUSTMENTS — Increase heading leading on narrow screens
-   Wrapped headings need more breathing room on mobile.
-   ======================================== */
-@media (max-width: 640px) {
-  h2 {
-    line-height: 1.24;  /* Increase from 1.16 for wrapped headlines */
-  }
-
-  h3 {
-    line-height: 1.32;  /* Increase from 1.24 */
-  }
-}
-
-/* Larger buttons on mobile (56×56px) for anxiety-prone users */
-@media (max-width: 640px) {
-  .btn {
-    min-height: 56px;
-    min-width: 56px;
-    padding: 1rem 1.5rem;
-    font-size: 1.0625rem;
-  }
-}
-
-.btn-primary {
-  background-color: var(--burgundy-600);
-  color: white;
-  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  transition:
-    background-color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard),
-    transform var(--duration-base) var(--ease-standard);
-}
-
-.btn-primary:hover {
-  background-color: var(--burgundy-700);
-  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-  /* Lift rather than grow. Scaling a button resamples its label and
-     reads as a pop; a 2px rise reads as a reply. */
-  transform: translateY(-2px);
-}
-
-.btn-primary:focus {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 3px;
-  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-}
-
-.btn-primary:active {
-  /* Settle back to rest — the press is felt as the lift disappearing. */
-  transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
-  background-color: var(--burgundy-700);
-}
-
-.btn-secondary {
-  background-color: var(--burgundy-600);
-  color: white;
-  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
-}
-
-.btn-secondary:hover {
-  background-color: var(--burgundy-700);
-  box-shadow: 0 8px 12px rgba(107, 148, 79, 0.25);
-  transform: translateY(-2px);
-}
-
-.btn-secondary:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
-}
-
-.btn-outline {
-  border: 2px solid var(--burgundy-600);
-  color: var(--burgundy-600);
-  background-color: transparent;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  transition:
-    background-color var(--duration-fast) var(--ease-standard),
-    border-color var(--duration-fast) var(--ease-standard),
-    color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard),
-    transform var(--duration-base) var(--ease-standard);
-}
-
-.btn-outline:hover {
-  background-color: var(--burgundy-50);
-  border-color: var(--burgundy-700);
-  color: var(--burgundy-700);
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-  transform: translateY(-1px);
-}
-
-.btn-outline:focus {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 3px;
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-}
-
-.btn-outline:active {
-  background-color: var(--burgundy-50);
-  border-color: var(--burgundy-700);
-  color: var(--burgundy-700);
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
-}
-
-/* ========================================
-   HERO CTA BUTTONS — ensure 48px+ tap target at all widths
-   Enhanced micro-interactions: smooth scale, responsive lift
-   ======================================== */
-.hero-cta-primary,
-.hero-cta-ghost {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  min-height: 48px;
-  min-width: 48px;
-  padding: 0.875rem 1.75rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 0.375rem;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  transition:
-    background-color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard),
-    transform var(--duration-base) var(--ease-smooth);
-}
-
-.hero-cta-primary {
-  background-color: var(--burgundy-600);
-  color: white;
-  box-shadow: 0 4px 6px rgba(107, 148, 79, 0.15);
-}
-
-.hero-cta-primary:hover {
-  background-color: var(--burgundy-700);
-  box-shadow: 0 10px 25px rgba(107, 148, 79, 0.25);
-  transform: translateY(-3px) scale(1.02);
-}
-
-.hero-cta-primary:focus-visible {
-  outline: 3px solid var(--burgundy-600);
-  outline-offset: 3px;
-}
-
-.hero-cta-primary:active {
-  transform: translateY(-1px) scale(0.98);
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.15);
-}
-
-.hero-cta-ghost {
-  background-color: transparent;
-  color: var(--burgundy-600);
-  border: 2px solid var(--burgundy-600);
-}
-
-.hero-cta-ghost:hover {
-  background-color: var(--burgundy-50);
-  border-color: var(--burgundy-700);
-  color: var(--burgundy-700);
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-  transform: translateY(-2px);
-}
-
-.hero-cta-ghost:focus-visible {
-  outline: 3px solid var(--burgundy-600);
-  outline-offset: 3px;
-}
-
-.hero-cta-ghost:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(107, 148, 79, 0.1);
-}
-
-/* Mobile: ensure buttons are full-width and meet tap target on narrow screens */
-@media (max-width: 640px) {
-  .hero-cta-primary,
-  .hero-cta-ghost {
-    width: 100%;
-  }
-
-  .hero-cta-arrow {
-    display: none;
-  }
-}
-
-/* ========================================
-   MICRO-INTERACTION ANIMATIONS
-   Purposeful, smooth transitions that confirm actions.
-   ======================================== */
-
-/* Fade-in on load */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp var(--duration-slow) var(--ease-standard) forwards;
-}
-
-/* Pulse for attention (hero dot, loading states) */
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-
-.hero-pulse-dot {
-  animation: pulse var(--duration-ambient) var(--ease-standard) infinite;
-}
-
-/* Subtle scale on interactive elements */
-.interactive-lift {
-  transition: transform var(--duration-base) var(--ease-smooth);
-}
-
-.interactive-lift:hover {
-  transform: scale(1.01);
-}
-
-.interactive-lift:active {
-  transform: scale(0.99);
-}
-
-/* Glow on focus */
-@keyframes focusGlow {
-  from {
-    box-shadow: 0 0 0 0 rgba(107, 148, 79, 0.4);
-  }
-  to {
-    box-shadow: 0 0 0 8px rgba(107, 148, 79, 0);
-  }
-}
-
-.focus-glow:focus-visible {
-  animation: focusGlow 600ms var(--ease-standard);
-}
-
-/* ========================================
-   LAYOUT PRIMITIVES
-   Compose pages from these instead of ad-hoc padding utilities.
-
-   Sections (vertical rhythm):
-     .section-padding     standard band (64 / 80 / 96px)
-     .section-padding-sm  tight interstitial (40 / 48 / 56px)
-     .section-padding-lg  hero / major opening (80 / 96 / 128px)
-
-   Containers (horizontal rhythm + max-width):
-     .container-base      1280px page shell
-     .container-wide      1024px feature + card layouts
-     .container-prose      768px long-form reading
-     .container-narrow     672px focused single column
-   All four supply the same responsive gutter, so never pair them
-   with px-* utilities.
-
-   Grids:
-     .grid-cards          responsive auto-fit card grid, 32px gap
-     .stack-block         48px rhythm between sibling blocks
-   ======================================== */
-
-.container-base,
-.container-wide,
-.container-prose,
-.container-narrow {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--container-gutter);
-  padding-right: var(--container-gutter);
-  width: 100%;
-}
-
-.container-base { max-width: var(--container-max); }
-.container-wide { max-width: var(--container-wide); }
-.container-prose { max-width: var(--container-prose); }
-.container-narrow { max-width: var(--container-narrow); }
-
-.section-padding {
-  padding-top: var(--section-y);
-  padding-bottom: var(--section-y);
-}
-
-.section-padding-sm {
-  padding-top: var(--section-y-sm);
-  padding-bottom: var(--section-y-sm);
-}
-
-.section-padding-lg {
-  padding-top: var(--section-y-lg);
-  padding-bottom: var(--section-y-lg);
-}
-
-/* ========================================
-   FORM ELEMENTS & INPUTS
-   Enhanced with modern focus states and WCAG AA contrast.
+   FORM ELEMENTS SHARED BASELINE
    ======================================== */
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
+input[type="number"],
 input[type="tel"],
 input[type="date"],
+input[type="time"],
 textarea,
 select {
-  padding: 0.75rem 1rem;
-  border: 2px solid var(--burgundy-200);
-  border-radius: 0.5rem;
-  font-size: 1rem;
   font-family: var(--font-sans);
-  transition:
-    border-color var(--duration-fast) var(--ease-standard),
-    background-color var(--duration-fast) var(--ease-standard),
-    box-shadow var(--duration-base) var(--ease-standard);
-  min-height: 44px; /* Touch target: 44px+ for accessibility */
+  font-size: var(--step-0);
+  line-height: var(--leading-body);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--neutral-sage-200);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: var(--neutral-ash-900);
+  transition: border-color var(--duration-base) var(--ease-standard);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
 input[type="tel"]:focus,
 input[type="date"]:focus,
+input[type="time"]:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--burgundy-600);
-  box-shadow: 0 0 0 2px var(--burgundy-600); /* 2px focus ring */
+  border-color: var(--primary-bronze-500);
+  box-shadow: 0 0 0 3px rgba(203, 153, 126, 0.1);
 }
 
-/* WCAG AA contrast — error states */
-input:invalid,
-.form-input[aria-invalid="true"] {
-  border-color: var(--alert-600);
-  background-color: var(--alert-50);
+/* ========================================
+   UTILITY: LINK STATES
+   ======================================== */
+
+a {
+  color: var(--primary-bronze-600);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25em;
+  transition: color var(--duration-base) var(--ease-standard);
 }
 
-input:invalid:focus,
-.form-input[aria-invalid="true"]:focus {
-  border-color: var(--alert-700);
-  box-shadow: 0 0 0 2px var(--alert-700); /* 2px error focus ring */
+a:hover {
+  color: var(--primary-bronze-700);
 }
 
-.form-label {
-  display: block;
-  font-weight: 500;
-  color: var(--warm-gray-900);
+a:active {
+  color: var(--primary-bronze-800);
+}
+
+/* ========================================
+   UTILITY: LISTS & MARKERS
+   ======================================== */
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.75rem;
+}
+
+li {
   margin-bottom: 0.5rem;
-  font-size: 0.9375rem;
-}
-
-/* Radio & checkbox sizing (48px+ target) */
-input[type="radio"],
-input[type="checkbox"] {
-  width: 1.25rem;
-  height: 1.25rem;
-  cursor: pointer;
-  accent-color: var(--burgundy-600);
-  transition: all var(--duration-fast) var(--ease-standard);
-}
-
-input[type="radio"]:focus-visible,
-input[type="checkbox"]:focus-visible {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 2px;
+  line-height: var(--leading-body);
 }
 
 /* ========================================
-   CARD & SURFACE ELEMENTS
+   UTILITY: BLOCKQUOTES
    ======================================== */
 
-.card {
-  background: var(--card-surface);
-  border: var(--card-border-width) solid var(--card-border-color);
-  border-radius: var(--card-radius);
-  padding: var(--card-padding);
-  box-shadow: var(--card-shadow-rest);
-  transition: var(--card-transition);
-}
-
-.card:hover {
-  border-color: var(--card-border-color-hover);
-  box-shadow: var(--card-shadow-hover);
-  transform: translateY(var(--card-lift));
-}
-
-.card:focus-within {
-  box-shadow: var(--card-shadow-hover);
-}
-
-.card:active {
-  box-shadow: var(--card-shadow-active);
-  transform: translateY(var(--card-lift-active));
-}
-
-/* Compact card variant */
-.card-compact {
-  padding: var(--card-padding-compact);
-}
-
-.card-tinted {
-  background: rgba(157, 187, 141, 0.08);
-}
-
-.card-static {
-  box-shadow: none;
-  border-color: var(--burgundy-200);
-}
-
-/* Success/Error card tinting */
-.card-success {
-  background: rgba(107, 148, 79, 0.06);
-  border-color: rgba(107, 148, 79, 0.3);
-}
-
-.card-error {
-  background: var(--alert-50);
-  border-color: var(--alert-300);
-}
-
-/* Responsive card grid — replaces hand-rolled grid md:grid-cols-N gap-N */
-.grid-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--gap-card);
-}
-
-.stack-block {
-  display: flex;
-  flex-direction: column;
-  gap: var(--stack-block);
+blockquote {
+  font-style: italic;
+  color: var(--neutral-sage-700);
+  border-left: 3px solid var(--accent-petal-500);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-size: var(--step-1);
 }
 
 /* ========================================
-   DESKTOP UX AUDIT OPTIMIZATIONS (1440px+)
-   Phase 1: Desktop-First Refinements
+   UTILITY: EMPHASIS & HIGHLIGHTS
    ======================================== */
 
-/* Improvement #1: Hero Line-Width Optimization */
-@media (min-width: 1024px) {
-  .prose-width-desktop {
-    max-width: 65ch;  /* ~658px, optimal for reading */
-  }
+strong {
+  font-weight: var(--weight-emphasis);
+  color: var(--neutral-ash-900);
 }
 
-/* Improvement #3: Section Spacing Expansion */
-@media (min-width: 1280px) {
-  .section-padding {
-    padding-top: 4rem;    /* 64px */
-    padding-bottom: 4rem;
-  }
-  
-  .section-padding-lg {
-    padding-top: 5rem;    /* 80px */
-    padding-bottom: 5rem;
-  }
-  
-  .section-padding-xl {
-    padding-top: 6rem;    /* 96px */
-    padding-bottom: 6rem;
-  }
+em {
+  font-style: italic;
 }
 
-/* Improvement #8: Text Color Hierarchy */
-.text-primary {
-  color: var(--warm-gray-900);  /* #3f3935 */
-}
-
-.text-secondary {
-  color: var(--warm-gray-700);  /* #5e534a */
-}
-
-.text-tertiary {
-  color: var(--warm-gray-600);  /* #7a6f68 */
-}
-
-.text-quaternary {
-  color: var(--warm-gray-400);  /* #ab9c91 */
-}
-
-/* Improvement #11: Desktop Line-Height Optimization */
-@media (min-width: 1024px) {
-  p, li, dd, .prose-content {
-    line-height: 1.75;  /* 28px on 1rem base */
-  }
-  
-  h1 {
-    line-height: 1.2;
-  }
-  
-  h2 {
-    line-height: 1.35;
-  }
-  
-  article, .long-form {
-    line-height: 1.8;
-  }
-}
-
-/* Improvement #10: Enhanced Focus States */
-@media (min-width: 1024px) {
-  button:focus-visible,
-  a:focus-visible,
-  input:focus-visible,
-  select:focus-visible {
-    outline: 3px solid var(--burgundy-600);
-    outline-offset: 3px;
-    border-radius: 0.375rem;
-  }
-  
-  button:focus-visible {
-    box-shadow: 
-      0 0 0 3px var(--burgundy-600),
-      0 0 0 6px var(--warm-gray-50);
-  }
-  
-  a:focus-visible {
-    background: var(--burgundy-100);
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.25rem;
-  }
-}
-
-/* Improvement #9: Card Spacing & Shadows Desktop */
-@media (min-width: 1024px) {
-  .card {
-    padding: 2rem;  /* Grows from 1.5rem */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  }
-}
-
-/* Improvement #6: Form Input Desktop Scale */
-@media (min-width: 1024px) {
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  textarea,
-  select {
-    padding: 1rem 1.25rem;  /* py-4 px-5 equivalent */
-    font-size: 1rem;        /* 16px for comfortable reading */
-    min-height: 48px;
-  }
-  
-  .form-label {
-    font-size: 1rem;        /* Scales from 0.9375rem */
-    margin-bottom: 0.75rem;
-  }
-}
-
-/* Utility: Form input desktop variant */
-.form-input-desktop {
-  @apply py-4 px-5 text-lg;
+mark {
+  background-color: var(--accent-petal-200);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
 }
 
 /* ========================================
-   IMPROVEMENT #2: DESKTOP BUTTON SIZING (56px)
-   Standardize button heights across all variants:
-   - Mobile: 48px minimum (current)
-   - Desktop (1024px+): 56px for primary, 48px secondary, auto for tertiary
-   Ensures consistent touch target and visual hierarchy
-   ======================================== */
-@media (min-width: 1024px) {
-  /* Primary CTA buttons: Larger, more prominent on desktop */
-  button[type="submit"],
-  .btn-primary,
-  .hero-cta-primary,
-  .cta-button {
-    padding: 1.125rem 2rem;  /* 18px / 32px vertical/horizontal */
-    min-height: 56px;
-    font-size: 1rem;
-    font-weight: 600;
-  }
-
-  /* Secondary buttons: Still prominent, but smaller than primary */
-  .btn-secondary,
-  button[type="reset"] {
-    padding: 0.875rem 1.5rem;  /* 14px / 24px */
-    min-height: 48px;
-  }
-
-  /* Tertiary/outline buttons: Minimal padding, text-only */
-  .btn-outline,
-  .btn-tertiary,
-  a.btn-text,
-  .hero-cta-ghost {
-    min-height: auto;
-  }
-
-  /* Touch target guarantee — all interactive elements 48px+ */
-  button,
-  a.btn,
-  input[type="submit"],
-  input[type="button"] {
-    min-height: 48px;
-    min-width: 48px;
-  }
-}
-
-/* ========================================
-   IMPROVEMENT #7: ENHANCED FOCUS RING STATES
-   WCAG AA compliant focus-visible indicators
-   Applied to all interactive elements
+   UTILITY: CODE & MONOSPACE
    ======================================== */
 
-/* Base button focus ring: 2px outline + soft halo */
-.btn:focus-visible {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  background-color: var(--bg-parchment-200);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--primary-bronze-700);
 }
 
-/* Primary button: White outline ring with inner shadow */
-.btn-primary:focus-visible {
-  outline: 2px solid white;
-  outline-offset: -4px;
-  box-shadow: 
-    0 0 0 4px var(--burgundy-600),
-    0 10px 25px rgba(107, 148, 79, 0.25);
+pre {
+  background-color: var(--bg-parchment-100);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
 }
 
-/* Outline button: Burgundy ring matching border */
-.btn-outline:focus-visible {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 2px;
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.12);
-}
-
-/* Secondary button: Burgundy ring with subtle shadow */
-.btn-secondary:focus-visible {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 2px;
-  box-shadow: 0 4px 12px rgba(107, 148, 79, 0.1);
-}
-
-/* Hero CTA buttons: Bold focus ring */
-.hero-cta-primary:focus-visible {
-  outline: 3px solid var(--burgundy-600);
-  outline-offset: 3px;
-}
-
-.hero-cta-ghost:focus-visible {
-  outline: 3px solid var(--burgundy-600);
-  outline-offset: 3px;
-}
-
-/* Form inputs: Match button focus ring pattern */
-input[type="text"]:focus-visible,
-input[type="email"]:focus-visible,
-input[type="tel"]:focus-visible,
-input[type="date"]:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
-  outline: 2px solid var(--burgundy-600);
-  outline-offset: 2px;
-  border-color: var(--burgundy-600);
-  box-shadow: 0 0 0 3px rgba(107, 148, 79, 0.1);
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: var(--neutral-ash-900);
 }
 
 /* ========================================
-   IMPROVEMENT #9: ENHANCED DISABLED STATE STYLING
-   More obvious visual feedback with color shift + reduced opacity
+   UTILITY: HORIZONTAL RULE
    ======================================== */
 
-.btn:disabled,
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-}
-
-.btn-primary:disabled {
-  background-color: var(--burgundy-300);
-  color: var(--warm-gray-600);
-  box-shadow: none;
-  transform: none;
-}
-
-.btn-primary:disabled:hover,
-.btn-primary:disabled:active {
-  background-color: var(--burgundy-300);
-  box-shadow: none;
-  transform: none;
-}
-
-.btn-secondary:disabled {
-  background-color: var(--burgundy-100);
-  color: var(--burgundy-400);
-  border-color: var(--burgundy-200);
-  box-shadow: none;
-}
-
-.btn-outline:disabled {
-  border-color: var(--burgundy-200);
-  color: var(--burgundy-300);
-  background-color: var(--warm-gray-50);
+hr {
+  border: none;
+  border-top: 1px solid var(--neutral-sage-200);
+  margin: 2rem 0;
 }
 
 /* ========================================
-   LOADING STATE CURSOR & ANIMATION
-   ======================================== */
-
-.btn[data-loading="true"],
-button[aria-busy="true"] {
-  cursor: wait;
-}
-
-.btn[aria-busy="true"] {
-  cursor: progress;
-}
-
-/* Loading animation keyframes */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes shimmer {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-
-
-
-/* ========================================
-   IMPL#11: Enhanced Focus States for All Interactive Elements
-   ======================================== */
-
-button:focus-visible,
-a:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-select:focus-visible {
-  outline: 3px solid var(--burgundy-500);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* Form input focus enhancement */
-.form-input:focus,
-.form-textarea:focus {
-  border-color: var(--burgundy-500);
-  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
-}
-
-/* Mobile CTA sticky positioning */
-@media (max-width: 768px) {
-  .mobile-cta-sticky {
-    position: fixed;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
-    z-index: 40;
-    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
-  }
-}
-
-/* Improve button touch targets for mobile (min 44px) */
-.hero-cta-primary,
-.hero-cta-secondary,
-.btn-primary,
-.btn-outline,
-button[type="submit"] {
-  min-height: 44px;
-  min-width: 44px;
-}
-
-/* Loading state animation */
-@keyframes pulse-soft {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.65; }
-}
-
-.form-loading {
-  animation: pulse-soft 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-/* ========================================
-   IMPL#12: Enhanced Typography Responsiveness
-   ======================================== */
-
-/* Improve heading scaling on mobile */
-h1 {
-  font-size: clamp(1.75rem, 5vw, 3.5rem);
-  line-height: 1.25;
-}
-
-h2 {
-  font-size: clamp(1.5rem, 4vw, 2.75rem);
-  line-height: 1.3;
-}
-
-h3 {
-  font-size: clamp(1.125rem, 3vw, 1.75rem);
-  line-height: 1.35;
-}
-
-/* Improve body text readability on all sizes */
-body {
-  font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
-  line-height: 1.6;
-}
-
-p {
-  line-height: 1.7;
-}
-
-/* ========================================
-   IMPL#13: Performance - Image Lazy Loading
+   UTILITY: IMAGES & MEDIA
    ======================================== */
 
 img {
-  loading: lazy;
-  decoding: async;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Prevent layout shift for images with known dimensions */
-img[width][height] {
-  aspect-ratio: attr(width) / attr(height);
+figure {
+  margin-bottom: 1.5rem;
+}
+
+figcaption {
+  font-size: var(--step--1);
+  color: var(--neutral-sage-600);
+  margin-top: 0.75rem;
+}
+
+/* ========================================
+   UTILITY: TABLES
+   ======================================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: var(--step-0);
+}
+
+table th {
+  background-color: var(--accent-petal-100);
+  color: var(--neutral-ash-900);
+  font-weight: var(--weight-emphasis);
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid var(--neutral-sage-200);
+}
+
+table td {
+  padding: 0.75rem;
+  border: 1px solid var(--neutral-sage-200);
+  color: var(--neutral-ash-700);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--light-linen-50);
+}
+
+/* ========================================
+   LOADING & SPINNER STATES
+   ======================================== */
+
+.spinner {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid var(--neutral-sage-200);
+  border-top-color: var(--primary-bronze-500);
+  border-radius: 50%;
+  animation: spin var(--duration-ambient) linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ========================================
+   ACCESSIBILITY: FOCUS VISIBLE
+   ======================================== */
+
+*:focus-visible {
+  outline: 2px solid var(--primary-bronze-500);
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--primary-bronze-500);
+  outline-offset: -2px;
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .no-print {
+    display: none;
+  }
 }

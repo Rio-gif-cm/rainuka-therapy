@@ -1,5 +1,5 @@
 /**
- * Service Worker for Wonderloud Therapy Website
+ * Service Worker for Rainuka Oberoi, LCSW Therapy Website
  * Provides offline support and intelligent asset caching
  * 
  * Caching Strategy:
