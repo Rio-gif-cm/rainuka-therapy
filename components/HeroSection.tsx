@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { colors, layout } from '@/app/styles'
 import { useState } from 'react'
 
@@ -275,35 +276,37 @@ export default function HeroSection() {
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              gap: '1rem',
+              gap: '0.875rem',
               margin: 0,
               marginBottom: '2rem',
               justifyContent: 'center',
+              alignItems: 'center',
             }}
-            className="md:mx-0 mx-auto md:justify-start md:mb-8"
+            className="md:mx-0 mx-auto md:justify-start md:mb-8 md:gap-6"
           >
-            {/* Badge 1: Licensed Therapist */}
+            {/* Badge 1: Licensed LCSW (Green) */}
             <div
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                padding: '0.5rem 0.875rem',
-                borderRadius: '0.375rem',
-                backgroundColor: 'rgba(157, 187, 141, 0.12)',
-                border: `1px solid ${colors.sage[300]}`,
-                fontSize: '0.875rem',
-                fontWeight: 600,
-                color: colors.sage[700],
-                lineHeight: 1.35,
+                justifyContent: 'center',
+                width: '44px',
+                height: '44px',
+                borderRadius: '0.5rem',
+                backgroundColor: '#10b981',
+                border: 'none',
+                boxShadow: '0 2px 6px rgba(16, 185, 129, 0.25)',
+                flexShrink: 0,
               }}
+              className="md:w-12 md:h-12"
+              title="Licensed LCSW (Canada, CA, FL)"
             >
               <svg
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -312,31 +315,31 @@ export default function HeroSection() {
                 <path d="M12 3l7 3v5.5c0 4.3-2.9 8.2-7 9.5-4.1-1.3-7-5.2-7-9.5V6l7-3z" />
                 <path d="M9.2 12.2l2 2 3.6-3.9" />
               </svg>
-              <span>Licensed (Canada, CA, FL)</span>
             </div>
 
-            {/* Badge 2: Accepting New Clients */}
+            {/* Badge 2: Now Accepting (Teal) */}
             <div
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                padding: '0.5rem 0.875rem',
-                borderRadius: '0.375rem',
-                backgroundColor: 'rgba(217, 119, 87, 0.12)',
-                border: `1px solid rgba(217, 119, 87, 0.35)`,
-                fontSize: '0.875rem',
-                fontWeight: 600,
-                color: colors.accent,
-                lineHeight: 1.35,
+                justifyContent: 'center',
+                width: '44px',
+                height: '44px',
+                borderRadius: '0.5rem',
+                backgroundColor: '#06b6d4',
+                border: 'none',
+                boxShadow: '0 2px 6px rgba(6, 182, 212, 0.25)',
+                flexShrink: 0,
               }}
+              className="md:w-12 md:h-12"
+              title="Now accepting new clients"
             >
               <svg
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -345,31 +348,31 @@ export default function HeroSection() {
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 8v4M10 12h4" />
               </svg>
-              <span>Now accepting new clients</span>
             </div>
 
-            {/* Badge 3: Years of Experience */}
+            {/* Badge 3: 12+ Years (Sage) */}
             <div
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
-                padding: '0.5rem 0.875rem',
-                borderRadius: '0.375rem',
-                backgroundColor: 'rgba(209, 220, 200, 0.20)',
-                border: `1px solid ${colors.sage[200]}`,
-                fontSize: '0.875rem',
-                fontWeight: 600,
-                color: colors.sage[700],
-                lineHeight: 1.35,
+                justifyContent: 'center',
+                width: '44px',
+                height: '44px',
+                borderRadius: '0.5rem',
+                backgroundColor: colors.sage[600],
+                border: 'none',
+                boxShadow: `0 2px 6px rgba(107, 148, 79, 0.25)`,
+                flexShrink: 0,
               }}
+              className="md:w-12 md:h-12"
+              title="12+ years experience"
             >
               <svg
-                width="16"
-                height="16"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -378,7 +381,6 @@ export default function HeroSection() {
                 <circle cx="12" cy="12" r="8.5" />
                 <path d="M12 7.6V12l2.8 1.7" />
               </svg>
-              <span>12+ years experience</span>
             </div>
           </div>
 
@@ -546,15 +548,14 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* ══ Column B - the portrait plate ═══════════════════════════════ */}
+        {/* ══ Column B - the portrait plate (responsive hero image) ════════════ */}
         <div style={{ width: '100%', position: 'relative' }}>
+          {/* Aspect ratio container: 4:3.4 on mobile, 4:5 on desktop */}
           <div
-            className="hero-plate md:aspect-[4/5]"
-            role="img"
-            aria-label="Therapist photo placeholder with calming sage and warm gray gradient"
+            className="hero-plate-wrapper"
             style={{
               position: 'relative',
-              aspectRatio: '4 / 3.4', // mobile aspect ratio
+              aspectRatio: '4 / 3.4',
               borderRadius: '1.75rem',
               overflow: 'hidden',
               background: [
@@ -596,42 +597,77 @@ export default function HeroSection() {
               }}
             />
 
+            {/* Lazy-loaded placeholder image or fallback */}
             <div
               style={{
                 position: 'relative',
-                textAlign: 'center',
-                padding: '2rem',
+                width: '100%',
+                height: '100%',
               }}
             >
+              {/* Hero image with lazy loading and responsive sizing */}
+              <Image
+                src="/images/hero-therapist-portrait.jpg"
+                alt="Rainuka Oberoi, LCSW - Therapist"
+                fill
+                priority={false}
+                loading="lazy"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 45vw"
+                className="hero-image"
+                quality={85}
+                onError={() => {
+                  /* Fallback to placeholder below */
+                }}
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center',
+                }}
+              />
+              
+              {/* Fallback placeholder content if image fails to load */}
               <div
-                className="hero-leaf"
-                aria-hidden="true"
-                style={{ fontSize: '3.5rem', marginBottom: '1.25rem', opacity: 0.85 }}
+                className="hero-image-placeholder"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '2rem',
+                  zIndex: 0,
+                }}
               >
-                🌿
+                <div
+                  className="hero-leaf"
+                  aria-hidden="true"
+                  style={{ fontSize: '3.5rem', marginBottom: '1.25rem', opacity: 0.85 }}
+                >
+                  🌿
+                </div>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-merriweather), Georgia, serif',
+                    fontSize: '1.125rem',
+                    fontWeight: 700,
+                    color: colors.sage[700],
+                    letterSpacing: '-0.01em',
+                    margin: 0,
+                    marginBottom: '0.375rem',
+                  }}
+                >
+                  Rainuka Oberoi, LCSW
+                </p>
+                <p
+                  style={{
+                    fontSize: '0.875rem',
+                    color: colors.warmGray[600],
+                    margin: 0,
+                  }}
+                >
+                  Therapist • 12+ years experience
+                </p>
               </div>
-              <p
-                style={{
-                  fontFamily: 'var(--font-merriweather), Georgia, serif',
-                  fontSize: '1.125rem',
-                  fontWeight: 700,
-                  color: colors.sage[700],
-                  letterSpacing: '-0.01em',
-                  margin: 0,
-                  marginBottom: '0.375rem',
-                }}
-              >
-                Rainuka Oberoi, LCSW
-              </p>
-              <p
-                style={{
-                  fontSize: '0.875rem',
-                  color: colors.warmGray[600],
-                  margin: 0,
-                }}
-              >
-                Therapist • 12+ years experience
-              </p>
             </div>
           </div>
 
