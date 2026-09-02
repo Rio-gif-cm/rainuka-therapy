@@ -150,6 +150,16 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* ---------- Healthcare disclaimer ---------- */}
+      <div className="max-w-3xl mx-auto px-6 mb-4">
+        <p
+          className="my-0 p-4 rounded-lg border text-xs text-[rgba(255,255,255,0.62)] leading-relaxed"
+          style={{ borderColor: HAIRLINE, backgroundColor: 'rgba(255, 255, 255, 0.03)' }}
+        >
+          <strong style={{ color: BRIGHT, fontWeight: 600 }}>Important Disclaimer:</strong> This website and services are provided for educational and therapeutic purposes. Therapy is <strong>NOT medical treatment</strong> and does not replace care from a doctor, psychiatrist, or other medical professional. In a mental health emergency, contact local emergency services (911) or a crisis line: <strong>Canada 988</strong>, <strong>211</strong>, or <strong>Crisis Text Line: Text HOME to 741741</strong>.
+        </p>
+      </div>
+
       {/* ---------- Crisis note ---------- */}
       <div className="max-w-3xl mx-auto px-6">
         <p

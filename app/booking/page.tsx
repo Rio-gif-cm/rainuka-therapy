@@ -1,9 +1,30 @@
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
-import BookingFormWrapper from '@/components/BookingFormWrapper'
 import PrivacyAssuranceSection from '@/components/PrivacyAssuranceSection'
 import ObjectionHandler from '@/components/ObjectionHandler'
+
+// Lazy-load BookingFormWrapper to reduce initial JS bundle
+// This component includes form validation and interaction logic
+// Loading skeleton prevents CLS while form loads asynchronously
+const BookingFormWrapper = dynamic(
+  () => import('@/components/BookingFormWrapper'),
+  {
+    ssr: true,
+    loading: () => (
+      <div className="w-full max-w-2xl mx-auto rounded-lg bg-warm-gray-50 border border-warm-gray-200 p-8 animate-pulse">
+        <div className="space-y-4">
+          <div className="h-6 bg-warm-gray-200 rounded w-3/4"></div>
+          <div className="h-4 bg-warm-gray-100 rounded"></div>
+          <div className="h-10 bg-warm-gray-200 rounded mt-6"></div>
+          <div className="h-10 bg-warm-gray-200 rounded"></div>
+          <div className="h-10 bg-warm-gray-200 rounded"></div>
+        </div>
+      </div>
+    ),
+  }
+)
 
 export const metadata: Metadata = {
   title: 'Book Your Free Therapy Consultation | Wonderloud Therapy',
@@ -45,7 +66,7 @@ export default function BookingPage() {
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       <p className="font-semibold text-warm-gray-900 text-lg">
-                        95% move forward with therapy. Real connection, real change.
+                        95% move forward. Connection builds quickly. Change follows.
                       </p>
                     </div>
                   </div>
