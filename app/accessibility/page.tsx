@@ -1,6 +1,10 @@
-'use client'
-
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Website Accessibility Statement | Wonderloud',
+  description: 'WCAG 2.1 AA compliant therapy website. Screen reader friendly, keyboard navigation, captions, and inclusive design.',
+}
 
 export default function AccessibilityPage() {
   return (

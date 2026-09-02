@@ -208,7 +208,7 @@ export const MICROCOPY = {
       "Thanks for sharing. Two more questions and we're through.",
 
     // Confirmation card
-    confidentiality: "100% confidential & HIPAA-protected",
+    confidentiality: "100% confidential & privacy-protected (PIPEDA-Canada, HIPAA-US)",
     confidentialityContext:
       "Your privacy matters. Everything you share stays between us.",
 

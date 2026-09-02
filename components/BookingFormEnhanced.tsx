@@ -757,7 +757,7 @@ export default function BookingFormEnhanced({ preCommitmentData }: BookingFormPr
             <div className="flex gap-3">
               <span className="text-lg flex-shrink-0">✓</span>
               <div>
-                <p className="text-sm font-semibold text-burgundy-800">100% confidential & HIPAA-protected</p>
+                <p className="text-sm font-semibold text-burgundy-800">100% confidential & privacy-protected (PIPEDA-Canada, HIPAA-US)</p>
                 <p className="text-xs text-burgundy-700 mt-1">Your privacy matters. Everything you share stays between us.</p>
               </div>
             </div>

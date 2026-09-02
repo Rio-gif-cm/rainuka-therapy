@@ -33,7 +33,7 @@ export default function PrivacyAssuranceSection() {
             marginBottom: '3rem',
           }}
         >
-          {/* HIPAA Security Seal */}
+          {/* Privacy Security Seal */}
           <div
             style={{
               display: 'flex',
@@ -55,7 +55,7 @@ export default function PrivacyAssuranceSection() {
                 fontSize: '2.5rem',
                 boxShadow: `0 4px 12px rgba(107, 148, 79, 0.15)`,
               }}
-              aria-label="HIPAA Secure badge"
+              aria-label="Privacy Secure badge"
             >
               🔒
             </div>
@@ -70,7 +70,7 @@ export default function PrivacyAssuranceSection() {
                   fontFamily: 'var(--font-merriweather)',
                 }}
               >
-                HIPAA Secure & Confidential
+                Privacy-Protected & Confidential
               </h3>
               <p
                 style={{
@@ -239,7 +239,7 @@ export default function PrivacyAssuranceSection() {
               lineHeight: 1.6,
             }}
           >
-            <strong>Note on confidentiality:</strong> While all information is protected by HIPAA and therapist-client privilege, there are limited exceptions: mandatory reporting of abuse/neglect, imminent risk of harm to self or others, or valid court orders. We'll discuss these clearly at our first session.
+            <strong>Note on confidentiality:</strong> While all information is protected by privacy laws (PIPEDA in Canada, HIPAA in the US) and therapist-client privilege, there are limited exceptions: mandatory reporting of abuse/neglect, imminent risk of harm to self or others, or valid court orders. We'll discuss these clearly at your first session.
           </p>
         </div>
       </div>

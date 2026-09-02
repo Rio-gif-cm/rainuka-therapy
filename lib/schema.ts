@@ -69,7 +69,7 @@ export const getLocalBusinessSchema = (config?: {
     {
       '@type': 'Credential',
       '@id': 'https://rainuka-therapy.com#credential-california',
-      name: 'Licensed Clinical Social Worker (California)',
+      name: 'Licensed Clinical Therapist (California)',
       credentialCategory: 'License',
       areaServed: {
         '@type': 'State',
@@ -83,7 +83,7 @@ export const getLocalBusinessSchema = (config?: {
     {
       '@type': 'Credential',
       '@id': 'https://rainuka-therapy.com#credential-florida',
-      name: 'Licensed Clinical Social Worker (Florida)',
+      name: 'Licensed Clinical Therapist (Florida)',
       credentialCategory: 'License',
       areaServed: {
         '@type': 'State',

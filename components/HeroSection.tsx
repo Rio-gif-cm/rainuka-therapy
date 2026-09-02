@@ -67,7 +67,7 @@ const personas: Persona[] = [
 
 const trustSignals = [
   { icon: 'video', label: 'Telehealth', sub: 'Sliding scale available' },
-  { icon: 'shield', label: 'HIPAA secure', sub: 'Private, always' },
+  { icon: 'shield', label: 'Privacy-protected', sub: 'PIPEDA-Canada, HIPAA-US' },
   { icon: 'clock', label: 'Reply within 24h', sub: 'Booking 1-2 weeks out' },
 ]
 
