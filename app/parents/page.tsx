@@ -61,10 +61,9 @@ const faqSchema = {
   })),
 }
 
-export const metadata = {
-  title: 'Parenting Therapy: Managing the Weight | Wonderloud Therapy',
-  description:
-    'Therapy for parenting anxiety, caregiver burnout, parental guilt, and boundary-setting. For parents, single parents, and sandwich-generation caregivers who are running on empty.',
+export const metadata: Metadata = {
+  title: 'Parenting Therapy | Caregiver Burnout & Support',
+  description: 'Therapy for parenting anxiety, caregiver burnout, parental guilt, boundaries. Support for parents running on empty. Get help.',
   openGraph: {
     title: 'Parenting Therapy: Managing the Weight | Wonderloud Therapy',
     description:

@@ -3,6 +3,13 @@
 import Link from 'next/link'
 import { colors } from '@/app/styles'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service & Client Agreement | Review',
+  description: 'Client agreement terms for therapy services. Review policies, cancellations, professional guidelines. Understand terms.',
+}
+
 export default function TermsPage() {
   return (
     <main id="main-content" style={{ paddingTop: '2rem' }}>

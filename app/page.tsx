@@ -1,14 +1,20 @@
 import { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import HeroSection from '@/components/HeroSection'
 import NicheGrid from '@/components/NicheGrid'
-import TestimonialCard from '@/components/TestimonialCard'
 import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclaimer'
 import Link from 'next/link'
 import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
 import { buttonPresets } from '@/lib/button-styles'
+
+// Lazy-load TestimonialCard (below the fold, heavy component)
+const TestimonialCard = dynamic(() => import('@/components/TestimonialCard'), {
+  loading: () => <div className="h-64 bg-gray-100 rounded animate-pulse" />,
+  ssr: true,
+})
 
 export const metadata: Metadata = {
   title: 'Therapy for Perinatal, ADHD & Career | Wonderloud',

@@ -3,6 +3,13 @@
 import Link from 'next/link'
 import { colors } from '@/app/styles'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy & Client Confidentiality | Safety',
+  description: 'Privacy commitment and confidentiality policy (PIPEDA-Canada, HIPAA-US) protect your therapy records and data. How we keep you safe. Review our policies.',
+}
+
 export default function PrivacyPage() {
   return (
     <main id="main-content" style={{ paddingTop: '2rem' }}>

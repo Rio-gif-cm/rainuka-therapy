@@ -6,9 +6,8 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata = {
-  title: 'Neurodivergent-Affirming Therapy | ADHD, Autism, AuDHD | Wonderloud Therapy',
-  description:
-    'Affirming therapy for neurodivergent adults: ADHD, autism, late diagnosis, masking and burnout recovery. Strengths-based, no fix language. Telehealth, sliding scale, sensory-informed.',
+  title: 'Neurodivergent Therapy | ADHD, Autism & Affirming',
+  description: 'Affirming therapy for neurodivergent adults: ADHD, autism, diagnosis, masking, burnout recovery. Strengths-based. Schedule today.',
 }
 
 const ACCENT = '#5B7B8B'

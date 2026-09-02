@@ -6,9 +6,8 @@ import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 
 export const metadata = {
-  title: 'LGBTQ+ Therapy That Affirms Your Wholeness | Identity-Centered Care | Wonderloud Therapy',
-  description:
-    'Affirming therapy for LGBTQ+ clients: coming out, identity, relationships, family, trauma. No gatekeeping. Your identity is valid. Telehealth, sliding scale.',
+  title: 'LGBTQ+ Affirming Therapy | Identity-Centered Care',
+  description: 'Affirming therapy for LGBTQ+ clients: identity, coming out, relationships, family, trauma. No gatekeeping. Schedule consultation.',
 }
 
 const ACCENT = '#8c5c5b'

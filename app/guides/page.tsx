@@ -25,9 +25,8 @@ function getAllGuides() {
 }
 
 export const metadata = {
-  title: 'Therapy Guides & Resources | Wonderloud Therapy',
-  description: 'Read our curated guides on therapy, mental health, perinatal anxiety, ADHD, career transitions, and more. Practical insights to help you understand yourself better.',
-  keywords: 'therapy guides, mental health resources, perinatal anxiety, ADHD, career counseling',
+  title: 'Therapy Guides & Mental Health Resources | Explore',
+  description: 'Curated guides on therapy, mental health, perinatal anxiety, ADHD, career transitions, more. Practical insights for self-understanding.',
 }
 
 export default function GuidesPage() {

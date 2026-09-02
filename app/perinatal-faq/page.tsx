@@ -115,9 +115,8 @@ const faqSchema = getPerinatalFAQSchema(
 )
 
 export const metadata = {
-  title: 'Perinatal Mental Health FAQ - Postpartum, Loss & Fertility | Wonderloud Therapy',
-  description:
-    'Answers on postpartum depression and anxiety, intrusive thoughts, postpartum rage, pregnancy loss grief, infertility, birth trauma, and starting therapy with a newborn.',
+  title: 'Perinatal Mental Health FAQ | Postpartum Questions',
+  description: 'Postpartum depression, anxiety, intrusive thoughts answered. Pregnancy loss grief, birth trauma, therapy with newborns. Get answers.',
   openGraph: {
     title: 'Perinatal Mental Health FAQ | Wonderloud Therapy',
     description:

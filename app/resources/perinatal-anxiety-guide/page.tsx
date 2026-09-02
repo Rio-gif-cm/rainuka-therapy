@@ -1,9 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Signs You Might Have Perinatal Anxiety | Rainuka Oberoi Therapy",
-  description:
-    "Learn the physical, emotional, and behavioral signs of perinatal anxiety. Includes checklist, when to seek help, and treatment options. Free 15-minute consultation available.",
+  title: 'Perinatal Anxiety Signs | Checklist & Help Guide',
+  description: 'Recognize physical, emotional, behavioral perinatal anxiety signs. Free checklist and when to seek help. Get consultation today.',
   keywords:
     "perinatal anxiety, postpartum anxiety, maternal anxiety, anxiety symptoms after birth",
   openGraph: {

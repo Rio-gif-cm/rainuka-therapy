@@ -25,9 +25,8 @@ function getAllGuides() {
 }
 
 export const metadata = {
-  title: 'Blog Archive | Therapy Guides & Resources | Wonderloud Therapy',
-  description: 'Browse all therapy guides and mental health articles. Topics include therapy basics, perinatal anxiety, ADHD, career transitions, and more.',
-  keywords: 'therapy blog, mental health articles, therapy guides, resources, perinatal mental health, ADHD, career counseling',
+  title: 'Blog Archive | Therapy Guides & Mental Health Resources',
+  description: 'Browse all therapy guides and mental health articles: basics, perinatal anxiety, ADHD, career. Read and explore resources.',
 }
 
 export default function BlogArchivePage() {

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Welcome | Rainuka Oberoi',
-  description: 'Start your therapy journey. Support when you need it.',
+  title: 'Welcome | Your Therapy Journey Starts Here Now',
+  description: 'Start your therapy journey. Get trauma-informed support for perinatal anxiety, ADHD, career transitions. Schedule consultation today.',
 };
 
 export default async function WelcomePage({ searchParams }: { searchParams: Promise<{ ref?: string }> }) {

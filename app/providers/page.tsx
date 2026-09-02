@@ -4,7 +4,14 @@ import Link from 'next/link'
 import { colors, styles } from '@/app/styles'
 import VerificationBadge from '@/components/VerificationBadge'
 
-export default function ProviderDirectoriesPage() {
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Find Rainuka | Psychology Today & Insurance Networks',
+  description: 'Verify credentials and find Rainuka on Psychology Today, TherapyDen, insurance networks. Licensed, trusted, verified. Find now.',
+}
+
+export default function ProvidersPage() {
   const directories = [
     {
       name: 'Psychology Today',
@@ -118,7 +125,7 @@ export default function ProviderDirectoriesPage() {
       </section>
 
       {/* Main Content */}
-      <div
+      <main id="main-content" role="main"
         style={{
           maxWidth: '1000px',
           marginLeft: 'auto',
@@ -512,7 +519,7 @@ export default function ProviderDirectoriesPage() {
             Get in Touch
           </Link>
         </section>
-      </div>
+      </main>
     </div>
   )
 }

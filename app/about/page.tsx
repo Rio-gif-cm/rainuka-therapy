@@ -466,8 +466,8 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="card bg-burgundy-50 border border-burgundy-200">
-                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Licensed LCSW</h3>
-                <p className="text-warm-gray-600 text-sm">Clinical Social Work License, verified and in good standing.</p>
+                <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Licensed Therapist</h3>
+                <p className="text-warm-gray-600 text-sm">Professional license verified and in good standing (Canada, California, Florida).</p>
               </div>
               <div className="card bg-burgundy-50 border border-burgundy-200">
                 <h3 className="text-lg font-bold text-warm-gray-900 mb-3">✓ Listed on Major Directories</h3>

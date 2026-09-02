@@ -26,8 +26,8 @@ const accent = specialtyAccents.perinatal
 const perinatalColor = '#c97660'
 
 export const metadata: Metadata = {
-  title: 'Perinatal Therapy | Pregnancy Loss & Postpartum Anxiety',
-  description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, and infertility. Trauma-informed support for reproductive grief. Schedule your free 15-minute consultation today.',
+  title: 'Perinatal Therapy | Pregnancy Loss & Postpartum',
+  description: 'Perinatal therapy for pregnancy loss, postpartum anxiety, infertility. Trauma-informed support for reproductive grief. Book today.',
   keywords: 'perinatal therapy, postpartum anxiety, pregnancy loss, infertility, reproductive trauma',
   openGraph: {
     title: 'Perinatal Therapy | Pregnancy Loss & Postpartum Anxiety',

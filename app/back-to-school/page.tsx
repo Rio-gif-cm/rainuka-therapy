@@ -1,9 +1,15 @@
+import { Metadata } from 'next'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
 import SectionDivider from '@/components/SectionDivider'
-import { IconHeading, IconListItem } from '@/components/IconComponents'
+import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
+
+export const metadata: Metadata = {
+  title: 'Back to School Anxiety Therapy | Manage Stress',
+  description: 'Navigate back-to-school anxiety with therapy. Address separation anxiety, sleepless nights, overwhelm. Book free consultation today.',
+}
 
 export default function BackToSchoolPage() {
   return (
