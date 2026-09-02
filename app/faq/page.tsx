@@ -6,8 +6,8 @@ import { getFAQPageSchema } from '@/lib/faq-schema'
 
 export const metadata: Metadata = {
   title: 'Therapy FAQs | Your Questions Answered Here',
-  description: 'Common therapy questions answered: cost, what to expect, session length, confidentiality. Learn how therapy helps. Read more now.',
-  keywords: 'therapy FAQ, therapy questions, therapy cost, what is therapy, how therapy works',
+  description: 'Therapy FAQ—answers about confidentiality, pricing & sliding scale, what to expect, session length, perinatal mental health, ADHD diagnosis, couples therapy, grief support, and more. Book your free 15-minute call.',
+  keywords: 'therapy FAQ, therapy questions, therapy cost, what is therapy, how therapy works, perinatal therapy, ADHD therapy, couples therapy, grief support',
 }
 
 const FAQData = [
