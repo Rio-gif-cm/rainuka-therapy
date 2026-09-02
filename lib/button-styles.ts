@@ -2,7 +2,7 @@
  * Centralized Button Styles Library
  *
  * Unified button variants and responsive sizing:
- * - Primary (sage-600/white, 56px min-height)
+ * - Primary (burgundy-600/white, 56px min-height)
  * - Secondary (outline)
  * - Tertiary (text-only)
  *
@@ -24,9 +24,9 @@ export const buttonStyles = {
   },
 
   // ─── VARIANTS ───────────────────────────────────────────────────────────
-  // Primary: sage-600 (burgundy), white text
+  // Primary: burgundy-600, white text
   primary:
-    'bg-burgundy-600 text-white outline-offset-2 transition-all box-shadow-primary ' +
+    'bg-burgundy-600 text-white outline-offset-2 transition-all ' +
     'hover:bg-burgundy-700 hover:shadow-md hover:-translate-y-0.5 ' +
     'focus:outline-burgundy-600 focus:shadow-md ' +
     'active:translate-y-0 active:shadow-sm active:bg-burgundy-700 ' +
@@ -46,41 +46,6 @@ export const buttonStyles = {
     'hover:text-burgundy-700 hover:underline ' +
     'focus:outline-burgundy-600 ' +
     'disabled:opacity-60 disabled:cursor-not-allowed',
-
-  // ─── MOBILE-SPECIFIC OVERRIDES ──────────────────────────────────────────
-  // Full-width on mobile, auto on desktop
-  mobileFullWidth: 'w-full sm:w-auto',
-  mobileFull: 'w-full',
-
-  // ─── COMBINED UTILITIES ─────────────────────────────────────────────────
-  // Ready-to-use combinations
-  combinations: {
-    // Primary button at full 56px height, mobile-responsive
-    primaryLarge:
-      'min-h-[56px] px-6 md:px-8 py-3 text-base md:text-lg font-semibold ' +
-      'bg-burgundy-600 text-white outline-offset-2 ' +
-      'hover:bg-burgundy-700 hover:shadow-md hover:-translate-y-0.5 ' +
-      'focus:outline-2 focus:outline-burgundy-600 focus:shadow-md ' +
-      'active:translate-y-0 active:shadow-sm active:bg-burgundy-700 ' +
-      'disabled:opacity-60 disabled:cursor-not-allowed',
-
-    // Secondary outline button
-    secondaryOutline:
-      'min-h-12 px-6 py-2 text-base font-semibold ' +
-      'border-2 border-burgundy-600 text-burgundy-600 bg-transparent ' +
-      'hover:bg-burgundy-50 hover:border-burgundy-700 hover:text-burgundy-700 ' +
-      'focus:outline-2 focus:outline-offset-2 focus:outline-burgundy-600 ' +
-      'active:bg-burgundy-50 active:border-burgundy-700 ' +
-      'disabled:opacity-60 disabled:cursor-not-allowed',
-
-    // Text-only button
-    textOnly:
-      'min-h-12 px-4 py-2 text-base font-medium ' +
-      'text-burgundy-600 bg-transparent ' +
-      'hover:text-burgundy-700 hover:underline ' +
-      'focus:outline-2 focus:outline-offset-2 focus:outline-burgundy-600 ' +
-      'disabled:opacity-60 disabled:cursor-not-allowed',
-  },
 }
 
 // ─── HELPER FUNCTION: Build button className ───────────────────────────────

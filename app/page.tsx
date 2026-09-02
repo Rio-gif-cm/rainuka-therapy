@@ -8,7 +8,7 @@ import TestimonialConsentDisclaimer from '@/components/TestimonialConsentDisclai
 import Link from 'next/link'
 import { homepageTestimonials, testimonials } from '@/src/data/testimonials'
 import { getAggregateRatingSchema } from '@/lib/schema'
-import { buttonClass, buttonPresets } from '@/lib/button-styles'
+import { buttonPresets } from '@/lib/button-styles'
 
 export const metadata: Metadata = {
   title: 'Therapy for Perinatal, ADHD & Career | Wonderloud',
