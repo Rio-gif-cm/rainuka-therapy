@@ -5,6 +5,7 @@ import SectionDivider from '@/components/SectionDivider'
 import { IconHeading } from '@/components/IconComponents'
 import { colors } from '@/app/styles'
 import { getADHDFAQSchema } from '@/lib/faq-schema'
+import { buttonPresets } from '@/lib/button-styles'
 
 interface FAQItem {
   q: string
