@@ -6,7 +6,7 @@ import './sensory-friendly.css'
 import './micro-interactions.css'
 import GoogleAnalyticsWrapper from '@/components/GoogleAnalyticsWrapper'
 import MobileStickyCTA from '@/components/MobileStickyCTA'
-import { getLocalBusinessSchema, getAggregateRatingSchema } from '@/lib/schema'
+import { getLocalBusinessSchema } from '@/lib/schema'
 
 /**
  * TYPEFACE PAIRING
