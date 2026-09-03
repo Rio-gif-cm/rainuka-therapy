@@ -67,7 +67,7 @@ export default function Footer() {
   return (
     <footer className="mt-20" style={{ backgroundColor: colors.warmGray[900], color: 'white' }}>
       {/* ---------- Main grid ---------- */}
-      <div className="max-w-3xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 gap-x-10 items-start">
+      <div className="container-base py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 gap-x-10 items-start">
         {/* Brand block */}
         <div className="lg:col-span-1 min-w-xs">
           <Link href="/" className="no-underline inline-block">
