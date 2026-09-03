@@ -192,8 +192,8 @@ export default function HeroSection() {
 
       <div
         style={{
-          maxWidth: '76rem',
-          margin: '0 auto',
+          maxWidth: 'none',
+          margin: '0',
           display: 'grid',
           gridTemplateColumns: '1fr',
           gap: '3rem', // mobile: 3rem (24px)
