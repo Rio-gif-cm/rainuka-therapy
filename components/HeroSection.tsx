@@ -254,7 +254,7 @@ export default function HeroSection() {
               margin: 0,
               marginBottom: '1.5rem',
               textWrap: 'balance',
-              maxWidth: '18ch',
+              maxWidth: 'none',
             }}
             className="md:mx-0 mx-auto"
           >
