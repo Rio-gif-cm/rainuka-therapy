@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Fraunces, Inter } from 'next/font/google'
 import './globals.css'
 import './additional-styles.css'
@@ -54,7 +54,6 @@ export const metadata: Metadata = {
   title: 'Wonderloud Therapy | Therapy for Perinatal, ADHD & Career',
   description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions. Telehealth available. Sliding scale. Based in [location].',
   keywords: 'therapy, therapist, perinatal mental health, ADHD, career counseling, postpartum anxiety, reproductive trauma',
-  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover',
   openGraph: {
     title: 'Wonderloud Therapy | Therapy for Perinatal, ADHD & Career',
     description: 'Trauma-informed therapy for perinatal/reproductive mental health, adult ADHD diagnosis, and career transitions.',
@@ -62,6 +61,12 @@ export const metadata: Metadata = {
     url: 'https://wonderloud-therapy.com',
   },
   // Tailwind CSS will now compile correctly with Next.js 16 auto-detection
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({
