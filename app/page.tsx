@@ -182,7 +182,7 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {testimonials.map((testimonial, index) => (
+              {testimonials.slice(0, 5).map((testimonial, index) => (
                 <TestimonialCard
                   key={testimonial.author}
                   index={index}
@@ -190,7 +190,7 @@ export default function Home() {
                   author={testimonial.author}
                   context={testimonial.context}
                   rating={testimonial.rating}
-                  totalReviews={testimonials.length}
+                  totalReviews={5}
                 />
               ))}
             </div>
@@ -198,7 +198,7 @@ export default function Home() {
         </section>
 
         {/* ---------- 6. CTA - burgundy accent (the peak) ---------- */}
-        <section className="section-padding text-white" style={{ backgroundColor: 'var(--primary-bronze-900)' }}>
+        <section className="section-padding text-white" style={{ backgroundColor: '#6F1D1B' }}>
           <div className="container-base text-center">
             <h2 className="text-4xl font-serif font-bold mb-6">Ready to talk?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: 'var(--neutral-sage-50)' }}>
@@ -207,6 +207,7 @@ export default function Home() {
             <Link
               href="/booking"
               className={buttonPresets.ctaDarkBg}
+              style={{ backgroundColor: '#BB9457', color: 'white' }}
             >
               Book your consultation
             </Link>
