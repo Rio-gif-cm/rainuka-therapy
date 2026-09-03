@@ -192,8 +192,8 @@ export default function HeroSection() {
 
       <div
         style={{
-          maxWidth: '76rem',
-          margin: '0 auto',
+          maxWidth: 'none',
+          margin: '0',
           display: 'grid',
           gridTemplateColumns: '1fr',
           gap: '3rem', // mobile: 3rem (24px)
@@ -202,7 +202,7 @@ export default function HeroSection() {
         className="md:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] md:gap-16" /* md: 4rem (64px) */
       >
         {/* ══ Column A - the message ══════════════════════════════════════ */}
-        <div className="text-center md:text-left">
+        <div className="text-center" style={{ maxWidth: '700px', margin: '0 auto' }}>
           {/* Eyebrow */}
           <div
             style={{
@@ -252,7 +252,7 @@ export default function HeroSection() {
               margin: 0,
               marginBottom: '1.5rem',
               textWrap: 'balance',
-              maxWidth: '18ch',
+              maxWidth: 'none',
             }}
             className="md:mx-0 mx-auto"
           >
@@ -406,7 +406,7 @@ export default function HeroSection() {
               color: colors.warmGray[700],
               margin: 0,
               marginBottom: '2rem',
-              maxWidth: '38rem',
+              maxWidth: 'none',
               textWrap: 'pretty',
             }}
             className="md:mx-0 mx-auto md:mb-8"
@@ -423,7 +423,7 @@ export default function HeroSection() {
               color: colors.warmGray[900],
               margin: 0,
               marginBottom: '1rem',
-              maxWidth: '34rem',
+              maxWidth: 'none',
               textWrap: 'pretty',
             }}
             className="md:mx-0 mx-auto"
@@ -439,7 +439,7 @@ export default function HeroSection() {
               color: colors.warmGray[600],
               margin: 0,
               marginBottom: '2rem', // sm: 2rem, md: 2.5rem
-              maxWidth: '32rem',
+              maxWidth: 'none',
               textWrap: 'pretty',
             }}
             className="md:mx-0 mx-auto md:mb-10"
@@ -506,7 +506,7 @@ export default function HeroSection() {
               gap: 0,
               paddingTop: '1.5rem',
               borderTop: `1px solid ${colors.warmGray[200]}`,
-              maxWidth: '36rem',
+              maxWidth: 'none',
             }}
             className="md:justify-start justify-center md:mx-0 mx-auto"
           >

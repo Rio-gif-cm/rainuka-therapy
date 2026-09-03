@@ -566,8 +566,7 @@ export default function Navigation() {
     >
       <div
         style={{
-          maxWidth: '1200px',
-          margin: '0 auto',
+          width: '100%',
           padding: isMobile ? '0.75rem 1rem' : '0.875rem 1.5rem',
           display: 'flex',
           alignItems: 'center',
