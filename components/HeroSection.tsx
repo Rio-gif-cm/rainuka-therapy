@@ -121,9 +121,9 @@ export default function HeroSection() {
         isolation: 'isolate',
         overflow: 'hidden',
         backgroundColor: colors.warmGray[50],
-        /* Hero band on the 8px scale: --section-y-lg (80/96/128px) vertical,
-           --container-gutter horizontal. */
-        paddingTop: layout.sectionYLg,
+        /* Hero band: reduced top padding for better above-the-fold space (60px mobile, 72px tablet, 96px desktop).
+           Bottom padding: full --section-y-lg for breathing room before next section. */
+        paddingTop: 'clamp(3.75rem, 5vw, 6rem)', // 60px → 72px → 96px responsive
         paddingBottom: layout.sectionYLg,
         paddingLeft: layout.gutter,
         paddingRight: layout.gutter,
@@ -974,7 +974,7 @@ export default function HeroSection() {
         .hero-chip:active { transform: translateY(0); }
         .hero-chip:focus-visible { outline: 2px solid ${colors.sage[600]}; outline-offset: 3px; }
 
-        /* ── Primary CTA: layered sage with inner highlight ─────────────── */
+        /* ── Primary CTA: dark burgundy for high contrast & conversion focus ─────────────── */
         .hero-cta-primary {
           position: relative;
           display: inline-flex;
@@ -988,21 +988,21 @@ export default function HeroSection() {
           letter-spacing: -0.005em;
           text-decoration: none;
           color: #fff;
-          background: linear-gradient(180deg, ${colors.sage[500]} 0%, ${colors.sage[600]} 55%, ${colors.sage[700]} 100%);
+          background: linear-gradient(180deg, #8B2E1F 0%, #6F1D1B 55%, #5A1815 100%);
           box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.28),
             0 1px 2px rgba(63,57,53,0.10),
-            0 10px 22px -10px rgba(var(--neutral-sage-900), 0.55);
+            0 10px 22px -10px rgba(95, 29, 27, 0.65);
           transition: transform 0.2s cubic-bezier(0.2,0.7,0.3,1), box-shadow 0.2s ease, filter 0.2s ease;
           white-space: nowrap;
         }
         .hero-cta-primary:hover {
           transform: translateY(-2px);
-          filter: saturate(1.05);
+          filter: saturate(1.08) brightness(1.1);
           box-shadow:
             inset 0 1px 0 rgba(255,255,255,0.32),
             0 2px 4px rgba(63,57,53,0.10),
-            0 18px 32px -12px rgba(var(--neutral-sage-900), 0.62);
+            0 18px 32px -12px rgba(95, 29, 27, 0.72);
         }
         .hero-cta-primary:active { transform: translateY(0); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 4px 10px -4px rgba(var(--neutral-sage-900),0.5); }
         .hero-cta-primary:focus-visible { outline: 2px solid ${colors.sage[700]}; outline-offset: 3px; }
