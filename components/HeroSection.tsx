@@ -199,7 +199,6 @@ export default function HeroSection() {
           gap: '3rem', // mobile: 3rem (24px)
           alignItems: 'center',
         }}
-        }}
         className="md:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] md:gap-16" /* md: 4rem (64px) */
       >
         {/* ══ Column A - the message ══════════════════════════════════════ */}
