@@ -204,7 +204,7 @@ export default function HeroSection() {
         className="md:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] md:gap-16" /* md: 4rem (64px) */
       >
         {/* ══ Column A - the message ══════════════════════════════════════ */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left" style={{ paddingLeft: '2rem' }}>
           {/* Eyebrow */}
           <div
             style={{
